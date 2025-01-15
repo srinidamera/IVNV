@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+	<isExposed>true</isExposed>
+	<masterLabel>Homepage About Us Post Login</masterLabel>
+	<targets>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightningCommunity__Default">
+			<property
+					type="Boolean"
+					name="showAppointments"
+					label="Show Appointments Section"
+					default="true"
+			/>
+			<property
+					type="Boolean"
+					name="showTasks"
+					label="Show Tasks Section"
+					default="true"
+			/>
+			<property
+					type="Boolean"
+					name="showButtons"
+					label="Show Buttons Section"
+					default="true"
+			/>
+			<property
+					type="Integer"
+					name="tileHeight"
+					label="Height for cards in pixels"
+					default="122"
+			/>
+			<property
+					type="String"
+					name="labelViewDetails"
+					label="Label for 'View Details'"
+					default="View Details"
+					translatable="true"
+			/>
+
+			<!-- Appointments -->
+			<property
+					type="String"
+					name="appointmentsTitleMain"
+					label="Label for Appointments Main Title."
+					default="Appointments"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelBooked"
+					label="Label for 'Booked'"
+					default="Booked"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelCanceled"
+					label="Label for 'Canceled'"
+					default="Canceled"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelRescheduled"
+					label="Label for 'Rescheduled'"
+					default="Rescheduled"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelPurpose"
+					label="Label for 'Purpose'"
+					default="Purpose"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelAppointmentDateTime"
+					label="Label for 'Appointment Date and Time'"
+					default="Appointment Date and Time"
+					translatable="true"
+			/>
+
+
+			<!-- Tasks -->
+			<property
+					type="String"
+					name="tasksTitleMain"
+					label="Label for 'Tasks'"
+					default="Tasks"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelMyTasks"
+					label="Label for 'My Tasks'"
+					default="My Tasks"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelLastUpdated"
+					label="Label for field 'Last Updated' to display. Keep vacant to hide the field."
+					default="Last Updated"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelDueDate"
+					label="Label for field 'Due Date' to display. Keep vacant to hide the field."
+					default="Due Date"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelTaskDescription"
+					label="Label for 'Task Description' to display. Keep vacant to hide the field."
+					default="Task Description"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="noTasksMsg"
+					label="Msg to display when no tasks exist."
+					default="You don't have any tasks as of now."
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelNotStarted"
+					label="Label for 'Not Started'"
+					default="Not Started"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelInProgress"
+					label="Label for 'In Progress'"
+					default="In Progress"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelCompleted"
+					label="Label for 'Completed'"
+					default="Completed"
+					translatable="true"
+			/>
+
+
+            <!-- Buttons -->
+            <property
+                type="String"
+                name="btnLabels"
+                label="Button Labels comma separated"
+                default="Log Out, View My Profile"
+                translatable="true"
+            />
+            <property
+                type="String"
+                name="btnTypes"
+                label="Button Types comma separated 'Primary' or 'Secondary'."
+                default="Secondary, Primary"
+            />
+            <property
+                type="String"
+                name="redirectToPage"
+                label="Redirect to Page API names comma separated, on click."
+                default="LOG_OUT, Profile__c"
+            />
+            <property
+                type="String"
+                name="horizontalAlign"
+                label="Horizontal Alignment"
+                default="Right"
+                datasource="Left,Right,Center"
+            />
+			<property
+					type="String"
+					name="bookedDesc"
+					label="Label Booked Description"
+					default="Your appointment has been confirmed with {counsellor_name} on {Date_and_Time}, be prepared with the required documents"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="canceledDesc"
+					label="Label Cancel Description"
+					default="Your appointment has been Canceled with {counsellor_name} on {Date_and_Time}."
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="rescheduledDesc"
+					label="Label Rescheduled Description"
+					default="Your appointment has been Rescheduled with {counsellor_name} on {Date_and_Time} be prepared with the required documents"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="keyLocation"
+					label="Label Location"
+					default="Location"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="keyDateTime"
+					label="Label Date/Time"
+					default="Date/Time"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="keyDuration"
+					label="Label Duration"
+					default="Duration"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="keyHost"
+					label="Label Host"
+					default="Host"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="keyParticipants"
+					label="Label Participants"
+					default="Participants"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="btnContactUs"
+					label="Label Contact Us"
+					default="Contact Us"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="btnGoBack"
+					label="Label Go Back"
+					default="Go Back"
+					translatable="true"
+			/>
+		</targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

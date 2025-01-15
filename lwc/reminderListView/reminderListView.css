@@ -1,0 +1,50 @@
+.dummyClass {
+    color: black;
+}
+
+.rem-overflow {
+    overflow-y: auto;
+    max-height: 374px;
+    margin: .5rem;
+}
+
+.sub-div {
+    text-overflow: ellipsis;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 80%;
+    padding-left: .5rem;
+}
+
+.rem-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    position: absolute;
+    left: 0;
+    padding-left: 1rem;
+}
+
+.scrollable {
+    min-height: 120px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.header-component {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0 1rem 0.5rem 0.5rem;
+}
+.rem-details {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.icon-pad svg{
+    padding-left: 6px;
+    padding-right: 2px;
+}

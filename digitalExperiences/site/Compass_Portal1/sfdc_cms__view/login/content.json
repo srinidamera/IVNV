@@ -1,0 +1,83 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Login",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"094e0388-1ed5-4cda-99bc-a3daf70f18c1\",\"columns\":[{\"UUID\":\"875701c4-2941-4c90-9eee-dc61464368b9\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "builderPasswordErrorMessage" : "You have entered incorrect password",
+                "createNewAccountButtonTitle" : "Create New Account",
+                "description" : "Please enter your credentials below.",
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "50px",
+                    "left" : "",
+                    "right" : "",
+                    "top" : "50px"
+                  }
+                },
+                "emailAddressLabel" : "Email Address",
+                "forgotPasswordButtonTitle" : "Forgot Password",
+                "goBackButtonTitle" : "Go Back",
+                "invalidEmailFormat" : "You have entered an invalid format.",
+                "loginButtonTitle" : "Login",
+                "loginTitle" : "Login",
+                "passwordLabel" : "Password"
+              },
+              "definition" : "c:userLoginForm",
+              "id" : "ed1a7ecb-88ef-4c5c-bc29-b9d6d6a995cd",
+              "type" : "component"
+            } ],
+            "id" : "875701c4-2941-4c90-9eee-dc61464368b9",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "094e0388-1ed5-4cda-99bc-a3daf70f18c1",
+          "type" : "component"
+        } ],
+        "id" : "8eabe2fb-7848-4dad-82fc-942cfb11d25c",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "dxpStyle" : { },
+            "pageTitle" : "Login",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "fcda9bfa-de24-4c6f-af28-22d9d072a9be",
+          "type" : "component"
+        } ],
+        "id" : "f368eef2-8ad1-40e6-a764-b839d6c68198",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "8887d6e6-4283-4ec9-a93e-9d76541f6fca",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "login-main"
+  },
+  "urlName" : "login"
+}

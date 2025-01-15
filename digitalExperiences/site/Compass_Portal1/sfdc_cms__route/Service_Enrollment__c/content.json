@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Service Enrollment",
+  "contentBody" : {
+    "activeViewId" : "Service_Enrollment",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "custom-service-enrollment",
+    "urlPrefix" : "service-enrollment"
+  },
+  "urlName" : "service-enrollment"
+}

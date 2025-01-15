@@ -1,0 +1,15 @@
+<template>  
+    <template if:true={isDesktop}>
+        <a href={href} class="slds-m-top_small slds-context-bar__label-action color-font-family" 
+            title={menuItem.label} onclick={handleClick}  >
+            <span class="slds-truncate" title={menuItem.label} >{menuItem.label}</span>
+        </a>
+    </template>
+    <template if:true={isMobile} >
+        <li class="slds-dropdown__item mobile-menu-width"  role="presentation">
+            <a  href={href} role="menuitem" tabindex="0" onclick={handleClick} >
+                <span class="slds-truncate" title={menuItem.label}>{menuItem.label}</span>
+            </a>
+        </li>
+    </template>
+</template>

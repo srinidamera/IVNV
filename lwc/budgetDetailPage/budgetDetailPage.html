@@ -1,0 +1,698 @@
+<!--
+  @description  : Budget Detail Page
+-->
+<template>
+    <!-- <lightning-record-view-form record-id={recordId} object-api-name="Budget__c"></lightning-record-view-form>-->
+ 
+
+    <template if:true={showPrintActionModal}>  
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+           class="slds-modal slds-fade-in-open" height="500px" >
+           <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+              class="slds-modal slds-fade-in-open slds-modal_large">
+              <div class="slds-modal__container">
+                 <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                      onclick={closePrintActionPlanModal}>
+                      <lightning-icon icon-name="utility:close" size="small"></lightning-icon>
+                      <span class="slds-assistive-text">Close</span>
+                  </button>
+                 <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1-print" >
+                    <iframe
+                          src={actionPlanPrintUrl}
+                          height={height}
+                          width={width}
+                          referrerpolicy={referrerPolicy}
+                          title=""
+                          allow="geolocation"
+                          scrolling="no"
+                      ></iframe>
+                 </div>
+                 <div class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" aria-label="Cancel and close" onclick={closePrintActionPlanModal} >Cancel</button>
+                 </div>
+              </div>
+           </section>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+ <!-- modal Edit start -->
+ <template if:true={isShowModal}>
+ 
+     <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+         aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+         <div class="slds-modal__container">
+             <!-- modal header start -->
+             <header class="slds-modal__header">
+                 <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                     onclick={hideModalBox}>
+                     <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                         size="small"></lightning-icon>
+                     <span class="slds-assistive-text">Close</span>
+                 </button>
+                 <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{modalLabel}</h2>
+             </header>
+ 
+             <!-- modal body start -->
+             <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                 <c-budget-edit budget-id={budgetId} record-id={recordId} onclosemodal={closeModalRefresh}></c-budget-edit>
+             </div>
+ 
+             <!-- modal footer start-->
+             <footer class="slds-modal__footer">
+                 <!--<button class="slds-button slds-button_neutral" onclick={hideModalBox}>Cancel</button>-->
+             </footer>
+ 
+         </div>
+     </section>
+     <div class="slds-backdrop slds-backdrop_open"></div>
+ </template>
+ <!-- modal Edit start -->
+     
+     <lightning-record-view-form record-id={budgetId} object-api-name="Budget__c">
+         <lightning-card variant="narrow" icon-name="standard:budget">
+             <h1 slot="title">
+                     <template lwc:if={budgetId}> <lightning-output-field field-name="Name" variant="label-hidden"></lightning-output-field>
+                     </template>
+                     <template lwc:else>Budget</template>
+             </h1>
+                 
+            <div slot="actions" if:false={isIntakeUser}>
+                 <template lwc:if={isNew}>
+                     <lightning-button-group>
+                         <lightning-button label={actionLabel} onclick={showModalBox}></lightning-button>
+                     </lightning-button-group>
+                 </template>
+                 <template lwc:else>
+                     <lightning-button-group>
+                         <lightning-button label={toggleButtonLabel} title="Toggle content action" icon-name={toggleIconName} onclick={expandAll}></lightning-button>
+                         <lightning-button label={actionLabel} onclick={showModalBox}></lightning-button>
+                         <lightning-button onclick={showPrintActionPlanModal} label="Print Budget Plan" icon-name="utility:print"></lightning-button>
+                     </lightning-button-group>
+                 </template>
+                 
+             </div>
+         </lightning-card>
+         <lightning-card if:true={budgetId}>
+             
+             <div class="section">
+                     <lightning-layout multiple-rows vertical-align="stretch">
+                         <lightning-layout-item size="6" class="slds-p-right_x-small">
+                         <div class="section-heading">Projected Monthly Income</div>
+                        
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Employment" budget-id={budgetId}
+                                 projected-field="ProjectedEmployment__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Overtime" budget-id={budgetId}
+                                 projected-field="ProjectedOvertime__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Interest & Dividend" budget-id={budgetId}
+                                 projected-field="ProjectedInterestDividen__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Net Rental Income" budget-id={budgetId}
+                                 projected-field="ProjectedNetRentalIncome__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Bonuses" budget-id={budgetId}
+                                 projected-field="ProjectedBonuses__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Commissions" budget-id={budgetId}
+                                 projected-field="ProjectedComissions__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="SSI" budget-id={budgetId}
+                                 projected-field="ProjectedSSI__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Child Support" budget-id={budgetId}
+                                 projected-field="ProjectedChildSupport__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="AFDC" budget-id={budgetId}
+                                 projected-field="ProjectedAFDC__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Alimony" budget-id={budgetId}
+                                 projected-field="ProjectedMonthlyIncomeAlimony__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Unemployment" budget-id={budgetId}
+                                 projected-field="ProjectedUnemployment__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Other" budget-id={budgetId}
+                                 projected-field="ProjectedOther__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Withholding" budget-id={budgetId}
+                                 projected-field="ProjectedWithholding__c"></c-budget-detail-page-section>
+                             
+                         <div class="expense-entry">
+                             <lightning-layout multiple-rows vertical-align="stretch">
+                                 <lightning-layout-item size="6" class="slds-form-element_readonly field-6" padding="horizontal-small">
+                                     <div class="slds-form-element">
+                                         <label class="slds-form-element__label" for="text-input-id-1">
+                                             <b>Total Monthly Income</b>
+                                         </label>
+                                     </div>
+                                 </lightning-layout-item>
+                                 <lightning-layout-item size="6" class="slds-form-element_readonly field-6" padding="horizontal-small">
+                                     <lightning-output-field field-name="ProjectedTotalMonthlyIncome__c" variant="label-hidden">
+                                     </lightning-output-field>
+                                 </lightning-layout-item>
+                             </lightning-layout>
+                         </div>
+                         </lightning-layout-item>
+                         <lightning-layout-item size="6" >
+                             <div class="section-heading">Actual Monthly Income</div>
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Employment" budget-id={budgetId}
+                                 projected-field="ActualEmployment__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Overtime" budget-id={budgetId}
+                                 projected-field="ActualOvertime__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Interest & Dividend" budget-id={budgetId}
+                                 projected-field="ActualInterestDividen__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Net Rental Income" budget-id={budgetId}
+                                 projected-field="ActualNetRentalIncome__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Bonuses" budget-id={budgetId}
+                                 projected-field="ActualBonuses__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Commissions" budget-id={budgetId}
+                                 projected-field="ActualComissions__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="SSI" budget-id={budgetId}
+                                 projected-field="ActualSSI__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Child Support" budget-id={budgetId}
+                                 projected-field="ActualChildSupport__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="AFDC" budget-id={budgetId}
+                                 projected-field="ActualAFDC__c"></c-budget-detail-page-section>
+ 
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Alimony" budget-id={budgetId}
+                                 projected-field="ActualMonthlyIncomeAlimony__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Unemployment" budget-id={budgetId}
+                                 projected-field="ActualUnemployment__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Other" budget-id={budgetId}
+                                 projected-field="ActualOther__c"></c-budget-detail-page-section>
+                             
+                             <c-budget-detail-page-section type="MonthlyIncome" label="Withholding" budget-id={budgetId}
+                                 projected-field="ActualWithholding__c"></c-budget-detail-page-section>
+ 
+                         <div class="expense-entry">
+                             <lightning-layout multiple-rows vertical-align="stretch">
+                                 <lightning-layout-item size="6" class="slds-form-element_readonly field-6" padding="horizontal-small">
+                                     <div class="slds-form-element">
+                                         <label class="slds-form-element__label" for="text-input-id-1">
+                                             <b>Total Monthly Income</b>
+                                         </label>
+                                     </div>
+                                 </lightning-layout-item>
+                                 <lightning-layout-item size="6" class="slds-form-element_readonly field-6" padding="horizontal-small">
+                                     <lightning-output-field field-name="ActualTotalMonthlyIncome__c" variant="label-hidden">
+                                     </lightning-output-field>
+                                 </lightning-layout-item>
+                             </lightning-layout>
+                         </div>
+                         </lightning-layout-item>
+                     </lightning-layout>
+             </div>
+ 
+             <div class="section">
+                 <div class="section-heading">Calculations</div>
+                 <div>
+                     <lightning-layout multiple-rows vertical-align="stretch">
+                         <lightning-layout-item size="4" class="slds-form-element_readonly field-4" padding="horizontal-small">
+                             <div class="slds-form-element">
+                                 <b><label class="slds-form-element__label" for="text-input-id-1">Projected Balance (Projected income
+                                         minus expenses)</label></b>
+                             </div>
+                         </lightning-layout-item>
+                         <lightning-layout-item size="4" class="slds-form-element_readonly field-4" padding="horizontal-small">
+                             <div class="slds-form-element">
+                                 <b><label class="slds-form-element__label" for="text-input-id-1">Actual Balance (Actual income minus
+                                         expenses)</label></b>
+                             </div>
+                         </lightning-layout-item>
+                         <lightning-layout-item size="4" class="slds-form-element_readonly field-4" padding="horizontal-small">
+                             <div class="slds-form-element">
+                                 <b><label class="slds-form-element__label" for="text-input-id-1">Difference (Actual minus
+                                         projected)</label></b>
+                             </div>
+                         </lightning-layout-item>
+                     </lightning-layout>
+                 </div>
+             
+                 <div class="expense-entry">
+                     <lightning-layout multiple-rows vertical-align="stretch">
+                         <lightning-layout-item size="4" class="slds-form-element_readonly field-4" padding="horizontal-small">
+                             <lightning-output-field field-name="ProjectedBalance__c" variant="label-hidden">
+                             </lightning-output-field>
+                         </lightning-layout-item>
+                         <lightning-layout-item size="4" class="slds-form-element_readonly field-4" padding="horizontal-small">
+                             <lightning-output-field field-name="ActualBalance__c" variant="label-hidden">
+                             </lightning-output-field>
+                         </lightning-layout-item>
+                         <lightning-layout-item size="4" class="slds-form-element_readonly field-4" padding="horizontal-small">
+                             <lightning-output-field field-name="Difference__c" variant="label-hidden">
+                             </lightning-output-field>
+                         </lightning-layout-item>
+                     </lightning-layout>
+                 </div>
+             
+             </div>
+ 
+ 
+             <div class="section">
+                 <div class="section-heading">Total Calculations</div>
+                 <div>
+                     <lightning-layout multiple-rows vertical-align="stretch">
+                         <lightning-layout-item size="4" class="slds-form-element_readonly field-4" padding="horizontal-small">
+                             <div class="slds-form-element">
+                                 <b><label class="slds-form-element__label" for="text-input-id-1">Total Projected Cost</label></b>
+                             </div>
+                         </lightning-layout-item>
+                         <lightning-layout-item size="4" class="slds-form-element_readonly field-4" padding="horizontal-small">
+                             <div class="slds-form-element">
+                                 <b><label class="slds-form-element__label" for="text-input-id-1">Total Actual Cost</label></b>
+                             </div>
+                         </lightning-layout-item>
+                         <lightning-layout-item size="4" class="slds-form-element_readonly field-4" padding="horizontal-small">
+                             <div class="slds-form-element">
+                                 <b><label class="slds-form-element__label" for="text-input-id-1">Total Difference</label></b>
+                             </div>
+                         </lightning-layout-item>
+                     </lightning-layout>
+                 </div>
+             
+                 <div class="expense-entry">
+                     <lightning-layout multiple-rows vertical-align="stretch">
+                         <lightning-layout-item size="4" class="slds-form-element_readonly field-4" padding="horizontal-small">
+                             <lightning-output-field field-name="TotalProjectedCost__c" variant="label-hidden">
+                             </lightning-output-field>
+                         </lightning-layout-item>
+                         <lightning-layout-item size="4" class="slds-form-element_readonly field-4" padding="horizontal-small">
+                             <lightning-output-field field-name="TotalActualCost__c" variant="label-hidden">
+                             </lightning-output-field>
+                         </lightning-layout-item>
+                         <lightning-layout-item size="4" class="slds-form-element_readonly field-4" padding="horizontal-small">
+                             <lightning-output-field field-name="TotalDifference__c" variant="label-hidden">
+                             </lightning-output-field>
+                         </lightning-layout-item>
+                     </lightning-layout>
+                 </div>
+             
+             </div>
+ 
+             <lightning-accordion allow-multiple-sections-open
+                 active-section-name={activeSections}>
+                 <lightning-accordion-section name="Housing" label="Housing">
+                     <c-budget-detail-page-section type="sectionHeader"></c-budget-detail-page-section>
+             
+                     <c-budget-detail-page-section type="sectionfield" label="Mortgage or Rent" budget-id={budgetId}
+                         projected-field="ProjectedMortgageOrRent__c" actual-field="ActualMortgageOrRent__c"
+                         diff-field="MortgageOrRentDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Home Owner Assoc." budget-id={budgetId}
+                         projected-field="ProjectedHomeOwnerAssoc__c" actual-field="ActualHomeOwnerAssoc__c"
+                         diff-field="HomeOwnerAssocDifference__c"></c-budget-detail-page-section>
+ 
+                     <c-budget-detail-page-section type="sectionfield" label="Home Equity Line" budget-id={budgetId}
+                         projected-field="ProjectedHomeEquityLine__c" actual-field="ActualHomeEquityLine__c"
+                         diff-field="HomeEquityLineDifference__c"></c-budget-detail-page-section>
+ 
+                     <c-budget-detail-page-section type="sectionfield" label="Homeowner/Renters Insurance" budget-id={budgetId}
+                         projected-field="ProjectedHomeownerRentersInsurance__c" actual-field="ActualHomeownerRentersInsurance__c"
+                         diff-field="HomeownerRentersInsuranceDifference__c"></c-budget-detail-page-section>
+             
+                     <c-budget-detail-page-section type="sectionfield" label="Phone" budget-id={budgetId}
+                         projected-field="ProjectedPhone__c" actual-field="ActualPhone__c"
+                         diff-field="PhoneDifference__c"></c-budget-detail-page-section>
+             
+                     <c-budget-detail-page-section type="sectionfield" label="Electricity" budget-id={budgetId}
+                         projected-field="ProjectedElectricity__c" actual-field="ActualElectricity__c"
+                         diff-field="ElectricityDiffrence__c"></c-budget-detail-page-section>
+             
+                     <c-budget-detail-page-section type="sectionfield" label="Water/Sewer" budget-id={budgetId}
+                         projected-field="ProjectedWaterAndSewer__c" actual-field="ActualWaterAndSewer__c"
+                         diff-field="WaterAndSewerDiffrence__c"></c-budget-detail-page-section>
+             
+                     <c-budget-detail-page-section type="sectionfield" label="Gas" budget-id={budgetId}
+                         projected-field="ProjectedGas__c" actual-field="ActualGas__c"
+                         diff-field="GasDiffrence__c"></c-budget-detail-page-section>
+             
+                     <c-budget-detail-page-section type="sectionfield" label="Cable" budget-id={budgetId}
+                         projected-field="ProjectedCable__c" actual-field="ActualCable__c"
+                         diff-field="CableDiffrence__c"></c-budget-detail-page-section>
+             
+                     <c-budget-detail-page-section type="sectionfield" label=" Waste Removal" budget-id={budgetId}
+                         projected-field="ProjectedWasteRemoval__c" actual-field="ActualWasteRemova__c"
+                         diff-field="WasteRemovalDiffrence__c"></c-budget-detail-page-section>
+             
+                     <c-budget-detail-page-section type="sectionfield" label="Maintainance or Repair" budget-id={budgetId}
+                         projected-field="ProjectedMaintenanceOrRepair__c" actual-field="ActualMaintenanceOrRepair__c"
+                         diff-field="MaintainanceOrRepairDiffrence__c"></c-budget-detail-page-section>
+             
+                     <c-budget-detail-page-section type="sectionfield" label="Supplies" budget-id={budgetId}
+                         projected-field="ProjectedSupplies__c" actual-field="ActualSupplies__c"
+                         diff-field="SuppliesDiffrence__c"></c-budget-detail-page-section>
+             
+                     <c-budget-detail-page-section type="sectionfield" label="Other" budget-id={budgetId}
+                         projected-field="HousingProjectedOther__c" actual-field="HousingActualOther__c"
+                         diff-field="HousingOtherDiffrence__c"></c-budget-detail-page-section>
+             
+                     <c-budget-detail-page-section type="sectionTotal" label="Subtotal" budget-id={budgetId}
+                         projected-field="HousingProjectedCost__c" actual-field="HousingActualCost__c"
+                         diff-field="HousingDiffrence__c"></c-budget-detail-page-section>
+                 </lightning-accordion-section>
+ 
+                 <lightning-accordion-section name="Transportation" label="Transportation">
+                     <c-budget-detail-page-section type="sectionHeader"></c-budget-detail-page-section>
+                     <c-budget-detail-page-section type="sectionfield" label="Vehicle Payment" budget-id={budgetId}
+                         projected-field="ProjectedVehiclePayment__c" actual-field="ActualVehiclePayment__c"
+                         diff-field="VehiclePaymentDiffrence__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Insurance" budget-id={budgetId}
+                         projected-field="ProjectedInsurance__c" actual-field="ActualInsurance__c"
+                         diff-field="InsuranceDiffrence__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Licensing" budget-id={budgetId}
+                         projected-field="ProjectedLicensing__c" actual-field="ActualLicensing__c"
+                         diff-field="LicensingDiffrence__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Fuel" budget-id={budgetId} projected-field="ProjectedFuel__c"
+                         actual-field="ActualFuel__c" diff-field="FuelDiffrence__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Maintenance" budget-id={budgetId}
+                         projected-field="ProjectedMaintenance__c" actual-field="ActualMaintenance__c"
+                         diff-field="MaintenanceDiffrence__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Other" budget-id={budgetId}
+                         projected-field="TransportationProjectedOther__c" actual-field="TransportationActualOther__c"
+                         diff-field="TransportationOtherDiffrence__c"></c-budget-detail-page-section>
+ 
+                     <c-budget-detail-page-section type="sectionTotal" label="Subtotal" budget-id={budgetId}
+                         projected-field="TransportationProjectedCost__c" actual-field="TransportationActualCost__c"
+                         diff-field="TransportationDiffrence__c"></c-budget-detail-page-section>
+ 
+                 </lightning-accordion-section>
+ 
+                 <lightning-accordion-section name="Food" label="Food">
+                     <c-budget-detail-page-section type="sectionHeader"></c-budget-detail-page-section>
+ 
+                     <c-budget-detail-page-section type="sectionfield" label="Groceries" budget-id={budgetId}
+                         projected-field="ProjectedGroceries__c" actual-field="ActualGroceries__c"
+                         diff-field="GroceriesDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Dining Out" budget-id={budgetId}
+                         projected-field="ProjectedDiningout__c" actual-field="ActualDiningout__c"
+                         diff-field="DiningoutDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Other" budget-id={budgetId}
+                         projected-field="FoodProjectedOther__c" actual-field="FoodActualOther__c"
+                         diff-field="FoodOtherDifference__c"></c-budget-detail-page-section>
+ 
+                     <c-budget-detail-page-section type="sectionTotal" label="Subtotal" budget-id={budgetId}
+                         projected-field="FoodProjectedCost__c" actual-field="FoodActualCost__c"
+                         diff-field="FoodDifference__c"></c-budget-detail-page-section>
+                 
+                    
+                 
+                 </lightning-accordion-section>
+ 
+                 <lightning-accordion-section name="Pets" label="Pets">
+                     <c-budget-detail-page-section type="sectionHeader"></c-budget-detail-page-section>
+ 
+                     <c-budget-detail-page-section type="sectionfield" label="Food" budget-id={budgetId}
+                         projected-field="ProjectedPetsFood__c" actual-field="ActualPetsFood__c"
+                         diff-field="PetsFoodDifference__c"></c-budget-detail-page-section>
+ 
+                     <c-budget-detail-page-section type="sectionfield" label="Medical" budget-id={budgetId}
+                         projected-field="PetsProjectedMedical__c" actual-field="PetsActualMedical__c"
+                         diff-field="PetsMedicalDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Grooming" budget-id={budgetId}
+                         projected-field="ProjectedGrooming__c" actual-field="ActualGrooming__c"
+                         diff-field="GroomingDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Toys" budget-id={budgetId} projected-field="ProjectedToys__c"
+                         actual-field="ActualToys__c" diff-field="ToysDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Other" budget-id={budgetId}
+                         projected-field="PetsProjectedOther__c" actual-field="PetsActualOther__c"
+                         diff-field="PetsOtherDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionTotal" label="Subtotal" budget-id={budgetId}
+                         projected-field="PetsProjectedCost__c" actual-field="PetsActualCost__c"
+                         diff-field="PetsDifference__c"></c-budget-detail-page-section>
+             
+                 </lightning-accordion-section>
+ 
+                 <lightning-accordion-section name="PersonalCare" label="Personal Care">
+                     <c-budget-detail-page-section type="sectionHeader"></c-budget-detail-page-section>
+ 
+                     <c-budget-detail-page-section type="sectionfield" label="Medical" budget-id={budgetId}
+                         projected-field="PersonalCareProjectedMedical__c" actual-field="PersonalCareActualMedical__c"
+                         diff-field="PersonalCareMedicalDifference__c"></c-budget-detail-page-section>
+ 
+                     <c-budget-detail-page-section type="sectionfield" label="Education" budget-id={budgetId}
+                         projected-field="ProjectedEducation__c" actual-field="ActualEducation__c"
+                         diff-field="EducationDifference__c"></c-budget-detail-page-section>
+ 
+                     <c-budget-detail-page-section type="sectionfield" label="Hair/Nails" budget-id={budgetId}
+                         projected-field="ProjectedHairNails__c" actual-field="ActualHairNails__c"
+                         diff-field="HairNailsDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Clothing" budget-id={budgetId}
+                         projected-field="ProjectedClothing__c" actual-field="ActualClothing__c"
+                         diff-field="ClothingDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Dry Cleaning" budget-id={budgetId}
+                         projected-field="ProjectedDrycleaning__c" actual-field="ActualDrycleaning__c"
+                         diff-field="DrycleaningDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Health Club" budget-id={budgetId}
+                         projected-field="ProjectedHealthclub__c" actual-field="ActualHealthclub__c"
+                         diff-field="HealthclubDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Organization Dues or Fees" budget-id={budgetId}
+                         projected-field="ProjectedOrganizationduesorfees__c" actual-field="ActualOrganizationduesorfees__c"
+                         diff-field="OrganizationduesorfeesDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Other" budget-id={budgetId}
+                         projected-field="PersonalCareProjectedOther__c" actual-field="PersonalCareActualOther__c"
+                         diff-field="PersonalCareOtherDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionTotal" label="Subtotal" budget-id={budgetId}
+                         projected-field="PersonalCareProjectedCost__c" actual-field="PersonalCareActualCost__c"
+                         diff-field="PersonalCareDifference__c"></c-budget-detail-page-section>
+                                    
+                 </lightning-accordion-section>
+ 
+                 <lightning-accordion-section name="Entertainment" label="Entertainment">
+                     <c-budget-detail-page-section type="sectionHeader"></c-budget-detail-page-section>
+                 
+                     <c-budget-detail-page-section type="sectionfield" label="Night Out" budget-id={budgetId}
+                         projected-field="ProjectedNightout__c" actual-field="ActualNightout__c"
+                         diff-field="NightoutDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Music Platforms" budget-id={budgetId}
+                         projected-field="ProjectedMusicplatforms__c" actual-field="ActualMusicplatforms__c"
+                         diff-field="MusicplatformsDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Movies" budget-id={budgetId}
+                         projected-field="ProjectedMovies__c" actual-field="ActualMovies__c"
+                         diff-field="MoviesDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Concerts" budget-id={budgetId}
+                         projected-field="ProjectedConcerts__c" actual-field="ActualConcerts__c"
+                         diff-field="ConcertsDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Sporting Events" budget-id={budgetId}
+                         projected-field="ProjectedSportingevents__c" actual-field="ActualSportingevents__c"
+                         diff-field="SportingeventsDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Live Theater" budget-id={budgetId}
+                         projected-field="ProjectedLivetheater__c" actual-field="ActualLivetheater__c"
+                         diff-field="LivetheaterDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Other" budget-id={budgetId}
+                         projected-field="EntertainmentProjectedOther__c" actual-field="EntertainmentActualOther__c"
+                         diff-field="EntertainmentOtherDifference__c"></c-budget-detail-page-section>
+ 
+                     <c-budget-detail-page-section type="sectionTotal" label="Subtotal" budget-id={budgetId}
+                         projected-field="EntertainmentProjectedCost__c" actual-field="EntertainmentActualCost__c"
+                         diff-field="EntertainmentDifference__c"></c-budget-detail-page-section>
+                 
+                 </lightning-accordion-section>
+ 
+                 <lightning-accordion-section name="Loans" label="Loans">
+                     <c-budget-detail-page-section type="sectionHeader"></c-budget-detail-page-section>
+ 
+                     <c-budget-detail-page-section type="sectionfield" label="Personal" budget-id={budgetId}
+                         projected-field="ProjectedPersonal__c" actual-field="ActualPersonal__c"
+                         diff-field="PersonalDifference__c"></c-budget-detail-page-section>
+                 
+                     <c-budget-detail-page-section type="sectionfield" label="Student" budget-id={budgetId}
+                         projected-field="ProjectedStudent__c" actual-field="ActualStudent__c"
+                         diff-field="StudentDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Credit Card" budget-id={budgetId}
+                         projected-field="ProjectedCreditcard1__c" actual-field="ActualCreditcard1__c"
+                         diff-field="Creditcard1Difference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Credit Card" budget-id={budgetId}
+                         projected-field="ProjectedCreditcard2__c" actual-field="ActualCreditcard2__c"
+                         diff-field="Creditcard2Difference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Credit Card" budget-id={budgetId}
+                         projected-field="ProjectedCreditcard3__c" actual-field="ActualCreditcard3__c"
+                         diff-field="Creditcard3Difference__c"></c-budget-detail-page-section>
+ 
+                     <c-budget-detail-page-section type="sectionfield" label="Credit Collections" budget-id={budgetId}
+                         projected-field="ProjectedCreditCollections__c" actual-field="ActualCreditCollections__c"
+                         diff-field="CreditCollectionsDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Other" budget-id={budgetId}
+                         projected-field="LoansProjectedOther__c" actual-field="LoansActualOther__c"
+                         diff-field="LoansOtherDifference__c"></c-budget-detail-page-section>
+ 
+                     <c-budget-detail-page-section type="sectionTotal" label="Subtotal" budget-id={budgetId}
+                         projected-field="LoansProjectedCost__c" actual-field="LoansActualCost__c"
+                         diff-field="LoansDifference__c"></c-budget-detail-page-section>
+                 
+                 </lightning-accordion-section>
+ 
+                 <lightning-accordion-section name="Taxes" label="Taxes">
+                     <c-budget-detail-page-section type="sectionHeader"></c-budget-detail-page-section>
+                 
+                     <c-budget-detail-page-section type="sectionfield" label="Federal" budget-id={budgetId}
+                         projected-field="ProjectedFederal__c" actual-field="ActualFederal__c"
+                         diff-field="FederalDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="State" budget-id={budgetId} projected-field="ProjectedState__c"
+                         actual-field="ActualState__c" diff-field="StateDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Local" budget-id={budgetId} projected-field="ProjectedLocal__c"
+                         actual-field="ActualLocal__c" diff-field="LocalDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Other" budget-id={budgetId}
+                         projected-field="TaxesProjectedOther__c" actual-field="TaxesActualOther__c"
+                         diff-field="TaxesOtherDifference__c"></c-budget-detail-page-section>
+ 
+                     <c-budget-detail-page-section type="sectionTotal" label="Subtotal" budget-id={budgetId}
+                         projected-field="TaxesProjectedCost__c" actual-field="TaxesActualCost__c"
+                         diff-field="TaxesDifference__c"></c-budget-detail-page-section>
+ 
+                 
+                 </lightning-accordion-section>
+ 
+                 <lightning-accordion-section name="SavingsInvestments" label="Savings or Investments">
+                     <c-budget-detail-page-section type="sectionHeader"></c-budget-detail-page-section>
+                     <c-budget-detail-page-section type="sectionfield" label="Retirement Account" budget-id={budgetId}
+                         projected-field="ProjectedRetirementaccount__c" actual-field="ActualRetirementaccount__c"
+                         diff-field="RetirementaccountDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Investment Account" budget-id={budgetId}
+                         projected-field="ProjectedInvestmentaccount__c" actual-field="ActualInvestmentaccount__c"
+                         diff-field="InvestmentaccountDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Other" budget-id={budgetId}
+                         projected-field="SavingsorInvestmentsProjectedOther__c" actual-field="SavingsorInvestmentsActualOther__c"
+                         diff-field="SavingsorInvestmentsOtherDifference__c"></c-budget-detail-page-section>
+                     
+                         <c-budget-detail-page-section type="sectionTotal" label="Subtotal" budget-id={budgetId}
+                         projected-field="SavingsorInvestmentsProjectedCost__c" actual-field="SavingsorInvestmentsActualCost__c"
+                         diff-field="SavingsorInvestmentsDifference__c"></c-budget-detail-page-section>
+ 
+                 
+                 </lightning-accordion-section>
+ 
+                 <lightning-accordion-section name="GiftsDonations" label="Gifts and Donations">
+                     <c-budget-detail-page-section type="sectionHeader"></c-budget-detail-page-section>
+                 
+                     <c-budget-detail-page-section type="sectionfield" label="Charity 1" budget-id={budgetId}
+                         projected-field="ProjectedCharity1__c" actual-field="ActualCharity1__c"
+                         diff-field="Charity1Difference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Charity 2" budget-id={budgetId}
+                         projected-field="ProjectedCharity2__c" actual-field="ActualCharity2__c"
+                         diff-field="Charity2Difference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Charity 3" budget-id={budgetId}
+                         projected-field="ProjectedCharity3__c" actual-field="ActualCharity3__c"
+                         diff-field="Charity3Difference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionTotal" label="Subtotal" budget-id={budgetId}
+                         projected-field="GiftsandDonationsProjectedCost__c" actual-field="GiftsandDonationsActualCost__c"
+                         diff-field="GiftsandDonationsDifference__c"></c-budget-detail-page-section>
+                 
+                 </lightning-accordion-section>
+ 
+                 <lightning-accordion-section name="Legal" label="Legal">
+                     <c-budget-detail-page-section type="sectionHeader"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Attorney" budget-id={budgetId}
+                         projected-field="ProjectedAttorney__c" actual-field="ActualAttorney__c"
+                         diff-field="AttorneyDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Alimony" budget-id={budgetId}
+                         projected-field="LegalProjectedAlimony__c" actual-field="LegalActualAlimony__c"
+                         diff-field="LegalAlimonyDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Payments on Lien or Judgment" budget-id={budgetId}
+                         projected-field="ProjectedPaymentsonlienorjudgment__c" actual-field="ActualPaymentsonlienorjudgment__c"
+                         diff-field="PaymentsonlienorjudgmentDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionfield" label="Other" budget-id={budgetId}
+                         projected-field="LegalProjectedOther__c" actual-field="LegalActualOther__c"
+                         diff-field="LegalOtherDifference__c"></c-budget-detail-page-section>
+                     
+                     <c-budget-detail-page-section type="sectionTotal" label="Subtotal" budget-id={budgetId}
+                         projected-field="LegalProjectedCost__c" actual-field="LegalActualCost__c"
+                         diff-field="LegalDifference__c"></c-budget-detail-page-section>
+                     
+                 
+                 </lightning-accordion-section>
+             </lightning-accordion>
+ 
+             <div class="section">
+                 <div class="section-heading">Total Calculations</div>
+                 <div>
+                     <lightning-layout multiple-rows vertical-align="stretch">
+                         <lightning-layout-item size="4" class="slds-form-element_readonly field-4" padding="horizontal-small">
+                             <div class="slds-form-element">
+                                 <b><label class="slds-form-element__label" for="text-input-id-1">Total Projected Cost</label></b>
+                             </div>
+                         </lightning-layout-item>
+                         <lightning-layout-item size="4" class="slds-form-element_readonly field-4" padding="horizontal-small">
+                             <div class="slds-form-element">
+                                 <b><label class="slds-form-element__label" for="text-input-id-1">Total Actual Cost</label></b>
+                             </div>
+                         </lightning-layout-item>
+                         <lightning-layout-item size="4" class="slds-form-element_readonly field-4" padding="horizontal-small">
+                             <div class="slds-form-element">
+                                 <b><label class="slds-form-element__label" for="text-input-id-1">Total Difference</label></b>
+                             </div>
+                         </lightning-layout-item>
+                     </lightning-layout>
+                 </div>
+             
+                 <div class="expense-entry">
+                     <lightning-layout multiple-rows vertical-align="stretch">
+                         <lightning-layout-item size="4" class="slds-form-element_readonly field-4" padding="horizontal-small">
+                             <lightning-output-field field-name="TotalProjectedCost__c" variant="label-hidden">
+                             </lightning-output-field>
+                         </lightning-layout-item>
+                         <lightning-layout-item size="4" class="slds-form-element_readonly field-4" padding="horizontal-small">
+                             <lightning-output-field field-name="TotalActualCost__c" variant="label-hidden">
+                             </lightning-output-field>
+                         </lightning-layout-item>
+                         <lightning-layout-item size="4" class="slds-form-element_readonly field-4" padding="horizontal-small">
+                             <lightning-output-field field-name="TotalDifference__c" variant="label-hidden">
+                             </lightning-output-field>
+                         </lightning-layout-item>
+                     </lightning-layout>
+                 </div>
+             
+             </div>
+             
+         </lightning-card>
+     </lightning-record-view-form>
+ </template>

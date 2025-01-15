@@ -1,0 +1,199 @@
+<apex:page controller="sumoapp.SumoProvider"
+           extensions="sumoapp.LightningOutController"
+           sidebar="false">
+    <apex:slds />
+
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet"
+              href="{!URLFOR($Resource.coreSetup, '/index.css')}" />
+        <script>
+            window.remotingConfig = {
+                VISUALFORCE_CONTROLLER: {!JSENCODE(apexTypePrefix)
+            }SumoProvider
+            };
+
+            window.coreSetup = {
+                componentPrefix: '{!JSENCODE(componentPrefix)}',
+                settingsConstants: {
+                    knowledgeBaseURL: 'http://cep.sumoscheduler.com/',
+                    logCaseURL: 'http://cep.sumoscheduler.com/'
+                },
+                images: {
+                    imagesBaseUrl: `{!URLFOR($Resource.images, '/')}`,
+                    quickSetupImagesBaseUrl: `{!URLFOR($Resource.adminQuickSetupImages, '/')}`
+                },
+                labels: {
+                    backgroundScreenLabels: {
+                        sidebarTitle: `{!JSENCODE($Label.ADMIN_SETTINGS_PAGE_HEADERTEXT)}`,
+                        sidebarTitle: '{!JSENCODE($Label.ADMIN_SETTINGS_PAGE_HEADERTEXT)}',
+                        mainTitle: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_QUICK_SETUP_TITLE)}',
+                        coreSectionTitle: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_CORE_SECTION_TITLE)}',
+                        appointmentSectionTitle: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_APPOINTMENT_SECTION_TITLE)}',
+                        eventSectionTitle: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_EVENT_SECTION_TITLE)}',
+                        goLiveSectionTitle: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_GO_LIVE_SECTION_TITLE)}',
+                        installSumo: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_BACKGROUND_SCREEN_INSTALL_SUMO_BUTTON)}',
+                        installSumoDescription: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_BACKGROUND_SCREEN_INSTALL_SUMO_DESCRIPTION)}',
+                        setupRecordsButton: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_SETUP_RECORDS_BUTTON)}',
+                        setupRecordsText: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_SETUP_RECORDS_TEXT)}',
+                        assignLicenses: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_ASSIGN_LICENSES_BUTTON)}',
+                        assignLicensesText: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_ASSIGN_LICENSES_TEXT)}',
+                        inviteManagerButton: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_SETUP_INVITE_MANAGER_BUTTON)}',
+                        inviteManagerText: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_SETUP_INVITE_MANAGER_TEXT)}',
+                        onlineSchedulerButton: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_CREATE_ONLINE_SCHEDULER_BUTTON)}',
+                        onlineSchedulerText: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_CREATE_ONLINE_SCHEDULER_TEXT)}',
+                        eventSchedulerButton: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_CREATE_EVENT_SCHEDULER_BUTTON)}',
+                        eventSchedulerText: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_CREATE_EVENT_SCHEDULER_TEXT)}',
+                        deployButton: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_DEPLOY_BUTTON)}',
+                        deployText: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_DEPLOY_TEXT)}',
+                        inviteUsersButton: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_INVITE_USERS_BUTTON)}',
+                        inviteUsersText: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_INVITE_USERS_TEXT)}',
+                        migrateSettingsButton: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_MIGRATE_SETTINGS_BUTTON)}',
+                        migrateSettingsText: '{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_MENU_SCREEN_MIGRATE_SETTINGS_TEXT)}',
+                        home: '{!JSENCODE($Label.HOME)}',
+                        quickSetup: '{!JSENCODE($Label.ADMIN_SETTINGS_SIDEBAR_QUICK_SETUP)}',
+                        operatingHours: '{!JSENCODE($Label.OPERATING_HOURS)}',
+                        onlineScheduler: '{!JSENCODE($Label.ONLINE_SCHEDULER)}',
+                        inviteManager: '{!JSENCODE($Label.INVITE_MANAGER)}',
+                        eventScheduler: '{!JSENCODE($Label.EVENT_SCHEDULER)}',
+                        calendarConnector: '{!JSENCODE($Label.CALENDAR_CONNECTOR)}',
+                        generalSettings: '{!JSENCODE($Label.GENERAL_SETTINGS)}',
+                        appointmentScheduler: '{!JSENCODE($Label.APPOINTMENT_SCHEDULER)}',
+                        eventSchedulerTemplates: '{!JSENCODE($Label.EVENT_SCHEDULER_TEMPLATES)}',
+                        platformSettings: '{!JSENCODE($Label.PLATFORM_SETTINGS_SIDEBAR)}',
+                        userLicenseManager: '{!JSENCODE($Label.USER_LICENSE_MANAGER_SIDEBAR_MENU)}',
+                        zoomConnector: '{!JSENCODE($Label.ZOOM_CONNECTOR_SIDEBAR_MENU)}',
+                        support: '{!JSENCODE($Label.SETTINGS_SIDEBAR_SUPPORT)}',
+                        needHelp: '{!JSENCODE($Label.SETTINGS_SIDEBAR_NEED_HELP)}',
+                        customerCommunityTitle: '{!JSENCODE($Label.SETTINGS_SIDEBAR_CUSTOMER_COMMUNITY_TITLE)}',
+                        customerCommunityDescription: '{!JSENCODE($Label.SETTINGS_SIDEBAR_CUSTOMER_COMMUNITY_DESCRIPTION)}',
+                        knowledgeBaseButtonName: '{!JSENCODE($Label.SETTINGS_SIDEBAR_KNOWLEDGEBASE_BUTTON_NAME)}',
+                        logCaseButtonName: '{!JSENCODE($Label.SETTINGS_SIDEBAR_LOGCASE_BUTTON_NAME)}',
+                        bookCallTitle: '{!JSENCODE($Label.SETTINGS_SIDEBAR_BOOK_CALL_TITLE)}',
+                        bookCallDescription: '{!JSENCODE($Label.SETTINGS_SIDEBAR_BOOK_CALL_DESCRIPTION)}',
+                        bookCallButtonName: '{!JSENCODE($Label.SETTINGS_SIDEBAR_BOOK_CALL_BUTTON_NAME)}',
+                        chatWithSupportTitle: '{!JSENCODE($Label.SETTINGS_SIDEBAR_CHAT_WITH_SUPPORT_TITLE)}',
+                        chatWithSupportDescription: '{!JSENCODE($Label.SETTINGS_SIDEBAR_CHAT_WITH_SUPPORT_DESCRIPTION)}',
+                        askQuestionButtonName: '{!JSENCODE($Label.SETTINGS_SIDEBAR_ASK_QUESTION_BUTTON_NAME)}',
+                        additionalInfoTitle: '{!JSENCODE($Label.SETTINGS_SIDEBAR_ADDITIONAL_INFO_TITLE)}',
+                        grantLoginAccessButtonName: '{!JSENCODE($Label.SETTINGS_SIDEBAR_GRANT_LOGIN_ACCESS_BUTTON_NAME)}',
+                        orgIdLabel: '{!JSENCODE($Label.SETTINGS_SIDEBAR_ORG_ID_LABEL)}',
+                        versionLabel: '{!JSENCODE($Label.SETTINGS_SIDEBAR_VERSION_LABEL)}',
+                        supportHoursLabel: '{!JSENCODE($Label.SETTINGS_SIDEBAR_SUPPORT_HOURS_LABEL)}',
+                        supportHoursValue: '{!JSENCODE($Label.SETTINGS_SIDEBAR_SUPPORT_HOURS_VALUE)}',
+                        extendedHoursLabel: '{!JSENCODE($Label.SETTINGS_SIDEBAR_EXTENDED_HOURS_LABEL)}'
+                    },
+                    baseScreenLabels: {
+                        help: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_HELP)}`,
+                        optional: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_OPTIONAL)}`,
+                        backButton: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_BACK_BUTTON)}`,
+                        nextButton: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_NEXT_BUTTON)}`,
+                        closeButton: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_CLOSE_BUTTON)}`,
+                        doneButton: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_DONE_BUTTON)}`
+                    },
+                    screenWelcomeLabels: {
+                        screenLabel: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_WELCOME_NAME)}`,
+                        mainText: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_WELCOME_MAIN_TEXT)}`,
+                        paragraph1: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_WELCOME_PARAGRAPH_1)}`,
+                        paragraph2: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_WELCOME_PARAGRAPH_2)}`,
+                        paragraph3: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_WELCOME_PARAGRAPH_3)}`,
+                        quickSetupSteps: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_WELCOME_STEPS)}`,
+                        nextButtonLabel: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_WELCOME_BUTTON_LABEL)}`
+                    },
+                    screenInPersonLabales: {
+                        flowLabel: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_ONE_TIME_SETUP_NAME)}`,
+                        screenLabel: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_IN_PERSON_NAME)}`,
+                        mainText: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_IN_PERSON_MAIN_TEXT)}`,
+                        description: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_IN_PERSON_DESCRIPTION)}`,
+                        apiKeyLabel: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_IN_PERSON_API_KEY_LABEL)}`,
+                        apiKeyPlaceHolder: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_IN_PERSON_API_KEY_PLACEHOLDER)}`,
+                        googleMapApiKeyInvalidLabel: `{!JSENCODE($Label.GENSET_GOOMAPINTSEC_API_KEY_INVALID_LABEL)}`,
+                        googleMapApiKeyValidLabel: `{!JSENCODE($Label.GENSET_GOOMAPINTSEC_API_KEY_VALID_LABEL)}`,
+                        validate: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_IN_PERSON_VALIDATE)}`,
+                        spinnerMainText: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_IN_PERSON_SPINNER_MAIN_TEXT)}`,
+                        skipButton: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_SKIP_BUTTON)}`,
+                    },
+                    screenDigitalExperiencesLabels: {
+                        flowLabel: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_ONE_TIME_SETUP_NAME)}`,
+                        screenLabel: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_DIGITAL_EXPERIENCES_NAME)}`,
+                        helpLink: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_DIGITAL_EXPERIENCES_HELP_LINK)}`,
+                        mainText: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_DIGITAL_EXPERIENCES_MAIN_TEXT)}`,
+                        description: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_DIGITAL_EXPERIENCES_DESCRIPTION)}`,
+                        openSetup: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_DIGITAL_EXPERIENCES_OPEN_SETUP)}`,
+                        step1: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_DIGITAL_EXPERIENCES_STEP_1)}`,
+                        step2: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_DIGITAL_EXPERIENCES_STEP_2)}`,
+                        step3: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_DIGITAL_EXPERIENCES_STEP_3)}`,
+                        imageText: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_DIGITAL_EXPERIENCES_IMAGE_TEXT)}`,
+                        nextButtonLabel: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_DIGITAL_EXPERIENCES_BUTTON_LABEL)}`,
+                        spinnerMainText: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_IN_PERSON_SPINNER_MAIN_TEXT)}`,
+                        error: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_DIGITAL_EXPERIENCES_ERROR)}`
+                    },
+                    screenInstallPlatformLabels: {
+                        flowLabel: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_ONE_TIME_SETUP_NAME)}`,
+                        screenLabel: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_INSTALL_PLATFORM_NAME)}`,
+                        mainText: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_INSTALL_PLATFORM_MAIN_TEXT)}`,
+                        description: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_INSTALL_PLATFORM_DESCRIPTION)}`,
+                        timeoutText: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_INSTALL_TIMEOUT_TEXT)}`,
+                        errorText: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_INSTALL_ERROR_TEXT)}`,
+                        buttonClose: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_CLOSE_BUTTON)}`,
+                        buttonRetry: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_INSTALL_BUTTON_RETRY)}`,
+                        failTitle: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_INSTALL_FAIL_TITLE)}`,
+                        failDescription: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_INSTALL_FAIL_DESCRIPTION)}`
+                    },
+                    screenPublishLabels: {
+                        flowLabel: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_ONE_TIME_SETUP_NAME)}`,
+                        screenLabel: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_PUBLISH_NAME)}`,
+                        helpLink: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_PUBLISH_HELP_LINK)}`,
+                        successText: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_INSTALL_SUCCESS_TEXT)}`,
+                        mainText: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_PUBLISH_MAIN_TEXT)}`,
+                        description: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_PUBLISH_DESCRIPTION)}`,
+                        openSite: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_PUBLISH_OPEN_SITE)}`,
+                        step1: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_PUBLISH_STEP_1)}`,
+                        step2: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_PUBLISH_STEP_2)}`,
+                        step3: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_PUBLISH_STEP_3)}`,
+                        step4: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_PUBLISH_STEP_4)}`,
+                        imageText: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_PUBLISH_IMAGE_TEXT)}`
+                    },
+                    screenConnectedAppLabels: {
+                        flowLabel: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_ONE_TIME_SETUP_NAME)}`,
+                        screenLabel: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_CONNECTED_APP_NAME)}`,
+                        helpLink: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_CONNECTED_APP_HELP_LINK)}`,
+                        mainText: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_CONNECTED_APP_MAIN_TEXT)}`,
+                        description: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_CONNECTED_APP_DESCRIPTION)}`,
+                        openConnectedApp: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_CONNECTED_APP_OPEN_APP)}`,
+                        step1: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_CONNECTED_APP_STEP_1)}`,
+                        step2: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_CONNECTED_APP_STEP_2)}`,
+                        step3: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_CONNECTED_APP_STEP_3)}`,
+                        step4: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_CONNECTED_APP_STEP_4)}`,
+                        step5: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_CONNECTED_APP_STEP_5)}`,
+                        imageText: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_CONNECTED_APP_IMAGE_TEXT)}`
+                    },
+                    screenLetterheadLabels: {
+                        flowLabel: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_ONE_TIME_SETUP_NAME)}`,
+                        screenLabel: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_LETTERHEAD_NAME)}`,
+                        helpLink: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_LETTERHEAD_HELP_LINK)}`,
+                        mainText: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_LETTERHEAD_MAIN_TEXT)}`,
+                        description: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_LETTERHEAD_DESCRIPTION)}`,
+                        openTemplates: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_LETTERHEAD_OPEN_TEMPLATES)}`,
+                        step1: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_LETTERHEAD_STEP_1)}`,
+                        step2: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_LETTERHEAD_STEP_2)}`,
+                        step3: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_LETTERHEAD_STEP_3)}`,
+                        step4: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_LETTERHEAD_STEP_4)}`,
+                        step5: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_LETTERHEAD_STEP_5)}`,
+                        imageText: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_LETTERHEAD_IMAGE_TEXT)}`,
+                        warning: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_ONE_TIME_SETUP_SCREEN_LETTERHEAD_WARNING)}`,
+                        close: `{!JSENCODE($Label.ADMIN_QUICK_SETUP_FLOW_CLOSE_BUTTON)}`
+                    }
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="coreSetupApp"
+             style="height:100vh;"></div>
+        <script type="module"
+                crossorigin="true"
+                src="{!URLFOR($Resource.coreSetup, '/index.js')}"></script>
+    </body>
+</apex:page>

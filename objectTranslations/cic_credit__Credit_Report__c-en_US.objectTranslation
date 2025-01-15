@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Client Case --></label>
+        <name>ClientCase__c</name>
+        <relationshipLabel><!-- Credit Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Bureaus --></label>
+        <name>Credit_Bureaus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adverse Action --></label>
+        <name>cic_credit__Adverse_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Borrower Type --></label>
+        <name>cic_credit__Borrower_Type__c</name>
+        <picklistValues>
+            <masterLabel>Borrower</masterLabel>
+            <translation><!-- Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-borrower</masterLabel>
+            <translation><!-- Co-borrower --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Closed Tradelines --></label>
+        <name>cic_credit__Closed_Tradelines__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collections --></label>
+        <name>cic_credit__Collections__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>cic_credit__Contact__c</name>
+        <relationshipLabel><!-- Credit Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Application --></label>
+        <name>cic_credit__Credit_Application__c</name>
+        <relationshipLabel><!-- Credit Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Bureau --></label>
+        <name>cic_credit__Credit_Bureau__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Pull Type --></label>
+        <name>cic_credit__Credit_Pull_Type__c</name>
+        <picklistValues>
+            <masterLabel>Hard</masterLabel>
+            <translation><!-- Hard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soft</masterLabel>
+            <translation><!-- Soft --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inquiries --></label>
+        <name>cic_credit__Inquiries__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Updated Date --></label>
+        <name>cic_credit__Last_Updated_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge Type --></label>
+        <name>cic_credit__Merge_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Messages --></label>
+        <name>cic_credit__Messages__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Tradelines --></label>
+        <name>cic_credit__Open_Tradelines__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>cic_credit__Opportunity__c</name>
+        <relationshipLabel><!-- Credit Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Public Records --></label>
+        <name>cic_credit__Public_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating Code Type --></label>
+        <name>cic_credit__Rating_Code_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Date --></label>
+        <name>cic_credit__Report_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report First Issued Date --></label>
+        <name>cic_credit__Report_First_Issued_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Identifier --></label>
+        <name>cic_credit__Report_Identifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Type --></label>
+        <name>cic_credit__Report_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Score --></label>
+        <name>cic_credit__Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scorecard --></label>
+        <name>cic_credit__Scorecard__c</name>
+    </fields>
+</CustomObjectTranslation>

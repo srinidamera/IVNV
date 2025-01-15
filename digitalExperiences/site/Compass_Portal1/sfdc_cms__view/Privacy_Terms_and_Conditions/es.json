@@ -1,0 +1,51 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Privacy Terms and Conditions",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "title" : "Términos y condiciones"
+        },
+        "id" : "5c7a603c-5c36-418f-ae68-c78aa5c78b6a"
+      }, {
+        "attributes" : {
+          "title" : "Requisitos del sistema"
+        },
+        "id" : "b761ffef-7f4d-4d29-a518-e1136aac3308"
+      }, {
+        "attributes" : {
+          "title" : "Seguridad"
+        },
+        "id" : "420ed4ac-1123-4911-86ba-8c8d3d30284a"
+      }, {
+        "attributes" : {
+          "title" : "Política de privacidad"
+        },
+        "id" : "71c38e0a-92b0-4af6-bb7c-311f1cfbb2d3"
+      }, {
+        "attributes" : {
+          "title" : "Política de pagos"
+        },
+        "id" : "bb3abd28-950b-4b2a-85f3-949772915390"
+      }, {
+        "id" : "b915bb71-5a70-4cda-aa81-2b2bb0096ebc",
+        "attributes" : {
+          "title" : "Términos y condiciones",
+          "description" : "Descripción"
+        }
+      }, {
+        "id" : "5f04a58e-1e3b-4e4a-a7b6-d2fffdf66711",
+        "attributes" : {
+          "displayLabels" : "Hogar, Términos y condiciones"
+        }
+      }, {
+        "id" : "5301398c-5d0d-43a0-b120-7c7ec47ec301",
+        "attributes" : {
+          "title" : "Pasarela de pago"
+        }
+      } ]
+    }
+  },
+  "urlName" : "privacy-terms-and-conditions"
+}

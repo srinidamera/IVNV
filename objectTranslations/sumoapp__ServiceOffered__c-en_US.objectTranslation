@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Daily Limit --></label>
+        <name>sumoapp__DailyLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Limit --></label>
+        <name>sumoapp__MonthlyLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service --></label>
+        <name>sumoapp__Service__c</name>
+        <relationshipLabel><!-- SUMO Service/Skill Offered --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>sumoapp__User__c</name>
+        <relationshipLabel><!-- Service Offered Users --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Weekly Limit --></label>
+        <name>sumoapp__WeeklyLimit__c</name>
+    </fields>
+</CustomObjectTranslation>

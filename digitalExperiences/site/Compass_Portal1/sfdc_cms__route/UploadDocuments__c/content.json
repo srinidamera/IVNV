@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Upload Documents",
+  "contentBody" : {
+    "activeViewId" : "Upload_Documents",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "custom-upload-documents",
+    "urlPrefix" : "upload-documents"
+  },
+  "urlName" : "upload-documents"
+}

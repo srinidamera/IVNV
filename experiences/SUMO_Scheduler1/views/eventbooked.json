@@ -1,0 +1,49 @@
+{
+  "appPageId" : "f39236a9-486d-41f9-a073-676f892292c6",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "905840a6-ae30-4a57-8224-8d65617eb2dc",
+  "label" : "eventbooked",
+  "regions" : [ {
+    "id" : "5e792b03-b5fa-41be-a1ca-2c46563ed12c",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "flowArguments" : "[]",
+        "flowName" : "sumoapp__EventBooked"
+      },
+      "componentName" : "forceCommunity:flowCommunity",
+      "id" : "055d1916-5e6a-48aa-b497-b5edfa6162f8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "97b854ff-89ab-498c-a650-6626701b8dc2",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "1a4d4fe1-6d51-4c71-99fd-872ade6e8ecb",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "eventbooked"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "a51e6424-80c9-4d62-b606-441835d0eab2",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "61e923a6-b2e1-4b4c-b6c7-aaeea68e6a5a",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-eventbooked"
+}

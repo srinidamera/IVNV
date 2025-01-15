@@ -1,0 +1,221 @@
+<template>
+	<lightning-card title="Contact Search" icon-name="standard:contact">
+		<div slot="actions">
+			<lightning-button-group>
+				<!--<lightning-button label="New Lead" variant="neutral" onclick={openLeadIntakeWizard}></lightning-button> -->
+				<lightning-button label="New Education Only" onclick={openEducationWizardModal}
+					variant="neutral"></lightning-button>
+				<lightning-button label="New Intake" onclick={openWizardModal} variant="neutral"></lightning-button>
+				<lightning-button label="New Emergency Triage" onclick={openEmergencyWizardModal}
+					variant="neutral"></lightning-button>
+				<!-- <lightning-button label="Test Error Modal" variant="neutral" onclick={openErrorModal}></lightning-button> -->
+			</lightning-button-group>
+		</div>
+		<div class="slds-m-around_medium">
+			<div class="slds-text-heading_small slds-p-bottom_medium">
+				<lightning-formatted-rich-text value={label.CONTACT_SEARCH_INFO}></lightning-formatted-rich-text><br />
+				<lightning-formatted-rich-text value={label.CONTACT_SEARCH_INFO_SECOND}></lightning-formatted-rich-text><br/>
+
+			</div>
+			<div class="slds-p-around_none slds-m-top_x-small slds-m-bottom_medium slds-m-horizontal_none">
+				<lightning-layout>
+					<lightning-layout-item flexibility="auto" padding="horizontal-medium">
+						<lightning-input type="text" label="First Name" name="FirstName" placeholder="Type here..."
+							value={firstName} onchange={handleSearchChange}></lightning-input>
+					</lightning-layout-item>
+					<lightning-layout-item flexibility="auto" padding="horizontal-medium">
+						<lightning-input type="text" label="Last Name" name="LastName" placeholder="Type here..."
+							value={lastName} onchange={handleSearchChange}></lightning-input>
+					</lightning-layout-item>
+					<lightning-layout-item flexibility="auto" padding="horizontal-medium">
+						<lightning-input type="text" label="Email" name="Email" placeholder="Type here..." value={email}
+							onchange={handleSearchChange}></lightning-input>
+					</lightning-layout-item>
+					<lightning-layout-item flexibility="auto" padding="horizontal-medium">
+						<lightning-input type="text" label="Phone" name="Phone" placeholder="Type here..." value={phone}
+							onchange={handleSearchChange}></lightning-input>
+					</lightning-layout-item>
+					<lightning-layout-item flexibility="auto" padding="horizontal-medium" class="slds-m-top_medium">
+						<lightning-button-group>
+							<lightning-button label="Reset" onclick={handleTableReset}></lightning-button>
+						</lightning-button-group>
+					</lightning-layout-item>
+				</lightning-layout>
+			</div>
+			<template if:true={showPagination}>
+				<div class="slds-m-aroung_small">
+					<lightning-datatable key-field="Id" data={recordsToDisplay} columns={columns}
+						sorted-by={sortBy} sorted-direction={sortDirection}
+						onsort={doSorting} max-row-selection="1" selected-rows={selectedRows}
+						onrowaction={handleRowAction} hide-checkbox-column>
+					</lightning-datatable>
+					<template if:true={message}>
+						<div class="slds-m-around_medium" style="text-align: center;">
+							<div class="slds-text-heading_small slds-text-color_error" style="display: inline-block;">
+								{message}
+							</div>
+						</div>
+					</template>
+				</div>
+				<br />
+				<div class="slds-m-aroung_small slds-align_absolute-center">
+					<div slot="actions">
+						<lightning-button variant="neutral" title="previous" class="slds-float_left" label="Previous"
+							icon-name="utility:chevronleft" icon-position="left" onclick={handleClick}
+							disabled={disablePreviousButton}></lightning-button>
+						<template if:true={pagelinks}>
+							<lightning-button-group class="slds-p-left_x-small slds-p-right_x-small">
+								<template for:each={pagelinks} for:item="page">
+									<lightning-button key={page} label={page} onclick={handlePage}></lightning-button>
+								</template>
+							</lightning-button-group>
+						</template>
+						<lightning-button variant="neutral" title="next" class="slds-float_right" label="Next"
+							icon-name="utility:chevronright" icon-position="right" onclick={handleClick}
+							disabled={disableNextButton}></lightning-button>
+					</div>
+				</div>
+				<div class="slds-align_absolute-center slds-p-top_medium">
+					<span class="slds-badge slds-badge_lightest">
+						Displaying {startRecord} to {endRecord} of {totalRecords} records.
+						Page {pageNo} of {totalPages}
+					</span>
+				</div>
+				<template if:true={heapExceedError}>
+					<div class="slds-align_absolute-center slds-p-top_medium" style="color: firebrick;">
+						More than 300 records present with this filter. Please refine your search.
+					</div>
+				</template>
+			</template>
+		</div>
+	</lightning-card>
+	<template if:true={isModalOpen}>
+		<c-intake-form ismodalopen={isModalOpen} onclose={closeModal} onsubmit={handleIntakeSubmit} onerror={openErrorModal} edit-existing={editIntakeId}></c-intake-form>
+	</template>
+	<template if:true={isEducationModalOpen}>
+		<c-intake-education-form ismodalopen={isEducationModalOpen} onclose={closeModal}
+			onsubmit={handleEducationalIntakeSubmit} edit-existing={editIntakeId} onerror={openErrorModal}></c-intake-education-form>
+	</template>
+	<template if:true={isEmergencyIntakeOpen}>
+		<c-emergency-intake-form ismodalopen={isEmergencyIntakeOpen} onclose={closeModal}
+			onsubmit={handleEmergencyIntakeSubmit} edit-existing={editIntakeId} onerror={openErrorModal}></c-emergency-intake-form>
+	</template>
+	<!-- <template if:true={isLeadIntakeOpen}>
+		<c-lead-intake-form ismodalopen={isLeadIntakeOpen} onclose={closeModal}
+			onsubmit={handleLeadIntakeSubmit}></c-lead-intake-form>
+	</template> -->
+	<template if:true={isIntakeComplete}>
+		<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+			aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+			<div class="slds-modal__container">
+				<!-- modal header start -->
+				<header class="slds-modal__header">
+					<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+						title="Close" onclick={handleSuccessClose}>
+						<lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+							size="small"></lightning-icon>
+						<span class="slds-assistive-text">Close</span>
+					</button>
+					<h1 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Success</h1>
+					<p class="slds-m-top_x-small">Intake for {intakeResponse.contact.FirstName}
+						{intakeResponse.contact.LastName} Created</p>
+				</header>
+				<!-- modal body start -->
+				<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+					<c-intake-success-page intake-response={intakeResponse}></c-intake-success-page>
+				</div>
+				<!-- modal footer start-->
+				<footer class="slds-modal__footer">
+					<button class="slds-button slds-button_brand" onclick={handleSuccessClose}>Finish</button>
+				</footer>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open"></div>
+	</template>
+
+
+	<template if:true={isEducationIntakeComplete}>
+		<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+			aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+			<div class="slds-modal__container">
+				<!-- modal header start -->
+				<header class="slds-modal__header">
+					<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+						title="Close" onclick={handleSuccessClose}>
+						<lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+							size="small"></lightning-icon>
+						<span class="slds-assistive-text">Close</span>
+					</button>
+					<h1 id="modal-heading-09" class="slds-text-heading_medium slds-hyphenate">Success</h1>
+					<p class="slds-m-top_x-small">New Education for {intakeResponse.FirstName} {intakeResponse.LastName} Created</p>
+				</header>
+				<!-- modal body start -->
+				<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-9">
+					<c-intake-education-success-page intake-response={intakeResponse}></c-intake-education-success-page>
+				</div>
+				<!-- modal footer start-->
+				<footer class="slds-modal__footer">
+					<button class="slds-button slds-button_brand" onclick={handleSuccessClose}>Finish</button>
+				</footer>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open"></div>
+	</template>
+
+
+	<template if:true={isEmergencyTriageComplete}>
+		<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+			aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+			<div class="slds-modal__container">
+				<!-- modal header start -->
+				<header class="slds-modal__header">
+					<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+						title="Close" onclick={handleSuccessClose}>
+						<lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+							size="small"></lightning-icon>
+						<span class="slds-assistive-text">Close</span>
+					</button>
+					<h1 id="modal-heading-19" class="slds-text-heading_medium slds-hyphenate">Success</h1>
+					<p class="slds-m-top_x-small">Emergency Intake Taken in Successfully</p>
+				</header>
+				<!-- modal body start -->
+				<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-10">
+					<c-intake-emergency-success-page intake-response={intakeResponse}></c-intake-emergency-success-page>
+				</div>
+				<!-- modal footer start-->
+				<footer class="slds-modal__footer">
+					<button class="slds-button slds-button_brand" onclick={handleSuccessClose}>Finish</button>
+				</footer>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open"></div>
+	</template>
+
+	<template if:true={isLeadIntakeComplete}>
+		<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+			aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+			<div class="slds-modal__container">
+				<!-- modal header start -->
+				<header class="slds-modal__header">
+					<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+						title="Close" onclick={handleSuccessClose}>
+						<lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+							size="small"></lightning-icon>
+						<span class="slds-assistive-text">Close</span>
+					</button>
+					<h1 id="modal-heading-29" class="slds-text-heading_medium slds-hyphenate">Success</h1>
+					<p class="slds-m-top_x-small">Lead Intake Taken in Successfully</p>
+				</header>
+				<!-- modal body start -->
+				<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-20">
+					<!-- <c-intake-lead-success-page intake-response={intakeResponse}></c-intake-lead-success-page> -->
+				</div>
+				<!-- modal footer start-->
+				<footer class="slds-modal__footer">
+					<button class="slds-button slds-button_brand" onclick={handleSuccessClose}>Finish</button>
+				</footer>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open"></div>
+	</template>
+</template>

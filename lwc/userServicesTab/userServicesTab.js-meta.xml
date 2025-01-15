@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>57.0</apiVersion>
+	<isExposed>true</isExposed>
+	<masterLabel>Portal Services</masterLabel>
+	<targets>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+	 <targetConfig targets="lightningCommunity__Default">
+	 		<property
+                type="String"
+                name="signUpLabel"
+                label="Sign Up Label"
+                default="Sign Up"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="contactUsLabel"
+                label="Contact Us Label"
+                default="Contact Us"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="allServicesLabel"
+                label="All Services Label"
+                default="All Services"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="myServicesLabel"
+                label="My Services Label"
+                default="My Services"
+				translatable="true"
+            />
+			<property
+                type="Integer"
+                name="nwServiceColumnHeight"
+                label="Height for Service Column(px)"
+                default="360"
+            />
+			<property
+                type="String"
+                name="learnMoreLinkTitle"
+                label="Learn More Link Title"
+                default="Learn More"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="viewDetailsLinkTitle"
+                label="View Details Link Title"
+                default="View Details"
+				translatable="true"
+            />
+            <property
+					type="String"
+					name="labelOpen"
+					label="Label for Open"
+					default="Open"
+					translatable="true"
+			/>
+            <property
+					type="String"
+					name="labelCompleted"
+					label="Label for Completed"
+					default="Completed"
+					translatable="true"
+			/>
+            <property
+					type="String"
+					name="labelIncomplete"
+					label="Label for Incomplete"
+					default="Incomplete"
+					translatable="true"
+			/>
+            <property
+					type="String"
+					name="labelOnHold"
+					label="Label for On Hold"
+					default="On Hold"
+					translatable="true"
+			/>
+            <property
+					type="String"
+					name="noServicesSignedUpdMsg"
+					label="Message to display when no signed up services exist."
+					default="You have not signed up for any service."
+					translatable="true"
+			/>
+        </targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

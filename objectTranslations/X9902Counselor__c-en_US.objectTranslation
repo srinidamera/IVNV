@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>9902 Counselor</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>9902 Counselor</value>
+    </caseValues>
+    <fields>
+        <label><!-- CMS Counselor ID --></label>
+        <name>CMSCounselorID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counselor Billing Method --></label>
+        <name>CounselorBillingMethod__c</name>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hourly</masterLabel>
+            <translation><!-- Hourly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Counselor Email Address --></label>
+        <name>CounselorEmailAddress__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date when the counselor&apos;s employment or contract officially ends. --></help>
+        <label><!-- Counselor Employment End Date --></label>
+        <name>CounselorEmpEndDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date when the counselor&apos;s employment or contract officially starts. --></help>
+        <label><!-- Counselor Employment Start Date --></label>
+        <name>CounselorEmpStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counselor First Name --></label>
+        <name>CounselorFirstName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the HUD ID assigned to the counselor by the Department of Housing and Urban Development. --></help>
+        <label><!-- Counselor HUD ID --></label>
+        <name>CounselorHUDID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counselor Languages --></label>
+        <name>CounselorLanguages__c</name>
+        <picklistValues>
+            <masterLabel>ASL</masterLabel>
+            <translation><!-- ASL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arabic</masterLabel>
+            <translation><!-- Arabic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cambodian</masterLabel>
+            <translation><!-- Cambodian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cantonese</masterLabel>
+            <translation><!-- Cantonese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese Mandarin</masterLabel>
+            <translation><!-- Chinese Mandarin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Creole</masterLabel>
+            <translation><!-- Creole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech</masterLabel>
+            <translation><!-- Czech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farsi</masterLabel>
+            <translation><!-- Farsi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation><!-- French --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation><!-- German --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hindi</masterLabel>
+            <translation><!-- Hindi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hmong</masterLabel>
+            <translation><!-- Hmong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indonesian</masterLabel>
+            <translation><!-- Indonesian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian</masterLabel>
+            <translation><!-- Italian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation><!-- Korean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polish</masterLabel>
+            <translation><!-- Polish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese</masterLabel>
+            <translation><!-- Portuguese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian</masterLabel>
+            <translation><!-- Russian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swahili</masterLabel>
+            <translation><!-- Swahili --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkish</masterLabel>
+            <translation><!-- Turkish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ukrainian</masterLabel>
+            <translation><!-- Ukrainian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese</masterLabel>
+            <translation><!-- Vietnamese --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Counselor Last Name --></label>
+        <name>CounselorLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counselor Middle Name --></label>
+        <name>CounselorMiddleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counselor Phone --></label>
+        <name>CounselorPhone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the billing rate at which the counselor&apos;s services are charged. --></help>
+        <label><!-- Counselor Billing Rate --></label>
+        <name>CounselorRate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select one or more options from the picklist to specify the types of counseling services offered by the counselor. --></help>
+        <label><!-- Counselor Service Types --></label>
+        <name>CounselorServiceTypes__c</name>
+        <picklistValues>
+            <masterLabel>Financial Management/Budget Counseling</masterLabel>
+            <translation><!-- Financial Management/Budget Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Improvement and Rehabilitation Counseling</masterLabel>
+            <translation><!-- Home Improvement and Rehabilitation Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mortgage Delinquency and Default Resolution Counseling</masterLabel>
+            <translation><!-- Mortgage Delinquency and Default Resolution Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-purchase Counseling</masterLabel>
+            <translation><!-- Pre-purchase Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Housing Counseling</masterLabel>
+            <translation><!-- Rental Housing Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reverse Mortgage Counseling</masterLabel>
+            <translation><!-- Reverse Mortgage Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services for Homeless Counseling</masterLabel>
+            <translation><!-- Services for Homeless Counseling --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check this box if the counselor has completed formal training and holds a certificate in counseling or a related field --></help>
+        <label><!-- Counselor Training Certificate --></label>
+        <name>CounselorTrainingCertificate__c</name>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Counselor Training Course ID --></label>
+        <name>CounselorTrainingCourseID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counselor Training Date --></label>
+        <name>CounselorTrainingDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the duration or length of the counselor&apos;s training program. --></help>
+        <label><!-- Counselor Training Duration --></label>
+        <name>CounselorTrainingDuration__c</name>
+    </fields>
+    <fields>
+        <help><!-- If &quot;Other&quot; is selected in the &quot;Counselor Training Organization&quot; field, specify the name of the training organization in this field. --></help>
+        <label><!-- Counselor Training Organization Other --></label>
+        <name>CounselorTrainingOrganizationOther__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the organization from which the counselor received training. --></help>
+        <label><!-- Counselor Training Organization --></label>
+        <name>CounselorTrainingOrganization__c</name>
+        <picklistValues>
+            <masterLabel>La Raza</masterLabel>
+            <translation><!-- La Raza --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NCRC</masterLabel>
+            <translation><!-- NCRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks America</masterLabel>
+            <translation><!-- NeighborWorks America --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If &quot;Other&quot; is selected in the &quot;Counselor Training Sponsor&quot; field, specify the name of the training sponsor in this field. --></help>
+        <label><!-- Counselor Training Sponsor Other --></label>
+        <name>CounselorTrainingSponsorOther__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the name of the entity sponsoring the counselor&apos;s training program. --></help>
+        <label><!-- Counselor Training Sponsor --></label>
+        <name>CounselorTrainingSponsor__c</name>
+        <picklistValues>
+            <masterLabel>HUD</masterLabel>
+            <translation><!-- HUD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Counselor Training Title --></label>
+        <name>CounselorTrainingTitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Element Type --></label>
+        <name>ElementType__c</name>
+        <picklistValues>
+            <masterLabel>Profile</masterLabel>
+            <translation><!-- Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Course</masterLabel>
+            <translation><!-- Training Course --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Staff Training Attendance --></label>
+        <name>StaffTrainingAttendance__c</name>
+        <relationshipLabel><!-- 9902 Counselor --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- 9902 Counselor --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- 9902 --></label>
+        <name>X9902__c</name>
+        <relationshipLabel><!-- 9902 Counselor --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HUD 9902 Error Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HUD 9902 Error Logs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>ErrorMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record ID --></label>
+        <name>RecordID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type --></label>
+        <name>RecordType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Record --></label>
+        <name>SourceRecord__c</name>
+    </fields>
+    <fields>
+        <label><!-- 9902 --></label>
+        <name>X9902__c</name>
+        <relationshipLabel><!-- HUD 9902 Error Logs --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,70 @@
+<apex:page sidebar="false"
+           controller="sumoapp.LightningOutController">
+    <apex:includeLightning />
+
+    <html xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          lang="en"
+          style="background: rgba(176, 196, 223, 1);">
+
+    <head>
+        <style type="text/css">
+            #auraErrorMessage {
+                display: none;
+            }
+
+            #contentWrapper {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
+
+            #contentWrapper .bodyDiv {
+                flex: 1;
+                overflow: auto;
+            }
+
+            #contentWrapper .bodyDiv #bodyTable {
+                height: 100%;
+                padding-bottom: 0;
+            }
+
+            #userSettingsApp {
+                position: relative;
+                height: 100%;
+            }
+
+            .admin-settings-page .sumo-header-sticky {
+                z-index: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="userSettingsApp" />
+        <div id="toastContainer"></div>
+
+        <script>
+            var isClassicTheme = {!JSENCODE($User.UIThemeDisplayed) == "Theme3"};
+            var toastContainer;
+
+            $Lightning.use("{!JSENCODE(componentPrefix)}:lightningOutInternalApp", function() {
+                $Lightning.createComponent("{!JSENCODE(componentPrefix)}:userSettingsPage", { isClassicTheme }, "userSettingsApp");
+
+                $Lightning.createComponent("{!JSENCODE(componentPrefix)}:classicToast", {}, "toastContainer", function(component) {
+                    toastContainer = component;
+                });
+            });
+
+            document.getElementById("userSettingsApp").addEventListener("lightning__showtoast", function(e) {
+                if (isClassicTheme) {
+                    toastContainer.showToast(e.toastAttributes);
+                } else {
+                    sforce.one.showToast(e.toastAttributes);
+                }
+            });
+        </script>
+    </body>
+
+    </html>
+</apex:page>

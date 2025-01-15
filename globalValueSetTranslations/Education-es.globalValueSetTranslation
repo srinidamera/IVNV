@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>College</masterLabel>
+        <translation>Universidad</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Elementary/Primary</masterLabel>
+        <translation>Primaria</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Graduate School</masterLabel>
+        <translation>Escuela de posgrado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>High School/GED</masterLabel>
+        <translation>Escuela preparatoria/GED</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Junior College</masterLabel>
+        <translation>Colegio universitario</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Junior High School</masterLabel>
+        <translation>Escuela secundaria</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>None</masterLabel>
+        <translation>Ninguno</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Other</masterLabel>
+        <translation>Otros</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>University</masterLabel>
+        <translation>Universidad técnica</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Vocational</masterLabel>
+        <translation>Vocacional</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

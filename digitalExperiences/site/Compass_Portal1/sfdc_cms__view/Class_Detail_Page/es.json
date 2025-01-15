@@ -1,0 +1,36 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Class Detail Page",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "title" : "Clases"
+        },
+        "id" : "3b290805-3401-40ed-a058-d0913272c50e"
+      }, {
+        "attributes" : {
+          "aboutText" : "Acerca de",
+          "availableSeatsText" : "Asientos disponibles",
+          "backBtnLabel" : "Regresa",
+          "cardPrimaryBtnLabel" : "Inscribirse",
+          "cardSecondaryBtnLabel" : "Pedir soporte",
+          "classText" : "Clase",
+          "classesText" : "Clases",
+          "costText" : "Costo",
+          "deliveryMethodText" : "Método de entrega",
+          "endDateText" : "Fecha/Hora de finalización",
+          "freeSponsoredText" : "Gratis / Patrocinado",
+          "inPersonText" : "En persona",
+          "learnMoreText" : "Aprende más",
+          "locationText" : "Ubicación",
+          "startDateText" : "Fecha/Hora de inicio",
+          "textOnline" : "En línea",
+          "virtualText" : "Virtual"
+        },
+        "id" : "398ca536-2512-4336-97d5-c9b2fc50dd6c"
+      } ]
+    }
+  },
+  "urlName" : "class-detail-page"
+}

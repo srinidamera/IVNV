@@ -1,0 +1,17 @@
+.slds-path__nav .slds-is-complete .slds-path__title {
+    transform: rotateX(0deg);
+}
+
+.slds-path__link {
+    justify-content: normal !important;
+}
+
+
+.custom-is_complete__span {
+    position: absolute;
+    left: 85%;
+}
+
+.slds-icon {
+    fill: white !important;
+}

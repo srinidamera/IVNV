@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>sumoapp__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability Per Day (Minutes) --></label>
+        <name>sumoapp__AvailabilityDay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability Per Month (Minutes) --></label>
+        <name>sumoapp__AvailabilityMonth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability Per Next Month (Minutes) --></label>
+        <name>sumoapp__AvailabilityNextMonth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability Per Next Quarter (Minutes) --></label>
+        <name>sumoapp__AvailabilityNextQuarter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability Per Next Week Mon (Minutes) --></label>
+        <name>sumoapp__AvailabilityNextWeekMon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability Per Next Week Sun (Minutes) --></label>
+        <name>sumoapp__AvailabilityNextWeekSun__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability Per Quarter (Minutes) --></label>
+        <name>sumoapp__AvailabilityQuarter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability Per Tomorrow (Minutes) --></label>
+        <name>sumoapp__AvailabilityTomorrow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability Per Two Weeks Mon (Minutes) --></label>
+        <name>sumoapp__AvailabilityTwoWeeksMon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability Per Two Weeks Sun (Minutes) --></label>
+        <name>sumoapp__AvailabilityTwoWeeksSun__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability Per Week Mon (Minutes) --></label>
+        <name>sumoapp__AvailabilityWeekMon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability Per Week Sun (Minutes) --></label>
+        <name>sumoapp__AvailabilityWeekSun__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ghost User Contact --></label>
+        <lookupFilter>
+            <errorMessage><!-- Value can be only a contact with Is Ghost field checked. --></errorMessage>
+        </lookupFilter>
+        <name>sumoapp__GhostUserContact__c</name>
+        <relationshipLabel><!-- SUMO Calendar Licenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Salesforce Calendar --></label>
+        <name>sumoapp__IsSalesforceCalendar__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>sumoapp__User__c</name>
+        <relationshipLabel><!-- SUMO Calendar Licenses --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

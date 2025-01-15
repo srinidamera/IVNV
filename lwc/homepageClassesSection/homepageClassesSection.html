@@ -1,0 +1,26 @@
+<template>
+  <div class="slds-m-bottom_large">
+    <c-user-classes
+      tile-height={tileHeight}
+      label-hyperlink={labelHyperlink}
+      label-class-starts={labelClassStarts}
+      status-enrolled={statusEnrolled}
+      status-no-show={statusNoShow}
+      status-attended-complete={statusAttendedComplete}
+      status-attended-in-complete={statusAttendedInComplete}
+      status-course-completed={statusCourseComplete}
+      status-course-in-complete={statusCourseInComplete}
+    ></c-user-classes>
+  </div>
+
+  <!-- Buttons -->
+  <div>
+    <c-multi-buttons
+      btn-labels={btnLabels}
+      btn-types={btnTypes}
+      redirect-to-page={redirectToPage}
+      query-params={queryParams}
+      horizontal-align={horizontalAlign}
+    ></c-multi-buttons>
+  </div>
+</template>

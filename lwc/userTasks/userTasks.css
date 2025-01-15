@@ -1,0 +1,30 @@
+.h-2 {
+  font-size: var(--dxp-s-text-heading-large-font-size) !important;
+  font-weight: var(--dxp-s-text-heading-large-font-weight) !important;
+}
+
+.tile {
+  position: relative;
+  overflow: auto;
+  background: rgba(255, 255, 255, 1);
+}
+
+.font-segoe-ui {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.hyperlink-style {
+  text-decoration: underline;
+}
+
+.font-weight-700 {
+  font-weight: 700 !important;
+}
+
+.max-width-100 {
+  max-width: 100%;
+}
+
+.margin-custom {
+  margin: 0.07rem 0.07rem 0rem 0.07rem;
+}

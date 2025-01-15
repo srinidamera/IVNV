@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Budget</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Budgets</value>
+    </caseValues>
+    <fields>
+        <label><!-- AFDC --></label>
+        <name>ActualAFDC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Attorney --></label>
+        <name>ActualAttorney__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Balance --></label>
+        <name>ActualBalance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bonuses --></label>
+        <name>ActualBonuses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Cable --></label>
+        <name>ActualCable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Charity 1 --></label>
+        <name>ActualCharity1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Charity 2 --></label>
+        <name>ActualCharity2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Charity 3 --></label>
+        <name>ActualCharity3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Child Support --></label>
+        <name>ActualChildSupport__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Clothing --></label>
+        <name>ActualClothing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comissions --></label>
+        <name>ActualComissions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Concerts --></label>
+        <name>ActualConcerts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Credit Collections --></label>
+        <name>ActualCreditCollections__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Credit card1 --></label>
+        <name>ActualCreditcard1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Credit card2 --></label>
+        <name>ActualCreditcard2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Credit card3 --></label>
+        <name>ActualCreditcard3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Dining out --></label>
+        <name>ActualDiningout__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Dry cleaning --></label>
+        <name>ActualDrycleaning__c</name>
+    </fields>
+    <fields>
+        <label><!-- Education --></label>
+        <name>ActualEducation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Electricity --></label>
+        <name>ActualElectricity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Employment --></label>
+        <name>ActualEmployment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Federal --></label>
+        <name>ActualFederal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Food --></label>
+        <name>ActualFood__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Fuel --></label>
+        <name>ActualFuel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Gas --></label>
+        <name>ActualGas__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Groceries --></label>
+        <name>ActualGroceries__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Grooming --></label>
+        <name>ActualGrooming__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Hair Nails --></label>
+        <name>ActualHairNails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Health club --></label>
+        <name>ActualHealthclub__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Home Equity Line --></label>
+        <name>ActualHomeEquityLine__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Home Owner Assoc. --></label>
+        <name>ActualHomeOwnerAssoc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Homeowner/Renters Insurance --></label>
+        <name>ActualHomeownerRentersInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Insurance --></label>
+        <name>ActualInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest &amp; Dividen --></label>
+        <name>ActualInterestDividen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Investment account --></label>
+        <name>ActualInvestmentaccount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Licensing --></label>
+        <name>ActualLicensing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Live theater --></label>
+        <name>ActualLivetheater__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Local --></label>
+        <name>ActualLocal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Maintenance or Repair --></label>
+        <name>ActualMaintenanceOrRepair__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Maintenance --></label>
+        <name>ActualMaintenance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alimony --></label>
+        <name>ActualMonthlyIncomeAlimony__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Mortgage or Rent --></label>
+        <name>ActualMortgageOrRent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Movies --></label>
+        <name>ActualMovies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Music platforms --></label>
+        <name>ActualMusicplatforms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Rental Income --></label>
+        <name>ActualNetRentalIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Night out --></label>
+        <name>ActualNightout__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Organization dues or fees --></label>
+        <name>ActualOrganizationduesorfees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other --></label>
+        <name>ActualOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overtime --></label>
+        <name>ActualOvertime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Payments on lien or judgment --></label>
+        <name>ActualPaymentsonlienorjudgment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Personal --></label>
+        <name>ActualPersonal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Phone --></label>
+        <name>ActualPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Retirement account --></label>
+        <name>ActualRetirementaccount__c</name>
+    </fields>
+    <fields>
+        <label><!-- SSI --></label>
+        <name>ActualSSI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Sporting events --></label>
+        <name>ActualSportingevents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual State --></label>
+        <name>ActualState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Student --></label>
+        <name>ActualStudent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Supplies --></label>
+        <name>ActualSupplies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Total Monthly Income --></label>
+        <name>ActualTotalMonthlyIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Toys --></label>
+        <name>ActualToys__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unemployment --></label>
+        <name>ActualUnemployment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Vehicle Payment --></label>
+        <name>ActualVehiclePayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Waste Removal --></label>
+        <name>ActualWasteRemova__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Water and Sewer --></label>
+        <name>ActualWaterAndSewer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Withholding --></label>
+        <name>ActualWithholding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alimony Difference --></label>
+        <name>Alimony_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attorney Difference --></label>
+        <name>AttorneyDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bonuses Difference --></label>
+        <name>Bonuses_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cable Diffrence --></label>
+        <name>CableDiffrence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charity 1 Difference --></label>
+        <name>Charity1Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charity 2 Difference --></label>
+        <name>Charity2Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charity 3 Difference --></label>
+        <name>Charity3Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Child Support Difference --></label>
+        <name>Child_Support_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Case --></label>
+        <name>ClientCase__c</name>
+        <relationshipLabel><!-- Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Clothing Difference --></label>
+        <name>ClothingDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commissions Difference --></label>
+        <name>Commissions_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Concerts Difference --></label>
+        <name>ConcertsDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Collections Difference --></label>
+        <name>CreditCollectionsDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit card1 Difference --></label>
+        <name>Creditcard1Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit card2 Difference --></label>
+        <name>Creditcard2Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit card3 Difference --></label>
+        <name>Creditcard3Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Difference --></label>
+        <name>Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dining out Difference --></label>
+        <name>DiningoutDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dry cleaning Difference --></label>
+        <name>DrycleaningDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Education Difference --></label>
+        <name>EducationDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electricity Diffrence --></label>
+        <name>ElectricityDiffrence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employment Difference --></label>
+        <name>Employment_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entertainment Actual Cost --></label>
+        <name>EntertainmentActualCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entertainment Actual Other --></label>
+        <name>EntertainmentActualOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entertainment Difference --></label>
+        <name>EntertainmentDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entertainment Other Difference --></label>
+        <name>EntertainmentOtherDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entertainment Projected Cost --></label>
+        <name>EntertainmentProjectedCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entertainment Projected Other --></label>
+        <name>EntertainmentProjectedOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Federal Difference --></label>
+        <name>FederalDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Food Actual Cost --></label>
+        <name>FoodActualCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Food Actual Other --></label>
+        <name>FoodActualOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Food Difference --></label>
+        <name>FoodDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Food Other Difference --></label>
+        <name>FoodOtherDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Food Projected Cost --></label>
+        <name>FoodProjectedCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Food Projected Other --></label>
+        <name>FoodProjectedOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fuel Diffrence --></label>
+        <name>FuelDiffrence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gas Diffrence --></label>
+        <name>GasDiffrence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gifts and Donations Actual Cost --></label>
+        <name>GiftsandDonationsActualCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gifts and Donations Difference --></label>
+        <name>GiftsandDonationsDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gifts and Donations Projected Cost --></label>
+        <name>GiftsandDonationsProjectedCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Groceries Difference --></label>
+        <name>GroceriesDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grooming Difference --></label>
+        <name>GroomingDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hair Nails Difference --></label>
+        <name>HairNailsDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Health club Difference --></label>
+        <name>HealthclubDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home Equity Line Difference --></label>
+        <name>HomeEquityLineDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home Owner Assoc. Difference --></label>
+        <name>HomeOwnerAssocDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Homeowner/Renters Insurance Difference --></label>
+        <name>HomeownerRentersInsuranceDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Housing Actual Cost --></label>
+        <name>HousingActualCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Housing Actual Other --></label>
+        <name>HousingActualOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Housing Diffrence --></label>
+        <name>HousingDiffrence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Housing Other Diffrence --></label>
+        <name>HousingOtherDiffrence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Housing Projected Cost --></label>
+        <name>HousingProjectedCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Housing Projected Other --></label>
+        <name>HousingProjectedOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance Diffrence --></label>
+        <name>InsuranceDiffrence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest &amp; Dividend Difference --></label>
+        <name>Interest_Dividend_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investment account Difference --></label>
+        <name>InvestmentaccountDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Actual Alimony --></label>
+        <name>LegalActualAlimony__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Actual Cost --></label>
+        <name>LegalActualCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Actual Other --></label>
+        <name>LegalActualOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Alimony Difference --></label>
+        <name>LegalAlimonyDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Difference --></label>
+        <name>LegalDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Other Difference --></label>
+        <name>LegalOtherDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Projected Alimony --></label>
+        <name>LegalProjectedAlimony__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Projected Cost --></label>
+        <name>LegalProjectedCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Projected Other --></label>
+        <name>LegalProjectedOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Licensing Diffrence --></label>
+        <name>LicensingDiffrence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live theater Difference --></label>
+        <name>LivetheaterDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loans Actual Cost --></label>
+        <name>LoansActualCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loans Actual Other --></label>
+        <name>LoansActualOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loans Difference --></label>
+        <name>LoansDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loans Other Difference --></label>
+        <name>LoansOtherDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loans Projected Cost --></label>
+        <name>LoansProjectedCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loans Projected Other --></label>
+        <name>LoansProjectedOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Difference --></label>
+        <name>LocalDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maintainance or Repair Diffrence --></label>
+        <name>MaintainanceOrRepairDiffrence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maintenance Diffrence --></label>
+        <name>MaintenanceDiffrence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Income Other Difference --></label>
+        <name>Monthly_Income_Other_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mortgage or Rent Difference --></label>
+        <name>MortgageOrRentDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Movies Difference --></label>
+        <name>MoviesDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Music platforms Difference --></label>
+        <name>MusicplatformsDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Rental Income Difference --></label>
+        <name>Net_Rental_Income_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Night out Difference --></label>
+        <name>NightoutDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization dues or fees Difference --></label>
+        <name>OrganizationduesorfeesDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overtime Difference --></label>
+        <name>Overtime_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payments on lien or judgment Difference --></label>
+        <name>PaymentsonlienorjudgmentDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Care Actual Cost --></label>
+        <name>PersonalCareActualCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Care Actual Medical --></label>
+        <name>PersonalCareActualMedical__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Care Actual Other --></label>
+        <name>PersonalCareActualOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Care Difference --></label>
+        <name>PersonalCareDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Care Medical Difference --></label>
+        <name>PersonalCareMedicalDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Care Other Difference --></label>
+        <name>PersonalCareOtherDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Care Projected Cost --></label>
+        <name>PersonalCareProjectedCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Care Projected Medical --></label>
+        <name>PersonalCareProjectedMedical__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Care Projected Other --></label>
+        <name>PersonalCareProjectedOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Difference --></label>
+        <name>PersonalDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pets Actual Cost --></label>
+        <name>PetsActualCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pets Actual Medical --></label>
+        <name>PetsActualMedical__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pets Actual Other --></label>
+        <name>PetsActualOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pets Difference --></label>
+        <name>PetsDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pets Food Difference --></label>
+        <name>PetsFoodDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pets Medical Difference --></label>
+        <name>PetsMedicalDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pets Other Difference --></label>
+        <name>PetsOtherDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pets Projected Cost --></label>
+        <name>PetsProjectedCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pets Projected Medical --></label>
+        <name>PetsProjectedMedical__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pets Projected Other --></label>
+        <name>PetsProjectedOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Difference --></label>
+        <name>PhoneDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Client --></label>
+        <name>PrimaryClient__c</name>
+        <relationshipLabel><!-- Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- AFDC --></label>
+        <name>ProjectedAFDC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Attorney --></label>
+        <name>ProjectedAttorney__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Balance --></label>
+        <name>ProjectedBalance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bonuses --></label>
+        <name>ProjectedBonuses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Cable --></label>
+        <name>ProjectedCable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Charity 1 --></label>
+        <name>ProjectedCharity1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Charity 2 --></label>
+        <name>ProjectedCharity2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Charity 3 --></label>
+        <name>ProjectedCharity3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Child Support --></label>
+        <name>ProjectedChildSupport__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Clothing --></label>
+        <name>ProjectedClothing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comissions --></label>
+        <name>ProjectedComissions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Concerts --></label>
+        <name>ProjectedConcerts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Credit Collections --></label>
+        <name>ProjectedCreditCollections__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Credit card1 --></label>
+        <name>ProjectedCreditcard1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Credit card2 --></label>
+        <name>ProjectedCreditcard2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Credit card3 --></label>
+        <name>ProjectedCreditcard3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Dining out --></label>
+        <name>ProjectedDiningout__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Dry cleaning --></label>
+        <name>ProjectedDrycleaning__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Education --></label>
+        <name>ProjectedEducation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Electricity --></label>
+        <name>ProjectedElectricity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employment --></label>
+        <name>ProjectedEmployment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Federal --></label>
+        <name>ProjectedFederal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Food --></label>
+        <name>ProjectedFood__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Fuel --></label>
+        <name>ProjectedFuel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Gas --></label>
+        <name>ProjectedGas__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Groceries --></label>
+        <name>ProjectedGroceries__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Grooming --></label>
+        <name>ProjectedGrooming__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Hair Nails --></label>
+        <name>ProjectedHairNails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Health club --></label>
+        <name>ProjectedHealthclub__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Home Equity Line --></label>
+        <name>ProjectedHomeEquityLine__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Home Owner Assoc. --></label>
+        <name>ProjectedHomeOwnerAssoc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Homeowner/Renters Insurance --></label>
+        <name>ProjectedHomeownerRentersInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Insurance --></label>
+        <name>ProjectedInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest &amp; Dividen --></label>
+        <name>ProjectedInterestDividen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Investment account --></label>
+        <name>ProjectedInvestmentaccount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Licensing --></label>
+        <name>ProjectedLicensing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Live theater --></label>
+        <name>ProjectedLivetheater__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Local --></label>
+        <name>ProjectedLocal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Maintenance or Repair --></label>
+        <name>ProjectedMaintenanceOrRepair__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Maintenance --></label>
+        <name>ProjectedMaintenance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alimony --></label>
+        <name>ProjectedMonthlyIncomeAlimony__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Mortgage or Rent --></label>
+        <name>ProjectedMortgageOrRent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Movies --></label>
+        <name>ProjectedMovies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Music platforms --></label>
+        <name>ProjectedMusicplatforms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Rental Income --></label>
+        <name>ProjectedNetRentalIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Night out --></label>
+        <name>ProjectedNightout__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Organization dues or fees --></label>
+        <name>ProjectedOrganizationduesorfees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other --></label>
+        <name>ProjectedOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overtime --></label>
+        <name>ProjectedOvertime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Payments on lien or judgment --></label>
+        <name>ProjectedPaymentsonlienorjudgment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Personal --></label>
+        <name>ProjectedPersonal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Phone --></label>
+        <name>ProjectedPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Retirement account --></label>
+        <name>ProjectedRetirementaccount__c</name>
+    </fields>
+    <fields>
+        <label><!-- SSI --></label>
+        <name>ProjectedSSI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Sporting events --></label>
+        <name>ProjectedSportingevents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected State --></label>
+        <name>ProjectedState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Student --></label>
+        <name>ProjectedStudent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Supplies --></label>
+        <name>ProjectedSupplies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Total Monthly Income --></label>
+        <name>ProjectedTotalMonthlyIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Toys --></label>
+        <name>ProjectedToys__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unemployment --></label>
+        <name>ProjectedUnemployment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Vehicle Payment --></label>
+        <name>ProjectedVehiclePayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Waste Removal --></label>
+        <name>ProjectedWasteRemoval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Water and Sewer --></label>
+        <name>ProjectedWaterAndSewer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Withholding --></label>
+        <name>ProjectedWithholding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retirement account Difference --></label>
+        <name>RetirementaccountDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- SSI Difference --></label>
+        <name>SSI_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Savings or Investments Actual Cost --></label>
+        <name>SavingsorInvestmentsActualCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Savings or Investments Actual Other --></label>
+        <name>SavingsorInvestmentsActualOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Savings or Investments Difference --></label>
+        <name>SavingsorInvestmentsDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Savings or Investments Other Difference --></label>
+        <name>SavingsorInvestmentsOtherDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Savings or Investments Projected Cost --></label>
+        <name>SavingsorInvestmentsProjectedCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Savings or Investments Projected Other --></label>
+        <name>SavingsorInvestmentsProjectedOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sporting events Difference --></label>
+        <name>SportingeventsDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Difference --></label>
+        <name>StateDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Student Difference --></label>
+        <name>StudentDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Supplies Diffrence --></label>
+        <name>SuppliesDiffrence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxes Actual Cost --></label>
+        <name>TaxesActualCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxes Actual Other --></label>
+        <name>TaxesActualOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxes Difference --></label>
+        <name>TaxesDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxes Other Difference --></label>
+        <name>TaxesOtherDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxes Projected Cost --></label>
+        <name>TaxesProjectedCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxes Projected Other --></label>
+        <name>TaxesProjectedOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Actual Cost --></label>
+        <name>TotalActualCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Difference --></label>
+        <name>TotalDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Projected Cost --></label>
+        <name>TotalProjectedCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Monthly Income Difference --></label>
+        <name>Total_Monthly_Income_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Toys Difference --></label>
+        <name>ToysDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transportation Actual Cost --></label>
+        <name>TransportationActualCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transportation Actual Other --></label>
+        <name>TransportationActualOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transportation Diffrence --></label>
+        <name>TransportationDiffrence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transportation Other Diffrence --></label>
+        <name>TransportationOtherDiffrence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transportation Projected Cost --></label>
+        <name>TransportationProjectedCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transportation Projected Other --></label>
+        <name>TransportationProjectedOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unemployment Difference --></label>
+        <name>Unemployment_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Payment Diffrence --></label>
+        <name>VehiclePaymentDiffrence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waste Removal Diffrence --></label>
+        <name>WasteRemovalDiffrence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Water and Sewer Diffrence --></label>
+        <name>WaterAndSewerDiffrence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Withholding Difference --></label>
+        <name>Withholding_Difference__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

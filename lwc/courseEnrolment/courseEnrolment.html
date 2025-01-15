@@ -1,0 +1,63 @@
+<template>
+    <div style="height:100%;width:100% !important" class="wrapper">
+        <lightning-card>
+    <div>
+        <div if:true={showSpinner}>
+            <lightning-spinner alternative-text="Loading" size="xx-small"></lightning-spinner>
+        </div>
+        
+        <div class="slds-modal__content" id="EnrollApplicants">
+                <h3 class="slds-section__title slds-theme_shade">
+                    <span class="slds-truncate slds-p-horizontal_small" title={cousename}>
+                       <b>{cousename}</b> 
+                    </span>
+                  </h3>
+            <lightning-layout>
+                <lightning-layout-item size="9" padding="around-small">
+                    <div class="slds-text-align_left">
+                        <template lwc:if={isParent}>
+                            <div class="slds-p-top_medium">
+                              <span class="slds-badge slds-theme_success">Total Course Complete: {courseComplete}</span>
+                              <span class="slds-badge slds-badge_inverse slds-m-left_small">Total Course Incomplete: {courseIncomplete}</span>
+                            </div>
+                        </template>                                  
+                        <template lwc:else>
+                            <div class="slds-p-top_medium">
+                                <span class="slds-badge">Total Seats: {totalSeats}</span>
+                                <span class="slds-badge slds-badge_inverse slds-m-left_small">Total Enrolled: {totalEnrolled}</span>
+                                <span class="slds-badge slds-theme_success slds-m-left_small">Open Seats: {openSeats}</span>
+                            </div>
+                        </template>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="3" padding="around-small">
+                    <lightning-input class="slds-col slds-size_1-of-1" type="search" variant="label-hidden" placeholder="Search Contact" onchange={handleSearch}></lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+            
+            <template if:true={items}>
+                <lightning-pill-container items={items} onitemremove={handleItemRemove}> </lightning-pill-container>
+            </template>
+            <template if:true={applicants}>
+                <lightning-datatable key-field="Id" data={applicants} columns={applicantcolumns} selected-rows={selectedContactIds} 
+                style="display: grid; height:400px"
+                enable-infinite-loading
+                sorted-by={sortBy}
+                sorted-direction={sortedDirection}
+                onsort={sortColumns}
+                onrowselection={onEnrolRow}>
+                </lightning-datatable>
+            </template>
+            
+        </div>
+
+        <footer class="slds-modal__footer" style="flex-shrink: 0;">
+            <lightning-button variant="neutral" onclick={handleClose} name="enrolcancel" label="Cancel">
+            </lightning-button>&nbsp;&nbsp;
+            <lightning-button variant="brand" disabled={disableSave} onclick={handleEnroll} name="enrollsave" label="Save">
+            </lightning-button>
+        </footer>
+    </div>
+</lightning-card>
+</div>
+</template>

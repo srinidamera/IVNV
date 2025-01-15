@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Integration Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Integration Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Agency ID --></label>
+        <name>AgencyID__c</name>
+    </fields>
+    <fields>
+        <label><!-- CMS Name --></label>
+        <name>AgencyName__c</name>
+    </fields>
+    <fields>
+        <label><!-- CMS Password --></label>
+        <name>CMSPassword__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Method --></label>
+        <name>CallMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Endpoint URL --></label>
+        <name>EndpointURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fiscal Year --></label>
+        <name>FiscalYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD AMI Data Token 1 --></label>
+        <name>HUD_AMI_Data_Token_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD AMI Data Token 2 --></label>
+        <name>HUD_AMI_Data_Token_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD AMI Data Token 3 --></label>
+        <name>HUD_AMI_Data_Token_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD AMI End Point URL --></label>
+        <name>HUD_AMI_End_Point_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Host --></label>
+        <name>Host__c</name>
+    </fields>
+    <fields>
+        <label><!-- Integration Type --></label>
+        <name>IntegrationType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Username --></label>
+        <name>Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor ID --></label>
+        <name>VendorID__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,460 @@
+<template>
+
+    <template if:true={showPrintButton}>
+        <div if:false={isIntakeUser}>
+            <lightning-button onclick={showPrintActionPlanModal} label="Print Activity Timeline"
+                icon-name="utility:print" class="slds-float_right"></lightning-button>
+        </div>
+    </template>
+
+    <template if:true={showPrintActionModal}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            class="slds-modal slds-fade-in-open" height="500px">
+            <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+                class="slds-modal slds-fade-in-open slds-modal_large">
+                <div class="slds-modal__container">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={closePrintActionPlanModal}>
+                        <lightning-icon icon-name="utility:close" size="small"></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1-print">
+                        <iframe src={actionPlanPrintUrl} height={height} width={width} referrerpolicy={referrerPolicy}
+                            title="" allow="geolocation" scrolling="no"></iframe>
+                    </div>
+                    <div class="slds-modal__footer">
+                        <button class="slds-button slds-button_neutral" aria-label="Cancel and close"
+                            onclick={closePrintActionPlanModal}>Cancel</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+
+
+    <div style="margin-left: 3%; margin-bottom: 1%;">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_2-of-3">
+                <div class="slds-grid slds-gutters">
+                    <template if:false={hideNotesToggle}>
+                        <div class="slds-col" if:false={isIntakeUser}>
+                            <lightning-input type="toggle" class="notesToggle" label={notesLabel} name="input2"
+                                message-toggle-active="Show" message-toggle-inactive="Hide"
+                                onchange={handleCaseManagementToggle} checked></lightning-input>
+                        </div>
+                    </template>
+                    <div class="slds-col">
+                        <lightning-input type="toggle" label="Appointments" name="input3" message-toggle-active="Show"
+                            message-toggle-inactive="Hide" onchange={handleAppointmentToggle} checked></lightning-input>
+                    </div>
+                    <div class="slds-col">
+                        <template if:false={isIntakeClientCase}>
+                            <lightning-input type="toggle" label="Courses" name="input3" message-toggle-active="Show"
+                                message-toggle-inactive="Hide" onchange={handleCoursesToggle} checked></lightning-input>
+                        </template>
+                    </div>
+
+                </div>
+            </div>
+            <template if:true={isClientCase}>
+                <div class="slds-col slds-size_1-of-3" style="display: flex; justify-content: right;"
+                    if:false={isIntakeUser}>
+                    <lightning-button-group>
+                        <lightning-button label={newNotesLabel} onclick={handleNew}></lightning-button>
+                    </lightning-button-group>
+                </div>
+            </template>
+
+        </div>
+    </div>
+
+    <lightning-accordion allow-multiple-sections-open active-section-name={activeSections}>
+        <template for:each={eventData} for:item="eventGroup" for:index="eventGroupIndex">
+            <lightning-accordion-section name={eventGroup.title} label={eventGroup.monthName} key={eventGroup.title}>
+                <ul class="slds-timeline">
+                    <template for:each={eventGroup.eventList} for:item="event" for:index="index">
+                        <template if:true={event.isNote}>
+                            <template if:true={showCaseManagement}>
+                                <li key={event.recordId}>
+                                    <div class="slds-timeline__item_expandable slds-timeline__item_task"
+                                        data-id={event.recordId}>
+                                        <span class="slds-assistive-text">task</span>
+                                        <div class="slds-media">
+                                            <div class="slds-media__figure">
+                                                <lightning-button-icon icon-name="utility:chevronright" variant="bare"
+                                                    data-locator={event.recordId}
+                                                    onclick={handleActivityDisplay}></lightning-button-icon>
+                                                <div class="slds-icon_container slds-icon-standard-task slds-timeline__icon"
+                                                    title="task">
+                                                    <lightning-icon icon-name="standard:note" alternative-text="Task"
+                                                        title="Note"></lightning-icon>
+                                                </div>
+                                            </div>
+                                            <div class="slds-media__body">
+                                                <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                                    <div
+                                                        class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                                                        <h3 class="slds-truncate" title={event.title}>
+                                                            <a>
+                                                                <strong data-id={event.recordId}
+                                                                    data-object="CounselorNote__c"
+                                                                    onclick={viewRecord}>{event.title}</strong>
+                                                            </a>
+                                                        </h3>
+                                                        <div class="slds-no-flex">
+                                                            <span class="slds-icon_container slds-icon-utility-rotate"
+                                                                title="Recurring Task">
+                                                                <svg class="slds-icon slds-icon_xx-small slds-icon-text-default slds-m-left_x-small"
+                                                                    aria-hidden="true">
+                                                                    <use
+                                                                        xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#rotate">
+                                                                    </use>
+                                                                </svg>
+                                                                <span class="slds-assistive-text">Recurring Task</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-timeline__actions slds-timeline__actions_inline">
+                                                        <p class="slds-timeline__date">{event.displayDate}</p>
+                                                        <lightning-button-menu alternative-text="Show menu"
+                                                            disabled={isIntakeUser}>
+                                                            <lightning-menu-item value="EditNotes" label="Edit Notes"
+                                                                onclick={handleEditNote}></lightning-menu-item>
+                                                            <lightning-menu-item value="DeleteNotes"
+                                                                label="Delete Notes"></lightning-menu-item>
+
+                                                        </lightning-button-menu>
+                                                    </div>
+                                                </div>
+                                                <!-- <p class="slds-m-horizontal_xx-small">
+                                                </p> -->
+                                                <c-activity-tile-view object-id={event.recordId} event-type="Note"
+                                                    client-case={event.clientCase}></c-activity-tile-view>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </template>
+                        </template>
+
+                        <template if:true={event.isAppointment}>
+                            <template if:true={showAppointment}>
+                                <li key={event.recordId}>
+                                    <div class="slds-timeline__item_expandable slds-timeline__item_event"
+                                        data-id={event.recordId}>
+                                        <span class="slds-assistive-text">task</span>
+                                        <div class="slds-media">
+                                            <div class="slds-media__figure">
+                                                <lightning-button-icon icon-name="utility:chevronright" variant="bare"
+                                                    data-locator={event.recordId}
+                                                    onclick={handleActivityDisplay}></lightning-button-icon>
+                                                <div
+                                                    class="slds-icon_container slds-icon-standard-task slds-timeline__icon">
+                                                    <lightning-icon icon-name="standard:event"
+                                                        alternative-text="Appointment"
+                                                        title="Appointment"></lightning-icon>
+                                                </div>
+                                            </div>
+                                            <div class="slds-media__body">
+                                                <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                                    <div
+                                                        class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                                                        <h3 class="slds-truncate" title={event.title}>
+                                                            <a>
+                                                                <strong data-id={event.recordId} data-object="Event"
+                                                                    onclick={viewRecord}>{event.title}</strong>
+                                                            </a>
+                                                        </h3>
+                                                        <div class="slds-no-flex">
+                                                            <span class="slds-icon_container slds-icon-utility-rotate"
+                                                                title="Recurring Task">
+                                                                <svg class="slds-icon slds-icon_xx-small slds-icon-text-default slds-m-left_x-small"
+                                                                    aria-hidden="true">
+                                                                    <use
+                                                                        xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#rotate">
+                                                                    </use>
+                                                                </svg>
+                                                                <span class="slds-assistive-text">Recurring Task</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-timeline__actions slds-timeline__actions_inline">
+                                                        <p class="slds-timeline__date">{event.displayDate}</p>
+                                                        <lightning-button-menu alternative-text="Show menu"
+                                                            disabled={isIntakeUser}>
+                                                            <lightning-menu-item value="AddNotes" label="Add Notes"
+                                                                data-index={index} data-parent-index={eventGroupIndex}
+                                                                onclick={openAppointmentModal}></lightning-menu-item>
+                                                            <lightning-menu-item value="ViewCalendar"
+                                                                label="View Calendar"></lightning-menu-item>
+
+                                                        </lightning-button-menu>
+                                                    </div>
+                                                </div>
+                                                <p class="slds-m-horizontal_xx-small">
+                                                    {event.description}
+                                                </p>
+                                                <c-activity-tile-view object-id={event.recordId} event-type="Event"
+                                                    related-id={event.relatedId}
+                                                    client-case={event.clientCase}></c-activity-tile-view>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </template>
+                        </template>
+                        <template if:false={isClientCase}>
+                            <template if:true={event.isCourse}>
+                                <template if:true={showCourse}>
+                                    <li key={event.recordId}>
+                                        <div class="slds-timeline__item_expandable slds-timeline__item_call"
+                                            data-id={event.recordId}>
+                                            <span class="slds-assistive-text">task</span>
+                                            <div class="slds-media">
+                                                <div class="slds-media__figure">
+                                                    <lightning-button-icon icon-name="utility:chevronright"
+                                                        variant="bare" data-locator={event.recordId}
+                                                        onclick={handleActivityDisplay}></lightning-button-icon>
+                                                    <div class="slds-icon_container slds-icon-standard-task slds-timeline__icon"
+                                                        title="task">
+                                                        <lightning-icon icon-name="standard:education"
+                                                            alternative-text="Course" title="Course"></lightning-icon>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-media__body">
+                                                    <div
+                                                        class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                                                        <div
+                                                            class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                                                            <h3 class="slds-truncate" title={event.title}>
+                                                                <a>
+                                                                    <strong data-id={event.relatedId}
+                                                                        data-object="sumoapp__AdditionalInfo__c"
+                                                                        onclick={viewRecord}>{event.title}</strong>
+                                                                </a>
+                                                            </h3>
+                                                            <div class="slds-no-flex">
+                                                                <span
+                                                                    class="slds-icon_container slds-icon-utility-rotate"
+                                                                    title="Recurring Task">
+                                                                    <svg class="slds-icon slds-icon_xx-small slds-icon-text-default slds-m-left_x-small"
+                                                                        aria-hidden="true">
+                                                                        <use
+                                                                            xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#rotate">
+                                                                        </use>
+                                                                    </svg>
+                                                                    <span class="slds-assistive-text">Recurring
+                                                                        Task</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="slds-timeline__actions slds-timeline__actions_inline">
+                                                            <p class="slds-timeline__date">{event.displayDate}</p>
+                                                            <lightning-button-icon icon-name="utility:preview"
+                                                                alternative-text="View" title="View"
+                                                                data-id={event.relatedId}
+                                                                data-object="sumoapp__AdditionalInfo__c"
+                                                                onclick={viewRecord}></lightning-button-icon>
+                                                        </div>
+                                                    </div>
+                                                    <p class="slds-m-horizontal_xx-small">
+                                                        {event.description}
+                                                    </p>
+                                                    <c-activity-tile-view event-type="Course" object-id={event.recordId}
+                                                        related-id={event.relatedId}></c-activity-tile-view>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </template>
+                            </template>
+                        </template>
+                    </template>
+                </ul>
+            </lightning-accordion-section>
+        </template>
+
+    </lightning-accordion>
+
+    <div class="slds-text-align_center">No
+        more past activities to load.</div>
+
+    <template if:true={showModal}>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+        <div role="dialog" tabindex="-1" aria-modal="true" aria-describedby="modal-content-id-1"
+            class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                    onclick={handleCancel}>
+                    <lightning-icon icon-name="utility:close" size="small"></lightning-icon>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <div class="slds-modal__header">
+                    <div class="slds-media">
+                        <lightning-icon icon-name="standard:note" size="small"
+                            class="slds-media__figure"></lightning-icon>
+                        <div class="slds-media__body">
+                            <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">New Case
+                                Management Note</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <lightning-record-edit-form object-api-name="CounselorNote__c" onsuccess={handleNoteCreationSuccess}
+                    onsubmit={handleNoteCreateSubmit} lwc:ref="noteSaveForm">
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <div class="slds-box slds-theme_shade slds-text-heading_medium">
+                            {clientName}
+                        </div>
+                        <!-- Add form fields here -->
+
+                        <lightning-input-field field-name="Subject__c"> </lightning-input-field>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2 slds-p-bottom_medium">
+                                <lightning-input-field field-name="StartDatetime__c"> </lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2 slds-p-right_small slds-p-bottom_medium">
+                                <lightning-input-field field-name="Duration__c" variant="label-stacked"
+                                    style="top:1.2rem;"> </lightning-input-field>
+                            </div>
+                        </div>
+                        <div class="slds-p-bottom_medium">
+                            <lightning-input-field field-name="Notes__c" required> </lightning-input-field>
+                        </div>
+
+                    </div>
+                    <div class="slds-modal__footer">
+                        <div class="slds-m-top_medium">
+                            <lightning-button label="Save" variant="brand" type="submit"></lightning-button>
+                            <lightning-button label="Cancel" onclick={handleCancel}
+                                class="slds-m-left_x-small"></lightning-button>
+                        </div>
+                    </div>
+                </lightning-record-edit-form>
+            </div>
+        </div>
+    </template>
+
+
+    <template if:true={showAppointmentModal}>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+        <div role="dialog" tabindex="-1" aria-modal="true" aria-describedby="modal-content-id-2"
+            class="slds-modal slds-fade-in-open slds-modal_medium">
+            <div class="slds-modal__container">
+                <div if:true={showCancelSpinner}>
+                    <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+                </div>
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                    onclick={handleAppointmentCancel}>
+                    <lightning-icon icon-name="utility:close" size="small"></lightning-icon>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <div class="slds-modal__header">
+                    <div class="slds-media">
+                        <lightning-icon icon-name="standard:service_appointment" size="small"
+                            class="slds-media__figure"></lightning-icon>
+                        <div class="slds-media__body">
+                            <h2 id="modal-heading-02" class="slds-text-heading_medium slds-hyphenate">Appointment Notes
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+                    <div class="slds-box slds-theme_shade slds-text-heading_medium">
+
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col">
+                                <p><strong>Name : </strong>{notesInputObj.contactName}</p>
+                            </div>
+                            <div class="slds-col" style="display: flex; justify-content: right;">
+                                <p><strong>When : </strong>{notesInputObj.notesDurationDate}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-2 slds-p-right_small slds-p-bottom_medium">
+                            <lightning-combobox label="Funder" value={selectedRecord.Funder__c} options={funderOptions}
+                                onchange={handleInputChange}></lightning-combobox>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 slds-p-bottom_medium">
+                            <lightning-combobox label="Outcome" value={selectedRecord.Outcome__c}
+                                options={outcomeOptions} onchange={handleInputChange}></lightning-combobox>
+                        </div>
+                    </div>
+                    <div class="slds-p-bottom_medium">
+                        <lightning-input label="Purpose" value={selectedRecord.Purpose__c}
+                            onchange={handleInputChange}></lightning-input>
+                    </div>
+                    -->
+                    <div class="slds-p-bottom_medium">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input label="Duration in Minutes" name="durationInMin" type="number"
+                                    value={notesInputObj.durationInMin} onchange={handleInputChange}></lightning-input>
+                            </div>
+
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-combobox name="appointmentStatus" label="Appointment Status"
+                                    options={appointmentStatusValues} onchange={handleInputChange}
+                                    value={notesInputObj.appointmentStatus}></lightning-combobox>
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="slds-p-bottom_medium">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-combobox name="hudActivity" label="Hud Activity Type"
+                                    options={hudActivityValues} onchange={handleInputChange}
+                                    value={notesInputObj.hudActivity}></lightning-combobox>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slds-p-bottom_medium">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-combobox name="purpose" label="Purpose" options={purposeValues}
+                                    onchange={handleInputChange} value={notesInputObj.purpose}></lightning-combobox>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <label class="slds-form-element__label">
+                                    Outcomes
+                                </label>
+                                <c-combobox label="Select Outcome" variant="standard" options={outcomeValues}
+                                    value={notesInputObj.outcome} multiselect lwc:ref="outcome"></c-combobox>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="slds-p-bottom_medium">
+                        <lightning-input-rich-text label="Notes" name="notes" label-visible value={notesInputObj.notes}
+                            onchange={handleInputChange}></lightning-input-rich-text>
+                    </div>
+
+
+
+                </div>
+                <div class="slds-modal__footer">
+                    <div class="slds-m-top_medium">
+                        <lightning-button label="Save" variant="brand"
+                            onclick={updateAppointmentNotes}></lightning-button>
+                        <lightning-button label="Cancel" onclick={handleAppointmentCancel}
+                            class="slds-m-left_x-small"></lightning-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</template>

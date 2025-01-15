@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>DAYS</fullName>
+        <default>true</default>
+        <label>Day/s</label>
+    </customValue>
+    <customValue>
+        <fullName>MINUTES</fullName>
+        <default>false</default>
+        <label>Minute/s</label>
+    </customValue>
+    <customValue>
+        <fullName>HOURS</fullName>
+        <default>false</default>
+        <label>Hour/s</label>
+    </customValue>
+    <customValue>
+        <fullName>WEEKS</fullName>
+        <default>false</default>
+        <label>Week/s</label>
+    </customValue>
+    <customValue>
+        <fullName>MONTHS</fullName>
+        <default>false</default>
+        <label>Month/s</label>
+    </customValue>
+    <masterLabel>Time Periods</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

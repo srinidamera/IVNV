@@ -1,0 +1,3413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Client Case</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Client Cases</value>
+    </caseValues>
+    <fields>
+        <label><!-- AMI at End of Client Case --></label>
+        <name>AMIAtEndOfClientCase__c</name>
+        <picklistValues>
+            <masterLabel>30% - 49% AMI</masterLabel>
+            <translation><!-- 30% - 49% AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50% - 79% AMI</masterLabel>
+            <translation><!-- 50% - 79% AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80% - 100% AMI</masterLabel>
+            <translation><!-- 80% - 100% AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt; 30% AMI of Area Median Income (AMI)</masterLabel>
+            <translation><!-- &lt; 30% AMI of Area Median Income (AMI) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt; 100% AMI</masterLabel>
+            <translation><!-- &gt; 100% AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chose not to respond</masterLabel>
+            <translation><!-- Chose not to respond --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AMI at Start of Client Case --></label>
+        <name>AMIAtStartOfClientCase__c</name>
+        <picklistValues>
+            <masterLabel>101% - 120% AMI</masterLabel>
+            <translation><!-- 101% - 120% AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30% - 49% AMI</masterLabel>
+            <translation><!-- 30% - 49% AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50% - 79% AMI</masterLabel>
+            <translation><!-- 50% - 79% AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80% - 100% AMI</masterLabel>
+            <translation><!-- 80% - 100% AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Above 120% of AMI</masterLabel>
+            <translation><!-- Above 120% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Below 30% of AMI</masterLabel>
+            <translation><!-- Below 30% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chose not to respond</masterLabel>
+            <translation><!-- Chose not to respond --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Acquired as a result of foreclosure --></label>
+        <name>Acquiredasaresultofforeclosure__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Action Plan Created Date --></label>
+        <name>Action_Plan_Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Military --></label>
+        <name>ActiveMilitary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address # --></label>
+        <name>AddressMailingStreet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age Check --></label>
+        <name>AgeCheck__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Household Income --></label>
+        <name>AnnualHouseholdIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Area Median Income --></label>
+        <name>AreaMedianIncome__c</name>
+        <picklistValues>
+            <masterLabel>101% - 120% of AMI</masterLabel>
+            <translation><!-- 101% - 120% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 - 49% of AMI</masterLabel>
+            <translation><!-- 30 - 49% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50 - 79% of AMI</masterLabel>
+            <translation><!-- 50 - 79% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80 - 100% of AMI</masterLabel>
+            <translation><!-- 80 - 100% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Above 120% of AMI</masterLabel>
+            <translation><!-- Above 120% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Below 30% of AMI</masterLabel>
+            <translation><!-- Below 30% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chose not to respond</masterLabel>
+            <translation><!-- Chose not to respond --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bedrooms --></label>
+        <name>Bedrooms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Built off site (factory built) --></label>
+        <name>Builtoffsitefactorybuilt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Built of site (factory built) --></label>
+        <name>Builtofsitefactorybuilt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buyer&apos;s Agent Sales Concessions --></label>
+        <name>BuyersAgentSalesConcessions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Resolution Date --></label>
+        <name>CaseResolutionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Resolution --></label>
+        <name>CaseResolution__c</name>
+        <picklistValues>
+            <masterLabel>Advised on Re-Cert for HUD/Other Subsidy</masterLabel>
+            <translation><!-- Advised on Re-Cert for HUD/Other Subsidy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bankruptcy</masterLabel>
+            <translation><!-- Bankruptcy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brought Mortgage Current</masterLabel>
+            <translation><!-- Brought Mortgage Current --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete Financial Mgt/Budget Counseling</masterLabel>
+            <translation><!-- Complete Financial Mgt/Budget Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete Home Maintenance Counseling</masterLabel>
+            <translation><!-- Complete Home Maintenance Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counseled and Utilities Brought Current</masterLabel>
+            <translation><!-- Counseled and Utilities Brought Current --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counseled on HECM; Declined Mortgage</masterLabel>
+            <translation><!-- Counseled on HECM; Declined Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counseled/Referred Legal Assist w/ Eviction</masterLabel>
+            <translation><!-- Counseled/Referred Legal Assist w/ Eviction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counseled/Referred for Legal Assistance</masterLabel>
+            <translation><!-- Counseled/Referred for Legal Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counseled/Referred to Agency</masterLabel>
+            <translation><!-- Counseled/Referred to Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counseled/Referred to Legal Aid</masterLabel>
+            <translation><!-- Counseled/Referred to Legal Aid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counseled/Referred to National Council on Aging</masterLabel>
+            <translation><!-- Counseled/Referred to National Council on Aging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counseled/Referred to Other Agency</masterLabel>
+            <translation><!-- Counseled/Referred to Other Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counselor developed or updated an emergency preparedess plan</masterLabel>
+            <translation><!-- Counselor developed or updated an emergency preparedess plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Score and/or resolved credit issues</masterLabel>
+            <translation><!-- Credit Score and/or resolved credit issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decided Not to Purchase</masterLabel>
+            <translation><!-- Decided Not to Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decided to Remain in Current Housing</masterLabel>
+            <translation><!-- Decided to Remain in Current Housing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decrease Costs of tax filing</masterLabel>
+            <translation><!-- Decrease Costs of tax filing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred payment loan</masterLabel>
+            <translation><!-- Deferred payment loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Shelter</masterLabel>
+            <translation><!-- Emergency Shelter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engage in new financial products</masterLabel>
+            <translation><!-- Engage in new financial products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entered Debt Management Plan</masterLabel>
+            <translation><!-- Entered Debt Management Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entered Debt Mgt/Repayment Plan</masterLabel>
+            <translation><!-- Entered Debt Mgt/Repayment Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entered Lease Purchase Pgm</masterLabel>
+            <translation><!-- Entered Lease Purchase Pgm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Establish credit history</masterLabel>
+            <translation><!-- Establish credit history --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Establish savings for a specific goal</masterLabel>
+            <translation><!-- Establish savings for a specific goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executed Deed-in-lieu</masterLabel>
+            <translation><!-- Executed Deed-in-lieu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fewer accounts in collectionsï¿½</masterLabel>
+            <translation><!-- Fewer accounts in collectionsï¿½ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fewer debts past-due</masterLabel>
+            <translation><!-- Fewer debts past-due --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Found Alternative (Found alternative rental housing)</masterLabel>
+            <translation><!-- Found Alternative (Found alternative rental housing) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fulfilled (Purchased housing)</masterLabel>
+            <translation><!-- Fulfilled (Purchased housing) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Have sufficient savings to cover at least three months of basic living expenses</masterLabel>
+            <translation><!-- Have sufficient savings to cover at least three months of basic living expenses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Household gained access to disaster recovery financial resources after receiving housing counseling services ex: Red cross, FEMA</masterLabel>
+            <translation><!-- Household gained access to disaster recovery financial resources after receiving housing counseling services ex: Red cross, FEMA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Household gained access to disaster recovery non-housing resources after receiving housing counseling services ex: Red cross, FEMAs</masterLabel>
+            <translation><!-- Household gained access to disaster recovery non-housing resources after receiving housing counseling services ex: Red cross, FEMAs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Household obtained disaster recovery housing and financial resources after receiving housing counseling services</masterLabel>
+            <translation><!-- Household obtained disaster recovery housing and financial resources after receiving housing counseling services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Improved financial capacity to handle potential disaster</masterLabel>
+            <translation><!-- Improved financial capacity to handle potential disaster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase ability to manage fluctuations income</masterLabel>
+            <translation><!-- Increase ability to manage fluctuations income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase access to credit</masterLabel>
+            <translation><!-- Increase access to credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase amount of appropriate insurance coverage</masterLabel>
+            <translation><!-- Increase amount of appropriate insurance coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase net worth</masterLabel>
+            <translation><!-- Increase net worth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase savings</masterLabel>
+            <translation><!-- Increase savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increased in tax benefit Optimize public benefits portfolio</masterLabel>
+            <translation><!-- Increased in tax benefit Optimize public benefits portfolio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initiated Forbearance Agreement</masterLabel>
+            <translation><!-- Initiated Forbearance Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mortgage Foreclosed</masterLabel>
+            <translation><!-- Mortgage Foreclosed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mortgage Modified</masterLabel>
+            <translation><!-- Mortgage Modified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mortgage Refinanced</masterLabel>
+            <translation><!-- Mortgage Refinanced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Obtained a HECM</masterLabel>
+            <translation><!-- Obtained a HECM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Obtained a Non-FHA Reverse Mortgage</masterLabel>
+            <translation><!-- Obtained a Non-FHA Reverse Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (final result not listed above)</masterLabel>
+            <translation><!-- Other (final result not listed above) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Home Equity Conversion options</masterLabel>
+            <translation><!-- Other Home Equity Conversion options --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial Claim</masterLabel>
+            <translation><!-- Partial Claim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permanent Housing w/ Rental Assistance</masterLabel>
+            <translation><!-- Permanent Housing w/ Rental Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permanent Housing w/out Rental Assistance</masterLabel>
+            <translation><!-- Permanent Housing w/out Rental Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-foreclosure Sale</masterLabel>
+            <translation><!-- Pre-foreclosure Sale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property tax deferral</masterLabel>
+            <translation><!-- Property tax deferral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rcvd. 2nd Mortgage</masterLabel>
+            <translation><!-- Rcvd. 2nd Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rcvd. Consumer Loan (Unsecured)</masterLabel>
+            <translation><!-- Rcvd. Consumer Loan (Unsecured) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rcvd. Home Equity/Home Improvement Loan</masterLabel>
+            <translation><!-- Rcvd. Home Equity/Home Improvement Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rcvd. Housing Search Assistance</masterLabel>
+            <translation><!-- Rcvd. Housing Search Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received counseling and did not receive a HECM mortgage</masterLabel>
+            <translation><!-- Received counseling and did not receive a HECM mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received counseling and received a HECM mortgage</masterLabel>
+            <translation><!-- Received counseling and received a HECM mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reduce level of debt</masterLabel>
+            <translation><!-- Reduce level of debt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred to Other Agency</masterLabel>
+            <translation><!-- Referred to Other Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred to Other Agency w/ Rental Asst</masterLabel>
+            <translation><!-- Referred to Other Agency w/ Rental Asst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred to Other Agency w/ Social Services</masterLabel>
+            <translation><!-- Referred to Other Agency w/ Social Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred to Other Social Srv Agency</masterLabel>
+            <translation><!-- Referred to Other Social Srv Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remained Homeless</masterLabel>
+            <translation><!-- Remained Homeless --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolved Issue in Current Tenancy</masterLabel>
+            <translation><!-- Resolved Issue in Current Tenancy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolved security deposit dispute</masterLabel>
+            <translation><!-- Resolved security deposit dispute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sold House, Chose Alt. Housing Solution</masterLabel>
+            <translation><!-- Sold House, Chose Alt. Housing Solution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sold Property</masterLabel>
+            <translation><!-- Sold Property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spend less on financial services</masterLabel>
+            <translation><!-- Spend less on financial services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stabilize housing (at risk of eviction or foreclosure)</masterLabel>
+            <translation><!-- Stabilize housing (at risk of eviction or foreclosure) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspended (Withdrew from counseling)</masterLabel>
+            <translation><!-- Suspended (Withdrew from counseling) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Temp. Rental Relief</masterLabel>
+            <translation><!-- Temp. Rental Relief --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transitional Housing</masterLabel>
+            <translation><!-- Transitional Housing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrew from counseling</masterLabel>
+            <translation><!-- Withdrew from counseling --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Sub Type --></label>
+        <name>CaseSubType__c</name>
+        <picklistValues>
+            <masterLabel>NW Client Other Based Services</masterLabel>
+            <translation><!-- NW Client Other Based Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NW Refinance Non-Foreclosure</masterLabel>
+            <translation><!-- NW Refinance Non-Foreclosure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NW Rehab</masterLabel>
+            <translation><!-- NW Rehab --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Type Name --></label>
+        <name>CaseTypeName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Type --></label>
+        <name>CaseType__c</name>
+        <relationshipLabel><!-- Client Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Census Tract Lookup --></label>
+        <name>CensusTractLookup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Census Tract --></label>
+        <name>CensusTract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chose Not to Provide Income --></label>
+        <name>ChoseNottoProvideIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Case Closed Date --></label>
+        <name>ClientCaseClosedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Case Name --></label>
+        <name>ClientCaseName__c</name>
+    </fields>
+    <fields>
+        <help><!-- [1] In Progress: Case pending
+
+[2] Closed - Incomplete: Didn’t meet original outcome
+
+[3] Closed - Complete: Met the outcome
+
+[4] On Hold: Case temporarily paused --></help>
+        <label><!-- Client Case Status --></label>
+        <name>ClientCaseStatus__c</name>
+        <picklistValues>
+            <masterLabel>Closed - Complete</masterLabel>
+            <translation><!-- Closed - Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Incomplete</masterLabel>
+            <translation><!-- Closed - Incomplete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client Case Term --></label>
+        <name>ClientCaseTerm__c</name>
+        <picklistValues>
+            <masterLabel>Long Term</masterLabel>
+            <translation><!-- Long Term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium Term</masterLabel>
+            <translation><!-- Medium Term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short Term</masterLabel>
+            <translation><!-- Short Term --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client HUD Assistance --></label>
+        <name>ClientHUDAssistance__c</name>
+        <picklistValues>
+            <masterLabel>Down Payment Assistance</masterLabel>
+            <translation><!-- Down Payment Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Ownership Voucher</masterLabel>
+            <translation><!-- Home Ownership Voucher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other HUD Program</masterLabel>
+            <translation><!-- Other HUD Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Place Based Rental Assistance</masterLabel>
+            <translation><!-- Place Based Rental Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchase REO Property</masterLabel>
+            <translation><!-- Purchase REO Property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Voucher</masterLabel>
+            <translation><!-- Rental Voucher --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client # --></label>
+        <name>ClientNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Predatory Lending --></label>
+        <name>ClientPredatoryLending__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Closing Costs --></label>
+        <name>ClosingCosts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Colonias Residence --></label>
+        <name>ColoniasResidence__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Counsel Session Date End --></label>
+        <name>CounselSessionDateEnd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counsel Session Date Start --></label>
+        <name>CounselSessionDateStart__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counsel Session Duration --></label>
+        <name>CounselSessionDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counseling and Edu Hours By Other Agency --></label>
+        <name>CounselingAndEduHoursByOtherAgency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counseling Fee --></label>
+        <name>CounselingFee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Counseling Session Types --></label>
+        <name>CounselingSessionTypes__c</name>
+        <picklistValues>
+            <masterLabel>Face to Face</masterLabel>
+            <translation><!-- Face to Face --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation><!-- Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internet</masterLabel>
+            <translation><!-- Internet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Counseling Termination --></label>
+        <name>CounselingTermination__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dropped Out</masterLabel>
+            <translation><!-- Dropped Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Further Contact</masterLabel>
+            <translation><!-- No Further Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ongoing</masterLabel>
+            <translation><!-- Ongoing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred</masterLabel>
+            <translation><!-- Referred --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Assigned Counselor --></label>
+        <name>CounsellorName__c</name>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Score Date --></label>
+        <name>CreditScoreDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Score Goal --></label>
+        <name>CreditScoreGoal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Score Source --></label>
+        <name>CreditScoreSource__c</name>
+        <picklistValues>
+            <masterLabel>Equifax</masterLabel>
+            <translation><!-- Equifax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Experian</masterLabel>
+            <translation><!-- Experian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TransUnion</masterLabel>
+            <translation><!-- TransUnion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tri-merge</masterLabel>
+            <translation><!-- Tri-merge --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Credit Score --></label>
+        <name>CreditScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Monthly Debt Obligation Goal --></label>
+        <name>CurrentMonthlyDebtObligationGoal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Residence ownership --></help>
+        <label><!-- Current Residence --></label>
+        <name>CurrentResidence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date AMI Last Calculated --></label>
+        <name>DateAMILastCalculated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date HBE Provided by Other Agency --></label>
+        <name>DateHBEProvidedByOtherAgency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date HBE Provided Check --></label>
+        <name>DateHBEProvidedCheck__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled Status --></label>
+        <name>DisabledStatus__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Discrimination Victim --></label>
+        <name>DiscriminationVictim__c</name>
+    </fields>
+    <fields>
+        <label><!-- Divorce --></label>
+        <name>Divorce__c</name>
+    </fields>
+    <fields>
+        <label><!-- Education --></label>
+        <name>Education__c</name>
+    </fields>
+    <fields>
+        <help><!-- Client Email Address --></help>
+        <label><!-- Email Address --></label>
+        <name>EmailAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employment Status --></label>
+        <name>EmploymentStatus__c</name>
+        <picklistValues>
+            <masterLabel>Employed Full-Time</masterLabel>
+            <translation><!-- Employed Full-Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employed Full-Time AND Student</masterLabel>
+            <translation><!-- Employed Full-Time AND Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employed Part-Time</masterLabel>
+            <translation><!-- Employed Part-Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employed Part-Time AND Student</masterLabel>
+            <translation><!-- Employed Part-Time AND Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retired</masterLabel>
+            <translation><!-- Retired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stay-at-Home Caregiver OR Parent</masterLabel>
+            <translation><!-- Stay-at-Home Caregiver OR Parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student</masterLabel>
+            <translation><!-- Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to Work Due to Disability</masterLabel>
+            <translation><!-- Unable to Work Due to Disability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unemployed AND Looking for Work</masterLabel>
+            <translation><!-- Unemployed AND Looking for Work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- EnergyStar Home --></label>
+        <name>EnergyStarHome__c</name>
+    </fields>
+    <fields>
+        <help><!-- English Proficiency of the primary client --></help>
+        <label><!-- English Proficiency --></label>
+        <name>EnglishProficiency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ethnicity --></label>
+        <name>Ethnicity__c</name>
+    </fields>
+    <fields>
+        <label><!-- EvaluateHUDAMI --></label>
+        <name>EvaluateHUDAMI__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- FEMA Relief Type --></label>
+        <name>FEMAReliefType__c</name>
+        <picklistValues>
+            <masterLabel>Alabama Hurricane Michael (DR-4406)</masterLabel>
+            <translation><!-- Alabama Hurricane Michael (DR-4406) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alabama Hurricane Michael (EM-3407)</masterLabel>
+            <translation><!-- Alabama Hurricane Michael (EM-3407) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>California Wildfires (DR-4407)</masterLabel>
+            <translation><!-- California Wildfires (DR-4407) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Florida Hurricane Michael (DR-4399)</masterLabel>
+            <translation><!-- Florida Hurricane Michael (DR-4399) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Florida Hurricane Michael (EM-3405)</masterLabel>
+            <translation><!-- Florida Hurricane Michael (EM-3405) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Georgia Hurricane Michael (DR-4400)</masterLabel>
+            <translation><!-- Georgia Hurricane Michael (DR-4400) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Georgia Hurricane Michael (EM-3406)</masterLabel>
+            <translation><!-- Georgia Hurricane Michael (EM-3406) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hawaii Tropical Storm Olivia (EM-3404)</masterLabel>
+            <translation><!-- Hawaii Tropical Storm Olivia (EM-3404) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hurricane Katrina</masterLabel>
+            <translation><!-- Hurricane Katrina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hurricane Rita</masterLabel>
+            <translation><!-- Hurricane Rita --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iowa Severe Storm and Tornadoes (DR-4392)</masterLabel>
+            <translation><!-- Iowa Severe Storm and Tornadoes (DR-4392) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kansas Severe Storms, etc (DR-4403)</masterLabel>
+            <translation><!-- Kansas Severe Storms, etc (DR-4403) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N. Mariana Islands Super Typhoon Yutu (DR-4404)</masterLabel>
+            <translation><!-- N. Mariana Islands Super Typhoon Yutu (DR-4404) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Carolina Hurricane Florence (EM-3401)</masterLabel>
+            <translation><!-- North Carolina Hurricane Florence (EM-3401) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northern Mariana Islands Typhoon Mangkhut (EM-3402)</masterLabel>
+            <translation><!-- Northern Mariana Islands Typhoon Mangkhut (EM-3402) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Severe storms and flooding</masterLabel>
+            <translation><!-- Severe storms and flooding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Carolina Hurricane Florence (EM-3400)</masterLabel>
+            <translation><!-- South Carolina Hurricane Florence (EM-3400) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virginia Hurricane Florence (DR-4401)</masterLabel>
+            <translation><!-- Virginia Hurricane Florence (DR-4401) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virginia Hurricane Florence (EM-3403)</masterLabel>
+            <translation><!-- Virginia Hurricane Florence (EM-3403) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wild Fires</masterLabel>
+            <translation><!-- Wild Fires --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wisonsin Severe Storms, Tornadoes, etc (DR-4402)</masterLabel>
+            <translation><!-- Wisonsin Severe Storms, Tornadoes, etc (DR-4402) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Farm Worker --></label>
+        <name>FarmWorker__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Financial Capability Outcome --></label>
+        <name>FinancialCapabilityOutcomes__c</name>
+        <picklistValues>
+            <masterLabel>Credit Score and/or resolved credit issues</masterLabel>
+            <translation><!-- Credit Score and/or resolved credit issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decrease costs of tax filing</masterLabel>
+            <translation><!-- Decrease costs of tax filing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engage in new financial products</masterLabel>
+            <translation><!-- Engage in new financial products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Establish credit history</masterLabel>
+            <translation><!-- Establish credit history --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Establish savings for a specific goal</masterLabel>
+            <translation><!-- Establish savings for a specific goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fewer accounts in collection</masterLabel>
+            <translation><!-- Fewer accounts in collection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fewer debts past-due</masterLabel>
+            <translation><!-- Fewer debts past-due --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Have sufficient savings to cover at least three months of basic living expense</masterLabel>
+            <translation><!-- Have sufficient savings to cover at least three months of basic living expense --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase ability to manage fluctuations income</masterLabel>
+            <translation><!-- Increase ability to manage fluctuations income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase access to credit</masterLabel>
+            <translation><!-- Increase access to credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase amount of appropriate insurance coverage</masterLabel>
+            <translation><!-- Increase amount of appropriate insurance coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase net worth</masterLabel>
+            <translation><!-- Increase net worth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase savings</masterLabel>
+            <translation><!-- Increase savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increased in tax benefit</masterLabel>
+            <translation><!-- Increased in tax benefit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optimize public benefits portfolio</masterLabel>
+            <translation><!-- Optimize public benefits portfolio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reduce level of debt</masterLabel>
+            <translation><!-- Reduce level of debt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spend Less on financial services</masterLabel>
+            <translation><!-- Spend Less on financial services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stabilize house (at risk of eviction or foreclosure)</masterLabel>
+            <translation><!-- Stabilize house (at risk of eviction or foreclosure) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Financial Capability Data Complete --></label>
+        <name>Financial_Capability_Data_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Capability Goals --></label>
+        <name>Financial_Capability_Goals__c</name>
+        <picklistValues>
+            <masterLabel>Credit Score and/or resolved credit issues</masterLabel>
+            <translation><!-- Credit Score and/or resolved credit issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decrease costs of tax filing</masterLabel>
+            <translation><!-- Decrease costs of tax filing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engage in new financial products</masterLabel>
+            <translation><!-- Engage in new financial products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Establish credit history</masterLabel>
+            <translation><!-- Establish credit history --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Establish savings for a specific goal</masterLabel>
+            <translation><!-- Establish savings for a specific goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fewer accounts in collections</masterLabel>
+            <translation><!-- Fewer accounts in collections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fewer debts past-due</masterLabel>
+            <translation><!-- Fewer debts past-due --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Have sufficient savings to cover at least three months of basic living expenses</masterLabel>
+            <translation><!-- Have sufficient savings to cover at least three months of basic living expenses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase ability to manage fluctuations income</masterLabel>
+            <translation><!-- Increase ability to manage fluctuations income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase access to credit</masterLabel>
+            <translation><!-- Increase access to credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase amount of appropriate insurance coverage</masterLabel>
+            <translation><!-- Increase amount of appropriate insurance coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase net worth</masterLabel>
+            <translation><!-- Increase net worth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase savings</masterLabel>
+            <translation><!-- Increase savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increased in tax benefit</masterLabel>
+            <translation><!-- Increased in tax benefit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optimize public benefits portfolio</masterLabel>
+            <translation><!-- Optimize public benefits portfolio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reduce level of debt</masterLabel>
+            <translation><!-- Reduce level of debt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spend less on financial services</masterLabel>
+            <translation><!-- Spend less on financial services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stabilize housing (at risk of eviction or foreclosure)</masterLabel>
+            <translation><!-- Stabilize housing (at risk of eviction or foreclosure) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 1st Mortgage (Balance) --></label>
+        <name>FirstMortgageBalance__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Mortgage (Monthly Payment) --></label>
+        <name>FirstMortgageMonthlyPayment__c</name>
+    </fields>
+    <fields>
+        <help><!-- A formal partner can be a NeighborWorks Network Organization or non-network organization that has a formal Memorandum of Understanding (MOU). Sending a client to a lender is not considered a formal partnership and does not require the MOU. --></help>
+        <label><!-- Formal Partnering Org Provided Service --></label>
+        <name>FormalPartneringOrgProvidedService__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Funder --></label>
+        <name>Funder__c</name>
+        <picklistValues>
+            <masterLabel>FHA</masterLabel>
+            <translation><!-- FHA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FHLMC</masterLabel>
+            <translation><!-- FHLMC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glendale</masterLabel>
+            <translation><!-- Glendale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HASC-West-1</masterLabel>
+            <translation><!-- HASC-West-1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HFM</masterLabel>
+            <translation><!-- HFM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HUD</masterLabel>
+            <translation><!-- HUD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDA Program</masterLabel>
+            <translation><!-- IDA Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEAD</masterLabel>
+            <translation><!-- LEAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lexington</masterLabel>
+            <translation><!-- Lexington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Louisville</masterLabel>
+            <translation><!-- Louisville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low Mod Builders</masterLabel>
+            <translation><!-- Low Mod Builders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks</masterLabel>
+            <translation><!-- NeighborWorks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section 8 HACSJ</masterLabel>
+            <translation><!-- Section 8 HACSJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wells Fargo</masterLabel>
+            <translation><!-- Wells Fargo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>World Bank</masterLabel>
+            <translation><!-- World Bank --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Decrease Tax Filing Cost --></label>
+        <name>Goal_Decrease_Tax_Filing_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Establish Credit --></label>
+        <name>Goal_Establish_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Fewer Collections --></label>
+        <name>Goal_Fewer_Collections__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Fewer Past Due --></label>
+        <name>Goal_Fewer_Past_Due__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Improve Credit --></label>
+        <name>Goal_Improve_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Increase Credit Access --></label>
+        <name>Goal_Increase_Credit_Access__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Increase Insurance Coverage --></label>
+        <name>Goal_Increase_Insurance_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Increase Savings --></label>
+        <name>Goal_Increase_Savings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Increase Tax Benefit --></label>
+        <name>Goal_Increase_Tax_Benefit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Increase Worth --></label>
+        <name>Goal_Increase_Worth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Manage Fluctuations in Income --></label>
+        <name>Goal_Manage_Fluctuations_in_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal New Financial Products --></label>
+        <name>Goal_New_Financial_Products__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Optimize Public Benefits --></label>
+        <name>Goal_Optimize_Public_Benefits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Reduce Debt --></label>
+        <name>Goal_Reduce_Debt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Savings Goal --></label>
+        <name>Goal_Savings_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Spend Less on Financial Services --></label>
+        <name>Goal_Spend_Less_on_Financial_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Three Months Savings --></label>
+        <name>Goal_Three_Months_Savings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal of Stabilize housing --></label>
+        <name>Goal_of_Stabilize_housing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grant Amount Used --></label>
+        <name>GrantAmountUsed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Monthly Income Goal --></label>
+        <name>GrossMonthlyIncomeGoal__c</name>
+    </fields>
+    <fields>
+        <label><!-- HBE Cert Date --></label>
+        <name>HBECertDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- HBE Provided by Other Agency --></label>
+        <name>HBEProvidedByOtherAgency__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HECM Certificate Expiration Date --></label>
+        <name>HECMCertificateExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- HECM Certificate ID --></label>
+        <name>HECMCertificateID__c</name>
+    </fields>
+    <fields>
+        <label><!-- HECM Certificate Issue Date --></label>
+        <name>HECMCertificateIssueDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- HECM Certificate --></label>
+        <name>HECMCertificate__c</name>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HOA --></label>
+        <name>HOA__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Grant --></label>
+        <name>HUDGrant__c</name>
+        <picklistValues>
+            <masterLabel>Colonias</masterLabel>
+            <translation><!-- Colonias --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comprehensive</masterLabel>
+            <translation><!-- Comprehensive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HECM</masterLabel>
+            <translation><!-- HECM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MMMSA</masterLabel>
+            <translation><!-- MMMSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Predatory Lending</masterLabel>
+            <translation><!-- Predatory Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S8</masterLabel>
+            <translation><!-- S8 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hazard &amp; Insurance --></label>
+        <name>HazardInsurance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Was this service provided in direct response to a public health crisis, or a natural disaster, or to increase or improve climate resilience? --></help>
+        <label><!-- Health Crisis/Nat Disas/Climate Resil? --></label>
+        <name>HealthCrisisNatDisasClimateResil__c</name>
+        <picklistValues>
+            <masterLabel>Increase or improve climate resilience</masterLabel>
+            <translation><!-- Increase or improve climate resilience --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Natural Disaster</masterLabel>
+            <translation><!-- Natural Disaster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Health Crisis</masterLabel>
+            <translation><!-- Public Health Crisis --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Household Debt --></label>
+        <name>HouseholdDebt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household Income Band Missing --></label>
+        <name>HouseholdIncomeBandMissing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household Monthly Income --></label>
+        <name>HouseholdMonthlyIncome1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household % of AMI --></label>
+        <name>HouseholdOfAMI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total number of people living in the same household as the primary client --></help>
+        <label><!-- Household Size --></label>
+        <name>HouseholdSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household Type --></label>
+        <name>HouseholdType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household --></label>
+        <name>Household__c</name>
+        <relationshipLabel><!-- Client Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Housing Expense --></label>
+        <name>HousingExpense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Counseling Hours by Agency --></label>
+        <name>IndividualCounselingHoursByAgency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intake Case --></label>
+        <name>IntakeCase__c</name>
+        <relationshipLabel><!-- Client Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Intake Date --></label>
+        <name>IntakeDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Over 60 Days --></label>
+        <name>IsOver60Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Judgments - Balance --></label>
+        <name>JudgmentsBalance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Land Ownership Type --></label>
+        <name>LandOwnershipType__c</name>
+        <picklistValues>
+            <masterLabel>Co-op</masterLabel>
+            <translation><!-- Co-op --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community land Trust</masterLabel>
+            <translation><!-- Community land Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Condo</masterLabel>
+            <translation><!-- Condo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fee simple</masterLabel>
+            <translation><!-- Fee simple --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Land Trust</masterLabel>
+            <translation><!-- Land Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Ground Lease</masterLabel>
+            <translation><!-- Other Ground Lease --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Land Price --></label>
+        <name>LandPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Activity Type --></label>
+        <name>LastActivityType__c</name>
+        <picklistValues>
+            <masterLabel>Appointment</masterLabel>
+            <translation><!-- Appointment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case Management Note</masterLabel>
+            <translation><!-- Case Management Note --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Bankrupt Date --></label>
+        <name>LastBankruptDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Event Date --></label>
+        <name>LastEventDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Foreclosure Date --></label>
+        <name>LastForeclosureDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Number --></label>
+        <name>LeaseNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan --></label>
+        <name>Loan__c</name>
+        <relationshipLabel><!-- Client Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MSA --></label>
+        <name>MSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 2 --></label>
+        <name>MailingAddressLine2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marital Status --></label>
+        <name>MaritalStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Market Value --></label>
+        <name>MarketValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Whether or not the client has opted to receive non-transactional emails from this agency --></help>
+        <label><!-- Marketing Communications Opt-Out --></label>
+        <name>MarketingCommunicationsOptOut__c</name>
+    </fields>
+    <fields>
+        <label><!-- Metropolitan Statistical Area --></label>
+        <name>MetropolitanStatisticalArea__c</name>
+    </fields>
+    <fields>
+        <label><!-- Missing Credit Score Reason --></label>
+        <name>MissingCreditScoreReason__c</name>
+        <picklistValues>
+            <masterLabel>Client refused to authorize credit report pull</masterLabel>
+            <translation><!-- Client refused to authorize credit report pull --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foreclosure expected within 14 days</masterLabel>
+            <translation><!-- Foreclosure expected within 14 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NFMC Counseling Organization analyzed credit report that did not contain score</masterLabel>
+            <translation><!-- NFMC Counseling Organization analyzed credit report that did not contain score --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NFMC Counseling Organization does not analyze credit report for this level of service</masterLabel>
+            <translation><!-- NFMC Counseling Organization does not analyze credit report for this level of service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NFMC Counseling Organization does not have relationship with credit reporting bureau</masterLabel>
+            <translation><!-- NFMC Counseling Organization does not have relationship with credit reporting bureau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Monthly Creditor’s Debt --></label>
+        <name>MonthlyCreditorsDebt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Monthly Income --></label>
+        <name>MonthlyIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mortgage Delinquency --></label>
+        <name>MortgageDelinquency__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mortgage Insurance --></label>
+        <name>MortgageInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- NWO Provided Counseling/Education --></label>
+        <name>NWOProvidedCounselingEducation__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- NWO Provided Lending Services --></label>
+        <name>NWOProvidedLendingServices__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- NWO Rehab/Const --></label>
+        <name>NWORehabConst__c</name>
+    </fields>
+    <fields>
+        <label><!-- NWO Role --></label>
+        <name>NWORole__c</name>
+        <picklistValues>
+            <masterLabel>Counselor and/or Broker/Lender ONLY for New Home Owner</masterLabel>
+            <translation><!-- Counselor and/or Broker/Lender ONLY for New Home Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directly provides Self-Help Housing for New Home Owner</masterLabel>
+            <translation><!-- Directly provides Self-Help Housing for New Home Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foreclosure Mitigation Counseling</masterLabel>
+            <translation><!-- Foreclosure Mitigation Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NWO Constructs New Unit for New Home Owner</masterLabel>
+            <translation><!-- NWO Constructs New Unit for New Home Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NWO Provides Services to an Existing Home Owner</masterLabel>
+            <translation><!-- NWO Provides Services to an Existing Home Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NWO Sells a Unit it Had Purchased (with or without rehab) to New Home Owner</masterLabel>
+            <translation><!-- NWO Sells a Unit it Had Purchased (with or without rehab) to New Home Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plays Intermediary role in providing Self-Help Housing for New Home Owner</masterLabel>
+            <translation><!-- Plays Intermediary role in providing Self-Help Housing for New Home Owner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Net Monthly Income Goal --></label>
+        <name>NetMonthlyIncomeGoal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Worth Goal --></label>
+        <name>NetWorthGoal__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Homeowner Counseling Provided --></label>
+        <name>NewHomeownerCounselingProvided__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Accounts 30 Days Late --></label>
+        <name>NumberOfAccounts30DaysLate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Accounts 60 Days Late --></label>
+        <name>NumberOfAccounts60DaysLate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Accounts 90 Days Late --></label>
+        <name>NumberOfAccounts90DaysLate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Dependents --></label>
+        <name>NumberofDependents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupation Start Date --></label>
+        <name>OccupationStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupation --></label>
+        <name>Occupation__c</name>
+    </fields>
+    <fields>
+        <label><!-- One-on-One Disaster Preparedness Assista --></label>
+        <name>One_on_One_Disaster_Preparedness_Assista__c</name>
+    </fields>
+    <fields>
+        <label><!-- One-on-One Disaster Recovery Assistance --></label>
+        <name>One_on_One_Disaster_Recovery_Assistance__c</name>
+    </fields>
+    <fields>
+        <label><!-- One-on-One Forward Mortgage Delinquency --></label>
+        <name>One_on_One_Forward_Mortgage_Delinquency__c</name>
+    </fields>
+    <fields>
+        <label><!-- One-on-One Homeless Assistance --></label>
+        <name>One_on_One_Homeless_Assistance__c</name>
+    </fields>
+    <fields>
+        <label><!-- One-on-One Non-Delinquency Post-Purchase --></label>
+        <name>One_on_One_Non_Delinquency_Post_Purchase__c</name>
+    </fields>
+    <fields>
+        <label><!-- One-on-One Pre-purchase/Homebuying --></label>
+        <name>One_on_One_Pre_purchase_Homebuying__c</name>
+    </fields>
+    <fields>
+        <label><!-- One-on-One Rental Topics --></label>
+        <name>One_on_One_Rental_Topics__c</name>
+    </fields>
+    <fields>
+        <label><!-- One-on-One Reverse Mortgage Delinquency --></label>
+        <name>One_on_One_Reverse_Mortgage_Delinquency__c</name>
+    </fields>
+    <fields>
+        <label><!-- One-on-One Reverse Mortgage --></label>
+        <name>One_on_One_Reverse_Mortgage__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of cash-out, debt consolidation, or any other lien-related costs not included under Primary Cost, Rehab Cost, or Closing Cost. For Reverse Mortgages, the ‘Other Cost’ would include the existing mortgage pay-off (if applicable). --></help>
+        <label><!-- Other Cost --></label>
+        <name>OtherCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other --></label>
+        <name>Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Decrease Tax Filing Cost --></label>
+        <name>Outcome_Decrease_Tax_Filing_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Establish Credit --></label>
+        <name>Outcome_Establish_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Fewer Collections --></label>
+        <name>Outcome_Fewer_Collections__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Fewer Past Due --></label>
+        <name>Outcome_Fewer_Past_Due__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Improve Credit --></label>
+        <name>Outcome_Improve_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Increase Credit Access --></label>
+        <name>Outcome_Increase_Credit_Access__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Increase Insurance Coverage --></label>
+        <name>Outcome_Increase_Insurance_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Increase Savings --></label>
+        <name>Outcome_Increase_Savings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Increase Tax Benefit --></label>
+        <name>Outcome_Increase_Tax_Benefit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Increase Net Worth --></label>
+        <name>Outcome_Increase_Worth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Manage Fluctuations in Income --></label>
+        <name>Outcome_Manage_Fluctuations_in_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Engaged in new financial product --></label>
+        <name>Outcome_New_Financial_Products__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Optimize Public Benefits --></label>
+        <name>Outcome_Optimize_Public_Benefits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Reduce Debt --></label>
+        <name>Outcome_Reduce_Debt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Savings Goal --></label>
+        <name>Outcome_Savings_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Spend Less on Financial Services --></label>
+        <name>Outcome_Spend_Less_on_Financial_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Three Months Savings --></label>
+        <name>Outcome_Three_Months_Savings__c</name>
+    </fields>
+    <fields>
+        <help><!-- HUD-specified outcomes --></help>
+        <label><!-- Outcome --></label>
+        <name>Outcome__c</name>
+        <picklistValues>
+            <masterLabel>Completed fair housing workshop</masterLabel>
+            <translation><!-- Completed fair housing workshop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed financial literacy workshop, including home affordability, budgeting and understanding use of credit</masterLabel>
+            <translation><!-- Completed financial literacy workshop, including home affordability, budgeting and understanding use of credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed homelessness prevention workshop</masterLabel>
+            <translation><!-- Completed homelessness prevention workshop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed non-delinquency post-purchase workshop, including home maintenance and/or financial management for homeowners</masterLabel>
+            <translation><!-- Completed non-delinquency post-purchase workshop, including home maintenance and/or financial management for homeowners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed other workshop</masterLabel>
+            <translation><!-- Completed other workshop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed pre-purchase homebuyer education workshop</masterLabel>
+            <translation><!-- Completed pre-purchase homebuyer education workshop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed predatory lending, loan scam or other fraud prevention workshop</masterLabel>
+            <translation><!-- Completed predatory lending, loan scam or other fraud prevention workshop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed rental workshop</masterLabel>
+            <translation><!-- Completed rental workshop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed resolving or preventing mortgage delinquency workshop</masterLabel>
+            <translation><!-- Completed resolving or preventing mortgage delinquency workshop --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Outcome of Stabilize housing --></label>
+        <name>Outcome_of_Stabilize_housing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select ‘9999’ if the partner organization is not a NeighborWorks approved partner. --></help>
+        <label><!-- PCODE Partner Org Provided Service --></label>
+        <name>PCODEPartnerOrgProvidedService__c</name>
+        <picklistValues>
+            <masterLabel>A Community of Friends - 8530</masterLabel>
+            <translation><!-- A Community of Friends - 8530 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AHC, Inc - 8316</masterLabel>
+            <translation><!-- AHC, Inc - 8316 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aeon - 8494</masterLabel>
+            <translation><!-- Aeon - 8494 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affordable Homes of South Texas, Inc. - 8486</masterLabel>
+            <translation><!-- Affordable Homes of South Texas, Inc. - 8486 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affordable Housing Alliance, Inc. - 8495</masterLabel>
+            <translation><!-- Affordable Housing Alliance, Inc. - 8495 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affordable Housing Resources, Inc. - 8272</masterLabel>
+            <translation><!-- Affordable Housing Resources, Inc. - 8272 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affordable Housing, Education and Development (AHEAD), Inc. - 8274</masterLabel>
+            <translation><!-- Affordable Housing, Education and Development (AHEAD), Inc. - 8274 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alamo Community Group - 3050</masterLabel>
+            <translation><!-- Alamo Community Group - 3050 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arbor Housing and Development - 8291</masterLabel>
+            <translation><!-- Arbor Housing and Development - 8291 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asian Americans for Equality, Inc. - 8418</masterLabel>
+            <translation><!-- Asian Americans for Equality, Inc. - 8418 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Atlanta Neighborhood Development Partnership, Inc. - 8519</masterLabel>
+            <translation><!-- Atlanta Neighborhood Development Partnership, Inc. - 8519 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Avenue Community Development Corporation - 8327</masterLabel>
+            <translation><!-- Avenue Community Development Corporation - 8327 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Avesta Housing Development Corporation - 8413</masterLabel>
+            <translation><!-- Avesta Housing Development Corporation - 8413 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCL of Texas - 8237</masterLabel>
+            <translation><!-- BCL of Texas - 8237 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Better Family Life, Inc. - 8520</masterLabel>
+            <translation><!-- Better Family Life, Inc. - 8520 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Better Housing Coalition - 8430</masterLabel>
+            <translation><!-- Better Housing Coalition - 8430 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beyond Housing, Inc. - 8021</masterLabel>
+            <translation><!-- Beyond Housing, Inc. - 8021 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CASA of Oregon - 8553</masterLabel>
+            <translation><!-- CASA of Oregon - 8553 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CATCH Neighborhood Housing - 8284</masterLabel>
+            <translation><!-- CATCH Neighborhood Housing - 8284 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHWC, Inc. - 8117</masterLabel>
+            <translation><!-- CHWC, Inc. - 8117 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabrillo Economic Development Corp. - 8275</masterLabel>
+            <translation><!-- Cabrillo Economic Development Corp. - 8275 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cambridge Neighborhood Apartment Housing Services, Inc. - 8141</masterLabel>
+            <translation><!-- Cambridge Neighborhood Apartment Housing Services, Inc. - 8141 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Centro Campesino Farmworker Center, Inc. - 8357</masterLabel>
+            <translation><!-- Centro Campesino Farmworker Center, Inc. - 8357 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Champlain Housing Trust - 8241</masterLabel>
+            <translation><!-- Champlain Housing Trust - 8241 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charlotte-Mecklenburg Housing Partnership, Inc. - 8250</masterLabel>
+            <translation><!-- Charlotte-Mecklenburg Housing Partnership, Inc. - 8250 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chattanooga Neighborhood Enterprise, Inc. - 8184</masterLabel>
+            <translation><!-- Chattanooga Neighborhood Enterprise, Inc. - 8184 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chautauqua Home Rehabilitation and Improvement Corporation - 8331</masterLabel>
+            <translation><!-- Chautauqua Home Rehabilitation and Improvement Corporation - 8331 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicanos Por La Causa, Inc. - 8521</masterLabel>
+            <translation><!-- Chicanos Por La Causa, Inc. - 8521 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinatown Community Development Center - 8411</masterLabel>
+            <translation><!-- Chinatown Community Development Center - 8411 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clearwater Neighborhood Housing Services, Inc. - 8070</masterLabel>
+            <translation><!-- Clearwater Neighborhood Housing Services, Inc. - 8070 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coachella Valley Housing Coalition - 8417</masterLabel>
+            <translation><!-- Coachella Valley Housing Coalition - 8417 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coalition for a Better Acre - 8220</masterLabel>
+            <translation><!-- Coalition for a Better Acre - 8220 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coastal Enterprises, Inc. - 8532</masterLabel>
+            <translation><!-- Coastal Enterprises, Inc. - 8532 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Codman Square Neighborhood Development Corp. - 8225</masterLabel>
+            <translation><!-- Codman Square Neighborhood Development Corp. - 8225 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comite de Bien Estar, Inc. - 8416</masterLabel>
+            <translation><!-- Comite de Bien Estar, Inc. - 8416 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CommonBond Communities - 8510</masterLabel>
+            <translation><!-- CommonBond Communities - 8510 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Action Partnership of North Alabama, Inc. - 8409</masterLabel>
+            <translation><!-- Community Action Partnership of North Alabama, Inc. - 8409 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Action Project of Tulsa County - 8306</masterLabel>
+            <translation><!-- Community Action Project of Tulsa County - 8306 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Concepts, Inc. - 8341</masterLabel>
+            <translation><!-- Community Concepts, Inc. - 8341 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Development Corporation of Brownsville - 8438</masterLabel>
+            <translation><!-- Community Development Corporation of Brownsville - 8438 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Development Corporation of Long Island, Inc. - 8294</masterLabel>
+            <translation><!-- Community Development Corporation of Long Island, Inc. - 8294 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Frameworks - 8370</masterLabel>
+            <translation><!-- Community Frameworks - 8370 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Housing Development Corporation of North Richmond - 8371</masterLabel>
+            <translation><!-- Community Housing Development Corporation of North Richmond - 8371 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Housing Improvement Program, Incorporated (CHIP) - 8498</masterLabel>
+            <translation><!-- Community Housing Improvement Program, Incorporated (CHIP) - 8498 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Housing Initiatives - 8365</masterLabel>
+            <translation><!-- Community Housing Initiatives - 8365 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Housing Partners Corporation - 8339</masterLabel>
+            <translation><!-- Community Housing Partners Corporation - 8339 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community HousingWorks - 8332</masterLabel>
+            <translation><!-- Community HousingWorks - 8332 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Resources and Housing Development Corporation - 8179</masterLabel>
+            <translation><!-- Community Resources and Housing Development Corporation - 8179 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Service Programs of West Alabama, Inc. - 8215</masterLabel>
+            <translation><!-- Community Service Programs of West Alabama, Inc. - 8215 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Ventures Corporation - 8299</masterLabel>
+            <translation><!-- Community Ventures Corporation - 8299 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CommunityWorks In West Virginia, Inc. - 8187</masterLabel>
+            <translation><!-- CommunityWorks In West Virginia, Inc. - 8187 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CommunityWorks North Dakota - 8297</masterLabel>
+            <translation><!-- CommunityWorks North Dakota - 8297 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Connecticut Housing Partners - 3020</masterLabel>
+            <translation><!-- Connecticut Housing Partners - 3020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporation to Develop Communities of Tampa - 8343</masterLabel>
+            <translation><!-- Corporation to Develop Communities of Tampa - 8343 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crawford-Sebastian Community Development Council, Inc. - 8514</masterLabel>
+            <translation><!-- Crawford-Sebastian Community Development Council, Inc. - 8514 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHIC, Inc. - 8307</masterLabel>
+            <translation><!-- DHIC, Inc. - 8307 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dayton&apos;s Bluff Neighborhood Housing Services, Inc. - 8100</masterLabel>
+            <translation><!-- Dayton&apos;s Bluff Neighborhood Housing Services, Inc. - 8100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DevNW - 8174</masterLabel>
+            <translation><!-- DevNW - 8174 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Downstreet Housing &amp; Community Development - 8308</masterLabel>
+            <translation><!-- Downstreet Housing &amp; Community Development - 8308 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Durham Community Land Trustees - 8362</masterLabel>
+            <translation><!-- Durham Community Land Trustees - 8362 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dwelling Place of Grand Rapids Nonprofit Housing Corporation - 8508</masterLabel>
+            <translation><!-- Dwelling Place of Grand Rapids Nonprofit Housing Corporation - 8508 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Akron Neighborhood Development Corporation Inc. - 8353</masterLabel>
+            <translation><!-- East Akron Neighborhood Development Corporation Inc. - 8353 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Bay Asian Local Development Corporation (EBALDC) - 8513</masterLabel>
+            <translation><!-- East Bay Asian Local Development Corporation (EBALDC) - 8513 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eastern Eight Community Development Corporation - 8534</masterLabel>
+            <translation><!-- Eastern Eight Community Development Corporation - 8534 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eden Housing - 8543</masterLabel>
+            <translation><!-- Eden Housing - 8543 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fahe, Inc. - 8391</masterLabel>
+            <translation><!-- Fahe, Inc. - 8391 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fairbanks Neighborhood Housing Services, Inc. - 8205</masterLabel>
+            <translation><!-- Fairbanks Neighborhood Housing Services, Inc. - 8205 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Famicos Foundation - 8425</masterLabel>
+            <translation><!-- Famicos Foundation - 8425 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fifth Avenue Committee, Inc. (FAC) - 8546</masterLabel>
+            <translation><!-- Fifth Avenue Committee, Inc. (FAC) - 8546 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fifth Ward Community Redevelopment Corporation - 8229</masterLabel>
+            <translation><!-- Fifth Ward Community Redevelopment Corporation - 8229 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foundation Communities - 3010</masterLabel>
+            <translation><!-- Foundation Communities - 3010 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frontier Housing, Inc. - 8376</masterLabel>
+            <translation><!-- Frontier Housing, Inc. - 8376 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GROW South Dakota - 8387</masterLabel>
+            <translation><!-- GROW South Dakota - 8387 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Habitat for Humanity of Michigan - 8523</masterLabel>
+            <translation><!-- Habitat for Humanity of Michigan - 8523 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hawaii HomeOwnership Center - 8340</masterLabel>
+            <translation><!-- Hawaii HomeOwnership Center - 8340 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hispanic Housing Development Corporation - 8541</masterLabel>
+            <translation><!-- Hispanic Housing Development Corporation - 8541 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home HeadQuarters, Inc. - 8286</masterLabel>
+            <translation><!-- Home HeadQuarters, Inc. - 8286 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Ownership Center of Greater Cincinnati, Inc., The - 8005</masterLabel>
+            <translation><!-- Home Ownership Center of Greater Cincinnati, Inc., The - 8005 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HomeOwnership Center, Inc. - 8320</masterLabel>
+            <translation><!-- HomeOwnership Center, Inc. - 8320 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HomeSight - 8318</masterLabel>
+            <translation><!-- HomeSight - 8318 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HomeSource east tennessee - 8270</masterLabel>
+            <translation><!-- HomeSource east tennessee - 8270 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homeport - 8342</masterLabel>
+            <translation><!-- Homeport - 8342 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homewise, Inc. - 8155</masterLabel>
+            <translation><!-- Homewise, Inc. - 8155 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hope Enterprise Corporation - 8380</masterLabel>
+            <translation><!-- Hope Enterprise Corporation - 8380 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing Assistance Program of Essex County, Inc. - 8326</masterLabel>
+            <translation><!-- Housing Assistance Program of Essex County, Inc. - 8326 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing Development Corporation MidAtlantic - 8539</masterLabel>
+            <translation><!-- Housing Development Corporation MidAtlantic - 8539 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing Development Fund, Inc. - 8509</masterLabel>
+            <translation><!-- Housing Development Fund, Inc. - 8509 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing Partnership for Morris County - 8315</masterLabel>
+            <translation><!-- Housing Partnership for Morris County - 8315 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing Partnership, Inc. - 8235</masterLabel>
+            <translation><!-- Housing Partnership, Inc. - 8235 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing Resources of Western Colorado - 8295</masterLabel>
+            <translation><!-- Housing Resources of Western Colorado - 8295 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing Resources, Inc. - 8388</masterLabel>
+            <translation><!-- Housing Resources, Inc. - 8388 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing and Neighborhood Development Services, Inc. - 8256</masterLabel>
+            <translation><!-- Housing and Neighborhood Development Services, Inc. - 8256 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hudson River Housing, Inc. - 8288</masterLabel>
+            <translation><!-- Hudson River Housing, Inc. - 8288 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Impact Seven, Inc. - 8511</masterLabel>
+            <translation><!-- Impact Seven, Inc. - 8511 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interfaith Community Housing of Delaware, Inc. - 8271</masterLabel>
+            <translation><!-- Interfaith Community Housing of Delaware, Inc. - 8271 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ithaca Neighborhood Housing Services, Inc. - 8029</masterLabel>
+            <translation><!-- Ithaca Neighborhood Housing Services, Inc. - 8029 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kalamazoo Neighborhood Housing Services, Inc. - 8114</masterLabel>
+            <translation><!-- Kalamazoo Neighborhood Housing Services, Inc. - 8114 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kennebec Valley Community Action Program Housing Services - 8257</masterLabel>
+            <translation><!-- Kennebec Valley Community Action Program Housing Services - 8257 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LTSC Community Development Corporation - 8535</masterLabel>
+            <translation><!-- LTSC Community Development Corporation - 8535 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>La Casa de Don Pedro, Inc. - 8419</masterLabel>
+            <translation><!-- La Casa de Don Pedro, Inc. - 8419 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LaCasa, Inc. - 8269</masterLabel>
+            <translation><!-- LaCasa, Inc. - 8269 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lakes Region Community Developers - 8309</masterLabel>
+            <translation><!-- Lakes Region Community Developers - 8309 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lawrence CommunityWorks, Inc. - 8333</masterLabel>
+            <translation><!-- Lawrence CommunityWorks, Inc. - 8333 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lighthouse of Oakland County - 8489</masterLabel>
+            <translation><!-- Lighthouse of Oakland County - 8489 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Little Dixie Community Action Agency - 8251</masterLabel>
+            <translation><!-- Little Dixie Community Action Agency - 8251 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low Income Housing Institute - 8537</masterLabel>
+            <translation><!-- Low Income Housing Institute - 8537 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Madison Park Development Corporation - 8319</masterLabel>
+            <translation><!-- Madison Park Development Corporation - 8319 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manna, Inc. - 8300</masterLabel>
+            <translation><!-- Manna, Inc. - 8300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mennonite Housing Rehabilitation Services, Inc. - 8517</masterLabel>
+            <translation><!-- Mennonite Housing Rehabilitation Services, Inc. - 8517 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Metro Community Development, Inc. - 8544</masterLabel>
+            <translation><!-- Metro Community Development, Inc. - 8544 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mid Central Community Action - 8350</masterLabel>
+            <translation><!-- Mid Central Community Action - 8350 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mid City Redevelopment Alliance, Inc. - 8526</masterLabel>
+            <translation><!-- Mid City Redevelopment Alliance, Inc. - 8526 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Midwest Minnesota Community Development Corporation - 8500</masterLabel>
+            <translation><!-- Midwest Minnesota Community Development Corporation - 8500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montgomery Housing Partnership, Inc. - 8335</masterLabel>
+            <translation><!-- Montgomery Housing Partnership, Inc. - 8335 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mountain Housing Opportunities, Inc. - 8420</masterLabel>
+            <translation><!-- Mountain Housing Opportunities, Inc. - 8420 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mutual Housing Association of Greater Hartford, Inc. - 3015</masterLabel>
+            <translation><!-- Mutual Housing Association of Greater Hartford, Inc. - 3015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mutual Housing Association of Hawaii, Inc. - 3070</masterLabel>
+            <translation><!-- Mutual Housing Association of Hawaii, Inc. - 3070 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mutual Housing California - 3025</masterLabel>
+            <translation><!-- Mutual Housing California - 3025 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NW HomeStart, Inc. - 8244</masterLabel>
+            <translation><!-- NW HomeStart, Inc. - 8244 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Council on Agricultural Life and Labor Research Fund, Inc. - 8347</masterLabel>
+            <translation><!-- National Council on Agricultural Life and Labor Research Fund, Inc. - 8347 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Native Partnership for Housing, Inc. - 8233</masterLabel>
+            <translation><!-- Native Partnership for Housing, Inc. - 8233 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighbor to Neighbor, Inc. - 8344</masterLabel>
+            <translation><!-- Neighbor to Neighbor, Inc. - 8344 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborImpact - 8334</masterLabel>
+            <translation><!-- NeighborImpact - 8334 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Alaska - 8116</masterLabel>
+            <translation><!-- NeighborWorks Alaska - 8116 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Badgerland - 8136</masterLabel>
+            <translation><!-- NeighborWorks Badgerland - 8136 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Blackhawk Region - 8069</masterLabel>
+            <translation><!-- NeighborWorks Blackhawk Region - 8069 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Blackstone River Valley - 8232</masterLabel>
+            <translation><!-- NeighborWorks Blackstone River Valley - 8232 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Boise - 8134</masterLabel>
+            <translation><!-- NeighborWorks Boise - 8134 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Columbus (GA) - 8351</masterLabel>
+            <translation><!-- NeighborWorks Columbus (GA) - 8351 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Community Partners - 8556</masterLabel>
+            <translation><!-- NeighborWorks Community Partners - 8556 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Dakota Home Resources - 8234</masterLabel>
+            <translation><!-- NeighborWorks Dakota Home Resources - 8234 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Great Falls - 8085</masterLabel>
+            <translation><!-- NeighborWorks Great Falls - 8085 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Green Bay - 8125</masterLabel>
+            <translation><!-- NeighborWorks Green Bay - 8125 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Home Partners - 8098</masterLabel>
+            <translation><!-- NeighborWorks Home Partners - 8098 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Home Solutions - 8491</masterLabel>
+            <translation><!-- NeighborWorks Home Solutions - 8491 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks HomeOwnership Center Sacramento Region - 8159</masterLabel>
+            <translation><!-- NeighborWorks HomeOwnership Center Sacramento Region - 8159 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Housing Solutions - 8109</masterLabel>
+            <translation><!-- NeighborWorks Housing Solutions - 8109 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Laredo - 8201</masterLabel>
+            <translation><!-- NeighborWorks Laredo - 8201 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Lincoln - 8151</masterLabel>
+            <translation><!-- NeighborWorks Lincoln - 8151 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Montana - 8377</masterLabel>
+            <translation><!-- NeighborWorks Montana - 8377 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Mountain Country Home Solutions - 8212</masterLabel>
+            <translation><!-- NeighborWorks Mountain Country Home Solutions - 8212 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks New Horizons - 3075</masterLabel>
+            <translation><!-- NeighborWorks New Horizons - 3075 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Northeast Nebraska - 8366</masterLabel>
+            <translation><!-- NeighborWorks Northeast Nebraska - 8366 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Northeastern Pennsylvania - 8111</masterLabel>
+            <translation><!-- NeighborWorks Northeastern Pennsylvania - 8111 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Orange County - 8285</masterLabel>
+            <translation><!-- NeighborWorks Orange County - 8285 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Pocatello - 8208</masterLabel>
+            <translation><!-- NeighborWorks Pocatello - 8208 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Salt Lake - 8044</masterLabel>
+            <translation><!-- NeighborWorks Salt Lake - 8044 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Southern Colorado - 8038</masterLabel>
+            <translation><!-- NeighborWorks Southern Colorado - 8038 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Southern New Hampshire - 8202</masterLabel>
+            <translation><!-- NeighborWorks Southern New Hampshire - 8202 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Toledo Region - 8054</masterLabel>
+            <translation><!-- NeighborWorks Toledo Region - 8054 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Umpqua - 8337</masterLabel>
+            <translation><!-- NeighborWorks Umpqua - 8337 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Waco - 8213</masterLabel>
+            <translation><!-- NeighborWorks Waco - 8213 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks Western Pennsylvania - 8001</masterLabel>
+            <translation><!-- NeighborWorks Western Pennsylvania - 8001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks of Grays Harbor County - 8120</masterLabel>
+            <translation><!-- NeighborWorks of Grays Harbor County - 8120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks of Western Vermont - 8152</masterLabel>
+            <translation><!-- NeighborWorks of Western Vermont - 8152 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Development Services - 8278</masterLabel>
+            <translation><!-- Neighborhood Development Services - 8278 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Finance Corporation - 8345</masterLabel>
+            <translation><!-- Neighborhood Finance Corporation - 8345 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Housing &amp; Development Corporation - 8132</masterLabel>
+            <translation><!-- Neighborhood Housing &amp; Development Corporation - 8132 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Housing Partnership of Greater Springfield, Inc. - 8329</masterLabel>
+            <translation><!-- Neighborhood Housing Partnership of Greater Springfield, Inc. - 8329 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Housing Services of Baltimore, Inc. - 8009</masterLabel>
+            <translation><!-- Neighborhood Housing Services of Baltimore, Inc. - 8009 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Housing Services of Birmingham, Inc. - 8025</masterLabel>
+            <translation><!-- Neighborhood Housing Services of Birmingham, Inc. - 8025 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Housing Services of Chicago, Inc. - 8011</masterLabel>
+            <translation><!-- Neighborhood Housing Services of Chicago, Inc. - 8011 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Housing Services of Greater Berks, Inc. - 8040</masterLabel>
+            <translation><!-- Neighborhood Housing Services of Greater Berks, Inc. - 8040 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Housing Services of Greater Cleveland, Inc. - 8014</masterLabel>
+            <translation><!-- Neighborhood Housing Services of Greater Cleveland, Inc. - 8014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Housing Services of Hamilton, Inc. - 8196</masterLabel>
+            <translation><!-- Neighborhood Housing Services of Hamilton, Inc. - 8196 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Housing Services of Los Angeles County - 8149</masterLabel>
+            <translation><!-- Neighborhood Housing Services of Los Angeles County - 8149 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Housing Services of New Britain, Inc. - 8064</masterLabel>
+            <translation><!-- Neighborhood Housing Services of New Britain, Inc. - 8064 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Housing Services of New Haven, Inc. - 8080</masterLabel>
+            <translation><!-- Neighborhood Housing Services of New Haven, Inc. - 8080 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Housing Services of New York City, Inc. - 8007</masterLabel>
+            <translation><!-- Neighborhood Housing Services of New York City, Inc. - 8007 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Housing Services of Oklahoma City, Inc. - 8108</masterLabel>
+            <translation><!-- Neighborhood Housing Services of Oklahoma City, Inc. - 8108 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Housing Services of South Florida, Inc. - 8046</masterLabel>
+            <translation><!-- Neighborhood Housing Services of South Florida, Inc. - 8046 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Housing Services of Southern Nevada, Inc. - 8190</masterLabel>
+            <translation><!-- Neighborhood Housing Services of Southern Nevada, Inc. - 8190 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Housing Services of Southwest Wisconsin, Inc. - 8138</masterLabel>
+            <translation><!-- Neighborhood Housing Services of Southwest Wisconsin, Inc. - 8138 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Housing Services of Waterbury, Inc. - 8087</masterLabel>
+            <translation><!-- Neighborhood Housing Services of Waterbury, Inc. - 8087 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Housing Services of the Inland Empire, Inc. - 8105</masterLabel>
+            <translation><!-- Neighborhood Housing Services of the Inland Empire, Inc. - 8105 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood Partnership Housing Services - 8176</masterLabel>
+            <translation><!-- Neighborhood Partnership Housing Services - 8176 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neighborhood of Affordable Housing, Inc. - 8223</masterLabel>
+            <translation><!-- Neighborhood of Affordable Housing, Inc. - 8223 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nevada H.A.N.D., Inc. - 8516</masterLabel>
+            <translation><!-- Nevada H.A.N.D., Inc. - 8516 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Directions Housing Corporation - 8368</masterLabel>
+            <translation><!-- New Directions Housing Corporation - 8368 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Jersey Community Capital - 8512</masterLabel>
+            <translation><!-- New Jersey Community Capital - 8512 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Kensington Community Development Corporation - 8325</masterLabel>
+            <translation><!-- New Kensington Community Development Corporation - 8325 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NewVue Communities, Inc. - 8221</masterLabel>
+            <translation><!-- NewVue Communities, Inc. - 8221 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North East Community Action Corporation - 8355</masterLabel>
+            <translation><!-- North East Community Action Corporation - 8355 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northwest Michigan Community Action Agency, Inc. - 8527</masterLabel>
+            <translation><!-- Northwest Michigan Community Action Agency, Inc. - 8527 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nueces County Community Action Agency - 8349</masterLabel>
+            <translation><!-- Nueces County Community Action Agency - 8349 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nuestra Comunidad Development Corp. - 8224</masterLabel>
+            <translation><!-- Nuestra Comunidad Development Corp. - 8224 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ONE Neighborhood Builders - 8549</masterLabel>
+            <translation><!-- ONE Neighborhood Builders - 8549 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One Roof Community Housing - 8518</masterLabel>
+            <translation><!-- One Roof Community Housing - 8518 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunities for Chenango, Inc. - 8314</masterLabel>
+            <translation><!-- Opportunities for Chenango, Inc. - 8314 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Origin SC - 8360</masterLabel>
+            <translation><!-- Origin SC - 8360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orlando Neighborhood Improvement Corp. - 8356</masterLabel>
+            <translation><!-- Orlando Neighborhood Improvement Corp. - 8356 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other - 9999</masterLabel>
+            <translation><!-- Other - 9999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PathStone Corporation - 8227</masterLabel>
+            <translation><!-- PathStone Corporation - 8227 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pathfinder Services, Inc. - 8410</masterLabel>
+            <translation><!-- Pathfinder Services, Inc. - 8410 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Penquis Community Action Program, Inc. - 8528</masterLabel>
+            <translation><!-- Penquis Community Action Program, Inc. - 8528 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pensacola Habitat for Humanity, Inc. - 8536</masterLabel>
+            <translation><!-- Pensacola Habitat for Humanity, Inc. - 8536 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peoples&apos; Self-Help Housing Corporation - 8481</masterLabel>
+            <translation><!-- Peoples&apos; Self-Help Housing Corporation - 8481 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ponce Neighborhood Housing Services, Inc. - 8198</masterLabel>
+            <translation><!-- Ponce Neighborhood Housing Services, Inc. - 8198 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portland Housing Center - 8268</masterLabel>
+            <translation><!-- Portland Housing Center - 8268 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Providence Community Housing - 8492</masterLabel>
+            <translation><!-- Providence Community Housing - 8492 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puerto Rico Neighborhood Housing Services, Corp. - 8218</masterLabel>
+            <translation><!-- Puerto Rico Neighborhood Housing Services, Corp. - 8218 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REACH Community Development, Inc. - 8501</masterLabel>
+            <translation><!-- REACH Community Development, Inc. - 8501 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUPCO, Inc. - 8290</masterLabel>
+            <translation><!-- RUPCO, Inc. - 8290 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rocky Mountain Communities - 3055</masterLabel>
+            <translation><!-- Rocky Mountain Communities - 3055 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rural Communities Housing Development Corporation - 8276</masterLabel>
+            <translation><!-- Rural Communities Housing Development Corporation - 8276 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rural Enterprises of Oklahoma, Inc. - 8552</masterLabel>
+            <translation><!-- Rural Enterprises of Oklahoma, Inc. - 8552 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rural Neighborhoods, Incorporated - 8502</masterLabel>
+            <translation><!-- Rural Neighborhoods, Incorporated - 8502 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RuralEdge - 8242</masterLabel>
+            <translation><!-- RuralEdge - 8242 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salisbury Neighborhood Housing Services, Inc. - 8211</masterLabel>
+            <translation><!-- Salisbury Neighborhood Housing Services, Inc. - 8211 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Help Enterprises - 8328</masterLabel>
+            <translation><!-- Self-Help Enterprises - 8328 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Bend Heritage Foundation - 8321</masterLabel>
+            <translation><!-- South Bend Heritage Foundation - 8321 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southern Mutual Help Association - 8379</masterLabel>
+            <translation><!-- Southern Mutual Help Association - 8379 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southwest Minnesota Housing Partnership - 8352</masterLabel>
+            <translation><!-- Southwest Minnesota Housing Partnership - 8352 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southwest Solutions - 8372</masterLabel>
+            <translation><!-- Southwest Solutions - 8372 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>St. Ambrose Housing Aid Center - 8367</masterLabel>
+            <translation><!-- St. Ambrose Housing Aid Center - 8367 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>St. Joseph&apos;s Carpenter Society - 8414</masterLabel>
+            <translation><!-- St. Joseph&apos;s Carpenter Society - 8414 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>St. Mary Development Corporation - 8296</masterLabel>
+            <translation><!-- St. Mary Development Corporation - 8296 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tallahassee Lenders&apos; Consortium - 8504</masterLabel>
+            <translation><!-- Tallahassee Lenders&apos; Consortium - 8504 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tampa Bay Community Development Corporation - 8505</masterLabel>
+            <translation><!-- Tampa Bay Community Development Corporation - 8505 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tejano Center for Community Concerns - 8283</masterLabel>
+            <translation><!-- Tejano Center for Community Concerns - 8283 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tenderloin Neighborhood Development Corporation - 8506</masterLabel>
+            <translation><!-- Tenderloin Neighborhood Development Corporation - 8506 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Housing Partnership, Inc. - 8373</masterLabel>
+            <translation><!-- The Housing Partnership, Inc. - 8373 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Neighbor Project - 8293</masterLabel>
+            <translation><!-- The Neighbor Project - 8293 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Neighborhood Developers, Inc. - 8059</masterLabel>
+            <translation><!-- The Neighborhood Developers, Inc. - 8059 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Primavera Foundation, Inc - 8289</masterLabel>
+            <translation><!-- The Primavera Foundation, Inc - 8289 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Unity Council - 8298</masterLabel>
+            <translation><!-- The Unity Council - 8298 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thistle Communities - 8346</masterLabel>
+            <translation><!-- Thistle Communities - 8346 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tierra del Sol Housing Corporation - 8189</masterLabel>
+            <translation><!-- Tierra del Sol Housing Corporation - 8189 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trellis - 8019</masterLabel>
+            <translation><!-- Trellis - 8019 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tri-County Housing &amp; Community Development Corporation - 8323</masterLabel>
+            <translation><!-- Tri-County Housing &amp; Community Development Corporation - 8323 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Troy Rehabilitation &amp; Improvement Program, Inc. - 8206</masterLabel>
+            <translation><!-- Troy Rehabilitation &amp; Improvement Program, Inc. - 8206 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNHS NeighborWorks HomeOwnership Center - 8078</masterLabel>
+            <translation><!-- UNHS NeighborWorks HomeOwnership Center - 8078 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United Housing, Inc. - 8273</masterLabel>
+            <translation><!-- United Housing, Inc. - 8273 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Universal Housing Development Corporation - 8301</masterLabel>
+            <translation><!-- Universal Housing Development Corporation - 8301 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urban Edge Housing Corporation - 8222</masterLabel>
+            <translation><!-- Urban Edge Housing Corporation - 8222 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Way Finders, Inc. - 8408</masterLabel>
+            <translation><!-- Way Finders, Inc. - 8408 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wealth Watchers, Inc. - 8538</masterLabel>
+            <translation><!-- Wealth Watchers, Inc. - 8538 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Elmwood Housing Development Corp. - 8255</masterLabel>
+            <translation><!-- West Elmwood Housing Development Corp. - 8255 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Westside Housing Organization, Inc. - 8210</masterLabel>
+            <translation><!-- Westside Housing Organization, Inc. - 8210 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windham &amp; Windsor Housing Trust - 8515</masterLabel>
+            <translation><!-- Windham &amp; Windsor Housing Trust - 8515 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wyoming Housing Network - 8354</masterLabel>
+            <translation><!-- Wyoming Housing Network - 8354 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Permanent Resident Alien --></label>
+        <name>PermanentResidentAlien__c</name>
+    </fields>
+    <fields>
+        <help><!-- Client Phone Number --></help>
+        <label><!-- Phone Number --></label>
+        <name>PhoneNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post-Counseling Annual Household Income --></label>
+        <name>PostCounselingAnnualHouseholdIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post-Counseling Credit Score --></label>
+        <name>PostCounselingCreditScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post-Counseling Household Debt --></label>
+        <name>PostCounselingHouseholdDebt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post-Counseling Residence Type --></label>
+        <name>PostCounselingResidenceType__c</name>
+        <picklistValues>
+            <masterLabel>Live with Family Rent-Free</masterLabel>
+            <translation><!-- Live with Family Rent-Free --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Residence</masterLabel>
+            <translation><!-- Other Residence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Own</masterLabel>
+            <translation><!-- Own --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent from a property not owned/managed by your organization</masterLabel>
+            <translation><!-- Rent from a property not owned/managed by your organization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent from a property owned/managed by your organization</masterLabel>
+            <translation><!-- Rent from a property owned/managed by your organization --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Post-Counseling Savings --></label>
+        <name>PostCounselingSavings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-Counseling Annual Household Income --></label>
+        <name>PreCounselingAnnualHouseholdIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-Counseling Credit Score --></label>
+        <name>PreCounselingCreditScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-Counseling Household Debt --></label>
+        <name>PreCounselingHouseholdDebt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-Counseling Residence Type --></label>
+        <name>PreCounselingResidenceType__c</name>
+        <picklistValues>
+            <masterLabel>Live with Family Rent-Free</masterLabel>
+            <translation><!-- Live with Family Rent-Free --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Residence</masterLabel>
+            <translation><!-- Other Residence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Own</masterLabel>
+            <translation><!-- Own --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent from a property not owned/managed by your organization</masterLabel>
+            <translation><!-- Rent from a property not owned/managed by your organization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent from a property owned/managed by your organization</masterLabel>
+            <translation><!-- Rent from a property owned/managed by your organization --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pre-Counseling Savings --></label>
+        <name>PreCounselingSavings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Client --></label>
+        <name>PrimaryClient__c</name>
+        <relationshipLabel><!-- Client Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Co-App Credit Score Goal --></label>
+        <name>PrimaryCoAppCreditScoreGoal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Address --></label>
+        <name>PropertyAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Check --></label>
+        <name>PropertyCheck__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Name --></label>
+        <name>PropertyName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Taxes --></label>
+        <name>PropertyTaxes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Type --></label>
+        <name>PropertyType__c</name>
+        <picklistValues>
+            <masterLabel>Co-op</masterLabel>
+            <translation><!-- Co-op --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manf / Mobile Home -does not own land</masterLabel>
+            <translation><!-- Manf / Mobile Home -does not own land --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manf / Mobile Home -owns land; Multiplex 2-4 units</masterLabel>
+            <translation><!-- Manf / Mobile Home -owns land; Multiplex 2-4 units --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Family</masterLabel>
+            <translation><!-- Single Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Townhouse/Condo</masterLabel>
+            <translation><!-- Townhouse/Condo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Did your organization provide Real Estate Agent Services (listing agent and/or buyer&apos;s agent)? --></help>
+        <label><!-- Provide Real Estate Agent Services? --></label>
+        <name>ProvideRealEstateAgentServices__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- For Pre-purchase/Homebuying Form: &quot;Enter the Purchase Price.&quot;
+For Reverse Mortgage Form: &quot;Enter the Loan Limit or Appraised Value.&quot;
+For Refinance Form: &quot;Enter the Current Mortgage Liens (to be paid off).&quot; --></help>
+        <label><!-- Primary Cost --></label>
+        <name>PurchasePrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose one most applicable value from the drop-down list --></help>
+        <label><!-- HUD Purpose --></label>
+        <name>Purpose__c</name>
+        <picklistValues>
+            <masterLabel>Disaster Preparedness Assistance</masterLabel>
+            <translation><!-- Disaster Preparedness Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disaster Recovery Assistance</masterLabel>
+            <translation><!-- Disaster Recovery Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homeless Assistance</masterLabel>
+            <translation><!-- Homeless Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Delinquency Post-Purchase</masterLabel>
+            <translation><!-- Non-Delinquency Post-Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not HUD-Reportable</masterLabel>
+            <translation><!-- Not HUD-Reportable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-purchase/Homebuying</masterLabel>
+            <translation><!-- Pre-purchase/Homebuying --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Topics</masterLabel>
+            <translation><!-- Rental Topics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolving or Preventing Forward Mortgage Delinquency or Default</masterLabel>
+            <translation><!-- Resolving or Preventing Forward Mortgage Delinquency or Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolving or Preventing Reverse Mortgage Delinquency or Default</masterLabel>
+            <translation><!-- Resolving or Preventing Reverse Mortgage Delinquency or Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reverse Mortgage</masterLabel>
+            <translation><!-- Reverse Mortgage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- REO Property --></label>
+        <name>REOProperty__c</name>
+    </fields>
+    <fields>
+        <label><!-- REO --></label>
+        <name>REO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Race --></label>
+        <name>Race__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rank Percentile --></label>
+        <name>RankPercentile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Source --></label>
+        <name>ReferralSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rehab Amount --></label>
+        <name>RehabAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rehab/Const Cost Not inc in Price --></label>
+        <name>RehabConstCostNotincinPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rehab/Constr Costs inc in Price --></label>
+        <name>RehabConstrCostsincinPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rehab Cost --></label>
+        <name>RehabCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repository --></label>
+        <name>Repository__c</name>
+        <picklistValues>
+            <masterLabel>Equifax</masterLabel>
+            <translation><!-- Equifax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Experian</masterLabel>
+            <translation><!-- Experian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Repository</masterLabel>
+            <translation><!-- Other Repository --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RMCR</masterLabel>
+            <translation><!-- RMCR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trans Union</masterLabel>
+            <translation><!-- Trans Union --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tri merge</masterLabel>
+            <translation><!-- Tri merge --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rural Area Status --></label>
+        <name>RuralAreaStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Savings Goal --></label>
+        <name>SavingsGoal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Second Loan Exists --></label>
+        <name>SecondLoanExists__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 2nd Mortgage (Balance) --></label>
+        <name>SecondMortgageBalance__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd Mortgage (Monthly Payment) --></label>
+        <name>SecondMortgageMonthlyPayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sector 8 (purchase) --></label>
+        <name>Sector8purchase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sector 8 (rental) --></label>
+        <name>Sector8rental__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Cost --></label>
+        <name>ServiceCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Description --></label>
+        <name>ServiceDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Name --></label>
+        <name>ServiceName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Provided by Formal Partner Org --></label>
+        <name>ServiceProvidedbyFormalPartnerOrg__c</name>
+        <picklistValues>
+            <masterLabel>Counseling/Education</masterLabel>
+            <translation><!-- Counseling/Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counseling/Education and Lending</masterLabel>
+            <translation><!-- Counseling/Education and Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lending</masterLabel>
+            <translation><!-- Lending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Type --></label>
+        <name>ServiceType__c</name>
+        <picklistValues>
+            <masterLabel>Code Inspection</masterLabel>
+            <translation><!-- Code Inspection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Plumbing</masterLabel>
+            <translation><!-- Emergency Plumbing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Repair</masterLabel>
+            <translation><!-- Emergency Repair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy Audits</masterLabel>
+            <translation><!-- Energy Audits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paint</masterLabel>
+            <translation><!-- Paint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Principal Reduction</masterLabel>
+            <translation><!-- Principal Reduction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Grant</masterLabel>
+            <translation><!-- Rental Grant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sect 8 Unit Repair</masterLabel>
+            <translation><!-- Sect 8 Unit Repair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Storm Proofing</masterLabel>
+            <translation><!-- Storm Proofing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weatherization</masterLabel>
+            <translation><!-- Weatherization --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Services Provided to Existing Home Owner --></label>
+        <name>ServicesProvidedToExistingHomeOwner__c</name>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refinance not foreclosure</masterLabel>
+            <translation><!-- Refinance not foreclosure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rehab</masterLabel>
+            <translation><!-- Rehab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replacement</masterLabel>
+            <translation><!-- Replacement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reverse mortgage</masterLabel>
+            <translation><!-- Reverse mortgage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Settlement Date --></label>
+        <name>SettlementDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street Address Line 2 --></label>
+        <name>StreetAddressLine2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Assets Goal --></label>
+        <name>TotalAssetsGoal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cash and Loans Required --></label>
+        <name>TotalCashandLoansRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cost --></label>
+        <name>TotalCost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Costs Match --></label>
+        <name>TotalCostsMatch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Costs QC Check Grant --></label>
+        <name>TotalCostsQCCheckGrant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Costs QC Check Loan --></label>
+        <name>TotalCostsQCCheckLoan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Costs QC Check --></label>
+        <name>TotalCostsQCCheck__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Counseling Session Duration --></label>
+        <name>TotalCounselingSessionDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Debt Goal --></label>
+        <name>TotalDebtGoal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Hours of FC Coaching --></label>
+        <name>TotalHoursOfFCCoaching__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Hours of FC Education --></label>
+        <name>TotalHoursOfFCEducation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Monthly Payment --></label>
+        <name>TotalMonthlyPayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Town --></label>
+        <name>Town__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Unit --></label>
+        <name>TypeofUnit__c</name>
+        <picklistValues>
+            <masterLabel>Facilitated</masterLabel>
+            <translation><!-- Facilitated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NWO Owned</masterLabel>
+            <translation><!-- NWO Owned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Construction</masterLabel>
+            <translation><!-- New Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rehabilitated</masterLabel>
+            <translation><!-- Rehabilitated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- # of Units --></label>
+        <name>Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validation Combined1 --></label>
+        <name>ValidationCombined1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validation Combined --></label>
+        <name>ValidationCombined__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veteran --></label>
+        <name>Veteran__c</name>
+    </fields>
+    <fields>
+        <help><!-- Must not have owned a home within the last 3 years. --></help>
+        <label><!-- 1st Time Home Buyer --></label>
+        <name>X1stTimeHomeBuyer__c</name>
+    </fields>
+    <fields>
+        <label><!-- isInvalidZip --></label>
+        <name>isInvalidZip__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Disaster Preparedness Counseling --></label>
+        <name>DisasterPreparednessCounseling</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Disaster Recovery Counseling --></label>
+        <name>DisasterRecoveryCounseling</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Financial Capability Counseling --></label>
+        <name>FinancialCapabilityCounseling</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Homeless Counseling --></label>
+        <name>HomelessCounseling</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Homeowner Counseling --></label>
+        <name>HomeownerCounseling</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Mortgage Delinquency Assistance Counseling --></label>
+        <name>MortgageDelinquencyAssistanceCounseling</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Pre-purchase/Homebuying Counseling --></label>
+        <name>PrepurchaseHomebuyingCounseling</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Rental Topics Counseling --></label>
+        <name>RentalTopicsCounseling</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Reverse Mortgage Counseling --></label>
+        <name>ReverseMortgageCounseling</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Reverse Mortgage Delinquency Counseling --></label>
+        <name>ReverseMortgageDelinquencyCounseling</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please Select Appropriate Counseling Termination. --></errorMessage>
+        <name>CounselingTermination</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Credit Score must be 3 Digit --></errorMessage>
+        <name>CreditScoreFormat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Household size should be between 1 to 99 --></errorMessage>
+        <name>HouseholdSizeLimitRule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Other Costs cannot be negative. --></errorMessage>
+        <name>OtherCostCannotBeNegative</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Rehab Costs cannot be negative. --></errorMessage>
+        <name>RehabCostsCannotBeNegative</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the service provided to the homeowner is Rehab, then all rehab costs should be reflected in the Primary Cost field. --></errorMessage>
+        <name>RehabCostsMustBePrimary</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Appointment --></label>
+        <name>New_Appointment</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- OfferAnAppointment --></label>
+        <name>OfferAnAppointment</name>
+    </webLinks>
+</CustomObjectTranslation>

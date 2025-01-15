@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Body --></label>
+        <name>sumoapp__Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Relation --></label>
+        <name>sumoapp__ContactRelation__c</name>
+        <relationshipLabel><!-- Text Messages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Error Details --></label>
+        <name>sumoapp__ErrorDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Relation --></label>
+        <name>sumoapp__LeadRelation__c</name>
+        <relationshipLabel><!-- Text Messages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recipient Phone --></label>
+        <name>sumoapp__Recipient__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Time --></label>
+        <name>sumoapp__SendTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>sumoapp__Status__c</name>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of Limit</masterLabel>
+            <translation><!-- Out of Limit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skipped</masterLabel>
+            <translation><!-- Skipped --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sumo Event Id --></label>
+        <name>sumoapp__SumoEventId__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,18 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#F0F0F0; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial">Hello &lt;%attendeeName%&gt;,</font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial"><br></font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><p data-pm-slice="1 1 []">I hope this message finds you well.</p></div>
+    <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial"><br></font></div>
+    <div style=""><span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">This is a reminder of your upcoming appointment with&nbsp;</span><font color="#1d1c1d" face="Slack-Lato, Slack-Fractions, appleLogo, sans-serif"><span style="font-size: 15px; font-variant-ligatures: common-ligatures;">{!$Label.AgencyProfileName}</span></font><font face="arial"><span style="font-size: 12pt;">.&nbsp;</span></font></div>
+    <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial"><br></font></div>
+    <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial"><b>Appointment:</b> {!Event.Subject}</font></div>
+    <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial">&lt;%serviceDetails%&gt;</font></div>
+    <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial">&lt;%locationDetails%&gt;</font></div>
+    <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial"><b>Date/Time:</b> {!Event.sumoapp__StartDateTimeTimezone__c}</font></div>
+    <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial"><b>Duration:</b> {!Event.DurationInMinutes} min</font></div>
+    <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial"><br></font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><p data-pm-slice="1 1 []">Please ensure you have made all necessary arrangements to attend this appointment. If you need to reschedule or have any questions, please contact us as soon as possible.&nbsp;</p><p data-pm-slice="1 1 []"><br></p><p data-pm-slice="1 1 []">We look forward to seeing you soon.&nbsp;</p></div>
+    <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial"><br></font></div>
+    <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial">Thank you,</font></div>
+    <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial" style="font-size: 12pt; background-color: rgb(240, 240, 240);">{!User.Name}</font><font face="arial" style="font-size: 12pt; background-color: rgb(240, 240, 240);"><span style="font-size: 12pt;">&nbsp;</span></font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial" style="font-size: 12pt; background-color: rgb(240, 240, 240);">{!User.Title}<span style="font-size: 12pt;">&nbsp;</span></font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial" style="background-color: rgb(240, 240, 240);">{!User.Email}&nbsp;</font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial" style="background-color: rgb(240, 240, 240);">{!User.Phone}</font></div>]]></td>
+</tr>
+</table>

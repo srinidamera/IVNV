@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>57.0</apiVersion>
+	<isExposed>true</isExposed>
+	<masterLabel>Header Navigation Menus</masterLabel>
+	<targets>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property
+                name="leftMenuName"
+                type="String"
+				datasource="apex://NavigationLinkSetPickList"
+                label="Left Navigation Menu Name"
+                description="The name of the Navigation Menu Linkset"
+            />
+			<property
+                name="rightMenuName"
+                type="String"
+				datasource="apex://NavigationLinkSetPickList"
+                label="Right Navigation Menu Name"
+                description="The name of the Navigation Menu Linkset"
+            />
+			<property
+                type="ContentReference"
+                name="contentKey"
+                label="NW Logo"
+				filter="sfdc_cms__image"
+            />
+            <property
+                type="Integer"
+                name="nwLogoWidth"
+                label="Width for NW Logo(px)"
+                default="41"
+            />
+            <property
+                type="Integer"
+                name="nwLogoHeight"
+                label="Height for NW Logo(px)"
+                default="20"
+            />
+            <property
+                type="ContentReference"
+                name="toastTitleKey"
+                label="Content Key For Toast Title"
+            />
+		    <property
+                type="ContentReference"
+                name="toastMessageKey"
+                label="Content Key For Toast Message"
+            />
+            <property
+                type="String"
+                name="welcomeMsg"
+                label="Welcome message with {Client_Name} as merge field to display from second time login."
+                default="Welcome {Client_Name}! "
+                translatable="true"
+			/>
+		</targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

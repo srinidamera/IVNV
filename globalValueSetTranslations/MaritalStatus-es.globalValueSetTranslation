@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Choose not to respond</masterLabel>
+        <translation>Prefiere no responder</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Divorced</masterLabel>
+        <translation>Divorciado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Married</masterLabel>
+        <translation>Casado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Separated</masterLabel>
+        <translation>Separado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Single</masterLabel>
+        <translation>Soltero</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Unknown</masterLabel>
+        <translation>Desconocido</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Widowed</masterLabel>
+        <translation>Viudo</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

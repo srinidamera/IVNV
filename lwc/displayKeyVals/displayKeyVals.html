@@ -1,0 +1,9 @@
+<template>
+  <div class={styleClass}>
+    <template for:each={keyValuePairs} for:item="keyVal">
+      <div key={keyVal.key}>
+        {keyVal.key}: {keyVal.value}
+      </div>
+    </template>
+  </div>
+</template>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>sumoapp__AllowCreatingEvents__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Allow creating events in the multi-calendar</description>
+        <inlineHelpText>Allow creating events in the multi-calendar</inlineHelpText>
+        <label>Allow Creating Events</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>sumoapp__AllowDefineAvailability__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <label>Allow Define Availability</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>sumoapp__DisableDescriptionUpdate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Disables filling and updating the event description</description>
+        <label>Disable Description Update</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>sumoapp__PublicSite__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Site for generation public links</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Site for generation public links</inlineHelpText>
+        <label>Public Site</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Access Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

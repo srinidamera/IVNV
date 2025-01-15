@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <description>Deletes Payment Records with draft status once their reservation time has expired (5 minutes)</description>
+    <label>Cleanup Draft Payments</label>
+    <processType>AutoLaunchedFlow</processType>
+</Flow>

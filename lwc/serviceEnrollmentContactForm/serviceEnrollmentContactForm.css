@@ -1,0 +1,18 @@
+.read-only-fields{
+	color: rgba(116, 116, 116, 1);
+	font-size: 13px;
+}
+
+.slds-form-element{
+      margin-bottom: var(--dxp-g-spacing-small);
+}
+
+.align-fluency-english{
+  margin-top: 6px;
+}
+abbr{
+  font-size: 14px;
+}
+.theme-label{
+  color:var(--dxp-s-form-element-label-color);
+}

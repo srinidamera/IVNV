@@ -1,0 +1,151 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Privacy Terms and Conditions",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"feb16ada-61e6-446b-8a10-3d06593dcda4\",\"columns\":[{\"UUID\":\"dd43f1bf-f114-42b3-a6f2-2a2d9acba3f4\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "bannerImgSrcKey" : "MCGJNT5A4FR5HLFJIYRG7PO7PH4Y",
+                "description" : "Description",
+                "dxpStyle" : { },
+                "title" : "Privacy Terms & Conditions"
+              },
+              "definition" : "c:bannerSection",
+              "id" : "b915bb71-5a70-4cda-aa81-2b2bb0096ebc",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "displayLabels" : "Home, Privacy Terms & Conditions",
+                "dxpStyle" : { },
+                "redirectToPage" : "Home"
+              },
+              "definition" : "c:breadCrumb",
+              "id" : "5f04a58e-1e3b-4e4a-a7b6-d2fffdf66711",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : { },
+                "sectionDescKey" : "MC7A3DQLIS5JGNDFKICYPOWHRBE4",
+                "title" : "Terms and Conditions"
+              },
+              "definition" : "c:titleAndContentSection",
+              "id" : "5c7a603c-5c36-418f-ae68-c78aa5c78b6a",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : { },
+                "sectionDescKey" : "MC7BR3BPT7ONHWXEEDO674PHJ2TM",
+                "title" : "System Requirements"
+              },
+              "definition" : "c:titleAndContentSection",
+              "id" : "b761ffef-7f4d-4d29-a518-e1136aac3308",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : { },
+                "sectionDescKey" : "MCKKNLEF5P2NDO7JKQRAD23IYNCI",
+                "title" : "Securities"
+              },
+              "definition" : "c:titleAndContentSection",
+              "id" : "420ed4ac-1123-4911-86ba-8c8d3d30284a",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : { },
+                "sectionDescKey" : "MCM23NNLTBZNE2JDGJ4QBIAQTQIQ",
+                "title" : "Salesforce"
+              },
+              "definition" : "c:titleAndContentSection",
+              "id" : "c6584f32-d70e-410c-b8de-64a4265136ed",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : { },
+                "sectionDescKey" : "MC7OZRKCYW4FHPHMZFJHQJXWR72I",
+                "title" : "Payment Gateway"
+              },
+              "definition" : "c:titleAndContentSection",
+              "id" : "5301398c-5d0d-43a0-b120-7c7ec47ec301",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : { },
+                "sectionDescKey" : "MCRCOZFJR6UZBWLHQFEIPRTPRCA4",
+                "title" : "SUMO"
+              },
+              "definition" : "c:titleAndContentSection",
+              "id" : "6a47b960-8370-4e7c-a881-b966b329f82d",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : { },
+                "sectionDescKey" : "MCFGVCF2MFLRGKZM7XJCFUVBCNMY",
+                "title" : "Privacy Policies"
+              },
+              "definition" : "c:titleAndContentSection",
+              "id" : "71c38e0a-92b0-4af6-bb7c-311f1cfbb2d3",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : { },
+                "sectionDescKey" : "MCECQH4WZ26RF65JUOSFJ4DQBNK4",
+                "title" : "Payment Policies"
+              },
+              "definition" : "c:titleAndContentSection",
+              "id" : "bb3abd28-950b-4b2a-85f3-949772915390",
+              "type" : "component"
+            } ],
+            "id" : "dd43f1bf-f114-42b3-a6f2-2a2d9acba3f4",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "feb16ada-61e6-446b-8a10-3d06593dcda4",
+          "scopedBrandingSetId" : "Compass_Portal",
+          "type" : "component"
+        } ],
+        "id" : "e61013f8-3f1b-493b-8a72-aa5f9dabe9fd",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "dxpStyle" : { },
+            "pageTitle" : "Privacy Terms and Conditions",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "16e07cf9-8444-45fc-ba53-bc229a5bdda1",
+          "type" : "component"
+        } ],
+        "id" : "6972c582-282c-4e7e-af57-08e00fa3473d",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "067e121b-6cd7-4bc4-a07a-221bfb858982",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-privacy-terms-and-conditions"
+  },
+  "urlName" : "privacy-terms-and-conditions"
+}

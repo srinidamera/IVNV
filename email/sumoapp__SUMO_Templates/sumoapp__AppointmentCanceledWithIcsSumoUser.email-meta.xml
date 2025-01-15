@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>sumoapp__AppointmentCanceled</letterhead>
+    <name>Appointment Canceled With ICS (SUMO User)</name>
+    <style>freeForm</style>
+    <subject>{!Organization.Name} - Canceled Appointment Details</subject>
+    <textOnly>Hi {!Receiving_User.Name},
+
+The following appointment has been canceled.
+
+Appointment: {!Event.Subject}
+&lt;%locationFields%&gt;
+Date/Time: &lt;%datetime%&gt;
+Duration: {!Event.DurationInMinutes} min
+
+&lt;%description%&gt;
+&lt;%serviceDetails%&gt;
+&lt;%locationDetails%&gt;
+
+Thank you,
+{!Receiving_User.Name}
+{!Receiving_User.Title}
+{!Organization.Name}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

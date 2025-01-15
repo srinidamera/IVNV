@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Member Type --></label>
+        <name>sumoapp__MemberType__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Modules --></label>
+        <name>sumoapp__Modules__c</name>
+        <picklistValues>
+            <masterLabel>Appointment Ghost User License</masterLabel>
+            <translation><!-- Appointment Ghost User License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appt Links User License</masterLabel>
+            <translation><!-- Appt Links User License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Invites User License</masterLabel>
+            <translation><!-- Email Invites User License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event Ghost User License</masterLabel>
+            <translation><!-- Event Ghost User License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event Host Lite</masterLabel>
+            <translation><!-- Event Host Lite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Field Sales</masterLabel>
+            <translation><!-- Field Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instant Booker (Schedule Now) User License</masterLabel>
+            <translation><!-- Instant Booker (Schedule Now) User License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Scheduler User License</masterLabel>
+            <translation><!-- Online Scheduler User License --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- License Type --></label>
+        <name>sumoapp__Type__c</name>
+        <picklistValues>
+            <masterLabel>Appointment Suite User License</masterLabel>
+            <translation><!-- Appointment Suite User License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEP Enterprise User License</masterLabel>
+            <translation><!-- CEP Enterprise User License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Appointment Suite User License</masterLabel>
+            <translation><!-- Community Appointment Suite User License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event &amp; Course Suite User License</masterLabel>
+            <translation><!-- Event &amp; Course Suite User License --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>sumoapp__User__c</name>
+        <relationshipLabel><!-- License Types --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

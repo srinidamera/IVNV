@@ -1,0 +1,40 @@
+<template>
+  <div>
+    <lightning-spinner lwc:if={isLoading} size="large" variant="brand"></lightning-spinner>
+  </div>
+  <div class="slds-m-bottom_medium">
+    <div lwc:if={isLoggedInUser} class="slds-m-bottom_small">
+      <div class="slds-grid">
+        <lightning-button class="tab-btn border-left slds-col slds-size_4-of-8 slds-small-size_4-of-8 slds-medium-size_4-of-8 slds-large-size_2-of-8" label={allClassesLabel} variant={allClassesVariant} name="AllClasses"
+          onclick={handleTabClick} stretch></lightning-button>
+        <lightning-button class="btn border-right slds-col slds-size_4-of-8 slds-small-size_4-of-8 slds-medium-size_4-of-8 slds-large-size_2-of-8" label={myClassesLabel} variant={myClassesVariant} name="MyClasses"
+          onclick={handleTabClick} stretch></lightning-button>
+      </div>
+    </div>
+    <div>
+      <div lwc:if={monthWiseClasses}>
+        <template for:each={monthWiseClasses} for:item="monthlyClass">
+          <div key={monthlyClass.classMonth} class="slds-text-heading_medium h-2 slds-m-bottom_medium">
+            {monthlyClass.startMonthAndYear}
+          </div>
+          <div key={monthlyClass.startMonthAndYear} class="slds-grid slds-wrap slds-gutters">
+            <template for:each={monthlyClass.classes} for:item="classProp">
+              <c-details-card
+                class="slds-var-m-bottom_medium slds-col slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_2-of-8"
+                key={classProp.id} props={classProp} onanchorclick={anchorClickHandler} onbtnclick={btnClickHandler}>
+              </c-details-card>
+            </template>
+          </div>
+        </template>
+      </div>
+      <div lwc:if={showNoClassEnrolledMsg} class="slds-text-heading_medium h-2 slds-m-bottom_x-large">
+        {noClassesEnrolledMsg}
+      </div>
+    </div>
+  </div>
+  <div class="slds-grid slds-gutters">
+    <lightning-button
+      class="btn btn-secondary slds-col slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_2-of-8"
+      variant="brand-outline" label={backBtnLabel} onclick={handleGoBack} stretch></lightning-button>
+  </div>
+</template>

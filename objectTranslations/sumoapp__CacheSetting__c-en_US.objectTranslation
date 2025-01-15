@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Event Builder Cache Settings --></label>
+        <name>sumoapp__EventBuilderCacheSettings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Calendar Cache Settings --></label>
+        <name>sumoapp__EventCalendarCacheSettings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invite Detail Cache Settings --></label>
+        <name>sumoapp__InviteDetailCacheSettings__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>sumoapp__User__c</name>
+        <relationshipLabel><!-- SUMO Cache Settings --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

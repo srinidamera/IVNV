@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <assignments>
+        <name>Set_Referral_Name</name>
+        <label>Set Referral Name</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignmentItems>
+            <assignToReference>varR_Referral.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>forT_SetNamingConvention</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Referral_Name</targetReference>
+        </connector>
+    </assignments>
+    <environments>Default</environments>
+    <formulas>
+        <name>forT_SetNamingConvention</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!varR_Referral.ReferralType__c}) + &quot; - &quot;  +TEXT(MONTH({!$Flow.CurrentDate}))+&apos;/&apos; +TEXT(DAY({!$Flow.CurrentDate})) +&apos;/&apos; +TEXT(YEAR({!$Flow.CurrentDate}))</expression>
+    </formulas>
+    <interviewLabel>Subflow: Update Naming Convention for Referral {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Subflow: Update Naming Convention for Referral</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Referral_Name</name>
+        <label>Update Referral Name</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <inputReference>varR_Referral</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Referral_Name</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>varR_Referral</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Referral__c</objectType>
+    </variables>
+</Flow>

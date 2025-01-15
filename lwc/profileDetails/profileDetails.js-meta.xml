@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>57.0</apiVersion>
+	<isExposed>true</isExposed>
+	<targets>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightningCommunity__Default">
+			 <property
+                type="String"
+                name="requestSupportBtnLabel"
+                label="Request Support button Label"
+                default="Contact Us"
+				translatable="true"
+                
+            />
+            <property
+                type="String"
+                name="goBackLabel"
+                label="Go Back Label"
+                default="Go Back"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="primaryContactLabel"
+                label="Primary Contact Label"
+                default="Primary Contact"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="contactHeadingLabel"
+                label="Contact Heading Label"
+                default="Contact"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="nameFieldLabel"
+                label="Full Name Field Label"
+                default="Name"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="suffixLabel"
+                label="Suffix Field Label"
+                default="Suffix"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="emailAddressLabel"
+                label="Email Address Field Label"
+                default="Email Address"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="phoneNumberLabel"
+                label="Phone Number Field Label"
+                default="Phone Number"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="bestTimeToCallLabel"
+                label="Best Time to Call Field Label"
+                default="Best Time to Call"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="preferredLanguageLabel"
+                label="Preferred Language Field Label"
+                default="Preferred Communication Language"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="relationshipToClientFieldLabel"
+                label="Relationship to Client Field Label"
+                default="Relationship to Client"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="coApplicantLabel"
+                label="Co-Applicant Label"
+                default="Co-Applicant"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="contactAddresssLabel"
+                label="Contact Address Label"
+                default="Address"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="streetFieldLabel"
+                label="Street Field Label"
+                default="Street Address"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="addressLine2FieldLabel"
+                label="Address Line 2 Field Label"
+                default="Address Line 2"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="cityFieldLabel"
+                label="City Field Label"
+                default="City"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="stateFieldLabel"
+                label="State / Province Field Label"
+                default="State / Province"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="zipCodeFieldLabel"
+                label="Zip / Postal Code Field Label"
+                default="Zip / Postal Code"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="contactDemographicsLabel"
+                label="Contact Demographics Label"
+                default="Demographics"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="birthdateFieldLabel"
+                label="Birthdate Field Label"
+                default="Birthdate"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="genderFieldLabel"
+                label="Gender Field Label"
+                default="Gender"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="raceFieldLabel"
+                label="Race Field Label"
+                default="Race"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="ethnicityFieldLabel"
+                label="Ethnicity Field Label"
+                default="Ethnicity"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="communityFieldLabel"
+                label="Community Field Label"
+                default="Community"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="fluencyInEnglishFieldLabel"
+                label="Fluency in English Field Label"
+                default="Fluency in English"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="firstTimeHomeBuyerFieldLabel"
+                label="1st Time Home Buyer Field Label"
+                default="1st Time Home Buyer"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="householdSizeFieldLabel"
+                label="Household Size Field Label"
+                default="Household Size"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="householdTypeFieldLabel"
+                label="Household Type/ Head of Household Field Label"
+                default="Household Type/ Head of Household"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="maritalStatusFieldLabel"
+                label="Marital Status Field Label"
+                default="Marital Status"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="educationFieldLabel"
+                label="Education Field Label"
+                default="Education"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="activeMilitaryFieldLabel"
+                label="Active Military Field Label"
+                default="Active Military"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="legallyDisabledFieldLabel"
+                label="Legally Disabled Field Label"
+                default="Legally Disabled"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="contactFinancesLabel"
+                label="Contact Finances Label"
+                default="Finances"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="totalMonthlyIncomeFieldLabel"
+                label="Total Monthly Income Field Label"
+                default="Current Gross Monthly Income"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="householdIncomeFieldLabel"
+                label="Household Income Field Label"
+                default="Household Income"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="noOfDependentsFieldLabel"
+                label="No of Dependents Field Label"
+                default="Number of Dependents"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="employmentStatusFieldLabel"
+                label="Employment Status Field Label"
+                default="Employment Status"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="creditScoreFieldLabel"
+                label="Credit Score Date Field Label"
+                default="Credit Score"
+				translatable="true"
+            />
+        </targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

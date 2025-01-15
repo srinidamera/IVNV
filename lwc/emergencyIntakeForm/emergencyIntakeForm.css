@@ -1,0 +1,12 @@
+@media only screen and (min-width: 48em) {
+    .slds-modal__container {
+        width: 90% !important;
+        max-width: 90% !important;
+    }
+}
+
+.spinnerHolder{
+    position: relative;
+    background-color: #16325c;
+    height: 80px;
+}

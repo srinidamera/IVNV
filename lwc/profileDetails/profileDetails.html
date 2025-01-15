@@ -1,0 +1,256 @@
+<template>
+    <div if:true={showSpinner}>
+        <lightning-spinner variant="brand" size="large"> </lightning-spinner>
+    </div>
+    <div class="slds-grid">
+        <div class="slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+            <div class="slds-box slds-box_small bg-color">
+                
+                <div class="slds-text-heading_medium heading">
+                    {primaryContactLabel}
+                </div>
+                <!--Contact Details-->
+                <div class="slds-p-top_xx-small">
+                    <div class="slds-text-heading_medium sub-heading">
+                        {contactHeadingLabel}
+                    </div>
+                    <div class="content slds-p-top_xxx-small">
+                        <div>
+                            <span>{nameFieldLabel}: </span><span>{profileDetails.FullName}</span>
+                        </div>
+                        <div>
+                            <span>{emailAddressLabel}: </span><span>{profileDetails.EmailAddress}</span>
+                        </div>
+                        <div>
+                            <span>{phoneNumberLabel}: </span><span>{profileDetails.FormattedPhoneNumber}</span>
+                        </div>
+                        <div>
+                            <span>{bestTimeToCallLabel}: </span><span>{profileDetails.BestTimeToCall}</span>
+                        </div>
+                        <div>
+                            <span>{preferredLanguageLabel}: </span><span>{profileDetails.PreferredLanguage}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Contact Address Details-->
+                <div class="slds-p-top_medium">
+                    <div class="slds-text-heading_medium sub-heading">
+                        {contactAddresssLabel}
+                    </div>
+                    <div class="content slds-p-top_xxx-small">
+                        <lightning-formatted-rich-text value={profileDetails.Address}></lightning-formatted-rich-text>
+                    </div>
+                </div>
+
+                <!--Contact Demographics Details-->
+                <div class="slds-p-top_medium">
+                    <div class="slds-text-heading_medium sub-heading">
+                        {contactDemographicsLabel}
+                    </div>
+                    <div class="content slds-p-top_xxx-small">
+                        <div>
+                            <span>{birthdateFieldLabel}: </span><span>{profileDetails.Birthdate}</span>
+                        </div>
+                        <div>
+                            <span>{genderFieldLabel}: </span><span>{profileDetails.Gender}</span>
+                        </div>
+                        <div>
+                            <span>{raceFieldLabel}: </span><span>{profileDetails.Race}</span>
+                        </div>
+                        <div>
+                            <span>{ethnicityFieldLabel}: </span><span>{profileDetails.Ethnicity}</span>
+                        </div>
+                        <div>
+                            <span>{communityFieldLabel}: </span><span>{profileDetails.Community}</span>
+                        </div>
+                        <div>
+                            <span>{fluencyInEnglishFieldLabel}: </span><span>{profileDetails.FluencyInEnglish}</span>
+                        </div>
+                        <div>
+                            <span>{firstTimeHomeBuyerFieldLabel}: </span><span>{profileDetails.FirstTimeHomeBuyer}</span>
+                        </div>
+                        <div>
+                            <span>{householdSizeFieldLabel}: </span><span>{profileDetails.HouseholdSize}</span>
+                        </div>
+                        <div>
+                            <span>{householdTypeFieldLabel}: </span><span>{profileDetails.HouseholdTypeHeadOfHousehold}</span>
+                        </div>
+                        <div>
+                            <span>{maritalStatusFieldLabel}: </span><span>{profileDetails.MaritalStatus}</span>
+                        </div>
+                        <div>
+                            <span>{educationFieldLabel}: </span><span>{profileDetails.Education}</span>
+                        </div>
+                        <div>
+                            <span>{activeMilitaryFieldLabel}: </span><span>{profileDetails.ActiveMilitary}</span>
+                        </div>
+                        <div>
+                            <span>{legallyDisabledFieldLabel}: </span><span>{profileDetails.LegallyDisabled}</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Contact Finances Details-->
+                <div class="slds-p-top_medium">
+                    <div class="slds-text-heading_medium sub-heading">
+                        {contactFinancesLabel}
+                    </div>
+                    <div class="content slds-p-top_xxx-small">
+                        <div>
+                            <span>{totalMonthlyIncomeFieldLabel}: </span><span>{profileDetails.TotalMonthlyIncome}</span>
+                        </div>
+                        <div>
+                            <span>{householdIncomeFieldLabel}: </span><span>{profileDetails.HouseholdIncome}</span>
+                        </div>
+                        <div>
+                            <span>{noOfDependentsFieldLabel}: </span><span>{profileDetails.NoOfDependents}</span>
+                        </div>
+                        <div>
+                            <span>{employmentStatusFieldLabel}: </span><span>{profileDetails.EmploymentStatus}</span>
+                        </div>
+                        <div>
+                            <span>{creditScoreFieldLabel}: </span><span>{profileDetails.CreditScore}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <template for:each={coApplicants} for:item="coApp">
+                    <hr key={coApp.SeqNo}>
+                    <div key={coApp.SeqNo}>
+                        <div class="slds-p-top_xx-small">
+                            <div class="slds-text-heading_medium heading">
+                                <Span>{coApplicantLabel} {coApp.SeqNo}</Span>
+                            </div>
+                        </div>
+
+                        <div class="slds-p-top_xx-small">
+                            <div class="slds-text-heading_medium sub-heading">
+                                {contactHeadingLabel}
+                            </div>
+                            <div class="content slds-p-top_xxx-small">
+                                <div>
+                                    <span>{nameFieldLabel}: </span><span>{coApp.FullName}</span>
+                                </div>
+                                <div>
+                                    <span>{emailAddressLabel}: </span><span>{coApp.EmailAddress}</span>
+                                </div>
+                                <div>
+                                    <span>{phoneNumberLabel}: </span><span>{coApp.FormattedPhoneNumber}</span>
+                                </div>
+                                <div>
+                                    <span>{bestTimeToCallLabel}: </span><span>{coApp.BestTimeToCall}</span>
+                                </div>
+                                <div>
+                                    <span>{preferredLanguageLabel}: </span><span>{coApp.PreferredLanguage}</span>
+                                </div>
+                                <div>
+                                    <span>{relationshipToClientFieldLabel}: </span><span>{coApp.RelationshipToClient}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Contact Address Details-->
+                        <div class="slds-p-top_medium">
+                            <div class="slds-text-heading_medium sub-heading">
+                                {contactAddresssLabel}
+                            </div>
+                            <div class="content slds-p-top_xxx-small">
+                                <lightning-formatted-rich-text value={coApp.Address}></lightning-formatted-rich-text>
+                            </div>
+                        </div>
+
+                        <!--Contact Demographics Details-->
+                        <div class="slds-p-top_medium">
+                            <div class="slds-text-heading_medium sub-heading">
+                                {contactDemographicsLabel}
+                            </div>
+                            <div class="content slds-p-top_xxx-small">
+                                <div>
+                                    <span>{birthdateFieldLabel}: </span><span>{coApp.Birthdate}</span>
+                                </div>
+                                <div>
+                                    <span>{genderFieldLabel}: </span><span>{coApp.Gender}</span>
+                                </div>
+                                <div>
+                                    <span>{raceFieldLabel}: </span><span>{coApp.Race}</span>
+                                </div>
+                                <div>
+                                    <span>{ethnicityFieldLabel}: </span><span>{coApp.Ethnicity}</span>
+                                </div>
+                                <div>
+                                    <span>{communityFieldLabel}: </span><span>{coApp.Community}</span>
+                                </div>
+                                <div>
+                                    <span>{fluencyInEnglishFieldLabel}: </span><span>{coApp.FluencyInEnglish}</span>
+                                </div>
+                                <div>
+                                    <span>{firstTimeHomeBuyerFieldLabel}: </span><span>{coApp.FirstTimeHomeBuyer}</span>
+                                </div>
+                                <div>
+                                    <span>{householdSizeFieldLabel}: </span><span>{coApp.HouseholdSize}</span>
+                                </div>
+                                <div>
+                                    <span>{householdTypeFieldLabel}: </span><span>{coApp.HouseholdTypeHeadOfHousehold}</span>
+                                </div>
+                                <div>
+                                    <span>{maritalStatusFieldLabel}: </span><span>{coApp.MaritalStatus}</span>
+                                </div>
+                                <div>
+                                    <span>{educationFieldLabel}: </span><span>{coApp.Education}</span>
+                                </div>
+                                <div>
+                                    <span>{activeMilitaryFieldLabel}: </span><span>{coApp.ActiveMilitary}</span>
+                                </div>
+                                <div>
+                                    <span>{legallyDisabledFieldLabel}: </span><span>{coApp.LegallyDisabled}</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Contact Finances Details-->
+                        <div class="slds-p-top_medium">
+                            <div class="slds-text-heading_medium sub-heading">
+                                {contactFinancesLabel}
+                            </div>
+                            <div class="content slds-p-top_xxx-small">
+                                <div>
+                                    <span>{totalMonthlyIncomeFieldLabel}: </span><span>{coApp.TotalMonthlyIncome}</span>
+                                </div>
+                                <div>
+                                    <span>{householdIncomeFieldLabel}: </span><span>{coApp.HouseholdIncome}</span>
+                                </div>
+                                <div>
+                                    <span>{noOfDependentsFieldLabel}: </span><span>{coApp.NoOfDependents}</span>
+                                </div>
+                                <div>
+                                    <span>{employmentStatusFieldLabel}: </span><span>{coApp.EmploymentStatus}</span>
+                                </div>
+                                <div>
+                                    <span>{creditScoreFieldLabel}: </span><span>{coApp.CreditScore}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </template>
+
+                <div class={gridStyle}>
+                    <div class="slds-col slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                        <lightning-button label={requestSupportBtnLabel} onclick={handleRequestSupport} stretch></lightning-button>
+                    </div>
+                </div>
+            </div>
+            <div class={gridStyle}>
+                <div class="slds-col slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                    <lightning-button label={goBackLabel} onclick={gotoPage} stretch></lightning-button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <c-toast-notification lwc:ref="toast"></c-toast-notification>
+
+</template>

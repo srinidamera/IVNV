@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+	<masterLabel>User Tasks</masterLabel>
+	<targets>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightningCommunity__Default">
+			<property
+					type="Integer"
+					name="tileHeight"
+					label="Height for tile in pixels"
+					default="104"
+			/>
+			<property
+					type="Boolean"
+					name="showBackBtn"
+					label="Show Back Button"
+					default="false"
+			/>
+			<property
+					type="String"
+					name="backBtnLabel"
+					label="Label for Back Button"
+					default="Go Back"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="showTaskProgressBar"
+					label="Show Task Progress Bar"
+					default="No"
+                	datasource="Yes,No"
+			/>
+
+			<!-- Tasks -->
+			<property
+					type="Boolean"
+					name="showHeaderDetailsHyperlink"
+					label="Show 'View Details' hyperlink over task metrics header."
+					default="false"
+			/>
+			<property
+					type="String"
+					name="labelMyTasks"
+					label="Label for 'My Tasks'"
+					default="My Tasks"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelLastUpdated"
+					label="Label for 'Last Updated' to display. Keep vacant to hide the field."
+					default="Last Updated"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelDueDate"
+					label="Label for field 'Due Date' to display. Keep vacant to hide the field."
+					default="Due Date"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelTaskDescription"
+					label="Label for 'Task Description' to display. Keep vacant to hide the field."
+					default="Task Description"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="noTasksMsg"
+					label="Msg to display when no tasks exist."
+					default="You don't have any tasks as of now."
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelViewDetails"
+					label="Label for 'View Details'"
+					default="View Details"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelNotStarted"
+					label="Label for 'Not Started'"
+					default="Not Started"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelInProgress"
+					label="Label for 'In Progress'"
+					default="In Progress"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelCompleted"
+					label="Label for 'Completed'"
+					default="Completed"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="pageType"
+					label="Page Type"
+					default="Profile"
+                	datasource="Profile,Home"
+			/>
+		</targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

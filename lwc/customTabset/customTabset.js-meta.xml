@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+	<masterLabel>Standard Tabset</masterLabel>
+	<targets>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Theme_Layout</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightningCommunity__Default">
+			<property
+					type="String"
+					name="tabLabel1"
+					label="Label for Tab-1"
+					default="Profile"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="tabLabel2"
+					label="Label for Tab-2"
+					default="Tasks"
+					translatable="true"
+			/>
+            <property
+					type="String"
+					name="tabLabel3"
+					label="Label for Tab-3"
+					default=""
+					translatable="true"
+			/>
+		</targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

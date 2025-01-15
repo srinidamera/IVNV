@@ -1,0 +1,36 @@
+.section-heading {
+    background: #E1E1E1;
+    padding: .5rem .5rem;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.section {
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-bottom: .5rem
+}
+
+.expense-entry {
+    padding: 0.5rem;
+}
+
+.field-6 {
+    margin: 0px 10px;
+    width: calc(50% - 20px);
+}
+
+.field-4 {
+    margin: 0px 10px;
+    width: calc(33.33% - 20px);
+}
+
+.field-3 {
+    margin: 0px 10px;
+    width: calc(25% - 20px);
+}
+
+.slds-modal__container {
+    max-width: 80rem !important;
+    width: 80% !important;
+}

@@ -1,0 +1,61 @@
+<template>
+    <lightning-modal-header label="Error"></lightning-modal-header>
+    <lightning-modal-body>
+        <div class="slds-align_absolute-center slds-p-around_medium">
+            <!-- <svg class="slds-icon slds-icon-text-default" focusable="false" data-key="warning" aria-hidden="true"
+                viewBox="0 0 520 520" part="icon" style="
+        height: 153px;
+        fill:#591f17;
+        width: 153px;">
+                <g>
+                    <path
+                        d="M514 425L285 55a28 28 0 00-50 0L6 425c-14 23 0 55 25 55h458c25 0 40-32 25-55zm-254-25c-17 0-30-13-30-30s13-30 30-30 30 13 30 30-13 30-30 30zm30-90c0 6-4 10-10 10h-40c-6 0-10-4-10-10V180c0-6 4-10 10-10h40c6 0 10 4 10 10v130z"></path>
+                    </path>
+                </g>
+            </svg> -->
+
+            <svg focusable="false" aria-hidden="true" viewBox="0 0 520 520" part="icon" lwc-1te30te6nf1=""
+                data-key="error" class="slds-icon slds-icon-text-default slds-icon_large" style="
+    fill: red;
+    height: 153px;
+    width: 153px;
+">
+                <g>
+                    <path
+                        d="M260 20C128 20 20 128 20 260s108 240 240 240 240-108 240-240S392 20 260 20zM80 260a180 180 0 01284-147L113 364a176 176 0 01-33-104zm180 180c-39 0-75-12-104-33l251-251a180 180 0 01-147 284z">
+                    </path>
+                </g>
+            </svg>
+        </div>
+
+        <div class="slds-align_absolute-center slds-p-around_medium slds-text-longform">
+            <p class="slds-text-heading_medium slds-hyphenate">
+                Error Message : {errorMessage}
+            </p>
+        </div>
+        <div class="slds-align_absolute-center slds-text-longform">
+            <p>
+                Please try again and make sure all the data you provided is accurate
+            </p>
+        </div>
+        <div class="slds-align_absolute-center slds-text-longform">
+            <p>If the issue persists, please contact our system administrator and</p>
+        </div>
+        
+        <div class="slds-align_absolute-center slds-text-longform">
+            <p>provide the error code above for further assistance </p>
+        </div>
+
+
+        <br>
+        <div class="slds-align_absolute-center slds-text-longform">
+            <p>Thank you for your understanding and patience</p>
+        </div>
+
+
+
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        <lightning-button label="OK" onclick={handleOkay}></lightning-button>
+    </lightning-modal-footer>
+</template>

@@ -1,0 +1,51 @@
+<template>
+  <!-- Appointment Section -->
+  <div lwc:if={showAppointments}>
+    <c-user-appointments
+      main-title={appointmentsTitleMain}
+      label-booked={labelBooked}
+      label-canceled={labelCanceled}
+      label-rescheduled={labelRescheduled}
+      label-purpose={labelPurpose}
+      label-appointment-date-time={labelAppointmentDateTime}
+      label-view-details={labelViewDetails}
+      tile-height={tileHeight}
+      booked-desc={bookedDesc}
+      canceled-desc={canceledDesc}
+      rescheduled-desc={rescheduledDesc}
+      appointment-keys={appointmentKeys}
+      button-labels={buttonLabels}
+    ></c-user-appointments>
+  </div>
+
+  <!-- Tasks Section -->
+  <div lwc:if={showTasks} class="slds-m-bottom_large">
+    <div class="slds-m-vertical_small slds-text-heading_medium h-2">{tasksTitleMain}</div>
+    <c-user-tasks
+      show-header-details-hyperlink="true"
+      label-my-tasks={labelMyTasks}
+      label-last-updated={labelLastUpdated}
+      label-due-date={labelDueDate}
+      label-task-description={labelTaskDescription}
+      no-tasks-msg={noTasksMsg}
+      label-view-details={labelViewDetails}
+      label-not-started={labelNotStarted}
+      label-in-progress={labelInProgress}
+      label-completed={labelCompleted}
+      tile-height={tileHeight}
+      use-grid="true"
+      show-task-progress-bar="Yes"
+      page-type="Home"
+    ></c-user-tasks>
+  </div>
+
+  <!-- Buttons -->
+  <div lwc:if={showButtons}>
+    <c-multi-buttons
+      btn-labels={btnLabels}
+      btn-types={btnTypes}
+      redirect-to-page={redirectToPage}
+      horizontal-align={horizontalAlign}
+    ></c-multi-buttons>
+  </div>
+</template>

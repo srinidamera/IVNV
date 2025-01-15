@@ -1,0 +1,3675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>X9902SummaryRecordPage</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>X9902SummaryRecordPage</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>To capture and summarize demographic and activity data related to the HUD 9902 report.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>AMIChosenottorespond__c</fullName>
+        <externalId>false</externalId>
+        <label>Chose Not To Respond</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ActivityTypeID__c</fullName>
+        <description>Unique identifier assigned to different types of activities or events.</description>
+        <label>Activity Type ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>Activities for All Counseling and Education</label>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>NOFA 2014-1 COMP</label>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                    <label>NOFA 2014-2 TRNG</label>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                    <label>NOFA 2015-1 COMP</label>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                    <label>NOFA 2015-2 COMP</label>
+                </value>
+                <value>
+                    <fullName>11</fullName>
+                    <default>false</default>
+                    <label>NOFA 2016-1 COMP</label>
+                </value>
+                <value>
+                    <fullName>12</fullName>
+                    <default>false</default>
+                    <label>NOFA 2017-1 COMP</label>
+                </value>
+                <value>
+                    <fullName>13</fullName>
+                    <default>false</default>
+                    <label>NOFA 2018-1 COMP</label>
+                </value>
+                <value>
+                    <fullName>14</fullName>
+                    <default>false</default>
+                    <label>NOFA 2019-1 COMP</label>
+                </value>
+                <value>
+                    <fullName>15</fullName>
+                    <default>false</default>
+                    <label>NOFA 2020-1 COMP</label>
+                </value>
+                <value>
+                    <fullName>16</fullName>
+                    <default>false</default>
+                    <label>NOFA 2021-1 COMP</label>
+                </value>
+                <value>
+                    <fullName>17</fullName>
+                    <default>false</default>
+                    <label>NOFA 2022-1 COMP</label>
+                </value>
+                <value>
+                    <fullName>18</fullName>
+                    <default>false</default>
+                    <label>NOFA 2023-1 COMP</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AmericanIndianAlaskanNative__c</fullName>
+        <description>Indicates whether the individual identifies as American Indian or Alaskan Native.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual identifies as being of American Indian or Alaskan Native descent.</inlineHelpText>
+        <label>American Indian/Alaskan Native</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Asian__c</fullName>
+        <description>Indicates whether the individual identifies as Asian.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual identifies as being of Asian descent.</inlineHelpText>
+        <label>Asian</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AttendeeCity__c</fullName>
+        <externalId>false</externalId>
+        <label>Attendee City</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AttendeeEthnicityID__c</fullName>
+        <description>Indicates the ethnic identity of the attendee.</description>
+        <inlineHelpText>Select the appropriate option to indicate the ethnic identity of the attendee from the provided list of ethnicity categories</inlineHelpText>
+        <label>Attendee Ethnicity ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>Hispanic</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>Not Hispanic</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>Chose not to respond</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AttendeeFirstTimeHomeBuyer__c</fullName>
+        <description>Indicates whether the attendee is a first-time homebuyer.</description>
+        <inlineHelpText>Select this option if the attendee is purchasing a home for the first time.</inlineHelpText>
+        <label>Attendee First Time Home Buyer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Y</fullName>
+                    <default>false</default>
+                    <label>Y</label>
+                </value>
+                <value>
+                    <fullName>N</fullName>
+                    <default>false</default>
+                    <label>N</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AttendeeID__c</fullName>
+        <externalId>false</externalId>
+        <label>Attendee ID </label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AttendeeIncomeLevel__c</fullName>
+        <description>Indicates the income level of the attendee participating in the group session.</description>
+        <inlineHelpText>Select the income level of the attendee participating in the group session.</inlineHelpText>
+        <label>Attendee Income Level</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>Below 30% of AMI</label>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                    <label>30 - 49% of AMI</label>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                    <label>50 - 79% of AMI</label>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                    <label>80 - 100% of AMI</label>
+                </value>
+                <value>
+                    <fullName>11</fullName>
+                    <default>false</default>
+                    <label>Above 100% AMI</label>
+                </value>
+                <value>
+                    <fullName>12</fullName>
+                    <default>false</default>
+                    <label>Chose not to respond</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AttendeeLimitedEnglishProficiency__c</fullName>
+        <description>Indicates whether the attendee has limited proficiency in the English language.</description>
+        <inlineHelpText>Select this option if the attendee has limited proficiency in the English language.</inlineHelpText>
+        <label>Attendee Limited English Proficiency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>Limited English Proficient</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>Not Limited English Proficient</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>Chose not to respond</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AttendeeRaceID__c</fullName>
+        <description>Indicates the racial identity of the attendee.</description>
+        <inlineHelpText>Select the appropriate option to indicate the racial identity of the attendee from the provided list of race categories.</inlineHelpText>
+        <label>Attendee Race ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>13</fullName>
+                    <default>false</default>
+                    <label>American Indian/Alaskan Native</label>
+                </value>
+                <value>
+                    <fullName>14</fullName>
+                    <default>false</default>
+                    <label>Asian</label>
+                </value>
+                <value>
+                    <fullName>15</fullName>
+                    <default>false</default>
+                    <label>Black or African American</label>
+                </value>
+                <value>
+                    <fullName>16</fullName>
+                    <default>false</default>
+                    <label>Native Hawaiian or Other Pacific Islander</label>
+                </value>
+                <value>
+                    <fullName>17</fullName>
+                    <default>false</default>
+                    <label>White</label>
+                </value>
+                <value>
+                    <fullName>18</fullName>
+                    <default>false</default>
+                    <label>More than one race</label>
+                </value>
+                <value>
+                    <fullName>19</fullName>
+                    <default>false</default>
+                    <label>Chose not to respond</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AttendeeRuralAreaStatus__c</fullName>
+        <description>Indicates whether the attendee resides in a rural area.</description>
+        <inlineHelpText>Select the appropriate option to indicate whether the attendee resides in a rural area.</inlineHelpText>
+        <label>Attendee Rural Area Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>Lives in a rural area</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>Does not live in a rural area</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>Chose not to respond</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AttendeeState__c</fullName>
+        <label>Attendee State</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>AK</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>AL</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>AR</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>AS</label>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                    <label>AZ</label>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>CA</label>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                    <label>CO</label>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                    <label>CT</label>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                    <label>DC</label>
+                </value>
+                <value>
+                    <fullName>11</fullName>
+                    <default>false</default>
+                    <label>DE</label>
+                </value>
+                <value>
+                    <fullName>12</fullName>
+                    <default>false</default>
+                    <label>FL</label>
+                </value>
+                <value>
+                    <fullName>13</fullName>
+                    <default>false</default>
+                    <label>FM</label>
+                </value>
+                <value>
+                    <fullName>14</fullName>
+                    <default>false</default>
+                    <label>GA</label>
+                </value>
+                <value>
+                    <fullName>15</fullName>
+                    <default>false</default>
+                    <label>GU</label>
+                </value>
+                <value>
+                    <fullName>16</fullName>
+                    <default>false</default>
+                    <label>HI</label>
+                </value>
+                <value>
+                    <fullName>17</fullName>
+                    <default>false</default>
+                    <label>IA</label>
+                </value>
+                <value>
+                    <fullName>18</fullName>
+                    <default>false</default>
+                    <label>ID</label>
+                </value>
+                <value>
+                    <fullName>19</fullName>
+                    <default>false</default>
+                    <label>IL</label>
+                </value>
+                <value>
+                    <fullName>20</fullName>
+                    <default>false</default>
+                    <label>IN</label>
+                </value>
+                <value>
+                    <fullName>21</fullName>
+                    <default>false</default>
+                    <label>KS</label>
+                </value>
+                <value>
+                    <fullName>22</fullName>
+                    <default>false</default>
+                    <label>KY</label>
+                </value>
+                <value>
+                    <fullName>23</fullName>
+                    <default>false</default>
+                    <label>LA</label>
+                </value>
+                <value>
+                    <fullName>24</fullName>
+                    <default>false</default>
+                    <label>MA</label>
+                </value>
+                <value>
+                    <fullName>25</fullName>
+                    <default>false</default>
+                    <label>MD</label>
+                </value>
+                <value>
+                    <fullName>26</fullName>
+                    <default>false</default>
+                    <label>ME</label>
+                </value>
+                <value>
+                    <fullName>27</fullName>
+                    <default>false</default>
+                    <label>MH</label>
+                </value>
+                <value>
+                    <fullName>28</fullName>
+                    <default>false</default>
+                    <label>MI</label>
+                </value>
+                <value>
+                    <fullName>29</fullName>
+                    <default>false</default>
+                    <label>MN</label>
+                </value>
+                <value>
+                    <fullName>30</fullName>
+                    <default>false</default>
+                    <label>MO</label>
+                </value>
+                <value>
+                    <fullName>31</fullName>
+                    <default>false</default>
+                    <label>MP</label>
+                </value>
+                <value>
+                    <fullName>32</fullName>
+                    <default>false</default>
+                    <label>MS</label>
+                </value>
+                <value>
+                    <fullName>33</fullName>
+                    <default>false</default>
+                    <label>MT</label>
+                </value>
+                <value>
+                    <fullName>34</fullName>
+                    <default>false</default>
+                    <label>NC</label>
+                </value>
+                <value>
+                    <fullName>35</fullName>
+                    <default>false</default>
+                    <label>ND</label>
+                </value>
+                <value>
+                    <fullName>36</fullName>
+                    <default>false</default>
+                    <label>NE</label>
+                </value>
+                <value>
+                    <fullName>37</fullName>
+                    <default>false</default>
+                    <label>NH</label>
+                </value>
+                <value>
+                    <fullName>38</fullName>
+                    <default>false</default>
+                    <label>NJ</label>
+                </value>
+                <value>
+                    <fullName>39</fullName>
+                    <default>false</default>
+                    <label>NM</label>
+                </value>
+                <value>
+                    <fullName>40</fullName>
+                    <default>false</default>
+                    <label>NV</label>
+                </value>
+                <value>
+                    <fullName>41</fullName>
+                    <default>false</default>
+                    <label>NY</label>
+                </value>
+                <value>
+                    <fullName>42</fullName>
+                    <default>false</default>
+                    <label>OH</label>
+                </value>
+                <value>
+                    <fullName>43</fullName>
+                    <default>false</default>
+                    <label>OK</label>
+                </value>
+                <value>
+                    <fullName>44</fullName>
+                    <default>false</default>
+                    <label>OR</label>
+                </value>
+                <value>
+                    <fullName>45</fullName>
+                    <default>false</default>
+                    <label>PA</label>
+                </value>
+                <value>
+                    <fullName>46</fullName>
+                    <default>false</default>
+                    <label>PR</label>
+                </value>
+                <value>
+                    <fullName>47</fullName>
+                    <default>false</default>
+                    <label>PW</label>
+                </value>
+                <value>
+                    <fullName>48</fullName>
+                    <default>false</default>
+                    <label>RI</label>
+                </value>
+                <value>
+                    <fullName>49</fullName>
+                    <default>false</default>
+                    <label>SC</label>
+                </value>
+                <value>
+                    <fullName>50</fullName>
+                    <default>false</default>
+                    <label>SD</label>
+                </value>
+                <value>
+                    <fullName>51</fullName>
+                    <default>false</default>
+                    <label>TN</label>
+                </value>
+                <value>
+                    <fullName>52</fullName>
+                    <default>false</default>
+                    <label>TX</label>
+                </value>
+                <value>
+                    <fullName>53</fullName>
+                    <default>false</default>
+                    <label>UT</label>
+                </value>
+                <value>
+                    <fullName>54</fullName>
+                    <default>false</default>
+                    <label>VA</label>
+                </value>
+                <value>
+                    <fullName>55</fullName>
+                    <default>false</default>
+                    <label>VI</label>
+                </value>
+                <value>
+                    <fullName>56</fullName>
+                    <default>false</default>
+                    <label>VT</label>
+                </value>
+                <value>
+                    <fullName>57</fullName>
+                    <default>false</default>
+                    <label>WA</label>
+                </value>
+                <value>
+                    <fullName>58</fullName>
+                    <default>false</default>
+                    <label>WI</label>
+                </value>
+                <value>
+                    <fullName>59</fullName>
+                    <default>false</default>
+                    <label>WV</label>
+                </value>
+                <value>
+                    <fullName>60</fullName>
+                    <default>false</default>
+                    <label>WY</label>
+                </value>
+                <value>
+                    <fullName>61</fullName>
+                    <default>false</default>
+                    <label>NA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AttendeeZipCode__c</fullName>
+        <externalId>false</externalId>
+        <label>Attendee Zip Code</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BlackorAfricanAmerican__c</fullName>
+        <description>Indicates whether the individual identifies as Black or African American.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual identifies as being of Black or African American descent.</inlineHelpText>
+        <label>Black or African American</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ChoseNottoRespond__c</fullName>
+        <description>Indicates that the individual chose not to disclose their ethnicity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual declined to provide information about their ethnicity or chose not to disclose it.</inlineHelpText>
+        <label>Chose Not To Respond</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CompletedDisasterPreparednessWorkshop__c</fullName>
+        <description>Indicates that the individual has completed a disaster preparedness workshop.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual has successfully completed a workshop focused on preparing for and responding to disasters</inlineHelpText>
+        <label>Completed Disaster Preparedness Workshop</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CompletedOtherWorkshop__c</fullName>
+        <externalId>false</externalId>
+        <label>Completed other workshop</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Completedfairhousingworkshop__c</fullName>
+        <description>Indicates that the individual has completed a fair housing workshop.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual has successfully completed a workshop that provides information about fair housing</inlineHelpText>
+        <label>Completed fair housing workshop</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Completedfinancialliteracyworkshop__c</fullName>
+        <description>Indicates that the individual has completed a financial literacy workshop.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Completed financial literacy workshop, including home affordability, budgeting and understanding use of credit.</inlineHelpText>
+        <label>Completed financial literacy workshop</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Completedpredatorylending__c</fullName>
+        <description>Indicates that the individual has completed a workshop on predatory lending</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Completed predatory lending, loan scam or other fraud prevention workshop.</inlineHelpText>
+        <label>Completed predatory lending </label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Completedrentalworkshop__c</fullName>
+        <description>Indicates that the individual has completed a rental workshop.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual has successfully completed a workshop covering topics related to renting</inlineHelpText>
+        <label>Completed rental workshop</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Course__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field is used to relate 9902 Summary record of Element Type Group Session with associated Course wiz. sumoapp__additionalInfo__c.</description>
+        <inlineHelpText>This field is used to relate 9902 Summary record of Element Type Group Session with associated Course wiz. sumoapp__additionalInfo__c.</inlineHelpText>
+        <label>Course</label>
+        <referenceTo>sumoapp__AdditionalInfo__c</referenceTo>
+        <relationshipLabel>9902 Summary</relationshipLabel>
+        <relationshipName>X9902_Summary</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>DisasterPreparednessAssistance__c</fullName>
+        <description>Indicates whether the individual received education or assistance related to disaster preparedness.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual received education or assistance on topics related to disaster preparedness, such as creating emergency plans, assembling disaster kits, or accessing community resources in the event of a disaster.</inlineHelpText>
+        <label>Disaster Preparedness Assistance</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DisasterRecoveryAssistance__c</fullName>
+        <description>Indicates whether the individual received assistance related to disaster recovery.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual received assistance for disaster recovery, such as financial aid, temporary housing, or support services, following a natural disaster or other catastrophic event.</inlineHelpText>
+        <label>Disaster Recovery Assistance</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DisasterRecoveryHousingResources__c</fullName>
+        <description>Indicates whether individuals gained access to housing resources for disaster recovery.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if individuals obtained resources such as temporary housing, rental assistance, or housing rehabilitation programs to aid in their recovery from a disaster.</inlineHelpText>
+        <label>Disaster Recovery Housing Resources</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DisasterRecoveryNonhousingResources__c</fullName>
+        <description>Indicates whether individuals gained access to non-housing resources for disaster recovery.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if individuals obtained resources such as financial assistance, food aid, medical services, or other support to aid in their recovery from a disaster.</inlineHelpText>
+        <label>Disaster Recovery Non-housing Resources</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DisasterRecoveryWorkshop__c</fullName>
+        <description>Indicates that the individual has completed a disaster recovery workshop.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual has successfully completed a workshop that provides guidance on recovering from the aftermath of a disaster</inlineHelpText>
+        <label>Disaster Recovery Workshop</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ElementType__c</fullName>
+        <label>Element Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>9902</fullName>
+                    <default>false</default>
+                    <label>9902</label>
+                </value>
+                <value>
+                    <fullName>Attendee</fullName>
+                    <default>false</default>
+                    <label>Attendee</label>
+                </value>
+                <value>
+                    <fullName>Group Session Attendee</fullName>
+                    <default>false</default>
+                    <label>Group Session Attendee</label>
+                </value>
+                <value>
+                    <fullName>Group Session</fullName>
+                    <default>false</default>
+                    <label>Group Session</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EmergencyPreparednessPlan__c</fullName>
+        <description>Indicates whether individuals developed an emergency preparedness plan.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if individuals created a plan outlining steps to take in the event of emergencies, natural disasters, or other crises to ensure safety and minimize risks.</inlineHelpText>
+        <label>Emergency Preparedness Plan</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ForwardModImprovedFinancialCapacity__c</fullName>
+        <description>Indicates whether individuals improved financial capacity through forward mortgage modifications.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if individuals successfully improved their financial capacity</inlineHelpText>
+        <label>Forward Mod Improved Financial Capacity</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ForwardMortgageDelinquencyorDefault__c</fullName>
+        <description>Indicates whether the individual experienced delinquency or default on a forward mortgage.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual experienced delinquency or default on a forward mortgage.</inlineHelpText>
+        <label>Forward Mortgage Delinquency or Default</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ForwardMortgageModImprovedFinancials__c</fullName>
+        <description>Indicates whether individuals improved financials through forward mortgage modifications.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if individuals successfully renegotiated the terms of their mortgage to improve their financial situation.</inlineHelpText>
+        <label>Forward Mortgage Mod Improved Financials</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GainedAccesstoNonHousingResources__c</fullName>
+        <description>Indicates whether the individual gained access to non-housing resources.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Households that gained access to non-housing resources (e.g. social service programs, legal services, public benefits
+such as Social Security or Medicaid, etc) after receiving Housing Counseling Services.&quot;</inlineHelpText>
+        <label>Gained Access to Non-Housing Resources</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GroupAttendeeLimitedEnglishProficiency__c</fullName>
+        <description>Indicates whether the attendee has limited proficiency in the English language.</description>
+        <label>Attendee Limited English Proficiency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>Limited English Proficient</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>Not Limited English Proficient</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>Chose not to respond</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GroupSessionActivityType__c</fullName>
+        <description>Indicates the activity type associated with the group session.</description>
+        <inlineHelpText>Select the appropriate activity type from the picklist that corresponds to the group session activity.</inlineHelpText>
+        <label>Group Session Activity Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>Activities for All Counseling and Education</label>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>NOFA 2014-1 COMP</label>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                    <label>NOFA 2014-2 TRNG</label>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                    <label>NOFA 2015-1 COMP</label>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                    <label>NOFA 2015-2 COMP</label>
+                </value>
+                <value>
+                    <fullName>11</fullName>
+                    <default>false</default>
+                    <label>NOFA 2016-1 COMP</label>
+                </value>
+                <value>
+                    <fullName>12</fullName>
+                    <default>false</default>
+                    <label>NOFA 2017-1 COMP</label>
+                </value>
+                <value>
+                    <fullName>13</fullName>
+                    <default>false</default>
+                    <label>NOFA 2018-1 COMP</label>
+                </value>
+                <value>
+                    <fullName>14</fullName>
+                    <default>false</default>
+                    <label>NOFA 2019-1 COMP</label>
+                </value>
+                <value>
+                    <fullName>15</fullName>
+                    <default>false</default>
+                    <label>NOFA 2020-1 COMP</label>
+                </value>
+                <value>
+                    <fullName>16</fullName>
+                    <default>false</default>
+                    <label>NOFA 2021-1 COMP</label>
+                </value>
+                <value>
+                    <fullName>17</fullName>
+                    <default>false</default>
+                    <label>NOFA 2022-1 COMP</label>
+                </value>
+                <value>
+                    <fullName>18</fullName>
+                    <default>false</default>
+                    <label>NOFA 2023-1 COMP</label>
+                </value>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Not Billed to HUD</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GroupSessionAttendeeCity__c</fullName>
+        <externalId>false</externalId>
+        <label>Group Session Attendee City</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GroupSessionAttendeeFeeAmount__c</fullName>
+        <description>The amount of fee charged for attending the group session by each attendee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the fee amount charged for each attendee to participate in the group session.</inlineHelpText>
+        <label>Group Session Attendee Fee Amount</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GroupSessionAttendeeID__c</fullName>
+        <externalId>false</externalId>
+        <label>Group Session Attendee ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GroupSessionAttendeeIncomeLevel__c</fullName>
+        <description>Indicates the income level of the attendee participating in the group session.</description>
+        <inlineHelpText>Select the income level of the attendee participating in the group session.</inlineHelpText>
+        <label>Group Session Attendee Income Level</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>Below 30% of AMI</label>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                    <label>30 - 49% of AMI</label>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                    <label>50 - 79% of AMI</label>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                    <label>80 - 100% of AMI</label>
+                </value>
+                <value>
+                    <fullName>11</fullName>
+                    <default>false</default>
+                    <label>Above 100% AMI</label>
+                </value>
+                <value>
+                    <fullName>12</fullName>
+                    <default>false</default>
+                    <label>Chose not to respond</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GroupSessionAttendeeReferredBy__c</fullName>
+        <description>Indicates who referred the attendee to the group session.</description>
+        <inlineHelpText>Select the appropriate option to indicate who referred the attendee to the group session.</inlineHelpText>
+        <label>Group Session Attendee Referred By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>HUD Outreach</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>Agency Outreach</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>Another Person</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>Lender</label>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                    <label>Another Agency</label>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>Real Estate Agent</label>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GroupSessionAttendeeRuralAreaStatus__c</fullName>
+        <description>Indicates whether the attendee resides in a rural area.</description>
+        <inlineHelpText>Select the appropriate option to indicate whether the attendee resides in a rural area.</inlineHelpText>
+        <label>Group Session Attendee Rural Area Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>Lives in a rural area</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>Does not live in a rural area</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>Chose not to respond</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GroupSessionAttendeeState__c</fullName>
+        <label>Group Session Attendee State</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>AK</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>AL</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>AR</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>AS</label>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                    <label>AZ</label>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>CA</label>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                    <label>CO</label>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                    <label>CT</label>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                    <label>DC</label>
+                </value>
+                <value>
+                    <fullName>11</fullName>
+                    <default>false</default>
+                    <label>DE</label>
+                </value>
+                <value>
+                    <fullName>12</fullName>
+                    <default>false</default>
+                    <label>FL</label>
+                </value>
+                <value>
+                    <fullName>13</fullName>
+                    <default>false</default>
+                    <label>FM</label>
+                </value>
+                <value>
+                    <fullName>14</fullName>
+                    <default>false</default>
+                    <label>GA</label>
+                </value>
+                <value>
+                    <fullName>15</fullName>
+                    <default>false</default>
+                    <label>GU</label>
+                </value>
+                <value>
+                    <fullName>16</fullName>
+                    <default>false</default>
+                    <label>HI</label>
+                </value>
+                <value>
+                    <fullName>17</fullName>
+                    <default>false</default>
+                    <label>IA</label>
+                </value>
+                <value>
+                    <fullName>18</fullName>
+                    <default>false</default>
+                    <label>ID</label>
+                </value>
+                <value>
+                    <fullName>19</fullName>
+                    <default>false</default>
+                    <label>IL</label>
+                </value>
+                <value>
+                    <fullName>20</fullName>
+                    <default>false</default>
+                    <label>IN</label>
+                </value>
+                <value>
+                    <fullName>21</fullName>
+                    <default>false</default>
+                    <label>KS</label>
+                </value>
+                <value>
+                    <fullName>22</fullName>
+                    <default>false</default>
+                    <label>KY</label>
+                </value>
+                <value>
+                    <fullName>23</fullName>
+                    <default>false</default>
+                    <label>LA</label>
+                </value>
+                <value>
+                    <fullName>24</fullName>
+                    <default>false</default>
+                    <label>MA</label>
+                </value>
+                <value>
+                    <fullName>25</fullName>
+                    <default>false</default>
+                    <label>MD</label>
+                </value>
+                <value>
+                    <fullName>26</fullName>
+                    <default>false</default>
+                    <label>ME</label>
+                </value>
+                <value>
+                    <fullName>27</fullName>
+                    <default>false</default>
+                    <label>MH</label>
+                </value>
+                <value>
+                    <fullName>28</fullName>
+                    <default>false</default>
+                    <label>MI</label>
+                </value>
+                <value>
+                    <fullName>29</fullName>
+                    <default>false</default>
+                    <label>MN</label>
+                </value>
+                <value>
+                    <fullName>30</fullName>
+                    <default>false</default>
+                    <label>MO</label>
+                </value>
+                <value>
+                    <fullName>31</fullName>
+                    <default>false</default>
+                    <label>MP</label>
+                </value>
+                <value>
+                    <fullName>32</fullName>
+                    <default>false</default>
+                    <label>MS</label>
+                </value>
+                <value>
+                    <fullName>33</fullName>
+                    <default>false</default>
+                    <label>MT</label>
+                </value>
+                <value>
+                    <fullName>34</fullName>
+                    <default>false</default>
+                    <label>NC</label>
+                </value>
+                <value>
+                    <fullName>35</fullName>
+                    <default>false</default>
+                    <label>ND</label>
+                </value>
+                <value>
+                    <fullName>36</fullName>
+                    <default>false</default>
+                    <label>NE</label>
+                </value>
+                <value>
+                    <fullName>37</fullName>
+                    <default>false</default>
+                    <label>NH</label>
+                </value>
+                <value>
+                    <fullName>38</fullName>
+                    <default>false</default>
+                    <label>NJ</label>
+                </value>
+                <value>
+                    <fullName>39</fullName>
+                    <default>false</default>
+                    <label>NM</label>
+                </value>
+                <value>
+                    <fullName>40</fullName>
+                    <default>false</default>
+                    <label>NV</label>
+                </value>
+                <value>
+                    <fullName>41</fullName>
+                    <default>false</default>
+                    <label>NY</label>
+                </value>
+                <value>
+                    <fullName>42</fullName>
+                    <default>false</default>
+                    <label>OH</label>
+                </value>
+                <value>
+                    <fullName>43</fullName>
+                    <default>false</default>
+                    <label>OK</label>
+                </value>
+                <value>
+                    <fullName>44</fullName>
+                    <default>false</default>
+                    <label>OR</label>
+                </value>
+                <value>
+                    <fullName>45</fullName>
+                    <default>false</default>
+                    <label>PA</label>
+                </value>
+                <value>
+                    <fullName>46</fullName>
+                    <default>false</default>
+                    <label>PR</label>
+                </value>
+                <value>
+                    <fullName>47</fullName>
+                    <default>false</default>
+                    <label>PW</label>
+                </value>
+                <value>
+                    <fullName>48</fullName>
+                    <default>false</default>
+                    <label>RI</label>
+                </value>
+                <value>
+                    <fullName>49</fullName>
+                    <default>false</default>
+                    <label>SC</label>
+                </value>
+                <value>
+                    <fullName>50</fullName>
+                    <default>false</default>
+                    <label>SD</label>
+                </value>
+                <value>
+                    <fullName>51</fullName>
+                    <default>false</default>
+                    <label>TN</label>
+                </value>
+                <value>
+                    <fullName>52</fullName>
+                    <default>false</default>
+                    <label>TX</label>
+                </value>
+                <value>
+                    <fullName>53</fullName>
+                    <default>false</default>
+                    <label>UT</label>
+                </value>
+                <value>
+                    <fullName>54</fullName>
+                    <default>false</default>
+                    <label>VA</label>
+                </value>
+                <value>
+                    <fullName>55</fullName>
+                    <default>false</default>
+                    <label>VI</label>
+                </value>
+                <value>
+                    <fullName>56</fullName>
+                    <default>false</default>
+                    <label>VT</label>
+                </value>
+                <value>
+                    <fullName>57</fullName>
+                    <default>false</default>
+                    <label>WA</label>
+                </value>
+                <value>
+                    <fullName>58</fullName>
+                    <default>false</default>
+                    <label>WI</label>
+                </value>
+                <value>
+                    <fullName>59</fullName>
+                    <default>false</default>
+                    <label>WV</label>
+                </value>
+                <value>
+                    <fullName>60</fullName>
+                    <default>false</default>
+                    <label>WY</label>
+                </value>
+                <value>
+                    <fullName>61</fullName>
+                    <default>false</default>
+                    <label>NA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GroupSessionAttendeeZipCode__c</fullName>
+        <externalId>false</externalId>
+        <label>Group Session Attendee Zip Code</label>
+        <length>9</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GroupSessionAttributeHUD_Grant__c</fullName>
+        <description>Indicates the HUD grant associated with the group session.</description>
+        <inlineHelpText>Select the appropriate HUD grant from the picklist that corresponds to the group session attribute.</inlineHelpText>
+        <label>Group Session Attribute HUD Grant</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>Comprehensive</label>
+                </value>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>MMMSA</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>Colonias</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>HECM</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>S8</label>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                    <label>Predatory Lending</label>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GroupSessionCounselorHUDId__c</fullName>
+        <externalId>false</externalId>
+        <label>Group Session Counselor HUD ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GroupSessionCounselorID__c</fullName>
+        <externalId>false</externalId>
+        <label>Group Session Counselor ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GroupSessionDate__c</fullName>
+        <label>Group Session Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>GroupSessionDuration__c</fullName>
+        <externalId>false</externalId>
+        <label>Group Session Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GroupSessionID__c</fullName>
+        <externalId>false</externalId>
+        <label>Group Session ID </label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GroupSessionTitle__c</fullName>
+        <externalId>false</externalId>
+        <label>Group Session Title</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GroupSessionType__c</fullName>
+        <description>Indicates the type of group session conducted.</description>
+        <inlineHelpText>Select the appropriate option from the picklist to categorize the type of group session conducted.</inlineHelpText>
+        <label>Group Session Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>24</fullName>
+                    <default>false</default>
+                    <label>Pre-purchase Homebuyer Education</label>
+                </value>
+                <value>
+                    <fullName>19</fullName>
+                    <default>false</default>
+                    <label>Financial Literacy (Including Home Affordability, Budgeting, and Understanding Use of Credit)</label>
+                </value>
+                <value>
+                    <fullName>26</fullName>
+                    <default>false</default>
+                    <label>Resolving or Preventing Mortgage Delinquency</label>
+                </value>
+                <value>
+                    <fullName>25</fullName>
+                    <default>false</default>
+                    <label>Non-Delinquency post-purchase (Including Home Maintenance and/or Financial Management for Homeowners)</label>
+                </value>
+                <value>
+                    <fullName>21</fullName>
+                    <default>false</default>
+                    <label>Fair Housing</label>
+                </value>
+                <value>
+                    <fullName>20</fullName>
+                    <default>false</default>
+                    <label>Predatory Lending Loan Scam or Other Fraud Prevention</label>
+                </value>
+                <value>
+                    <fullName>23</fullName>
+                    <default>false</default>
+                    <label>Rental</label>
+                </value>
+                <value>
+                    <fullName>22</fullName>
+                    <default>false</default>
+                    <label>Homelessness Prevention</label>
+                </value>
+                <value>
+                    <fullName>27</fullName>
+                    <default>false</default>
+                    <label>Disaster Preparedness</label>
+                </value>
+                <value>
+                    <fullName>28</fullName>
+                    <default>false</default>
+                    <label>Disaster recovery</label>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HUDAMIChosenottorespond__c</fullName>
+        <externalId>false</externalId>
+        <label>HUD Chose Not To Respond</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDAmericanIndianAlaskanNative__c</fullName>
+        <description>Indicates whether the individual identifies as American Indian or Alaskan Native.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual identifies as being of American Indian or Alaskan Native descent.</inlineHelpText>
+        <label>HUD American Indian/Alaskan Native</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDAsian__c</fullName>
+        <description>Indicates whether the individual identifies as Asian.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual identifies as being of Asian descent.</inlineHelpText>
+        <label>HUD Asian</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDBlackorAfricanAmerican__c</fullName>
+        <description>Indicates whether the individual identifies as Black or African American.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual identifies as being of Black or African American descent.</inlineHelpText>
+        <label>HUD Black or African American</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDChoseNottoRespond__c</fullName>
+        <description>Indicates that the individual chose not to disclose their ethnicity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual declined to provide information about their ethnicity or chose not to disclose it.</inlineHelpText>
+        <label>HUD Chose Not To Respond</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDCompletedDisasterPreparedness__c</fullName>
+        <description>Indicates that the individual has completed a disaster preparedness workshop.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual has successfully completed a workshop focused on preparing for and responding to disasters</inlineHelpText>
+        <label>HUD Completed Disaster Preparedness Wor</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDCompletedfairhousingworkshop__c</fullName>
+        <description>Indicates that the individual has completed a fair housing workshop.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual has successfully completed a workshop that provides information about fair housing</inlineHelpText>
+        <label>HUD Completed fair housing workshop</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDCompletedfinancialliteracy__c</fullName>
+        <description>Indicates that the individual has completed a financial literacy workshop.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Completed financial literacy workshop, including home affordability, budgeting and understanding use of credit.</inlineHelpText>
+        <label>HUD Completed financial literacy work</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDCompletedpredatorylending__c</fullName>
+        <description>Indicates that the individual has completed a workshop on predatory lending</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Completed predatory lending, loan scam or other fraud prevention workshop.</inlineHelpText>
+        <label>HUD Completed predatory lending </label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDCompletedrentalworkshop__c</fullName>
+        <description>Indicates that the individual has completed a rental workshop.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual has successfully completed a workshop covering topics related to renting</inlineHelpText>
+        <label>HUD Completed rental workshop</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDDisasterPreparednessAssistance__c</fullName>
+        <description>Indicates whether the individual received education or assistance related to disaster preparedness.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual received education or assistance on topics related to disaster preparedness, such as creating emergency plans, assembling disaster kits, or accessing community resources in the event of a disaster.</inlineHelpText>
+        <label>HUD Disaster Preparedness Assistance</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDDisasterRecoveryAssistance__c</fullName>
+        <description>Indicates whether the individual received assistance related to disaster recovery.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual received assistance for disaster recovery, such as financial aid, temporary housing, or support services, following a natural disaster or other catastrophic event.</inlineHelpText>
+        <label>HUD Disaster Recovery Assistance</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDDisasterRecoveryHousingResources__c</fullName>
+        <description>Indicates whether individuals gained access to housing resources for disaster recovery.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if individuals obtained resources such as temporary housing, rental assistance, or housing rehabilitation programs to aid in their recovery from a disaster.</inlineHelpText>
+        <label>HUD Disaster Recovery Housing Resources</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDDisasterRecoveryNonhousing__c</fullName>
+        <description>Indicates whether individuals gained access to non-housing resources for disaster recovery.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if individuals obtained resources such as financial assistance, food aid, medical services, or other support to aid in their recovery from a disaster.</inlineHelpText>
+        <label>HUD Disaster Recovery Non-housing Reso</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDDisasterRecoveryWorkshop__c</fullName>
+        <description>Indicates that the individual has completed a disaster recovery workshop.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual has successfully completed a workshop that provides guidance on recovering from the aftermath of a disaster</inlineHelpText>
+        <label>HUD Disaster Recovery Workshop</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDEmergencyPreparednessPlan__c</fullName>
+        <description>Indicates whether individuals developed an emergency preparedness plan.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if individuals created a plan outlining steps to take in the event of emergencies, natural disasters, or other crises to ensure safety and minimize risks.</inlineHelpText>
+        <label>HUD Emergency Preparedness Plan</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDForwardModImprovedFinancial__c</fullName>
+        <description>Indicates whether individuals improved financial capacity through forward mortgage modifications.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if individuals successfully improved their financial capacity</inlineHelpText>
+        <label>HUD Forward Mod Improved Financial Cap</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDForwardMortgageDelinquencyor__c</fullName>
+        <description>Indicates whether the individual experienced delinquency or default on a forward mortgage.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual experienced delinquency or default on a forward mortgage.</inlineHelpText>
+        <label>HUD Forward Mortgage Delinquency or Def</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDForwardMortgageModImproved__c</fullName>
+        <description>Indicates whether individuals improved financials through forward mortgage modifications.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if individuals successfully renegotiated the terms of their mortgage to improve their financial situation.</inlineHelpText>
+        <label>HUD Forward Mortgage Mod Improved Finan</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDGainedAccesstoNonHousing__c</fullName>
+        <description>Indicates whether the individual gained access to non-housing resources.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Households that gained access to non-housing resources (e.g. social service programs, legal services, public benefits
+such as Social Security or Medicaid, etc) after receiving Housing Counseling Services.&quot;</inlineHelpText>
+        <label>HUD Gained Access to Non-Housing Resour</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDHispanic__c</fullName>
+        <description>Indicates whether the individual identifies as Hispanic or Latino</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual identifies as being of Hispanic or Latino origin.</inlineHelpText>
+        <label>HUD Hispanic</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDHomeMaintenance__c</fullName>
+        <description>Indicates whether the individual received education or assistance related to home maintenance.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual received education or assistance on topics related to home maintenance, such as repairs, renovations, or energy efficiency upgrades. (Non-Delinquency Post-Purchase)</inlineHelpText>
+        <label>Home Maintenance</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDHomelessAssistance__c</fullName>
+        <description>Indicates whether the individual received assistance related to homelessness.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual received assistance for homelessness, such as emergency shelter, housing vouchers, or support services.</inlineHelpText>
+        <label>HUD Homeless Assistance</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDHomelessnessPreventionWorkshop__c</fullName>
+        <description>Indicates that the individual has completed a workshop focused on homelessness prevention.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Completed homelessness prevention workshop.</inlineHelpText>
+        <label>HUD Homelessness Prevention Workshop </label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDHomelessobtainedHousing__c</fullName>
+        <description>Indicates whether homeless individuals obtained housing.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Homeless or potentially homeless households that obtained temporary or permanent housing after receiving Housing Counseling Services.</inlineHelpText>
+        <label>HUD Homeless obtained Housing</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDHouseholddoesnotliveinarural__c</fullName>
+        <description>Indicates that the household does not reside in a rural area</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the household does not reside in a rural area</inlineHelpText>
+        <label>HUD Household does not live in a rural</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDHouseholdisLimitedEnglish__c</fullName>
+        <description>Indicates that the household has limited proficiency in the English language.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the household has limited proficiency in the English language</inlineHelpText>
+        <label>HUD Household is Limited English Profic</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDHouseholdlivesinaruralarea__c</fullName>
+        <description>Indicates that the household resides in a rural area.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the household resides in a rural area</inlineHelpText>
+        <label>HUD Household lives in a rural area</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDHouseholdsGainedAccessto__c</fullName>
+        <description>Indicates whether the household gained access to resources.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households that gained access to resources to help them improve their housing situation (e.g. down payment assistance, rental assistance, utility assistance, etc.) after receiving Housing Counseling Services.</inlineHelpText>
+        <label>HUD Households Gained Access to Resourc</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDHouseholdsImprovedFinancial__c</fullName>
+        <description>Indicates whether the household&apos;s financial capacity has improved.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households that improved their financial capacity (e.g.increased discretionary income, decreased debt load,increased savings, increased credit score) after receiving Housing Counseling Services.</inlineHelpText>
+        <label>HUD Households Improved Financial Capa</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDHouseholdsImprovedLiving__c</fullName>
+        <description>Indicates whether households have improved living conditions.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households that received rental counseling and improved living conditions after receiving Housing Counseling Services.</inlineHelpText>
+        <label>HUD Households Improved Living Conditio</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDHouseholdsReceivedRental__c</fullName>
+        <description>Indicates whether households received counseling related to rental housing.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households that received rental counseling and avoided eviction after receiving Housing Counseling Services.</inlineHelpText>
+        <label>HUD Households Received Rental Counse</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDHouseholdsReceivedReverseMortgage__c</fullName>
+        <description>Indicates whether households received assistance related to reverse mortgages.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households that received reverse mortgage counseling and obtained a Home Equity Conversion Mortgage (HECM after receiving Housing Counseling Services.</inlineHelpText>
+        <label>HUD Households Received Reverse Mortgage</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDLimitedEnglishProficienChoseNotTo__c</fullName>
+        <description>Indicates that the household declined to provide information about their English proficiency.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the household chose not to disclose information</inlineHelpText>
+        <label>HUD Chose Not To Respond</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDMoreThanoneRace__c</fullName>
+        <externalId>false</externalId>
+        <label>HUD More Than one Race</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDMortgageDelinquencyWorkshop__c</fullName>
+        <description>Indicates that the individual has completed a workshop on mortgage delinquency.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Completed resolving or preventing mortgage delinquency workshop.</inlineHelpText>
+        <label>HUD Mortgage Delinquency Workshop</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDMultiRaceChosenottorespond__c</fullName>
+        <description>Indicates that the individual declined to provide information about their race or ethnicity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual chose not to disclose their race or ethnicity.</inlineHelpText>
+        <label>HUD Chose Not To Respond </label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDNativeHawaiian__c</fullName>
+        <description>Indicates whether the individual identifies as Native Hawaiian.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual identifies as being of Native Hawaiian descent.</inlineHelpText>
+        <label>HUD Native Hawaiian</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDNonDelinquencyPostPurchaseCoun__c</fullName>
+        <description>Indicates whether individuals received counseling related to post-purchase homeownership.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households that received non-delinquency post-purchase counseling that were able to improve home conditions or home affordability after receiving Housing CounselingServices.</inlineHelpText>
+        <label>HUD Non-Delinquency Post-Purchase Coun</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDNonDelinquencyPostPurchaseWork__c</fullName>
+        <description>Indicates that the individual has completed a post-purchase workshop focusing on non-delinquency issues.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Completed non-delinquency post-purchase workshop,including home maintenance and/or financial management for homeowners.</inlineHelpText>
+        <label>HUD Non-Delinquency Post-Purchase Work</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDNotHispanic__c</fullName>
+        <description>ndicates that the individual does not identify as Hispanic or Latino.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual does not identify as being of Hispanic or Latino origin.</inlineHelpText>
+        <label>HUD Not Hispanic</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDNotLimitedEnglishProficient__c</fullName>
+        <description>Indicates that the household does not have limited proficiency in the English language.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the household does not have limited proficiency in the English language</inlineHelpText>
+        <label>HUD Not Limited English Proficient </label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDOneononeCounseling__c</fullName>
+        <description>Indicates whether the individual received one-on-one counseling.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households that received one-on-one counseling that also received group education services.</inlineHelpText>
+        <label>HUD One-on-one Counseling</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDPrepurchaseHomebuyingCounseling__c</fullName>
+        <description>Indicates whether individuals received counseling related to homebuying.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households that received prepurchase/homebuying counseling and purchased housing after receiving Housing Counseling Services.</inlineHelpText>
+        <label>HUD Prepurchase/Homebuying Counseling</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDPrepurchaseHomebuying__c</fullName>
+        <description>Indicates whether the individual received education or assistance related to homebuying.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual received education or assistance on topics related to purchasing a home, such as mortgage options, homebuyer education, or down payment assistance programs.</inlineHelpText>
+        <label>HUD Prepurchase/Homebuying</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDPrepurchasehomebuyereducation__c</fullName>
+        <description>Indicates that the individual has completed a prepurchase homebuyer education workshop.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Completed pre-purchase homebuyer education workshop.</inlineHelpText>
+        <label>HUD Prepurchase homebuyer education work</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDPreventedForwardMortgageDefault__c</fullName>
+        <description>Indicates whether individuals prevented a default on a forward mortgage.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if individuals successfully avoided defaulting on a forward mortgage by taking appropriate actions.</inlineHelpText>
+        <label>HUD Prevented Forward Mortgage Default</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDPreventedReverseMortgageDefault__c</fullName>
+        <description>Indicates whether individuals prevented a default on a reverse mortgage.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if individuals successfully avoided defaulting on a reverse mortgage by taking appropriate actions.</inlineHelpText>
+        <label>HUD Prevented Reverse Mortgage Default </label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDReceivedInformationonFair__c</fullName>
+        <description>Indicates whether the individual received information on fair housing.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households that received information on fair housing, fair lending and/or accessibility rights.</inlineHelpText>
+        <label>HUD Received Information on Fair Hous</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDRentalTopics__c</fullName>
+        <description>Indicates whether the individual received education or assistance related to renting a home.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual received education or assistance on topics related to renting a home, such as tenant rights, lease agreements, or rental assistance programs.</inlineHelpText>
+        <label>HUD Rental Topics</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDReverseMortgageDelinquencyor__c</fullName>
+        <description>Indicates whether the individual experienced delinquency or default on a reverse mortgage.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual experienced delinquency or default on a reverse mortgage.</inlineHelpText>
+        <label>HUD Reverse Mortgage Delinquency or Def</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDReverseMortgage__c</fullName>
+        <description>Indicates whether the individual received information or assistance related to reverse mortgages.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual received information or assistance related to reverse mortgages.</inlineHelpText>
+        <label>HUD Reverse Mortgage</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDRuralChosenottorespond__c</fullName>
+        <description>Indicates that the household declined to provide information about their residence type.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the household chose not to disclose information</inlineHelpText>
+        <label>HUD Chose Not To Respond</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDSection10TOTAL__c</fullName>
+        <description>Calculates the total based on the count of individuals or households benefiting from various assistance programs and counseling services</description>
+        <externalId>false</externalId>
+        <formula>HUDOneononeCounseling__c +  HUDReceivedInformationonFair__c +  HUDSustainableHouseholdBudget__c +  HUDHouseholdsImprovedFinancial__c +  HUDHouseholdsGainedAccessto__c +  HUDGainedAccesstoNonHousing__c +  HUDHomelessobtainedHousing__c +  HUDHouseholdsReceivedRental__c +  HUDHouseholdsImprovedLiving__c +  HUDPrepurchaseHomebuyingCounseling__c +  HUDHouseholdsReceivedReverseMortgage__c +  HUDDisasterRecoveryNonhousing__c +  HUDDisasterRecoveryHousingResources__c +  HUDEmergencyPreparednessPlan__c +  HUDForwardMortgageModImproved__c +  HUDPreventedReverseMortgageDefault__c +  HUDPreventedForwardMortgageDefault__c +  HUDForwardModImprovedFinancial__c + HUDNonDelinquencyPostPurchaseCoun__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Automatically calculates the total by summing the counts of individuals or households benefiting from different assistance programs and counseling services</inlineHelpText>
+        <label>HUD Section 10 TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDSection3TOTAL__c</fullName>
+        <description>This field calculates the total number of respondents for Section 3 based on the number of respondents who identified as Hispanic, non-Hispanic, and those who chose not to respond.</description>
+        <externalId>false</externalId>
+        <formula>HUDHispanic__c + HUDNotHispanic__c + HUDChoseNottoRespond__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Automatically calculates the total number of respondents for Section 3 by summing the counts of respondents</inlineHelpText>
+        <label>HUD Section 3 TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDSection4TOTAL__c</fullName>
+        <description>This field calculates the total number of respondents for Section 4 based on the count of respondents belonging to various racial categories</description>
+        <externalId>false</externalId>
+        <formula>HUDAmericanIndianAlaskanNative__c +  
+HUDAsian__c +  
+HUDBlackorAfricanAmerican__c + 
+HUDNativeHawaiian__c	+
+HUDWhite__c+
+HUDMoreThanoneRace__c+
+HUDMultiRaceChosenottorespond__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Automatically calculates the total number of respondents for Section 4 by summing the counts of respondents belonging to different racial categories.</inlineHelpText>
+        <label>HUD Section 4 TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDSection5TOTAL__c</fullName>
+        <description>This field calculates the total number of respondents for Section 5 based on the count of respondents belonging to different income categories.</description>
+        <externalId>false</externalId>
+        <formula>HUDX30ofAreaMedianIncomeAMI__c +  HUDX3049ofAMI__c +  HUDX5079ofAMI__c +  HUDX80100ofAMI__c +  HUDX100AMI__c +  HUDAMIChosenottorespond__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Automatically calculates the total number of respondents for Section 5 by summing the counts of respondents belonging to different income categories</inlineHelpText>
+        <label>HUD Section 5 TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDSection6TOTAL__c</fullName>
+        <description>This field calculates the total number of respondents for Section 6 based on the count of households living in rural areas, households not living in rural areas, and households that chose not to respond.</description>
+        <externalId>false</externalId>
+        <formula>HUDHouseholdlivesinaruralarea__c +  HUDHouseholddoesnotliveinarural__c +  HUDRuralChosenottorespond__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Automatically calculates the total number of respondents for Section 6 by summing the counts of Rural area status.</inlineHelpText>
+        <label>HUD Section 6 TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDSection7TOTAL__c</fullName>
+        <description>This field calculates the total number of respondents for Section 7 based on the count of households with limited English proficiency, households without limited English proficiency, and households that chose not to respond.</description>
+        <externalId>false</externalId>
+        <formula>HUDHouseholdisLimitedEnglish__c +  HUDNotLimitedEnglishProficient__c +  HUDLimitedEnglishProficienChoseNotTo__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Automatically calculates the total number of respondents for Section 7 by summing the counts of households with limited English proficiency</inlineHelpText>
+        <label>HUD Section 7 TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDSection8TOTAL__c</fullName>
+        <description>This field calculates the total number of respondents for Section 8 based on the completion of various workshops related to financial literacy, housing, homelessness prevention, disaster preparedness, and other relevant topics.</description>
+        <externalId>false</externalId>
+        <formula>HUDCompletedfinancialliteracy__c +  HUDCompletedpredatorylending__c +  HUDCompletedfairhousingworkshop__c +  HUDHomelessnessPreventionWorkshop__c +  HUDCompletedrentalworkshop__c +  HUDPrepurchasehomebuyereducation__c +  HUDNonDelinquencyPostPurchaseWork__c +  HUDMortgageDelinquencyWorkshop__c +  HUDCompletedDisasterPreparedness__c +  HUDDisasterRecoveryWorkshop__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Automatically calculates the total number of respondents for Section 8 by summing the counts of individuals who have completed workshops</inlineHelpText>
+        <label>HUD Section 8 TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDSection9TOTAL__c</fullName>
+        <description>Calculates the total based on the count of households receiving counseling or assistance from Section 9.</description>
+        <externalId>false</externalId>
+        <formula>HUDHomelessAssistance__c +  HUDRentalTopics__c +  HUDPrepurchaseHomebuying__c +  HUDHomeMaintenance__c +  HUDReverseMortgage__c +  HUDForwardMortgageDelinquencyor__c +  HUDReverseMortgageDelinquencyor__c +  HUDDisasterPreparednessAssistance__c +  HUDDisasterRecoveryAssistance__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Automatically calculates the total by summing the counts of households receiving counseling or assistance related to Households Receiving One-on-One Counseling, by Purpose.</inlineHelpText>
+        <label>HUD Section 9 TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDSustainableHouseholdBudget__c</fullName>
+        <description>Indicates whether the individual achieved a sustainable household budget.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households for whom counselor developed a sustainable household budget through the provision of financial management and/or budget services.</inlineHelpText>
+        <label>HUD Sustainable Household Budget </label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDWhite__c</fullName>
+        <description>Indicates whether the individual identifies as White.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual identifies as being of White descent.</inlineHelpText>
+        <label>HUD White</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDX100AMI__c</fullName>
+        <description>Indicates individuals or households whose income exceeds 100% of the Area Median Income.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual or household&apos;s income exceeds 100% of the Area Median Income.</inlineHelpText>
+        <label>HUD &gt; 100% AMI</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDX3049ofAMI__c</fullName>
+        <description>Indicates individuals or households whose income falls between 30% and 49% of the Area Median Income.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual or household&apos;s income is between 30% and 49% of the Area Median Income.</inlineHelpText>
+        <label>HUD 30 - 49% of AMI</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDX30ofAreaMedianIncomeAMI__c</fullName>
+        <description>Indicates individuals or households whose income falls below 30% of the Area Median Income.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual or household&apos;s income is less than 30% of the Area Median Income.</inlineHelpText>
+        <label>HUD &lt; 30% of Area Median Income (AMI) </label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDX5079ofAMI__c</fullName>
+        <description>Indicates individuals or households whose income falls between 50% and 79% of the Area Median Income.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual or household&apos;s income is between 50% and 79% of the Area Median Income.</inlineHelpText>
+        <label>HUD 50 - 79% of AMI</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDX80100ofAMI__c</fullName>
+        <description>Indicates individuals or households whose income falls between 80% and 100% of the Area Median Income.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual or household&apos;s income is between 80% and 100% of the Area Median Income.</inlineHelpText>
+        <label>HUD 80 - 100% of AMI</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hispanic__c</fullName>
+        <description>Indicates whether the individual identifies as Hispanic or Latino</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual identifies as being of Hispanic or Latino origin.</inlineHelpText>
+        <label>Hispanic</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HomeMaintenance__c</fullName>
+        <description>Indicates whether the individual received education or assistance related to home maintenance.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual received education or assistance on topics related to home maintenance, such as repairs, renovations, or energy efficiency upgrades. (Non-Delinquency Post-Purchase)</inlineHelpText>
+        <label>Home Maintenance</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HomelessAssistance__c</fullName>
+        <description>Indicates whether the individual received assistance related to homelessness.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual received assistance for homelessness, such as emergency shelter, housing vouchers, or support services.</inlineHelpText>
+        <label>Homeless Assistance</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HomelessnessPreventionWorkshop__c</fullName>
+        <description>Indicates that the individual has completed a workshop focused on homelessness prevention.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Completed homelessness prevention workshop.</inlineHelpText>
+        <label>Homelessness Prevention Workshop </label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HomelessobtainedHousing__c</fullName>
+        <description>Indicates whether homeless individuals obtained housing.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Homeless or potentially homeless households that obtained temporary or permanent housing after receiving Housing Counseling Services.</inlineHelpText>
+        <label>Homeless obtained Housing</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Householddoesnotliveinaruralarea__c</fullName>
+        <description>Indicates that the household does not reside in a rural area</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the household does not reside in a rural area</inlineHelpText>
+        <label>Household does not live in a rural area</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HouseholdisLimitedEnglishProficient__c</fullName>
+        <description>Indicates that the household has limited proficiency in the English language.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the household has limited proficiency in the English language</inlineHelpText>
+        <label>Household is Limited English Proficient</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Householdlivesinaruralarea__c</fullName>
+        <description>Indicates that the household resides in a rural area.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the household resides in a rural area</inlineHelpText>
+        <label>Household lives in a rural area</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HouseholdsGainedAccesstoResources__c</fullName>
+        <description>Indicates whether the household gained access to resources.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households that gained access to resources to help them improve their housing situation (e.g. down payment assistance, rental assistance, utility assistance, etc.) after receiving Housing Counseling Services.</inlineHelpText>
+        <label>Households Gained Access to Resources </label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HouseholdsImprovedFinancialCapacity__c</fullName>
+        <description>Indicates whether the household&apos;s financial capacity has improved.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households that improved their financial capacity (e.g.increased discretionary income, decreased debt load,increased savings, increased credit score) after receiving Housing Counseling Services.</inlineHelpText>
+        <label>Households Improved Financial Capacity </label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HouseholdsImprovedLivingConditions__c</fullName>
+        <description>Indicates whether households have improved living conditions.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households that received rental counseling and improved living conditions after receiving Housing Counseling Services.</inlineHelpText>
+        <label>Households Improved Living Conditions</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HouseholdsReceivedRentalCounselling__c</fullName>
+        <description>Indicates whether households received counseling related to rental housing.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households that received rental counseling and avoided eviction after receiving Housing Counseling Services.</inlineHelpText>
+        <label>Households Received Rental Counselling</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HouseholdsReceivedReverseMortgage__c</fullName>
+        <description>Indicates whether households received assistance related to reverse mortgages.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households that received reverse mortgage counseling and obtained a Home Equity Conversion Mortgage (HECM after receiving Housing Counseling Services.</inlineHelpText>
+        <label>Households Received Reverse Mortgage</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LimitedEnglishProficienChoseNotToRespond__c</fullName>
+        <description>Indicates that the household declined to provide information about their English proficiency.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the household chose not to disclose information</inlineHelpText>
+        <label>Chose Not To Respond </label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MoreThanoneRace__c</fullName>
+        <externalId>false</externalId>
+        <label>More Than one Race</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MortgageDelinquencyWorkshop__c</fullName>
+        <description>Indicates that the individual has completed a workshop on mortgage delinquency.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Completed resolving or preventing mortgage delinquency workshop.</inlineHelpText>
+        <label>Mortgage Delinquency Workshop</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MultiRaceChosenottorespond__c</fullName>
+        <description>Indicates that the individual declined to provide information about their race or ethnicity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual chose not to disclose their race or ethnicity.</inlineHelpText>
+        <label>Chose Not To Respond </label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NativeHawaiian__c</fullName>
+        <description>Indicates whether the individual identifies as Native Hawaiian.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual identifies as being of Native Hawaiian descent.</inlineHelpText>
+        <label>Native Hawaiian</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NonDelinquencyPostPurchaseCounseling__c</fullName>
+        <description>Indicates whether individuals received counseling related to post-purchase homeownership.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households that received non-delinquency post-purchase counseling that were able to improve home conditions or home affordability after receiving Housing CounselingServices.</inlineHelpText>
+        <label>Non-Delinquency Post-Purchase Counseling</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NonDelinquencyPostPurchaseWorkshop__c</fullName>
+        <description>Indicates that the individual has completed a post-purchase workshop focusing on non-delinquency issues.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Completed non-delinquency post-purchase workshop,including home maintenance and/or financial management for homeowners.</inlineHelpText>
+        <label>Non-Delinquency Post-Purchase Workshop</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NotHispanic__c</fullName>
+        <description>ndicates that the individual does not identify as Hispanic or Latino.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual does not identify as being of Hispanic or Latino origin.</inlineHelpText>
+        <label>Not Hispanic</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NotLimitedEnglishProficient__c</fullName>
+        <description>Indicates that the household does not have limited proficiency in the English language.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the household does not have limited proficiency in the English language</inlineHelpText>
+        <label>Not Limited English Proficient </label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OneononeCounseling__c</fullName>
+        <description>Indicates whether the individual received one-on-one counseling.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households that received one-on-one counseling that also received group education services.</inlineHelpText>
+        <label>One-on-one Counseling</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrepurchaseHomebuyingCounseling__c</fullName>
+        <description>Indicates whether individuals received counseling related to homebuying.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households that received prepurchase/homebuying counseling and purchased housing after receiving Housing Counseling Services.</inlineHelpText>
+        <label>Prepurchase/Homebuying Counseling</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrepurchaseHomebuying__c</fullName>
+        <description>Indicates whether the individual received education or assistance related to homebuying.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual received education or assistance on topics related to purchasing a home, such as mortgage options, homebuyer education, or down payment assistance programs.</inlineHelpText>
+        <label>Prepurchase/Homebuying</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prepurchasehomebuyereducationworkshop__c</fullName>
+        <description>Indicates that the individual has completed a prepurchase homebuyer education workshop.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Completed pre-purchase homebuyer education workshop.</inlineHelpText>
+        <label>Prepurchase homebuyer education workshop</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PreventedForwardMortgageDefault__c</fullName>
+        <description>Indicates whether individuals prevented a default on a forward mortgage.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if individuals successfully avoided defaulting on a forward mortgage by taking appropriate actions.</inlineHelpText>
+        <label>Prevented Forward Mortgage Default</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PreventedReverseMortgageDefault__c</fullName>
+        <description>Indicates whether individuals prevented a default on a reverse mortgage.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if individuals successfully avoided defaulting on a reverse mortgage by taking appropriate actions.</inlineHelpText>
+        <label>Prevented Reverse Mortgage Default </label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ReceivedInformationonFairHousing__c</fullName>
+        <description>Indicates whether the individual received information on fair housing.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households that received information on fair housing, fair lending and/or accessibility rights.</inlineHelpText>
+        <label>Received Information on Fair Housing </label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RentalTopics__c</fullName>
+        <description>Indicates whether the individual received education or assistance related to renting a home.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual received education or assistance on topics related to renting a home, such as tenant rights, lease agreements, or rental assistance programs.</inlineHelpText>
+        <label>Rental Topics</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ReportPeriodId__c</fullName>
+        <description>Unique identifier assigned to a specific reporting period.</description>
+        <inlineHelpText>Select the appropriate option from the picklist to specify the reporting period corresponding to the record.</inlineHelpText>
+        <label>Report Period Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>Quarter 1</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>Quarter 2</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>Quarter 3</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>Quarter 4</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ReverseMortgageDelinquencyorDefault__c</fullName>
+        <description>Indicates whether the individual experienced delinquency or default on a reverse mortgage.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual experienced delinquency or default on a reverse mortgage.</inlineHelpText>
+        <label>Reverse Mortgage Delinquency or Default </label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ReverseMortgage__c</fullName>
+        <description>Indicates whether the individual received information or assistance related to reverse mortgages.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual received information or assistance related to reverse mortgages.</inlineHelpText>
+        <label>Reverse Mortgage</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RuralChosenottorespond__c</fullName>
+        <description>Indicates that the household declined to provide information about their residence type.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the household chose not to disclose information</inlineHelpText>
+        <label>Chose Not To Respond</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Section10TOTAL__c</fullName>
+        <description>Calculates the total based on the count of individuals or households benefiting from various assistance programs and counseling services</description>
+        <externalId>false</externalId>
+        <formula>OneononeCounseling__c +  ReceivedInformationonFairHousing__c +  SustainableHouseholdBudget__c +  HouseholdsImprovedFinancialCapacity__c +  HouseholdsGainedAccesstoResources__c +  GainedAccesstoNonHousingResources__c +  HomelessobtainedHousing__c +  HouseholdsReceivedRentalCounselling__c +  HouseholdsImprovedLivingConditions__c +  PrepurchaseHomebuyingCounseling__c +  HouseholdsReceivedReverseMortgage__c +  DisasterRecoveryNonhousingResources__c +  DisasterRecoveryHousingResources__c +  EmergencyPreparednessPlan__c +  ForwardMortgageModImprovedFinancials__c +  PreventedReverseMortgageDefault__c +  PreventedForwardMortgageDefault__c +  ForwardModImprovedFinancialCapacity__c+NonDelinquencyPostPurchaseCounseling__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Automatically calculates the total by summing the counts of individuals or households benefiting from different assistance programs and counseling services</inlineHelpText>
+        <label>Section 10 TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Section3TOTAL__c</fullName>
+        <description>This field calculates the total number of respondents for Section 3 based on the number of respondents who identified as Hispanic, non-Hispanic, and those who chose not to respond.</description>
+        <externalId>false</externalId>
+        <formula>Hispanic__c + NotHispanic__c + ChoseNottoRespond__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Automatically calculates the total number of respondents for Section 3 by summing the counts of respondents</inlineHelpText>
+        <label>Section 3 TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Section4TOTAL__c</fullName>
+        <description>This field calculates the total number of respondents for Section 4 based on the count of respondents belonging to various racial categories</description>
+        <externalId>false</externalId>
+        <formula>AmericanIndianAlaskanNative__c +  
+Asian__c +  
+BlackorAfricanAmerican__c + 
+NativeHawaiian__c	+
+White__c+
+MoreThanoneRace__c+
+MultiRaceChosenottorespond__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Automatically calculates the total number of respondents for Section 4 by summing the counts of respondents belonging to different racial categories.</inlineHelpText>
+        <label>Section 4 TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Section5TOTAL__c</fullName>
+        <description>This field calculates the total number of respondents for Section 5 based on the count of respondents belonging to different income categories.</description>
+        <externalId>false</externalId>
+        <formula>X30ofAreaMedianIncomeAMI__c +  X3049ofAMI__c +  X5079ofAMI__c +  X80100ofAMI__c +  X100AMI__c +  AMIChosenottorespond__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Automatically calculates the total number of respondents for Section 5 by summing the counts of respondents belonging to different income categories</inlineHelpText>
+        <label>Section 5 TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Section6TOTAL__c</fullName>
+        <description>This field calculates the total number of respondents for Section 6 based on the count of households living in rural areas, households not living in rural areas, and households that chose not to respond.</description>
+        <externalId>false</externalId>
+        <formula>Householdlivesinaruralarea__c +  Householddoesnotliveinaruralarea__c +  RuralChosenottorespond__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Automatically calculates the total number of respondents for Section 6 by summing the counts of Rural area status.</inlineHelpText>
+        <label>Section 6 TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Section7TOTAL__c</fullName>
+        <description>This field calculates the total number of respondents for Section 7 based on the count of households with limited English proficiency, households without limited English proficiency, and households that chose not to respond.</description>
+        <externalId>false</externalId>
+        <formula>HouseholdisLimitedEnglishProficient__c +  NotLimitedEnglishProficient__c +  LimitedEnglishProficienChoseNotToRespond__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Automatically calculates the total number of respondents for Section 7 by summing the counts of households with limited English proficiency</inlineHelpText>
+        <label>Section 7 TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Section9TOTAL__c</fullName>
+        <description>Calculates the total based on the count of households receiving counseling or assistance from Section 9.</description>
+        <externalId>false</externalId>
+        <formula>HomelessAssistance__c +  RentalTopics__c +  PrepurchaseHomebuying__c +  HomeMaintenance__c +  ReverseMortgage__c +  ForwardMortgageDelinquencyorDefault__c +  ReverseMortgageDelinquencyorDefault__c +  DisasterPreparednessAssistance__c +  DisasterRecoveryAssistance__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Automatically calculates the total by summing the counts of households receiving counseling or assistance related to Households Receiving One-on-One Counseling, by Purpose.</inlineHelpText>
+        <label>Section 9 TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Section_8_TOTAL__c</fullName>
+        <description>This field calculates the total number of respondents for Section 8 based on the completion of various workshops related to financial literacy, housing, homelessness prevention, disaster preparedness, and other relevant topics.</description>
+        <externalId>false</externalId>
+        <formula>Completedfinancialliteracyworkshop__c +  Completedpredatorylending__c +  Completedfairhousingworkshop__c +  HomelessnessPreventionWorkshop__c +  Completedrentalworkshop__c +  Prepurchasehomebuyereducationworkshop__c +  NonDelinquencyPostPurchaseWorkshop__c +  MortgageDelinquencyWorkshop__c +  CompletedDisasterPreparednessWorkshop__c +  DisasterRecoveryWorkshop__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Automatically calculates the total number of respondents for Section 8 by summing the counts of individuals who have completed workshops</inlineHelpText>
+        <label>Section 8 TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SustainableHouseholdBudget__c</fullName>
+        <description>Indicates whether the individual achieved a sustainable household budget.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Households for whom counselor developed a sustainable household budget through the provision of financial management and/or budget services.</inlineHelpText>
+        <label>Sustainable Household Budget </label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>White__c</fullName>
+        <description>Indicates whether the individual identifies as White.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual identifies as being of White descent.</inlineHelpText>
+        <label>White</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X100AMI__c</fullName>
+        <description>Indicates individuals or households whose income exceeds 100% of the Area Median Income.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual or household&apos;s income exceeds 100% of the Area Median Income.</inlineHelpText>
+        <label>&gt; 100% AMI</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X3049ofAMI__c</fullName>
+        <description>Indicates individuals or households whose income falls between 30% and 49% of the Area Median Income.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual or household&apos;s income is between 30% and 49% of the Area Median Income.</inlineHelpText>
+        <label>30 - 49% of AMI</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X30ofAreaMedianIncomeAMI__c</fullName>
+        <description>Indicates individuals or households whose income falls below 30% of the Area Median Income.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual or household&apos;s income is less than 30% of the Area Median Income.</inlineHelpText>
+        <label>&lt; 30% of Area Median Income (AMI) </label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X5079ofAMI__c</fullName>
+        <description>Indicates individuals or households whose income falls between 50% and 79% of the Area Median Income.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual or household&apos;s income is between 50% and 79% of the Area Median Income.</inlineHelpText>
+        <label>50 - 79% of AMI</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X80100ofAMI__c</fullName>
+        <description>Indicates individuals or households whose income falls between 80% and 100% of the Area Median Income.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this option if the individual or household&apos;s income is between 80% and 100% of the Area Median Income.</inlineHelpText>
+        <label>80 - 100% of AMI</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X9902__c</fullName>
+        <label>9902</label>
+        <referenceTo>X9902__c</referenceTo>
+        <relationshipLabel>9902 Summary</relationshipLabel>
+        <relationshipName>X9902_Summary</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>9902 Summary</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>99-{00000}</displayFormat>
+        <label>9902 Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>9902 Summary</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>MassAssignRecordLabel</excludedStandardButtons>
+        <searchResultsAdditionalFields>ElementType__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ActivityTypeID__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

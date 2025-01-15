@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Grant_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>AddressLine2__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Line 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Address__c</fullName>
+        <label>Address</label>
+        <trackTrending>false</trackTrending>
+        <type>Address</type>
+    </fields>
+    <fields>
+        <fullName>ClientCase__c</fullName>
+        <label>Client Case</label>
+        <referenceTo>ClientCase__c</referenceTo>
+        <relationshipLabel>Grants</relationshipLabel>
+        <relationshipName>Grants</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>ContactName__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fax__c</fullName>
+        <label>Fax</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>FinancialSelfSufficiency__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Financial Self Sufficiency</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FinancingType__c</fullName>
+        <label>Financing Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>First grant</fullName>
+                    <default>false</default>
+                    <label>First grant</label>
+                </value>
+                <value>
+                    <fullName>All other grants</fullName>
+                    <default>false</default>
+                    <label>All other grants</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Forgiveable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Forgiveable</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FundingAmount__c</fullName>
+        <label>Funding Amount</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>FundingSource__c</fullName>
+        <label>Funding Source</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>FundingType__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Government (Federal/State/Local)</fullName>
+                    <default>false</default>
+                    <label>Government (Federal/State/Local)</label>
+                </value>
+                <value>
+                    <fullName>Not Applicable</fullName>
+                    <default>false</default>
+                    <label>Not Applicable</label>
+                </value>
+                <value>
+                    <fullName>Other Government</fullName>
+                    <default>false</default>
+                    <label>Other Government</label>
+                </value>
+                <value>
+                    <fullName>Bank of America</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Bank of America</label>
+                </value>
+                <value>
+                    <fullName>CDBG</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>CDBG</label>
+                </value>
+                <value>
+                    <fullName>Chase</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Chase</label>
+                </value>
+                <value>
+                    <fullName>CitiMortgage Inc</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>CitiMortgage Inc</label>
+                </value>
+                <value>
+                    <fullName>Credit Union</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Credit Union</label>
+                </value>
+                <value>
+                    <fullName>DOE (WAP) Weatherization Funds</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>DOE (WAP) Weatherization Funds</label>
+                </value>
+                <value>
+                    <fullName>Flagstar Bancorp</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Flagstar Bancorp</label>
+                </value>
+                <value>
+                    <fullName>Flagstar Bank FSB</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Flagstar Bank FSB</label>
+                </value>
+                <value>
+                    <fullName>Funded with a lender participation pool that NWO administers</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Funded with a lender participation pool that NWO administers</label>
+                </value>
+                <value>
+                    <fullName>HOME Funds</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>HOME Funds</label>
+                </value>
+                <value>
+                    <fullName>HUD-Guaranteed Section 184 Native American Mortgage</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>HUD-Guaranteed Section 184 Native American Mortgage</label>
+                </value>
+                <value>
+                    <fullName>MetLife Home Loans</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>MetLife Home Loans</label>
+                </value>
+                <value>
+                    <fullName>Other Private Lending Institution</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Other Private Lending Institution</label>
+                </value>
+                <value>
+                    <fullName>Other RLF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Other RLF</label>
+                </value>
+                <value>
+                    <fullName>Other not listed above</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Other not listed above</label>
+                </value>
+                <value>
+                    <fullName>PHH Corp</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>PHH Corp</label>
+                </value>
+                <value>
+                    <fullName>PennyMac Mortgage Investment Trust</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>PennyMac Mortgage Investment Trust</label>
+                </value>
+                <value>
+                    <fullName>Project Reinvest Homeownership</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Project Reinvest Homeownership</label>
+                </value>
+                <value>
+                    <fullName>Provident Funding Associates</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Provident Funding Associates</label>
+                </value>
+                <value>
+                    <fullName>Quicken</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Quicken</label>
+                </value>
+                <value>
+                    <fullName>Re-Loaned Wells LIFT</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Re-Loaned Wells LIFT</label>
+                </value>
+                <value>
+                    <fullName>ResCap (GMAC)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>ResCap (GMAC)</label>
+                </value>
+                <value>
+                    <fullName>SunTrust Mortgage Inc</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>SunTrust Mortgage Inc</label>
+                </value>
+                <value>
+                    <fullName>U.S. Bank Home Mortgage</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>U.S. Bank Home Mortgage</label>
+                </value>
+                <value>
+                    <fullName>USDA RD 502D</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>USDA RD 502D</label>
+                </value>
+                <value>
+                    <fullName>USDA RD 502G</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>USDA RD 502G</label>
+                </value>
+                <value>
+                    <fullName>USDA RD Rehab (504 or HPG)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>USDA RD Rehab (504 or HPG)</label>
+                </value>
+                <value>
+                    <fullName>Wells Fargo &amp; Co.</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Wells Fargo &amp; Co.</label>
+                </value>
+                <value>
+                    <fullName>Wells LIFT</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Wells LIFT</label>
+                </value>
+                <value>
+                    <fullName>Wells Rural</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Wells Rural</label>
+                </value>
+                <value>
+                    <fullName>loanDepot</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>loanDepot</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>CDBG</controllingFieldValue>
+                <controllingFieldValue>DOE (WAP) Weatherization Funds</controllingFieldValue>
+                <valueName>Government (Federal/State/Local)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Sweat Equity</controllingFieldValue>
+                <controllingFieldValue>NWOs other funds</controllingFieldValue>
+                <controllingFieldValue>Other sources (e.g. FHLB/AHP/Corporations/Foundations/NWA/NCC)</controllingFieldValue>
+                <controllingFieldValue>Non NWO CDFI</controllingFieldValue>
+                <valueName>Not Applicable</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>HFA</controllingFieldValue>
+                <valueName>Other Government</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>FundingType__c</fullName>
+        <label>Funding Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CDBG</fullName>
+                    <default>false</default>
+                    <label>CDBG</label>
+                </value>
+                <value>
+                    <fullName>Client Sweat Equity</fullName>
+                    <default>false</default>
+                    <label>Client Sweat Equity</label>
+                </value>
+                <value>
+                    <fullName>DOE (WAP) Weatherization Funds</fullName>
+                    <default>false</default>
+                    <label>DOE (WAP) Weatherization Funds</label>
+                </value>
+                <value>
+                    <fullName>HFA</fullName>
+                    <default>false</default>
+                    <label>HFA</label>
+                </value>
+                <value>
+                    <fullName>Non NWO CDFI</fullName>
+                    <default>false</default>
+                    <label>Non NWO CDFI</label>
+                </value>
+                <value>
+                    <fullName>NWOs other funds</fullName>
+                    <default>false</default>
+                    <label>NWOs other funds</label>
+                </value>
+                <value>
+                    <fullName>Other sources (e.g. FHLB/AHP/Corporations/Foundations/NWA/NCC)</fullName>
+                    <default>false</default>
+                    <label>Other sources (e.g. FHLB/AHP/Corporations/Foundations/NWA/NCC)</label>
+                </value>
+                <value>
+                    <fullName>City Government</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>City Government</label>
+                </value>
+                <value>
+                    <fullName>Corporation</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Corporation</label>
+                </value>
+                <value>
+                    <fullName>Federal Government</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Federal Government</label>
+                </value>
+                <value>
+                    <fullName>Foundation</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Foundation</label>
+                </value>
+                <value>
+                    <fullName>Gift of Equity</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Gift of Equity</label>
+                </value>
+                <value>
+                    <fullName>NCC</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>NCC</label>
+                </value>
+                <value>
+                    <fullName>NWO Loan Funds</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>NWO Loan Funds</label>
+                </value>
+                <value>
+                    <fullName>NWO Other</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>NWO Other</label>
+                </value>
+                <value>
+                    <fullName>NeighborWorks America</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>NeighborWorks America</label>
+                </value>
+                <value>
+                    <fullName>Other Source</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Other Source</label>
+                </value>
+                <value>
+                    <fullName>Private Lending Institution</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Private Lending Institution</label>
+                </value>
+                <value>
+                    <fullName>State or County Government</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>State or County Government</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GrantType__c</fullName>
+        <label>Grant Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>FundingType__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Government (Federal/State/Local)</fullName>
+                    <default>false</default>
+                    <label>Government (Federal/State/Local)</label>
+                </value>
+                <value>
+                    <fullName>Not Applicable</fullName>
+                    <default>false</default>
+                    <label>Not Applicable</label>
+                </value>
+                <value>
+                    <fullName>Other Government</fullName>
+                    <default>false</default>
+                    <label>Other Government</label>
+                </value>
+                <value>
+                    <fullName>CDBG - Gov</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>CDBG - Gov</label>
+                </value>
+                <value>
+                    <fullName>DOE (WAP) weatherization Funds</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>DOE (WAP) weatherization Funds</label>
+                </value>
+                <value>
+                    <fullName>Linked to NWO&apos;s Other Funds</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Linked to NWO&apos;s Other Funds</label>
+                </value>
+                <value>
+                    <fullName>Not Applicable [linked to Client Sweat Equity]</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Not Applicable [linked to Client Sweat Equity]</label>
+                </value>
+                <value>
+                    <fullName>Not Applicable [linked to HFA]</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Not Applicable [linked to HFA]</label>
+                </value>
+                <value>
+                    <fullName>Not Applicable [linked to Non NWO CDFI]</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Not Applicable [linked to Non NWO CDFI]</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>SPCP (Special Purpose Credit Program)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>SPCP (Special Purpose Credit Program)</label>
+                </value>
+                <value>
+                    <fullName>{Other not listed above}</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>{Other not listed above}</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>CDBG</controllingFieldValue>
+                <controllingFieldValue>DOE (WAP) Weatherization Funds</controllingFieldValue>
+                <valueName>Government (Federal/State/Local)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Client Sweat Equity</controllingFieldValue>
+                <controllingFieldValue>NWOs other funds</controllingFieldValue>
+                <controllingFieldValue>Other sources (e.g. FHLB/AHP/Corporations/Foundations/NWA/NCC)</controllingFieldValue>
+                <controllingFieldValue>Non NWO CDFI</controllingFieldValue>
+                <valueName>Not Applicable</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>HFA</controllingFieldValue>
+                <valueName>Other Government</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Grantor__c</fullName>
+        <externalId>false</externalId>
+        <label>Grantor</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LessCosts__c</fullName>
+        <label>Less Costs</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Phone__c</fullName>
+        <label>Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>StatusType__c</fullName>
+        <label>Status Type</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Denied</fullName>
+                    <default>false</default>
+                    <label>Denied</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WeatherizationFunds__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Weatherization Funds</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Grant</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>ClientCase__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>G- {YYYY}/{MM} - {0000}</displayFormat>
+        <label>Grant Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Grants</pluralLabel>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Grantor__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>GrantType__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ClientCase__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>StatusType__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

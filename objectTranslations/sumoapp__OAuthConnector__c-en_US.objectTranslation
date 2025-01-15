@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Access Code --></label>
+        <name>sumoapp__AccessCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Access Expires Time --></label>
+        <name>sumoapp__AccessExpiresTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Access Token --></label>
+        <name>sumoapp__AccessToken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Connector Id --></label>
+        <name>sumoapp__ConnectorId__c</name>
+    </fields>
+    <fields>
+        <label><!-- SUMO License --></label>
+        <name>sumoapp__License__c</name>
+        <relationshipLabel><!-- OAuth Connectors --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Refresh Token --></label>
+        <name>sumoapp__RefreshToken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>sumoapp__Type__c</name>
+        <picklistValues>
+            <masterLabel>ZOOM</masterLabel>
+            <translation><!-- ZOOM --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

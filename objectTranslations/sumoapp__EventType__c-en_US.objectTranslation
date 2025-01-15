@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Category --></label>
+        <name>sumoapp__Category__c</name>
+        <relationshipLabel><!-- SUMO Event Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Color --></label>
+        <name>sumoapp__Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>sumoapp__Duration__c</name>
+        <picklistValues>
+            <masterLabel>1 hour</masterLabel>
+            <translation><!-- 1 hour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.5 hour</masterLabel>
+            <translation><!-- 1.5 hour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15 Minutes</masterLabel>
+            <translation><!-- 15 Minutes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 hours</masterLabel>
+            <translation><!-- 2 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.5 hours</masterLabel>
+            <translation><!-- 2.5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 hours</masterLabel>
+            <translation><!-- 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.5 hours</masterLabel>
+            <translation><!-- 3.5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 Minutes</masterLabel>
+            <translation><!-- 30 Minutes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 hours</masterLabel>
+            <translation><!-- 4 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4.5 hours</masterLabel>
+            <translation><!-- 4.5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45 Minutes</masterLabel>
+            <translation><!-- 45 Minutes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 hours</masterLabel>
+            <translation><!-- 5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5.5 hours</masterLabel>
+            <translation><!-- 5.5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 hours</masterLabel>
+            <translation><!-- 6 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6.5 hours</masterLabel>
+            <translation><!-- 6.5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 hours</masterLabel>
+            <translation><!-- 7 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7.5 hours</masterLabel>
+            <translation><!-- 7.5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 hours</masterLabel>
+            <translation><!-- 8 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Description --></label>
+        <name>sumoapp__EventDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Name --></label>
+        <name>sumoapp__EventName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frequency Number --></label>
+        <name>sumoapp__FrequencyNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frequency Type --></label>
+        <name>sumoapp__FrequencyType__c</name>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Host Skills --></label>
+        <name>sumoapp__HostSkill__c</name>
+    </fields>
+    <fields>
+        <label><!-- Host(s) --></label>
+        <name>sumoapp__Hosts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Recurring --></label>
+        <name>sumoapp__IsRecurring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>sumoapp__Location__c</name>
+        <relationshipLabel><!-- SUMO Event Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recurring Count --></label>
+        <name>sumoapp__RecurringCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recurring Month Day --></label>
+        <name>sumoapp__RecurringMonthDay__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13</masterLabel>
+            <translation><!-- 13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14</masterLabel>
+            <translation><!-- 14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16</masterLabel>
+            <translation><!-- 16 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17</masterLabel>
+            <translation><!-- 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18</masterLabel>
+            <translation><!-- 18 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19</masterLabel>
+            <translation><!-- 19 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21</masterLabel>
+            <translation><!-- 21 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22</masterLabel>
+            <translation><!-- 22 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23</masterLabel>
+            <translation><!-- 23 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24</masterLabel>
+            <translation><!-- 24 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25</masterLabel>
+            <translation><!-- 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>26</masterLabel>
+            <translation><!-- 26 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>27</masterLabel>
+            <translation><!-- 27 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>28</masterLabel>
+            <translation><!-- 28 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>29</masterLabel>
+            <translation><!-- 29 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>31</masterLabel>
+            <translation><!-- 31 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recurring Week Day --></label>
+        <name>sumoapp__RecurringWeekDay__c</name>
+        <picklistValues>
+            <masterLabel>Fr</masterLabel>
+            <translation><!-- Fr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M</masterLabel>
+            <translation><!-- M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sa</masterLabel>
+            <translation><!-- Sa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Su</masterLabel>
+            <translation><!-- Su --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Th</masterLabel>
+            <translation><!-- Th --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tu</masterLabel>
+            <translation><!-- Tu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>W</masterLabel>
+            <translation><!-- W --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resource(s) --></label>
+        <name>sumoapp__Resources__c</name>
+    </fields>
+    <fields>
+        <label><!-- Virtual --></label>
+        <name>sumoapp__Virtual__c</name>
+    </fields>
+</CustomObjectTranslation>

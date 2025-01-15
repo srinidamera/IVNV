@@ -1,0 +1,16 @@
+.badge-width{
+    width: 84px;
+    justify-content: center;
+}
+.button-width{
+    width: 180px;
+}
+.tdClass{
+    border-top: 0px;
+}
+.verticalAlign{
+    vertical-align: top;
+}
+.padding5px{
+    padding: 5px;
+}

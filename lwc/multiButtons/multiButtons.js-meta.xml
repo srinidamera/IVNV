@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+      <target>lightningCommunity__Default</target>
+      <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property
+                type="String"
+                name="btnLabels"
+                label="Button Labels comma separated"
+                default="Button Label"
+                translatable="true"
+            />
+            <property
+                type="String"
+                name="btnTypes"
+                label="Button Types comma separated 'Primary' or 'Secondary'."
+                default="Primary"
+            />
+            <property
+                type="String"
+                name="redirectToPage"
+                label="Redirect to Page API names comma separated, on click."
+                default="Home"
+            />
+            <property
+                type="String"
+                name="queryParams"
+                label="Query params to pass while redirecting to Page, comma separated, on click."
+                default=""
+            />
+            <property
+                type="String"
+                name="horizontalAlign"
+                label="Horizontal Alignment"
+                datasource="Left,Right,Center"
+            />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

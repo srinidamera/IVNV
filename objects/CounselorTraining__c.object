@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Staff_Training_Attendance_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Staff_Training_Attendance_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>To store information about counselor training, including completed courses, certifications, and relevant training activities.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Counselor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Counselor</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Counselor_Training</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ExternalID__c</fullName>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDTrainingOrganizationOther__c</fullName>
+        <description>Represents the truncated text of the organization responsible for HUD training if not listed in full.</description>
+        <externalId>false</externalId>
+        <formula>LEFT( TrainingOrganizationOther__c , 40)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Automatically extracts the first 40 characters from the &quot;Training Organization Other&quot;</inlineHelpText>
+        <label>HUD Training Organization Other</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HUDTrainingSponsorOther__c</fullName>
+        <description>Represents the truncated text of the sponsor for HUD training if not listed in full.</description>
+        <externalId>false</externalId>
+        <formula>LEFT( TrainingSponsorOther__c , 40)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Automatically extracts the first 40 characters from the &quot;Training Sponsor Other&quot;</inlineHelpText>
+        <label>HUD Training Sponsor Other</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TrainingCertificate__c</fullName>
+        <description>Indicates whether the staff member received a training certificate.</description>
+        <inlineHelpText>Select &quot;Yes&quot; if the staff member received a training certificate; otherwise, select &quot;No&quot;. This field serves as a record of certification for completed training programs.</inlineHelpText>
+        <label>Training Certificate</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Y</fullName>
+                    <default>false</default>
+                    <label>Y</label>
+                </value>
+                <value>
+                    <fullName>N</fullName>
+                    <default>false</default>
+                    <label>N</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TrainingCourseEndDate__c</fullName>
+        <description>The end date of the training course.</description>
+        <inlineHelpText>Enter the end date of the training course. This helps in tracking the duration and completion status of the training program.</inlineHelpText>
+        <label>Training Course End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>TrainingCourseID__c</fullName>
+        <description>The unique identifier assigned to the training course.</description>
+        <displayFormat>{000000}</displayFormat>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the unique identifier assigned to the training course if applicable. This ID helps in linking training records to specific courses or programs.</inlineHelpText>
+        <label>Training Course ID</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>TrainingDuration__c</fullName>
+        <description>The duration of the training session or course.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the duration of the training session or course, typically specified in minutes.</inlineHelpText>
+        <label>Training Duration</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TrainingOrganizationOther__c</fullName>
+        <description>An option to specify another organization responsible for training if not listed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If the organization responsible for training is not listed, enter the name of the organization in this field. This ensures accurate recording of training providers.</inlineHelpText>
+        <label>Training Organization Other</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TrainingOrganization__c</fullName>
+        <description>The organization responsible for conducting the training.</description>
+        <inlineHelpText>Select the organization responsible for conducting the training from the available options. This field helps in identifying the entity delivering the training program.</inlineHelpText>
+        <label>Training Organization</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName>NeighborWorks America</fullName>
+                    <default>false</default>
+                    <label>NeighborWorks America</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+                <value>
+                    <fullName>La Raza</fullName>
+                    <default>false</default>
+                    <label>La Raza</label>
+                </value>
+                <value>
+                    <fullName>NCRC</fullName>
+                    <default>false</default>
+                    <label>NCRC</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TrainingSponsorOther__c</fullName>
+        <description>An option to specify another entity sponsoring or funding the training if not listed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If the sponsoring entity is not listed, enter the name of the sponsor in this field. This ensures accurate recording of financial support for the training program.</inlineHelpText>
+        <label>Training Sponsor Other</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TrainingSponsor__c</fullName>
+        <description>The entity sponsoring or funding the training program.</description>
+        <inlineHelpText>Select the entity sponsoring or funding the training program from the available options. This field provides insights into the financial support for the training initiative.</inlineHelpText>
+        <label>Training Sponsor</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName>HUD</fullName>
+                    <default>false</default>
+                    <label>HUD</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TrainingTitle__c</fullName>
+        <description>The title or name of the training program.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the title or name of the training program. This field provides a clear identifier for the training initiative and helps in organizing and tracking training records.</inlineHelpText>
+        <label>Training Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ValidationCombined__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+				ISPICKVAL(TrainingCertificate__c, &apos;&apos;) ||
+				ISNULL(TrainingCourseID__c) ||
+				ISBLANK(TrainingTitle__c) ||
+				ISNULL(TrainingCourseEndDate__c	) ||
+				ISPICKVAL(TrainingOrganization__c, &apos;&apos;) ||
+				ISPICKVAL(TrainingSponsor__c, &apos;&apos;),
+				&apos;Required field(s) missing: &apos; &amp;
+				IF(ISPICKVAL(TrainingCertificate__c, &apos;&apos;), &apos;Training Certificate, &apos;, &apos;&apos;) &amp;
+				IF(ISNULL(TrainingCourseID__c), &apos;Training Course ID, &apos;, &apos;&apos;) &amp;
+				IF(ISBLANK(TrainingTitle__c), &apos;Training Title, &apos;, &apos;&apos;) &amp;
+				IF(ISNULL(TrainingCourseEndDate__c), &apos;Training Date, &apos;, &apos;&apos;)  &amp;
+				IF(ISPICKVAL(TrainingOrganization__c, &apos;&apos;), &apos;Training Organization, &apos;, &apos;&apos;)  &amp;
+				IF(ISPICKVAL(TrainingSponsor__c, &apos;&apos;), &apos;Training Sponsor, &apos;, &apos;&apos;),
+				&apos;NO ERROR&apos;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Validation Combined</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Counselor Training</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Counselor__c</columns>
+        <columns>TrainingCertificate__c</columns>
+        <columns>TrainingCourseEndDate__c</columns>
+        <columns>TrainingOrganization__c</columns>
+        <columns>TrainingDuration__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>Training {000000}</displayFormat>
+        <label>Counselor Training Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Counselor Training</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

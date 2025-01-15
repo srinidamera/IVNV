@@ -1,0 +1,194 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 07-15-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+	<div class="slds-grid">
+		<!-- Empty Div -->
+		<div
+			class="slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+			<div
+				class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-top_x-small">
+				<div class="h-2"> {labels.builderReviewDetailsLabel} </div>
+			</div>
+			<div
+				class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-top_small">
+				<b>{labels.builderContactLabel}</b>
+				<div>
+					{labels.builderNameLabel}: {contact.Name}
+				</div>
+				<div>
+					{labels.builderEmailAddressLabel}: {contact.Email}
+				</div>
+				<div>
+					{labels.builderPhoneNumberLabel}: {contact.phone}
+				</div>
+				<div>
+					{labels.builderBestimeToCallLabel}: {contact.Besttimetocontact__c}
+				</div>
+				<div>
+					{labels.builderAddressLabel}: {contact.MailingStreet} {contact.MailingAddressLine2__c}
+					{contact.MailingCity}, {contact.MailingStateCode} {contact.MailingPostalCode}
+				</div>
+				<div>
+					{labels.builderBirthdateLabel}: {contact.Birthdate}
+				</div>
+				<div>
+					{labels.builderGenderLabel}: {contact.Gender__c}
+				</div>
+				<div>
+					{labels.builderRaceLabel}: {contact.Race__c}
+				</div>
+				<div>
+					{labels.builderEthnicityLabel}: {contact.Ethnicity__c}
+				</div>
+				<div>
+					{labels.builderCommunityLabel}: {contact.RuralAreaStatus__c}
+				</div>
+				<div>
+					{labels.builderFluencyInEnglishLabel}: {contact.EnglishProficiency__c}
+				</div>
+				<div>
+					{labels.builderMaritalStatusLabel}: {contact.MaritalStatus__c}
+				</div>
+				<div>
+					{labels.builderHouseholdTypeOnlyLabel}: {contact.HouseholdType__c}
+				</div>
+				<div>
+					{labels.builderEducationLabel}: {contact.Education__c}
+				</div>
+				<div>
+					{labels.builder1stTimeHomebuyerLabel}: {contact.X1stTimeHomeBuyer__c}
+				</div>
+				<div>
+					{labels.builderLegallyDisabledLabel}: {contact.DisabledStatus__c}
+				</div>
+				<div>
+					{labels.builderActiveMilitaryLabel}: {contact.ActiveMilitary__c}
+				</div>
+				<div>
+					{labels.builderVeteranLabel}: {contact.Veteran__c}
+				</div>
+				<div>
+					{labels.builderHouseholdSizeLabel}: {contact.HouseholdSize__c}
+				</div>
+				<div>
+					{labels.builderTotalMonthlyIncomeLabel} : {contact.TotalMonthlyIncome__c}
+				</div>
+				<div>
+					{labels.builderNumberOfDependentsLabel}: {contact.NumberOfDependents__c}
+				</div>
+				<div>
+					{labels.builderEmploymentStatusLabel}: {contact.EmploymentStatus__c}
+				</div>
+				<div>
+					{labels.builderCreditScoreLabel}: {contact.CreditScore__c}
+				</div>
+			</div>
+
+			<div
+				class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-top_small">
+				<template if:true={showCoApplicantDetails}>
+					<template for:each={applicants} for:item="applicant" for:index="index">
+						<div key={applicant.Id} if:true={applicant.selected} class="slds-p-bottom_small">
+							<b class="slds-p-top_x-small" >{labels.builderCoApplicantLabel} {applicant.coApplicantIndex}</b>
+							<div>
+								{labels.builderNameLabel}: {applicant.Name}
+							</div>
+							<div>
+								{labels.builderEmailAddressLabel}: {applicant.Email}
+							</div>
+							<div>
+								{labels.builderPhoneNumberLabel}: {applicant.Phone}
+							</div>
+							<div>
+								{labels.builderBestimeToCallLabel}: {applicant.Besttimetocontact__c}
+							</div>
+							<div>
+								{labels.builderAddressLabel}:
+								{applicant.MailingStreet} {applicant.MailingAddressLine2__c}
+								{applicant.MailingCity}, {applicant.MailingStateCode} {applicant.MailingPostalCode}
+							</div>
+							<div>
+								{labels.builderPreferredCommunicationLanguageLabel}: {applicant.PreferredLanguage__c}
+							</div>
+							<div>
+								{labels.builderRelationshipToClientLabel}: {applicant.RelationshipToPrimaryApplicant__c}
+							</div>
+							<div>
+								{labels.builderBirthdateLabel}: {applicant.Birthdate}
+							</div>
+							<div>
+								{labels.builderGenderLabel}: {applicant.Gender__c}
+							</div>
+							<div>
+								{labels.builderRaceLabel}: {applicant.Race__c}
+							</div>
+							<div>
+								{labels.builderEthnicityLabel}: {applicant.Ethnicity__c}
+							</div>
+							<div>
+								{labels.builderCommunityLabel}: {applicant.RuralAreaStatus__c}
+							</div>
+							<div>
+								{labels.builderFluencyInEnglishLabel}: {applicant.EnglishProficiency__c}
+							</div>
+							<!--<div>
+								{labels.builderMaritalStatusLabel}: {applicant.MaritalStatus__c}
+							</div>-->
+							<div>
+								{labels.builderEducationLabel}: {applicant.Education__c}
+							</div>
+							<div>
+								{labels.builder1stTimeHomebuyerLabel}: {contact.X1stTimeHomeBuyer__c}
+							</div>
+							<div>
+								{labels.builderActiveMilitaryLabel}: {applicant.ActiveMilitary__c}
+							</div>
+							<div>
+								{labels.builderVeteranLabel}: {applicant.Veteran__c}
+							</div>
+							<div>
+								{labels.builderLegallyDisabledLabel}: {contact.DisabledStatus__c}
+							</div>
+							<!--<div>
+								{labels.builderHouseholdSizeLabel}: {applicant.HouseholdSize__c}
+							</div>-->
+						<!--	<div>
+								{labels.builderHouseholdTypeLabel}: {applicant.HouseholdType__c}
+							</div>-->
+							
+							<div>
+								{labels.builderTotalMonthlyIncomeLabel} : {applicant.TotalMonthlyIncome__c}
+							</div>
+							<div>
+								{labels.builderNumberOfDependentsLabel}: {applicant.NumberOfDependents__c}
+							</div>
+							<div>
+								{labels.builderEmploymentStatusLabel}: {applicant.EmploymentStatus__c}
+							</div>
+							<div>
+								{labels.builderCreditScoreLabel}: {applicant.CreditScore__c}
+							</div>
+						</div>
+					</template>
+				</template>
+			</div>
+			<!--
+			<div
+				class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-top_small slds-p-bottom_small">
+				<b class="slds-p-top_x-small" >{labels.builderServiceLabel}</b>
+				<div>
+					{labels.builderCaseTypeLabel}: {service.Name}
+				</div>
+				<div>
+					{labels.builderAnnualHouseholdIncomeLabel}: {contact.Annual_Household_Income__c}
+				</div>
+				
+			</div>-->
+		</div>
+	</div>
+</template>

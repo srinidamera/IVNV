@@ -1,0 +1,21 @@
+.dummyClass {
+    color: black;
+}
+
+.footer {
+    padding: 10px 0px;
+    text-align: right;
+}
+
+.scrollable {
+    min-height: 120px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.header-component {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0 1rem 0.5rem 0.5rem;
+}

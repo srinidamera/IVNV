@@ -1,0 +1,18 @@
+:host {
+    --slds-c-accordion-summary-color-background: var(--slds-g-color-neutral-base-95, var(--lwc-colorBackground, rgb(243, 243, 243)));
+}
+
+.slds-timeline__item_expandable_open .slds-media__body {
+    display: block;
+}
+
+.collapsed {
+    display: none;
+    background: #0176d312;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.slds-timeline__item_task:before{
+    background: var(--slds-g-color-neutral-base-80, var(--lwc-colorBorder, rgb(229, 229, 229)));
+}

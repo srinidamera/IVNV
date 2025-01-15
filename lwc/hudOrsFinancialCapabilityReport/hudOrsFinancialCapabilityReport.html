@@ -1,0 +1,95 @@
+<template>
+    
+    <div class="spinner">
+        <template if:true={isLoading}>
+             <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+             </lightning-spinner>
+        </template>
+    </div>
+    
+    <lightning-tabset variant="scoped">
+        <lightning-tab label="Financial Capability Validation" onactive={handleActive}>
+            <lightning-card >
+                <div class="modal-header slds-modal__header" >
+                    <h2 class="title slds-text-heading--medium slds-hyphenate">Financial Capability Validation and Export</h2>
+                    <h6 >Report to validate all required data is entered for the Financial Capability detail report. Includes red/green pass/fail values to identify missing information. All missing fields will be highlighted with a red border.Please note that this report is no longer uploaded to ORS. Instead you will run the FC Aggregate reporting and manually enter the numbers into ORS.</h6>
+                </div>
+
+                <br/>
+
+                <div class="slds-grid slds-gutters" style="margin-left:1% ; margin-right:1%">                        
+                    <div class="slds-col slds-size_1-of-2">                    
+                        <lightning-input type="Date" name="Start Date" label="Start Date" value={qtrStartdate} onchange={handledqtrStartDate}></lightning-input>
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-2">                   
+                        <lightning-input type="Date" name="End Date" label="End Date" value={qtrEnddate} onchange={handledqtrEndDate} ></lightning-input>
+                    </div>                
+                </div>
+
+                <br/>
+
+                <div style="text-align: right;margin-right:2%">
+                    <lightning-button label="Run Report" variant="brand" onclick={refreshData} disabled={btndisable}></lightning-button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <lightning-button label="Export" variant="brand" onclick={exporttoExcel} disabled={btndisable}></lightning-button>
+                </div>       
+                <br/><br/>
+                <template if:true={bookingList}>
+                    <lightning-datatable  data={bookingList} columns={columns} key-field="Id" column-widths-mode="auto" hide-checkbox-column = "true">
+                    </lightning-datatable>
+                </template>
+
+                <template if:true={error}>
+                    {error}
+                </template>           
+            </lightning-card>
+        </lightning-tab>
+
+        <lightning-tab label="Financial Capability Detail Report" onactive={handleActive}>
+            <lightning-card >
+                <div class="modal-header slds-modal__header" >
+                    <h2 class="title slds-text-heading--medium slds-hyphenate">Financial Capability Aggregate and Details report</h2>
+                    <h6>Please note that this report is no longer uploaded to ORS. Instead you will run the FC Aggregate reporting and manually enter the numbers into ORS.</h6>
+                </div>
+
+                <br/>
+
+                <div class="slds-grid slds-gutters" style="margin-left:1% ; margin-right:1%">                           
+                    <div class="slds-col slds-size_1-of-2">                        
+                        <lightning-input type="Date" name="Start Date" label="Start Date" value={qtrStartdate} onchange={handledqtrStartDate}></lightning-input>
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-2">                       
+                        <lightning-input type="Date" name="End Date" label="End Date" value={qtrEnddate} onchange={handledqtrEndDate} ></lightning-input>
+                    </div>           
+                </div>
+
+                <br/>
+
+                <div style="text-align: right;margin-right:2%">
+                    <lightning-button label="Run Report" variant="brand" onclick={refreshFCAggregateValidation} disabled={btndisable}></lightning-button>&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+
+                <br/><br/>
+
+                <template if:true={showAggregateReportFC}>
+                    <div class="slds-col">
+                        <h6>Aggregate Report</h6><br/>
+                        <lightning-datatable data={clientAggregateReportFC} columns={columnsAggregateReportFC} key-field="Id" column-widths-mode="auto" hide-checkbox-column = "true" wrap-text-max-lines= "2">
+                        </lightning-datatable>
+
+                        <br/><br/>
+                        <h6>Detail Report</h6><br/>
+                        <lightning-datatable data={clientValidationReportFC} columns={columnsValidationReportFC} key-field="Id" column-widths-mode="auto" hide-checkbox-column = "true">
+                        </lightning-datatable>
+                    </div>
+                </template>
+
+                <template if:true={error}>
+                    {error}
+                </template>     
+            </lightning-card>
+
+        </lightning-tab>
+    </lightning-tabset>
+</template>

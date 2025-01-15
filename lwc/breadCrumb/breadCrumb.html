@@ -1,0 +1,10 @@
+<template>
+  <div class="font-style">
+    <template for:each={properties} for:item="prop">
+      <span key={prop.label} class={prop.style}>
+        <span lwc:if={prop.isHyperlink}><a onclick={goToPage} data-item={prop.redirectToPage}>{prop.label}</a> > </span>
+        <span lwc:else>{prop.label}</span>
+      </span>
+    </template>
+  </div>
+</template>

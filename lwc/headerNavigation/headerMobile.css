@@ -1,0 +1,20 @@
+.header-backgroud-color{
+	background-color: var(--slds-g-color-neutral-base-100,#fff);
+}
+.icon-css{
+	--slds-c-icon-color-foreground-default: rgba(208, 208, 208, 1);
+}
+.home-icon-css{
+	/* --slds-c-icon-color-background: rgba(0, 170, 7, 1) !important; */
+	--slds-c-icon-color-background: var(--dxp-g-brand) !important;
+}
+
+.dropdown{
+    width: 190px;
+}
+.check-icon{
+    --slds-c-icon-color-foreground-default: rgba(116, 116, 116, 1);
+}
+.mobile-menu-width{
+	width: 150px;
+}

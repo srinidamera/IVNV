@@ -1,0 +1,66 @@
+.h-2 {
+  font-size: var(--dxp-s-text-heading-large-font-size) !important;
+  font-weight: var(--dxp-s-text-heading-large-font-weight) !important;
+}
+.service-tile{
+  border-radius: 10px;
+  position: relative;
+  overflow: auto;
+  background: rgba(255, 255, 255, 1);
+}
+.service-tile-button{
+  position: absolute;
+  bottom: 0px;
+}
+
+.short-description{
+  word-wrap: break-word;
+}
+.learn-more-anchor{
+  text-decoration: underline;
+}
+
+
+/*
+.btn-primary {
+  /* --sds-c-button-success-color-background: var(--dxp-g-brand) !important;  
+   --sds-c-button-brand-text-color: var(--dxp-g-brand-contrast) !important;  
+  /* --slds-c-button-success-color-border: solid 1px var(--dxp-g-root) !important;  
+}
+
+.btn-secondary {
+  --sds-c-button-brand-color-background: #FFFFFF !important;
+  --sds-c-button-brand-text-color: var(--dxp-s-button-color) !important;
+  --sds-c-button-brand-color-border: solid 1px var(--dxp-s-button-color) !important;
+}
+
+.tab-btn {
+  --sds-c-button-radius-border: 0px !important;
+  font-size: var(--dxp-s-button-font-size) !important;
+  height: 32px !important;
+}
+/*
+.btn {
+  --sds-c-button-radius-border: var(--dxp-s-button-radius-border) !important;
+  font-size: var(--dxp-s-button-font-size) !important;
+  height: 32px !important;
+}*/
+/*
+.right-button {
+  --sds-c-button-radius-border: var(--dxp-s-button-radius-border) !important;
+  font-size: var(--dxp-s-button-font-size) !important;
+  height: 32px !important;
+}
+*/
+
+.border-left {
+  --sds-c-button-radius-border: 4px 0px 0px 4px !important;
+}
+
+.border-right {
+  --sds-c-button-radius-border: 0px 4px 4px 0px !important;
+}
+
+.back-yellow{
+  background: yellow;
+}

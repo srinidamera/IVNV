@@ -1,0 +1,60 @@
+<!--
+  @description  : Child CMP of Budget Edit
+-->
+<template>
+    <template lwc:if={isSectionHeader}> 
+        <div>
+            <lightning-layout multiple-rows>
+                <lightning-layout-item size="4" padding="horizontal-small"></lightning-layout-item>
+                <lightning-layout-item size="4" padding="horizontal-small">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="text-input-id-1">Projected Cost</label>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="horizontal-small">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="text-input-id-1">Actual Cost</label>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </template>
+    <template lwc:elseif={issectionHeaderMonthlyIncome}>
+        <div>
+            <lightning-layout multiple-rows>
+                <lightning-layout-item size="4" padding="horizontal-small"></lightning-layout-item>
+                <lightning-layout-item size="4" padding="horizontal-small">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="text-input-id-1">Projected Income</label>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="horizontal-small">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="text-input-id-1">Actual Income</label>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </template>
+    <template lwc:else>
+        <div class="expense-entry">
+            <lightning-layout multiple-rows>
+                <lightning-layout-item size="4" padding="horizontal-small">
+
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="text-input-id-1">
+                            {label}
+                        </label>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="horizontal-small">
+                    <lightning-input type="number" name={projectedField} formatter="currency" step="0.01" class="budgetField" value={projectedValue}></lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="horizontal-small">
+                    <lightning-input type="number" name={actualField} formatter="currency" step="0.01" class="budgetField" value={actualValue}></lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </template>
+    
+</template>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Not Billed to HUD</fullName>
+        <default>true</default>
+        <label>Not Billed to HUD</label>
+    </customValue>
+    <customValue>
+        <fullName>NOFA 2014-1 COMP</fullName>
+        <default>false</default>
+        <label>NOFA 2014-1 COMP</label>
+    </customValue>
+    <customValue>
+        <fullName>NOFA 2014-2 TRNG</fullName>
+        <default>false</default>
+        <label>NOFA 2014-2 TRNG</label>
+    </customValue>
+    <customValue>
+        <fullName>NOFA 2015-1 COMP</fullName>
+        <default>false</default>
+        <label>NOFA 2015-1 COMP</label>
+    </customValue>
+    <customValue>
+        <fullName>NOFA 2015-2 COMP</fullName>
+        <default>false</default>
+        <label>NOFA 2015-2 COMP</label>
+    </customValue>
+    <customValue>
+        <fullName>NOFA 2016-1 COMP</fullName>
+        <default>false</default>
+        <label>NOFA 2016-1 COMP</label>
+    </customValue>
+    <customValue>
+        <fullName>NOFA 2017-1 COMP</fullName>
+        <default>false</default>
+        <label>NOFA 2017-1 COMP</label>
+    </customValue>
+    <customValue>
+        <fullName>NOFA 2018-1 COMP</fullName>
+        <default>false</default>
+        <label>NOFA 2018-1 COMP</label>
+    </customValue>
+    <customValue>
+        <fullName>NOFA 2019-1 COMP</fullName>
+        <default>false</default>
+        <label>NOFA 2019-1 COMP</label>
+    </customValue>
+    <customValue>
+        <fullName>NOFA 2020-1 COMP</fullName>
+        <default>false</default>
+        <label>NOFA 2020-1 COMP</label>
+    </customValue>
+    <customValue>
+        <fullName>NOFA 2021-1 COMP</fullName>
+        <default>false</default>
+        <label>NOFA 2021-1 COMP</label>
+    </customValue>
+    <customValue>
+        <fullName>NOFA 2022-1 COMP</fullName>
+        <default>false</default>
+        <label>NOFA 2022-1 COMP</label>
+    </customValue>
+    <customValue>
+        <fullName>NOFA 2023-1 COMP</fullName>
+        <default>false</default>
+        <label>NOFA 2023-1 COMP</label>
+    </customValue>
+    <customValue>
+        <fullName>HO INT</fullName>
+        <default>false</default>
+        <label>HO INT</label>
+    </customValue>
+    <customValue>
+        <fullName>NOFA 2024-1 COMP</fullName>
+        <default>false</default>
+        <label>NOFA 2024-1 COMP</label>
+    </customValue>
+    <masterLabel>HUD Activity Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,60 @@
+<template>
+  <div>
+    <!-- Section-1:: about us -->
+    <div class="slds-m-bottom_medium">
+      <c-banner-section banner-img-src-key={aboutUsImageKey} title={sectionOneTitle} description={sectionOneDesc}
+        title-hyperlink="true" ontitleclick={goToAboutUs}>
+        <div class="slds-grid">
+          <div class="slds-col slds-show_small"></div>
+          <div
+            class="slds-col slds-grid slds-wrap slds-gutters slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_4-of-12">
+            <div
+              class="slds-col slds-m-top_small min-width slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+              <lightning-button class="btn btn-secondary" variant="brand" label={sectionOneBtnOneLabel}
+                onclick={goToSignUp} stretch></lightning-button>
+            </div>
+            <div
+              class="slds-col slds-m-top_small min-width slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+              <lightning-button class="btn btn-primary" variant="brand" label={sectionOneBtnTwoLabel}
+                onclick={goToLogin} stretch></lightning-button>
+            </div>
+          </div>
+        </div>
+      </c-banner-section>
+    </div>
+
+    <!-- Section-2:: services -->
+    <div class="slds-m-bottom_medium">
+      <c-banner-section banner-img-src-key={servicesImageKey} title={sectionTwoTitle} description={sectionTwoDesc}
+        title-hyperlink="true" ontitleclick={goToServices}>
+        <div class="slds-grid">
+          <div class="slds-col slds-show_small"></div>
+          <div
+            class="slds-col slds-grid slds-wrap slds-gutters slds-small-size_12-of-12 slds-medium-size_3-of-12 slds-large-size_2-of-12">
+            <div class="slds-col slds-m-top_small min-width">
+              <lightning-button class="btn btn-primary" variant="brand" label={sectionTwoBtnOneLabel}
+                onclick={goToServices} stretch></lightning-button>
+            </div>
+          </div>
+        </div>
+      </c-banner-section>
+    </div>
+
+    <!-- Section-3:: classes -->
+    <div class="slds-m-bottom_medium">
+      <c-banner-section banner-img-src-key={classesImageKey} title={sectionThreeTitle} description={sectionThreeDesc}
+        title-hyperlink="true">
+        <div class="slds-grid">
+          <div class="slds-col slds-show_small"></div>
+          <div
+            class="slds-col slds-grid slds-wrap slds-gutters slds-small-size_12-of-12 slds-medium-size_3-of-12 slds-large-size_2-of-12">
+            <div class="slds-col slds-m-top_small min-width">
+              <lightning-button class="btn btn-primary" variant="brand" label={sectionThreeBtnOneLabel}
+                onclick={goToClasses} stretch></lightning-button>
+            </div>
+          </div>
+        </div>
+      </c-banner-section>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,288 @@
+<template>
+    <div if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading" size="medium" variant="brand"></lightning-spinner>
+    </div>
+    <lightning-card>
+        <div class="slds-p-around_x-small">
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered" style="table-layout: fixed;display: block;overflow-x: scroll;white-space: nowrap;width: 100%;">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th class="" scope="col">
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Client#">Client #</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Case#">Client Case #</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Name">Name</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Intake or Class Date">Intake or Class Date</div>
+                        </th>
+                        <th class="" scope="col" >
+                            <div class="slds-truncate" title="Sub Category">Sub Category</div>
+                        </th>
+                        <th class="" scope="col" >
+                            <div class="slds-truncate" title="Associated Activity">Associated Activity</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="All" style="text-align:center">All</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="All Time Spent" style="text-align:center">All Time Spent</div>
+                        </th>
+                        <template for:each={dynamicColumns} for:item="item">
+                            <th key={item} class="" scope="col">
+                                <div class="slds-truncate" title={item} style="text-align:center">{item}</div>
+                            </th>
+                            <th key={item} class="" scope="col">
+                                <div class="slds-truncate" title={item} style="text-align:center">{item} Time Spent</div>
+                            </th>
+                        </template>
+                        <!--<th class="" scope="col">
+                            <div class="slds-truncate" title={lastYear} style="text-align:center">{lastYear}</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title={lastYearTitle} style="text-align:center">{lastYearTitle}</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title={currentYear} style="text-align:center">{currentYear}</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title={currentYearTitle} style="text-align:center">{currentYearTitle}</div>
+                        </th>-->
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="HUD" style="text-align:center">HUD</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="HUD Time Spent(Hours:Mins)" style="text-align:center">HUD Time Spent</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={detailRecs} for:item="rec" for:index="index">
+                        <tr key={rec.rowName} style="background-color:#D9EBF1" data-index={index} onclick={handleSectionVisiblity}>
+                            <td scope="col">
+                                <lightning-button-icon data-index={index} if:true={rec.isExpanded} icon-name="utility:chevrondown" variant="bare" alternative-text="chevrondown" title="chevrondown"></lightning-button-icon>
+                                <lightning-button-icon data-index={index} if:false={rec.isExpanded} icon-name="utility:chevronright" variant="bare" alternative-text="chevronright" title="chevronright"></lightning-button-icon>
+                            </td>
+                            <td scope="col">
+                                <span>{rec.rowName}</span>
+                            </td>
+                            <td scope="col">
+                            </td>
+                            <td scope="col">
+                            </td>
+                            <td scope="col">
+                            </td>
+                            <td scope="col" >
+                            </td>
+                            <td scope="col" >
+                            </td>
+                            <td scope="col">
+                            </td>
+                            <td scope="col">
+                            </td>
+                            <template for:each={dynamicColumns} for:item="item">
+                                <td key={item} scope="col">
+                                </td>
+                                <td key={item} scope="col">
+                                </td>
+                            </template>
+                            <!--<td scope="col">
+                            </td>
+                            <td scope="col">
+                            </td>
+                            <td scope="col">
+                            </td>
+                            <td scope="col">
+                            </td>-->
+                            <td scope="col">
+                            </td>
+                            <td scope="col">
+                            </td>
+                        </tr>
+                        <template if:true={rec.isExpanded} for:each={rec.answerRows} for:item="answerRow">
+                            <template for:each={answerRow.rows} for:item="childRow">
+                                <tr key={childRow.answer}>
+                                    <td scope="col" style="">
+                                    </td>
+                                    <td scope="col" style="">
+                                        <a href={childRow.clientHref} target="_blank">{childRow.clientNo}</a>
+                                    </td>
+                                    <td scope="col" style="">
+                                        <a href={childRow.caseHref} target="_blank">{childRow.caseNo}</a>
+                                    </td>
+                                    <td scope="col" style="">
+                                        {childRow.name}
+                                    </td>
+                                    <td scope="col" style="">
+                                        {childRow.intakeOrClassDate}
+                                    </td>
+                                    <td scope="col" style="text-wrap:wrap" >
+                                        {childRow.answer}
+                                    </td>
+                                    <td scope="col" style="text-wrap:wrap" >
+                                        {childRow.associatedActivity}
+                                    </td>
+                                    <td scope="col" style="text-align:center">
+                                        {childRow.all}
+                                    </td>
+                                    <td scope="col" style="text-align:center">
+                                        {childRow.allTimeSpent}
+                                    </td>
+                                    <!--<td>
+                                        {jsonData}
+                                    </td>-->
+                                    <!--<template for:each={dynamicColumnsStr} for:item="item">
+                                        <td key={item} scope="col" style="text-align:center">
+                                            {childRow.recCount}
+                                        </td>
+                                        <td key={item} scope="col" style="text-align:center">
+                                            {childRow.item}
+                                        </td>
+                                    </template>-->
+                                    <template for:each={childRow.dynamicColValues} for:item="colItem">
+                                        <td key={colItem} scope="col" style="text-align:center">
+                                            {colItem.recCount}
+                                        </td>
+                                        <td key={colItem} scope="col" style="text-align:center">
+                                            {colItem.duration}
+                                        </td>
+                                    </template>
+                                    
+                                    <!--<td scope="col" style="text-align:center">
+                                        {childRow.lastYearCount}
+                                    </td>
+                                    <td scope="col" style="text-align:center">
+                                        {childRow.lastYearTimeSpent}
+                                    </td>
+                                    <td scope="col" style="text-align:center">
+                                        {childRow.currentYearCount}
+                                    </td>
+                                    <td scope="col" style="text-align:center">
+                                        {childRow.currentYearTimeSpent}
+                                    </td>-->
+                                    <td scope="col" style="text-align:center">
+                                        {childRow.hudCount}
+                                    </td>
+                                    <td scope="col" style="text-align:center">
+                                        {childRow.hudTimeSpent}
+                                    </td>
+                                </tr>
+                            </template>
+                            <tr key={rec.rowName} if:true={answerRow.needPagination}>
+                                <td colspan={paginationColSpan}>
+                                    <c-pagination-utility key={rec.rowName} parent-row={rec.rowName} chile-row={answerRow.answer} record-size={recordsize} records={answerRow.allRecs} onupdatepage={updateRecords}></c-pagination-utility>
+                                </td>
+                            </tr>
+                            <tr key={answerRow.totalAnswerRow} style="background-color:#E4E8EB">
+                                <td scope="col">
+                                </td>
+                                <td scope="col">
+                                </td>
+                                <td scope="col">
+                                </td>
+                                <td scope="col">
+                                </td>
+                                <td scope="col">
+                                </td>
+                                <td scope="col" style="text-wrap:wrap" >
+                                    {answerRow.totalAnswerRow.subRowTotalLabel}
+                                </td>
+                                <td scope="col" style="text-wrap:wrap" >
+                                    {answerRow.totalAnswerRow.answer}
+                                </td>
+                                <td scope="col" style="text-align:center">
+                                    {answerRow.totalAnswerRow.all}
+                                </td>
+                                <td scope="col" style="text-align:center">
+                                    {answerRow.totalAnswerRow.allTimeSpent}
+                                </td>
+                                <template for:each={answerRow.totalAnswerRow.dynamicColValuesTotalObjArr} for:item="colItem">
+                                    <td key={colItem} scope="col" style="text-align:center">
+                                        {colItem.recCount}
+                                    </td>
+                                    <td key={colItem} scope="col" style="text-align:center">
+                                        {colItem.duration}
+                                    </td>
+                                </template>
+                                <!--<td scope="col" style="text-align:center">
+                                    {answerRow.totalAnswerRow.lastYearCount}
+                                </td>
+                                <td scope="col" style="text-align:center">
+                                    {answerRow.totalAnswerRow.lastYearTimeSpent}
+                                </td>
+                                <td scope="col" style="text-align:center">
+                                    {answerRow.totalAnswerRow.currentYearCount}
+                                </td>
+                                <td scope="col" style="text-align:center">
+                                    {answerRow.totalAnswerRow.currentYearTimeSpent}
+                                </td>-->
+                                <td scope="col" style="text-align:center">
+                                    {answerRow.totalAnswerRow.hudCount}
+                                </td>
+                                <td scope="col" style="text-align:center">
+                                    {answerRow.totalAnswerRow.hudTimeSpent}
+                                </td>
+                            </tr>
+                        </template>
+                        <tr if:true={rec.isExpanded} key={rec.totalRow} class="slds-p-bottom_medium" style="background-color:#D2D6D9">
+                            <td scope="col">
+                            </td>
+                            <td scope="col">
+                            </td>
+                            <td scope="col">
+                            </td>
+                            <td scope="col">
+                            </td>
+                            <td scope="col">
+                            </td>
+                            <td scope="col">
+                                {rec.totalRow.subRowTotalLabel}
+                            </td>
+                            <td scope="col" style="">
+                                {rec.totalRow.answer}
+                            </td>
+                            <td scope="col" style="text-align:center">
+                                {rec.totalRow.all}
+                            </td>
+                            <td scope="col" style="text-align:center">
+                                {rec.totalRow.allTimeSpent}
+                            </td>
+                            <!--<td scope="col" style="text-align:center">
+                                {rec.totalRow.lastYearCount}
+                            </td>
+                            <td scope="col" style="text-align:center">
+                                {rec.totalRow.lastYearTimeSpent}
+                            </td>
+                            <td scope="col" style="text-align:center">
+                                {rec.totalRow.currentYearCount}
+                            </td>
+                            <td scope="col" style="text-align:center">
+                                {rec.totalRow.currentYearTimeSpent}
+                            </td>-->
+                            <template for:each={rec.totalRow.dynamicColValuesTotalObjArr} for:item="colItem">
+                                <td key={colItem} scope="col" style="text-align:center">
+                                    {colItem.recCount}
+                                </td>
+                                <td key={colItem} scope="col" style="text-align:center">
+                                    {colItem.duration}
+                                </td>
+                            </template>
+                            <td scope="col" style="text-align:center">
+                                {rec.totalRow.hudCount}
+                            </td>
+                            <td scope="col" style="text-align:center">
+                                {rec.totalRow.hudTimeSpent}
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </lightning-card>
+
+</template>

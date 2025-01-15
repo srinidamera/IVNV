@@ -1,0 +1,46 @@
+<apex:page showHeader="false"
+           standardStylesheets="false"
+           sidebar="false"
+           applyHtmlTag="false"
+           applyBodyTag="false"
+           docType="html-5.0">
+    <html>
+
+    <head>
+        <title>Google Map</title>
+        <style>
+            #map {
+                height: 100%;
+            }
+
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+            }
+        </style>
+        <!-- Salesforce lightning design system -->
+        <link type="text/css"
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/design-system/2.9.3/styles/salesforce-lightning-design-system.min.css"
+        />
+    </head>
+
+    <body>
+        <div id="map"></div>
+        <script>
+            "use strict";
+            window.resourceUrl = '{!URLFOR($Resource.libs)}/maps/';
+            function initMap() {
+                mapsLib.initGoogleMap(document.getElementById('map'));
+            }
+
+            var mapsApiScript = document.createElement("script");
+            mapsApiScript.setAttribute("src", "https://maps.googleapis.com/maps/api/js?v=quarterly&key={!JSENCODE($CurrentPage.parameters.key)}&callback=initMap&libraries=geometry");
+            document.body.appendChild(mapsApiScript);
+        </script>
+        <script src="{!URLFOR($Resource.libs, 'maps/src/google.map.js')}"></script>
+    </body>
+
+    </html>
+</apex:page>

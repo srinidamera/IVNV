@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "9a5c0cda-2ca3-4fd5-8a16-bd0ffd541b5e",
+  "appPageId" : "f39236a9-486d-41f9-a073-676f892292c6",
+  "configurationTags" : [ ],
+  "devName" : "onlinescheduler__c",
+  "id" : "739d4d14-5911-4446-b692-1e4379999a56",
+  "label" : "onlinescheduler",
+  "pageAccess" : "Public",
+  "routeType" : "custom-onlinescheduler",
+  "type" : "route",
+  "urlPrefix" : "onlinescheduler"
+}

@@ -1,0 +1,39 @@
+<template>
+    <lightning-card  title="">
+        <lightning-layout class="container">
+            <lightning-layout-item size="2" class="menu">
+                <lightning-vertical-navigation onselect={handleSelect} selected-item="NWQR Education">
+                    <lightning-vertical-navigation-section label="NWQR Reports" >
+                        <lightning-vertical-navigation-item label="NWQR Education" name="NWQR Education"></lightning-vertical-navigation-item>
+                        <lightning-vertical-navigation-item label="NWQR Counseling" name="NWQR Counseling"></lightning-vertical-navigation-item>
+                        <lightning-vertical-navigation-item label="NWQR Financial Capability" name="NWQR Financial Capability"></lightning-vertical-navigation-item>
+                        <lightning-vertical-navigation-item label="NWQR Clients" name="NWQR Clients"></lightning-vertical-navigation-item>
+                        <lightning-vertical-navigation-item label="NWQR Financing" name="NWQR Financing"></lightning-vertical-navigation-item>
+                        <lightning-vertical-navigation-item label="NWQR Summary" name="NWQR Summary"></lightning-vertical-navigation-item>
+                    </lightning-vertical-navigation-section>
+                </lightning-vertical-navigation>
+            </lightning-layout-item>
+                
+            <lightning-layout-item size="10" class="content">
+                <template if:true={orsEducation}>
+                    <c-hud-ors-education-report></c-hud-ors-education-report>
+                </template>
+                <template if:true={orsCounseling}>
+                    <c-hud-ors-counseling-report></c-hud-ors-counseling-report>
+                </template>
+                <template if:true={financialCapabilityReport}>
+                    <c-hud-ors-financial-capability-report></c-hud-ors-financial-capability-report>
+                </template>
+                <template if:true={nwqrClients}>
+                    <c-nwqr-clients-report></c-nwqr-clients-report> 
+                </template>
+                <template if:true={nwqrFinancing}>
+                    <c-nwqr-financing-report></c-nwqr-financing-report>
+                </template>
+                <template if:true={foreclosureIntake}>
+                    <c-foreclosure-intake-report></c-foreclosure-intake-report>
+                </template>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

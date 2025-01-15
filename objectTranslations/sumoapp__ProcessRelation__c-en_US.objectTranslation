@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Priority --></label>
+        <name>sumoapp__Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process --></label>
+        <name>sumoapp__Process__c</name>
+        <relationshipLabel><!-- Process Relations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relation --></label>
+        <name>sumoapp__Relation__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Attending --></label>
+        <name>sumoapp__Attending</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Category --></label>
+        <name>sumoapp__Category</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Relation --></label>
+        <name>sumoapp__Relation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Resource Pool --></label>
+        <name>sumoapp__ResourcePool</name>
+    </recordTypes>
+</CustomObjectTranslation>

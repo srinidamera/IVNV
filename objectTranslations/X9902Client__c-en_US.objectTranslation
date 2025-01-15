@@ -1,0 +1,1847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>9902 Client</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>9902 Client</value>
+    </caseValues>
+    <fields>
+        <help><!-- Specify the type of activity or service provided to the client. --></help>
+        <label><!-- Client Activity Type --></label>
+        <name>ClientActivityType__c</name>
+        <picklistValues>
+            <masterLabel>Activities for All Counseling and Education</masterLabel>
+            <translation><!-- Activities for All Counseling and Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HO INT</masterLabel>
+            <translation><!-- HO INT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2014-1 COMP</masterLabel>
+            <translation><!-- NOFA 2014-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2014-2 TRNG</masterLabel>
+            <translation><!-- NOFA 2014-2 TRNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2015-1 COMP</masterLabel>
+            <translation><!-- NOFA 2015-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2015-2 COMP</masterLabel>
+            <translation><!-- NOFA 2015-2 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2016-1 COMP</masterLabel>
+            <translation><!-- NOFA 2016-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2017-1 COMP</masterLabel>
+            <translation><!-- NOFA 2017-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2018-1 COMP</masterLabel>
+            <translation><!-- NOFA 2018-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2019-1 COMP</masterLabel>
+            <translation><!-- NOFA 2019-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2020-1 COMP</masterLabel>
+            <translation><!-- NOFA 2020-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2021-1 COMP</masterLabel>
+            <translation><!-- NOFA 2021-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2022-1 COMP</masterLabel>
+            <translation><!-- NOFA 2022-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2023-1 COMP</masterLabel>
+            <translation><!-- NOFA 2023-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2024-1 COMP</masterLabel>
+            <translation><!-- NOFA 2024-1 COMP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client&apos;s attributes are associated with a HUD grant, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client Attribute HUD Grant  --></label>
+        <name>ClientAttributeHUDGrant__c</name>
+        <picklistValues>
+            <masterLabel>Colonias</masterLabel>
+            <translation><!-- Colonias --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comprehensive</masterLabel>
+            <translation><!-- Comprehensive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HECM</masterLabel>
+            <translation><!-- HECM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MMMSA</masterLabel>
+            <translation><!-- MMMSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Predatory Lending</masterLabel>
+            <translation><!-- Predatory Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S8</masterLabel>
+            <translation><!-- S8 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client Case Number --></label>
+        <name>ClientCaseNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Case --></label>
+        <name>ClientCase__c</name>
+        <relationshipLabel><!-- 9902 Client --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client City --></label>
+        <name>ClientCity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client resides in colonias communities, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client Colonias Resident --></label>
+        <name>ClientColoniasResident__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the end date and time of the client&apos;s counseling session. --></help>
+        <label><!-- Client Counsel Session Date End  --></label>
+        <name>ClientCounselSessionDateEnd__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the start date and time of the client&apos;s counseling session. --></help>
+        <label><!-- Client Counsel Session Date Start  --></label>
+        <name>ClientCounselSessionDateStart__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the fee charged for counseling services provided to the client. --></help>
+        <label><!-- Client Counseling Fee --></label>
+        <name>ClientCounselingFee__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client&apos;s counseling was terminated, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client Counseling Termination  --></label>
+        <name>ClientCounselingTermination__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dropped Out</masterLabel>
+            <translation><!-- Dropped Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Further Contact</masterLabel>
+            <translation><!-- No Further Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ongoing</masterLabel>
+            <translation><!-- Ongoing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred</masterLabel>
+            <translation><!-- Referred --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specify the type or nature of counseling provided to the client (e.g., Financial, Housing, Legal). --></help>
+        <label><!-- Client Counseling Type --></label>
+        <name>ClientCounselingType__c</name>
+        <picklistValues>
+            <masterLabel>Face to Face</masterLabel>
+            <translation><!-- Face to Face --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation><!-- Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internet</masterLabel>
+            <translation><!-- Internet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the unique identifier for HUD --></help>
+        <label><!-- Client Counselor HUD Id --></label>
+        <name>ClientCounselorHUDId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the unique identifier or code representing the client&apos;s assigned counselor. --></help>
+        <label><!-- Client Counselor ID  --></label>
+        <name>ClientCounselorID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the source from which the client&apos;s credit score was obtained --></help>
+        <label><!-- Client Credit Score Source --></label>
+        <name>ClientCreditScoreSource__c</name>
+        <picklistValues>
+            <masterLabel>Equifax</masterLabel>
+            <translation><!-- Equifax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Experian</masterLabel>
+            <translation><!-- Experian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TransUnion</masterLabel>
+            <translation><!-- TransUnion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tri-merge</masterLabel>
+            <translation><!-- Tri-merge --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the credit score of the client --></help>
+        <label><!-- Client Credit Score --></label>
+        <name>ClientCreditScore__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the total number of dependents for whom the client is responsible. --></help>
+        <label><!-- Client Dependents Number  --></label>
+        <name>ClientDependentsNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client has a disability, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client Disabled --></label>
+        <name>ClientDisabled__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client is a victim of discrimination, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client Discrimination Victim --></label>
+        <name>ClientDiscriminationVictim__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the identification code or label representing the client&apos;s ethnicity. --></help>
+        <label><!-- Client Ethnicity ID --></label>
+        <name>ClientEthnicityID__c</name>
+        <picklistValues>
+            <masterLabel>Chose not to respond</masterLabel>
+            <translation><!-- Chose not to respond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hispanic</masterLabel>
+            <translation><!-- Hispanic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Hispanic</masterLabel>
+            <translation><!-- Not Hispanic --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the total number of individuals included in the client&apos;s family. This typically includes the client, their spouse (if applicable), and any dependents. --></help>
+        <label><!-- Client Family Size  --></label>
+        <name>ClientFamilySize__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client is employed as a farm worker, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client Farm Worker --></label>
+        <name>ClientFarmWorker__c</name>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specify the type of financing used by the client after counseling --></help>
+        <label><!-- Client Finance Type After --></label>
+        <name>ClientFinanceTypeAfter__c</name>
+        <picklistValues>
+            <masterLabel>Conventional</masterLabel>
+            <translation><!-- Conventional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FHA</masterLabel>
+            <translation><!-- FHA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USDA</masterLabel>
+            <translation><!-- USDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specify the type of financing used by the client before counseling --></help>
+        <label><!-- Client Finance Type Before --></label>
+        <name>ClientFinanceTypeBefore__c</name>
+        <picklistValues>
+            <masterLabel>Conventional</masterLabel>
+            <translation><!-- Conventional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FHA</masterLabel>
+            <translation><!-- FHA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USDA</masterLabel>
+            <translation><!-- USDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client is a first-time home buyer, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client First Time Home Buyer --></label>
+        <name>ClientFirstTimeHomeBuyer__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the gender identity of the client from the available options (e.g., Male, Female, Non-Binary, Other). --></help>
+        <label><!-- Client Gender --></label>
+        <name>ClientGender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other/Non-conforming</masterLabel>
+            <translation><!-- Other/Non-conforming --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the amount of grant funds used by the client if applicable. --></help>
+        <label><!-- Client Grant Amount Used --></label>
+        <name>ClientGrantAmountUsed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the unique identifier or code representing the client&apos;s  (HECM) certificate if applicable. --></help>
+        <label><!-- Client HECM Certificate ID  --></label>
+        <name>ClientHECMCertificateID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the issue date of the client&apos;s  (HECM) certificate if applicable. --></help>
+        <label><!-- Client HECM Certificate Issue Date  --></label>
+        <name>ClientHECMCertificateIssueDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client has a  (HECM) certificate, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client HECM Certificate --></label>
+        <name>ClientHECMCertificate__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the expiration date of the client&apos;s  (HECM) certificate if applicable. --></help>
+        <label><!-- Client HECM Certificate expiration Date  --></label>
+        <name>ClientHECMCertificateexpirationDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client receives housing assistance from HUD, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client HUD Assistance  --></label>
+        <name>ClientHUDAssistance__c</name>
+        <picklistValues>
+            <masterLabel>Down Payment Assistance</masterLabel>
+            <translation><!-- Down Payment Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Ownership Voucher</masterLabel>
+            <translation><!-- Home Ownership Voucher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other HUD Program</masterLabel>
+            <translation><!-- Other HUD Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Place Based Rental Assistance</masterLabel>
+            <translation><!-- Place Based Rental Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchase REO Property</masterLabel>
+            <translation><!-- Purchase REO Property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Voucher</masterLabel>
+            <translation><!-- Rental Voucher --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the type of head of household for the client from the available options (e.g., Single, Married, Other). --></help>
+        <label><!-- Client Head of Household Type --></label>
+        <name>ClientHeadofHouseholdType__c</name>
+        <picklistValues>
+            <masterLabel>Domestic partnership</masterLabel>
+            <translation><!-- Domestic partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Female-headed single parent household</masterLabel>
+            <translation><!-- Female-headed single parent household --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male-headed single parent household</masterLabel>
+            <translation><!-- Male-headed single parent household --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Married with dependents</masterLabel>
+            <translation><!-- Married with dependents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Married without dependents</masterLabel>
+            <translation><!-- Married without dependents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single adult</masterLabel>
+            <translation><!-- Single adult --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Two or more unrelated adults</masterLabel>
+            <translation><!-- Two or more unrelated adults --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the highest level of education attained by the client from the available options (e.g., High School Diploma, Bachelor&apos;s Degree, Master&apos;s Degree). --></help>
+        <label><!-- Client Highest Education --></label>
+        <name>ClientHighestEducation__c</name>
+        <picklistValues>
+            <masterLabel>College</masterLabel>
+            <translation><!-- College --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elementary/Primary</masterLabel>
+            <translation><!-- Elementary/Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduate School</masterLabel>
+            <translation><!-- Graduate School --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High School/GED</masterLabel>
+            <translation><!-- High School/GED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Junior College</masterLabel>
+            <translation><!-- Junior College --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Junior High School</masterLabel>
+            <translation><!-- Junior High School --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>University</masterLabel>
+            <translation><!-- University --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vocational</masterLabel>
+            <translation><!-- Vocational --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the total amount of debt owed by the client&apos;s household if available. --></help>
+        <label><!-- Client Household Debt --></label>
+        <name>ClientHouseholdDebt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the total gross monthly income of the client&apos;s household. This includes income from all sources before taxes or deductions. --></help>
+        <label><!-- Client Household Gross Monthly Income --></label>
+        <name>ClientHouseholdGrossMonthlyIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client ID Number  --></label>
+        <name>ClientIDNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the income level of the client&apos;s household --></help>
+        <label><!-- Client Income Level --></label>
+        <name>ClientIncomeLevel__c</name>
+        <picklistValues>
+            <masterLabel>30 - 49% of AMI</masterLabel>
+            <translation><!-- 30 - 49% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50 - 79% of AMI</masterLabel>
+            <translation><!-- 50 - 79% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80 - 100% of AMI</masterLabel>
+            <translation><!-- 80 - 100% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt; 30% of Area Median Income (AMI)</masterLabel>
+            <translation><!-- &lt; 30% of Area Median Income (AMI) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;100% AMI</masterLabel>
+            <translation><!-- &gt;100% AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chose not to respond</masterLabel>
+            <translation><!-- Chose not to respond --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the date when the client&apos;s intake process began. --></help>
+        <label><!-- Client Intake Date  --></label>
+        <name>ClientIntakeDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client&apos;s intake loan has an interest rate, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client Intake Loan Has Interest Rate --></label>
+        <name>ClientIntakeLoanHasInterestRate__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client&apos;s intake loan is an interest-only loan, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client Intake Loan Is Interest Only --></label>
+        <name>ClientIntakeLoanIsInterestOnly__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client&apos;s intake loan is a Hybrid ARM, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client Intake Loan Is a Hybrid ARM Loan --></label>
+        <name>ClientIntakeLoanIsaHybridARMLoan__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client&apos;s intake loan is an Option ARM, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client Intake Loan Is an Option ARM Loan --></label>
+        <name>ClientIntakeLoanIsanOptionARMLoan__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specify the type of loan taken by the client during intake (e.g., Mortgage, Personal loan, Auto loan). --></help>
+        <label><!-- Client Intake Loan Type --></label>
+        <name>ClientIntakeLoanType__c</name>
+        <picklistValues>
+            <masterLabel>ARM currently at 8% or greater</masterLabel>
+            <translation><!-- ARM currently at 8% or greater --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARM currently at 8% or greater as a result of loan modification in last six months</masterLabel>
+            <translation><!-- ARM currently at 8% or greater as a result of loan modification in last six months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARM currently under 8%</masterLabel>
+            <translation><!-- ARM currently under 8% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARM currently under 8% as a result of loan modification in last six months</masterLabel>
+            <translation><!-- ARM currently under 8% as a result of loan modification in last six months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client did not disclose</masterLabel>
+            <translation><!-- Client did not disclose --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed rate currently 8% or greater</masterLabel>
+            <translation><!-- Fixed rate currently 8% or greater --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed rate currently 8% or greater as a result of loan modification in last six months</masterLabel>
+            <translation><!-- Fixed rate currently 8% or greater as a result of loan modification in last six months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed rate currently under 8%</masterLabel>
+            <translation><!-- Fixed rate currently under 8% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed rate currently under 8% as a result of loan modification in last six months</masterLabel>
+            <translation><!-- Fixed rate currently under 8% as a result of loan modification in last six months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client&apos;s intake loan is insured by the FHA or VA, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client Intake Loan is FHA Or VA Insured --></label>
+        <name>ClientIntakeLoanisFHAOrVAInsured__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client&apos;s intake loan is privately held, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client Intake Loan is a Privately Held --></label>
+        <name>ClientIntakeLoanisaPrivatelyHeld__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the duration of the client&apos;s current job, typically specified months. --></help>
+        <label><!-- Client Job Duration --></label>
+        <name>ClientJobDuration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the language spoken by the client. --></help>
+        <label><!-- Client Language Spoken --></label>
+        <name>ClientLanguageSpoken__c</name>
+        <picklistValues>
+            <masterLabel>ASL</masterLabel>
+            <translation><!-- ASL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arabic</masterLabel>
+            <translation><!-- Arabic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cambodian</masterLabel>
+            <translation><!-- Cambodian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cantonese</masterLabel>
+            <translation><!-- Cantonese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese Mandarin</masterLabel>
+            <translation><!-- Chinese Mandarin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Creole</masterLabel>
+            <translation><!-- Creole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech</masterLabel>
+            <translation><!-- Czech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farsi</masterLabel>
+            <translation><!-- Farsi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation><!-- French --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation><!-- German --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hindi</masterLabel>
+            <translation><!-- Hindi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hmong</masterLabel>
+            <translation><!-- Hmong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indonesian</masterLabel>
+            <translation><!-- Indonesian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian</masterLabel>
+            <translation><!-- Italian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation><!-- Korean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polish</masterLabel>
+            <translation><!-- Polish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese</masterLabel>
+            <translation><!-- Portuguese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian</masterLabel>
+            <translation><!-- Russian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swahili</masterLabel>
+            <translation><!-- Swahili --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkish</masterLabel>
+            <translation><!-- Turkish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ukrainian</masterLabel>
+            <translation><!-- Ukrainian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese</masterLabel>
+            <translation><!-- Vietnamese --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client has limited proficiency in English, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client Limited English Proficiency  --></label>
+        <name>ClientLimitedEnglishProficiency__c</name>
+        <picklistValues>
+            <masterLabel>Chose not to respond</masterLabel>
+            <translation><!-- Chose not to respond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select Values are “F” for First, “S” for Second or “N” for N/A. --></help>
+        <label><!-- Client Loan Being Reported --></label>
+        <name>ClientLoanBeingReported__c</name>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S</masterLabel>
+            <translation><!-- S --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the marital status of the client from the available options (e.g., Single, Married, Divorced, Widowed). --></help>
+        <label><!-- Client Marital Status --></label>
+        <name>ClientMaritalStatus__c</name>
+        <picklistValues>
+            <masterLabel>Choose not to respond</masterLabel>
+            <translation><!-- Choose not to respond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Divorced</masterLabel>
+            <translation><!-- Divorced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Married</masterLabel>
+            <translation><!-- Married --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Separated</masterLabel>
+            <translation><!-- Separated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single</masterLabel>
+            <translation><!-- Single --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Widowed</masterLabel>
+            <translation><!-- Widowed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the reason why the client&apos;s credit score is missing or unavailable if applicable. leghth of time in months --></help>
+        <label><!-- Client Missing Credit Score Reason --></label>
+        <name>ClientMissingCreditScoreReason__c</name>
+        <picklistValues>
+            <masterLabel>Client refused to authorize credit report pull</masterLabel>
+            <translation><!-- Client refused to authorize credit report pull --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foreclosure expected within 14 days</masterLabel>
+            <translation><!-- Foreclosure expected within 14 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NFMC Counseling Organization analyzed credit report that did not contain score</masterLabel>
+            <translation><!-- NFMC Counseling Organization analyzed credit report that did not contain score --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NFMC Counseling Organization does not analyze credit report for this level of service</masterLabel>
+            <translation><!-- NFMC Counseling Organization does not analyze credit report for this level of service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NFMC Counseling Organization does not have relationship with credit reporting bureau</masterLabel>
+            <translation><!-- NFMC Counseling Organization does not have relationship with credit reporting bureau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the closing costs associated with the client&apos;s mortgage. --></help>
+        <label><!-- Client Mortgage Closing Cost --></label>
+        <name>ClientMortgageClosingCost__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client&apos;s mortgage payments are delinquent, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client Mortgage Delinquency --></label>
+        <name>ClientMortgageDelinquency__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the interest rate of the client&apos;s mortgage. --></help>
+        <label><!-- Client Mortgage Interest Rate --></label>
+        <name>ClientMortgageInterestRate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the type of mortgage held by the client after counseling --></help>
+        <label><!-- Client Mortgage Type After --></label>
+        <name>ClientMortgageTypeAfter__c</name>
+        <picklistValues>
+            <masterLabel>1 - year ARM</masterLabel>
+            <translation><!-- 1 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 - year ARM</masterLabel>
+            <translation><!-- 10 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 - year fixed</masterLabel>
+            <translation><!-- 10 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15 - year fixed</masterLabel>
+            <translation><!-- 15 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - year ARM</masterLabel>
+            <translation><!-- 2 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20 - year fixed</masterLabel>
+            <translation><!-- 20 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - year ARM</masterLabel>
+            <translation><!-- 3 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 - year fixed</masterLabel>
+            <translation><!-- 30 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40 - year fixed</masterLabel>
+            <translation><!-- 40 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 - year ARM</masterLabel>
+            <translation><!-- 5 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 - year ARM</masterLabel>
+            <translation><!-- 7 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interest Only</masterLabel>
+            <translation><!-- Interest Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specify the type of mortgage held by the client --></help>
+        <label><!-- Client Mortgage Type --></label>
+        <name>ClientMortgageType__c</name>
+        <picklistValues>
+            <masterLabel>1 - year ARM</masterLabel>
+            <translation><!-- 1 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 - year ARM</masterLabel>
+            <translation><!-- 10 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 - year fixed</masterLabel>
+            <translation><!-- 10 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15 - year fixed</masterLabel>
+            <translation><!-- 15 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - year ARM</masterLabel>
+            <translation><!-- 2 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20 - year fixed</masterLabel>
+            <translation><!-- 20 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - year ARM</masterLabel>
+            <translation><!-- 3 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 - year fixed</masterLabel>
+            <translation><!-- 30 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40 - year fixed</masterLabel>
+            <translation><!-- 40 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 - year ARM</masterLabel>
+            <translation><!-- 5 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 - year ARM</masterLabel>
+            <translation><!-- 7 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interest Only</masterLabel>
+            <translation><!-- Interest Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client New City --></label>
+        <name>ClientNewCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client New State --></label>
+        <name>ClientNewState__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS</masterLabel>
+            <translation><!-- AS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM</masterLabel>
+            <translation><!-- FM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GU</masterLabel>
+            <translation><!-- GU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MH</masterLabel>
+            <translation><!-- MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MP</masterLabel>
+            <translation><!-- MP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PW</masterLabel>
+            <translation><!-- PW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VI</masterLabel>
+            <translation><!-- VI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client New Zip --></label>
+        <name>ClientNewZip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Outcome --></label>
+        <name>ClientOutcome__c</name>
+        <picklistValues>
+            <masterLabel>Homeless or potentially homeless households that obtained temporary or permanent housing after receiving Housing Counseling Services.</masterLabel>
+            <translation><!-- Homeless or potentially homeless households that obtained temporary or permanent housing after receiving Housing Counseling Services. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Household that received rental counseling and avoided eviction after receiving Housing Counseling Services.</masterLabel>
+            <translation><!-- Household that received rental counseling and avoided eviction after receiving Housing Counseling Services. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Households for whom counselor developed a budget customized to a client’s current situation.</masterLabel>
+            <translation><!-- Households for whom counselor developed a budget customized to a client’s current situation. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Households for whom counselor developed or updated an emergency preparedness plan.</masterLabel>
+            <translation><!-- Households for whom counselor developed or updated an emergency preparedness plan. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Households gained access to disaster recovery non-housing resources after receiving Housing Counseling Services (e.g. Red Cross/FEMA relief items, legal services, assistance).</masterLabel>
+            <translation><!-- Households gained access to disaster recovery non-housing resources after receiving Housing Counseling Services (e.g. Red Cross/FEMA relief items, legal services, assistance). --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Households obtained disaster recovery housing resources after receiving Housing Counseling Services (e.g. temporary shelter, homeowner rehab, relocation, etc.).</masterLabel>
+            <translation><!-- Households obtained disaster recovery housing resources after receiving Housing Counseling Services (e.g. temporary shelter, homeowner rehab, relocation, etc.). --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Households that gained access to non-housing resources (e.g. social service programs, legal services, public benefits such as Social Security or Medicaid, etc.) after receiving Housing Counseling Services</masterLabel>
+            <translation><!-- Households that gained access to non-housing resources (e.g. social service programs, legal services, public benefits such as Social Security or Medicaid, etc.) after receiving Housing Counseling Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Households that gained access to resources to help improve their housing situation (e.g. down payment assistance, rental assistance, utility assistance, etc.) after receiving Housing Counseling Services.</masterLabel>
+            <translation><!-- Households that gained access to resources to help improve their housing situation (e.g. down payment assistance, rental assistance, utility assistance, etc.) after receiving Housing Counseling Services. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Households that improved their financial capacity (e.g. increased discretionary income, decreased debt load, increased savings, increased credit score, etc.) after receiving Housing Counseling Services.</masterLabel>
+            <translation><!-- Households that improved their financial capacity (e.g. increased discretionary income, decreased debt load, increased savings, increased credit score, etc.) after receiving Housing Counseling Services. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Households that prevented or resolved a forward mortgage default after receiving Housing Counseling Services.</masterLabel>
+            <translation><!-- Households that prevented or resolved a forward mortgage default after receiving Housing Counseling Services. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Households that prevented or resolved a reverse mortgage default after receiving Housing Counseling Services.</masterLabel>
+            <translation><!-- Households that prevented or resolved a reverse mortgage default after receiving Housing Counseling Services. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Households that received a forward mortgage modification and improved their financial capacity after receiving Housing counseling Services.</masterLabel>
+            <translation><!-- Households that received a forward mortgage modification and improved their financial capacity after receiving Housing counseling Services. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Households that received a forward mortgage modification and remained current in their modified mortgage after receiving Housing Counseling Services.</masterLabel>
+            <translation><!-- Households that received a forward mortgage modification and remained current in their modified mortgage after receiving Housing Counseling Services. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Households that received information on fair housing, fair lending and/or accessibility rights.</masterLabel>
+            <translation><!-- Households that received information on fair housing, fair lending and/or accessibility rights. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Households that received non-delinquency post-purchase counseling that were able to improve home conditions or home affordability after receiving Housing Counseling Services.</masterLabel>
+            <translation><!-- Households that received non-delinquency post-purchase counseling that were able to improve home conditions or home affordability after receiving Housing Counseling Services. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Households that received one-on-one counseling that also received education services.</masterLabel>
+            <translation><!-- Households that received one-on-one counseling that also received education services. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Households that received pre-purchase/homebuying counseling and purchased housing after receiving Housing Counseling Services.</masterLabel>
+            <translation><!-- Households that received pre-purchase/homebuying counseling and purchased housing after receiving Housing Counseling Services. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Households that received rental counseling and improved living conditions after receiving Housing Counseling Services.</masterLabel>
+            <translation><!-- Households that received rental counseling and improved living conditions after receiving Housing Counseling Services. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Households that received reverse mortgage counseling and obtained a Home Equity Conversion Mortgage (HECM) after receiving Housing Counseling Services.</masterLabel>
+            <translation><!-- Households that received reverse mortgage counseling and obtained a Home Equity Conversion Mortgage (HECM) after receiving Housing Counseling Services. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client is affected by predatory lending practices, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client Predatory Lending --></label>
+        <name>ClientPredatoryLending__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specify the purpose of the client&apos;s visit or interaction with the organization --></help>
+        <label><!-- Client Purpose of Visit --></label>
+        <name>ClientPurposeofVisit__c</name>
+        <picklistValues>
+            <masterLabel>Disaster Preparedness Assistance</masterLabel>
+            <translation><!-- Disaster Preparedness Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disaster Recovery Assistance</masterLabel>
+            <translation><!-- Disaster Recovery Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homeless Assistance</masterLabel>
+            <translation><!-- Homeless Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Delinquency Post-Purchase</masterLabel>
+            <translation><!-- Non-Delinquency Post-Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not HUD-Reportable</masterLabel>
+            <translation><!-- Not HUD-Reportable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-purchase/Homebuying</masterLabel>
+            <translation><!-- Pre-purchase/Homebuying --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Topics</masterLabel>
+            <translation><!-- Rental Topics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolving or Preventing Forward Mortgage Delinquency or Default</masterLabel>
+            <translation><!-- Resolving or Preventing Forward Mortgage Delinquency or Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolving or Preventing Reverse Mortgage Delinquency or Default</masterLabel>
+            <translation><!-- Resolving or Preventing Reverse Mortgage Delinquency or Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reverse Mortgage</masterLabel>
+            <translation><!-- Reverse Mortgage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the identification code or label representing the client&apos;s race. --></help>
+        <label><!-- Client Race ID --></label>
+        <name>ClientRaceID__c</name>
+        <picklistValues>
+            <masterLabel>American Indian/Alaskan Native</masterLabel>
+            <translation><!-- American Indian/Alaskan Native --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asian</masterLabel>
+            <translation><!-- Asian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Black or African American</masterLabel>
+            <translation><!-- Black or African American --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chose not to respond</masterLabel>
+            <translation><!-- Chose not to respond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>More than one race</masterLabel>
+            <translation><!-- More than one race --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Native Hawaiian or Other Pacific Islander</masterLabel>
+            <translation><!-- Native Hawaiian or Other Pacific Islander --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>White</masterLabel>
+            <translation><!-- White --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specify the source or entity that referred the client for counseling --></help>
+        <label><!-- Client Referred By --></label>
+        <name>ClientReferredBy__c</name>
+        <picklistValues>
+            <masterLabel>Agency Outreach</masterLabel>
+            <translation><!-- Agency Outreach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Another Agency</masterLabel>
+            <translation><!-- Another Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Another Person</masterLabel>
+            <translation><!-- Another Person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HUD Outreach</masterLabel>
+            <translation><!-- HUD Outreach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lender</masterLabel>
+            <translation><!-- Lender --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate Agent</masterLabel>
+            <translation><!-- Real Estate Agent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client lives in a rural area, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client Rural Area Status  --></label>
+        <name>ClientRuralAreaStatus__c</name>
+        <picklistValues>
+            <masterLabel>Chose not to respond</masterLabel>
+            <translation><!-- Chose not to respond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Does not live in a rural area</masterLabel>
+            <translation><!-- Does not live in a rural area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lives in a rural area</masterLabel>
+            <translation><!-- Lives in a rural area --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the client has signed a sales contract, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client Sales Contract Signed  --></label>
+        <name>ClientSalesContractSigned__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if a second loan exists for the client, otherwise select &quot;No&quot;. --></help>
+        <label><!-- Client Second Loan Exists --></label>
+        <name>ClientSecondLoanExists__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the duration of the client&apos;s counseling session. This could be specified in minutes or hours. --></help>
+        <label><!-- Client Session Duration  --></label>
+        <name>ClientSessionDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client State --></label>
+        <name>ClientState__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS</masterLabel>
+            <translation><!-- AS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM</masterLabel>
+            <translation><!-- FM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GU</masterLabel>
+            <translation><!-- GU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MH</masterLabel>
+            <translation><!-- MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MP</masterLabel>
+            <translation><!-- MP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PW</masterLabel>
+            <translation><!-- PW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VI</masterLabel>
+            <translation><!-- VI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client Zip --></label>
+        <name>ClientZip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- 9902 Client --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- 9902 Reporting Quarter --></label>
+        <name>X9902ReportingQuarter__c</name>
+        <picklistValues>
+            <masterLabel>Qtr1</masterLabel>
+            <translation><!-- Qtr1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qtr2</masterLabel>
+            <translation><!-- Qtr2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qtr3</masterLabel>
+            <translation><!-- Qtr3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qtr4</masterLabel>
+            <translation><!-- Qtr4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 9902 --></label>
+        <name>X9902__c</name>
+        <relationshipLabel><!-- 9902 Client --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

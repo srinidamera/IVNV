@@ -1,0 +1,410 @@
+<apex:page controller="CourseCompletionCertificateController" showHeader="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false" renderAs="PDF">
+    <html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <style>
+            body { font-family: Arial Unicode MS; }
+font { font-family: Arial Unicode MS !important; }
+            
+            @page {
+                size: A4 landscape;
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+
+            div {
+                text-align: center;
+            }
+        </style>
+        <apex:stylesheet value="https://www.cdnfonts.com/trebuchet-ms-2.font" />
+        <style>
+            .sans {
+                font-family: "Trebuchet MS", Tahoma, sans-serif;
+            }
+
+            .bold {
+                font-weight: bold;
+            }
+
+            .left-1 {
+                float: left;
+                margin-left: 20px;
+            }
+
+            .left-2 {
+                float: left;
+                margin-top: 10px;
+                margin-right: 20px;
+            }
+
+            .right-1 {
+                float: right;
+
+                margin-left: 20px;
+            }
+
+            .right-2 {
+                float: right;
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+
+            .underline {
+                border-bottom: 1px dotted#777;
+                padding: 5px;
+                margin-bottom: 10px;
+                margin-left: 88px !important;
+                width: 590px;
+            }
+            
+            .underline_solid {
+                border-bottom: 1.5px solid black ;
+            //padding-bottom: 10px;
+                width: 590px;
+            }
+
+            .margin-0 {
+                margin: 0;
+            }
+
+            .padding-0 {
+                padding: 0;
+            }
+
+            .pm-empty-space {
+                height: 40px;
+                width: 100%;
+            }
+
+            body {
+                padding: 20px 0;
+                background: #ccc;
+            }
+
+            .pm-certificate-container {
+                position: absolute;
+                width: 940px;
+				left:2%;
+                height: 605px;
+            //background-color: #08558c;
+            	background-color: #ffffff;
+                padding: 22px;
+                color: #333;
+                font-family: "Trebuchet MS", sans-serif;
+            }
+
+            .outer-border {
+                width: 950px;
+                height: 615px;
+                position: absolute;
+                left: 45%;
+                margin-left: -425px;
+                top: 52%;
+                margin-top: -324px;
+                margin-bottom: -344px;
+                border: 20px solid #fff;
+            }
+
+            .pm-certificate-border {
+                position: relative;
+                width: 775px;
+                height: 500px;
+                padding: 0;
+                border: 10px solid #d2ae6d;
+                background-color: #fff;
+                background-image: none;
+                left: 40%;
+                margin-left: -300px;
+                top: 50%;
+                margin-top: -260px;
+            }
+
+            .pm-certificate-block {
+                width: 800px;
+                height: 300px;
+                position: relative;
+                left: 50%;
+                margin-left: -384px;
+                top: 50px;
+                margin-top: 0;
+            }
+
+            .pm-certificate-header {
+                margin-bottom: 10px;
+            }
+
+            .pm-certificate-title {
+                position: relative;
+                top: 40px;
+            }
+			
+            h1 {
+            	//font-size: 34px !important;
+            	//text-align: center;
+            	//margin-top: 100px;
+            	//margin-left: -20px;
+            	margin-top: 0px;
+            	//margin-bottom: 0px;
+            	
+            }
+            
+            h2 {
+            	//font-size: 34px !important;
+            	//text-align: center;
+            	//margin-top: 100px;
+            	//margin-left: -20px;
+            	margin-top: 0px;
+            	margin-bottom: 0px;
+            	
+            }
+            h3 {
+            	//font-size: 34px !important;
+            	//text-align: center;
+            	//margin-top: 100px;
+            	//margin-left: -20px;
+            	//margin-top: 0px;
+            	margin-bottom: 0px;
+            	
+            }
+
+            .pm-certificate-body {
+                padding: 20px;
+            }
+
+            .pm-name-text {
+                font-size: 16px;
+                text-align: center;
+                line-height: 1.5;
+            //padding-right: 10px;
+            //font-weight: 800;
+            }
+
+            .pm-earned {
+                margin: 15px 0 15px;
+            	padding-right: 40px;
+            }
+
+            .pm-earned-text {
+                font-size: 15px;
+            }
+
+            .pm-credits-text {
+                font-size: 18px;
+            }
+
+            .pm-earned-text {
+                font-size: 18px;
+            }
+
+            .pm-credits-text {
+                font-size: 18px;
+            }
+
+            .pm-certified {
+                font-size: 12px;
+                text-align: center;
+            }
+
+            .pm-certified-center {
+                text-align: center;
+            }
+
+            .underline {
+                margin-bottom: 5px;
+            }
+
+            .pm-certificate-footer {
+                width: 650px;
+                height: 100px;
+                position: relative;
+                left: 50%;
+                top: 70px;
+                margin-left: -360px;
+                bottom: -112px;
+                font-size: 8px;
+            }
+
+            .imageStyle {
+                position: absolute;
+                right: -3px;
+                width: 180px;
+                height: 100px;
+                margin-top: 20px;
+                margin-right: 60px;
+            }
+            .imageStyleLogo {
+            //position: absolute;
+            	right: -3px;
+                width: 100px;
+                height: 100px;
+            	margin-top: 20px;
+            	margin-right: 60px;
+            }
+
+            .footer-main {
+                position: relative;
+                top: 40px;
+            }
+
+            .person {
+                margin: 5px 0px;
+                text-align: left;
+                padding-left: 25px;
+                font-weight: 800;
+            }
+
+            .person1 {
+                margin: 5px 0px;
+                text-align: left;
+                padding-left: 150px;
+                font-weight: 800;
+            }
+
+            .footer-text {
+                position: relative;
+                top: 70px;
+                margin: 0 auto;
+                font-size: 10px;
+            }
+
+            .border-style {
+                width: 60%;
+                height: 10px;
+                background-color: #08558c;
+                position: absolute;
+                top: 60px;
+                left: 23%;
+                z-index: 3;
+                margin: 0 auto;
+            }
+            .border-style1 {
+                width: 60%;
+                height: 10px;
+                background-color: #08558c;
+                position: absolute;
+                bottom: 60px;
+                left: 23%;
+                z-index: 3;
+                margin: 0 auto;
+            }
+            .columns {
+                display: flex;
+                justify-content: space-between;
+                text-align: left;
+            }
+            .column {
+                padding: 10px;
+            }
+            .column.first, .column.third {
+                width: 30vw;
+            }
+            .column.second {
+                width: 40vw;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <div style="display: flex; justify-content: center; margin-left:30px;">
+            <div class="container pm-certificate-container">
+                <div class="outer-border"></div>
+
+                <div class="border-style"></div>
+                <div class="pm-certificate-border col-xs-12">
+                    <div class="pm-certificate-title col-xs-12 text-center">
+                        <h1>{!agencyName}</h1>
+                    </div>
+                    <div class="pm-certificate-title col-xs-12 text-center">
+                        <h1>CERTIFICATE OF COMPLETION</h1>
+                        <span>
+                            CERTIFIES THAT
+                        </span>
+                    </div>
+                    <div class="row pm-certificate-body">
+                        <div class="pm-certificate-block">
+                            <div class="col-xs-12">
+                                <div class="row">
+                                    <div class="pm-certificate-name underline margin-0 col-xs-8 text-center">
+                                        <h2 style="font-family: Arial Unicode MS;">
+                                            {!participantName}
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12">
+                                <div class="row">
+                                    <div class="pm-earned col-xs-8 text-center">
+                                        <span class="pm-name-text sans serif">
+                                            <div>
+                                                HAS SATISFACTORILY COMPLETED
+                                            </div>
+                                            <div>
+                                                {!courseName}
+                                            </div>
+                                            <div>
+                                                ON
+                                            </div>
+                                            <div>
+                                                {!completionDate}
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-main">
+                                <div style="width: 100%; justify-content: space-between">
+                                    <div style="width: 50%; float: left">
+                                        <div class="person" style="margin:0px;">
+                                            <div style="font-size: 12px;float: left">
+                                                {!certificateNumber}
+                                            </div>
+                                            <br/>
+                                            <hr style="width: 50%;float: left;line-height: 10%;margin:0px"/>
+                                            <br/>
+                                            <span style="font-size: 12px;float: left;">Certificate Number</span>
+                                        </div>
+                                        <!--<div class="person" style="padding-top:0px;margin-top:0px;">
+                                            <span style="font-size: 12px;float: left;">Certificate Number</span>
+                                        </div>-->
+                                    </div>
+                                    <div style="width: 50%; float: right">
+                                        <div class="person1" style="margin:0px;">
+                                            <div style="font-size: 12px;float: right">
+                                                
+                                            </div>
+                                            <br/>
+                                            <hr style="width: 80%;float: left;line-height: 10%;margin:0px"/>
+                                            <br/>
+                                            <span style="font-size: 12px;float: left;">PCN Counselor</span>
+                                        </div>
+                                    </div>
+                                    <div style="width: 50%; float: right">
+                                        <p class="person1" style="margin:0px;">
+                                            <span style="font-size: 12px;float: left;">HUD Certified Counselor <b>{!hudCounselourId}</b></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="footer-text">
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-style1"></div>
+            </div>
+        </div>
+    </body>
+
+    </html>
+
+</apex:page>

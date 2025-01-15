@@ -1,0 +1,24 @@
+<apex:page sidebar="false"
+           standardController="sumoapp__RegistrationLink__c"
+           extensions="sumoapp.LightningOutController">
+    <apex:includeLightning />
+
+    <div id="linkMakerApp" />
+
+    <script>
+        var recordId = "{!$CurrentPage.parameters.id}" || null;
+        var isClassicTheme = {!JSENCODE($User.UIThemeDisplayed) == "Theme3"};
+
+        $Lightning.use("{!JSENCODE(componentPrefix)}:lightningOutInternalApp", function() {
+            $Lightning.createComponent("{!JSENCODE(componentPrefix)}:linkMakerCmp", { recordId, isClassicTheme }, "linkMakerApp");
+        });
+
+        document.getElementById("linkMakerApp").addEventListener("lightning__showtoast", function(e) {
+            const toastAttributes = e.toastAttributes;
+
+            if (toastAttributes.type !== 'success') {
+                alert(toastAttributes.message);
+            }
+        });
+    </script>
+</apex:page>

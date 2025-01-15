@@ -1,0 +1,14 @@
+{!User.FirstName},
+
+{!$Label.MailContentBodyFirst} {!AgencyProfile__c.Name}
+
+<b>{!$Label.MailContentBodyFinalMsg}</b> 
+
+{!Community_Url}.
+
+
+{!$Label.ThankYou},
+
+{!AgencyProfile__c.Name} {!$Label.Team}
+
+{!AgencyProfile__c.AgencyPhoneNumber__c}

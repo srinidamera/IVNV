@@ -1,0 +1,111 @@
+<template>
+    <lightning-card  title="HUD Submission">
+        <lightning-record-edit-form object-api-name={objectApiName} record-id={recordId}>
+        <lightning-messages> </lightning-messages>
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table--header-fixed" aria-label="">
+        <tbody>
+            <tr class="slds-hint-parent">
+                <th class="slds-text-align_center"></th>
+                <th class="slds-text-align_center"><b>Agency Profile</b></th>
+                <th class="slds-text-align_center"><b>Counselor Profile</b></th>
+                <th class="slds-text-align_center"><b>Client Summary</b></th>
+                <th class="slds-text-align_center"><b>9902 Summary</b></th>
+                <th data-label=""></th>
+            </tr>
+            <tr class="slds-hint-parent">
+                <td class="slds-text-align_center"></td>
+                <td class="slds-text-align_center"><div class="padding5px"><lightning-input name="Agency" type="checkbox" onchange={checkboxChange} checked={checkBoxes.Agency}></lightning-input></div></td>
+                <td class="slds-text-align_center"><div class="padding5px"><lightning-input name="Counselor" type="checkbox" onchange={checkboxChange} checked={checkBoxes.Counselor}></lightning-input></div></td>
+                <td class="slds-text-align_center"><div class="padding5px"><lightning-input name="Client" type="checkbox" onchange={checkboxChange} checked={checkBoxes.Client}></lightning-input></div></td>
+                <td class="slds-text-align_center"><div class="padding5px"><lightning-input name="Summary" type="checkbox" onchange={checkboxChange} checked={checkBoxes.Summary}></lightning-input></div></td>
+                <td data-label="" class=""></td><!---->
+            </tr>
+            <tr class="slds-hint-parent">
+                <td class="slds-text-align_center"><b>Generation Status</b></td>
+                <td class="slds-text-align_center">
+                    <div class="padding5px">
+                        <lightning-badge label={batchesStatusGeneration.Agency} class={badgeClassGeneration.Agency}></lightning-badge>
+                    </div>
+                    <div class="padding5px">
+                        <lightning-progress-ring value={generationExecutedIndicator.Agency} variant={progressRingVariantGeneration.Agency} direction="fill"> </lightning-progress-ring>
+                        &nbsp;&nbsp;&nbsp;<b class="verticalAlign">{generationExecutedPercentage.Agency}%</b>
+                    </div>
+                </td>
+                <td class="slds-text-align_center">
+                    <div class="padding5px">
+                        <lightning-badge label={batchesStatusGeneration.Counselor} class={badgeClassGeneration.Counselor}></lightning-badge>
+                    </div>
+                    <div class="padding5px">
+                        <lightning-progress-ring value={generationExecutedIndicator.Counselor} variant={progressRingVariantGeneration.Counselor} direction="fill"> </lightning-progress-ring>
+                        &nbsp;&nbsp;&nbsp;<b class="verticalAlign">{generationExecutedPercentage.Counselor}%</b>
+                    </div>
+                </td>
+                <td class="slds-text-align_center">
+                    <div class="padding5px">
+                        <lightning-badge label={batchesStatusGeneration.Client} class={badgeClassGeneration.Client}></lightning-badge>
+                    </div>
+                    <div class="padding5px">
+                        <lightning-progress-ring value={generationExecutedIndicator.Client} variant={progressRingVariantGeneration.Client} direction="fill"> </lightning-progress-ring>
+                        &nbsp;&nbsp;&nbsp;<b class="verticalAlign">{generationExecutedPercentage.Client}%</b>
+                    </div>
+                </td>
+                <td class="slds-text-align_center">
+                    <div class="padding5px">
+                        <lightning-badge label={batchesStatusGeneration.Summary} class={badgeClassGeneration.Summary}></lightning-badge>
+                    </div>
+                    <div class="padding5px">
+                        <lightning-progress-ring value={generationExecutedIndicator.Summary} direction="fill" variant={progressRingVariantGeneration.Summary}> </lightning-progress-ring>
+                        &nbsp;&nbsp;&nbsp;<b class="verticalAlign">{generationExecutedPercentage.Summary}%</b>
+                    </div>
+                </td>
+                <td class="slds-text-align_center">
+                    <button class="slds-button slds-button_neutral button-width" onclick={handleExecuteBatch} disabled={disabledButton.Generate}>Generate HUD Data</button>
+                </td>
+            </tr>
+            <tr class="slds-hint-parent">
+                <td class="slds-text-align_center"><b>Submission Status</b></td>
+                <td class="slds-text-align_center">
+                    <div class="padding5px">
+                        <lightning-badge label={batchesStatusSubmission.Agency} class={badgeClassSubmission.Agency}></lightning-badge>
+                    </div>
+                    <div class="padding5px">
+                        <lightning-progress-ring value={submissionExecutedIndicator.Agency} variant={progressRingVariantSubmission.Agency} direction="fill"> </lightning-progress-ring>
+                        &nbsp;&nbsp;&nbsp;<b class="verticalAlign">{submissionExecutedPercentage.Agency}%</b>
+                    </div>
+                </td>
+                <td class="slds-text-align_center">
+                    <div class="padding5px">
+                        <lightning-badge label={batchesStatusSubmission.Counselor} class={badgeClassSubmission.Counselor}></lightning-badge>
+                    </div>
+                    <div class="padding5px">
+                        <lightning-progress-ring value={submissionExecutedIndicator.Counselor} variant={progressRingVariantSubmission.Counselor} direction="fill"> </lightning-progress-ring>
+                        &nbsp;&nbsp;&nbsp;<b class="verticalAlign">{submissionExecutedPercentage.Counselor}%</b>
+                    </div>
+                </td>
+                <td class="slds-text-align_center">
+                    <div class="padding5px">
+                        <lightning-badge label={batchesStatusSubmission.Client} class={badgeClassSubmission.Client}></lightning-badge>
+                    </div>
+                    <div class="padding5px">
+                        <lightning-progress-ring value={submissionExecutedIndicator.Client} variant={progressRingVariantSubmission.Client} direction="fill"> </lightning-progress-ring>
+                        &nbsp;&nbsp;&nbsp;<b class="verticalAlign">{submissionExecutedPercentage.Client}%</b>
+                    </div>
+                </td>
+                <td class="slds-text-align_center">
+                    <div class="padding5px">
+                        <lightning-badge label={batchesStatusSubmission.Summary} class={badgeClassSubmission.Summary}></lightning-badge>
+                    </div>
+                    <div class="padding5px">
+                        <lightning-progress-ring value={submissionExecutedIndicator.Summary} direction="fill" variant={progressRingVariantSubmission.Summary}> </lightning-progress-ring>
+                        &nbsp;&nbsp;&nbsp;<b class="verticalAlign">{submissionExecutedPercentage.Summary}%</b>
+                    </div>
+                </td>
+                <td class="slds-text-align_center">
+                    <button class="slds-button slds-button_neutral button-width" onclick={handleHUDSubmission} disabled={disabledButton.Submit}>Submit HUD 9902 Report</button>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+    </lightning-record-edit-form>
+    </lightning-card>
+</template>

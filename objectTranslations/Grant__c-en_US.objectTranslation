@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Grant</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Grants</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address Line 2 --></label>
+        <name>AddressLine2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Case --></label>
+        <name>ClientCase__c</name>
+        <relationshipLabel><!-- Grants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>ContactName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax --></label>
+        <name>Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Self Sufficiency --></label>
+        <name>FinancialSelfSufficiency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financing Type --></label>
+        <name>FinancingType__c</name>
+        <picklistValues>
+            <masterLabel>All other grants</masterLabel>
+            <translation><!-- All other grants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First grant</masterLabel>
+            <translation><!-- First grant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Forgiveable --></label>
+        <name>Forgiveable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funding Amount --></label>
+        <name>FundingAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funding Source --></label>
+        <name>FundingSource__c</name>
+        <picklistValues>
+            <masterLabel>Government (Federal/State/Local)</masterLabel>
+            <translation><!-- Government (Federal/State/Local) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Government</masterLabel>
+            <translation><!-- Other Government --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Funding Type --></label>
+        <name>FundingType__c</name>
+        <picklistValues>
+            <masterLabel>CDBG</masterLabel>
+            <translation><!-- CDBG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Sweat Equity</masterLabel>
+            <translation><!-- Client Sweat Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOE (WAP) Weatherization Funds</masterLabel>
+            <translation><!-- DOE (WAP) Weatherization Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HFA</masterLabel>
+            <translation><!-- HFA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NWOs other funds</masterLabel>
+            <translation><!-- NWOs other funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non NWO CDFI</masterLabel>
+            <translation><!-- Non NWO CDFI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other sources (e.g. FHLB/AHP/Corporations/Foundations/NWA/NCC)</masterLabel>
+            <translation><!-- Other sources (e.g. FHLB/AHP/Corporations/Foundations/NWA/NCC) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Grant Type --></label>
+        <name>GrantType__c</name>
+        <picklistValues>
+            <masterLabel>Government (Federal/State/Local)</masterLabel>
+            <translation><!-- Government (Federal/State/Local) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Government</masterLabel>
+            <translation><!-- Other Government --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Grantor --></label>
+        <name>Grantor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Less Costs --></label>
+        <name>LessCosts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Type --></label>
+        <name>StatusType__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Weatherization Funds --></label>
+        <name>WeatherizationFunds__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

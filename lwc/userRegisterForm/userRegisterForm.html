@@ -1,0 +1,208 @@
+<template>
+	<div lwc:if={signUpFinished}>
+		<c-user-register-form-confirmation title={confirmationTitle} description={confirmationDescription}
+			btn-label={confirmationScrBtnLabel} user-first-name={contactRecord.FirstName} user-email={contactRecord.Email}
+			user-agency-name={userAgencyName.data}></c-user-register-form-confirmation>
+	</div>
+	<div lwc:else class="slds-grid">
+		<!-- Empty Div -->
+		<div class="slds-small-size_12-of-12 slds-medium-size_3-of-12 slds-large-size_3-of-8"></div>
+
+		<!-- Registration Page -->
+		<div class="slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_2-of-8">
+			<!-- <div> -->
+
+			<div
+				class="border slds-theme_default slds-m-vertical_small slds-p-left_small slds-p-top_small slds-p-right_small">
+				<div class="slds-text-heading_medium h-2">
+					<!-- Sign Up -->{signUpTitle}
+				</div>
+				<!--slds-text-heading_large -->
+				<div class="slds-text-color_default h-3">
+					{description}
+				</div>
+				<div>
+					
+					<!-- auto-close-time="8000" type="info" title="Sign Up an Account to Enroll" message="To begin, enter your information below." -->
+				</div>
+				<div>
+					<label for="preferredLanguage" class="slds-form-element__label slds-text-color_weak slds-text-body_small theme-label"> {preferredLanguage}</label>
+					<!--<c-combobox  class="input" value={preferrdLangVal} options={preferredLanguageOptions} onchange={handlePreferredLanguageChange}></c-combobox>-->
+					<lightning-combobox variant="label-hidden" class="input" value={preferrdLangVal} options={preferredLanguageOptions} onchange={handlePreferredLanguageChange}>
+				</lightning-combobox>
+				</div>
+				<div>
+					<label for="firstname" class="slds-form-element__label slds-text-color_weak slds-text-body_small theme-label">
+						{firstNameLabel}<abbr class="slds-required slds-text-color_destructive" title="required">*</abbr>
+					</label>
+					<lightning-input class="input " required type="text" variant="label-hidden" lwc:ref="firstName" maxlength="40"
+						onchange={validateInputValues}> </lightning-input>
+				</div>
+				<div>
+					<label for="middleName" class="slds-form-element__label slds-text-color_weak slds-text-body_small theme-label"> {middleNameLabel}</label>
+					<lightning-input class="input" type="text" variant="label-hidden" lwc:ref="middleName" maxlength="40"
+						onchange={validateInputValues}> </lightning-input>
+				</div>
+				<div>
+					<label for="lastname" class="slds-form-element__label slds-text-color_weak slds-text-body_small theme-label">
+						<!-- Last Name--> {lastNameLabel} <abbr class="slds-required slds-text-color_destructive"
+							title="required">*</abbr>
+					</label>
+					<lightning-input class="input " required type="text" variant="label-hidden" lwc:ref="lastName" maxlength="80"
+						onchange={validateInputValues}> </lightning-input>
+				</div>
+				<div>
+					<label for="suffix" class="slds-form-element__label slds-text-color_weak slds-text-body_small theme-label">{suffixLabel}</label>
+					<!--<c-combobox class="input" value={suffixVal} options={suffixOptions} onchange={handleSuffixChange}></c-combobox>-->
+					<lightning-combobox variant="label-hidden" class="input" value={suffixVal} options={suffixOptions} onchange={handleSuffixChange}></lightning-combobox>
+				</div>
+				<div>
+					<label for="emailaddress" class="slds-form-element__label slds-text-color_weak slds-text-body_small theme-label">
+						<!-- Email Address--> {emailAddressLabel} <abbr class="slds-required slds-text-color_destructive"
+							title="required">*</abbr>
+					</label>
+					<lightning-input class="input email-address " required type="email" variant="label-hidden" lwc:ref="emailField"
+						maxlength="80" onchange={handleEmailAddress}> </lightning-input>
+				</div>
+				<div>
+					<label for="cemailaddress" class="slds-form-element__label slds-text-color_weak slds-text-body_small theme-label">
+						<!-- Confirm Email Address--> {confirmEmailAddressLabel} <abbr
+							class="slds-required slds-text-color_destructive" title="required">*</abbr>
+					</label>
+					<lightning-input class="input confirm-email " required type="email" variant="label-hidden" lwc:ref="confirmEmailField"
+						maxlength="80" onchange={handleConfirmEmailChange}>
+					</lightning-input> <!-- onchange={handleEmailAddress} -->
+				</div>
+				<div>
+					<label for="phonenumber" class="slds-form-element__label slds-text-color_weak slds-text-body_small theme-label">
+						<!-- Phone Number--> {phoneNumberLabel}
+					</label>
+					<lightning-input class="input phone-field" type="text" value={formattedPhoneNumber} variant="label-hidden"
+						onchange={handlePhoneNumberChange} lwc:ref="phonefield" maxlength="20">
+					</lightning-input>
+				</div>
+				<div>
+					<label for="desiredservice" class="slds-form-element__label slds-text-color_weak slds-text-body_small theme-label">
+						<!-- Desired Service--> {desiredServiceLabel} <abbr class="slds-required slds-text-color_destructive"
+							title="required">*</abbr>
+					</label>
+					<!--<c-combobox class="input" required  placeholder=" " options={desiredServices}
+						onchange={handleDesiredSerChange}></c-combobox>-->
+						<lightning-combobox variant="label-hidden" class="input" required  placeholder=" " options={desiredServices}
+						onchange={handleDesiredSerChange}></lightning-combobox>
+
+				</div>
+				<div>
+					<label for="bestTimeToCall" class="slds-form-element__label slds-text-color_weak slds-text-body_small theme-label">{bestTimeToCallLabel}</label>
+					<!--<c-combobox class="input" value={bestTimeToCallVal} options={bestTimeToCallOptions} onchange={handleBestTimeToCallChange}></c-combobox>-->
+					<lightning-combobox variant="label-hidden" class="input" value={bestTimeToCallVal} options={bestTimeToCallOptions} onchange={handleBestTimeToCallChange}></lightning-combobox>
+				</div>
+				<div>
+					<label for="hearaboutus" class="slds-form-element__label slds-text-color_weak slds-text-body_small theme-label">
+						<!-- How did you hear about us--> {howDidYouHearLabel} <abbr
+							class="slds-required slds-text-color_destructive" title="required">*</abbr>
+					</label>
+					<!--<c-combobox class="input" required placeholder=" " options={howDidYouHearOptions}
+						onchange={handleHearAboutUsChange}></c-combobox>-->
+						<lightning-combobox variant="label-hidden" class="input" required placeholder=" " options={howDidYouHearOptions}
+						onchange={handleHearAboutUsChange}></lightning-combobox>
+				</div>
+				<div>
+					<template lwc:if={otherSpecifySection}>
+						<label for="pleasespecify" class="slds-form-element__label slds-text-color_weak slds-text-body_small theme-label">
+							<!-- Please specify how you heard about us--> {pleaseSpecifylabel} <abbr
+								class="slds-required slds-text-color_destructive" title="required">*</abbr>
+						</label>
+						<lightning-input class="input" type="text" variant="label-hidden" onchange={handlePleaseSpecifyText}
+							value={pleaseVerifyText} maxlength="255">
+						</lightning-input>
+					</template>
+				</div>
+				<!-- 
+				<div class="slds-m-bottom_small">
+					<div class="slds-checkbox">
+						<input type="checkbox" name="options" id="checkbox-unique-id-81" value={disclosureCheck}
+							onchange={handleDisclosureCheck} />
+						<label class="slds-checkbox__label" for="checkbox-unique-id-81">
+							<span class="slds-checkbox_faux"></span>
+							<span
+								class="slds-form-element__label slds-text-color_weak slds-text-body_small slds-m-left_x-small">   {reviewElectronicLabel}
+								<abbr class="slds-required slds-text-color_destructive" title="required">*</abbr></span>
+								
+						</label>
+					</div>
+				</div>
+				-->
+
+			</div>
+			<div if:true={reviewDisclousuresAccepted} class="slds-form-element slds-m-left_x-small">
+				<div class="slds-checkbox">
+					<input type="checkbox" name="options" id="checkbox-unique-id-82" checked={disclosureCheck}
+						onchange={handleDisclosureCheck} />
+					<label class="slds-checkbox__label " for="checkbox-unique-id-82">
+						<span class="slds-checkbox_faux"></span>
+						<span class="slds-form-element__label slds-text-color_weak slds-text-body_small">
+							<a class="review-eletronic" onclick={handleReviewEletronic}>{reviewElectronicConsentText}</a>
+							<abbr class="slds-required slds-text-color_destructive" title="required">*</abbr>
+							<!-- <span class="slds-form-element__label slds-text-color_weak slds-text-body_small consent-disclosures">&nbsp;Consent Disclosures
+								  
+								<abbr class="slds-required slds-text-color_destructive" title="required">*</abbr></span>
+								-->
+						</span>
+					</label>
+				</div>
+			</div>
+			<div if:false={reviewDisclousuresAccepted} class="slds-form-element slds-has-error slds-m-left_x-small">
+				<div class="slds-checkbox">
+					<input type="checkbox" name="options" id="checkbox-unique-id-81" checked={disclosureCheck}
+						onchange={handleDisclosureCheck} />
+					<label class="slds-checkbox__label" for="checkbox-unique-id-81">
+						<span class="slds-checkbox_faux"></span>
+						<span class="slds-form-element__label slds-text-color_weak slds-text-body_small">
+							<a class="review-eletronic" onclick={handleReviewEletronic}>{reviewElectronicConsentText}</a>
+							<abbr class="slds-required slds-text-color_destructive" title="required">*</abbr>
+							<!-- <span class="slds-form-element__label slds-text-color_weak slds-text-body_small consent-disclosures">
+								&nbsp;
+								<abbr class="slds-required slds-text-color_destructive" title="required">*</abbr>
+								</span>
+								-->
+						</span>
+
+					</label>
+				</div>
+				<div class="slds-p-top_xx-small disclousure-consent-error">
+					{disclousureConsentError}
+				</div>
+			</div>
+			<div class="slds-grid slds-wrap">
+				<div
+					class="slds-col slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+					<!--slds-m-vertical_small-->
+					<div class=""> <!-- slds-m-top_small -->
+						<lightning-button class="btn btn-primary-login slds-text-body_small" variant="brand"
+							label={createNewAccountLabel} onclick={handleCreateAccount} stretch
+							disabled={isCreateButtonDisabled}></lightning-button><br />
+					</div>
+				</div>
+				<div class="slds-col slds-grid slds-gutters slds-wrap slds-gutters_xx-small">
+					<div
+						class="slds-m-top_small slds-col slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+						<lightning-button class="btn btn-secondary slds-text-body_small" variant="brand-outline" label={goBackLabel}
+							onclick={goBackPreviousPage} stretch>
+						</lightning-button>
+					</div>
+					<div
+						class="slds-m-top_small slds-col slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+						<lightning-button class="btn btn-secondary slds-text-body_small" variant="brand-outline"
+							label={loginwithExistingAccountLabel} stretch onclick={redirectToLoginPage}>
+						</lightning-button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Empty Div -->
+		<div class="slds-small-size_12-of-12 slds-medium-size_3-of-12 slds-large-size_3-of-8"></div>
+	</div>
+	<c-toast-notification lwc:ref="toast" title-key="ToastTitle_Homepage" message-key="ToastMessage_Homepage"
+						onload={showIntialToast}></c-toast-notification>
+</template>

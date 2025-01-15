@@ -1,0 +1,70 @@
+.btn {
+  --sds-c-button-radius-border: var(--dxp-s-button-radius-border) !important;
+  font-size: var(--dxp-s-button-font-size) !important;
+  height: 32px !important;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.border {
+  border: solid 1px #d9d9d9 !important;
+  border-radius: 10px !important;
+  background-color: #ffffff !important;
+}
+
+.input {
+  --sds-c-input-color-background: #ffffff;
+}
+
+.h-2 {
+  font-size: var(--dxp-s-text-heading-large-font-size) !important;
+  font-weight: var(--dxp-s-text-heading-large-font-weight) !important;
+}
+
+.h-3 {
+  font-size: var(--dxp-s-text-heading-medium-font-size) !important;
+  font-weight: var(--dxp-s-text-heading-medium-font-weight) !important;
+}
+
+.errorValidation{
+    border: 3px solid #FF0000;
+    border-radius: 8px;
+}
+
+.slds-required{
+  --slds-c-input-text-color: ;
+}
+.review-eletronic{
+  text-decoration: underline;
+}
+
+
+.close-icon{
+    --slds-c-icon-color-foreground: white !important;
+    --slds-c-icon-color-background: white !important;
+    --slds-c-icon-color-foreground-default: white !important;
+}
+.blue-background-icon{
+   --sds-c-icon-color-background: red !important;
+    --sds-c-icon-color-foreground: red !important;
+    --sds-c-icon-color-foreground-default: red !important;
+}
+
+.test{
+  --slds-c-icon-color-background: var(--dxp-g-brand) !important;
+   fill: white !important;
+}
+
+.disclousure-consent-error{
+    color: var(--dxp-g-destructive);
+    font-size: var(--dxp-s-body-small-font-size);
+}
+abbr{
+  font-size: 14px;
+}
+
+.theme-label{
+  color:var(--dxp-s-form-element-label-color);
+}

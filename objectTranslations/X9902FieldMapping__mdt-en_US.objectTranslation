@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>9902 Field Mapping</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>9902 Field Mappings</value>
+    </caseValues>
+    <fields>
+        <label><!-- IsActive --></label>
+        <name>IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapping Field API Name --></label>
+        <name>MappingFieldAPIName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapping Object Name --></label>
+        <name>MappingObjectName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Type --></label>
+        <name>Report_Type__c</name>
+        <picklistValues>
+            <masterLabel>X9902Agency</masterLabel>
+            <translation><!-- X9902Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X9902Client</masterLabel>
+            <translation><!-- X9902Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X9902Counselor</masterLabel>
+            <translation><!-- X9902Counselor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>X9902Summary</masterLabel>
+            <translation><!-- X9902Summary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 9902 Field --></label>
+        <name>X9902Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- 9902 Object --></label>
+        <name>X9902Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- X9902XMLDefaultValue__c --></label>
+        <name>X9902XMLDefaultValue_c__c</name>
+    </fields>
+    <fields>
+        <label><!-- 9902XMLNode --></label>
+        <name>X9902XMLMapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- 9902XMLParentNode --></label>
+        <name>X9902XMLParentNode__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DigitalExperienceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Compass Portal</label>
+    <site>
+        <urlPathPrefix>compassportal</urlPathPrefix>
+    </site>
+    <space>site/Compass_Portal1</space>
+</DigitalExperienceConfig>

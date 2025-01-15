@@ -1,0 +1,38 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Upload Documents",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "servicesLabel" : "Servicios",
+          "contactUsBtnLabel" : "Contacta con nosotros",
+          "goBackLabel" : "Regresa",
+          "saveBtnLabel" : "Guardar",
+          "cancelBtnLabel" : "Cancelar",
+          "downloadBtnLabel" : "Descargar",
+          "removeFileBtnLabel" : "Eliminar archivo",
+          "manageDocumentsHeaderLabel" : "Administrar documentos",
+          "documentsBreadCrumbLabel" : "Documentos",
+          "fileTypeLabel" : "Tipo de archivo",
+          "fileNameLabel" : "Nombre del archivo",
+          "dateUploadedLabel" : "Fecha de la carga",
+          "uploadFileInfoMsgLabel" : "The upload size should be less than or equal to 3.6MB.",
+          "editFileHeaderLabel" : "Editar archivo",
+          "removeFileHeaderLabel" : "Remover archivo",
+          "newFileUploadDescription" : "Por favor cargue su documento a continuación. El tamaño máximo de archivos es de 3.6MB. Aceptamos formatos de archivo PDF, DOC, DOCX, PNG, PPT, PPTX, XLS y XLSX.",
+          "editFileUploadDescription" : "Seleccione el tipo de archivo. También puede descargar o eliminar el archivo.",
+          "removeFileModalDescription" : "¿Está seguro de que desea eliminar el siguiente archivo?",
+          "toastMessageOnRemoveFile" : "Archivo eliminado de",
+          "toastMessageOnUploadFile" : "Documento guardado para",
+          "completeThisFieldErrorMsg" : "Complete este campo.",
+          "placeholderTextForFileTypeField" : "Seleccionar tipo",
+          "errorMsgForInvalidFileType" : "El archivo [File Name] no pudo ser subido. Solo archivos con la sigientes extensiones seran permitido: PDF, DOC, DOCX, PNG, PPT, PPTX, XLS and XLSX.",
+          "errorMsgForFileSize" : "El archivo [File Name] no pudo ser subido. El tamaño sera menos de o iqual a 3.6MB."
+        },
+        "id" : "8f61b5c7-6a61-461d-af77-628398a0fe2d"
+      } ]
+    }
+  },
+  "urlName" : "upload-documents"
+}

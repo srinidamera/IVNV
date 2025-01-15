@@ -1,0 +1,68 @@
+.edit-icon{
+	--slds-c-icon-color-foreground-default: var(--dxp-g-brand);
+}
+.h-2 {
+    font-size: 20px !important;
+    font-weight: 450 !important;
+}
+.slds-card__header {
+	--slds-c-card-header-spacing-block-start: .50rem;
+	--slds-c-card-header-spacing-inline-end: .75rem;
+	--slds-c-card-header-spacing-inline-start: .50rem;
+}
+
+.h-3 {
+  font-size: var(--dxp-s-text-heading-medium-font-size) !important;
+  font-weight: var(--dxp-s-text-heading-medium-font-weight) !important;
+}
+.border {
+  border: solid 1px #d9d9d9;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.input {
+  --sds-c-input-color-background: #ffffff;
+}
+.btn {
+  --sds-c-button-radius-border: var(--dxp-s-button-radius-border) !important;
+  font-size: var(--dxp-s-button-font-size) !important;
+  height: 32px !important;
+}
+
+.btn-primary {
+  --sds-c-button-brand-text-color: var(--dxp-g-brand-contrast) !important;
+}
+
+.btn-secondary {
+  --sds-c-button-brand-color-background: var(--dxp-g-root) !important;
+  --sds-c-button-brand-text-color: var(--dxp-s-button-color) !important;
+  --sds-c-button-brand-color-border: solid 1px var(--dxp-s-button-color) !important;
+}
+.btn-danger {
+  --sds-c-button-brand-color-background: var(--dxp-g-root) !important;
+  --sds-c-button-brand-text-color: var(--dxp-s-button-color) !important;
+  --sds-c-button-brand-color-border: solid 1px var(--dxp-s-button-color) !important;
+}
+
+.slds-form-element{
+      margin-bottom: var(--dxp-g-spacing-small);
+}
+
+.slds-modal__header {
+    --slds-c-modal-header-color-background: white;
+}
+
+.slds-modal__content {
+    --slds-c-modal-content-color-background: white;
+}
+
+.slds-modal__footer {
+    --slds-c-modal-footer-color-background: white;
+}
+abbr{
+  font-size: 14px;
+}
+
+.modal_container{
+  max-width: 300px; 
+}

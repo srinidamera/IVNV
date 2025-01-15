@@ -1,0 +1,8 @@
+.filename {
+    color: #3366cc; /* Example color */
+    font-weight: bold;
+    /* Add any other styles to highlight the filename */
+}
+.displayFlex{
+    display: flex;
+}

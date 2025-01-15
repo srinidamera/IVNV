@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>sumoapp__AppointmentUpdated</letterhead>
+    <name>Appointment Updated With ICS (SUMO User)</name>
+    <style>freeForm</style>
+    <subject>{!Organization.Name} - Appointment update Confirmation</subject>
+    <textOnly>Hi {!Receiving_User.Name},
+
+The following appointment has been updated.
+
+&lt;%updateSummary%&gt;
+Appointment: {!Event.Subject}
+&lt;%locationFields%&gt;
+Date/Time: &lt;%datetime%&gt;
+Duration: {!Event.DurationInMinutes} min
+
+&lt;%description%&gt;
+&lt;%serviceDetails%&gt;
+&lt;%locationDetails%&gt;
+
+Thank you,
+{!Event.sumoapp__OrganizerFullName__c}
+{!Event.sumoapp__OrganizerTitle__c}
+{!Organization.Name}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

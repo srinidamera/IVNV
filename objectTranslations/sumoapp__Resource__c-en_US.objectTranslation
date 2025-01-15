@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Available Fields --></label>
+        <name>sumoapp__AvailableFields</name>
+    </fieldSets>
+    <fields>
+        <help><!-- How many people this room can accommodate? --></help>
+        <label><!-- Capacity --></label>
+        <name>sumoapp__Capacity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Connected Date --></label>
+        <name>sumoapp__ConnectedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>sumoapp__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>sumoapp__ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Name --></label>
+        <name>sumoapp__ExternalName__c</name>
+    </fields>
+    <fields>
+        <label><!-- FullLocationDescription --></label>
+        <name>sumoapp__FullLocationDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Resource Description --></label>
+        <name>sumoapp__FullResourceDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>sumoapp__Location__c</name>
+        <relationshipLabel><!-- Rooms / Resources --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>sumoapp__Status__c</name>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mapped</masterLabel>
+            <translation><!-- Mapped --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- Laptops --></label>
+        <name>sumoapp__Laptop</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Projectors --></label>
+        <name>sumoapp__Projector</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Rooms --></label>
+        <name>sumoapp__Room</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Tablets --></label>
+        <name>sumoapp__Tablet</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Since rooms exist inside locations, you must choose a location for each room. --></errorMessage>
+        <name>sumoapp__Location_is_required_for_Rooms</name>
+    </validationRules>
+</CustomObjectTranslation>

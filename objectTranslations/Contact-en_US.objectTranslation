@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Process Matching Fields --></label>
+        <name>sumoapp__ProcessMatchingFields</name>
+    </fieldSets>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Email Address</value>
+        </caseValues>
+        <name>email_contact</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Phone Number</value>
+        </caseValues>
+        <name>phone_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Account Referral Type --></label>
+        <name>Account_Referral_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Military --></label>
+        <name>ActiveMilitary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Affiliate Type --></label>
+        <name>Affiliate_Type__c</name>
+        <picklistValues>
+            <masterLabel>203K Consultant</masterLabel>
+            <translation><!-- 203K Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appraiser</masterLabel>
+            <translation><!-- Appraiser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attorney</masterLabel>
+            <translation><!-- Attorney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banker</masterLabel>
+            <translation><!-- Banker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Board Member</masterLabel>
+            <translation><!-- Board Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closing Agent</masterLabel>
+            <translation><!-- Closing Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractor</masterLabel>
+            <translation><!-- Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Donor</masterLabel>
+            <translation><!-- Donor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government Organization</masterLabel>
+            <translation><!-- Government Organization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Inspector</masterLabel>
+            <translation><!-- Home Inspector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Realtor</masterLabel>
+            <translation><!-- Realtor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volunteer</masterLabel>
+            <translation><!-- Volunteer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Household Income --></label>
+        <name>AnnualHouseholdIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Area Median Income --></label>
+        <name>AreaMedianIncome__c</name>
+        <picklistValues>
+            <masterLabel>101% - 120% of AMI</masterLabel>
+            <translation><!-- 101% - 120% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 - 49% of AMI</masterLabel>
+            <translation><!-- 30 - 49% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50 - 79% of AMI</masterLabel>
+            <translation><!-- 50 - 79% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80 - 100% of AMI</masterLabel>
+            <translation><!-- 80 - 100% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Above 120% of AMI</masterLabel>
+            <translation><!-- Above 120% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Below 30% of AMI</masterLabel>
+            <translation><!-- Below 30% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chose not to respond</masterLabel>
+            <translation><!-- Chose not to respond --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Authorization to Release Information --></label>
+        <name>AuthorizationToReleaseInformation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Best Time to Contact --></label>
+        <name>Besttimetocontact__c</name>
+        <picklistValues>
+            <masterLabel>Afternoon</masterLabel>
+            <translation><!-- Afternoon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evening</masterLabel>
+            <translation><!-- Evening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Morning</masterLabel>
+            <translation><!-- Morning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekend</masterLabel>
+            <translation><!-- Weekend --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Chose Not to Provide Income --></label>
+        <name>ChoseNottoProvideIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client HUD Assistance --></label>
+        <name>ClientHUDAssistance__c</name>
+        <picklistValues>
+            <masterLabel>Down Payment Assistance</masterLabel>
+            <translation><!-- Down Payment Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Ownership Voucher</masterLabel>
+            <translation><!-- Home Ownership Voucher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other HUD Program</masterLabel>
+            <translation><!-- Other HUD Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Place Based Rental Assistance</masterLabel>
+            <translation><!-- Place Based Rental Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchase REO Property</masterLabel>
+            <translation><!-- Purchase REO Property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Voucher</masterLabel>
+            <translation><!-- Rental Voucher --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client # --></label>
+        <name>Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- Colonias Residence --></label>
+        <name>ColoniasResidence__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contacts Specialty --></label>
+        <name>ContactsSpecialty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Corresponding Portal User --></label>
+        <name>CorrespondingPortalUser__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- County/MSA --></label>
+        <name>CountyMSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Score --></label>
+        <name>CreditScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Residence --></label>
+        <name>CurrentResidence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date AMI Last Calculated --></label>
+        <name>DateAMILastCalculated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Desired Service --></label>
+        <name>DesiredService__c</name>
+        <picklistValues>
+            <masterLabel>Disaster Preparedness Counseling</masterLabel>
+            <translation><!-- Disaster Preparedness Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disaster Recovery Counseling</masterLabel>
+            <translation><!-- Disaster Recovery Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Capability Counseling</masterLabel>
+            <translation><!-- Financial Capability Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homeless Counseling</masterLabel>
+            <translation><!-- Homeless Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homeowner Counseling</masterLabel>
+            <translation><!-- Homeowner Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mortgage Delinquency Assistance Counseling</masterLabel>
+            <translation><!-- Mortgage Delinquency Assistance Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-purchase/Homebuying Counseling</masterLabel>
+            <translation><!-- Pre-purchase/Homebuying Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Topics Counseling</masterLabel>
+            <translation><!-- Rental Topics Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reverse Mortgage Counseling</masterLabel>
+            <translation><!-- Reverse Mortgage Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reverse Mortgage Delinquency Counseling</masterLabel>
+            <translation><!-- Reverse Mortgage Delinquency Counseling --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Disabled Dependent --></label>
+        <name>DisabledDependent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled Status --></label>
+        <name>DisabledStatus__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Disabled --></label>
+        <name>Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Education --></label>
+        <name>Education__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employment Status --></label>
+        <name>EmploymentStatus__c</name>
+        <picklistValues>
+            <masterLabel>Employed Full-Time</masterLabel>
+            <translation><!-- Employed Full-Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employed Full-Time AND Student</masterLabel>
+            <translation><!-- Employed Full-Time AND Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employed Part-Time</masterLabel>
+            <translation><!-- Employed Part-Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employed Part-Time AND Student</masterLabel>
+            <translation><!-- Employed Part-Time AND Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retired</masterLabel>
+            <translation><!-- Retired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stay-at-Home Caregiver OR Parent</masterLabel>
+            <translation><!-- Stay-at-Home Caregiver OR Parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student</masterLabel>
+            <translation><!-- Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to Work Due to Disability</masterLabel>
+            <translation><!-- Unable to Work Due to Disability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unemployed AND Looking for Work</masterLabel>
+            <translation><!-- Unemployed AND Looking for Work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- English Proficiency of the primary client --></help>
+        <label><!-- English Proficiency --></label>
+        <name>EnglishProficiency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ethnicity --></label>
+        <name>Ethnicity__c</name>
+    </fields>
+    <fields>
+        <label><!-- EvaluateHUDAMI --></label>
+        <name>EvaluateHUDAMI__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Farm Worker --></label>
+        <name>FarmWorker__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household Monthly Income --></label>
+        <name>HouseholdMonthlyIncome1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household % Of AMI --></label>
+        <name>HouseholdOfAMI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total number of people living in the same household --></help>
+        <label><!-- Household Size --></label>
+        <name>HouseholdSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household Type --></label>
+        <name>HouseholdType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Housing Choice Voucher --></label>
+        <name>HousingChoiceVoucher__c</name>
+    </fields>
+    <fields>
+        <label><!-- How Did You Hear About Us --></label>
+        <name>HowDidYouHearAboutUs__c</name>
+        <picklistValues>
+            <masterLabel>Advertisement</masterLabel>
+            <translation><!-- Advertisement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banker</masterLabel>
+            <translation><!-- Banker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employer</masterLabel>
+            <translation><!-- Employer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Referral</masterLabel>
+            <translation><!-- Partner Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Own App</masterLabel>
+            <translation><!-- Project Own App --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Word of mouth</masterLabel>
+            <translation><!-- Word of mouth --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Total hours of In-Person group education provided by your agency. --></help>
+        <label><!-- In-Person Group Education Hours --></label>
+        <name>InPersonGroupEducationHours__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Number --></label>
+        <name>LicenseNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 2 --></label>
+        <name>MailingAddressLine2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marital Status --></label>
+        <name>MaritalStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Communications Opt-Out --></label>
+        <name>MarketingCommunicationsOptOut__c</name>
+    </fields>
+    <fields>
+        <label><!-- Metropolitan Statistical Area --></label>
+        <name>MetropolitanStatisticalArea__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Creditor’s Debt --></label>
+        <name>MonthlyCreditorsDebt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Client Monthy Income Source (i.e. SS, Disability, W2, etc) --></help>
+        <label><!-- Monthly Income Source --></label>
+        <name>MonthlyIncomeSource__c</name>
+        <picklistValues>
+            <masterLabel>Alimony</masterLabel>
+            <translation><!-- Alimony --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Annuity Payments</masterLabel>
+            <translation><!-- Annuity Payments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Income</masterLabel>
+            <translation><!-- Business Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capital Gains</masterLabel>
+            <translation><!-- Capital Gains --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Child Support</masterLabel>
+            <translation><!-- Child Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disability Benefits</masterLabel>
+            <translation><!-- Disability Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dividends</masterLabel>
+            <translation><!-- Dividends --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employment Salary</masterLabel>
+            <translation><!-- Employment Salary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freelance or Gig Work</masterLabel>
+            <translation><!-- Freelance or Gig Work --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government Assistance (e.g., unemployment benefits)</masterLabel>
+            <translation><!-- Government Assistance (e.g., unemployment benefits) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment Income</masterLabel>
+            <translation><!-- Investment Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (for any income sources not covered by the above options)</masterLabel>
+            <translation><!-- Other (for any income sources not covered by the above options) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pension</masterLabel>
+            <translation><!-- Pension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Income</masterLabel>
+            <translation><!-- Rental Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Royalties</masterLabel>
+            <translation><!-- Royalties --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scholarships or Grants</masterLabel>
+            <translation><!-- Scholarships or Grants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Employment Income</masterLabel>
+            <translation><!-- Self-Employment Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Security</masterLabel>
+            <translation><!-- Social Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trust Fund Distributions</masterLabel>
+            <translation><!-- Trust Fund Distributions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Dependents --></label>
+        <name>NumberOfDependents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupation Start Date --></label>
+        <name>OccupationStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupation --></label>
+        <name>Occupation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total hours of online group education provided by your agency. --></help>
+        <label><!-- Online Group Education Hours --></label>
+        <name>OnlineGroupEducationHours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Please specify how you heard about us --></label>
+        <name>PleaseSpecify__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Language --></label>
+        <name>PreferredLanguage__c</name>
+        <picklistValues>
+            <masterLabel>ASL</masterLabel>
+            <translation><!-- ASL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arabic</masterLabel>
+            <translation><!-- Arabic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cambodian</masterLabel>
+            <translation><!-- Cambodian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cantonese</masterLabel>
+            <translation><!-- Cantonese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese Mandarin</masterLabel>
+            <translation><!-- Chinese Mandarin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Creole</masterLabel>
+            <translation><!-- Creole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech</masterLabel>
+            <translation><!-- Czech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (US)</masterLabel>
+            <translation><!-- English (US) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farsi</masterLabel>
+            <translation><!-- Farsi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation><!-- French --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation><!-- German --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goboligok</masterLabel>
+            <translation><!-- Goboligok --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hebrew</masterLabel>
+            <translation><!-- Hebrew --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hindi</masterLabel>
+            <translation><!-- Hindi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hmong</masterLabel>
+            <translation><!-- Hmong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indonesian</masterLabel>
+            <translation><!-- Indonesian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian</masterLabel>
+            <translation><!-- Italian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation><!-- Korean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latin</masterLabel>
+            <translation><!-- Latin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polish</masterLabel>
+            <translation><!-- Polish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuuguese</masterLabel>
+            <translation><!-- Portuuguese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian</masterLabel>
+            <translation><!-- Russian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swahili</masterLabel>
+            <translation><!-- Swahili --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkish</masterLabel>
+            <translation><!-- Turkish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ukrainian</masterLabel>
+            <translation><!-- Ukrainian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urdu</masterLabel>
+            <translation><!-- Urdu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese</masterLabel>
+            <translation><!-- Vietnamese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yiddish</masterLabel>
+            <translation><!-- Yiddish --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Customer does not want demographic information shared. --></help>
+        <label><!-- Privacy Notice Opt Out --></label>
+        <name>PrivacyNoticeOptOut1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Race --></label>
+        <name>Race__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Source --></label>
+        <name>ReferralSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referred by --></label>
+        <name>Referredby__c</name>
+    </fields>
+    <fields>
+        <help><!-- If applicable --></help>
+        <label><!-- Relationship to Primary Applicant --></label>
+        <name>RelationshipToPrimaryApplicant__c</name>
+        <picklistValues>
+            <masterLabel>Aunt</masterLabel>
+            <translation><!-- Aunt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brother</masterLabel>
+            <translation><!-- Brother --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employer</masterLabel>
+            <translation><!-- Employer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Father</masterLabel>
+            <translation><!-- Father --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Friend</masterLabel>
+            <translation><!-- Friend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Husband</masterLabel>
+            <translation><!-- Husband --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mother</masterLabel>
+            <translation><!-- Mother --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Relative</masterLabel>
+            <translation><!-- Other Relative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sister</masterLabel>
+            <translation><!-- Sister --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step-Daughter</masterLabel>
+            <translation><!-- Step-Daughter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wife</masterLabel>
+            <translation><!-- Wife --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Review Electronic Consent Disclosures --></label>
+        <name>ReviewDisclosuresforElectronicConsent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rural Area Status --></label>
+        <name>RuralAreaStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- SSN --></label>
+        <name>SSN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Speciality --></label>
+        <name>Speciality__c</name>
+        <picklistValues>
+            <masterLabel>Home Insurance</masterLabel>
+            <translation><!-- Home Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mortgage</masterLabel>
+            <translation><!-- Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Banking</masterLabel>
+            <translation><!-- Retail Banking --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Monthly Income --></label>
+        <name>TotalMonthlyIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Town --></label>
+        <name>Town__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validation Combined1 --></label>
+        <name>ValidationCombined1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validation Combined --></label>
+        <name>ValidationCombined__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veteran --></label>
+        <name>Veteran__c</name>
+    </fields>
+    <fields>
+        <help><!-- Must not have owned a home within the last 3 years. --></help>
+        <label><!-- 1st Time Home Buyer --></label>
+        <name>X1stTimeHomeBuyer__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>cic_credit__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Phoneline --></label>
+        <name>cic_credit__Direct_Phoneline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Languages --></label>
+        <name>cic_credit__Languages__c</name>
+    </fields>
+    <fields>
+        <label><!-- Length of Stay ( in years ) --></label>
+        <name>cic_credit__Length_of_Stay_in_years__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>cic_credit__Level__c</name>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation><!-- Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary</masterLabel>
+            <translation><!-- Secondary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tertiary</masterLabel>
+            <translation><!-- Tertiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Line 1 --></label>
+        <name>cic_credit__Line_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line 2 --></label>
+        <name>cic_credit__Line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marital Status --></label>
+        <name>cic_credit__Marital_Status__c</name>
+        <picklistValues>
+            <masterLabel>Divorced</masterLabel>
+            <translation><!-- Divorced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Married</masterLabel>
+            <translation><!-- Married --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Disclosed</masterLabel>
+            <translation><!-- Not Disclosed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Separated</masterLabel>
+            <translation><!-- Separated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single</masterLabel>
+            <translation><!-- Single --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unmarried</masterLabel>
+            <translation><!-- Unmarried --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Dependents --></label>
+        <name>cic_credit__Number_of_Dependents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Email --></label>
+        <name>cic_credit__Primary_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- SSN --></label>
+        <name>cic_credit__SSN__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Code --></label>
+        <name>cic_credit__State_Code__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VI</masterLabel>
+            <translation><!-- VI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Suffix --></label>
+        <name>cic_credit__Suffix__c</name>
+        <picklistValues>
+            <masterLabel>I</masterLabel>
+            <translation><!-- I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>II</masterLabel>
+            <translation><!-- II --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>III</masterLabel>
+            <translation><!-- III --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IV</masterLabel>
+            <translation><!-- IV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IX</masterLabel>
+            <translation><!-- IX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jr.</masterLabel>
+            <translation><!-- Jr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sr.</masterLabel>
+            <translation><!-- Sr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V</masterLabel>
+            <translation><!-- V --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VI</masterLabel>
+            <translation><!-- VI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VII</masterLabel>
+            <translation><!-- VII --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIII</masterLabel>
+            <translation><!-- VIII --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Zip Code --></label>
+        <name>cic_credit__Zip_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>isActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- isInvalidZip --></label>
+        <name>isInvalidZip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By SUMO --></label>
+        <name>sumoapp__CreatedBySumo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Ghost --></label>
+        <name>sumoapp__IsGhost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text Opt In --></label>
+        <name>sumoapp__TextOptIn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Reminder Opt Out --></label>
+        <name>sumoapp__VoiceOptOut__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Affiliate --></label>
+        <name>Affiliate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Co-Applicant --></label>
+        <name>CoApplicant</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Primary Client --></label>
+        <name>PrimaryClient</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prospect --></label>
+        <name>Prospect</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Household is Required ! --></errorMessage>
+        <name>Account_Is_Required_on_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Credit Score must be 3 Digit --></errorMessage>
+        <name>CreditScoreFormat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter Email --></errorMessage>
+        <name>EmailRequiredOnChange</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter either Email or Phone Number --></errorMessage>
+        <name>EmailorPhoneRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter First name --></errorMessage>
+        <name>FirstNameRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Household size should be between 1 to 99 --></errorMessage>
+        <name>HouseholdSizeLimitRule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid phone number --></errorMessage>
+        <name>Phone_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SSN must be in this format: 999-99-9999. --></errorMessage>
+        <name>SSNFormat</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- EmailAnInvite --></label>
+        <name>sumoapp__EmailAnInvite</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ScheduleNow --></label>
+        <name>sumoapp__ScheduleNow</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>sumoapp__DisableDefaultLookupOptions__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Disable preloading default lookup options for specified objects</description>
+        <inlineHelpText>List the objects, separated by semicolons, for which default lookup options should be turned off</inlineHelpText>
+        <label>Disable Default Lookup Options</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <label>Sumo Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

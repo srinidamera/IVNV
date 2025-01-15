@@ -1,0 +1,109 @@
+<template>
+    <div class="slds-p-top_medium" if:false={disableMenu}>
+        <lightning-card title="Files Upload Area" icon-name="utility:upload">
+            <div class="slds-p-around_medium lgc-bg">
+                <div class="slds-clearfix displayFlex" >
+                    <div class="slds-float_left">
+                        <lightning-input type="file" label="Documents" multiple onchange={handleFilesChange}></lightning-input>
+                    </div>
+                    <div class="slds-float_right">
+                        <lightning-helptext content="The Upload size should be less than or equal to 3.6MB." ></lightning-helptext>
+                    </div>
+                </div>
+            </div>
+        </lightning-card>
+    </div>
+
+    <template if:true={isModalOpen}>
+        <!-- Modal/Popup Box LWC starts here -->
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- Modal/Popup Box LWC header here -->
+                <header class="slds-modal__header">
+                    <button if:false={isFileUploadInProcess} class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={closeModal}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                            size="small"></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Upload Documents Wizard
+                    </h2>
+                </header>
+                <!-- Modal/Popup Box LWC body starts here -->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <template if:false={isFileUploadInProcess}>
+                        <template for:each={processedFiles} for:item="file" for:index="rowno">
+                            <div class="slds-box slds-m-vertical_x-small" key={file.filename}>
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size_4-of-6">
+                                        <p>
+                                            <b class="filename">{file.filename}</b>
+                                        </p>
+                                        <div>
+                                            <lightning-combobox name="filetype" label="File Type"
+                                                placeholder="Select Type" options={fileTypeOptions}
+                                                onchange={handleOptionChange} data-id={rowno}></lightning-combobox>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_2-of-6">
+                                        <label class="slds-form-element__label" for="input1">Customer Portal Facing</label>
+                                        <lightning-input type="toggle" label="" data-id={rowno}
+                                            variant="label-hidden" name="input1"
+                                            onchange={handleExternalDocChange}></lightning-input>
+                                        <label class="slds-form-element__label" for="input2">Verified</label>
+                                        <lightning-input type="toggle" label="" data-id={rowno}
+                                            variant="label-hidden" name="input2"
+                                            onchange={handleVerifiedChange}></lightning-input>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+                    </template>
+                    <template if:true={isFileUploadInProcess}>
+                        <span class="slds-assistive-text">File Upload in Progress</span>
+                        <div class="slds-box slds-theme_shade slds-theme_alert-texture">
+                            <lightning-progress-bar value={fileUploadProgress}
+                                variant="circular"></lightning-progress-bar>
+                        </div>
+                    </template>
+                </div>
+                <!-- Modal/Popup Box LWC footer starts here -->
+                <footer if:false={isFileUploadInProcess} class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={closeModal} title="Cancel">Cancel</button>
+                    <button class="slds-button slds-button_brand" onclick={submitDetails} title="OK">OK</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+    <template if:true={fileLimitExceeded}>
+        <!-- Modal/Popup Box LWC starts here -->
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- Modal/Popup Box LWC header here -->
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={closeLimitExceed}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                            size="small"></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-04" class="slds-text-heading_medium slds-hyphenate">Too many files selected
+                    </h2>
+                </header>
+                <!-- Modal/Popup Box LWC body starts here -->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-4">
+                    <p class="slds-align_absolute-center">Attach upto 10 files</p>
+                </div>
+                <!-- Modal/Popup Box LWC footer starts here -->
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_brand slds-align_absolute-center" onclick={closeLimitExceed} title="Cancel">Got it</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Availability --></label>
+        <name>sumoapp__Availability__c</name>
+        <relationshipLabel><!-- Availability Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>sumoapp__Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day of Week --></label>
+        <name>sumoapp__DayOfWeek__c</name>
+        <picklistValues>
+            <masterLabel>Friday</masterLabel>
+            <translation><!-- Friday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monday</masterLabel>
+            <translation><!-- Monday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saturday</masterLabel>
+            <translation><!-- Saturday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sunday</masterLabel>
+            <translation><!-- Sunday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thursday</masterLabel>
+            <translation><!-- Thursday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday</masterLabel>
+            <translation><!-- Tuesday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wednesday</masterLabel>
+            <translation><!-- Wednesday --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- End Time --></label>
+        <name>sumoapp__EndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invite --></label>
+        <name>sumoapp__Invite__c</name>
+        <relationshipLabel><!-- Invite Availability Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Time --></label>
+        <name>sumoapp__StartTime__c</name>
+    </fields>
+</CustomObjectTranslation>

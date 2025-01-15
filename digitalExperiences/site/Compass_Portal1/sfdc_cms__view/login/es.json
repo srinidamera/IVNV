@@ -1,0 +1,28 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Login",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "createNewAccountButtonTitle" : "Crear Nueva Cuenta",
+          "description" : "Por favor, ingrese sus credenciales a continuación.",
+          "emailAddressLabel" : "Dirección de correo electrónico",
+          "forgotPasswordButtonTitle" : "¿Olvidó Su Contraseña?",
+          "goBackButtonTitle" : "Regresar",
+          "loginButtonTitle" : "Iniciar sesión",
+          "loginTitle" : "Iniciar sesión",
+          "passwordLabel" : "Contraseña",
+          "builderPasswordErrorMessage" : "Ha ingresado una contraseña incorrecta"
+        },
+        "id" : "ed1a7ecb-88ef-4c5c-bc29-b9d6d6a995cd"
+      }, {
+        "attributes" : {
+          "pageTitle" : "Inicio de sesión"
+        },
+        "id" : "fcda9bfa-de24-4c6f-af28-22d9d072a9be"
+      } ]
+    }
+  },
+  "urlName" : "login"
+}

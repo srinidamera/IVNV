@@ -1,0 +1,109 @@
+<template>
+    <!-- AMI Lookup Section -->
+    <template if:true={showAmiLookup}>
+        <lightning-card title="AMI Lookup">
+            <p class="slds-p-horizontal_large">
+                <!-- Button to fetch counties based on zip code -->
+                <lightning-button variant="brand" label="Search County by Zip Code" onclick={fetchCounties} class="slds-align_absolute-center"></lightning-button>
+            </p>
+            <br/>
+            <div style="padding-left: 20px; padding-right: 20px; text-align: center;">
+                <p>Ensure that the Primary Address, Household Size, and Annual Household Income Information is up-to-date to calculate HUD AMI.</p>
+            </div>
+        </lightning-card>
+    </template>
+
+    <!-- County Selection Section -->
+    <template if:true={showCounties}>
+        <lightning-card title="AMI Lookup">
+            <!-- Display a warning if no county is selected -->
+            <template if:true={selectCounty}>
+                <div class="slds-align_absolute-center">
+                    <p style="color: rgba(255, 0, 0, 0.774);">Please select one county</p>
+                </div>
+            </template>
+            <p class="slds-p-horizontal_large">
+                <!-- Radio group to select a county from the list -->
+                <lightning-radio-group name="countyRecords"
+                                       label="Matching County Records"
+                                       options={countyList}
+                                       value={slctdCounty}
+                                       type="radio"
+                                       onchange={handleCountyChange}></lightning-radio-group>
+             </p>
+             <div class="slds-clearfix slds-var-p-around_medium">
+                <!-- Next button to fetch towns and Cancel button to reset -->
+                <lightning-button variant="brand" label="Next" onclick={fetchTownName} class="slds-float_right"></lightning-button>
+                <lightning-button variant="brand" label="Cancel" onclick={cancelAll} class="slds-float_left"></lightning-button>
+             </div>
+        </lightning-card>
+    </template>
+
+    <!-- Town Selection Section -->
+    <template if:true={showTownnames}>
+        <lightning-card title="AMI Lookup">
+            <!-- Display a warning if no town is selected -->
+            <template if:true={selectTown}>
+                <div class="slds-align_absolute-center">
+                    <p style="color: rgba(255, 0, 0, 0.774);">Please select one town</p>
+                </div>
+            </template>
+            <p class="slds-p-horizontal_large">
+                <!-- Radio group to select a town from the list -->
+                <lightning-radio-group name="townRecords"
+                                       label="Matching Town Records"
+                                       options={townList}
+                                       value={slctdTown}
+                                       type="radio"
+                                       onchange={handleTownChange}></lightning-radio-group>
+             </p>
+             <div class="slds-clearfix slds-var-p-around_medium">
+                <!-- Next button to calculate zone and Cancel button to reset -->
+                <lightning-button variant="brand" label="Next" onclick={calculateZone} class="slds-float_right"></lightning-button>
+                <lightning-button variant="brand" label="Cancel" onclick={cancelAll} class="slds-float_left"></lightning-button>
+             </div>
+        </lightning-card>
+    </template>
+
+    <!-- Calculation Confirmation Section -->
+    <template if:true={showcalculateBtn}>
+        <lightning-card title="AMI Lookup">
+            <div class="slds-align_absolute-center">
+                <!-- Warning to confirm the selected information -->
+                <p style="color: rgba(255, 0, 0, 0.774);">
+                    Please make sure the below information is correct and click Calculate AMI button
+                </p>
+            </div>
+            <p class="slds-p-horizontal_large">
+                <!-- Display selected county and town -->
+                <b>Selected County : </b> {slctdCounty}
+                <br/>
+                <b>Selected Town : </b> {slctdTownLabel}
+             </p>
+             <div class="slds-clearfix slds-var-p-around_medium">
+                <!-- Calculate AMI button to commit changes and Cancel button to reset -->
+                <lightning-button variant="brand" label="Calculate AMI" onclick={calculateandCommit} class="slds-float_right"></lightning-button>
+                <lightning-button variant="brand" label="Cancel" onclick={cancelAll} class="slds-float_left"></lightning-button>
+             </div>
+        </lightning-card>
+    </template>
+
+    <!-- Warning Section for Incomplete Address -->
+    <template if:true={showWarning}>
+        <lightning-card title="Warning">
+            <div class="slds-align_absolute-center">
+                <!-- Warning message for missing primary address -->
+							 <div style="padding-left: 20px; padding-right: 20px; text-align: center; color: rgba(255, 0, 0, 0.774);">
+                <p>The provided Zip Code covers multiple counties or towns. Click on "Search County by ZIP Code" to select the appropriate county and town.</p>
+            </div>
+            </div>
+        </lightning-card>
+    </template>
+
+    <!-- Spinner for Loading State -->
+    <template if:true={spinner}>
+        <div class="slds-align_absolute-center">
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </div>
+    </template>
+</template>

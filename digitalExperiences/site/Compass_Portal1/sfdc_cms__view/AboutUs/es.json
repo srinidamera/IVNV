@@ -1,0 +1,35 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "AboutUs",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "title" : "Sobre nosotros"
+        },
+        "id" : "bc1bde7d-4228-47bf-840c-1c7eaf296927"
+      }, {
+        "attributes" : {
+          "title" : "Sobre nosotros"
+        },
+        "id" : "2cce13ec-b7a6-41c2-84dc-df47fcaa933d"
+      }, {
+        "attributes" : {
+          "title" : "Misión"
+        },
+        "id" : "87cebee6-3200-4964-a064-7f0009fea0ba"
+      }, {
+        "attributes" : {
+          "title" : "Testimonios"
+        },
+        "id" : "20c5eac4-a9bb-4faf-8159-4ac170458e7c"
+      }, {
+        "id" : "6dd50630-5aa2-47df-bfd3-d4cea5d9fa10",
+        "attributes" : {
+          "btnLabels" : "Regresa, Explorar Servicios, Explorar clases"
+        }
+      } ]
+    }
+  },
+  "urlName" : "aboutus"
+}

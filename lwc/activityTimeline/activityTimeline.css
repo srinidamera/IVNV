@@ -1,0 +1,12 @@
+:host {
+    --slds-c-accordion-summary-color-background: var(--slds-g-color-neutral-base-95, var(--lwc-colorBackground, rgb(243, 243, 243)));
+}
+
+.slds-timeline__item_call:before {
+    background: #1B96FF;
+}
+
+
+.slds-timeline__item_task:before {
+    background: #B60554;
+}

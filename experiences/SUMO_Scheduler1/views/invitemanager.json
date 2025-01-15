@@ -1,0 +1,46 @@
+{
+  "appPageId" : "f39236a9-486d-41f9-a073-676f892292c6",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "dc7e173d-cd2a-4d4f-a090-297ed0837bc8",
+  "label" : "invitemanager",
+  "regions" : [ {
+    "id" : "47b40c7d-df3e-4c8d-ac9f-92d563b4fc16",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "sumoapp:invitePortalPage",
+      "id" : "1acd79ad-553d-497e-b831-9e76392f1925",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "8c8277c4-d145-44b9-a7ce-9f48bbd8b79d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "753470d0-91a8-4a5d-984d-d96aa331b295",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "invitemanager"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "f58cbc63-07c7-461a-afb7-85a860ca8d5e",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d657f1df-3dfe-425a-b51f-ae6aa2e9cb8a",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-invitemanager"
+}

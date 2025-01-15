@@ -1,0 +1,27 @@
+<template>
+    
+        <template if:true={showValErrSection}>
+			 		
+       <!-- <div class="slds-notify slds-notify_alert slds-alert_warning" role="alert">
+            <span class="slds-assistive-text">warning</span>
+            <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small" title="Description of icon when needed">
+                <lightning-icon icon-name="utility:warning" alternative-text="warning" variant="warning" title="warning"></lightning-icon>
+            </span>
+            <h2>
+                {validationErrorsMessages}
+            </h2>
+        </div> -->
+						<div class="slds-theme_default">
+							 	<div class="slds-var-p-around_medium slds-align_absolute-center "  > 
+								<lightning-icon icon-name="utility:warning" alternative-text="warning" variant="warning" title="warning"></lightning-icon>
+							 <h2 class="slds-p-left_x-small">
+										{validationErrorsMessages}
+								</h2>
+								</div>
+				     
+								 
+						</div>
+
+        </template>
+    
+</template>

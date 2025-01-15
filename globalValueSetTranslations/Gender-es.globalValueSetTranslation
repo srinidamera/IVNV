@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Female</masterLabel>
+        <translation>Femenino</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Male</masterLabel>
+        <translation>Masculino</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Other/Non-conforming</masterLabel>
+        <translation>Otro / No conforme</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

@@ -1,0 +1,112 @@
+<template>
+	<div class="slds-theme_default">
+		<lightning-layout multiple-rows>
+			<lightning-layout-item size="12"
+				class="slds-p-left_small slds-p-right_small slds-p-top_small slds-p-bottom_small">
+				<c-intake-contact-search></c-intake-contact-search>
+			</lightning-layout-item>
+
+			<template if:false={isSearch}>
+				<lightning-layout-item size="12" class="slds-align_absolute-center">
+					<div class="slds-m-around_medium">
+						<div class="slds-text-heading_medium slds-p-bottom_medium">
+							{label.RELEVANT_CLIENT_CASE_SELECTION_INFO}
+						</div>
+					</div>
+				</lightning-layout-item>
+			</template>
+
+			<template if:true={isSearch}>
+
+				<template if:true={showHistoryModal}>
+
+					
+					<!-- Modal/Popup Box LWC starts here -->
+					<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-02" aria-modal="true"
+						aria-describedby="modal-content-id-2" class="slds-modal slds-fade-in-open">
+						<div class="slds-modal__container">
+							<!-- Modal/Popup Box LWC header here -->
+							<header class="slds-modal__header">
+								<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+									title="Close" onclick={closeSHowHistoryModal}>
+									<lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+										size="small"></lightning-icon>
+									<span class="slds-assistive-text">Close</span>
+								</button>
+								<h2 id="modal-heading-02" class="slds-text-heading_medium slds-hyphenate">
+									Contact History</h2>
+							</header>
+							<!-- Modal/Popup Box LWC body starts here -->
+							<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+								<lightning-layout multiple-rows>
+									<lightning-layout-item size="12" class="slds-p-right_small slds-p-top_small slds-p-bottom_small">
+										<c-intake-requests contact-ids={selectedContactList}></c-intake-requests>
+									</lightning-layout-item>
+									<lightning-layout-item size="12" class="slds-p-right_small slds-p-top_small slds-p-bottom_small">
+										<c-intake-client-cases contact-ids={selectedContactList}></c-intake-client-cases>
+									</lightning-layout-item>
+									<lightning-layout-item size="12" class="slds-p-right_small slds-p-top_small slds-p-bottom_small">
+										<c-enrolled-courses contact-ids={selectedContactList}></c-enrolled-courses>
+									</lightning-layout-item> 
+								</lightning-layout>
+							</div>
+							<!-- Modal/Popup Box LWC footer starts here -->
+							<footer class="slds-modal__footer">
+								<button class="slds-button slds-button_brand" onclick={closeSHowHistoryModal}
+									title="OK">OK</button>
+							</footer>
+						</div>
+					</section>
+					<div class="slds-backdrop slds-backdrop_open"></div>
+
+
+
+					<!-- <lightning-layout-item size="12" class="slds-align_absolute-center">
+					<div class="slds-theme_default">
+						<div class="slds-m-around_medium">
+							<div class="slds-text-heading_medium slds-p-bottom_medium">
+								{showSelectMessage}
+							</div>
+						</div>
+					</div>
+				</lightning-layout-item>
+
+				<lightning-layout-item size="12" class="slds-p-right_small slds-p-top_small slds-p-bottom_small">
+					<c-intake-requests></c-intake-requests>
+				</lightning-layout-item>
+				<lightning-layout-item size="12" class="slds-p-right_small slds-p-top_small slds-p-bottom_small">
+					<c-intake-client-cases></c-intake-client-cases>
+				</lightning-layout-item>
+				<lightning-layout-item size="12" class="slds-p-right_small slds-p-top_small slds-p-bottom_small">
+					<c-enrolled-courses></c-enrolled-courses>
+				</lightning-layout-item> -->
+				</template>
+			</template>
+		</lightning-layout>
+
+		<!--Use template if:true to display/hide popup based on isModalOpen value-->
+		<template if:true={isModalOpen}>
+			<!-- Modal/Popup Box LWC starts here -->
+			<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+				aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+				<div class="slds-modal__container">
+					<!-- Modal/Popup Box LWC header here -->
+					<header class="slds-modal__header">
+						<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+							title="Close" onclick={closeModal}>
+							<lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+								size="small"></lightning-icon>
+							<span class="slds-assistive-text">Close</span>
+						</button>
+						<h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Intake Form</h2>
+					</header>
+					<!-- Modal/Popup Box LWC body starts here -->
+					<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+						Intake Form
+					</div>
+				</div>
+			</section>
+			<div class="slds-backdrop slds-backdrop_open"></div>
+		</template>
+	</div>
+</template>

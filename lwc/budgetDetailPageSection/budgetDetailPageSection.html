@@ -1,0 +1,98 @@
+<!--
+  @description  : child component for budget detail
+-->
+<template>
+    <lightning-record-view-form record-id={budgetId} object-api-name="Budget__c">
+    <template lwc:if={isSectionHeader}> 
+        <div>
+            <lightning-layout multiple-rows vertical-align="stretch">
+                <lightning-layout-item size="3" padding="horizontal-small"></lightning-layout-item>
+                <lightning-layout-item size="3" class="slds-form-element_readonly field-3" padding="horizontal-small">
+                    <div class="slds-form-element">
+                        <b><label class="slds-form-element__label" for="text-input-id-1">Projected Cost</label></b>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="3" class="slds-form-element_readonly field-3" padding="horizontal-small">
+                    <div class="slds-form-element">
+                        <b><label class="slds-form-element__label" for="text-input-id-1">Actual Cost</label></b>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="3" class="slds-form-element_readonly field-3" padding="horizontal-small">
+                    <div class="slds-form-element">
+                        <b><label class="slds-form-element__label" for="text-input-id-1">Difference</label></b>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </template>
+    <template lwc:elseif={isSectionField}> 
+        <div class="expense-entry">
+            <lightning-layout multiple-rows vertical-align="stretch">
+                <lightning-layout-item size="3" class="slds-form-element_readonly field-3" padding="horizontal-small">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="text-input-id-1">
+                            {label}
+                        </label>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="3" class="slds-form-element_readonly field-3" padding="horizontal-small">
+                    <lightning-output-field field-name={projectedField} variant="label-hidden">
+                    </lightning-output-field>
+                </lightning-layout-item>
+                <lightning-layout-item size="3" class="slds-form-element_readonly field-3" padding="horizontal-small">
+                    <lightning-output-field field-name={actualField} variant="label-hidden">
+                    </lightning-output-field>
+                </lightning-layout-item>
+                <lightning-layout-item size="3" class="slds-form-element_readonly field-3" padding="horizontal-small">
+                    <lightning-output-field field-name={diffField} variant="label-hidden">
+                    </lightning-output-field>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </template>
+    <template lwc:elseif={isMonthlyIncome}>
+        <div class="expense-entry">
+            <lightning-layout multiple-rows vertical-align="stretch">
+                <lightning-layout-item size="6" class="slds-form-element_readonly field-6" padding="horizontal-small">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="text-input-id-1">
+                            {label}
+                        </label>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="6" class="slds-form-element_readonly field-6" padding="horizontal-small">
+                    <lightning-output-field field-name={projectedField} variant="label-hidden">
+                                            </lightning-output-field>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </template>
+    <template lwc:else>  
+        <div class="expense-entry">
+            <lightning-layout multiple-rows vertical-align="stretch">
+                <lightning-layout-item size="3" class="slds-form-element_readonly field-3" padding="horizontal-small">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="text-input-id-1">
+                            <b>{label}</b>
+                        </label>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="3" class="slds-form-element_readonly field-3" padding="horizontal-small">
+                    <lightning-output-field field-name={projectedField} variant="label-hidden">
+                    </lightning-output-field>
+                </lightning-layout-item>
+                <lightning-layout-item size="3" class="slds-form-element_readonly field-3" padding="horizontal-small">
+                    <lightning-output-field field-name={actualField} variant="label-hidden">
+                    </lightning-output-field>
+                </lightning-layout-item>
+                <lightning-layout-item size="3" class="slds-form-element_readonly field-3" padding="horizontal-small">
+                    <lightning-output-field field-name={diffField} variant="label-hidden">
+                    </lightning-output-field>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </template>
+
+    
+    </lightning-record-view-form>
+</template>

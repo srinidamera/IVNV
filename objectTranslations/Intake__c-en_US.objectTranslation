@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Intake</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Intakes</value>
+    </caseValues>
+    <fields>
+        <label><!-- AMI at Start of Client Case --></label>
+        <name>AMIAtStartOfClientCase__c</name>
+        <picklistValues>
+            <masterLabel>101% - 120% AMI</masterLabel>
+            <translation><!-- 101% - 120% AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30% - 49% AMI</masterLabel>
+            <translation><!-- 30% - 49% AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50% - 79% AMI</masterLabel>
+            <translation><!-- 50% - 79% AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80% - 100% AMI</masterLabel>
+            <translation><!-- 80% - 100% AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Above 120% of AMI</masterLabel>
+            <translation><!-- Above 120% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Below 30% of AMI</masterLabel>
+            <translation><!-- Below 30% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chose not to respond</masterLabel>
+            <translation><!-- Chose not to respond --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Active Military --></label>
+        <name>ActiveMilitary__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not available</masterLabel>
+            <translation><!-- Not available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Address Line 2 --></label>
+        <name>AddressLine2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Household Income --></label>
+        <name>AnnualHouseholdIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Area Median Income --></label>
+        <name>AreaMedianIncome__c</name>
+        <picklistValues>
+            <masterLabel>101% - 120% of AMI</masterLabel>
+            <translation><!-- 101% - 120% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 - 49% of AMI</masterLabel>
+            <translation><!-- 30 - 49% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50 - 79% of AMI</masterLabel>
+            <translation><!-- 50 - 79% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80 - 100% of AMI</masterLabel>
+            <translation><!-- 80 - 100% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Above 120% of AMI</masterLabel>
+            <translation><!-- Above 120% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Below 30% of AMI</masterLabel>
+            <translation><!-- Below 30% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chose not to respond</masterLabel>
+            <translation><!-- Chose not to respond --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Sub Type --></label>
+        <name>CaseSubType__c</name>
+        <picklistValues>
+            <masterLabel>NW Client Other Based Services</masterLabel>
+            <translation><!-- NW Client Other Based Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NW Refinance Non-Foreclosure</masterLabel>
+            <translation><!-- NW Refinance Non-Foreclosure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NW Rehab</masterLabel>
+            <translation><!-- NW Rehab --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Type --></label>
+        <name>CaseType__c</name>
+        <relationshipLabel><!-- Intakes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Chose Not to Provide Income --></label>
+        <name>ChoseNottoProvideIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Case Closed Date --></label>
+        <name>ClientCaseClosedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client HUD Assistance --></label>
+        <name>ClientHUDAssistance__c</name>
+        <picklistValues>
+            <masterLabel>Down Payment Assistance</masterLabel>
+            <translation><!-- Down Payment Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Ownership Voucher</masterLabel>
+            <translation><!-- Home Ownership Voucher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other HUD Program</masterLabel>
+            <translation><!-- Other HUD Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Place Based Rental Assistance</masterLabel>
+            <translation><!-- Place Based Rental Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchase REO Property</masterLabel>
+            <translation><!-- Purchase REO Property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Voucher</masterLabel>
+            <translation><!-- Rental Voucher --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client # --></label>
+        <name>ClientNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Colonias Residence --></label>
+        <name>ColoniasResidence__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Type --></label>
+        <name>ContactType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Counselor --></label>
+        <name>CounselorName__c</name>
+    </fields>
+    <fields>
+        <label><!-- County/MSA --></label>
+        <name>CountyMSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Score --></label>
+        <name>CreditScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Residence --></label>
+        <name>CurrentResidence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date AMI Last Calculated --></label>
+        <name>DateAMILastCalculated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disabled Status --></label>
+        <name>DisabledStatus__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Education --></label>
+        <name>Education__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employment Status --></label>
+        <name>Employment_Status__c</name>
+        <picklistValues>
+            <masterLabel>Employed Full-Time</masterLabel>
+            <translation><!-- Employed Full-Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employed Full-Time AND Student</masterLabel>
+            <translation><!-- Employed Full-Time AND Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employed Part-Time</masterLabel>
+            <translation><!-- Employed Part-Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employed Part-Time AND Student</masterLabel>
+            <translation><!-- Employed Part-Time AND Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retired</masterLabel>
+            <translation><!-- Retired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stay-at-Home Caregiver OR Parent</masterLabel>
+            <translation><!-- Stay-at-Home Caregiver OR Parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student</masterLabel>
+            <translation><!-- Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to Work Due to Disability</masterLabel>
+            <translation><!-- Unable to Work Due to Disability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unemployed AND Looking for Work</masterLabel>
+            <translation><!-- Unemployed AND Looking for Work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- English Proficiency of the primary client --></help>
+        <label><!-- English Proficiency --></label>
+        <name>EnglishProficiency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ethnicity --></label>
+        <name>Ethnicity__c</name>
+    </fields>
+    <fields>
+        <label><!-- EvaluateHUDAMI --></label>
+        <name>EvaluateHUDAMI__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Farm Worker --></label>
+        <name>FarmWorker__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Financial Capability Goals --></label>
+        <name>Financial_Capability_Goals__c</name>
+        <picklistValues>
+            <masterLabel>Credit Score and/or resolved credit issues</masterLabel>
+            <translation><!-- Credit Score and/or resolved credit issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decrease costs of tax filing</masterLabel>
+            <translation><!-- Decrease costs of tax filing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engage in new financial products</masterLabel>
+            <translation><!-- Engage in new financial products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Establish credit history</masterLabel>
+            <translation><!-- Establish credit history --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Establish savings for a specific goal</masterLabel>
+            <translation><!-- Establish savings for a specific goal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fewer accounts in collections</masterLabel>
+            <translation><!-- Fewer accounts in collections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fewer debts past-due</masterLabel>
+            <translation><!-- Fewer debts past-due --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Have sufficient savings to cover at least three months of basic living expenses</masterLabel>
+            <translation><!-- Have sufficient savings to cover at least three months of basic living expenses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase ability to manage fluctuations income</masterLabel>
+            <translation><!-- Increase ability to manage fluctuations income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase access to credit</masterLabel>
+            <translation><!-- Increase access to credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase amount of appropriate insurance coverage</masterLabel>
+            <translation><!-- Increase amount of appropriate insurance coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase net worth</masterLabel>
+            <translation><!-- Increase net worth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase savings</masterLabel>
+            <translation><!-- Increase savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increased in tax benefit</masterLabel>
+            <translation><!-- Increased in tax benefit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optimize public benefits portfolio</masterLabel>
+            <translation><!-- Optimize public benefits portfolio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reduce level of debt</masterLabel>
+            <translation><!-- Reduce level of debt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spend less on financial services</masterLabel>
+            <translation><!-- Spend less on financial services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stabilize housing (at risk of eviction or foreclosure)</masterLabel>
+            <translation><!-- Stabilize housing (at risk of eviction or foreclosure) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Funder --></label>
+        <name>Funder__c</name>
+        <picklistValues>
+            <masterLabel>FHA</masterLabel>
+            <translation><!-- FHA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FHLMC</masterLabel>
+            <translation><!-- FHLMC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glendale</masterLabel>
+            <translation><!-- Glendale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HASC-West-1</masterLabel>
+            <translation><!-- HASC-West-1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HFM</masterLabel>
+            <translation><!-- HFM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HUD</masterLabel>
+            <translation><!-- HUD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDA Program</masterLabel>
+            <translation><!-- IDA Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEAD</masterLabel>
+            <translation><!-- LEAD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lexington</masterLabel>
+            <translation><!-- Lexington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Louisville</masterLabel>
+            <translation><!-- Louisville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low Mod Builders</masterLabel>
+            <translation><!-- Low Mod Builders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks</masterLabel>
+            <translation><!-- NeighborWorks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section 8 HACSJ</masterLabel>
+            <translation><!-- Section 8 HACSJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wells Fargo</masterLabel>
+            <translation><!-- Wells Fargo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>World Bank</masterLabel>
+            <translation><!-- World Bank --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household Monthly Income --></label>
+        <name>HouseholdMonthlyIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household % Of AMI --></label>
+        <name>HouseholdOfAMI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household Size --></label>
+        <name>HouseholdSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household Type --></label>
+        <name>HouseholdType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household --></label>
+        <name>Household__c</name>
+        <relationshipLabel><!-- Intakes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Intake Date --></label>
+        <name>IntakeDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intake Name --></label>
+        <name>IntakeRequestName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marital Status --></label>
+        <name>MaritalStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Communications Opt-Out --></label>
+        <name>MarketingCommunicationsOptOut__c</name>
+    </fields>
+    <fields>
+        <label><!-- Metropolitan Statistical Area --></label>
+        <name>MetropolitanStatisticalArea__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Creditor’s Debt --></label>
+        <name>MonthlyCreditorsDebt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Monthly Income --></label>
+        <name>MonthlyIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Dependents --></label>
+        <name>NumberofDependents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupation Start Date --></label>
+        <name>OccupationStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupation --></label>
+        <name>Occupation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Intake --></label>
+        <name>PortalIntake__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-Counseling Credit Score --></label>
+        <name>PreCounselingCreditScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-Counseling Household Debt --></label>
+        <name>PreCounselingHouseholdDebt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-Counseling Residence Type --></label>
+        <name>PreCounselingResidenceType__c</name>
+        <picklistValues>
+            <masterLabel>Live with Family Rent-Free</masterLabel>
+            <translation><!-- Live with Family Rent-Free --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Residence</masterLabel>
+            <translation><!-- Other Residence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Own</masterLabel>
+            <translation><!-- Own --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent from a property not owned/managed by your organization</masterLabel>
+            <translation><!-- Rent from a property not owned/managed by your organization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent from a property owned/managed by your organization</masterLabel>
+            <translation><!-- Rent from a property owned/managed by your organization --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pre-Counseling Savings --></label>
+        <name>PreCounselingSavings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>PrimaryClient__c</name>
+        <relationshipLabel><!-- Intakes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HUD Purpose --></label>
+        <name>Purpose__c</name>
+        <picklistValues>
+            <masterLabel>Disaster Preparedness Assistance</masterLabel>
+            <translation><!-- Disaster Preparedness Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disaster Recovery Assistance</masterLabel>
+            <translation><!-- Disaster Recovery Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homeless Assistance</masterLabel>
+            <translation><!-- Homeless Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Delinquency Post-Purchase</masterLabel>
+            <translation><!-- Non-Delinquency Post-Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not HUD-Reportable</masterLabel>
+            <translation><!-- Not HUD-Reportable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-purchase/Homebuying</masterLabel>
+            <translation><!-- Pre-purchase/Homebuying --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Topics</masterLabel>
+            <translation><!-- Rental Topics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolving or Preventing Forward Mortgage Delinquency or Default</masterLabel>
+            <translation><!-- Resolving or Preventing Forward Mortgage Delinquency or Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolving or Preventing Reverse Mortgage Delinquency or Default</masterLabel>
+            <translation><!-- Resolving or Preventing Reverse Mortgage Delinquency or Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reverse Mortgage</masterLabel>
+            <translation><!-- Reverse Mortgage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Race --></label>
+        <name>Race__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Source --></label>
+        <name>ReferralSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rural Area Status --></label>
+        <name>RuralAreaStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intake Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed - Incomplete</masterLabel>
+            <translation><!-- Closed - Incomplete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Case</masterLabel>
+            <translation><!-- Open Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Intake</masterLabel>
+            <translation><!-- Open Intake --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Town --></label>
+        <name>Town__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validation Combined --></label>
+        <name>ValidationCombined__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veteran --></label>
+        <name>Veteran__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Time Home Buyer --></label>
+        <name>X1stTimeHomeBuyer__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not available</masterLabel>
+            <translation><!-- Not available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- isInvalidZip --></label>
+        <name>isInvalidZip__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Credit Score must be 3 Digit --></errorMessage>
+        <name>CreditScoreFormat</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Household size should be between 1 to 99 --></errorMessage>
+        <name>HouseholdSizeLimitRule</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- NewAppointment --></label>
+        <name>NewAppointment</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- OfferAnAppointment --></label>
+        <name>OfferAnAppointment</name>
+    </webLinks>
+</CustomObjectTranslation>

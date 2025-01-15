@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Allow creating events in the multi-calendar --></help>
+        <label><!-- Allow Creating Events --></label>
+        <name>sumoapp__AllowCreatingEvents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow Define Availability --></label>
+        <name>sumoapp__AllowDefineAvailability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Description Update --></label>
+        <name>sumoapp__DisableDescriptionUpdate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Site for generation public links --></help>
+        <label><!-- Public Site --></label>
+        <name>sumoapp__PublicSite__c</name>
+    </fields>
+</CustomObjectTranslation>

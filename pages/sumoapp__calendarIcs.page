@@ -1,0 +1,34 @@
+<apex:page controller="sumoapp.CalendarIcsController" contentType="text/calendar#Appointment.ics" action="{!fetchAppointmentDetails}">
+<!--Do not change formating of this file, ICS should looks like this-->
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Force.com Labs//iCalendar Export//EN
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+    <apex:repeat value="{!calendarIcs}" var="event">
+BEGIN:VEVENT
+DTSTART:{!event.startDate}
+DTEND:{!event.endDate}
+DTSTAMP:{!event.createdDate}
+ORGANIZER;CN={!event.organizerName}:mailto:{!event.organizerEmail}
+        <apex:repeat value="{!event.attendees}" var="attendee">
+ATTENDEE;
+CUTYPE=INDIVIDUAL;
+ROLE=REQ-PARTICIPANT;
+PARTSTAT={!attendee.status};
+RSVP=FALSE;
+CN={!attendee.email}:mailto:{!attendee.email}
+        </apex:repeat>
+UID:{!event.sumoId}
+CREATED:{!event.createdDate}
+DESCRIPTION;ENCODING=QUOTED-PRINTABLE:{!event.description}
+LAST-MODIFIED:{!event.lastModifiedDate}
+SEQUENCE:0
+LOCATION:{!event.location}
+STATUS:{!event.status}
+SUMMARY:{!event.subject}
+TRANSP:OPAQUE
+END:VEVENT
+    </apex:repeat>
+END:VCALENDAR
+</apex:page>

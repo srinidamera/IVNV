@@ -1,0 +1,64 @@
+<template>
+  <li class="slds-accordion__list-item">
+    <section class={sectionClass}>
+      <div class="slds-accordion__summary">
+        <h2
+          class="slds-accordion__summary-heading slds-text-heading_small bold"
+        >
+          <button
+            class="slds-button slds-button_reset slds-accordion__summary-action"
+            aria-controls="referenceId-24"
+            aria-expanded={isExpanded}
+            title="Accordion summary"
+            onclick={accordionClick}
+          >
+            <lightning-icon
+              class="slds-m-right_x-small"
+              icon-name={accordionIcon}
+              alternative-text="Utility image"
+              title="Image"
+              size="x-small"
+            ></lightning-icon>
+            <span class="slds-accordion__summary-content">{label}</span>
+          </button>
+          <!-- Slot 1 -->
+          <slot name="header"></slot>
+        </h2>
+        <!-- Button Menu -->
+        <div
+          lwc:if={showMenu}
+          class="slds-dropdown-trigger slds-dropdown-trigger_click"
+        >
+          <div class="slds-m-horizontal_small">
+            <lightning-button-menu
+              alternative-text="Show menu"
+              icon-size="x-small"
+              menu-alignment="right"
+              onselect={handleOnselect}
+              disabled = {disableMenu}
+            >
+              <template for:each={menuItems} for:item="item">
+                <lightning-menu-divider
+                  lwc:if={item.isDivider}
+                  key={item.value}
+                ></lightning-menu-divider>
+
+                <lightning-menu-item
+                  lwc:else
+                  key={item.value}
+                  value={item.value}
+                  label={item.label}
+                ></lightning-menu-item>
+              </template>
+            </lightning-button-menu>
+          </div>
+        </div>
+      </div>
+      <!-- Expanded Content -->
+      <div class="slds-accordion__content" id="referenceId-24">
+        <slot name="expandedContent"></slot>
+      </div>
+    </section>
+    <div class="divider-line slds-m-horizontal_x-small"></div>
+  </li>
+</template>

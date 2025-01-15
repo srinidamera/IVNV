@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Fund</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Funds</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funding Organization --></label>
+        <name>FundingOrganization__c</name>
+        <relationshipLabel><!-- Funds --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Funds Migration Reference Id --></label>
+        <name>FundsMigrationReferenceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Grant Type --></label>
+        <name>HUDGrantType__c</name>
+        <picklistValues>
+            <masterLabel>Colonias</masterLabel>
+            <translation><!-- Colonias --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comprehensive</masterLabel>
+            <translation><!-- Comprehensive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HECM</masterLabel>
+            <translation><!-- HECM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MMMSA</masterLabel>
+            <translation><!-- MMMSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Predatory Lending</masterLabel>
+            <translation><!-- Predatory Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S8</masterLabel>
+            <translation><!-- S8 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If this grant is funded by HUD select the corresponding NOFA to be reported on the HUD 9902. --></help>
+        <label><!-- HUD NOFA --></label>
+        <name>HUDNOFA__c</name>
+        <picklistValues>
+            <masterLabel>NOFA 2014-1 COMP</masterLabel>
+            <translation><!-- NOFA 2014-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2015-1 COMP</masterLabel>
+            <translation><!-- NOFA 2015-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2016-1 COMP</masterLabel>
+            <translation><!-- NOFA 2016-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2017-1 COMP</masterLabel>
+            <translation><!-- NOFA 2017-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2018-1 COMP</masterLabel>
+            <translation><!-- NOFA 2018-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2019-1 COMP</masterLabel>
+            <translation><!-- NOFA 2019-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2020-1 COMP</masterLabel>
+            <translation><!-- NOFA 2020-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2021-1 COMP</masterLabel>
+            <translation><!-- NOFA 2021-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2022-1 COMP</masterLabel>
+            <translation><!-- NOFA 2022-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2023-1 COMP</masterLabel>
+            <translation><!-- NOFA 2023-1 COMP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Grant Amount --></label>
+        <name>TotalGrantAmount__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,107 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 11-20-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+	<div lwc:if={isLoggedInUser} class="slds-m-bottom_small">
+		<div class="slds-grid">
+			<lightning-button class="tab-btn border-left slds-col slds-size_4-of-8 slds-small-size_4-of-8 slds-medium-size_4-of-8 slds-large-size_2-of-8" label={allServicesLabel} variant={allServicesStyle} name="AllServices"
+			onclick={handleTabClick} stretch></lightning-button>
+			<lightning-button class="btn border-right slds-col slds-size_4-of-8 slds-small-size_4-of-8 slds-medium-size_4-of-8 slds-large-size_2-of-8" label={myServicesLabel} variant={myServicesStyle} name="MyServices"
+			onclick={handleTabClick} stretch></lightning-button>
+		</div>
+	</div>
+	<!-- services -->
+	<div class="slds-m-bottom_medium">
+		<div>
+			<!-- Row 1 -->
+			<div class="slds-grid slds-wrap"> 
+					<template if:true={showAllServices}>
+						<template if:true={allService} for:each={allService} for:item="desireItem" for:index="index">
+							<div class={desireItem.class} key={desireItem.Id}>
+								<article class="slds-card service-tile" style={nwServiceTileStyle}>
+									
+									<div class="h-2 slds-col slds-grid slds-grid_vertical-align-start slds-m-bottom_x-small slds-card__header">
+										<div class="slds-col font-segoe-ui">{desireItem.Name}</div>
+										<div lwc:if={desireItem.badgeVisible} class="slds-col_bump-right font-segoe-ui"><lightning-badge label={desireItem.badgeLabel}
+											class={desireItem.badgeStyle}></lightning-badge>
+										</div>
+									</div>
+									<div class="slds-card__body slds-card__body_inner">
+										<div class="short-description">
+											{desireItem.Description}
+										</div>
+										<template if:true={desireItem.Highlights}>
+											<div class="slds-p-top_medium">
+												<lightning-formatted-rich-text value={desireItem.Highlights}>
+												</lightning-formatted-rich-text>
+											</div>
+										</template>
+										<template if:false={desireItem.isEnrolled}>
+											<a onclick={handleLearnMore} data-index={index} class="learn-more-anchor">{learnMoreLinkTitle}</a>
+										</template>
+										<template if:true={desireItem.isEnrolled}>
+											<a onclick={myServiceLearnMore} data-index={index} name="allMyServicesLearnMore" class="learn-more-anchor"> {viewDetailsLinkTitle}</a>
+										</template>
+									</div>
+									<div
+										class="service-tile-button slds-col slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-left_small slds-p-right_small slds-p-bottom_small slds-p-top_medium">
+										
+										<template if:false={desireItem.isEnrolled}>
+											<lightning-button class="btn btn-primary" variant="brand" label={signUpLabel} stretch data-id={desireItem.Id}
+												onclick={redirectToRegister}>
+											</lightning-button>
+										</template>
+										<template if:true={desireItem.isEnrolled}>
+											<lightning-button class="btn btn-secondary" variant="brand-outline" label={contactUsLabel} stretch data-id={desireItem.Id}
+												onclick={handleNavigateToContact}>
+											</lightning-button>
+										</template>
+									</div>
+								</article>
+							</div>
+						</template> 
+					</template>
+
+					<template if:false={showAllServices}>
+						<template if:true={myServicesData} for:each={myServicesData} for:item="myServiceItem" for:index="index">
+							<div class={myServiceItem.class} key={myServiceItem.Id}>
+								<article class="slds-card service-tile" style={nwServiceTileStyle}>
+									<div class="h-2 slds-col slds-grid slds-grid_vertical-align-start slds-m-bottom_x-small slds-card__header">
+										<div class="slds-col font-segoe-ui">{myServiceItem.Name}</div>
+										<div lwc:if={myServiceItem.badgeVisible} class="slds-col_bump-right font-segoe-ui"><lightning-badge label={myServiceItem.badgeLabel}
+											class={myServiceItem.badgeStyle}></lightning-badge>
+										</div>
+									</div>
+									<div class="slds-card__body slds-card__body_inner">
+										<div class="short-description">
+											{myServiceItem.Description}
+										</div>
+										<template if:true={myServiceItem.Highlights}>
+											<div class="slds-p-top_medium">
+												<lightning-formatted-rich-text value={myServiceItem.Highlights}>
+												</lightning-formatted-rich-text>
+											</div>
+										</template>
+										<a onclick={myServiceLearnMore} data-index={index} class="learn-more-anchor" name="myServicesLearnMore"> {viewDetailsLinkTitle}</a> <!-- {viewDetailsLinkTitle}-->
+									</div>
+									<div
+										class="service-tile-button slds-col slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-left_small slds-p-right_small slds-p-bottom_small slds-p-top_medium">
+										<lightning-button class="btn btn-secondary" variant="brand-outline" label={contactUsLabel} stretch data-id={myServiceItem.Id}
+											onclick={handleNavigateToContact}>
+										</lightning-button>
+									</div>
+								</article>
+							</div>
+						</template> 
+							<div lwc:if={showNoSignedUpdMsg} class="slds-text-heading_medium h-2 slds-m-bottom_x-large">
+								{noServicesSignedUpdMsg}
+							</div>
+					</template>
+			</div>
+		</div>
+	</div>
+</template>

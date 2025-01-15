@@ -1,0 +1,107 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "AboutUs",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"5cd0c7d5-dadd-4043-8ad4-d82d52161a90\",\"columns\":[{\"UUID\":\"c0eb7347-adf2-4033-ad72-334c101ae927\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "bannerImgSrcKey" : "MCB5HESOSXUJAX3CAJFN2OPNYZSQ",
+                "description" : "This is some descriptive text about the agency",
+                "dxpStyle" : { },
+                "title" : "About Us"
+              },
+              "definition" : "c:bannerSection",
+              "id" : "bc1bde7d-4228-47bf-840c-1c7eaf296927",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : { },
+                "sectionDescKey" : "MC2PUWTONE3ZEJXLNFCWUASJMNE4",
+                "title" : "About Us"
+              },
+              "definition" : "c:titleAndContentSection",
+              "id" : "2cce13ec-b7a6-41c2-84dc-df47fcaa933d",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : { },
+                "sectionDescKey" : "MCUPTOIJ7UYBD5BGFWFERKYN6TXY",
+                "title" : "Mission"
+              },
+              "definition" : "c:titleAndContentSection",
+              "id" : "87cebee6-3200-4964-a064-7f0009fea0ba",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : { },
+                "sectionDescKey" : "MCEIDLX34MY5FWBO3CFAPB7NITP4",
+                "title" : "Testimonials"
+              },
+              "definition" : "c:titleAndContentSection",
+              "id" : "20c5eac4-a9bb-4faf-8159-4ac170458e7c",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "btnLabels" : "Go Back, Explore Services, Explore Classes",
+                "btnTypes" : "Secondary, Primary, Primary",
+                "dxpStyle" : { },
+                "horizontalAlign" : "Right",
+                "redirectToPage" : "GO_BACK, Service__c, Classes__c"
+              },
+              "definition" : "c:multiButtons",
+              "id" : "6dd50630-5aa2-47df-bfd3-d4cea5d9fa10",
+              "type" : "component"
+            } ],
+            "id" : "c0eb7347-adf2-4033-ad72-334c101ae927",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "5cd0c7d5-dadd-4043-8ad4-d82d52161a90",
+          "type" : "component"
+        } ],
+        "id" : "f468ebad-bfb2-434c-aedc-5c5c2631fc89",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "dxpStyle" : { },
+            "pageTitle" : "AboutUs",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "1c928230-74c6-4c6d-9b99-284b5ceb65c8",
+          "type" : "component"
+        } ],
+        "id" : "c679e9d0-3b87-4f28-b1c1-e72d4c9ab45a",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "b4effc55-6a51-469d-8a79-85938672dad8",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-aboutus"
+  },
+  "urlName" : "aboutus"
+}

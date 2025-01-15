@@ -1,0 +1,49 @@
+.btn {
+  --sds-c-button-radius-border: var(--dxp-s-button-radius-border) !important;
+  font-size: var(--dxp-s-button-font-size) !important;
+  height: 32px !important;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.border {
+  border: solid 1px #d9d9d9;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.input {
+  --sds-c-input-color-background: #ffffff;
+}
+
+.h-2 {
+  font-size: var(--dxp-s-text-heading-large-font-size) !important;
+  font-weight: var(--dxp-s-text-heading-large-font-weight) !important;
+}
+
+.h-3 {
+  font-size: var(--dxp-s-text-heading-medium-font-size) !important;
+  font-weight: var(--dxp-s-text-heading-medium-font-weight) !important;
+}
+
+.input-icon {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  right: 1px;
+}
+
+.icon-align{
+  transform: translateY(-70%);
+}
+
+.theme-label{
+  color:var(--dxp-s-form-element-label-color);
+}

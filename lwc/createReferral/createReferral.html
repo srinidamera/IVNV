@@ -1,0 +1,52 @@
+<template>
+	<div style="height:100%;width:100% !important" class="wrapper">
+		<lightning-card>
+
+			<div class="slds-grid slds-wrap slds-p-around_xx-small header">
+				<div class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+					<div class="slds-m-left_x-small slds-m-bottom_xx-small">
+						<h2 class="slds-align_absolute-center slds-col slds-size--1-of-1 slds-text-title_bold slds-m-bottom--xx-small flowruntime-datatable-custom-header"
+							id="flowruntime_datatable_custom_header_label-497">Referral Agencies</h2>
+					</div>
+				</div>
+
+				<div
+					class="slds-p-left_small slds-col slds-small-size_3-of-12 slds-medium-size_3-of-12 slds-large-size_3-of-12">
+					<!--<template if:true={referralTypeValues}>
+						<lightning-combobox if:true={referralTypeValues} name="Referral Type" label="Referral Type"
+							placeholder="Select" options={referralTypeValues}
+							onchange={handleReferralChange} value={selectedReferral} ></lightning-combobox>
+					</template>-->
+					<c-custom-select if:true={referralTypeValues} picklistvalues={referralTypeValues} requried=false
+					placeholder="Select" label="Referral Type" onselection={handleReferralChange} selected-values={allSelectedReferral}>
+				</c-custom-select>
+				</div>
+				<div
+					class="slds-m-top_x-small slds-col slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+
+				</div>
+				<div class="slds-m-top_x-small slds-p-around_small slds-col slds-small-size_3-of-12 slds-medium-size_3-of-12 slds-large-size_3-of-12"
+					onkeyup={handleKeyUp}>
+					<lightning-input variant="label-hidden" placeholder="Search" name="enter-search" label=""
+						type="search">
+					</lightning-input>
+				</div>
+
+
+			</div>
+			<div class="slds-box body-content">
+				<c-custom-data-table key-field="Id" data={referrals} columns={cols} oninputchanged={inputChanged}
+					draft-values={saveDraftValues} onrowselection={getSelectedName} hide-row-number-column
+					suppress-bottom-bar>
+				</c-custom-data-table>
+			</div>
+			<div slot="footer">
+				<div class="slds-text-align_right">
+					<lightning-button variant="brand" label="Create Referral" title="titleName"
+						onclick={createReferral}>
+					</lightning-button>
+				</div>
+			</div>
+		</lightning-card>
+	</div>
+</template>

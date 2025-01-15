@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Classes",
+  "contentBody" : {
+    "activeViewId" : "Classes",
+    "configurationTags" : [ ],
+    "pageAccess" : "Public",
+    "routeType" : "custom-classes",
+    "urlPrefix" : "classes"
+  },
+  "urlName" : "classes"
+}

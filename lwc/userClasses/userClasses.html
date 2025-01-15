@@ -1,0 +1,13 @@
+<template>
+  <!-- Classes Tiles -->
+  <div lwc:if={classProps} class="slds-grid slds-wrap">
+    <template for:each={classProps} for:item="prop">
+      <c-custom-tile
+        key={prop.id}
+        class="slds-col slds-small-size_8-of-8 slds-medium-size_8-of-8 slds-large-size_2-of-8 max-width-100"
+        props={prop}
+        onanchorclick={handleClick}
+      ></c-custom-tile>
+    </template>
+  </div>
+</template>

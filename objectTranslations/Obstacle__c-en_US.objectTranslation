@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Obstacle</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Obstacles</value>
+    </caseValues>
+    <fields>
+        <label><!-- Client Action Plan --></label>
+        <name>ClientActionPlan__c</name>
+        <relationshipLabel><!-- Obstacles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client Case --></label>
+        <name>ClientCase__c</name>
+        <relationshipLabel><!-- Obstacles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Completion Date --></label>
+        <name>CompletionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>DueDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal --></label>
+        <name>Goal__c</name>
+        <relationshipLabel><!-- Obstacles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Obstacle Details --></label>
+        <name>ObstacleDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Obstacle Subject --></label>
+        <name>ObstacleSubject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Obstacles Default Values --></label>
+        <name>ObstaclesDefaultValues__c</name>
+        <picklistValues>
+            <masterLabel>Lack of access to financial resources</masterLabel>
+            <translation><!-- Lack of access to financial resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lack of familial support</masterLabel>
+            <translation><!-- Lack of familial support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lack of opportunity</masterLabel>
+            <translation><!-- Lack of opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lack of required skills</masterLabel>
+            <translation><!-- Lack of required skills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lack of time</masterLabel>
+            <translation><!-- Lack of time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

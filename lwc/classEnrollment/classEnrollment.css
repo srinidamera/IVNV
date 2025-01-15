@@ -1,0 +1,22 @@
+.font-family{
+	font-family: Segoe UI;
+	font-size: 13px;
+}
+.services{
+	color: var(--dxp-g-brand) !important;
+	cursor:pointer;
+}
+.h-2 {
+  font-size: var(--dxp-s-text-heading-large-font-size) !important;
+  font-weight: var(--dxp-s-text-heading-large-font-weight) !important;
+}
+.border {
+  border: solid 1px #d9d9d9;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+.btn {
+  --sds-c-button-radius-border: var(--dxp-s-button-radius-border) !important;
+  font-size: var(--dxp-s-button-font-size) !important;
+  height: 32px !important;
+}

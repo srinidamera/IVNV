@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+	<isExposed>true</isExposed>
+	<masterLabel>Homepage Classes Post Login</masterLabel>
+	<targets>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightningCommunity__Default">
+			<property
+					type="Integer"
+					name="tileHeight"
+					label="Height for cards in pixels"
+					default="122"
+			/>
+			<property
+					type="String"
+					name="labelHyperlink"
+					label="Label for details hyperlink"
+					default="View Details"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelClassStarts"
+					label="Label for 'Class Starts'."
+					default="Class Starts"
+					translatable="true"
+			/>
+
+			<property
+					type="String"
+					name="statusEnrolled"
+					label="Label for status 'Enrolled'."
+					default="Enrolled"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="statusNoShow"
+					label="Label for status 'No Show'."
+					default="No Show"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="statusAttendedComplete"
+					label="Label for status 'Attended - Complete'."
+					default="Completed"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="statusAttendedInComplete"
+					label="Label for status 'Attended - Incomplete'."
+					default="Incomplete"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="statusCourseComplete"
+					label="Label for status 'Course Complete'."
+					default="Completed"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="statusCourseInComplete"
+					label="Label for status Course Incomplete."
+					default="Incomplete"
+					translatable="true"
+			/>
+
+
+			<!-- Buttons -->
+			<property
+					type="String"
+					name="btnLabels"
+					label="Button Labels comma separated"
+					default="Enroll in a Class, View My Classes"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="btnTypes"
+					label="Button Types comma separated 'Primary' or 'Secondary'."
+					default="Secondary, Primary"
+			/>
+			<property
+					type="String"
+					name="redirectToPage"
+					label="Redirect to Page API names comma separated, on click."
+					default="Classes__c, Classes__c"
+			/>
+			<property
+					type="String"
+					name="queryParams"
+					label="Query params to pass while redirecting to Page, comma separated, on click."
+					default=" , defTab=2"
+			/>
+			<property
+					type="String"
+					name="horizontalAlign"
+					label="Horizontal Alignment"
+					default="Right"
+					datasource="Left,Right,Center"
+			/>
+		</targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

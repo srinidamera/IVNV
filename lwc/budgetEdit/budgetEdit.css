@@ -1,0 +1,19 @@
+.section-heading {
+    background: #E1E1E1;
+    padding: .5rem .5rem;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.section {
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.expense-entry {
+    padding: 0.5rem;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Paid Date --></label>
+        <name>cic_credit__Account_Paid_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>cic_credit__Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Type Details --></label>
+        <name>cic_credit__Business_Type_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Type --></label>
+        <name>cic_credit__Business_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Charge Off Amount --></label>
+        <name>cic_credit__Charge_Off_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>cic_credit__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Date --></label>
+        <name>cic_credit__Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comment Source --></label>
+        <name>cic_credit__Comment_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comment --></label>
+        <name>cic_credit__Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consumer Dispute --></label>
+        <name>cic_credit__Consumer_Dispute__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Limit Amount --></label>
+        <name>cic_credit__Credit_Limit_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Report --></label>
+        <name>cic_credit__Credit_Report__c</name>
+        <relationshipLabel><!-- Tradelines --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- High Balance --></label>
+        <name>cic_credit__High_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Activity --></label>
+        <name>cic_credit__Last_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan Type --></label>
+        <name>cic_credit__Loan_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Payment Amount --></label>
+        <name>cic_credit__Monthly_Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Months Remaining --></label>
+        <name>cic_credit__Months_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Months Reviewed --></label>
+        <name>cic_credit__Months_Reviewed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Date --></label>
+        <name>cic_credit__Open_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ownership Type --></label>
+        <name>cic_credit__Ownership_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Past Due Amount --></label>
+        <name>cic_credit__Past_Due_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Pattern Start --></label>
+        <name>cic_credit__Payment_Pattern_Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Pattern --></label>
+        <name>cic_credit__Payment_Pattern__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>cic_credit__Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating Code --></label>
+        <name>cic_credit__Rating_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating Type --></label>
+        <name>cic_credit__Rating_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>cic_credit__Relationship__c</name>
+        <picklistValues>
+            <masterLabel>Borrower</masterLabel>
+            <translation><!-- Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co Borrower</masterLabel>
+            <translation><!-- Co Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint</masterLabel>
+            <translation><!-- Joint --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reported Date --></label>
+        <name>cic_credit__Reported_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sequence Number --></label>
+        <name>cic_credit__Sequence_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>cic_credit__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Type --></label>
+        <name>cic_credit__Status_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>cic_credit__Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term In Months --></label>
+        <name>cic_credit__Term_In_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terms Description --></label>
+        <name>cic_credit__Terms_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terms Source Type --></label>
+        <name>cic_credit__Terms_Source_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>cic_credit__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unpaid Balance Amount --></label>
+        <name>cic_credit__Unpaid_Balance_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- 30 Days Late --></label>
+        <name>cic_credit__X30_Days_Late__c</name>
+    </fields>
+    <fields>
+        <label><!-- 60 Days Late --></label>
+        <name>cic_credit__X60_Days_Late__c</name>
+    </fields>
+    <fields>
+        <label><!-- 90 Days Late --></label>
+        <name>cic_credit__X90_Days_Late__c</name>
+    </fields>
+</CustomObjectTranslation>

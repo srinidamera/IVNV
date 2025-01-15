@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Co-Applicant</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Co-Applicants</value>
+    </caseValues>
+    <fields>
+        <label><!-- Client Case --></label>
+        <name>ClientCase__c</name>
+        <relationshipLabel><!-- Co-Applicants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Co Applicant Name --></label>
+        <name>CoApplicantName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Co-Applicants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intake --></label>
+        <name>IntakeRequest__c</name>
+        <relationshipLabel><!-- Co-Applicants --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

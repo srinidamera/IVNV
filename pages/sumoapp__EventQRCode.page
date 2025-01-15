@@ -1,0 +1,80 @@
+<apex:page renderAs="pdf"
+           controller="sumoapp.EventDeskQrCodePdfController">
+
+    <apex:pageBlock rendered="{!hasError}">
+        <div style="width: 100%; padding-top: 100px;">
+            <div align="center">
+                {!errorDescription}
+            </div>
+        </div>
+    </apex:pageBlock>
+
+    <apex:pageBlock rendered="{!NOT(hasError)}">
+        <div style="width: 100%">
+            <div align="center"
+                 style="width: 100%;">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?chart=500x500&data={!qrCodeValue}"></img>
+            </div>
+
+            <div align="center"
+                 style="margin-bottom: 30px; font-size: 28px;">
+                <b>{!eventName}</b>
+            </div>
+
+            <div align="center"
+                 style="width: 500px; margin: 20px auto; border-top: 1px solid #999"></div>
+
+            <table align="center"
+                   style="margin: 0 auto; width: 500px;">
+                <tbody>
+                    <tr>
+                        <td style="text-align:right; padding-right:10px;">
+                            {!$Label.EMAIL_TEMPLATE_QR_CODE_LINK_CONFIRMATION_NUMBER_LABEL}
+                        </td>
+                        <td style="font-weight:700">{!confirmationNumber}</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right; padding-right:10px;">
+                            {!$Label.EMAIL_TEMPLATE_QR_CODE_LINK_LOCATION_LABEL}
+                        </td>
+                        <td style="font-weight:700">{!locationDetails}</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right; padding-right:10px;">
+                            {!$Label.EMAIL_TEMPLATE_QR_CODE_LINK_ROOM_LABEL}
+                        </td>
+                        <td style="font-weight:700">{!rooms}</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right; padding-right:10px;">
+                            {!$Label.EMAIL_TEMPLATE_QR_CODE_LINK_DATE_TIME_LABEL}
+                        </td>
+                        <td style="font-weight:700">{!datetimeDescription}</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right; padding-right:10px;">
+                            {!$Label.EMAIL_TEMPLATE_QR_CODE_LINK_DURATION_LABEL}
+                        </td>
+                        <td style="font-weight:700">{!duration}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div align="center"
+                 style="width: 500px; margin: 20px auto; border-top: 1px solid #999"></div>
+
+            <div align="center"
+                 style="margin-top: 30px; font-size: 28px;">
+                <b>{!seatLabel}</b>
+            </div>
+
+            <div align="center"
+                 style="margin: 20px auto 0; width: 400px;">
+                {!description}
+            </div>
+
+
+        </div>
+    </apex:pageBlock>
+
+</apex:page>

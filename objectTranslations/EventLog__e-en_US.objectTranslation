@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Event Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Event Log</value>
+    </caseValues>
+    <fields>
+        <label><!-- ClassName --></label>
+        <name>ClassName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception Message --></label>
+        <name>ExceptionMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception Type --></label>
+        <name>ExceptionType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Govt Limit In Executing Code --></label>
+        <name>GovtLimitInExecutingCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Number --></label>
+        <name>LineNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- MethodName --></label>
+        <name>MethodName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related To Record --></label>
+        <name>RelatedToRecord__c</name>
+    </fields>
+    <fields>
+        <label><!-- StackTrace --></label>
+        <name>StackTrace__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

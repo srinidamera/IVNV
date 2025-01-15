@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Number of attempts to send failed emails --></help>
+        <label><!-- Attempts --></label>
+        <name>sumoapp__Attempts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Relation --></label>
+        <name>sumoapp__ContactRelation__c</name>
+        <relationshipLabel><!-- Emails --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Details --></label>
+        <name>sumoapp__Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>sumoapp__EmailAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hash Code --></label>
+        <name>sumoapp__HashCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- HTML Body --></label>
+        <name>sumoapp__HtmlBody__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Draft --></label>
+        <name>sumoapp__IsDraft__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Reminder --></label>
+        <name>sumoapp__IsReminder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Relation --></label>
+        <name>sumoapp__LeadRelation__c</name>
+        <relationshipLabel><!-- Emails --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recipient Id --></label>
+        <name>sumoapp__RecipientId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recipient Type --></label>
+        <name>sumoapp__RecipientType__c</name>
+        <picklistValues>
+            <masterLabel>ADMIN</masterLabel>
+            <translation><!-- ADMIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATTENDEE</masterLabel>
+            <translation><!-- ATTENDEE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OWNER</masterLabel>
+            <translation><!-- OWNER --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Record Ids --></label>
+        <name>sumoapp__RecordIds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relation --></label>
+        <name>sumoapp__Relation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>sumoapp__Status__c</name>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation><!-- Fail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Styles --></label>
+        <name>sumoapp__Styles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>sumoapp__Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trigger Time --></label>
+        <name>sumoapp__TriggerTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>sumoapp__Type__c</name>
+        <picklistValues>
+            <masterLabel>ADMIN</masterLabel>
+            <translation><!-- ADMIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BOOKED_SF_ONLY</masterLabel>
+            <translation><!-- BOOKED_SF_ONLY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Booked</masterLabel>
+            <translation><!-- Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANCELED_SF_ONLY</masterLabel>
+            <translation><!-- CANCELED_SF_ONLY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REMINDER_SF_ONLY</masterLabel>
+            <translation><!-- REMINDER_SF_ONLY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reminder</masterLabel>
+            <translation><!-- Reminder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEND_PAYMENT_LINK</masterLabel>
+            <translation><!-- SEND_PAYMENT_LINK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEND_REGISTRATION_LINK</masterLabel>
+            <translation><!-- SEND_REGISTRATION_LINK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPDATED_SF_ONLY</masterLabel>
+            <translation><!-- UPDATED_SF_ONLY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Updated</masterLabel>
+            <translation><!-- Updated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITLIST</masterLabel>
+            <translation><!-- WAITLIST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WAITLIST_SF_ONLY</masterLabel>
+            <translation><!-- WAITLIST_SF_ONLY --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

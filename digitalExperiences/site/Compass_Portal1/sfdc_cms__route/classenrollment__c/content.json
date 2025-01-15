@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Class Enrollment",
+  "contentBody" : {
+    "activeViewId" : "Class_Enrollment",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "custom-class-enrollment",
+    "urlPrefix" : "class-enrollment"
+  },
+  "urlName" : "class-enrollment"
+}

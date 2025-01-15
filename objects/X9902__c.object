@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>HUD9902NewButtonOverride</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>X9902_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>X9902_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Quarter__c</fields>
+        <fields>FiscalYear__c</fields>
+        <fields>PeriodStartDate__c</fields>
+        <fields>PeriodEndDate__c</fields>
+        <label>Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>To store data and information related to HUD 9902 reporting, including fields for Generation and Submission statuses, and serves as the parent object for the 9902 Agency, 9902 Client, 9902 Counselor, and 9902 Summary objects.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>AgencyGenerationStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>Agency Profile Generation</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AgencyProfileXML__c</fullName>
+        <label>Agency Profile XML</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>AgencyProfile__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Profile information for the agency.</description>
+        <inlineHelpText>Provide details if is a Agency profile</inlineHelpText>
+        <label>Agency Profile</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AgencySubmissionID__c</fullName>
+        <description>Identifier for the submission made by the agency. Enter the unique identifier assigned to the submission.</description>
+        <externalId>false</externalId>
+        <label>Agency Profile ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AgencySubmissionStatus__c</fullName>
+        <description>Status of the submission made by the agency. Indicate the current status of the submission made by the agency.</description>
+        <label>Agency Profile Submission</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ClientGenerationStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Summary Generation</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ClientSubmissionID__c</fullName>
+        <description>Identifier for the submission made by the client. Enter the unique identifier assigned to the submission.</description>
+        <label>Client Summary ID</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ClientSubmissionStatus__c</fullName>
+        <description>Status of the submission made by the client. Indicate the current status of the submission.</description>
+        <label>Client Summary Submission</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ClientSummary__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Summary information for the client</description>
+        <inlineHelpText>Provide a summary of relevant information about the client</inlineHelpText>
+        <label>Client Summary</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ClientXml__c</fullName>
+        <label>Client Xml</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CounselorGenerationStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>Counselor Profile Generation</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CounselorProfile__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Profile information for the counselor.</description>
+        <inlineHelpText>Provide details if is a Counselor profile</inlineHelpText>
+        <label>Counselor Profile</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CounselorSubmissionID__c</fullName>
+        <description>Identifier for the submission made by the counselor. Enter the unique identifier assigned to the submission.</description>
+        <externalId>false</externalId>
+        <label>Counselor Profile ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CounselorSubmissionStatus__c</fullName>
+        <description>Status of the submission made by the counselor. Indicate the current status of the submission.</description>
+        <label>Counselor Profile Submission</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CounselorXML__c</fullName>
+        <label>Counselor XML</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>FiscalYear__c</fullName>
+        <inlineHelpText>Indicate the year of the reporting period.</inlineHelpText>
+        <label>Fiscal Year</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2023</fullName>
+                    <default>false</default>
+                    <label>2023</label>
+                </value>
+                <value>
+                    <fullName>2024</fullName>
+                    <default>false</default>
+                    <label>2024</label>
+                </value>
+                <value>
+                    <fullName>2025</fullName>
+                    <default>false</default>
+                    <label>2025</label>
+                </value>
+                <value>
+                    <fullName>2026</fullName>
+                    <default>false</default>
+                    <label>2026</label>
+                </value>
+                <value>
+                    <fullName>2027</fullName>
+                    <default>false</default>
+                    <label>2027</label>
+                </value>
+                <value>
+                    <fullName>2028</fullName>
+                    <default>false</default>
+                    <label>2028</label>
+                </value>
+                <value>
+                    <fullName>2029</fullName>
+                    <default>false</default>
+                    <label>2029</label>
+                </value>
+                <value>
+                    <fullName>2030</fullName>
+                    <default>false</default>
+                    <label>2030</label>
+                </value>
+                <value>
+                    <fullName>2031</fullName>
+                    <default>false</default>
+                    <label>2031</label>
+                </value>
+                <value>
+                    <fullName>2032</fullName>
+                    <default>false</default>
+                    <label>2032</label>
+                </value>
+                <value>
+                    <fullName>2033</fullName>
+                    <default>false</default>
+                    <label>2033</label>
+                </value>
+                <value>
+                    <fullName>2034</fullName>
+                    <default>false</default>
+                    <label>2034</label>
+                </value>
+                <value>
+                    <fullName>2035</fullName>
+                    <default>false</default>
+                    <label>2035</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PeriodEndDate__c</fullName>
+        <description>End date of the reporting period.</description>
+        <label>Period End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PeriodStartDate__c</fullName>
+        <description>Start date of the reporting period.</description>
+        <label>Period Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Quarter__c</fullName>
+        <description>Quarter of the reporting period.</description>
+        <inlineHelpText>Indicate the quarter of the reporting period.</inlineHelpText>
+        <label>Quarter</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Quarter 1</fullName>
+                    <default>false</default>
+                    <label>Q1 (10/1 - 12/31)</label>
+                </value>
+                <value>
+                    <fullName>Quarter 2</fullName>
+                    <default>false</default>
+                    <label>Q2 (10/1 - 3/31)</label>
+                </value>
+                <value>
+                    <fullName>Quarter 3</fullName>
+                    <default>false</default>
+                    <label>Q3 (10/1 - 6/30)</label>
+                </value>
+                <value>
+                    <fullName>Quarter 4</fullName>
+                    <default>false</default>
+                    <label>Q4 (10/1 - 9/30)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Summary9902GenerationStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>9902 Summary Generation</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Summary9902SubmissionID__c</fullName>
+        <description>Identifier for the submission of the 9902. Unique identifier assigned to the submission of the 9902.</description>
+        <externalId>false</externalId>
+        <label>9902 Summary ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Summary9902SubmissionStatus__c</fullName>
+        <description>Status of the submission of the 9902. Indicate the current status of the submission of the 9902.</description>
+        <label>9902 Summary Submission</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Summary9902__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Summary information for the 9902.</description>
+        <inlineHelpText>Indicate 9902 summary</inlineHelpText>
+        <label>Summary 9902</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SummaryXml__c</fullName>
+        <label>Summary Xml</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>20</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Version__c</fullName>
+        <description>Version information for the record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicate the version of the record.</inlineHelpText>
+        <label>Version</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Xml__c</fullName>
+        <label>Xml</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <label>9902</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Quarter__c</columns>
+        <columns>PeriodStartDate__c</columns>
+        <columns>PeriodEndDate__c</columns>
+        <columns>AgencySubmissionStatus__c</columns>
+        <columns>CounselorSubmissionStatus__c</columns>
+        <columns>ClientSubmissionStatus__c</columns>
+        <columns>Summary9902SubmissionStatus__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>HUD-{000000}</displayFormat>
+        <label>9902</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>9902</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>Import</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <searchResultsAdditionalFields>Quarter__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PeriodStartDate__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PeriodEndDate__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATEDBY_USER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

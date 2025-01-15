@@ -1,0 +1,10 @@
+<apex:page showHeader="false"
+           sidebar="false">
+    <span>This page will be closed in 5 seconds</span>
+
+    <script>
+        setTimeout(() => {
+            window.close();
+        }, 5000)
+    </script>
+</apex:page>

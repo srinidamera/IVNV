@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PROCESS</fullName>
+        <default>true</default>
+        <label>Process</label>
+    </customValue>
+    <customValue>
+        <fullName>SUMO_EVENTS</fullName>
+        <default>false</default>
+        <label>SUMO Additional Infos</label>
+    </customValue>
+    <masterLabel>Assignment Rule Scope</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

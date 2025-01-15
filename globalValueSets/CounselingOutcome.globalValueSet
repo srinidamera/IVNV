@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Outcome not yet achieved</fullName>
+        <default>false</default>
+        <label>Outcome not yet achieved</label>
+    </customValue>
+    <customValue>
+        <fullName>Referred client to servicer with action plan and no further counseling activity</fullName>
+        <default>false</default>
+        <label>Referred client to servicer with action plan and no further counseling activity</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently in negotiation with servicer</fullName>
+        <default>false</default>
+        <label>Currently in negotiation with servicer</label>
+    </customValue>
+    <customValue>
+        <fullName>Brought mortgage current (w/o rescue funds)</fullName>
+        <default>false</default>
+        <label>Brought mortgage current (w/o rescue funds)</label>
+    </customValue>
+    <customValue>
+        <fullName>Brought mortgage current with rescue funds (private/public)</fullName>
+        <default>false</default>
+        <label>Brought mortgage current with rescue funds (private/public)</label>
+    </customValue>
+    <customValue>
+        <fullName>Arrearage cancelled or waived</fullName>
+        <default>false</default>
+        <label>Arrearage cancelled or waived</label>
+    </customValue>
+    <customValue>
+        <fullName>Refinanced</fullName>
+        <default>false</default>
+        <label>Refinanced</label>
+    </customValue>
+    <customValue>
+        <fullName>Forbearance</fullName>
+        <default>false</default>
+        <label>Forbearance</label>
+    </customValue>
+    <customValue>
+        <fullName>Repayment plan</fullName>
+        <default>false</default>
+        <label>Repayment plan</label>
+    </customValue>
+    <customValue>
+        <fullName>Modification</fullName>
+        <default>false</default>
+        <label>Modification</label>
+    </customValue>
+    <customValue>
+        <fullName>Partial claim</fullName>
+        <default>false</default>
+        <label>Partial claim</label>
+    </customValue>
+    <customValue>
+        <fullName>Deed-in-Lieu</fullName>
+        <default>false</default>
+        <label>Deed-in-Lieu</label>
+    </customValue>
+    <customValue>
+        <fullName>Short sale</fullName>
+        <default>false</default>
+        <label>Short sale</label>
+    </customValue>
+    <customValue>
+        <fullName>Foreclosed</fullName>
+        <default>false</default>
+        <label>Foreclosed</label>
+    </customValue>
+    <customValue>
+        <fullName>Homeowner(s) sold property (not short sale)</fullName>
+        <default>false</default>
+        <label>Homeowner(s) sold property (not short sale)</label>
+    </customValue>
+    <customValue>
+        <fullName>Bankruptcy</fullName>
+        <default>false</default>
+        <label>Bankruptcy</label>
+    </customValue>
+    <customValue>
+        <fullName>Transition to rental</fullName>
+        <default>false</default>
+        <label>Transition to rental</label>
+    </customValue>
+    <customValue>
+        <fullName>Initiated repayment plan</fullName>
+        <default>false</default>
+        <label>Initiated repayment plan</label>
+    </customValue>
+    <customValue>
+        <fullName>Repayment plan in compliance</fullName>
+        <default>false</default>
+        <label>Repayment plan in compliance</label>
+    </customValue>
+    <customValue>
+        <fullName>Repayment plan breached</fullName>
+        <default>false</default>
+        <label>Repayment plan breached</label>
+    </customValue>
+    <customValue>
+        <fullName>Executed a lease renewal</fullName>
+        <default>false</default>
+        <label>Executed a lease renewal</label>
+    </customValue>
+    <customValue>
+        <fullName>Received rent forgiveness</fullName>
+        <default>false</default>
+        <label>Received rent forgiveness</label>
+    </customValue>
+    <customValue>
+        <fullName>Received emergency rental assistance</fullName>
+        <default>false</default>
+        <label>Received emergency rental assistance</label>
+    </customValue>
+    <customValue>
+        <fullName>Avoided a legal eviction</fullName>
+        <default>false</default>
+        <label>Avoided a legal eviction</label>
+    </customValue>
+    <customValue>
+        <fullName>Referred to bankruptcy</fullName>
+        <default>false</default>
+        <label>Referred to bankruptcy</label>
+    </customValue>
+    <customValue>
+        <fullName>Brought rent current with rescue funds (private/public)</fullName>
+        <default>false</default>
+        <label>Brought rent current with rescue funds (private/public)</label>
+    </customValue>
+    <customValue>
+        <fullName>Brought rent current without rescue funds</fullName>
+        <default>false</default>
+        <label>Brought rent current without rescue funds</label>
+    </customValue>
+    <customValue>
+        <fullName>Rent burden = or &lt; 30%</fullName>
+        <default>false</default>
+        <label>Rent burden = or &lt; 30%</label>
+    </customValue>
+    <customValue>
+        <fullName>Rent burden between 41-50%</fullName>
+        <default>false</default>
+        <label>Rent burden between 41-50%</label>
+    </customValue>
+    <customValue>
+        <fullName>Rent burden = or &gt; 50%</fullName>
+        <default>false</default>
+        <label>Rent burden = or &gt; 50%</label>
+    </customValue>
+    <customValue>
+        <fullName>Renter initiated move-out</fullName>
+        <default>false</default>
+        <label>Renter initiated move-out</label>
+    </customValue>
+    <customValue>
+        <fullName>Counseled and transitioned to new rental</fullName>
+        <default>false</default>
+        <label>Counseled and transitioned to new rental</label>
+    </customValue>
+    <customValue>
+        <fullName>Counseled on debt management (including Payday and Vehicle Title Loans) or referred to debt management agency</fullName>
+        <default>false</default>
+        <label>Counseled on debt management (including Payday and Vehicle Title Loans) or referred to debt management agency</label>
+    </customValue>
+    <customValue>
+        <fullName>Counseled and Occupied Emergency Shelter; Transitional Housing; Permanent Housing with or without rental assistance</fullName>
+        <default>false</default>
+        <label>Counseled and Occupied Emergency Shelter; Transitional Housing; Permanent Housing with or without rental assistance</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently in negotiation with landlord; outcome unknown</fullName>
+        <default>false</default>
+        <label>Currently in negotiation with landlord; outcome unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>Referred client to landlord with action plan and no further counseling activity; outcome unknown</fullName>
+        <default>false</default>
+        <label>Referred client to landlord with action plan and no further counseling activity; outcome unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>Eviction put on hold or in moratorium; final outcome unknown</fullName>
+        <default>false</default>
+        <label>Eviction put on hold or in moratorium; final outcome unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>Ending counseling after level II-- outcome unknown</fullName>
+        <default>false</default>
+        <label>Ending counseling after level II-- outcome unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>Withdrew from counseling</fullName>
+        <default>false</default>
+        <label>Withdrew from counseling</label>
+    </customValue>
+    <customValue>
+        <fullName>Counseled and gained access to non housing resources (Social or legal services; public benefits; Social Security; Medicaid)</fullName>
+        <default>false</default>
+        <label>Counseled and gained access to non housing resources (Social or legal services; public benefits; Social Security; Medicaid)</label>
+    </customValue>
+    <customValue>
+        <fullName>Counseled and gained access to non-housing resources (Social or legal services; public benefits; Social Security; Medicaid)&quot;</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Counseled and gained access to non-housing resources (Social or legal services; public benefits; Social Security; Medicaid)&quot;</label>
+    </customValue>
+    <masterLabel>Counseling Outcome</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

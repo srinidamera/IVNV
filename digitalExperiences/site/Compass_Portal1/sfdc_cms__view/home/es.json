@@ -1,0 +1,96 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Home",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "title" : "Sobre nosotros",
+          "welcomeMsg" : "Bienvenido, {client_full_name}"
+        },
+        "id" : "cb12b9b0-c523-40e5-b4fe-bce62d426af2"
+      }, {
+        "attributes" : {
+          "btnLabels" : "Registrarse, Iniciar sesión"
+        },
+        "id" : "a29e8726-7ceb-451f-9dae-d713a82c2581"
+      }, {
+        "attributes" : {
+          "description" : "Asesoramiento de Vivienda: Financiero, Propiedad de Vivienda, Alquiler, Prevención de Ejecuciones Hipotecarias/Desamparo, Vivienda Justa",
+          "title" : "Servicios"
+        },
+        "id" : "f8899e9f-4a4e-430f-98d8-c339bb892361"
+      }, {
+        "attributes" : {
+          "btnLabels" : "Explorar servicios"
+        },
+        "id" : "cfc49e0f-e859-43dc-bdb2-ccb0e40c70c1"
+      }, {
+        "attributes" : {
+          "description" : "Varias sesiones de asesoramiento en persona o virtual para ayudarle a alcanzar su objetivo como propietario de vivienda.",
+          "title" : "Clases"
+        },
+        "id" : "cf394a13-fc3b-45d2-9a43-375133d63078"
+      }, {
+        "attributes" : {
+          "btnLabels" : "Explorar clases"
+        },
+        "id" : "86b9f696-28ba-4177-8472-2ec8a87625c4"
+      }, {
+        "id" : "6c63054d-1a63-4e80-a8e4-f29c9133f037",
+        "attributes" : {
+          "labelViewDetails" : "Ver detalles",
+          "appointmentsTitleMain" : "Cita",
+          "labelBooked" : "Reservada",
+          "labelCanceled" : "Cancelada",
+          "labelRescheduled" : "Reprogramada",
+          "labelPurpose" : "Objetivo",
+          "labelAppointmentDateTime" : "Fecha y hora de la cita",
+          "tasksTitleMain" : "Tareas",
+          "labelMyTasks" : "Mis tareas",
+          "labelLastUpdated" : "Última actualización",
+          "noTasksMsg" : "No tiene ninguna tarea por ahora.",
+          "labelNotStarted" : "No iniciado",
+          "labelInProgress" : "En progreso",
+          "labelCompleted" : "Completado",
+          "btnLabels" : "Cerrar sesión,  Ver mi perfil",
+          "bookedDesc" : "Su cita ha sido confirmada con {counsellor_name} el {Date_and_Time}, prepárese con los documentos requeridos",
+          "canceledDesc" : "Su cita ha sido cancelada con {counsellor_name} el {Date_and_Time}",
+          "rescheduledDesc" : "Su cita ha sido reprogramada con {counsellor_name} el ({Date_and_Time}, prepárese con los documentos requeridos",
+          "keyLocation" : "Lugar",
+          "keyDateTime" : "Fecha y hora",
+          "keyDuration" : "Duración",
+          "keyHost" : "Anfitrión",
+          "keyParticipants" : "Participantes",
+          "btnContactUs" : "Contacta con nosotros",
+          "btnGoBack" : "Volver"
+        }
+      }, {
+        "id" : "440a0fb1-c8c4-485f-b3fe-4e8bd852b826",
+        "attributes" : {
+          "labelHyperlink" : "Ver detalles",
+          "labelLastUpdated" : "Última actualización",
+          "labelStatusNew" : "Abierta",
+          "labelStatusOnHold" : "En espera",
+          "labelStatusConverted" : "Terminado",
+          "labelStatusClosedIncomplete" : "Incompleto",
+          "btnLabels" : "Solicitar un Servicio, Ver mis Servicios"
+        }
+      }, {
+        "id" : "5ffeee77-e473-4707-bb35-fed2d3ddf282",
+        "attributes" : {
+          "labelHyperlink" : "Ver detalles",
+          "labelClassStarts" : "Comienza la Clase",
+          "statusEnrolled" : "Inscrito",
+          "statusNoShow" : "No se presentó",
+          "statusAttendedComplete" : "Terminado",
+          "statusCourseComplete" : "Terminado",
+          "statusAttendedInComplete" : "Incompleto",
+          "statusCourseInComplete" : "Incompleto",
+          "btnLabels" : "Inscribirme en una clase, Ver mis clases"
+        }
+      } ]
+    }
+  },
+  "urlName" : "home"
+}

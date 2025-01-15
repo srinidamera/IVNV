@@ -1,0 +1,1276 @@
+<apex:page controller="BudgetPDFController"  readOnly="true" applyHtmlTag="false" showHeader="false" cache="true" applyBodyTag="false" renderAs="PDF">
+    <head>
+        <style>
+            table {
+            width: 100%; /* Full width of the container */
+            border-collapse: collapse; /* Collapse borders */
+            margin-bottom: 20px; /* Space between tables */
+            table-layout: fixed; /* Fixed table layout */
+            }
+            th, td {
+            padding: 3px; /* Decrease the padding to reduce cell height */
+            line-height: 1.2; /* Adjust line height for text */
+            }
+            th {
+            
+            font-weight: bold;
+            }
+            .Title {
+            width: 100%;
+            background-color: #e8e8e8;
+            display: block;
+            }
+            .pageBlockTitle {
+            text-align: center; /* Centers the text */
+            font-size: 24px; /* Increases the font size */
+            /* font-weight: bold;  Makes the text bold */
+            margin-bottom: 20px; /* Adds space below the title */
+            }
+            .categoryCell {
+            text-align: center;
+            border: none; /* No border for the category cells */
+            width: 120px; /* Fixed width for the first column */
+            }
+            .boldText {
+            font-weight: bold;
+            }
+            .dataCell {
+            border: 1px solid black; /* Border for data cells */
+            width: 120px; /* Fixed width for other columns */
+            }
+            .dataCell:first-child {
+            border-left: none; /* No border on the left of the first data cell */
+            }
+            table td, table th {
+            text-align: center; /* Center text in cells */
+            }
+        </style>
+        
+    </head>
+    <apex:form >
+        <div class="pageBlockTitle">BUDGET PLAN</div>
+        <apex:pageBlock >
+            
+            <div class="Title">
+                <b>Monthly Income</b>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th class="categoryCell"></th>
+                        <th class="categoryCell">Projected Income</th>
+                        <th class="categoryCell">Actual Income</th>
+                        <th class="categoryCell">Difference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="categoryCell">Employment</td>
+                        
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedEmployment__c), '', '$' & TEXT(budget.ProjectedEmployment__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualEmployment__c), '', '$' & TEXT(budget.ActualEmployment__c))}"/>
+                        </td>
+                        <td class="dataCell">${!budget.Employment_Difference__c}</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Overtime</td>
+                        
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedOvertime__c), '', '$ ' & TEXT(budget.ProjectedOvertime__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualOvertime__c), '', '$' & TEXT(budget.ActualOvertime__c))}"/>
+                        </td>
+                        <td class="dataCell">${!budget.Overtime_Difference__c}</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Interest  Dividends</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedInterestDividen__c), '', '$' & TEXT(budget.ProjectedInterestDividen__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualInterestDividen__c), '', '$' & TEXT(budget.ActualInterestDividen__c))}"/>
+                        </td>
+                        <td class="dataCell">${!budget.Interest_Dividend_Difference__c}</td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Net Rental Income</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedNetRentalIncome__c), '', '$' & TEXT(budget.ProjectedNetRentalIncome__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualNetRentalIncome__c), '', '$' & TEXT(budget.ActualNetRentalIncome__c))}"/>
+                        </td>
+                        <td class="dataCell">${!budget.Net_Rental_Income_Difference__c}</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Bonuses</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedBonuses__c), '', '$' & TEXT(budget.ProjectedBonuses__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualBonuses__c), '', '$' & TEXT(budget.ActualBonuses__c))}"/>
+                        </td>
+                        <td class="dataCell">${!budget.Bonuses_Difference__c}</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Commissions</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedComissions__c), '', '$' & TEXT(budget.ProjectedComissions__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualComissions__c), '', '$' & TEXT(budget.ActualComissions__c))}"/>
+                        </td>
+                         <td class="dataCell">${!budget.Commissions_Difference__c}</td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">SSI</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedSSI__c), '', '$' & TEXT(budget.ProjectedSSI__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualSSI__c), '', '$' & TEXT(budget.ActualSSI__c))}"/>
+                        </td>
+                        <td class="dataCell">${!budget.SSI_Difference__c}</td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Child Support</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedChildSupport__c), '', '$' & TEXT(budget.ProjectedChildSupport__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualChildSupport__c), '', '$' & TEXT(budget.ActualChildSupport__c))}"/>
+                        </td>
+                        <td class="dataCell">${!budget.Child_Support_Difference__c}</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Withholding</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedWithholding__c), '', '$' & TEXT(budget.ProjectedWithholding__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualWithholding__c), '', '$' & TEXT(budget.ActualWithholding__c))}"/>
+                        </td>
+                        <td class="dataCell">${!budget.Withholding_Difference__c}</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Unemployment</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedUnemployment__c), '', '$' & TEXT(budget.ProjectedUnemployment__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualUnemployment__c), '', '$' & TEXT(budget.ActualUnemployment__c))}"/>
+                        </td>
+                        <td class="dataCell">${!budget.Unemployment_Difference__c}</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Other</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedOther__c), '', '$' & TEXT(budget.ProjectedOther__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualOther__c), '', '$' & TEXT(budget.ActualOther__c))}"/>
+                        </td>
+                        <td class="dataCell">${!budget.Monthly_Income_Other_Difference__c}</td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="categoryCell boldText">Total</td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedTotalMonthlyIncome__c), '', '$' & TEXT(budget.ProjectedTotalMonthlyIncome__c))}"/>
+                        </td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualTotalMonthlyIncome__c), '', '$' & TEXT(budget.ActualTotalMonthlyIncome__c))}"/>
+                        </td>
+                        <td class="dataCell  boldText">${!budget.Total_Monthly_Income_Difference__c}</td>
+                       
+                        
+                    </tr>
+                </tbody>
+            </table>
+            
+            
+            <!-- Housing Section -->
+            <div class="Title">
+                <b>Housing</b>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th class="categoryCell"></th>
+                        <th class="categoryCell">Projected Cost</th>
+                        <th class="categoryCell">Actual Cost</th>
+                        <th class="categoryCell">Difference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="categoryCell">Mortgage or Rent</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedMortgageOrRent__c), '', '$' & TEXT(budget.ProjectedMortgageOrRent__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualMortgageOrRent__c), '', '$' & TEXT(budget.ActualMortgageOrRent__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.MortgageOrRentDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Home Owner Association</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedHomeOwnerAssoc__c), '', '$' & TEXT(budget.ProjectedHomeOwnerAssoc__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualHomeOwnerAssoc__c), '', '$' & TEXT(budget.ActualHomeOwnerAssoc__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.HomeOwnerAssocDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Home Equity Line</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedHomeEquityLine__c), '', '$' & TEXT(budget.ProjectedHomeEquityLine__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualHomeEquityLine__c), '', '$' & TEXT(budget.ActualHomeEquityLine__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.HomeEquityLineDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Homeowner/Renter Insurance</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedHomeownerRentersInsurance__c), '', '$' & TEXT(budget.ProjectedHomeownerRentersInsurance__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualHomeownerRentersInsurance__c), '', '$' & TEXT(budget.ActualHomeownerRentersInsurance__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.HomeownerRentersInsuranceDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Phone</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedPhone__c), '', '$' & TEXT(budget.ProjectedPhone__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualPhone__c), '', '$' & TEXT(budget.ActualPhone__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.PhoneDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Electricity</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedElectricity__c), '', '$' & TEXT(budget.ProjectedElectricity__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualElectricity__c), '', '$' & TEXT(budget.ActualElectricity__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.ElectricityDiffrence__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Water and Sewer</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedWaterAndSewer__c), '', '$' & TEXT(budget.ProjectedWaterAndSewer__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualWaterAndSewer__c), '', '$' & TEXT(budget.ActualWaterAndSewer__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.WaterAndSewerDiffrence__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Gas</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedGas__c), '', '$' & TEXT(budget.ProjectedGas__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualGas__c), '', '$' & TEXT(budget.ActualGas__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.GasDiffrence__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Cable</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedCable__c), '', '$' & TEXT(budget.ProjectedCable__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualCable__c), '', '$' & TEXT(budget.ActualCable__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.CableDiffrence__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Waste Removal</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedWasteRemoval__c), '', '$' & TEXT(budget.ProjectedWasteRemoval__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualWasteRemova__c), '', '$' & TEXT(budget.ActualWasteRemova__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.WasteRemovalDiffrence__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Maintenance or Repair</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedMaintenanceOrRepair__c), '', '$' & TEXT(budget.ProjectedMaintenanceOrRepair__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualMaintenanceOrRepair__c), '', '$' & TEXT(budget.ActualMaintenanceOrRepair__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.MaintenanceDiffrence__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Supplies</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedSupplies__c), '', '$' & TEXT(budget.ProjectedSupplies__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualSupplies__c), '', '$' & TEXT(budget.ActualSupplies__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.SuppliesDiffrence__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Other</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.HousingProjectedOther__c), '', '$' & TEXT(budget.HousingProjectedOther__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.HousingActualOther__c), '', '$' & TEXT(budget.HousingActualOther__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.HousingOtherDiffrence__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell boldText">TOTAL</td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.HousingProjectedCost__c), '', '$' & TEXT(budget.HousingProjectedCost__c))}"/>
+                        </td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.HousingActualCost__c), '', '$' & TEXT(budget.HousingActualCost__c))}"/>
+                        </td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.HousingDiffrence__c), '', '$' & TEXT(budget.HousingDiffrence__c))}"/>
+                        </td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+            <br/><br/><br/><br/><br/>
+            
+            <!-- Transportation Section -->
+            <div class="Title">
+                <b>Transportation</b>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th class="categoryCell"> </th>
+                        <th class="categoryCell">Projected Cost</th>
+                        <th class="categoryCell">Actual Cost</th>
+                        <th class="categoryCell">Difference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="categoryCell">Vehicle Payment</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedVehiclePayment__c), '', '$' & TEXT(budget.ProjectedVehiclePayment__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualVehiclePayment__c), '', '$' & TEXT(budget.ActualVehiclePayment__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.VehiclePaymentDiffrence__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Insurance</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedInsurance__c), '', '$' & TEXT(budget.ProjectedInsurance__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualInsurance__c), '', '$' & TEXT(budget.ActualInsurance__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.InsuranceDiffrence__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Licensing</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedLicensing__c), '', '$' & TEXT(budget.ProjectedLicensing__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualLicensing__c), '', '$' & TEXT(budget.ActualLicensing__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.LicensingDiffrence__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Fuel</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedFuel__c), '', '$' & TEXT(budget.ProjectedFuel__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualFuel__c), '', '$' & TEXT(budget.ActualFuel__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.FuelDiffrence__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Maintenance</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedMaintenance__c), '', '$' & TEXT(budget.ProjectedMaintenance__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualMaintenance__c), '', '$' & TEXT(budget.ActualMaintenance__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.MaintenanceDiffrence__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Other</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.TransportationProjectedOther__c), '', '$' & TEXT(budget.TransportationProjectedOther__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.TransportationActualOther__c), '', '$' & TEXT(budget.TransportationActualOther__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.TransportationOtherDiffrence__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell boldText">TOTAL</td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.TransportationProjectedCost__c), '', '$' & TEXT(budget.TransportationProjectedCost__c))}"/>
+                        </td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.TransportationActualCost__c), '', '$' & TEXT(budget.TransportationActualCost__c))}"/>
+                        </td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.TransportationDiffrence__c), '', '$' & TEXT(budget.TransportationDiffrence__c))}"/>
+                        </td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+            
+            
+            <!-- Food Section -->
+            <div  class="Title">
+                <b>Food</b>
+            </div>
+            
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th class="categoryCell"></th>
+                        <th class="categoryCell">Projected Cost</th>
+                        <th class="categoryCell">Actual Cost</th>
+                        <th class="categoryCell">Difference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="categoryCell">Groceries</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedGroceries__c), '', '$' & TEXT(budget.ProjectedGroceries__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualGroceries__c), '', '$' & TEXT(budget.ActualGroceries__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.GroceriesDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Dining Out</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedDiningout__c), '', '$' & TEXT(budget.ProjectedDiningout__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualDiningout__c), '', '$' & TEXT(budget.ActualDiningout__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.DiningoutDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Other</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.FoodProjectedOther__c), '', '$' & TEXT(budget.FoodProjectedOther__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.FoodActualOther__c), '', '$' & TEXT(budget.FoodActualOther__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.FoodOtherDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell boldText">TOTAL</td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.FoodProjectedCost__c), '', '$' & TEXT(budget.FoodProjectedCost__c))}"/>
+                        </td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.FoodActualCost__c), '', '$' & TEXT(budget.FoodActualCost__c))}"/>
+                        </td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.FoodDifference__c), '', '$' & TEXT(budget.FoodDifference__c))}"/>
+                        </td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+            
+            
+            <!-- Pets Section -->
+            <div  class="Title">
+                <b>Pets</b>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th class="categoryCell"></th>
+                        <th class="categoryCell">Projected Cost</th>
+                        <th class="categoryCell">Actual Cost</th>
+                        <th class="categoryCell">Difference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="categoryCell">Medical</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.PetsProjectedMedical__c), '', '$' & TEXT(budget.PetsProjectedMedical__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.PetsActualMedical__c), '', '$' & TEXT(budget.PetsActualMedical__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.PetsMedicalDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Grooming</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedGrooming__c), '', '$' & TEXT(budget.ProjectedGrooming__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualGrooming__c), '', '$' & TEXT(budget.ActualGrooming__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.GroomingDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Toys</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedToys__c), '', '$' & TEXT(budget.ProjectedToys__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualToys__c), '', '$' & TEXT(budget.ActualToys__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.ToysDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Other</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.PetsProjectedOther__c), '', '$' & TEXT(budget.PetsProjectedOther__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.PetsActualOther__c), '', '$' & TEXT(budget.PetsActualOther__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.PetsOtherDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell boldText">TOTAL</td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.PetsProjectedCost__c), '', '$' & TEXT(budget.PetsProjectedCost__c))}"/>
+                        </td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.PetsActualCost__c), '', '$' & TEXT(budget.PetsActualCost__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell  boldText">${!budget.PetsDifference__c}</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Personal Care Section -->
+            <div class="Title">
+                <b>Personal Care</b>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th class="categoryCell"></th>
+                        <th class="categoryCell">Projected Cost</th>
+                        <th class="categoryCell">Actual Cost</th>
+                        <th class="categoryCell">Difference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="categoryCell">Medical</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.PersonalCareActualMedical__c), '', '$' & TEXT(budget.PersonalCareActualMedical__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.PersonalCareProjectedMedical__c), '', '$' & TEXT(budget.PersonalCareProjectedMedical__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.PersonalCareMedicalDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Education</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedEducation__c), '', '$' & TEXT(budget.ProjectedEducation__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualEducation__c), '', '$' & TEXT(budget.ActualEducation__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.EducationDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Hair / Nails</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedHairNails__c), '', '$' & TEXT(budget.ProjectedHairNails__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualHairNails__c), '', '$' & TEXT(budget.ActualHairNails__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.HairNailsDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Clothing</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedClothing__c), '', '$' & TEXT(budget.ProjectedClothing__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualClothing__c), '', '$' & TEXT(budget.ActualClothing__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.ClothingDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Dry Cleaning</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedClothing__c), '', '$' & TEXT(budget.ProjectedClothing__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualClothing__c), '', '$' & TEXT(budget.ActualClothing__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.ClothingDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Health Club</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedHealthclub__c), '', '$' & TEXT(budget.ProjectedHealthclub__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualHealthclub__c), '', '$' & TEXT(budget.ActualHealthclub__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.HealthclubDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Organization Dues or Fees</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedOrganizationduesorfees__c), '', '$' & TEXT(budget.ProjectedOrganizationduesorfees__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualOrganizationduesorfees__c), '', '$' & TEXT(budget.ActualOrganizationduesorfees__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.OrganizationduesorfeesDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Other</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.PersonalCareProjectedOther__c), '', '$' & TEXT(budget.PersonalCareProjectedOther__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.PersonalCareActualOther__c), '', '$' & TEXT(budget.PersonalCareActualOther__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.PersonalCareOtherDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell boldText">TOTAL</td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.PersonalCareProjectedCost__c), '', '$' & TEXT(budget.PersonalCareProjectedCost__c))}"/>
+                        </td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.PersonalCareActualCost__c), '', '$' & TEXT(budget.PersonalCareActualCost__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell  boldText">${!budget.PersonalCareDifference__c}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br/><br/>
+            <!-- Entertainment Section -->
+            <div class="Title">
+                <b>Entertainment</b>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th class="categoryCell"></th>
+                        <th class="categoryCell">Projected Cost</th>
+                        <th class="categoryCell">Actual Cost</th>
+                        <th class="categoryCell">Difference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="categoryCell">Night Out</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedNightout__c), '', '$' & TEXT(budget.ProjectedNightout__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualNightout__c), '', '$' & TEXT(budget.ActualNightout__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.NightoutDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Music Platforms</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedMusicplatforms__c), '', '$' & TEXT(budget.ProjectedMusicplatforms__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualMusicplatforms__c), '', '$' & TEXT(budget.ActualMusicplatforms__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.MusicplatformsDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Movies</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedMovies__c), '', '$' & TEXT(budget.ProjectedMovies__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualMovies__c), '', '$' & TEXT(budget.ActualMovies__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.MoviesDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Concerts</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedConcerts__c), '', '$' & TEXT(budget.ProjectedConcerts__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualConcerts__c), '', '$' & TEXT(budget.ActualConcerts__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.ConcertsDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Sporting Events</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedSportingevents__c), '', '$' & TEXT(budget.ProjectedSportingevents__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualSportingevents__c), '', '$' & TEXT(budget.ActualSportingevents__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.SportingeventsDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Live Theater</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedLivetheater__c), '', '$' & TEXT(budget.ProjectedLivetheater__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualLivetheater__c), '', '$' & TEXT(budget.ActualLivetheater__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.LivetheaterDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Other</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.EntertainmentProjectedOther__c), '', '$' & TEXT(budget.EntertainmentProjectedOther__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.EntertainmentActualOther__c), '', '$' & TEXT(budget.EntertainmentActualOther__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.EntertainmentOtherDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell boldText">TOTAL</td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.EntertainmentProjectedCost__c), '', '$' & TEXT(budget.EntertainmentProjectedCost__c))}"/>
+                        </td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.EntertainmentActualCost__c), '', '$' & TEXT(budget.EntertainmentActualCost__c))}"/>
+                        </td>
+                        <td class="dataCell boldText">${!budget.EntertainmentDifference__c}</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <!-- Loans Section -->
+            <div class="Title">
+                <b>Loans</b>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th class="categoryCell"></th>
+                        <th class="categoryCell">Projected Cost</th>
+                        <th class="categoryCell">Actual Cost</th>
+                        <th class="categoryCell">Difference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="categoryCell">Personal</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedPersonal__c), '', '$' & TEXT(budget.ProjectedPersonal__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualPersonal__c), '', '$' & TEXT(budget.ActualPersonal__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.PersonalDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Student</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedStudent__c), '', '$' & TEXT(budget.ProjectedStudent__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualStudent__c), '', '$' & TEXT(budget.ActualStudent__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.StudentDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Credit Card 1</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedCreditcard1__c), '', '$' & TEXT(budget.ProjectedCreditcard1__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualCreditcard1__c), '', '$' & TEXT(budget.ActualCreditcard1__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.Creditcard1Difference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Credit Card 2</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedCreditcard2__c), '', '$' & TEXT(budget.ProjectedCreditcard2__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualCreditcard2__c), '', '$' & TEXT(budget.ActualCreditcard2__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.Creditcard2Difference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Credit Card 3</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedCreditcard3__c), '', '$' & TEXT(budget.ProjectedCreditcard3__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualCreditcard3__c), '', '$' & TEXT(budget.ActualCreditcard3__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.Creditcard3Difference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Credit Collections</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedCreditCollections__c), '', '$' & TEXT(budget.ProjectedCreditCollections__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualCreditCollections__c), '', '$' & TEXT(budget.ActualCreditCollections__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.CreditCollectionsDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Other</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedOther__c), '', '$' & TEXT(budget.ProjectedOther__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualOther__c), '', '$' & TEXT(budget.ActualOther__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.LoansOtherDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell boldText">TOTAL</td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.LoansProjectedCost__c), '', '$' & TEXT(budget.LoansProjectedCost__c))}"/>
+                        </td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.LoansActualCost__c), '', '$' & TEXT(budget.LoansActualCost__c))}"/>
+                        </td>
+                        <td class="dataCell  boldText">${!budget.LoansDifference__c}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Taxes Section -->
+            <div class="Title">
+                <b>Taxes</b>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th class="categoryCell"></th>
+                        <th class="categoryCell">Projected Cost</th>
+                        <th class="categoryCell">Actual Cost</th>
+                        <th class="categoryCell">Difference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="categoryCell">Federal</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedFederal__c), '', '$' & TEXT(budget.ProjectedFederal__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualFederal__c), '', '$' & TEXT(budget.ActualFederal__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.FederalDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">State</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedState__c), '', '$' & TEXT(budget.ProjectedState__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualState__c), '', '$' & TEXT(budget.ActualState__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.StateDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Local</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedLocal__c), '', '$' & TEXT(budget.ProjectedLocal__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualLocal__c), '', '$' & TEXT(budget.ActualLocal__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.LocalDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Other</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedOther__c), '', '$' & TEXT(budget.ProjectedOther__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualOther__c), '', '$' & TEXT(budget.ActualOther__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.TaxesOtherDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell boldText">TOTAL</td>
+                        <td class="dataCell boldText">${!budget.TaxesProjectedCost__c}</td>
+                        <td class="dataCell boldText">${!budget.TaxesActualCost__c}</td>
+                        <td class="dataCell boldText">${!budget.TaxesDifference__c}</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <!-- Savings or Investments Section -->
+            <div class="Title">
+                <b>Savings or Investments</b>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th class="categoryCell"></th>
+                        <th class="categoryCell">Projected Cost</th>
+                        <th class="categoryCell">Actual Cost</th>
+                        <th class="categoryCell">Difference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="categoryCell">Retirement Account</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedRetirementaccount__c), '', '$' & TEXT(budget.ProjectedRetirementaccount__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualRetirementaccount__c), '', '$' & TEXT(budget.ActualRetirementaccount__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.RetirementaccountDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Investment Account</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedInvestmentaccount__c), '', '$' & TEXT(budget.ProjectedInvestmentaccount__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualInvestmentaccount__c), '', '$' & TEXT(budget.ActualInvestmentaccount__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.InvestmentaccountDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Other</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.SavingsorInvestmentsProjectedOther__c), '', '$' & TEXT(budget.SavingsorInvestmentsProjectedOther__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.SavingsorInvestmentsActualOther__c), '', '$' & TEXT(budget.SavingsorInvestmentsActualOther__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.SavingsorInvestmentsOtherDifference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell boldText">TOTAL</td>
+                        <td class="dataCell boldText">${!budget.SavingsorInvestmentsProjectedCost__c}</td>
+                        <td class="dataCell boldText">${!budget.SavingsorInvestmentsActualCost__c}</td>
+                        <td class="dataCell boldText">${!budget.SavingsorInvestmentsDifference__c}</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <!-- Gifts and Donations Section -->
+            <div class="Title">
+                <b>Gifts and Donations</b>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th class="categoryCell"></th>
+                        <th class="categoryCell">Projected Cost</th>
+                        <th class="categoryCell">Actual Cost</th>
+                        <th class="categoryCell">Difference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="categoryCell">Charity 1</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedCharity1__c), '', '$' & TEXT(budget.ProjectedCharity1__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualCharity1__c), '', '$' & TEXT(budget.ActualCharity1__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.Charity1Difference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Charity 2</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedCharity2__c), '', '$' & TEXT(budget.ProjectedCharity2__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualCharity2__c), '', '$' & TEXT(budget.ActualCharity2__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.Charity2Difference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Charity 3</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedCharity3__c), '', '$' & TEXT(budget.ProjectedCharity3__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualCharity3__c), '', '$' & TEXT(budget.ActualCharity3__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">${!budget.Charity3Difference__c}</td>
+                    </tr>
+                    <tr>
+                        <td class="categoryCell boldText">TOTAL</td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.GiftsandDonationsProjectedCost__c), '', '$' & TEXT(budget.GiftsandDonationsProjectedCost__c))}"/>
+                        </td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.GiftsandDonationsActualCost__c), '', '$' & TEXT(budget.GiftsandDonationsActualCost__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell boldText">${!budget.GiftsandDonationsDifference__c}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Legal Section -->
+            <div class="Title">
+                <b>Legal</b>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th class="categoryCell"></th>
+                        <th class="categoryCell">Projected Cost</th>
+                        <th class="categoryCell">Actual Cost</th>
+                        <th class="categoryCell">Difference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="categoryCell">Attorney</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedAttorney__c), '', '$' & TEXT(budget.ProjectedAttorney__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualAttorney__c), '', '$' & TEXT(budget.ActualAttorney__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.AttorneyDifference__c), '', '$' & TEXT(budget.AttorneyDifference__c))}"/>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Alimony</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedMonthlyIncomeAlimony__c), '', '$' & TEXT(budget.ProjectedMonthlyIncomeAlimony__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualMonthlyIncomeAlimony__c), '', '$' & TEXT(budget.ActualMonthlyIncomeAlimony__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.Alimony_Difference__c), '', '$' & TEXT(budget.Alimony_Difference__c))}"/>
+                        </td>
+                        <!--<td class="dataCell">{!budget.Alimony_Difference__c}</td>-->
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Payments on Lein or Judgement</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedPaymentsonlienorjudgment__c), '', '$' & TEXT(budget.ProjectedPaymentsonlienorjudgment__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualPaymentsonlienorjudgment__c), '', '$' & TEXT(budget.ActualPaymentsonlienorjudgment__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.PaymentsonlienorjudgmentDifference__c), '', '$' & TEXT(budget.PaymentsonlienorjudgmentDifference__c))}"/>
+                        </td>
+                        <!--<td class="dataCell">{!budget.PaymentsonlienorjudgmentDifference__c}</td>-->
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Other</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.LegalProjectedOther__c), '', '$' & TEXT(budget.LegalProjectedOther__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.LegalActualCost__c), '', '$' & TEXT(budget.LegalActualCost__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.LegalOtherDifference__c), '', '$' & TEXT(budget.LegalOtherDifference__c))}"/>
+                        </td>
+                        <!--<td class="dataCell">{!budget.LegalOtherDifference__c}</td>-->
+                    </tr>
+                    <tr>
+                        <td class="categoryCell boldText">TOTAL</td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.LegalProjectedCost__c), '', '$' & TEXT(budget.LegalProjectedCost__c))}"/>
+                        </td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.LegalActualCost__c), '', '$' & TEXT(budget.LegalActualCost__c))}"/>
+                        </td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.LegalDifference__c), '', '$' & TEXT(budget.LegalDifference__c))}"/>
+                        </td>
+                        <!--<td class="dataCell boldText">{!budget.LegalDifference__c}</td>-->
+                    </tr>
+                </tbody>
+            </table>
+            
+            <!-- Total Calculations Section -->
+            <div class="Title">
+                <b>Total Calculations</b>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th class="categoryCell"></th>
+                        <th class="categoryCell">Projected Balance</th>
+                        <th class="categoryCell">Actual Balance</th>
+                        <th class="categoryCell">Difference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="categoryCell">Total Income</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedTotalMonthlyIncome__c), '', '$' & TEXT(budget.ProjectedTotalMonthlyIncome__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualTotalMonthlyIncome__c), '', '$' & TEXT(budget.ActualTotalMonthlyIncome__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.Total_Monthly_Income_Difference__c), '', '$' & TEXT(budget.Total_Monthly_Income_Difference__c))}"/>
+                        </td>
+                        <!--<td class="dataCell">{!budget.Total_Monthly_Income_Difference__c}</td>-->
+                    </tr>
+                    <tr>
+                        <td class="categoryCell">Total Costs</td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.TotalProjectedCost__c), '', '$' & TEXT(budget.TotalProjectedCost__c))}"/>
+                        </td>
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.TotalActualCost__c), '', '$' & TEXT(budget.TotalActualCost__c))}"/>
+                        </td>
+                        
+                        <td class="dataCell">
+                            <apex:outputText value="{!IF(ISNULL(budget.TotalDifference__c), '', '$' & TEXT(budget.TotalDifference__c))}"/>
+                        </td>
+                        <!--<td class="dataCell">{!budget.TotalDifference__c}</td>-->
+                    </tr>
+                    <tr>
+                        <td class="categoryCell boldText">TOTAL NET CASH FLOW</td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.ProjectedBalance__c), '', '$' & TEXT(budget.ProjectedBalance__c))}"/>
+                        </td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.ActualBalance__c), '', '$' & TEXT(budget.ActualBalance__c))}"/>
+                        </td>
+                        <td class="dataCell boldText">
+                            <apex:outputText value="{!IF(ISNULL(budget.Difference__c), '', '$' & TEXT(budget.Difference__c))}"/>
+                        </td>
+                        <!--<td class="dataCell boldText">{!budget.Difference__c}</td>-->
+                    </tr>
+                </tbody>
+            </table>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

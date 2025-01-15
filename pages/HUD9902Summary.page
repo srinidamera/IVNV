@@ -1,0 +1,2159 @@
+<apex:page controller="HUD9902SummaryReportController" readOnly="true" applyHtmlTag="false" showHeader="false" cache="true" applyBodyTag="false" renderAs="PDF">
+
+    <head>
+        <style>
+            @page {
+            //size: letter portrait;
+            	size: A4 portrait;
+                margin: 10mm 10mm 20mm 10mm;
+                font-family: sans-serif;
+				
+           	@bottom-center {
+            	content: "Page " counter(page) " of 10";
+            padding-bottom:15px;
+                }
+ 				
+            }
+            
+            div.footer {
+                position: running(footer);
+                font-size: 12px;
+                text-align: center;
+            } 
+        </style>
+    </head>
+    
+   
+
+
+    <apex:variable var="cnt" value="{!0}" />
+    
+    <!--<div style="font-size:12px;font-family: Arial;">-->
+    <div>
+        <div style="width: 100%; padding-top:5px; padding-bottom: 20px">
+            <div style="width: 100%; float: left;">
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <!--<tr>
+                        <td width="30%" style="text-align:center">
+                            <apex:outputLabel > <b>Housing Counseling</b> </apex:outputLabel><br/>
+                            <apex:outputLabel ><b>Agency</b></apex:outputLabel><br/>
+                            <apex:outputLabel ><b>Activity Report</b></apex:outputLabel>
+                        </td>
+                        <td width="40%" style="text-align:center">
+                            <apex:outputLabel > <b>U.S. Department of Housing and Urban Development</b> </apex:outputLabel><br/>
+                            <apex:outputLabel > Office of Housing Counseling </apex:outputLabel><br/>
+                            <apex:outputLabel > Federal Housing Commissionaer </apex:outputLabel>
+                        </td>
+                        <td width="30%" style="font-size:10;text-align:right">
+                            <apex:outputLabel > OMB Approval No:2502-0622 </apex:outputLabel><br/>
+                            <apex:outputLabel > Exp. 12/31/<apex:outputText value="{!reportDateYear}" /> </apex:outputLabel><br/>
+                            <apex:outputLabel > </apex:outputLabel>
+                        </td>
+                    </tr>-->
+                    <tr>
+                        <td width="30%" style="text-align:center">
+                            <apex:outputLabel > <b>Housing Counseling</b> </apex:outputLabel>
+                        </td>
+                        <td width="40%" style="text-align:center">
+                            <apex:outputLabel > <b>U.S. Department of Housing and Urban</b> </apex:outputLabel>
+                        </td>
+                        <td width="30%" style="font-size:10;text-align:right">
+                            <apex:outputLabel > OMB Approval No:2502-0622 </apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="30%" style="text-align:center">
+                            <apex:outputLabel > <b>Agency</b> </apex:outputLabel>
+                        </td>
+                        <td width="40%" style="text-align:center">
+                            <apex:outputLabel > <b>Development</b> </apex:outputLabel>
+                        </td>
+                        <td width="30%" style="font-size:10;text-align:right">
+                            <apex:outputLabel >Exp. 12/31/<apex:outputText value="{!reportDateYear}" /></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="30%" style="text-align:center">
+                            <apex:outputLabel ><b>Activity Report</b></apex:outputLabel>
+                        </td>
+                        <td width="40%" style="text-align:center">
+                            <apex:outputLabel > Office of Housing Counseling </apex:outputLabel>
+                        </td>
+                        <td width="30%" style="font-size:10;text-align:right">
+                            <apex:outputLabel > </apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="30%" style="text-align:center">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                        <td width="40%" style="text-align:center">
+                            <apex:outputLabel > Federal Housing Commissioner </apex:outputLabel>
+                        </td>
+                        <td width="30%" style="font-size:10;text-align:right">
+                            <apex:outputLabel > </apex:outputLabel>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br/><br/><br/><br/>
+        
+        <div>
+            <b>Read the Public Reporting Statement on page 4 and instructions on pages 5-10 of this form.</b>
+        </div>
+        
+        
+        
+        <div style="width: 100%; padding-top:5px; padding-bottom: 20px">
+            <div style="width: 100%; float: left;">
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel > <b>1. Counseling Agency Name</b> </apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel > <b>2. Reporting Period and Budget</b> </apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel > <b>Agency Name</b> <br/><apex:outputText value="{!x9902AgencyRec.AgencyName__c}" /> </apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                                <tr>
+                                    <td width="30%" style="border-right: 0.8px solid black;border-bottom: 0.8px solid black;border-collapse: collapse; ">
+                                        <apex:outputLabel > <b>From:</b></apex:outputLabel>
+                                    </td>
+                                    <td width="70%" style="border-bottom: 0.8px solid black;border-collapse: collapse; padding-left:10px">
+                                        <apex:outputLabel ><apex:outputText value="{!fromDt}" /></apex:outputLabel>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%" style="border-right: 0.8px solid black;border-collapse: collapse; ">
+                                        <apex:outputLabel > <b>To:</b></apex:outputLabel>
+                                    </td>
+                                    <td width="70%" style="padding-left:10px">
+                                        <apex:outputLabel ><apex:outputText value="{!toDt}" /></apex:outputLabel>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse;">
+                                <tr>
+                                    <td width="30%" height="35px" style="border-right: 0.8px solid black;border-collapse: collapse; ">
+                                        <apex:outputLabel >Agency ID:</apex:outputLabel>
+                                    </td>
+                                    <td width="70%" height="35px" style="padding-left:10px">
+                                        <apex:outputLabel ><apex:outputText value="{!agencyid}" /></apex:outputLabel>
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                                <tr>
+                                    <td width="30%" style="border-right: 0.8px solid black;border-collapse: collapse; ">
+                                        <apex:outputLabel >Date Submitted:</apex:outputLabel>
+                                    </td>
+                                    <td width="70%" style="padding-left:10px">
+                                        <apex:outputLabel ><apex:outputText value="{!currentTimeStamp}" /></apex:outputLabel>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50%" height="100%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                                <tr>
+                                    <td width="30%" height="35px" style="border-right: 0.8px solid black;border-collapse: collapse; ">
+                                        <apex:outputLabel >Agency Type:</apex:outputLabel>
+                                    </td>
+                                    <td width="70%" height="35px" style="">
+                                        <apex:outputLabel ></apex:outputLabel>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="50%" style="border-right: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Total Annual Housing Counseling Program Budget, All Sources:</apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50%" height="100%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Address:<apex:outputText value="{!x9902AgencyRec.AgencyPhysicalAddressCity__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border-right: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >$</apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50%" height="100%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>Parent Agency Name</b> (if applicable)</apex:outputLabel>
+                            <br/>
+                        </td>
+                        <td width="50%" style="border-right: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50%" height="100%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                                <tr>
+                                    <td width="30%" style="border-right: 0.8px solid black;border-collapse: collapse; ">
+                                        <apex:outputLabel >Agency ID:</apex:outputLabel>
+                                    </td>
+                                    <td width="70%" style="">
+                                        <apex:outputLabel ></apex:outputLabel>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="50%" style="border-right: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50%" height="100%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                                <tr>
+                                    <td width="30%" style="border-right: 0.8px solid black;border: 0.8px solid black-bottom;border-collapse: collapse; ">
+                                        <apex:outputLabel >Agency Type:</apex:outputLabel>
+                                    </td>
+                                    <td width="70%" style="">
+                                        <apex:outputLabel ></apex:outputLabel>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="50%" style="border-right: 0.8px solid black;border-bottom: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="55%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            
+                        </td>
+                        <td width="15%" style="border-right: 0.8px solid black;border-bottom: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel >All activities meeting HUD’s housing counseling and education requirements</apex:outputLabel>
+                        </td>
+                        <td width="30%" style="border-right: 0.8px solid black;border-bottom: 0.8px solid black;border-collapse: collapse; ">
+                            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                                <tr>
+                                    <td width="100%" style="border-bottom: 0.8px solid black;border-collapse: collapse; text-align:center">
+                                        <apex:outputLabel >HUD Housing Counseling Program Grantees Only</apex:outputLabel>
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                                <tr>
+                                    <td width="50%" style="border-right: 0.8px solid black;border-collapse: collapse; text-align:center">
+                                        <apex:outputLabel >Activities billed to HUD housing counseling grant/subgrant (in part or full) – actual, to date </apex:outputLabel>
+                                    </td>
+                                    <td width="50%" style="border-collapse: collapse; text-align:center">
+                                        <apex:outputLabel >Counseling and Education Activities Attributing to HUD Housing Counseling Grant Funds – Annual Projection</apex:outputLabel>
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                            
+                        </td>
+                    </tr>
+                    
+                </table>
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="100%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>3. Ethnicity</b></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >a.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Hispanic</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.Hispanic__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDHispanic__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >b.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Not Hispanic</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.NotHispanic__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDNotHispanic__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >c.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Chose not to respond</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.ChoseNottoRespond__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDChoseNottoRespond__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="55%" style="text-align:right;border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>Section 3 Total:</b></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.Section3TOTAL__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDSection3TOTAL__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="100%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>4. Race</b></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >a.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >American Indian/Alaskan Native</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.AmericanIndianAlaskanNative__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDAmericanIndianAlaskanNative__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >b.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Asian</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.Asian__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDAsian__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >c.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Black or African American</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.BlackorAfricanAmerican__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDBlackorAfricanAmerican__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >d.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse;">
+                            <apex:outputLabel >Native Hawaiian or Other Pacific Islander</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.NativeHawaiian__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDNativeHawaiian__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >e.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >White</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.White__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDWhite__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >f.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >More than one race</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.MoreThanoneRace__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDMoreThanoneRace__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >g.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Chose not to respond</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.MultiRaceChosenottorespond__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDMultiRaceChosenottorespond__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="55%" style="text-align:right;border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>Section 4 Total:</b></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.Section4TOTAL__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDSection4TOTAL__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="100%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>5. Income Levels</b></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >a.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >&lt; 30% of Area Median Income (AMI)</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.X30ofAreaMedianIncomeAMI__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDX30ofAreaMedianIncomeAMI__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >b.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputText >30 - 49% of AMI</apex:outputText>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.X3049ofAMI__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDX3049ofAMI__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >c.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >50 - 79% of AMI</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.X5079ofAMI__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDX5079ofAMI__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >d.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >80 - 100% of AMI</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.X80100ofAMI__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDX80100ofAMI__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >e.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >&gt; 100% of AMI</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.X100AMI__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDX100AMI__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >f.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Chose not to respond</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.AMIChosenottorespond__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDAMIChosenottorespond__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="55%" style="text-align:right;border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>Section 5 Total:</b></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.Section5TOTAL__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDSection5TOTAL__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="100%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>6. Rural Area Status</b></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >a.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Lives in a rural area</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.Householdlivesinaruralarea__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDHouseholdlivesinaruralarea__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >b.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Does not live in a rural area</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.Householddoesnotliveinaruralarea__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDHouseholddoesnotliveinarural__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >c.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Chose not to respond</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.RuralChosenottorespond__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDRuralChosenottorespond__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="55%" style="text-align:right;border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>Section 6 Total:</b></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.Section6TOTAL__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDSection6TOTAL__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="100%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>7. Limited English Proficiency Status</b></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >a.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Limited English Proficient</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HouseholdisLimitedEnglishProficient__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDHouseholdisLimitedEnglish__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >b.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Not Limited English Proficient</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.NotLimitedEnglishProficient__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDNotLimitedEnglishProficient__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >c.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Chose not to respond</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.LimitedEnglishProficienChoseNotToRespond__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDLimitedEnglishProficienChoseNotTo__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="55%" style="text-align:right;border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>Section 7 Total:</b></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.Section7TOTAL__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDSection7TOTAL__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="100%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>8. Households Receiving Education Services (Including Online Education), by Purpose</b></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >a.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Completed financial literacy workshop, including home affordability, budgeting and understanding use of credit</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.Completedfinancialliteracyworkshop__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDCompletedfinancialliteracy__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >b.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputText >Completed predatory lending, loan scam or other fraud prevention workshop</apex:outputText>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.Completedpredatorylending__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDCompletedpredatorylending__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >c.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Completed fair housing workshop </apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.Completedfairhousingworkshop__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDCompletedfairhousingworkshop__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >d.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Completed homelessness prevention workshop</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HomelessnessPreventionWorkshop__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDHomelessnessPreventionWorkshop__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >e.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Completed rental workshop </apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.Completedrentalworkshop__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDCompletedrentalworkshop__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >f.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Completed pre-purchase homebuyer education workshop</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.Prepurchasehomebuyereducationworkshop__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDPrepurchasehomebuyereducation__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >g.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Completed non-delinquency post-purchase workshop, including home maintenance and/or financial management for homeowners</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.NonDelinquencyPostPurchaseWorkshop__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDNonDelinquencyPostPurchaseWork__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >h.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Completed resolving or preventing mortgage delinquency workshop </apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.MortgageDelinquencyWorkshop__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDMortgageDelinquencyWorkshop__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >i.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Completed disaster preparedness assistance workshop</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.CompletedDisasterPreparednessWorkshop__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDCompletedDisasterPreparedness__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >j.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Completed disaster recovery assistance workshop</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.DisasterRecoveryWorkshop__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDDisasterRecoveryWorkshop__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="55%" style="text-align:right;border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>Section 8 Total:</b></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.Section_8_TOTAL__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDSection8TOTAL__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="100%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>9. Households Receiving One-on-One Counseling, by Purpose</b></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >a.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Homeless Assistance</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HomelessAssistance__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDHomelessAssistance__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >b.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputText >Rental Topics</apex:outputText>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.RentalTopics__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDRentalTopics__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >c.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Pre-purchase/Homebuying</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.PrepurchaseHomebuying__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDPrepurchaseHomebuying__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >d.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Non-Delinquency Post-Purchase</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HomeMaintenance__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDHomeMaintenance__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >e.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Reverse Mortgage</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.ReverseMortgage__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDReverseMortgage__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >f.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Resolving or Preventing Forward Mortgage Delinquency or Default</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.ForwardMortgageDelinquencyorDefault__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDForwardMortgageDelinquencyor__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >g.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Resolving or Preventing Reverse Mortgage Delinquency or Default</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.ReverseMortgageDelinquencyorDefault__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDReverseMortgageDelinquencyor__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >h.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Disaster Preparedness Assistance</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.DisasterPreparednessAssistance__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDDisasterPreparednessAssistance__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >i.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Disaster Recovery Assistance</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.DisasterRecoveryAssistance__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDDisasterRecoveryAssistance__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="55%" style="text-align:right;border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>Section 9 Total:</b></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.Section9TOTAL__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDSection9TOTAL__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="55%" style="text-align:right;border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>Households Served Sections 8 and 9 Total:</b></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!section8And9Sum}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!hudSection8And9Sum}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="100%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>10. Outcome of One-on-One Counseling Services</b></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >a.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Households that received one-on-one counseling that also received education services.</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.OneononeCounseling__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDOneononeCounseling__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >b.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputText >Households that received information on fair housing, fair lending and/or accessibility rights.</apex:outputText>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.ReceivedInformationonFairHousing__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDReceivedInformationonFair__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >c.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Households for whom counselor developed a budget customized to a client’s current situation.</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.SustainableHouseholdBudget__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDSustainableHouseholdBudget__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >d.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Households that improved their financial capacity (e.g. increased discretionary income, decreased debt load, increased savings, increased credit score, etc.) after receiving Housing Counseling Services. </apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HouseholdsImprovedFinancialCapacity__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDHouseholdsImprovedFinancial__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >e.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Households that gained access to resources to help improve their housing situation (e.g. down payment assistance, rental assistance, utility assistance, etc.) after receiving Housing Counseling Services.</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HouseholdsGainedAccesstoResources__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDHouseholdsGainedAccessto__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >f.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Households that gained access to non-housing resources (e.g. social service programs, legal services, public benefits such as Social Security or Medicaid, etc.) after receiving Housing Counseling Services. </apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.GainedAccesstoNonHousingResources__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDGainedAccesstoNonHousing__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >g.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Homeless or potentially homeless households that obtained temporary or permanent housing after receiving Housing Counseling Services.</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HomelessobtainedHousing__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDHomelessobtainedHousing__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >h.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Households gained access to disaster recovery non-housing resources after receiving Housing Counseling Services (e.g. Red Cross/FEMA relief items, legal services, assistance).</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.DisasterRecoveryNonhousingResources__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDDisasterRecoveryNonhousing__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >i.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Households obtained disaster recovery housing resources after receiving Housing Counseling Services (e.g. temporary shelter, homeowner rehab, relocation, etc.). </apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.DisasterRecoveryHousingResources__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDDisasterRecoveryHousingResources__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >j.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Households for whom counselor developed or updated an emergency preparedness plan. </apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.EmergencyPreparednessPlan__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDEmergencyPreparednessPlan__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >k.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputText >Household that received rental counseling and avoided eviction after receiving Housing Counseling Services.</apex:outputText>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HouseholdsReceivedRentalCounselling__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDHouseholdsReceivedRental__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >l.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse;">
+                            <apex:outputLabel >Households that received rental counseling and improved living conditions after receiving Housing Counseling Services. </apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HouseholdsImprovedLivingConditions__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDHouseholdsImprovedLiving__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >m.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Households that received pre-purchase/homebuying counseling and purchased housing after receiving Housing Counseling Services. </apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.PrepurchaseHomebuyingCounseling__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDPrepurchaseHomebuyingCounseling__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >n.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Households that received reverse mortgage counseling and obtained a Home Equity Conversion Mortgage (HECM) after receiving Housing Counseling Services. </apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HouseholdsReceivedReverseMortgage__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDHouseholdsReceivedReverseMortgage__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >o.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Households that received non-delinquency post-purchase counseling that were able to improve home conditions or home affordability after receiving Housing Counseling Services. </apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.NonDelinquencyPostPurchaseCounseling__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDNonDelinquencyPostPurchaseCoun__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >p.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Households that prevented or resolved a forward mortgage default after receiving Housing Counseling Services.</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.PreventedForwardMortgageDefault__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDPreventedForwardMortgageDefault__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >q.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Households that prevented or resolved a reverse mortgage default after receiving Housing Counseling Services.</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.PreventedReverseMortgageDefault__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDPreventedReverseMortgageDefault__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >r.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Households that received a forward mortgage modification and remained current in their modified mortgage after receiving Housing Counseling Services.</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.ForwardMortgageModImprovedFinancials__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDForwardMortgageModImproved__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width="5%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >s.</apex:outputLabel>
+                        </td>
+                        <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Households that received a forward mortgage modification and improved their financial capacity after receiving Housing Counseling Services.</apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.ForwardModImprovedFinancialCapacity__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDForwardModImprovedFinancial__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="55%" style="text-align:right;border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>Section 10 Total:</b></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.Section10TOTAL__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; text-align:center">
+                            <apex:outputLabel ><apex:outputText value="{!summaryRec.HUDSection10TOTAL__c}" /></apex:outputLabel>
+                        </td>
+                        <td width="15%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <br/><br/>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="100%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>11. HUD Housing Counseling Grant(s) Data, if applicable</b></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse;text-align:center">
+                    <tr>
+                        <td width="33%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >HUD Housing Counseling <br/> Grant or <br/> Sub-grant <br/> Application Number</apex:outputLabel>
+                        </td>
+                        <td width="33%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Grant Type</apex:outputLabel>
+                        </td>
+                        <td width="33%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >HUD Housing <br/> Counseling Grant <br/> Amount</apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="33%" height="20px" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputText ></apex:outputText>
+                        </td>
+                        <td width="33%" height="20px" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputText ></apex:outputText>
+                        </td>
+                        <td width="33%" height="20px" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputText ></apex:outputText>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="33%" height="20px" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputText ></apex:outputText>
+                        </td>
+                        <td width="33%" height="20px" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputText ></apex:outputText>
+                        </td>
+                        <td width="33%" height="20px" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputText ></apex:outputText>
+                        </td>
+                    </tr>
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="66%" style="text-align:right;border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>Section 11 Total:</b></apex:outputLabel>
+                        </td>
+                        <td width="33%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="100%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>12. Authorization</b></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width="100%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Submission of this form constitutes a certification by the individual listed that the information provided on the form and in any accompanying documentation is true and accurate. The submission is an acknowledgement that making, presenting, or submitting a false, fictitious, or fraudulent statement, representation, or certification may result in criminal, civil, and/or administrative sanctions, including fines, penalties, and imprisonment.</apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td width="100%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ><b>Agency Official</b></apex:outputLabel>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                    <tr>
+                        <td width="20%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >First Name:</apex:outputLabel>
+                        </td>
+                        <td width="80%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Last Name:</apex:outputLabel>
+                        </td>
+                        <td width="80%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Title:</apex:outputLabel>
+                        </td>
+                        <td width="80%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel >Phone:</apex:outputLabel>
+                        </td>
+                        <td width="80%" style="border: 0.8px solid black;border-collapse: collapse; ">
+                            <apex:outputLabel ></apex:outputLabel>
+                        </td>
+                    </tr>
+                </table>
+                <br/><br/><br/><br/><br/><br/><br/><br/>
+                <apex:outputText >
+                    <b>Public reporting burden</b> for this collection of information is estimated to average .375 hours per response. The HUD9902 form is transmitted 100% electronically. The housing counseling agency can either input data directly into HUD’s
+                    Housing Counseling System (HCS) or submit through its own Client Management System (CMS) using the Agency
+                    Reporting Module connection to HUD’s HCS. With universal CMS use, the HUD-9902 will populate automatically
+                    based on electronic client files. Consequently, the estimated burden hour per response includes logging in and the time
+                    necessary to send the document electronically (estimated time: 15 minutes). An agency may not conduct or sponsor, and
+                    a person is not required to submit an information collection unless that collection displays a valid OMB control number.<br/><br/>
+                    This information is collected in connection with HUD’s Housing Counseling Program and will be used by HUD to
+                    collect performance and outcome data related to HUD’s Housing Counseling Program. Additionally, the data collected
+                    on form HUD-9902 plays a key role in analyzing performance and capacity during the Office of Housing Counseling’s
+                    Notice of Funding Availability (NOFA) process. The information is required to obtain funding under Section 106 of the
+                    Housing and Community Development Act of 1974. The information is considered sensitive and is protected by the
+                    Privacy Act which requires the records to be maintained with appropriate administrative, technical, and physical
+                    safeguards to ensure their security and confidentiality.
+                </apex:outputText>
+                <br/> <br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/>
+                <apex:outputText >
+                    <b>Instructions for HUD-9902</b>
+                    <br/><br/>
+                    <b>HUD-9902 Collects CUMULATIVE fiscal year-to-date data for each quarterly report period.</b><br/><br/>
+                    This HUD-9902 records the housing counseling and education activities provided by agencies participating
+                    in HUD’s Housing Counseling Program. The HUD-9902 shall be completed online through an agency’s
+                    Client Management System (CMS) or HUD’s Housing Counseling System (HCS). Agencies submitting the
+                    form electronically through a CMS must review and verify the submission in HCS for accuracy. When
+                    viewing the HUD-9902 in an agency’s CMS or the HCS system, shaded areas will be automatically
+                    populated by those systems upon submission.
+                    
+                    <br/><br/>
+                    
+                    <b>Who files Form HUD-9902?</b>
+                    
+                    <br/><br/>
+                    
+                    Each HUD-approved Local Housing Counseling Agency (LHCA) must submit an electronic HUD-9902
+                    quarterly, reflecting main-office and branch location activities, if applicable, in the target areas described in
+                    its latest housing counseling plan, regardless of whether or not a HUD Housing Counseling Grant was
+                    received. Branch offices of LHCAs do not file an independent HUD-9902.
+                    
+                    <br/><br/>
+                    
+                    An individual electronic HUD-9902 must be submitted quarterly on behalf of each HUD Housing
+                    Counseling Program subgrantee, affiliate, and/or branch office, if applicable, of a HUD-approved
+                    Intermediary, HUD-approved Multi-state Organization (MSO), or State Housing Finance Agency (SHFA)
+                    participating in HUD’s Housing Counseling Program.
+                    
+                    <br/><br/>
+                    
+                    <b>How are Sections 3–7 counted?</b>
+                    
+                    <br/><br/>
+                    
+                    Record the information of one individual, even if there are multiple individuals within a household attending
+                    an activity to be recorded. If the individuals identify with different demographic types, encourage the
+                    attendees to choose/self-identify the demographic of only one of the individuals to be recorded. The same
+                    selected individual’s information should be recorded in Sections 3, 4, 6, and 7.
+                    
+                    <br/><br/>
+                    
+                    For example: A husband and wife attend a pre-purchase homebuying one-on-one counseling session together.
+                    If the individuals identify with more than one ethnicity and limited English proficiency status types,
+                    encourage the attendees to choose/self-identify the ethnicity and limited English proficiency status of one of
+                    the individuals that will be recorded in Sections 4 and 7.
+                    
+                    <br/><br/>
+                    
+                    Section 5, Income Levels, can be recorded by household.
+                    
+                    <br/><br/>
+                    
+                    <b>Who is counted as a household in Sections 8 and 9?</b>
+                    
+                    <br/><br/>
+                    
+                    Report the number of individual households counseled or educated. For example: A husband and wife or a
+                    brother and sister or three friends who are mortgagors under the same mortgage note or who are tenants under
+                    the same lease count as one household.
+                    
+                    <br/><br/>
+                    
+                    Multiple individuals or families with the same problem or need that receive counseling together should be
+                    counted as an individual household. For example, three renting families who experience the same problem
+                    with the same landlord and receive counseling services from your agency together should be counted as one
+                    household, and the relevant data recorded in Sections 8 and 9. 
+                </apex:outputText>
+                
+                <br/><br/>
+                
+                <apex:outputText >
+                    <b>How many times can a household be counted?</b>
+                    
+                    <br/><br/>
+                    
+                    A household should be counted once for each distinct housing counseling or education service it receives.
+                    Households that receive one distinct housing counseling or education service over multiple sessions will still be
+                    counted only once.
+                    
+                    <br/><br/>
+                    
+                    If a household participates in a workshop and later receives individual counseling, or if a household receives
+                    various distinct types of individual counseling or group education, record them in the appropriate row in
+                    Sections 8 and 9, and record the demographics of only the selected individual from the household in Sections
+                    3–7 for each distinct workshop and/or counseling type. For example, a household receiving homebuyer
+                    education, pre-purchase counseling and mortgage delinquency prevention counseling during the same year is
+                    recorded in Sections 8 or 9 three times, and the demographics of only the selected individual from the
+                    household is recorded in Sections 3–7.
+                    
+                    <br/><br/>
+                    
+                    The data totals entered in Section 10 are independent of the totals entered in Sections 3-9. Households
+                    can be counted multiple times in Section 10 based on the impact and scope of the counseling services
+                    provided.
+                    
+                    <br/><br/>
+                    
+                    <b>What activities are recorded?</b>
+                    
+                    <br/><br/>
+                    
+                    Only education and counseling activities that meet HUD’s requirements for housing counseling and
+                    education are to be recorded. Marketing and outreach activities, such as fliers mailed or calls made,
+                    should not be recorded.
+                    
+                    <br/><br/>
+                    
+                    In accordance with the Housing Counseling Certification requirements stated in 24 CFR 214.103(n)(1),
+                    all individuals who provide counseling, including homeownership and rental counseling, must be HUD
+                    certified. For housing counseling to meet program requirements, housing counseling performed on or
+                    after the final compliance date stated in 24 CFR 214.103(n)(4) must be provided by a HUD-certified
+                    housing counselor.
+                    
+                    <br/><br/>
+                    
+                    <b>How should agencies report carryover clients?</b>
+                    
+                    <br/><br/>
+                    
+                    Carryover clients are households that received counseling in a previous fiscal year and continue to receive
+                    counseling services on the same topic in the current fiscal year. Households meeting this criterion are counted
+                    again on the current year’s HUD-9902. Do not count households counseled in a previous reporting fiscal year
+                    whose result changed, but who have not received additional services in the current fiscal year.
+                    
+                    <br/><br/>
+                    
+                    <b>What is the difference between the columns?</b>
+                    
+                    <br/><br/>
+                    
+                    <b>All activities meeting HUD’s housing counseling and education requirements Column -</b> Enter all housing
+                    counseling and education data for the reporting period, regardless of the funding source used for that
+                    activity. All Services reported on the HUD-9902 should meet HUD’s requirements for housing counseling
+                    and education, which can be found in the HUD Housing Counseling Program Handbook, on the 
+                    <a href = "https://www.hudexchange.info/programs/housing-counseling/" target="_blank">HUD Exchange website</a>. 
+                    
+                    <br/><br/>
+                    
+                    <b>Activities billed to the HUD housing counseling grant/subgrant (in full or part) – actual, to date, Column
+                        –</b> Enter all housing counseling and education data for the reporting period that was paid for by HUD Housing
+                    Counseling Grants, if applicable. The number entered in this column represents a sub-set of the “All
+                    Activities” column. Counseling paid for by HUD Housing Counseling Grants must meet the requirements of
+                    the applicable Grant Agreement. Grant activity should be reported in the appropriate column, according to
+                    the specific grant under which the activity occurred.
+                    
+                    <br/><br/>
+                    
+                    If at the time of a reporting deadline, HCS does not contain separate columns for multiple active grants
+                    during the Period of Performance, grantees must report all their activities under the “All Activities” column.
+                    
+                    <br/><br/>
+                    
+                    <b>Counseling and Education Activities Attributed to HUD Housing Counseling Grants, Annual
+                        Projection, Column(s) -</b> Projected data is entered only once annually during HUD Housing Counseling
+                    Grant execution unless HUD approval is obtained to revise the annual projections previously recorded.
+                    Enter projected housing counseling and education data for the reporting year to be paid for by HUD
+                    Housing Counseling Grants, if applicable. Counseling paid for by HUD Housing Counseling Grants must
+                    meet the requirements of the applicable Grant Agreement. Grant activity should be reported in the
+                    appropriate column, according to the specific grant under which the activity is projected to occur. If HCS
+                    does not contain separate columns for multiple grants during the Period of Performance, grantees must
+                    report projected activity for all HUD Housing Counseling Grants in a single column.
+                    
+                    <br/><br/>
+                    
+                    <b>How should a grantee report HUD funded activity when the correct grant column is not available in
+                        HCS?</b>
+                    
+                    <br/><br/>
+                    
+                    Grantees must enter activity attributable to the Grant in the quarter during which it occurred. For example, if
+                    grant funds are awarded in the third quarter but activity attributable to the grant occurred in either of the first
+                    two quarters, the HUD-9902 for those first two quarters should be submitted within the reporting deadline,
+                    with the activity reported under “All Activities.” The grantee must then update those previously filed reports
+                    once the correct grant reporting column is available in HCS, to accurately reflect the timing of activity under
+                    the Grant. HUD will not consider retroactive corrections to previous on-time submissions as late.
+                    
+                    <br/><br/>
+                    
+                    <b>Section Instructions</b>
+                    
+                    <br/><br/>
+                    
+                    <b>Section 1. Counseling Agency Name and Address - </b> Verify, in HCS, that your agency name, contact
+                    information, agency type, and parent organization, if applicable, is correct as it appears on the form. Make
+                    any necessary changes through your CMS application, if applicable, or through HUD’s HCS system.
+                    
+                    <br/>
+                    
+                    Contact your HUD Point of Contact (POC) regarding “Agency Type” changes.
+                    
+                    <br/><br/>
+                    
+                    <b>Section 2. Reporting Period and Budget -</b> This report must reflect the cumulative counseling and education
+                    activity of an agency, for a portion of (e.g. quarterly), or for the complete, fiscal year. The start, or “From”,
+                    date is automatically populated, and will be set at the beginning of the fiscal year. Verify that the report
+                    period is correct. Even if your agency was approved by HUD for less than the full year report period, include
+                    households counseled since the beginning of the applicable fiscal year.
+                    
+                    <br/><br/>
+                    
+                    The submission date will be automatically populated upon submission.
+                    
+                    <br/><br/>
+                    
+                    <b>Total Annual Housing Counseling Program Budget, All Sources -</b> A total annual budget amount must be
+                    entered whether or not a HUD grant was awarded for the reporting period. Enter, through your CMS
+                    application, if applicable, or through HUD’s HCS system, the total annual housing counseling budget, all
+                    sources. This figure should reflect the total budget, including all HUD grants and other funding sources, for
+                    the full fiscal year, used exclusively for your housing counseling program. It is essential that this figure be
+                    accurate, as HUD may request source documentation to verify the total budget during monitoring reviews. Use
+                    HCS to verify that the total annual housing counseling program budget attributed to your agency is correct. If
+                    incorrect, or if changes occur throughout the fiscal year, make any necessary revisions through your CMS
+                    application, if applicable, or through HUD’s HCS system.
+                    
+                    <br/><br/>
+                    
+                    <b>Sections 3-7 / Demographic Data</b>
+                    
+                    <br/><br/>
+                    
+                    Counseling agencies are required to discreetly collect, for example through a sign-in sheet or participant
+                    survey, and record demographic data for education services participants.
+                    
+                    <br/><br/>
+                    
+                    Record the information of one individual, even if there are multiple individuals within a household attending
+                    an activity to be recorded. If the individuals identify with different demographic types, encourage the
+                    attendees to choose/self-identify the demographic of only one of the individuals to be recorded in Sections
+                    3, 4, 6, and 7. The same selected individual’s information should be recorded in these sections.
+                    
+                    <br/><br/>
+                    
+                    Section 5, Income Levels, can be recorded by household.
+                    
+                    <br/><br/>
+                    
+                    Demographic data for households who are unwilling or unable to self-identify should be recorded as ‘chose
+                    not to respond’. The ‘chose not to respond’ option should be used on a limited basis and under the
+                    circumstances described above.
+                    
+                    <br/><br/>
+                    
+                    <b>Section 3. Ethnicity of Households -</b> Section 3 can only record the ethnicity demographic information
+                    of one individual, even if there are multiple individuals within a household attending an activity to be
+                    recorded. If the individuals identify with different ethnicity types, encourage the attendees to
+                    choose/self-identify the ethnicity, choosing from 3a through 3c, of the individual that will be recorded.
+                    Ethnicity categories are mandated by the Office of Management and Budget (OMB).
+                    
+                    <br/><br/>
+                    
+                    The following descriptions serve as a guide for self-identification.
+                    
+                    <br/><br/>
+                    
+                    Hispanic - A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or
+                    origin, regardless of race. The term “Spanish origin” or “Latino” can be used in addition to “Hispanic.”
+                    
+                    <br/><br/>
+                    
+                    
+                    Not Hispanic - A person not of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish
+                    culture or origin, regardless of race.
+                    
+                    <br/><br/>
+                    
+                    <b>Section 4. Race of Household Categories -</b> Section 4 can only record the race demographic information of
+                    one individual, even if there are multiple individuals within a household attending an activity to be recorded.
+                    If the individuals identify with different race types, encourage the attendees to choose/self-identify the race,
+                    choosing from 4a through 4g, of the individual that will be recorded.
+                    
+                    <br/><br/>
+                    
+                    Race categories are mandated by the Office of Management and Budget (OMB).
+                    
+                    <br/><br/>
+                    
+                    The following descriptions serve as a guide for self-identification.
+                    
+                    <br/><br/>
+                    
+                    <b>American Indian or Alaskan Native -</b> A person having origins with any of the original peoples of North
+                    and South America (including Central America), and who maintains tribal affiliation or community
+                    recognition.
+                    
+                    <br/><br/>
+                    
+                    <b>Asian -</b> A person having origins with any of the original peoples of the Far East, Southeast Asia, or the Indian
+                    Subcontinent, including, for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the
+                    Philippine Islands, Thailand, and Vietnam.
+                    
+                    <br/><br/>
+                    
+                    <b>Black or African American -</b> A person having origins in the black racial groups of Africa. For example,
+                    individuals self-reporting in this category may refer to themselves as “Haitian”, “Black” or “AfricanAmerican.”
+                    
+                    <br/><br/>
+                    
+                    <b>Native Hawaiian or Other Pacific Islander -</b> A person having origin in any of the original peoples of
+                    Hawaii, Guam, Samoa, or other Pacific Islands.
+                    
+                    <br/><br/>
+                    
+                    <b>White -</b> A person having origins in any of the original peoples of Europe, the Middle East, or North Africa.
+                    
+                    <br/><br/>
+                    
+                    Note: Since 2003, the Federal Government has defined Hispanic as an ethnicity (Section 3), not a race.
+                    
+                    <br/><br/>
+                    
+                    <b>Section 5. Income Levels -</b> Record income data for each individual counseling and group education household
+                    receiving a distinct service during the reporting period. Enter the household’s income level based on the
+                    percentage of the Area Median Income (AMI) for the geographic area, adjusted for family size.
+                    
+                    <br/><br/>
+                    
+                    <b>Section 6. Rural Area Status -</b> Section 6 can only record the rural area status information of one individual,
+                    even if multiple individuals within a household attending an activity to be recorded. If the individuals identify
+                    with different rural area status types, encourage the attendees to choose/self-identify the status, choosing from
+                    6a through 6c, of the individual that will be recorded.
+                    
+                    <br/><br/>
+                    
+                    Rural areas are defined by the U.S. Department of Agriculture at 7 CFR 3550.10. The USDA Income and
+                    Property Eligibility website for Single Family Housing programs can serve as a guide for determining rural area
+                    status. For additional information, see <a href = "https://www.usda.gov" target="_blank">www.USDA.gov</a>.
+                    
+                    <br/><br/>
+                    
+                    <b>Section 7. Limited English Proficiency (LEP) Status -</b> Section 7 can only record the LEP status
+                    information of one individual, even if there are multiple individuals within a household attending an activity
+                    to be recorded. If the individuals identify with different LEP status types, encourage the attendees to
+                    choose/self-identify the status, choosing from 7a through 7c, of the individual that will be recorded.
+                    
+                    <br/><br/>
+                    
+                    Individuals who do not speak English as their primary language and who have a limited ability to read, speak,
+                    write, or understand English can be limited English proficient, or “LEP.” These individuals may be entitled
+                    language assistance with respect to a particular type or service, benefit, or encounter. For additional
+                    information, see <a href = "https://www.lep.gov/" target="_blank">www.lep.gov</a>
+                    
+                    <br/><br/>
+                    
+                    <b>Section 8. Households Receiving Education Services (Including Online Education), by Purpose -</b>
+                    Record the number of households that attend and complete an educational workshop or online education.
+                    Education differs from counseling in that it is usually conducted in a group setting and is not tailored to
+                    the unique circumstance of the individual. Online education administered by participating Housing
+                    Counseling Agencies or accessed by households through the actions of participating Housing Counseling
+                    Agencies can be recorded also. Households completing multiple, distinct courses or group sessions
+                    should be recorded for each course or group session completed.
+                    
+                    <br/><br/>
+                    
+                    <b>Section 9. Households Receiving One-on-One Counseling by Purpose -</b> Counseling goes beyond
+                    education services, addresses unique circumstances, is more rigorous, and involves one-on-one and longerterm relationships.
+                    
+                    <br/><br/>
+                    
+                    Enter the number of households to whom the agency provided housing counseling during the reporting
+                    period, by the purpose of their visit. Count households who entered the agency’s workload the previous
+                    fiscal year but who carried over into and received counseling on the same topic during the current fiscal
+                    year.
+                    
+                    <br/><br/>
+                    
+                    Each counseling type can include, but is not limited to, the following topics:
+                    
+                    <ul>
+                        <li>
+                            <span>
+                                Homeless Assistance – Information regarding emergency shelter, other emergency services, and transitional housing.
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                Rental Topics – HUD rental and rent subsidy programs; other federal, state or local assistance; fair housing; housing search assistance; landlord tenant laws; lease terms; rent delinquency.
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                Pre-purchase/Homebuying – Advice regarding readiness and preparation, Federal Housing Administration-insured financing, housing selection and mobility, search assistance, fair housing and predatory lending, budgeting and credit, loan product comparison, purchase procedures, and closing costs.
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                Non-Delinquency Post Purchase – Escrow funds, budgeting, refinancing, home equity, home improvement, utility costs, energy efficiency, rights and responsibilities of homeowners.
+                            </span>
+                        </li>
+                        
+                        <li>
+                            <span>
+                                Reverse Mortgage – A reverse mortgage is a mortgage product that pays a homeowner loan proceeds drawn from accumulated home equity and that requires no repayment until a future time. The Federal Housing Administration’s reverse mortgage product is the Home Equity Conversion Mortgage. Please see additional information on HECM in Chapter 4 and Appendix 4 of HUD Handbook 7610.1.
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                Resolving or Preventing Forward Mortgage Delinquency or Default – Default and foreclosure, loss mitigation, budgeting, and credit.
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                Resolving or Preventing Reverse Mortgage Delinquency or Default – Client/lender workout agreements for taxes and insurance, how to secure housing upon leaving the HECM property, resolution of outstanding debt with borrower estate or facilitating the transfer to the lender. Disaster Preparedness Assistance – Preparing and implementing an emergency preparedness plan.
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                Disaster Recovery Assistance – Referrals to, and the provision of recovery assistance resources for relocation, re-housing, and/or rebuilding.
+                            </span>
+                        </li>
+                    </ul>
+                    
+                    <br/><br/>
+                    
+                    <b>Section 10. Outcome of One-on-One Counseling Services -</b> This section is used to report the outcome of
+                    the housing counseling services reported in Section 9.
+                    
+                    <br/><br/>
+                    
+                    In Section 10, select as many outcomes that apply to the households counseled during the reporting period.
+                    The total number of outcomes reported in Section 10 does not need to add up to the totals reported in any
+                    other sections of this form, and the Section 10 total may be higher than the totals in other sections based on
+                    the outcome and scope of the counseling services provided.
+                    
+                    <br/><br/>
+                    
+                    It is not expected or required that there be a reportable outcome related to each household reported in Section
+                    9 as receiving housing counseling services. For example, a household may not experience any of the
+                    outcomes listed in Section 10 or the household may not respond to follow-up attempts to determine if any of
+                    the listed outcomes are applicable. However, for some households there may be multiple outcomes. For
+                    example, after receiving housing counseling services, a household may have developed a household budget
+                    (10c), gained access to resources to help improve the household’s housing situation (10e), and prevented
+                    eviction (10k). In that case, the household should be reported in all three impact categories.
+                    
+                    <br/><br/>
+                    
+                    <b>Section 11. HUD Housing Counseling Grant Data -</b> If applicable, verify in HCS that all HUD Housing
+                    Counseling Program grants, including any supplemental funding, sub-grants, and/or Branch funding amounts
+                    received by your agency for the reporting period are accurately listed. For example, funds received for the
+                    activities of one or more HECM Network Counselors, if applicable, will be listed separately from a
+                    comprehensive counseling grant received directly from HUD. Supplemental funding, such as for HECM
+                    Counseling, or discretionary awards, will also be listed separately. Contact your HUD POC if you believe that
+                    any of the amounts attributed to your agency are incorrect. For sub-grants, contact the relevant Intermediary,
+                    Multi-State Organization, or State Housing Finance Agency so that they can make any necessary changes, if
+                    applicable, using the sub-allocation tool in HCS.
+                    
+                    <br/><br/>
+                    
+                    <b>12. Authorization -</b> Submission of this form constitutes a certification by the Agency Official listed that
+                    the information provided on the form and in any accompanying documentation is true and accurate. The
+                    submission is an acknowledgement that making, presenting, or submitting a false, fictitious, or fraudulent
+                    statement, representation, or certification may result in criminal, civil, and/or administrative sanctions,
+                    including fines, penalties, and imprisonment. Enter the requested information regarding the Agency
+                    Official who has inputted the HUD-9902 data.
+                    
+                    <br/><br/>
+                    
+                    <b>For additional information on the HUD-9902:</b> Refer to the <a href = "https://www.hudexchange.info/programs/housing-counseling/9902/" target="_blank"> Housing Counseling 9902 Online Toolkit on
+                    the HUD Exchange website.</a> The Toolkit provides information on completing the HUD-9902 report, such
+                    as frequently asked questions about the form, more information on each section of the form, and case
+                    studies to assist with comprehension on reporting activities. 
+                </apex:outputText>
+            </div>
+        </div>
+    </div>
+    
+</apex:page>

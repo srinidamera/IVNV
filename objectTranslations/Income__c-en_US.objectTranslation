@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Income</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Income</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Type --></label>
+        <name>BusinessType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Case --></label>
+        <name>ClientCase__c</name>
+        <relationshipLabel><!-- Income --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Employer --></label>
+        <name>Employer__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Farm Worker --></label>
+        <name>FarmWorker__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income Type ID --></label>
+        <name>IncomeTypeID__c</name>
+        <picklistValues>
+            <masterLabel>Alimony</masterLabel>
+            <translation><!-- Alimony --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bonuses</masterLabel>
+            <translation><!-- Bonuses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Child Support</masterLabel>
+            <translation><!-- Child Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comissions</masterLabel>
+            <translation><!-- Comissions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disability/SSI</masterLabel>
+            <translation><!-- Disability/SSI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dividends/Interest</masterLabel>
+            <translation><!-- Dividends/Interest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overtime</masterLabel>
+            <translation><!-- Overtime --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent</masterLabel>
+            <translation><!-- Rent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retirement/SSI</masterLabel>
+            <translation><!-- Retirement/SSI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unemployment</masterLabel>
+            <translation><!-- Unemployment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Welfare (AFDC)</masterLabel>
+            <translation><!-- Welfare (AFDC) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Monthly Gross Income --></label>
+        <name>MonthlyGrossIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Net Income --></label>
+        <name>MonthlyNetIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Self Employed --></label>
+        <name>SelfEmployed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Years In Profession --></label>
+        <name>YearsInProfession__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Other Income --></label>
+        <name>OtherIncome</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Primary Income --></label>
+        <name>PrimaryIncome</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

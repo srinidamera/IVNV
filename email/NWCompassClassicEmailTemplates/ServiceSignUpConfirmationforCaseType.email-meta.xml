@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Office_Of_Housing_Counselling</letterhead>
+    <name>Service Sign-Up Confirmation for Case Type</name>
+    <style>freeForm</style>
+    <subject>{!$Label.NWServiceSignUpSubjectLine} {!Intake__c.CaseType__c}</subject>
+    <textOnly>{!$Label.Dear} {!Intake__c.PrimaryClient__c},
+
+{!$Label.NWServiceSignUp1}
+
+{!$Label.NWServiceSignUp2} {!Intake__c.CaseType__c}
+
+{!$Label.NWServiceSignUp3}
+
+{!$Label.NWServiceSignUp4}
+
+{!$Label.NWServiceSignUp5}
+
+{!$Label.NWServiceSignUp6}
+
+
+{!$Label.NWBestregards}
+{!$Label.AgencyProfileName}
+{!$Label.AgencyProfilePhone}
+{!$Label.AgencyProfileEmail}
+{!$Label.AgencyAddress}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

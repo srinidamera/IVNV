@@ -1,0 +1,4 @@
+.dummyClass{color:black;}
+.hideFirstColTable table th:first-child, .hideFirstColTable table td:first-child{
+        display: none !important;
+    }

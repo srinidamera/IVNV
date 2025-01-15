@@ -1,0 +1,121 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Classes",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"a1ea1d55-061e-4e9c-a21e-0d1c795276e9\",\"columns\":[{\"UUID\":\"9549bec9-85d4-41ee-825c-908e7f75dbba\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "imageInfos" : "",
+                "richTextValue" : "<p>Today all Classes are postponed.</p>"
+              },
+              "definition" : "community_builder:htmlEditor",
+              "id" : "0740362f-8d38-4ac3-8500-982309cc24d1",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "bannerImgSrcKey" : "MCOBGAE7VBYRC7DL6VUZMUYJ6Y5M",
+                "description" : "Multiple In-Person or Virtual Counselling sessions to help you achieve your homeowner goal.",
+                "dxpStyle" : { },
+                "redirectToPage" : "Classes__c",
+                "title" : "Classes",
+                "useHyperlinkTitle" : "No"
+              },
+              "definition" : "c:bannerSection",
+              "id" : "4783c468-4ad2-4ba0-a4ff-89459f8230f6",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : { },
+                "sectionDescKey" : "MCIC33DJOQ4FFUDHPNZQMHEHPQHE",
+                "title" : "About Classes"
+              },
+              "definition" : "c:titleAndContentSection",
+              "id" : "c705385c-ebc1-4e16-8969-35d0b6c37a46",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "allClassesLabel" : "All Classes",
+                "availableSeatsText" : "Available Seats",
+                "backBtnLabel" : "Go Back",
+                "cardBtnLabel" : "Enroll",
+                "cardHeight" : 450,
+                "cardSecondaryBtnLabel" : "Contact Us",
+                "costText" : "Cost",
+                "deliveryMethodText" : "Delivery method",
+                "endDateText" : "End Date/Time",
+                "freeSponsoredText" : "Free / Sponsored",
+                "hyperlinkTitle" : "Learn More",
+                "inPersonText" : "In-Person",
+                "locationText" : "Location",
+                "myClassesLabel" : "My Classes",
+                "noClassesEnrolledMsg" : "You have not enrolled in any class.",
+                "startDateText" : "Start Date/Time",
+                "statusAttendedComplete" : "Completed",
+                "statusAttendedInComplete" : "Incomplete",
+                "statusCanceled" : "Canceled",
+                "statusCourseComplete" : "Completed",
+                "statusCourseInComplete" : "Incomplete",
+                "statusEnrolled" : "Enrolled",
+                "statusNoShow" : "No Show",
+                "textOnline" : "Online",
+                "unlimitedText" : "Unlimited",
+                "virtualText" : "Virtual"
+              },
+              "definition" : "c:classesWrapper",
+              "id" : "7b33b07a-08f8-4800-bd2a-d940c8e2e85b",
+              "type" : "component"
+            } ],
+            "id" : "9549bec9-85d4-41ee-825c-908e7f75dbba",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "a1ea1d55-061e-4e9c-a21e-0d1c795276e9",
+          "scopedBrandingSetId" : "Compass_Portal",
+          "type" : "component"
+        } ],
+        "id" : "8cd3814f-d3eb-41f4-a1d3-ebab9a947130",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "dxpStyle" : { },
+            "pageTitle" : "Classes",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "3a17fadd-15df-4381-bdee-5336d99838e2",
+          "type" : "component"
+        } ],
+        "id" : "105c8af1-e90d-4c75-9a9b-761a56b87a10",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "6d4499f4-8af2-4fc8-a398-5404e9daf1ef",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-classes"
+  },
+  "urlName" : "classes"
+}

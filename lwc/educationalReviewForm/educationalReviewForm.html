@@ -1,0 +1,543 @@
+<template>
+    <br />
+    <div class="slds-text-heading_small">
+        <b>Contact</b>
+        <!-- Contact Details Section -->
+    </div>
+    <br />
+    <b>
+        Profile
+    </b>
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_12-of-12">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                    <label for="FirstName" class="slds-form-element__label">First Name</label>
+                    <br />
+                    <lightning-formatted-text value={contact.FirstName}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="MiddleName" class="slds-form-element__label">Middle Name</label>
+                    <br />
+                    <lightning-formatted-text value={contact.MiddleName}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="LastName" class="slds-form-element__label">Last Name</label>
+                    <br />
+                    <lightning-formatted-text value={contact.LastName}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+
+                    <label for="Suffix" class="slds-form-element__label">Suffix</label>
+                    <br />
+                    <lightning-formatted-text value={contact.Suffix}></lightning-formatted-text>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_12-of-12">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                    <label for="Email" class="slds-form-element__label">Email Address</label>
+                    <br />
+                    <lightning-formatted-text value={contact.Email}></lightning-formatted-text>
+                </div>
+                <div class="slds-grid slds-wrap slds-col slds-size_3-of-12">
+                    <div class="slds-col slds-size_1-of-2 slds-p-horizontal_x-small">
+                        <label for="Phone" class="slds-form-element__label">Phone Number</label>
+                        <br />
+                        <lightning-formatted-text value={contact.Phone}></lightning-formatted-text>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 slds-p-horizontal_x-small">
+                        <label for="Besttimetocontact__c" class="slds-form-element__label">Best Contact Time</label>
+                        <br />
+                        <lightning-formatted-text value={contact.Besttimetocontact__c}></lightning-formatted-text>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="PreferredLanguage__c" class="slds-form-element__label">Preferred Language</label>
+                    <br />
+                    <lightning-formatted-text value={contact.PreferredLanguage__c}></lightning-formatted-text>
+                </div>
+                <div class="slds-grid slds-wrap slds-col slds-size_3-of-12">
+                    <div class="slds-col slds-size_1-of-2 slds-p-horizontal_x-small">
+                        <label for="BirthDate" class="slds-form-element__label">BirthDate</label>
+                        <br />
+                        <lightning-formatted-text value={contact.Birthdate}></lightning-formatted-text>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 slds-p-horizontal_x-small">
+                        <label for="Age" class="slds-form-element__label">Age</label>
+                        <br />
+                        <lightning-formatted-text value={contact.Age}></lightning-formatted-text>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                    <lightning-input type="checkbox" label="Marketing Communication Opt Out"
+                        checked={contact.MarketingCommunicationsOptOut__c} disabled></lightning-input>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <b>
+        Address
+    </b>
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_12-of-12">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                    <label for="MailingStreet" class="slds-form-element__label">Street</label>
+                    <br />
+                    <lightning-formatted-text value={contact.MailingStreet}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="AddressLine2" class="slds-form-element__label">Address Line 2</label>
+                    <br />
+                    <lightning-formatted-text value={contact.MailingAddressLine2__c}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="MailingCity" class="slds-form-element__label">City</label>
+                    <br />
+                    <lightning-formatted-text value={contact.MailingCity}></lightning-formatted-text>
+                </div>
+                <div class="slds-grid slds-wrap slds-col slds-size_3-of-12">
+                    <div class="slds-col slds-size_1-of-2 slds-p-horizontal_x-small">
+                        <label for="MailingState" class="slds-form-element__label">State / Province</label>
+                        <br />
+                        <lightning-formatted-text value={contact.MailingStateCode}></lightning-formatted-text>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 slds-p-horizontal_x-small">
+                        <label for="MailingPostalCode" class="slds-form-element__label">Zip/Postal Code</label>
+                        <br />
+                        <lightning-formatted-text value={contact.MailingPostalCode}></lightning-formatted-text>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <b>
+        HUD AMI
+    </b>
+    <div class="slds-grid slds-wrap top-spacing">
+        <div class="slds-col slds-size_12-of-12">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                    <label for="County" class="slds-form-element__label">County</label>
+                    <br />
+                    <lightning-formatted-text value={contact.County__c}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small left-spacing">
+                    <label for="Town" class="slds-form-element__label">Town</label>
+                    <br />
+                    <lightning-formatted-text value={contact.Town__c}></lightning-formatted-text>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <b>
+        Demographics
+    </b>
+    <!-- Demographics -->
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_12-of-12">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                    <label for="Race__c" class="slds-form-element__label">Race</label>
+                    <br />
+                    <lightning-formatted-text value={contact.Race__c}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="Ethnicity__c" class="slds-form-element__label">Ethnicity</label>
+                    <br />
+                    <lightning-formatted-text value={contact.Ethnicity__c}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="Gender__c" class="slds-form-element__label">Gender</label>
+                    <br />
+                    <lightning-formatted-text value={contact.Gender__c}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="MaritalStatus__c" class="slds-form-element__label">Marital Status</label>
+                    <br />
+                    <lightning-formatted-text value={contact.MaritalStatus__c}></lightning-formatted-text>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_12-of-12">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                    <label for="EnglishProficiency__c" class="slds-form-element__label">English Proficiency</label>
+                    <br />
+                    <lightning-formatted-text value={contact.EnglishProficiency__c}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="ActiveMilitary__c" class="slds-form-element__label">Active Military</label>
+                    <br />
+                    <lightning-formatted-text value={contact.ActiveMilitary__c}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="Veteran__c" class="slds-form-element__label">Veteran</label>
+                    <br />
+                    <lightning-formatted-text value={contact.Veteran__c}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="Gender__c" class="slds-form-element__label">Disabled Status</label>
+                    <br />
+                    <lightning-formatted-text value={contact.DisabledStatus__c}></lightning-formatted-text>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_12-of-12">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="X1stTimeHomeBuyer__c" class="slds-form-element__label">1st Time Home Buyer</label>
+                    <br />
+                    <lightning-formatted-text value={contact.X1stTimeHomeBuyer__c}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                    <label for="RuralAreaStatus__c" class="slds-form-element__label">Rural Area Status</label>
+                    <br />
+                    <lightning-formatted-text value={contact.RuralAreaStatus__c}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="HouseholdType__c" class="slds-form-element__label">Household Type</label>
+                    <br />
+                    <lightning-formatted-text value={contact.HouseholdType__c}></lightning-formatted-text>
+                </div>
+
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="HouseholdSize__c" class="slds-form-element__label">Household Size</label>
+                    <br />
+                    <lightning-formatted-text value={contact.HouseholdSize__c}></lightning-formatted-text>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_12-of-12">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="Education__c" class="slds-form-element__label">Education</label>
+                    <br />
+                    <lightning-formatted-text value={contact.Education__c}></lightning-formatted-text>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <b>
+        Financial
+    </b>
+    <!-- Financial -->
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_12-of-12">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                    <lightning-input type="checkbox" label="Chose Not to Provide Income"
+                        checked={contact.ChoseNottoProvideIncome__c} disabled></lightning-input>
+                </div>
+            </div>
+            <br/>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                    <label for="TotalMonthlyIncome__c" class="slds-form-element__label">Total Monthly Income</label>
+                    <br />
+                    <lightning-formatted-text value={contact.TotalMonthlyIncome__c}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                    <label for="NumberOfDependents__c" class="slds-form-element__label">Number of Dependents</label>
+                    <br />
+                    <lightning-formatted-text value={contact.NumberOfDependents__c}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                    <label for="CreditScore__c" class="slds-form-element__label">Credit Score</label>
+                    <br />
+                    <lightning-formatted-text value={contact.CreditScore__c}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                    <label for="EmploymentStatus__c" class="slds-form-element__label">Employment Status</label>
+                    <br />
+                    <lightning-formatted-text value={contact.EmploymentStatus__c}></lightning-formatted-text>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <!-- Address Details Sub-Section -->
+
+    <template if:false={hideCaseData}>
+        <div class="slds-border_top"></div>
+        <br />
+        <div class="slds-text-heading_small">
+            <b>Case</b>
+            <!-- Case Details Section -->
+        </div>
+        <br />
+        <b>Service</b>
+        <!-- Service Details Sub-Section -->
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_12-of-12">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_6-of-12 slds-p-right_x-small">
+                        <label for="casetype" class="slds-form-element__label">Case Type(s)</label>
+                        <br />
+                        <lightning-formatted-text value={caseTypesString}></lightning-formatted-text>
+                    </div>
+                    <div class="slds-col slds-size_6-of-12 slds-p-horizontal_x-small">
+                        <label for="referralSource" class="slds-form-element__label">Referral Source</label>
+                        <br />
+                        <lightning-formatted-text value={casedata.referralSource}></lightning-formatted-text>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <!-- Service Details Sub-Section -->
+        <b>Demographics</b>
+        <!-- Demographics Details Sub-Section -->
+        <br />
+        <div class="slds-col slds-size_12-of-12">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                    <label for="HouseholdType__c" class="slds-form-element__label">Household Type</label>
+                    <br />
+                    <lightning-formatted-text value={casedata.HouseholdType__c}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="HouseholdSize__c" class="slds-form-element__label">Household Size</label>
+                    <br />
+                    <lightning-formatted-text value={casedata.HouseholdSize__c}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="RuralAreaStatus__c" class="slds-form-element__label">Rural Area Status</label>
+                    <br />
+                    <lightning-formatted-text value={casedata.RuralAreaStatus__c}></lightning-formatted-text>
+                </div>
+            </div>
+        </div>
+        <br />
+        <b>Financial</b>
+        <!-- Financial Details Sub-Section -->
+        <br />
+        <div class="slds-col slds-size_12-of-12">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                    <label for="income" class="slds-form-element__label">Household Income Monthly</label>
+                    <br />
+                    <lightning-formatted-text value={casedata.income}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="CountyMSA__c" class="slds-form-element__label">County/MSA</label>
+                    <br />
+                    <lightning-formatted-text value={casedata.CountyMSA__c}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="currentResidence" class="slds-form-element__label">Current Residence</label>
+                    <br />
+                    <lightning-formatted-text value={casedata.CurrentResidence__c}></lightning-formatted-text>
+                </div>
+            </div>
+        </div>
+        <br />
+    </template>
+    <div class="slds-border_top"></div>
+    <!-- Financial Details Sub-Section -->
+    <br />
+    <!-- Case Details Section -->
+    <div class="slds-text-heading_small">
+        <b>Co-Applicants</b>
+        <!-- Co-Applicants Details Section -->
+    </div>
+    <br />
+    <template for:each={coapplicantlist} for:item="coapplicant">
+        <div key={coapplicant.index}>
+            <template if:false={isFirstRun}>
+                <div class="slds-border_top"></div>
+                <br />
+            </template>
+            <b>Co-Applicant {coapplicant.index}</b>
+            <br />
+            <div class="slds-col slds-size_1-of-1 slds-grid slds-wrap slds-m-vertical_x-small">
+                <div class="slds-col slds-size_2-of-8 slds-p-right_x-small">
+                    <label for="FirstName" class="slds-form-element__label">First Name</label><br />
+                    <lightning-formatted-text value={coapplicant.FirstName}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_2-of-8 slds-p-horizontal_x-small">
+                    <label for="MiddleName" class="slds-form-element__label">Middle Name</label><br />
+                    <lightning-formatted-text value={coapplicant.MiddleName}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_2-of-8 slds-p-horizontal_x-small">
+                    <label for="LastName" class="slds-form-element__label">Last Name</label><br />
+                    <lightning-formatted-text value={coapplicant.LastName}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_2-of-8 slds-p-horizontal_x-small">
+                    <label for="Suffix" class="slds-form-element__label">Suffix</label><br />
+                    <lightning-formatted-text value={coapplicant.Suffix}></lightning-formatted-text>
+                </div>
+            </div>
+            <br />
+            <div class="slds-col slds-size_12-of-12 slds-grid slds-wrap slds-m-bottom_x-small">
+                <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                    <label for="Email" class="slds-form-element__label">Email Address</label><br />
+                    <lightning-formatted-text value={coapplicant.Email}></lightning-formatted-text>
+                </div>
+                <div class="slds-grid slds-wrap slds-col slds-size_3-of-12">
+                    <div class="slds-col slds-size_1-of-2 slds-p-horizontal_x-small">
+                        <label for="Phone" class="slds-form-element__label">Phone Number</label>
+                        <br />
+                        <lightning-formatted-text value={coapplicant.Phone}></lightning-formatted-text>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 slds-p-horizontal_x-small">
+                        <label for="Besttimetocontact__c" class="slds-form-element__label">Best Contact Time</label>
+                        <br />
+                        <lightning-formatted-text value={coapplicant.Besttimetocontact__c}></lightning-formatted-text>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="PreferredLanguage__c" class="slds-form-element__label">Preferred Language</label><br />
+                    <lightning-formatted-text value={coapplicant.PreferredLanguage__c}></lightning-formatted-text>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small">
+                    <label for="RelationshipToPrimaryApplicant__c" class="slds-form-element__label">Relationship To
+                        Primary Applicant</label><br />
+                    <lightning-formatted-text
+                        value={coapplicant.RelationshipToPrimaryApplicant__c}></lightning-formatted-text>
+                </div>
+
+
+            </div>
+            <br />
+            <!-- Demographics -->
+            <div class="slds-col slds-size_1-of-1 slds-grid slds-wrap slds-grid_vertical slds-m-vertical_x-small">
+                <div class="slds-col">
+                    <div class="slds-text-title_bold slds-p-right_x-small">Demographics</div>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-grid slds-m-vertical_x-small">
+                    <div class="slds-col slds-size_2-of-8 slds-p-horizontal_x-small">
+                        <label for="Gender__c" class="slds-form-element__label">Gender</label><br />
+                        <lightning-formatted-text value={coapplicant.Gender__c}></lightning-formatted-text>
+                    </div>
+                    <div class="slds-col slds-size_2-of-8 slds-p-horizontal_x-small">
+                        <label for="MaritalStatus__c" class="slds-form-element__label">Marital Status</label><br />
+                        <lightning-formatted-text value={coapplicant.MaritalStatus__c}></lightning-formatted-text>
+                    </div>
+                    <div class="slds-col slds-size_2-of-8 slds-p-horizontal_x-small">
+                        <label for="EnglishProficiency__c" class="slds-form-element__label">English
+                            Proficiency</label><br />
+                        <lightning-formatted-text value={coapplicant.EnglishProficiency__c}></lightning-formatted-text>
+                    </div>
+                    <div class="slds-col slds-size_2-of-8 slds-p-horizontal_x-small">
+                        <label for="ActiveMilitary__c" class="slds-form-element__label">Active Military</label><br />
+                        <lightning-formatted-text value={coapplicant.ActiveMilitary__c}></lightning-formatted-text>
+                    </div>
+
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-grid slds-m-vertical_x-small">
+                    <div class="slds-col slds-size_2-of-8 slds-p-horizontal_x-small">
+                        <label for="Veteran__c" class="slds-form-element__label">Veteran</label><br />
+                        <lightning-formatted-text value={coapplicant.Gender__c}></lightning-formatted-text>
+                    </div>
+                    <div class="slds-col slds-size_2-of-8 slds-p-horizontal_x-small">
+                        <label for="X1stTimeHomeBuyer__c" class="slds-form-element__label">1st Time Home
+                            Buyer</label><br />
+                        <lightning-formatted-text value={coapplicant.X1stTimeHomeBuyer__c}></lightning-formatted-text>
+                    </div>
+                    <div class="slds-col slds-size_2-of-8 slds-p-horizontal_x-small">
+                        <label for="RuralAreaStatus__c" class="slds-form-element__label">Rural Area Status</label><br />
+                        <lightning-formatted-text value={coapplicant.RuralAreaStatus__c}></lightning-formatted-text>
+                    </div>
+                    <div class="slds-col slds-size_2-of-8 slds-p-horizontal_x-small">
+                        <label for="DisabledStatus__c" class="slds-form-element__label">Disabled Status</label><br />
+                        <lightning-formatted-text value={coapplicant.DisabledStatus__c}></lightning-formatted-text>
+                    </div>
+
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-grid slds-m-vertical_x-small">
+                    <div class="slds-col slds-size_2-of-8 slds-p-horizontal_x-small">
+                        <label for="Education__c" class="slds-form-element__label">Education</label><br />
+                        <lightning-formatted-text value={coapplicant.Education__c}></lightning-formatted-text>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <!-- Financial -->
+            <div class="slds-col slds-size_1-of-1 slds-grid slds-wrap slds-grid_vertical slds-m-vertical_x-small">
+                <div class="slds-col">
+                    <div class="slds-text-title_bold slds-p-right_x-small">Financial</div>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-grid slds-m-vertical_x-small">
+                    <div class="slds-col slds-size_2-of-8 slds-p-right_x-small">
+                        <label for="TotalMonthlyIncome__c" class="slds-form-element__label">Total Monthly
+                            Income</label><br />
+                        <lightning-formatted-text value={coapplicant.TotalMonthlyIncome__c}></lightning-formatted-text>
+                    </div>
+                    <div class="slds-col slds-size_2-of-8 slds-p-right_x-small">
+                        <label for="NumberOfDependents__c" class="slds-form-element__label">Number of
+                            Dependents</label><br />
+                            
+                        <lightning-formatted-text value={coapplicant.NumberOfDependents__c}></lightning-formatted-text>
+                    </div>
+                    <div class="slds-col slds-size_2-of-8 slds-p-right_x-small">
+                        <label for="CreditScore__c" class="slds-form-element__label">Credit Score</label><br />
+                        
+                        <lightning-formatted-text value={coapplicant.CreditScore__c}></lightning-formatted-text>
+                    </div>
+                    <div class="slds-col slds-size_2-of-8 slds-p-right_x-small">
+                        <label for="EmploymentStatus__c" class="slds-form-element__label">Employment
+                            Status</label><br />
+                        <lightning-formatted-text value={coapplicant.EmploymentStatus__c}></lightning-formatted-text>
+                    </div>
+                </div>
+            </div>
+            <!-- Address -->
+            <br />
+            <div class="slds-col slds-size_1-of-1 slds-grid slds-wrap slds-grid_vertical slds-m-vertical_x-small">
+                <div class="slds-col">
+                    <div class="slds-text-title_bold slds-p-right_x-small">Address</div>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-grid slds-wrap slds-m-vertical_x-small">
+                    <div class="slds-col slds-size_2-of-8 slds-p-right_x-small">
+                        <label for="MailingStreet" class="slds-form-element__label">Street</label><br />
+                        <lightning-formatted-text value={coapplicant.MailingStreet}></lightning-formatted-text>
+                    </div>
+                    <div class="slds-col slds-size_2-of-8 slds-p-horizontal_x-small">
+                        <label for="AddressLine2" class="slds-form-element__label">Address Line 2</label><br />
+                        <lightning-formatted-text value={coapplicant.MailingAddressLine2__c}></lightning-formatted-text>
+                    </div>
+                    <div class="slds-col slds-size_2-of-8 slds-p-horizontal_x-small">
+                        <label for="MailingCity" class="slds-form-element__label">City</label><br />
+                        <lightning-formatted-text value={coapplicant.MailingCity}></lightning-formatted-text>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8 slds-p-horizontal_x-small">
+                        <label for="MailingStateCode" class="slds-form-element__label">State / Province</label><br />
+                        <lightning-formatted-text value={coapplicant.MailingStateCode}></lightning-formatted-text>
+                    </div>
+                    <div class="slds-col slds-size_1-of-8 slds-p-horizontal_x-small">
+                        <label for="MailingPostalCode" class="slds-form-element__label">ZIP/Postal Code</label><br />
+                        <lightning-formatted-text value={coapplicant.MailingPostalCode}></lightning-formatted-text>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</template>

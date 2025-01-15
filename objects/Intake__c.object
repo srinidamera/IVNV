@@ -1,0 +1,1614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Intake_Record_Page2</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>Intake</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Intake</fullName>
+        <fields>IntakeRequestName__c</fields>
+        <fields>PrimaryClient__c</fields>
+        <fields>Status__c</fields>
+        <fields>IntakeDate__c</fields>
+        <fields>OwnerId</fields>
+        <label>Intake</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>To capture and store initial information about clients/prospects during the intake process including New Intake, New Education Only, and New Emergency Triage.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>AMIAtStartOfClientCase__c</fullName>
+        <label>AMI at Start of Client Case</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Below 30% of AMI</fullName>
+                    <default>false</default>
+                    <label>Below 30% of AMI</label>
+                </value>
+                <value>
+                    <fullName>30% - 49% AMI</fullName>
+                    <default>false</default>
+                    <label>30% - 49% AMI</label>
+                </value>
+                <value>
+                    <fullName>50% - 79% AMI</fullName>
+                    <default>false</default>
+                    <label>50% - 79% AMI</label>
+                </value>
+                <value>
+                    <fullName>80% - 100% AMI</fullName>
+                    <default>false</default>
+                    <label>80% - 100% AMI</label>
+                </value>
+                <value>
+                    <fullName>101% - 120% AMI</fullName>
+                    <default>false</default>
+                    <label>101% - 120% AMI</label>
+                </value>
+                <value>
+                    <fullName>Above 120% of AMI</fullName>
+                    <default>false</default>
+                    <label>Above 120% of AMI</label>
+                </value>
+                <value>
+                    <fullName>Chose not to respond</fullName>
+                    <default>false</default>
+                    <label>Chose not to respond</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ActiveMilitary__c</fullName>
+        <label>Active Military</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Not available</fullName>
+                    <default>false</default>
+                    <label>Not available</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AddressLine2__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Line 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Address__c</fullName>
+        <label>Address</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Address</type>
+    </fields>
+    <fields>
+        <fullName>AnnualHouseholdIncome__c</fullName>
+        <formula>HouseholdMonthlyIncome__c * 12</formula>
+        <label>Annual Household Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AreaMedianIncome__c</fullName>
+        <label>Area Median Income</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Below 30% of AMI</fullName>
+                    <default>false</default>
+                    <label>Below 30% of AMI</label>
+                </value>
+                <value>
+                    <fullName>30 - 49% of AMI</fullName>
+                    <default>false</default>
+                    <label>30 - 49% of AMI</label>
+                </value>
+                <value>
+                    <fullName>50 - 79% of AMI</fullName>
+                    <default>false</default>
+                    <label>50 - 79% of AMI</label>
+                </value>
+                <value>
+                    <fullName>80 - 100% of AMI</fullName>
+                    <default>false</default>
+                    <label>80 - 100% of AMI</label>
+                </value>
+                <value>
+                    <fullName>101% - 120% of AMI</fullName>
+                    <default>false</default>
+                    <label>101% - 120% of AMI</label>
+                </value>
+                <value>
+                    <fullName>Above 120% of AMI</fullName>
+                    <default>false</default>
+                    <label>Above 120% of AMI</label>
+                </value>
+                <value>
+                    <fullName>Chose not to respond</fullName>
+                    <default>false</default>
+                    <label>Chose not to respond</label>
+                </value>
+                <value>
+                    <fullName>Above 100% AMI</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Above 100% AMI</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CaseSubType__c</fullName>
+        <label>Case Sub Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>NW Rehab</fullName>
+                    <default>true</default>
+                    <label>NW Rehab</label>
+                </value>
+                <value>
+                    <fullName>NW Refinance Non-Foreclosure</fullName>
+                    <default>false</default>
+                    <label>NW Refinance Non-Foreclosure</label>
+                </value>
+                <value>
+                    <fullName>NW Client Other Based Services</fullName>
+                    <default>false</default>
+                    <label>NW Client Other Based Services</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CaseType__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Case Type</label>
+        <referenceTo>CaseType__c</referenceTo>
+        <relationshipName>Intakes</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ChoseNottoProvideIncome__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Chose Not to Provide Income</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ClientCaseClosedDate__c</fullName>
+        <label>Client Case Closed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ClientHUDAssistance__c</fullName>
+        <label>Client HUD Assistance</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Rental Voucher</fullName>
+                    <default>false</default>
+                    <label>Rental Voucher</label>
+                </value>
+                <value>
+                    <fullName>Place Based Rental Assistance</fullName>
+                    <default>false</default>
+                    <label>Place Based Rental Assistance</label>
+                </value>
+                <value>
+                    <fullName>Home Ownership Voucher</fullName>
+                    <default>false</default>
+                    <label>Home Ownership Voucher</label>
+                </value>
+                <value>
+                    <fullName>Purchase REO Property</fullName>
+                    <default>false</default>
+                    <label>Purchase REO Property</label>
+                </value>
+                <value>
+                    <fullName>Down Payment Assistance</fullName>
+                    <default>false</default>
+                    <label>Down Payment Assistance</label>
+                </value>
+                <value>
+                    <fullName>Other HUD Program</fullName>
+                    <default>false</default>
+                    <label>Other HUD Program</label>
+                </value>
+                <value>
+                    <fullName>Not Applicable</fullName>
+                    <default>false</default>
+                    <label>Not Applicable</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ClientNumber__c</fullName>
+        <externalId>false</externalId>
+        <formula>Household__r.ClientNumber__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Client #</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ColoniasResidence__c</fullName>
+        <label>Colonias Residence</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ContactType__c</fullName>
+        <externalId>false</externalId>
+        <formula>PrimaryClient__r.RecordType.DeveloperName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CounselorName__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.FirstName &amp; &quot; &quot; &amp; Owner:User.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Assigned Counselor</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CountyMSA__c</fullName>
+        <externalId>false</externalId>
+        <label>County/MSA</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>County__c</fullName>
+        <externalId>false</externalId>
+        <label>County</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CreditScore__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit Score</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CurrentResidence__c</fullName>
+        <label>Current Residence</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>CurrentResidenceClientCase</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DateAMILastCalculated__c</fullName>
+        <label>Date AMI Last Calculated</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DisabledStatus__c</fullName>
+        <label>Disabled Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Education__c</fullName>
+        <label>Education</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Education</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Employment_Status__c</fullName>
+        <label>Employment Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Employed Full-Time</fullName>
+                    <default>false</default>
+                    <label>Employed Full-Time</label>
+                </value>
+                <value>
+                    <fullName>Employed Part-Time</fullName>
+                    <default>false</default>
+                    <label>Employed Part-Time</label>
+                </value>
+                <value>
+                    <fullName>Unemployed AND Looking for Work</fullName>
+                    <default>false</default>
+                    <label>Unemployed AND Looking for Work</label>
+                </value>
+                <value>
+                    <fullName>Unable to Work Due to Disability</fullName>
+                    <default>false</default>
+                    <label>Unable to Work Due to Disability</label>
+                </value>
+                <value>
+                    <fullName>Stay-at-Home Caregiver OR Parent</fullName>
+                    <default>false</default>
+                    <label>Stay-at-Home Caregiver OR Parent</label>
+                </value>
+                <value>
+                    <fullName>Retired</fullName>
+                    <default>false</default>
+                    <label>Retired</label>
+                </value>
+                <value>
+                    <fullName>Student</fullName>
+                    <default>false</default>
+                    <label>Student</label>
+                </value>
+                <value>
+                    <fullName>Employed Full-Time AND Student</fullName>
+                    <default>false</default>
+                    <label>Employed Full-Time AND Student</label>
+                </value>
+                <value>
+                    <fullName>Employed Part-Time AND Student</fullName>
+                    <default>false</default>
+                    <label>Employed Part-Time AND Student</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EnglishProficiency__c</fullName>
+        <description>HUD-Defined English Proficiency</description>
+        <inlineHelpText>English Proficiency of the primary client</inlineHelpText>
+        <label>English Proficiency</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Limited_English_Proficiency_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Ethnicity__c</fullName>
+        <label>Ethnicity</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Ethnicity</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EvaluateHUDAMI__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>EvaluateHUDAMI</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ExternalID__c</fullName>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FarmWorker__c</fullName>
+        <label>Farm Worker</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Financial_Capability_Goals__c</fullName>
+        <label>Financial Capability Goals</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Credit Score and/or resolved credit issues</fullName>
+                    <default>false</default>
+                    <label>Credit Score and/or resolved credit issues</label>
+                </value>
+                <value>
+                    <fullName>Establish credit history</fullName>
+                    <default>false</default>
+                    <label>Establish credit history</label>
+                </value>
+                <value>
+                    <fullName>Fewer debts past-due</fullName>
+                    <default>false</default>
+                    <label>Fewer debts past-due</label>
+                </value>
+                <value>
+                    <fullName>Increase savings</fullName>
+                    <default>false</default>
+                    <label>Increase savings</label>
+                </value>
+                <value>
+                    <fullName>Spend less on financial services</fullName>
+                    <default>false</default>
+                    <label>Spend less on financial services</label>
+                </value>
+                <value>
+                    <fullName>Increase amount of appropriate insurance coverage</fullName>
+                    <default>false</default>
+                    <label>Increase amount of appropriate insurance coverage</label>
+                </value>
+                <value>
+                    <fullName>Have sufficient savings to cover at least three months of basic living expenses</fullName>
+                    <default>false</default>
+                    <label>Have sufficient savings to cover at least three months of basic living expenses</label>
+                </value>
+                <value>
+                    <fullName>Establish savings for a specific goal</fullName>
+                    <default>false</default>
+                    <label>Establish savings for a specific goal</label>
+                </value>
+                <value>
+                    <fullName>Increased in tax benefit</fullName>
+                    <default>false</default>
+                    <label>Increased in tax benefit</label>
+                </value>
+                <value>
+                    <fullName>Stabilize housing (at risk of eviction or foreclosure)</fullName>
+                    <default>false</default>
+                    <label>Stabilize housing (at risk of eviction or foreclosure)</label>
+                </value>
+                <value>
+                    <fullName>Increase access to credit</fullName>
+                    <default>false</default>
+                    <label>Increase access to credit</label>
+                </value>
+                <value>
+                    <fullName>Fewer accounts in collections</fullName>
+                    <default>false</default>
+                    <label>Fewer accounts in collections</label>
+                </value>
+                <value>
+                    <fullName>Reduce level of debt</fullName>
+                    <default>false</default>
+                    <label>Reduce level of debt</label>
+                </value>
+                <value>
+                    <fullName>Increase net worth</fullName>
+                    <default>false</default>
+                    <label>Increase net worth</label>
+                </value>
+                <value>
+                    <fullName>Engage in new financial products</fullName>
+                    <default>false</default>
+                    <label>Engage in new financial products</label>
+                </value>
+                <value>
+                    <fullName>Increase ability to manage fluctuations income</fullName>
+                    <default>false</default>
+                    <label>Increase ability to manage fluctuations income</label>
+                </value>
+                <value>
+                    <fullName>Decrease costs of tax filing</fullName>
+                    <default>false</default>
+                    <label>Decrease costs of tax filing</label>
+                </value>
+                <value>
+                    <fullName>Optimize public benefits portfolio</fullName>
+                    <default>false</default>
+                    <label>Optimize public benefits portfolio</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Funder__c</fullName>
+        <label>Funder</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>FHA</fullName>
+                    <default>false</default>
+                    <label>FHA</label>
+                </value>
+                <value>
+                    <fullName>FHLMC</fullName>
+                    <default>false</default>
+                    <label>FHLMC</label>
+                </value>
+                <value>
+                    <fullName>Glendale</fullName>
+                    <default>false</default>
+                    <label>Glendale</label>
+                </value>
+                <value>
+                    <fullName>HASC-West-1</fullName>
+                    <default>false</default>
+                    <label>HASC-West-1</label>
+                </value>
+                <value>
+                    <fullName>HFM</fullName>
+                    <default>false</default>
+                    <label>HFM</label>
+                </value>
+                <value>
+                    <fullName>HUD</fullName>
+                    <default>false</default>
+                    <label>HUD</label>
+                </value>
+                <value>
+                    <fullName>IDA Program</fullName>
+                    <default>false</default>
+                    <label>IDA Program</label>
+                </value>
+                <value>
+                    <fullName>LEAD</fullName>
+                    <default>false</default>
+                    <label>LEAD</label>
+                </value>
+                <value>
+                    <fullName>Lexington</fullName>
+                    <default>false</default>
+                    <label>Lexington</label>
+                </value>
+                <value>
+                    <fullName>Louisville</fullName>
+                    <default>false</default>
+                    <label>Louisville</label>
+                </value>
+                <value>
+                    <fullName>Low Mod Builders</fullName>
+                    <default>false</default>
+                    <label>Low Mod Builders</label>
+                </value>
+                <value>
+                    <fullName>NeighborWorks</fullName>
+                    <default>false</default>
+                    <label>NeighborWorks</label>
+                </value>
+                <value>
+                    <fullName>Section 8 HACSJ</fullName>
+                    <default>false</default>
+                    <label>Section 8 HACSJ</label>
+                </value>
+                <value>
+                    <fullName>Wells Fargo</fullName>
+                    <default>false</default>
+                    <label>Wells Fargo</label>
+                </value>
+                <value>
+                    <fullName>World Bank</fullName>
+                    <default>false</default>
+                    <label>World Bank</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Gender__c</fullName>
+        <label>Gender</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Gender</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HouseholdMonthlyIncome__c</fullName>
+        <label>Household Monthly Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HouseholdOfAMI__c</fullName>
+        <label>Household % Of AMI</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>HouseholdSize__c</fullName>
+        <externalId>false</externalId>
+        <label>Household Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HouseholdType__c</fullName>
+        <label>Household Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>MaritalStatus__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>HouseholdTypeHeadofHousehold</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Single</controllingFieldValue>
+                <controllingFieldValue>Divorced</controllingFieldValue>
+                <controllingFieldValue>Widowed</controllingFieldValue>
+                <controllingFieldValue>Unknown</controllingFieldValue>
+                <controllingFieldValue>Choose not to respond</controllingFieldValue>
+                <valueName>Single adult</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Single</controllingFieldValue>
+                <controllingFieldValue>Divorced</controllingFieldValue>
+                <controllingFieldValue>Widowed</controllingFieldValue>
+                <controllingFieldValue>Unknown</controllingFieldValue>
+                <controllingFieldValue>Separated</controllingFieldValue>
+                <controllingFieldValue>Choose not to respond</controllingFieldValue>
+                <valueName>Female-headed single parent household</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Single</controllingFieldValue>
+                <controllingFieldValue>Divorced</controllingFieldValue>
+                <controllingFieldValue>Widowed</controllingFieldValue>
+                <controllingFieldValue>Unknown</controllingFieldValue>
+                <controllingFieldValue>Separated</controllingFieldValue>
+                <controllingFieldValue>Choose not to respond</controllingFieldValue>
+                <valueName>Male-headed single parent household</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Single</controllingFieldValue>
+                <controllingFieldValue>Divorced</controllingFieldValue>
+                <controllingFieldValue>Widowed</controllingFieldValue>
+                <controllingFieldValue>Unknown</controllingFieldValue>
+                <controllingFieldValue>Separated</controllingFieldValue>
+                <controllingFieldValue>Choose not to respond</controllingFieldValue>
+                <valueName>Two or more unrelated Adults</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Single</controllingFieldValue>
+                <controllingFieldValue>Divorced</controllingFieldValue>
+                <controllingFieldValue>Married</controllingFieldValue>
+                <controllingFieldValue>Widowed</controllingFieldValue>
+                <controllingFieldValue>Unknown</controllingFieldValue>
+                <controllingFieldValue>Separated</controllingFieldValue>
+                <controllingFieldValue>Choose not to respond</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Married</controllingFieldValue>
+                <controllingFieldValue>Unknown</controllingFieldValue>
+                <controllingFieldValue>Choose not to respond</controllingFieldValue>
+                <valueName>Married without dependents</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Married</controllingFieldValue>
+                <controllingFieldValue>Unknown</controllingFieldValue>
+                <controllingFieldValue>Choose not to respond</controllingFieldValue>
+                <valueName>Married with dependents</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Household__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Household</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Intake_Only</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IntakeDate__c</fullName>
+        <label>Intake Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IntakeRequestName__c</fullName>
+        <externalId>false</externalId>
+        <formula>PrimaryClient__r.LastName + &quot;, &quot;+ IF(ISNULL(PrimaryClient__r.FirstName) ,&apos;&apos;,MID(PrimaryClient__r.FirstName, 0, 1)) + &quot; - &quot;+ text(DATEVALUE(CreatedDate)) +&quot; - &quot;+ CaseType__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Intake Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MaritalStatus__c</fullName>
+        <label>Marital Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>MaritalStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MarketingCommunicationsOptOut__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Marketing Communications Opt-Out</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MetropolitanStatisticalArea__c</fullName>
+        <externalId>false</externalId>
+        <label>Metropolitan Statistical Area</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MonthlyCreditorsDebt__c</fullName>
+        <label>Monthly Creditor’s Debt</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>MonthlyIncome__c</fullName>
+        <label>Total Monthly Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>NumberofDependents__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Dependents</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OccupationStartDate__c</fullName>
+        <label>Occupation Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Occupation__c</fullName>
+        <externalId>false</externalId>
+        <label>Occupation</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PortalIntake__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Portal Intake</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PreCounselingCreditScore__c</fullName>
+        <externalId>false</externalId>
+        <label>Pre-Counseling Credit Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PreCounselingHouseholdDebt__c</fullName>
+        <label>Pre-Counseling Household Debt</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PreCounselingResidenceType__c</fullName>
+        <label>Pre-Counseling Residence Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Rent from a property owned/managed by your organization</fullName>
+                    <default>false</default>
+                    <label>Rent from a property owned/managed by your organization</label>
+                </value>
+                <value>
+                    <fullName>Rent from a property not owned/managed by your organization</fullName>
+                    <default>false</default>
+                    <label>Rent from a property not owned/managed by your organization</label>
+                </value>
+                <value>
+                    <fullName>Own</fullName>
+                    <default>false</default>
+                    <label>Own</label>
+                </value>
+                <value>
+                    <fullName>Live with Family Rent-Free</fullName>
+                    <default>false</default>
+                    <label>Live with Family Rent-Free</label>
+                </value>
+                <value>
+                    <fullName>Other Residence</fullName>
+                    <default>false</default>
+                    <label>Other Residence</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PreCounselingSavings__c</fullName>
+        <label>Pre-Counseling Savings</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PrimaryClient__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>Intake_Only</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Purpose__c</fullName>
+        <label>HUD Purpose</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Homeless Assistance</fullName>
+                    <default>false</default>
+                    <label>Homeless Assistance</label>
+                </value>
+                <value>
+                    <fullName>Pre-purchase/Homebuying</fullName>
+                    <default>false</default>
+                    <label>Pre-purchase/Homebuying</label>
+                </value>
+                <value>
+                    <fullName>Rental Topics</fullName>
+                    <default>false</default>
+                    <label>Rental Topics</label>
+                </value>
+                <value>
+                    <fullName>Non-Delinquency Post-Purchase</fullName>
+                    <default>false</default>
+                    <label>Non-Delinquency Post-Purchase</label>
+                </value>
+                <value>
+                    <fullName>Reverse Mortgage</fullName>
+                    <default>false</default>
+                    <label>Reverse Mortgage</label>
+                </value>
+                <value>
+                    <fullName>Resolving or Preventing Forward Mortgage Delinquency or Default</fullName>
+                    <default>false</default>
+                    <label>Resolving or Preventing Forward Mortgage Delinquency or Default</label>
+                </value>
+                <value>
+                    <fullName>Resolving or Preventing Reverse Mortgage Delinquency or Default</fullName>
+                    <default>false</default>
+                    <label>Resolving or Preventing Reverse Mortgage Delinquency or Default</label>
+                </value>
+                <value>
+                    <fullName>Disaster Preparedness Assistance</fullName>
+                    <default>false</default>
+                    <label>Disaster Preparedness Assistance</label>
+                </value>
+                <value>
+                    <fullName>Disaster Recovery Assistance</fullName>
+                    <default>false</default>
+                    <label>Disaster Recovery Assistance</label>
+                </value>
+                <value>
+                    <fullName>Not HUD-Reportable</fullName>
+                    <default>false</default>
+                    <label>Not HUD-Reportable</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Race__c</fullName>
+        <label>Race</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Race</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ReferralSource__c</fullName>
+        <label>Referral Source</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ReferralSource</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RuralAreaStatus__c</fullName>
+        <label>Rural Area Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Rural_Area_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <label>Intake Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>On Hold</fullName>
+                    <default>false</default>
+                    <label>On Hold</label>
+                </value>
+                <value>
+                    <fullName>Closed - Incomplete</fullName>
+                    <default>false</default>
+                    <label>Closed - Incomplete</label>
+                </value>
+                <value>
+                    <fullName>Open Intake</fullName>
+                    <default>true</default>
+                    <label>Open Intake</label>
+                </value>
+                <value>
+                    <fullName>Open Case</fullName>
+                    <default>false</default>
+                    <label>Open Case</label>
+                </value>
+                <value>
+                    <fullName>Converted</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Converted</label>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>New</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Town__c</fullName>
+        <externalId>false</externalId>
+        <label>Town</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ValidationCombined__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( isInvalidZip__c,&apos;Invalid Zip Code/County/Town Entered!&apos; , IF(EvaluateHUDAMI__c , &apos;Please Search County By Zip Code to Calculate HUD AMI&apos;, &apos;NO ERROR&apos;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Validation Combined</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Veteran__c</fullName>
+        <label>Veteran</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Veteran</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>X1stTimeHomeBuyer__c</fullName>
+        <label>1st Time Home Buyer</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Not available</fullName>
+                    <default>false</default>
+                    <label>Not available</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>isInvalidZip__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>isInvalidZip</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Intake</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>IntakeRequestName__c</columns>
+        <columns>Status__c</columns>
+        <columns>PrimaryClient__c</columns>
+        <columns>ContactType__c</columns>
+        <columns>IntakeDate__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CounselorName__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>ConvertedIntakeCase</fullName>
+        <columns>NAME</columns>
+        <columns>IntakeRequestName__c</columns>
+        <columns>Status__c</columns>
+        <columns>PrimaryClient__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Open Case</value>
+        </filters>
+        <label>Converted Intake Case</label>
+    </listViews>
+    <listViews>
+        <fullName>NewIntakeCases</fullName>
+        <columns>NAME</columns>
+        <columns>IntakeRequestName__c</columns>
+        <columns>Status__c</columns>
+        <columns>PrimaryClient__c</columns>
+        <columns>ContactType__c</columns>
+        <columns>IntakeDate__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CounselorName__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Open Case,Closed - Incomplete</value>
+        </filters>
+        <label>New Intake Cases</label>
+    </listViews>
+    <nameField>
+        <displayFormat>IN-{0000}</displayFormat>
+        <label>Intake</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Intakes</pluralLabel>
+    <searchLayouts>
+        <searchResultsAdditionalFields>IntakeRequestName__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CaseType__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PrimaryClient__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ContactType__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>IntakeDate__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CounselorName__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>CreditScoreFormat</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+NOT($Setup.AutomationBypass__c.IntakeAutomationBypass__c),
+NOT(ISBLANK(CreditScore__c)) &amp;&amp; NOT( REGEX(TEXT(CreditScore__c), &quot;[0-9]{3}&quot;) )
+)</errorConditionFormula>
+        <errorDisplayField>CreditScore__c</errorDisplayField>
+        <errorMessage>Credit Score must be 3 Digit</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>HouseholdSizeLimitRule</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+NOT($Setup.AutomationBypass__c.IntakeAutomationBypass__c),OR( (HouseholdSize__c &lt; 1), (HouseholdSize__c &gt; 99))
+)</errorConditionFormula>
+        <errorDisplayField>HouseholdSize__c</errorDisplayField>
+        <errorMessage>Household size should be between 1 to 99</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>NewAppointment</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>New Appointment</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/lightning/cmp/sumoapp__inviteManagerCmp?sumoapp__relatedRecordId={!Intake__c.Id}&amp;sumoapp__type=ScheduleNow&amp;sumoapp__whereType=VID_CONFERENCE&amp;sumoapp__primaryParticipantId={!Intake__c.PrimaryClientId__c}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>OfferAnAppointment</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Offer an Appointment</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/lightning/cmp/sumoapp__inviteManagerCmp?sumoapp__relatedRecordId={!Intake__c.Id}&amp;sumoapp__type=EmailInvite&amp;sumoapp__whereType=VID_CONFERENCE&amp;sumoapp__primaryParticipantId={!Intake__c.PrimaryClientId__c}</url>
+    </webLinks>
+</CustomObject>

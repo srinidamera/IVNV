@@ -1,0 +1,166 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Profile",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"75983edf-346d-407f-a1d2-cbf290bd05ea\",\"columns\":[{\"UUID\":\"8c99b508-20fb-41d8-8dd2-b9129d977ce0\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "bannerImgSrcKey" : "MCGJNT5A4FR5HLFJIYRG7PO7PH4Y",
+                "description" : "Update your data profile, contact preferences, and documents here",
+                "redirectToPage" : "Home",
+                "title" : "My Profile",
+                "useHyperlinkTitle" : "No"
+              },
+              "definition" : "c:bannerSection",
+              "id" : "39a0fe31-f119-4948-8b59-65e9bafcc55e",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "tabLabel1" : "Profile",
+                "tabLabel2" : "Tasks",
+                "tabLabel3" : ""
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "activeMilitaryFieldLabel" : "Active Military",
+                    "addressLine2FieldLabel" : "Address Line 2",
+                    "bestTimeToCallLabel" : "Best Time to Call",
+                    "birthdateFieldLabel" : "Birthdate",
+                    "cityFieldLabel" : "City",
+                    "coApplicantLabel" : "Co-Applicant",
+                    "communityFieldLabel" : "Community",
+                    "contactAddresssLabel" : "Address",
+                    "contactDemographicsLabel" : "Demographics",
+                    "contactFinancesLabel" : "Finances",
+                    "contactHeadingLabel" : "Contact",
+                    "creditScoreFieldLabel" : "Credit Score",
+                    "educationFieldLabel" : "Education",
+                    "emailAddressLabel" : "Email Address",
+                    "employmentStatusFieldLabel" : "Employment Status",
+                    "ethnicityFieldLabel" : "Ethnicity",
+                    "firstTimeHomeBuyerFieldLabel" : "1st Time Home Buyer",
+                    "fluencyInEnglishFieldLabel" : "Fluency in English",
+                    "genderFieldLabel" : "Gender",
+                    "goBackLabel" : "Go Back",
+                    "householdIncomeFieldLabel" : "Household Income",
+                    "householdSizeFieldLabel" : "Household Size",
+                    "householdTypeFieldLabel" : "Household Type/Head of Household",
+                    "legallyDisabledFieldLabel" : "Legally Disabled",
+                    "maritalStatusFieldLabel" : "Marital Status",
+                    "nameFieldLabel" : "Name",
+                    "noOfDependentsFieldLabel" : "Number of Dependents",
+                    "phoneNumberLabel" : "Phone Number",
+                    "preferredLanguageLabel" : "Preferred Communication Language",
+                    "primaryContactLabel" : "Primary Contact",
+                    "raceFieldLabel" : "Race",
+                    "relationshipToClientFieldLabel" : "Relationship to Client",
+                    "requestSupportBtnLabel" : "Contact Us",
+                    "stateFieldLabel" : "State / Province",
+                    "streetFieldLabel" : "Street Address",
+                    "suffixLabel" : "Suffix",
+                    "totalMonthlyIncomeFieldLabel" : "Current Gross Monthly Income",
+                    "zipCodeFieldLabel" : "Zip / Postal Code"
+                  },
+                  "definition" : "c:profileDetails",
+                  "id" : "ac748f0f-91a6-4644-b6e9-4358c785fe3b",
+                  "type" : "component"
+                } ],
+                "id" : "48b8a1c4-1fa8-435a-acb9-7bcc7a1c9ef0",
+                "name" : "Tab-1",
+                "title" : "Tab-1",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "backBtnLabel" : "Go Back",
+                    "labelCompleted" : "Completed",
+                    "labelDueDate" : "Due Date",
+                    "labelInProgress" : "In Progress",
+                    "labelLastUpdated" : "Last Updated",
+                    "labelMyTasks" : "My Tasks",
+                    "labelNotStarted" : "Not Started",
+                    "labelTaskDescription" : "Task Description",
+                    "labelViewDetails" : "View Details",
+                    "noTasksMsg" : "You don't have any tasks as of now.",
+                    "pageType" : "Profile",
+                    "showBackBtn" : true,
+                    "showHeaderDetailsHyperlink" : false,
+                    "tileHeight" : 115
+                  },
+                  "definition" : "c:userTasks",
+                  "id" : "4472a9b1-5f76-47c8-a13b-427b9ce35f41",
+                  "type" : "component"
+                } ],
+                "id" : "f9650d98-5c40-49cd-934d-9b0350902bf2",
+                "name" : "Tab-2",
+                "title" : "Tab-2",
+                "type" : "region"
+              }, {
+                "id" : "0b5a4918-a925-4cbc-8462-2c7d1d2fbf52",
+                "name" : "Tab-3",
+                "title" : "Tab-3",
+                "type" : "region"
+              } ],
+              "customCssClasses" : "tabset-style",
+              "definition" : "c:customTabset",
+              "id" : "982be784-6985-40bd-abef-4c469df98eed",
+              "type" : "component"
+            } ],
+            "id" : "8c99b508-20fb-41d8-8dd2-b9129d977ce0",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "75983edf-346d-407f-a1d2-cbf290bd05ea",
+          "scopedBrandingSetId" : "Compass_Portal",
+          "type" : "component"
+        } ],
+        "id" : "b574c40a-e9e2-48d0-a418-d32fae64dd0d",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Profile",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "6abb4fe7-e75c-4472-9f62-c0b6bd403915",
+          "type" : "component"
+        } ],
+        "id" : "48a0e48e-9198-4dbc-ad42-037f7ce48141",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "6230745e-53a3-4a66-9bfa-8ae8da964faa",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-profile"
+  },
+  "urlName" : "profile"
+}

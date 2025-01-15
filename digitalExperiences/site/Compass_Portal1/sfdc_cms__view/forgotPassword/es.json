@@ -1,0 +1,27 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Forgot Password",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "backButtonLabel" : "Volver",
+          "fieldLabel" : "Dirección de correo electrónico",
+          "headerDescription" : "Por favor, ingrese su dirección de correo electrónico. Si existe un contacto, le enviaremos un enlace de recuperación.",
+          "headerText" : "Olvidó su contraseña",
+          "resendButtonLabel" : "Reenviar enlace de recuperación",
+          "sendButtonLabel" : "Enviar enlace de recuperación",
+          "emailSuccessfullyTriggeredMsg" : "Se te ha enviado un correo electrónico con un enlace para cambiar tu contraseña.",
+          "emailSentLabel" : "Correo electrónico enviado"
+        },
+        "id" : "34b01d05-fb45-4855-be0e-58ff7ff5ee81"
+      }, {
+        "attributes" : {
+          "pageTitle" : "¿Olvidó Su Contraseña?"
+        },
+        "id" : "85aedaec-7ca1-4e8e-8160-3c8046fa7d1e"
+      } ]
+    }
+  },
+  "urlName" : "forgot-password"
+}

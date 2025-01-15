@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>sumoapp__AppointmentReminder</letterhead>
+    <name>Appointment Reminder (Customer)</name>
+    <style>freeForm</style>
+    <subject>Appointment Reminder with {!Event.sumoapp__OrganizerFullName__c}</subject>
+    <textOnly>Hi &lt;%attendeeName%&gt;,
+
+You have been scheduled for the following appointment.
+
+Appointment: {!Event.Subject}
+&lt;%locationFields%&gt;
+Date/Time: {!Event.sumoapp__StartDateTimeTimezone__c}
+Duration: {!Event.DurationInMinutes} min
+
+
+Thank you,
+{!Organization.Name}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

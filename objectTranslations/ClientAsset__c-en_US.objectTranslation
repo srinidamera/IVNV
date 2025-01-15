@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Client Asset</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Client Assets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Balance --></label>
+        <name>AccountBalance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>AccountName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>AccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Type --></label>
+        <name>AssetType__c</name>
+        <picklistValues>
+            <masterLabel>Certificate of Deoposit - CDs</masterLabel>
+            <translation><!-- Certificate of Deoposit - CDs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checking</masterLabel>
+            <translation><!-- Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Sweat Equity</masterLabel>
+            <translation><!-- Client Sweat Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Educational Saving Programs</masterLabel>
+            <translation><!-- Educational Saving Programs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IRA/Keogh Accounts</masterLabel>
+            <translation><!-- IRA/Keogh Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investments</masterLabel>
+            <translation><!-- Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mattress Money</masterLabel>
+            <translation><!-- Mattress Money --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retirement (401k/ESOP/SEP/Other)</masterLabel>
+            <translation><!-- Retirement (401k/ESOP/SEP/Other) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings</masterLabel>
+            <translation><!-- Savings --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Automobile Make --></label>
+        <name>AutomobileMake__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Deposit --></label>
+        <name>CashDeposit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Value --></label>
+        <name>CashValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Case --></label>
+        <name>ClientCase__c</name>
+        <relationshipLabel><!-- Client Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Client Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Face Value --></label>
+        <name>FaceValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model Year --></label>
+        <name>ModelYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Gross Rental Income --></label>
+        <name>MonthlyGrossRentalIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Mortgage Payment --></label>
+        <name>MonthlyMortgagePayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Tax, Insurance, &amp; Maintenance --></label>
+        <name>MonthlyTaxInsuranceMaintenance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of Holder --></label>
+        <name>NameofHolder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Units --></label>
+        <name>NumberofUnits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Present Market Value --></label>
+        <name>PresentMarketValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Type --></label>
+        <name>PropertyType__c</name>
+        <picklistValues>
+            <masterLabel>Commercial</masterLabel>
+            <translation><!-- Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential</masterLabel>
+            <translation><!-- Residential --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Liens --></label>
+        <name>TotalLines__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>Value__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Automobiles --></label>
+        <name>Automobiles</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Earnest Money --></label>
+        <name>Earnest_Money</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Life Insurance --></label>
+        <name>Life_Insurance</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Liquid Assets --></label>
+        <name>Liquid_Assets</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Real Estate --></label>
+        <name>Real_Estate</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

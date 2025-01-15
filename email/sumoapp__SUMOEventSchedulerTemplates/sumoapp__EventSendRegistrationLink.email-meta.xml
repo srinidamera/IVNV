@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sumo Event Registration</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>sumoapp__EventRegistrationPayment</letterhead>
+    <name>Send Registration Link Email(Customer)</name>
+    <style>freeForm</style>
+    <subject>{!Organization.Name} - Registration Link</subject>
+    <textOnly>Event Name: {!Event.Subject}
+    Date/Time: &lt;%datetime%&gt;
+    Duration: {!Event.DurationInMinutes} min
+    &lt;%locationFields%&gt;
+    &lt;%rooms%&gt;
+    &lt;%resources%&gt;
+    Price per Seat: &lt;%price%&gt;
+
+
+    Thank you,
+    {!Event.sumoapp__OrganizerFullName__c}
+    {!Event.sumoapp__OrganizerTitle__c}
+    {!Organization.Name}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,44 @@
+<template>
+    <div if:true={service}>
+        <div class="font-family slds-p-left_small">
+            <span class="services">
+            <a onclick={handleGoBack}>{servicesLabel}</a> </span> > {service.Name}
+        </div>
+        <br/>
+
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                <article class="slds-card box-border-radius content">
+                    <div class="slds-card__header h-2">
+                        <!-- slds-grid -->
+                        {service.Name}
+                    </div>
+                    <div class="slds-card__body slds-card__body_inner">
+                        <div class="slds-p-top_medium" if:true={service.Description}>
+                            <lightning-formatted-rich-text value={service.Description}>
+                            </lightning-formatted-rich-text>
+                        </div>
+                        <div class="slds-p-top_medium" if:true={service.FAQ}>
+                            <lightning-formatted-rich-text value={service.FAQ}>
+                            </lightning-formatted-rich-text>
+                            <br/>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        
+        <div
+            class="slds-col slds-grid slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_4-of-12 slds-float_right">
+            <div
+                class="slds-col slds-m-top_small slds-p-right_xx-small slds-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                <lightning-button class="btn btn-secondary" variant="brand-outline" label={goBackLabel} stretch onclick={handleGoBack}>
+                </lightning-button>
+            </div>
+            <div if:false={isEnrolledService}
+                class="slds-col slds-m-top_small slds-p-left_xx-small slds-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                <lightning-button class="btn btn-primary" variant="brand" label={signUpLabel} stretch onclick={redirectToRegister}></lightning-button>
+            </div>
+        </div>
+    </div>
+</template>

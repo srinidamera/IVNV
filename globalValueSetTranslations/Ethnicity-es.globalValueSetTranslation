@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Chose not to respond</masterLabel>
+        <translation>Optó por no responder</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Hispanic</masterLabel>
+        <translation>Hispano/a</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Not Hispanic</masterLabel>
+        <translation>No Hispano/a</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

@@ -1,0 +1,63 @@
+<apex:page showHeader="false"
+           standardStylesheets="false"
+           sidebar="false"
+           controller="sumoapp.LightningOutController">
+    <apex:includeLightning />
+    <apex:slds />
+
+    <html xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          lang="en">
+
+    <head>
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0" />
+
+        <style type="text/css">
+            #auraErrorMessage {
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="slds-spinner_container slds-is-fixed"
+             id="lightning-component-spinner">
+            <div role="status"
+                 class="slds-spinner slds-spinner_medium">
+                <span class="slds-assistive-text">{!$Label.Loading}</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+        <div id="inviteManagerPortalApp" />
+        <div id="toastContainer"></div>
+
+        <script>
+            var isClassicTheme = {!JSENCODE($User.UIThemeDisplayed) == "Theme3"}
+            var toastContainer;
+
+            function removeSpinner() {
+                document.getElementById('lightning-component-spinner').classList.add('slds-hide');
+            }
+
+            $Lightning.use("{!JSENCODE(componentPrefix)}:lightningOutCommunityApp", function() {
+                $Lightning.createComponent("{!JSENCODE(componentPrefix)}:invitePortalPage", {}, "inviteManagerPortalApp", removeSpinner);
+
+                $Lightning.createComponent("{!JSENCODE(componentPrefix)}:classicToast", {}, "toastContainer", function(component) {
+                    toastContainer = component;
+                });
+            }, window.location.href.split('/apex').shift());
+
+            document.getElementById("inviteManagerPortalApp").addEventListener("lightning__showtoast", function(e) {
+                if (isClassicTheme) {
+                    toastContainer.showToast(e.toastAttributes);
+                } else {
+                    sforce.one.showToast(e.toastAttributes);
+                }
+            });
+        </script>
+    </body>
+
+    </html>
+</apex:page>
