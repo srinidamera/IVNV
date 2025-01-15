@@ -1,0 +1,66 @@
+.h-2 {
+  font-size: var(--dxp-s-text-heading-large-font-size) !important;
+  font-weight: var(--dxp-s-text-heading-large-font-weight) !important;
+}
+
+.tile {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 1);
+  /* margin: 0.07rem; */
+}
+
+.ellipses {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.font-segoe-ui {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.font-weight {
+  font-weight: var(--dxp-c-strong-text-weight);
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-white {
+  color: #ffffff;
+}
+
+.font-black {
+  color: #000000;
+}
+
+.bg-yellow {
+  background: #FBFF38;
+}
+
+.bg-white {
+  background: #ffffff;
+}
+
+.bg-green {
+  background: #3A9256;
+}
+
+.bg-orange {
+  background: #DD7A01;
+}
+
+.hyperlink-style {
+  text-decoration: underline;
+}
+
+.badge-width {
+  width: 84px;
+  justify-content: center;
+}
+
+.font-weight {
+  font-weight: var(--dxp-c-strong-text-weight);
+}

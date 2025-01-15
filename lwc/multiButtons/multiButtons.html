@@ -1,0 +1,12 @@
+<template>
+  <div class={gridStyle}>
+    <template for:each={btnProps} for:item="prop">
+      <div key={prop.label}
+        class="min-width slds-col slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_3-of-12 slds-large-size_2-of-12">
+        <lightning-button class={prop.btnStyle} variant={prop.btnVariant} label={prop.btnLabel} value={prop.redirectToPage} data-query-params={prop.queryParams}
+          onclick={gotoPage}  stretch></lightning-button>
+      </div>
+      <div lwc:if={prop.show_m_bottom} key={prop.label} class="slds-col slds-m-top_small slds-hide_medium"></div>
+    </template>
+  </div>
+</template>

@@ -1,0 +1,122 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Intake",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"bed4b69f-1afb-4a86-b114-2479ced0e7d4\",\"columns\":[{\"UUID\":\"195941a9-c474-4826-8d4b-628696306908\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "bannerImgSrcKey" : "MCGJNT5A4FR5HLFJIYRG7PO7PH4Y",
+                "description" : "Housing Counselling: Financial, Homeownership, Rental, Foreclosure/Homelessness Prevention, Fair Housing.",
+                "redirectToPage" : "Home",
+                "title" : "Services",
+                "useHyperlinkTitle" : "No"
+              },
+              "definition" : "c:bannerSection",
+              "id" : "6db145c0-70be-449a-95cd-2c05724e701c",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "builder1stTimeHomebuyerLabel" : "1st Time Home Buyer",
+                "builderActiveMilitaryLabel" : "Active Military",
+                "builderAddressLabel" : "Address",
+                "builderBestimeToCallLabel" : "Best Time to Call",
+                "builderBirthdateLabel" : "Birthdate",
+                "builderCoApplicantLabel" : "Co-Applicant",
+                "builderCommunityLabel" : "Community",
+                "builderContactLabel" : "Contact",
+                "builderCreditScoreLabel" : "Credit Score",
+                "builderEducationLabel" : "Education",
+                "builderEmailAddressLabel" : "Email Address",
+                "builderEmploymentStatusLabel" : "Employment Status",
+                "builderEthnicityLabel" : "Ethnicity",
+                "builderFluencyInEnglishLabel" : "Fluency in English",
+                "builderGenderLabel" : "Gender",
+                "builderHouseholdSizeLabel" : "Household Size",
+                "builderHouseholdTypeLabel" : "Household Type/Head of Household",
+                "builderHouseholdTypeOnlyLabel" : "Household Type",
+                "builderLegallyDisabledLabel" : "Legally Disabled",
+                "builderMaritalStatusLabel" : "Marital Status",
+                "builderNameLabel" : "Name",
+                "builderNumberOfDependentsLabel" : "Number of Dependents",
+                "builderPhoneNumberLabel" : "Phone Number",
+                "builderPreferredCommunicationLanguageLabel" : "Preferred Communication Language",
+                "builderRaceLabel" : "Race",
+                "builderRelationshipToClientLabel" : "Relationship to Client",
+                "builderSubmissionReviewLabel" : "Submission Review",
+                "builderTotalMonthlyIncomeLabel" : "Total Monthly Income",
+                "builderVeteranStatusLabel" : "Veteran",
+                "contactUsBtnLabel" : "Contact Us",
+                "goBackLabel" : "Go Back",
+                "labelCompleted" : "Completed",
+                "labelIncomplete" : "Incomplete",
+                "labelOnHold" : "On Hold",
+                "labelOpen" : "Open",
+                "learnMorebreadCrumbLabel" : "View Details About",
+                "manageDocumentsLabel" : "Manage Documents",
+                "servicesLabel" : "Services",
+                "signUpLabel" : "Sign Up",
+                "submittedDateLabel" : "Date Submitted",
+                "uploadDocumentsLabel" : "Upload Documents",
+                "viewMyServicesLabel" : "View My Submission"
+              },
+              "definition" : "c:userIntakeDetailPage",
+              "id" : "897a571e-137c-4eea-b8b8-f5660a0930a1",
+              "type" : "component"
+            } ],
+            "id" : "195941a9-c474-4826-8d4b-628696306908",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "bed4b69f-1afb-4a86-b114-2479ced0e7d4",
+          "scopedBrandingSetId" : "Compass_Portal",
+          "type" : "component"
+        } ],
+        "id" : "f03eb3fe-25fe-4d64-999e-be8e0de78fd5",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Intake",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "9f3b766c-f05c-4121-b991-77e8698f4c85",
+          "type" : "component"
+        } ],
+        "id" : "5e04a713-84c7-4996-8fdb-268f6dfbea42",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "174dfd5b-9966-4c16-b742-c196eedaf7ab",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-intake"
+  },
+  "urlName" : "intake"
+}

@@ -1,0 +1,449 @@
+<!--
+  @description  : Budget CMP for edit
+-->
+<template>
+    <div>
+        <lightning-record-edit-form record-id={budgetId} object-api-name="Budget__c" onsubmit={handleFormSubmit}
+            onsuccess={handleFormSuccess}>
+            <lightning-card>
+                <div class="slds-p-horizontal_small mb-80">
+
+                    <lightning-messages></lightning-messages>
+
+                    <!--Monthly Income-->
+                    <div class="section">
+                        <div class="section-heading">Monthly Income</div>
+                        <c-budget-edit-section type="sectionHeaderMonthlyIncome"></c-budget-edit-section>
+                        
+                        <c-budget-edit-section type="sectionfield" label="Employment" projected-field="ProjectedEmployment__c"
+                            actual-field="ActualEmployment__c" class="editSection" actual-value={budget.ActualEmployment__c}
+                            projected-value={budget.ProjectedEmployment__c}></c-budget-edit-section>
+
+                        <c-budget-edit-section type="sectionfield" label="Overtime" projected-field="ProjectedOvertime__c"
+                            actual-field="ActualOvertime__c" class="editSection" actual-value={budget.ActualOvertime__c}
+                            projected-value={budget.ProjectedOvertime__c}></c-budget-edit-section>
+
+                        <c-budget-edit-section type="sectionfield" label="Interest & Dividend" projected-field="ProjectedInterestDividen__c"
+                            actual-field="ActualInterestDividen__c" class="editSection" actual-value={budget.ActualInterestDividen__c}
+                            projected-value={budget.ProjectedInterestDividen__c}></c-budget-edit-section>
+
+                        <c-budget-edit-section type="sectionfield" label="Net Rental Income" projected-field="ProjectedNetRentalIncome__c"
+                            actual-field="ActualNetRentalIncome__c" class="editSection" actual-value={budget.ActualNetRentalIncome__c}
+                            projected-value={budget.ProjectedNetRentalIncome__c}></c-budget-edit-section>
+                        
+                        <c-budget-edit-section type="sectionfield" label="Bonuses" projected-field="ProjectedBonuses__c"
+                            actual-field="ActualBonuses__c" class="editSection" actual-value={budget.ActualBonuses__c}
+                            projected-value={budget.ProjectedBonuses__c}></c-budget-edit-section>
+                        
+                        <c-budget-edit-section type="sectionfield" label="Commissions" projected-field="ProjectedComissions__c"
+                            actual-field="ActualComissions__c" class="editSection" actual-value={budget.ActualComissions__c}
+                            projected-value={budget.ProjectedComissions__c}></c-budget-edit-section>
+                        
+                        <c-budget-edit-section type="sectionfield" label="SSI" projected-field="ProjectedSSI__c"
+                            actual-field="ActualSSI__c" class="editSection" actual-value={budget.ActualSSI__c}
+                            projected-value={budget.ProjectedSSI__c}></c-budget-edit-section>
+                        
+                        <c-budget-edit-section type="sectionfield" label="Child Support" projected-field="ProjectedChildSupport__c"
+                            actual-field="ActualChildSupport__c" class="editSection" actual-value={budget.ActualChildSupport__c}
+                            projected-value={budget.ProjectedChildSupport__c}></c-budget-edit-section>
+                        
+                        <c-budget-edit-section type="sectionfield" label="AFDC" projected-field="ProjectedAFDC__c"
+                            actual-field="ActualAFDC__c" class="editSection" actual-value={budget.ActualAFDC__c}
+                            projected-value={budget.ProjectedAFDC__c}></c-budget-edit-section>
+
+                        <c-budget-edit-section type="sectionfield" label="Alimony" projected-field="ProjectedMonthlyIncomeAlimony__c"
+                            actual-field="ActualMonthlyIncomeAlimony__c" class="editSection" actual-value={budget.ActualMonthlyIncomeAlimony__c}
+                            projected-value={budget.ProjectedMonthlyIncomeAlimony__c}></c-budget-edit-section>
+
+                        <c-budget-edit-section type="sectionfield" label="Unemployment" projected-field="ProjectedUnemployment__c"
+                            actual-field="ActualUnemployment__c" class="editSection" actual-value={budget.ActualUnemployment__c}
+                            projected-value={budget.ProjectedUnemployment__c}></c-budget-edit-section>
+                        
+                        <c-budget-edit-section type="sectionfield" label="Other" projected-field="ProjectedOther__c"
+                            actual-field="ActualOther__c" class="editSection" actual-value={budget.ActualOther__c}
+                            projected-value={budget.ProjectedOther__c}></c-budget-edit-section>
+
+                        <c-budget-edit-section type="sectionfield" label="Withholding" projected-field="ProjectedWithholding__c"
+                            actual-field="ActualWithholding__c" class="editSection" actual-value={budget.ActualWithholding__c}
+                            projected-value={budget.ProjectedWithholding__c}></c-budget-edit-section>
+                    </div>
+
+                    <!-- housing -->
+                    <div class="section">
+                        <div class="section-heading">Housing</div>
+                        <c-budget-edit-section type="sectionHeader"></c-budget-edit-section>
+                        
+                        <c-budget-edit-section type="sectionfield" label="Mortgage or Rent" projected-field="ProjectedMortgageOrRent__c" 
+                        actual-field="ActualMortgageOrRent__c" class="editSection" actual-value={budget.ActualMortgageOrRent__c} projected-value={budget.ProjectedMortgageOrRent__c}></c-budget-edit-section>
+                        
+                        <c-budget-edit-section type="sectionfield" label="Home Owner Assoc."
+                            projected-field="ProjectedHomeOwnerAssoc__c" actual-field="ActualHomeOwnerAssoc__c" class="editSection"
+                            actual-value={budget.ActualHomeOwnerAssoc__c}
+                            projected-value={budget.ProjectedHomeOwnerAssoc__c}></c-budget-edit-section>
+                        
+                        <!-- Home Equity Line Payment -->
+                        <c-budget-edit-section type="sectionfield" label="Home Equity Line Payment" projected-field="ProjectedHomeEquityLine__c"
+                            actual-field="ActualHomeEquityLine__c" class="editSection" actual-value={budget.ActualHomeEquityLine__c}
+                            projected-value={budget.ProjectedHomeEquityLine__c}></c-budget-edit-section>
+                        
+                        <!-- Homeowner/Renters Insurance -->
+                        <c-budget-edit-section type="sectionfield" label="Homeowner/Renters Insurance"
+                            projected-field="ProjectedHomeownerRentersInsurance__c" actual-field="ActualHomeownerRentersInsurance__c"
+                            class="editSection" actual-value={budget.ActualHomeownerRentersInsurance__c}
+                            projected-value={budget.ProjectedHomeownerRentersInsurance__c}></c-budget-edit-section>
+                        <c-budget-edit-section type="sectionfield" label="Phone" projected-field="ProjectedPhone__c" actual-field="ActualPhone__c" class="editSection" actual-value={budget.ActualPhone__c} projected-value={budget.ProjectedPhone__c}></c-budget-edit-section>
+                        
+                        <c-budget-edit-section type="sectionfield" label="Electricity" projected-field="ProjectedElectricity__c"
+                        actual-field="ActualElectricity__c" class="editSection" actual-value={budget.ActualElectricity__c}
+                        projected-value={budget.ProjectedElectricity__c}></c-budget-edit-section>
+
+                        <c-budget-edit-section type="sectionfield" label="Water/Sewer" projected-field="ProjectedWaterAndSewer__c"
+                            actual-field="ActualWaterAndSewer__c" class="editSection" actual-value={budget.ActualWaterAndSewer__c}
+                            projected-value={budget.ProjectedWaterAndSewer__c}></c-budget-edit-section>
+                        
+                        <c-budget-edit-section type="sectionfield" label="Gas" projected-field="ProjectedGas__c"
+                            actual-field="ActualGas__c" class="editSection" actual-value={budget.ActualGas__c}
+                            projected-value={budget.ProjectedGas__c}></c-budget-edit-section>
+
+                        <c-budget-edit-section type="sectionfield" label="Cable" projected-field="ProjectedCable__c"
+                            actual-field="ActualCable__c" class="editSection" actual-value={budget.ActualCable__c}
+                            projected-value={budget.ProjectedCable__c}></c-budget-edit-section>
+
+                        <c-budget-edit-section type="sectionfield" label="Waste Removal" projected-field="ProjectedWasteRemoval__c"
+                            actual-field="ActualWasteRemova__c" class="editSection" actual-value={budget.ActualWasteRemova__c}
+                            projected-value={budget.ProjectedWasteRemoval__c}></c-budget-edit-section>
+                        
+                        <c-budget-edit-section type="sectionfield" label="Maintainance or Repair" projected-field="ProjectedMaintenanceOrRepair__c"
+                            actual-field="ActualMaintenanceOrRepair__c" class="editSection" actual-value={budget.ActualMaintenanceOrRepair__c}
+                            projected-value={budget.ProjectedMaintenanceOrRepair__c}></c-budget-edit-section>
+
+                        <c-budget-edit-section type="sectionfield" label="Supplies" projected-field="ProjectedSupplies__c"
+                            actual-field="ActualSupplies__c" class="editSection" actual-value={budget.ActualSupplies__c}
+                            projected-value={budget.ProjectedSupplies__c}></c-budget-edit-section>
+
+                        <c-budget-edit-section type="sectionfield" label="Other" projected-field="HousingProjectedOther__c"
+                            actual-field="HousingActualOther__c" class="editSection" actual-value={budget.HousingActualOther__c}
+                            projected-value={budget.HousingProjectedOther__c}></c-budget-edit-section>
+                    </div>
+
+                    <!-- Tranportation -->
+                    <div class="section">
+                        <div class="section-heading">Transportation</div>
+                        <c-budget-edit-section type="sectionHeader"></c-budget-edit-section>
+                        
+                        <c-budget-edit-section type="sectionfield" label="Vehicle Payment" projected-field="ProjectedVehiclePayment__c"
+                            actual-field="ActualVehiclePayment__c" class="editSection" actual-value={budget.ActualVehiclePayment__c}
+                            projected-value={budget.ProjectedVehiclePayment__c}></c-budget-edit-section>
+                        
+                        <c-budget-edit-section type="sectionfield" label="Insurance" projected-field="ProjectedInsurance__c"
+                            actual-field="ActualInsurance__c" class="editSection" actual-value={budget.ActualInsurance__c}
+                            projected-value={budget.ProjectedInsurance__c}></c-budget-edit-section>
+
+                        <c-budget-edit-section type="sectionfield" label="Licensing" projected-field="ProjectedLicensing__c"
+                            actual-field="ActualLicensing__c" class="editSection" actual-value={budget.ActualLicensing__c}
+                            projected-value={budget.ProjectedLicensing__c}></c-budget-edit-section>
+
+                        <c-budget-edit-section type="sectionfield" label="Fuel" projected-field="ProjectedFuel__c"
+                            actual-field="ActualFuel__c" class="editSection" actual-value={budget.ActualFuel__c}
+                            projected-value={budget.ProjectedFuel__c}></c-budget-edit-section>
+
+                        <c-budget-edit-section type="sectionfield" label="Maintenance" projected-field="ProjectedMaintenance__c"
+                            actual-field="ActualMaintenance__c" class="editSection" actual-value={budget.ActualMaintenance__c}
+                            projected-value={budget.ProjectedMaintenance__c}></c-budget-edit-section>
+
+                        <c-budget-edit-section type="sectionfield" label="Other" projected-field="TransportationProjectedOther__c"
+                            actual-field="TransportationActualOther__c" class="editSection" actual-value={budget.TransportationActualOther__c}
+                            projected-value={budget.TransportationProjectedOther__c}></c-budget-edit-section>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-heading">Food</div>
+                        <c-budget-edit-section type="sectionHeader"></c-budget-edit-section>
+                    
+                        <!-- Groceries -->
+                        <c-budget-edit-section type="sectionfield" label="Groceries" projected-field="ProjectedGroceries__c"
+                            actual-field="ActualGroceries__c" class="editSection" actual-value={budget.ActualGroceries__c}
+                            projected-value={budget.ProjectedGroceries__c}></c-budget-edit-section>
+                    
+                        <!-- Dining Out -->
+                        <c-budget-edit-section type="sectionfield" label="Dining Out" projected-field="ProjectedDiningout__c"
+                            actual-field="ActualDiningout__c" class="editSection" actual-value={budget.ActualDiningout__c}
+                            projected-value={budget.ProjectedDiningout__c}></c-budget-edit-section>
+                    
+                        <!-- Food Other -->
+                        <c-budget-edit-section type="sectionfield" label="Other" projected-field="FoodProjectedOther__c"
+                            actual-field="FoodActualOther__c" class="editSection" actual-value={budget.FoodActualOther__c}
+                            projected-value={budget.FoodProjectedOther__c}></c-budget-edit-section>
+                    
+                    </div>
+                    
+                    <div class="section">
+                        <div class="section-heading">Pets</div>
+                        <c-budget-edit-section type="sectionHeader"></c-budget-edit-section>
+                    
+                        <c-budget-edit-section type="sectionfield" label="Food" projected-field="ProjectedPetsFood__c"
+                            actual-field="ActualPetsFood__c" class="editSection" actual-value={budget.ActualPetsFood__c}
+                            projected-value={budget.ProjectedPetsFood__c}></c-budget-edit-section>
+                    
+                        <c-budget-edit-section type="sectionfield" label="Medical" projected-field="PetsProjectedMedical__c"
+                            actual-field="PetsActualMedical__c" class="editSection" actual-value={budget.PetsActualMedical__c}
+                            projected-value={budget.PetsProjectedMedical__c}>
+                        </c-budget-edit-section>
+                    
+                        <c-budget-edit-section type="sectionfield" label="Grooming" projected-field="ProjectedGrooming__c"
+                            actual-field="ActualGrooming__c" class="editSection" actual-value={budget.ActualGrooming__c}
+                            projected-value={budget.ProjectedGrooming__c}>
+                        </c-budget-edit-section>
+                    
+                        <c-budget-edit-section type="sectionfield" label="Toys" projected-field="ProjectedToys__c"
+                            actual-field="ActualToys__c" class="editSection" actual-value={budget.ActualToys__c}
+                            projected-value={budget.ProjectedToys__c}>
+                        </c-budget-edit-section>
+                    
+                        <c-budget-edit-section type="sectionfield" label="Other" projected-field="PetsProjectedOther__c"
+                            actual-field="PetsActualOther__c" class="editSection" actual-value={budget.PetsActualOther__c}
+                            projected-value={budget.PetsProjectedOther__c}></c-budget-edit-section>
+                    
+                    </div>
+                    
+                    <div class="section">
+                        <div class="section-heading">Personal Care</div>
+                        <c-budget-edit-section type="sectionHeader"></c-budget-edit-section>
+
+                        <!-- Personal Care - Medical -->
+                        <c-budget-edit-section type="sectionfield" label="Medical"
+                            projected-field="PersonalCareProjectedMedical__c" actual-field="PersonalCareActualMedical__c" class="editSection"
+                            actual-value={budget.PersonalCareActualMedical__c}
+                            projected-value={budget.PersonalCareProjectedMedical__c}></c-budget-edit-section>
+                        
+                        <!-- Education -->
+                        <c-budget-edit-section type="sectionfield" label="Education" projected-field="ProjectedEducation__c"
+                            actual-field="ActualEducation__c" class="editSection" actual-value={budget.ActualEducation__c}
+                            projected-value={budget.ProjectedEducation__c}></c-budget-edit-section>
+
+                    
+                        <!-- Hair and Nails -->
+                        <c-budget-edit-section type="sectionfield" label="Hair/Nails" projected-field="ProjectedHairNails__c"
+                            actual-field="ActualHairNails__c" class="editSection" actual-value={budget.ActualHairNails__c}
+                            projected-value={budget.ProjectedHairNails__c}></c-budget-edit-section>
+                    
+                        <!-- Clothing -->
+                        <c-budget-edit-section type="sectionfield" label="Clothing" projected-field="ProjectedClothing__c"
+                            actual-field="ActualClothing__c" class="editSection" actual-value={budget.ActualClothing__c}
+                            projected-value={budget.ProjectedClothing__c}></c-budget-edit-section>
+                    
+                        <!-- Drycleaning -->
+                        <c-budget-edit-section type="sectionfield" label="Drycleaning" projected-field="ProjectedDrycleaning__c"
+                            actual-field="ActualDrycleaning__c" class="editSection" actual-value={budget.ActualDrycleaning__c}
+                            projected-value={budget.ProjectedDrycleaning__c}></c-budget-edit-section>
+                    
+                        <!-- Healthclub -->
+                        <c-budget-edit-section type="sectionfield" label="Healthclub" projected-field="ProjectedHealthclub__c"
+                            actual-field="ActualHealthclub__c" class="editSection" actual-value={budget.ActualHealthclub__c}
+                            projected-value={budget.ProjectedHealthclub__c}></c-budget-edit-section>
+                    
+                        <!-- Organization Dues or Fees -->
+                        <c-budget-edit-section type="sectionfield" label="Organization Dues or Fees"
+                            projected-field="ProjectedOrganizationduesorfees__c" actual-field="ActualOrganizationduesorfees__c"
+                            class="editSection" actual-value={budget.ActualOrganizationduesorfees__c}
+                            projected-value={budget.ProjectedOrganizationduesorfees__c}></c-budget-edit-section>
+                    
+                        <!-- Personal Care Other -->
+                        <c-budget-edit-section type="sectionfield" label="Other" projected-field="PersonalCareProjectedOther__c"
+                            actual-field="PersonalCareActualOther__c" class="editSection" actual-value={budget.PersonalCareActualOther__c}
+                            projected-value={budget.PersonalCareProjectedOther__c}></c-budget-edit-section>
+                    
+                    </div>
+                    
+                    <div class="section">
+                        <div class="section-heading">Entertainment</div>
+                        <c-budget-edit-section type="sectionHeader"></c-budget-edit-section>
+                        <!-- Nightout -->
+                        <c-budget-edit-section type="sectionfield" label="Nightout" projected-field="ProjectedNightout__c"
+                            actual-field="ActualNightout__c" class="editSection" actual-value={budget.ActualNightout__c}
+                            projected-value={budget.ProjectedNightout__c}></c-budget-edit-section>
+                    
+                        <!-- Music Platforms -->
+                        <c-budget-edit-section type="sectionfield" label="Music Platforms" projected-field="ProjectedMusicplatforms__c"
+                            actual-field="ActualMusicplatforms__c" class="editSection" actual-value={budget.ActualMusicplatforms__c}
+                            projected-value={budget.ProjectedMusicplatforms__c}></c-budget-edit-section>
+                    
+                        <!-- Movies -->
+                        <c-budget-edit-section type="sectionfield" label="Movies" projected-field="ProjectedMovies__c"
+                            actual-field="ActualMovies__c" class="editSection" actual-value={budget.ActualMovies__c}
+                            projected-value={budget.ProjectedMovies__c}></c-budget-edit-section>
+                    
+                        <!-- Concerts -->
+                        <c-budget-edit-section type="sectionfield" label="Concerts" projected-field="ProjectedConcerts__c"
+                            actual-field="ActualConcerts__c" class="editSection" actual-value={budget.ActualConcerts__c}
+                            projected-value={budget.ProjectedConcerts__c}></c-budget-edit-section>
+                    
+                        <!-- Sporting Events -->
+                        <c-budget-edit-section type="sectionfield" label="Sporting Events" projected-field="ProjectedSportingevents__c"
+                            actual-field="ActualSportingevents__c" class="editSection" actual-value={budget.ActualSportingevents__c}
+                            projected-value={budget.ProjectedSportingevents__c}></c-budget-edit-section>
+                    
+                        <!-- Live Theater -->
+                        <c-budget-edit-section type="sectionfield" label="Live Theater" projected-field="ProjectedLivetheater__c"
+                            actual-field="ActualLivetheater__c" class="editSection" actual-value={budget.ActualLivetheater__c}
+                            projected-value={budget.ProjectedLivetheater__c}></c-budget-edit-section>
+                    
+                        <!-- Entertainment Other -->
+                        <c-budget-edit-section type="sectionfield" label="Other"
+                            projected-field="EntertainmentProjectedOther__c" actual-field="EntertainmentActualOther__c" class="editSection"
+                            actual-value={budget.EntertainmentActualOther__c}
+                            projected-value={budget.EntertainmentProjectedOther__c}></c-budget-edit-section>
+                    
+                    </div>
+                    
+                    <div class="section">
+                        <div class="section-heading">Loans</div>
+                        <c-budget-edit-section type="sectionHeader"></c-budget-edit-section>
+                    
+                        <!-- Personal -->
+                        <c-budget-edit-section type="sectionfield" label="Personal" projected-field="ProjectedPersonal__c"
+                            actual-field="ActualPersonal__c" class="editSection" actual-value={budget.ActualPersonal__c}
+                            projected-value={budget.ProjectedPersonal__c}></c-budget-edit-section>
+                    
+                        <!-- Student -->
+                        <c-budget-edit-section type="sectionfield" label="Student" projected-field="ProjectedStudent__c"
+                            actual-field="ActualStudent__c" class="editSection" actual-value={budget.ActualStudent__c}
+                            projected-value={budget.ProjectedStudent__c}></c-budget-edit-section>
+                        
+                        <!-- Credit Card 1 -->
+                        <c-budget-edit-section type="sectionfield" label="Credit Card" projected-field="ProjectedCreditcard1__c"
+                            actual-field="ActualCreditcard1__c" class="editSection" actual-value={budget.ActualCreditcard1__c}
+                            projected-value={budget.ProjectedCreditcard1__c}></c-budget-edit-section>
+                        
+                        <!-- Credit Card 2 -->
+                        <c-budget-edit-section type="sectionfield" label="Credit Card" projected-field="ProjectedCreditcard2__c"
+                            actual-field="ActualCreditcard2__c" class="editSection" actual-value={budget.ActualCreditcard2__c}
+                            projected-value={budget.ProjectedCreditcard2__c}></c-budget-edit-section>
+                        
+                        <!-- Credit Card 3 -->
+                        <c-budget-edit-section type="sectionfield" label="Credit Card" projected-field="ProjectedCreditcard3__c"
+                            actual-field="ActualCreditcard3__c" class="editSection" actual-value={budget.ActualCreditcard3__c}
+                            projected-value={budget.ProjectedCreditcard3__c}></c-budget-edit-section>
+                        
+                        <!-- Credit Collections -->
+                        <c-budget-edit-section type="sectionfield" label="Credit Collections" projected-field="ProjectedCreditCollections__c"
+                            actual-field="ActualCreditCollections__c" class="editSection" actual-value={budget.ActualCreditCollections__c}
+                            projected-value={budget.ProjectedCreditCollections__c}></c-budget-edit-section>
+                    
+                        <!-- Loans Other -->
+                        <c-budget-edit-section type="sectionfield" label="Other" projected-field="LoansProjectedOther__c"
+                            actual-field="LoansActualOther__c" class="editSection" actual-value={budget.LoansActualOther__c}
+                            projected-value={budget.LoansProjectedOther__c}></c-budget-edit-section>
+                    
+                    </div>
+                    
+                    <div class="section">
+                        <div class="section-heading">Taxes</div>
+                        <c-budget-edit-section type="sectionHeader"></c-budget-edit-section>
+                        <!-- Federal -->
+                        <c-budget-edit-section type="sectionfield" label="Federal" projected-field="ProjectedFederal__c"
+                            actual-field="ActualFederal__c" class="editSection" actual-value={budget.ActualFederal__c}
+                            projected-value={budget.ProjectedFederal__c}></c-budget-edit-section>
+                    
+                        <!-- State -->
+                        <c-budget-edit-section type="sectionfield" label="State" projected-field="ProjectedState__c"
+                            actual-field="ActualState__c" class="editSection" actual-value={budget.ActualState__c}
+                            projected-value={budget.ProjectedState__c}></c-budget-edit-section>
+                    
+                        <!-- Local -->
+                        <c-budget-edit-section type="sectionfield" label="Local" projected-field="ProjectedLocal__c"
+                            actual-field="ActualLocal__c" class="editSection" actual-value={budget.ActualLocal__c}
+                            projected-value={budget.ProjectedLocal__c}></c-budget-edit-section>
+                    
+                        <!-- Taxes Other -->
+                        <c-budget-edit-section type="sectionfield" label="Other" projected-field="TaxesProjectedOther__c"
+                            actual-field="TaxesActualOther__c" class="editSection" actual-value={budget.TaxesActualOther__c}
+                            projected-value={budget.TaxesProjectedOther__c}></c-budget-edit-section>
+                    
+                    </div>
+                    
+                    <div class="section">
+                        <div class="section-heading">Savings or Investments</div>
+                        <c-budget-edit-section type="sectionHeader"></c-budget-edit-section>
+                        <!-- Retirement Account -->
+                        <c-budget-edit-section type="sectionfield" label="Retirement Account"
+                            projected-field="ProjectedRetirementaccount__c" actual-field="ActualRetirementaccount__c" class="editSection"
+                            actual-value={budget.ActualRetirementaccount__c}
+                            projected-value={budget.ProjectedRetirementaccount__c}></c-budget-edit-section>
+                    
+                        <!-- Investment Account -->
+                        <c-budget-edit-section type="sectionfield" label="Investment Account"
+                            projected-field="ProjectedInvestmentaccount__c" actual-field="ActualInvestmentaccount__c" class="editSection"
+                            actual-value={budget.ActualInvestmentaccount__c}
+                            projected-value={budget.ProjectedInvestmentaccount__c}></c-budget-edit-section>
+                    
+                        <!-- Savings or Investments Other -->
+                        <c-budget-edit-section type="sectionfield" label="Other" projected-field="SavingsorInvestmentsProjectedOther__c"
+                            actual-field="SavingsorInvestmentsActualOther__c" class="editSection"
+                            actual-value={budget.SavingsorInvestmentsActualOther__c}
+                            projected-value={budget.SavingsorInvestmentsProjectedOther__c}></c-budget-edit-section>
+                    
+                    </div>
+                    
+                    <div class="section">
+                        <div class="section-heading">Gifts and Donations</div>
+                        <c-budget-edit-section type="sectionHeader"></c-budget-edit-section>
+                    
+                        <!-- Charity 1 -->
+                        <c-budget-edit-section type="sectionfield" label="Charity 1" projected-field="ProjectedCharity1__c"
+                            actual-field="ActualCharity1__c" class="editSection" actual-value={budget.ActualCharity1__c}
+                            projected-value={budget.ProjectedCharity1__c}></c-budget-edit-section>
+                    
+                        <!-- Charity 2 -->
+                        <c-budget-edit-section type="sectionfield" label="Charity 2" projected-field="ProjectedCharity2__c"
+                            actual-field="ActualCharity2__c" class="editSection" actual-value={budget.ActualCharity2__c}
+                            projected-value={budget.ProjectedCharity2__c}></c-budget-edit-section>
+                    
+                        <!-- Charity 3 -->
+                        <c-budget-edit-section type="sectionfield" label="Charity 3" projected-field="ProjectedCharity3__c"
+                            actual-field="ActualCharity3__c" class="editSection" actual-value={budget.ActualCharity3__c}
+                            projected-value={budget.ProjectedCharity3__c}></c-budget-edit-section>
+                    
+                    </div>
+                    
+                    <div class="section">
+                        <div class="section-heading">Legal</div>
+                        <c-budget-edit-section type="sectionHeader"></c-budget-edit-section>
+                    
+                        <!-- Attorney -->
+                        <c-budget-edit-section type="sectionfield" label="Attorney" projected-field="ProjectedAttorney__c"
+                            actual-field="ActualAttorney__c" class="editSection" actual-value={budget.ActualAttorney__c}
+                            projected-value={budget.ProjectedAttorney__c}></c-budget-edit-section>
+                    
+                        <!-- Legal Alimony -->
+                        <c-budget-edit-section type="sectionfield" label="Alimony" projected-field="LegalProjectedAlimony__c"
+                            actual-field="LegalActualAlimony__c" class="editSection" actual-value={budget.LegalActualAlimony__c}
+                            projected-value={budget.LegalProjectedAlimony__c}></c-budget-edit-section>
+                        
+                        <!-- Payments on Lien or Judgment -->
+                        <c-budget-edit-section type="sectionfield" label="Payments on Lien or Judgment"
+                            projected-field="ProjectedPaymentsonlienorjudgment__c" actual-field="ActualPaymentsonlienorjudgment__c"
+                            class="editSection" actual-value={budget.ActualPaymentsonlienorjudgment__c}
+                            projected-value={budget.ProjectedPaymentsonlienorjudgment__c}></c-budget-edit-section>
+                    
+                        <!-- Legal Other -->
+                        <c-budget-edit-section type="sectionfield" label="Other" projected-field="LegalProjectedOther__c"
+                            actual-field="LegalActualOther__c" class="editSection" actual-value={budget.LegalActualOther__c}
+                            projected-value={budget.LegalProjectedOther__c}></c-budget-edit-section>
+                    </div>
+                    
+                </div>
+
+                
+
+                <p slot="footer" class="slds-docked-form-footer">
+                    <lightning-button class="slds-m-top_small slds-p-right_x-small" variant="neutral" type="button"
+                        label="Cancel" onclick={handleCancelButton}>
+                    </lightning-button>
+                    <lightning-button class="slds-m-top_small" variant="brand" type="submit" label="Save">
+                    </lightning-button>
+                </p>
+            </lightning-card>
+        </lightning-record-edit-form>
+    </div>
+</template>

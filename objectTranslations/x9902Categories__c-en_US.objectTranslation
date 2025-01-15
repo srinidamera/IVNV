@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>9902 Categories</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>9902 Categories</value>
+    </caseValues>
+    <fields>
+        <label><!-- Group ID --></label>
+        <name>GroupID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Item ID --></label>
+        <name>GroupItemID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Name --></label>
+        <name>GroupName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Description --></label>
+        <name>ItemDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- SBI Item Description --></label>
+        <name>SBIItemDescription__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

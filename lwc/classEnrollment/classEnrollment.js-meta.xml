@@ -1,0 +1,615 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>57.0</apiVersion>
+	<isExposed>true</isExposed>
+	<masterLabel>Class Enrollment Form</masterLabel>
+	<targets>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+	 	<targetConfig targets="lightningCommunity__Default">
+		 		<property
+					type="String"
+					name="builderClassesLabel"
+					label="Classes Label"
+					default="Classes"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderEnrollmentLabel"
+					label="Enrollment Label"
+					default="Enrollment"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderClassEnrollmentLabel"
+					label="Classes Enrollment Label"
+					default="Classes Enrollment"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderEnterYourInformationLabel"
+					label="Enter Your Information Label"
+					default="Please enter your information below."
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderStagesLabel"
+					label="Stages Label"
+					default="Profile, Co-Applicant, Review"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderIndicatesRequiredFieldLabel"
+					label="Indicates Required Field Label"
+					default="Indicates required fields."
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderCreateNewCoApplicantLabel"
+					label="Create New Co-Applicant Modal Label"
+					default="Create New Co-Applicant"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderCancelLabel"
+					label="Cancel Label"
+					default="Cancel"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderSaveLabel"
+					label="Save Label"
+					default="Save"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderGoBackLabel"
+					label="Go Back Label"
+					default="Go Back"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderNextLabel"
+					label="Next Label"
+					default="Next"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderSubmitLabel"
+					label="Submit Button Label"
+					default="Submit"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderDoneLabel"
+					label="Done Label"
+					default="Done"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderContactInformationLabel"
+					label="Contact InformationLabel"
+					default="Contact Information"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderFullNameLabel"
+					label="Full Name Label"
+					default="Full Name"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderEmailAddressLabel"
+					label="Email Address Label"
+					default="Email Address"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderPhoneNumberLabel"
+					label="Phone Number Label"
+					default="Phone Number"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderBestimeToCallLabel"
+					label="Best Time to Call Label"
+					default="Best Time to Call"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderPreferredCommunicationLanguageLabel"
+					label="Preferred Communication Language Label"
+					default="Preferred Communication Language"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderRelationshipToClientLabel"
+					label="Relationship to Client Label"
+					default="Relationship to Client"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderPhoneLabel"
+					label="Phone Label"
+					default="Phone"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderPhoneNumberValidationLabel"
+					label="Phone Number Validation Label"
+					default="The phone number must be 10 digits"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderBirthdateValidationLabel"
+					label="Birthdate Validation Label"
+					default="Birthdate cannot be Today or in Future"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderAddressLabel"
+					label="Address Label"
+					default="Address"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderStreetLabel"
+					label="Street Label"
+					default="Street"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderAddressLine2Label"
+					label="Address Line 2 Label"
+					default="Address Line 2"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderCityLabel"
+					label="City Label"
+					default="City"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderStateProvinceLabel"
+					label="State / Province Label"
+					default="State / Province"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderZipPostalCodeLabel"
+					label="Zip / Postal Code Label"
+					default="Zip / Postal Code"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderDemographicsLabel"
+					label="Demographics Label"
+					default="Demographics"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderBirthdateLabel"
+					label="Birthdate Label"
+					default="Birthdate"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderGenderLabel"
+					label="Gender Label"
+					default="Gender"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderEthnicityLabel"
+					label="Ethnicity Label"
+					default="Ethnicity"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderRaceLabel"
+					label="Race Label"
+					default="Race"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderCommunityLabel"
+					label="Community Label"
+					default="Community"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderVeteranStatusLabel"
+					label="Veteran Label"
+					default="Veteran"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="buildChoseNottoProvideIncomeLabel"
+					label="Chose Not to Provide Income Label"
+					default="Chose Not to Provide Income"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderCommunityHelpTextLabel"
+					label="Community Help Text Label"
+					default="will be tagged to Rural Area Status"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderFluencyInEnglishLabel"
+					label="Fluency in English Label"
+					default="Fluency in English"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builder1stTimeHomebuyerLabel"
+					label="1st Time Homebuyer Label"
+					default="1st Time Homebuyer"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderHouseholdSizeLabel"
+					label="Household Size Label"
+					default="Household Size"
+					translatable="true"
+				/>
+				 <property
+					type="String"
+					name="builderHouseholdTypeLabel"
+					label="Household Type Label"
+					default="Household Type/Head of Household"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderMaritalStatusLabel"
+					label="Marital Status Label"
+					default="Marital Status"
+					translatable="true"
+				/>
+                <property
+					type="String"
+					name="builderEducationLabel"
+					label="Education Label"
+					default="Education"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderActiveMilitaryLabel"
+					label="Active Military Label"
+					default="Active Military"
+					translatable="true"
+				/>
+                 <property
+					type="String"
+					name="builderLegallyDisabledLabel"
+					label="Legally Disabled Label"
+					default="Legally Disabled"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderFinancesLabel"
+					label="Finances Label"
+					default="Finances"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderCurrentHouseHoldGrossMonthlyIncomeLabel"
+					label="Current Household gross monthly Income Label"
+					default="Current Household gross monthly Income"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderSelectExistingCoApplicantsLabel"
+					label="Select Existing Co-Applicants Label"
+					default="Select Existing Co-Applicants (Optional)"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderOptionsSelectedLabel"
+					label="Options Selected Label"
+					default="Options Selected"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderViewDetailsLabel"
+					label="View Details Label"
+					default="View Details"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderCoApplicantsSelectedLabel"
+					label="Co-Applicants Selected Label"
+					default="Co-Applicants Selected"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderCoApplicantsSelectedOptionCountLabel"
+					label="Co-Applicants Selected Option Count Label"
+					default="Option(s) Selected"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderEnterCoApplicantInformationLabel"
+					label="Enter co-applicant information Label"
+					default="Please enter co-applicant information below."
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderCoApplicantInformationLabel"
+					label="Co-Applicant Information Label"
+					default="Co-Applicant Information"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderFirstNameLabel"
+					label="First Name Label"
+					default="First Name"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderMiddleNameLabel"
+					label="Middle Name Label"
+					default="Middle Name"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderLastNameLabel"
+					label="Last Name Label"
+					default="Last Name"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderSuffixLabel"
+					label="Suffix Label"
+					default="Suffix"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderHouseHoldMonthlyIncomeLabel"
+					label="Household Monthly Income Label"
+					default="Household Monthly Income"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderTotalMonthlyIncomeLabel"
+					label="Total Monthly Income Label"
+					default="Total Monthly Income"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderHouseholdIncomeLabel"
+					label="Household Income Label"
+					default="Household Income"
+					translatable="true"
+				/>
+                <property
+					type="String"
+					name="builderNumberOfDependentsLabel"
+					label="Number of Dependents Label"
+					default="Number of Dependents"
+					translatable="true"
+				/>
+                <property
+					type="String"
+					name="builderEmploymentStatusLabel"
+					label="Employment Status Label"
+					default="Employment Status"
+					translatable="true"
+				/>
+                 <property
+					type="String"
+					name="builderCreditScoreLabel"
+					label="Credit Score Label"
+					default="Credit Score"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderSameAsPrimaryContactLabel"
+					label="Same as Primary Contact Label"
+					default="Same as Primary Contact"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderYesLabel"
+					label="Yes Label"
+					default="Yes"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderNoLabel"
+					label="No Label"
+					default="No"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderRemoveCoApplicantLabel"
+					label="Remove Co-Applicant Label"
+					default="Remove Co-Applicant"
+					translatable="true"
+				/> 
+				<property
+					type="String"
+					name="builderCoApplicantRemovedLabel"
+					label="Co Applicant Removed Label"
+					default="Co-Applicant Removed from Class Enrollment"
+					translatable="true"
+				/> 
+				<property
+					type="String"
+					name="builderContactSavedToMyProfileLabel"
+					label="Contact saved to My Profile Label"
+					default="Contact saved to My Profile"
+					translatable="true"
+				/> 
+				<property
+					type="String"
+					name="builderRemoveCoApplicantConfirmationLabel"
+					label="Remove Co-Applicant Confirmation Label"
+					default="Are you sure you want to continue, all unsaved changes will be deleted?"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderReviewDetailsLabel"
+					label="Review Details Label"
+					default="Review Details"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderClassDetailsLabel"
+					label="Class Details Label"
+					default="Class Details"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderClassNameLabel"
+					label="Class Name Label"
+					default="Class Name"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderShortDescriptionLabel"
+					label="Short Description Label"
+					default="Short Description"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderStartDateLabel"
+					label="Start Date Label"
+					default="Start Date"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderLocationLabel"
+					label="Location Label"
+					default="Location"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderPrimaryContactDetailsLabel"
+					label="Primary Contact Details Label"
+					default="Primary Contact Details"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderNameLabel"
+					label="Name Label"
+					default="Name"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderCoApplicantDetailsLabel"
+					label="Co-Applicant Details Label"
+					default="Co-Applicant Details"
+					translatable="true"
+				/>
+
+				<property
+					type="String"
+					name="builderEnrollmentSuccessfulLabel"
+					label="Enrollment Successful Label"
+					default="Enrollment Successful"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderDeleteUnsavedChangesLabel"
+					label="Delete Unsaved Changes Label"
+					default="Delete Unsaved Changes"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderDeleteUpdatesLabel"
+					label="Delete Updates Label"
+					default="Delete Updates"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="enterOnly5DigitNumbersLabel"
+					label="Enter only 5 digit numbersLabel"
+					default="Enter only 5 digit numbers"
+					translatable="true"
+				/>
+				<property
+					type="ContentReference"
+					name="finalPageContent"
+					label="Final page Content"
+				/>
+	 	</targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- External ID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address(Text) --></label>
+        <name>sumoapp__AddressText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address(Voice) --></label>
+        <name>sumoapp__AddressVoice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Area --></label>
+        <name>sumoapp__Area__c</name>
+        <relationshipLabel><!-- Area Locations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>sumoapp__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>sumoapp__Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Details --></label>
+        <name>sumoapp__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax --></label>
+        <name>sumoapp__Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geolocation --></label>
+        <name>sumoapp__Geolocation__c</name>
+    </fields>
+    <fields>
+        <help><!-- You can only schedule appointments into active locations. --></help>
+        <label><!-- Is Active? --></label>
+        <name>sumoapp__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Scheduling Option --></label>
+        <name>sumoapp__LocationSchedulingOption__c</name>
+        <picklistValues>
+            <masterLabel>Our Location</masterLabel>
+            <translation><!-- Our Location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Conference</masterLabel>
+            <translation><!-- Video Conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>You will call us</masterLabel>
+            <translation><!-- You will call us --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Your Location</masterLabel>
+            <translation><!-- Your Location --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Miles Radius --></label>
+        <name>sumoapp__MilesRadius__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>sumoapp__Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion --></label>
+        <name>sumoapp__Promotion__c</name>
+    </fields>
+    <fields>
+        <label><!-- State/Province --></label>
+        <name>sumoapp__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>sumoapp__Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website --></label>
+        <name>sumoapp__Website__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip/Postal Code --></label>
+        <name>sumoapp__Zipcode__c</name>
+    </fields>
+</CustomObjectTranslation>

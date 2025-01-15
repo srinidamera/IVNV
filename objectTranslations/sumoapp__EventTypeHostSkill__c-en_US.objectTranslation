@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- SUMO Event Type --></label>
+        <name>sumoapp__EventType__c</name>
+        <relationshipLabel><!-- SUMO Event Type Host Skills --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SUMO Service/Skill --></label>
+        <name>sumoapp__ServiceSkill__c</name>
+        <relationshipLabel><!-- SUMO Event Type Host Skills --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,65 @@
+/* Due Tab Css
+.slds-path__nav .slds-is-incomplete:before{
+	background-color: rgba(201, 201, 201, 1);
+}
+.slds-path__nav .slds-is-incomplete:after{
+	background-color: rgba(201, 201, 201, 1);
+}
+.slds-path__nav .slds-is-incomplete{
+	background: rgba(201, 201, 201, 1) !important;
+}
+
+
+/*cureent active tab css
+.slds-is-active{
+	background-color: rgba(56, 169, 77, 1) ;
+}
+.slds-is-active:before{
+	background-color: rgba(56, 169, 77, 1);
+}
+.slds-is-active:after{
+	background-color: rgba(56, 169, 77, 1) ;
+}
+.slds-is-active:hover{
+	background-color: rgba(56, 169, 77, 1);	
+}
+
+
+
+
+.slds-path__nav .slds-is-active:before {
+	background-color: rgba(56, 169, 77, 1) !important;
+}
+.slds-path__nav .slds-is-active:after {
+	background-color: rgba(56, 169, 77, 1) !important;
+}
+*/
+a:hover{
+	text-decoration: none !important;
+}
+.title-path{
+	font-size: 10px !important;
+	white-space: nowrap;
+}
+
+
+
+
+
+.slds-path__nav .slds-is-complete .slds-path__title {
+    transform: rotateX(0deg);
+}
+
+.slds-path__link {
+    justify-content: normal !important;
+}
+
+
+.custom-is_complete__span {
+    position: absolute;
+    left: 85%;
+}
+
+.slds-icon {
+    fill: white !important;
+}

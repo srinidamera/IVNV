@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Compass_Portal_Welcome_Letterhead</letterhead>
+    <name>Appointment Reminder (Customer) - PCN</name>
+    <style>freeForm</style>
+    <subject>Appointment Reminder: {!Event.sumoapp__StartDateTimeTimezone__c}</subject>
+    <textOnly>Hello &lt;%attendeeName%&gt;,
+
+I hope this message finds you well.
+
+
+This is a reminder of your upcoming appointment with {!Organization.Name}. 
+
+Appointment: {!Event.Subject}
+&lt;%serviceDetails%&gt;
+&lt;%locationDetails%&gt;
+Date/Time: {!Event.sumoapp__StartDateTimeTimezone__c}
+Duration: {!Event.DurationInMinutes} min
+
+Please ensure you have made all necessary arrangements to attend this appointment. If you need to reschedule or have any questions, please contact us as soon as possible. 
+
+
+
+We look forward to seeing you soon. 
+
+
+Thank you,
+{!Organization.Name}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

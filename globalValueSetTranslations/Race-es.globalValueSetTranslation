@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>American Indian/Alaskan Native</masterLabel>
+        <translation>Indio Americano/Nativo de Alaska</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Asian</masterLabel>
+        <translation>Asiático</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Black or African American</masterLabel>
+        <translation>Negro o Afroamericano</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chose not to respond</masterLabel>
+        <translation>Prefirió no responder</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>More than one race</masterLabel>
+        <translation>Más de una raza</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Native Hawaiian or Other Pacific Islander</masterLabel>
+        <translation>Nativo de Hawái u Otro Isleño del Pacífico</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>White</masterLabel>
+        <translation>Blanco</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

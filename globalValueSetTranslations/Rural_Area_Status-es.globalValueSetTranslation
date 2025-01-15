@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Chose not to respond</masterLabel>
+        <translation>Prefirió no responder</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Does not live in a rural area</masterLabel>
+        <translation>No vive en una zona rural</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Lives in a rural area</masterLabel>
+        <translation>Vive en una zona rural</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

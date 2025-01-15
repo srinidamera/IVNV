@@ -1,0 +1,1392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Loan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Loan</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Address --></label>
+        <name>AccountAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Balance --></label>
+        <name>AccountBalance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>AccountName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>AccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address 1 --></label>
+        <name>Address1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address 2 --></label>
+        <name>Address2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Status --></label>
+        <name>ApplicationStatus__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Asset Type --></label>
+        <name>AssetType__c</name>
+        <picklistValues>
+            <masterLabel>Automobile</masterLabel>
+            <translation><!-- Automobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certificate of Deposit - CDs</masterLabel>
+            <translation><!-- Certificate of Deposit - CDs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checking</masterLabel>
+            <translation><!-- Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Sweat Equity</masterLabel>
+            <translation><!-- Client Sweat Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Balance</masterLabel>
+            <translation><!-- Current Balance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education Saving Programs</masterLabel>
+            <translation><!-- Education Saving Programs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOPE - California National</masterLabel>
+            <translation><!-- HOPE - California National --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOPE - Etrade</masterLabel>
+            <translation><!-- HOPE - Etrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDA - Commercial Capital</masterLabel>
+            <translation><!-- IDA - Commercial Capital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDA - Union Bank</masterLabel>
+            <translation><!-- IDA - Union Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDEA - Commercial Capital</masterLabel>
+            <translation><!-- IDEA - Commercial Capital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IRA/Keogh Accounts</masterLabel>
+            <translation><!-- IRA/Keogh Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investments</masterLabel>
+            <translation><!-- Investments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matched Amount</masterLabel>
+            <translation><!-- Matched Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mattress Money</masterLabel>
+            <translation><!-- Mattress Money --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate</masterLabel>
+            <translation><!-- Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreational Vehicle</masterLabel>
+            <translation><!-- Recreational Vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retirement (401k/ESOP/SEP/other)</masterLabel>
+            <translation><!-- Retirement (401k/ESOP/SEP/other) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings</masterLabel>
+            <translation><!-- Savings --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client Case --></label>
+        <name>ClientCase__c</name>
+        <relationshipLabel><!-- Loan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client Discrimination Victim --></label>
+        <name>ClientDiscriminationVictim__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closing Agent --></label>
+        <name>ClosingAgent__c</name>
+        <relationshipLabel><!-- Loan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Fax --></label>
+        <name>ContactFax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>ContactName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deferral Type --></label>
+        <name>DeferralType__c</name>
+        <picklistValues>
+            <masterLabel>Due at Death</masterLabel>
+            <translation><!-- Due at Death --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Due at Sale</masterLabel>
+            <translation><!-- Due at Sale --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the number of months payments are deferred or &quot;due on sale&quot;. --></help>
+        <label><!-- Deferred Term --></label>
+        <name>DeferredTerm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equity and Out of Pocket Info --></label>
+        <name>EquityandOutofPocketInfo__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Type After --></label>
+        <name>FinanceTypeAfter__c</name>
+        <picklistValues>
+            <masterLabel>Conventional</masterLabel>
+            <translation><!-- Conventional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FHA</masterLabel>
+            <translation><!-- FHA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USDA</masterLabel>
+            <translation><!-- USDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Finance Type Before --></label>
+        <name>FinanceTypeBefore__c</name>
+        <picklistValues>
+            <masterLabel>Conventional</masterLabel>
+            <translation><!-- Conventional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FHA</masterLabel>
+            <translation><!-- FHA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USDA</masterLabel>
+            <translation><!-- USDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Financial Self Sufficiency --></label>
+        <name>FinancialSelfSufficiency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financing Type --></label>
+        <name>FinancingType__c</name>
+        <picklistValues>
+            <masterLabel>203k Mortgage</masterLabel>
+            <translation><!-- 203k Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All other grants</masterLabel>
+            <translation><!-- All other grants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All other mortgages</masterLabel>
+            <translation><!-- All other mortgages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client out of pocket (total)</masterLabel>
+            <translation><!-- Client out of pocket (total) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First grant</masterLabel>
+            <translation><!-- First grant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First mortgage</masterLabel>
+            <translation><!-- First mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gift of Equity</masterLabel>
+            <translation><!-- Gift of Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second mortgage: Down Payment/Closing Cost Assistance</masterLabel>
+            <translation><!-- Second mortgage: Down Payment/Closing Cost Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second mortgage: Other</masterLabel>
+            <translation><!-- Second mortgage: Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second mortgage: Rehabilitation</masterLabel>
+            <translation><!-- Second mortgage: Rehabilitation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second mortgage: Tandem 20% or more</masterLabel>
+            <translation><!-- Second mortgage: Tandem 20% or more --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsecured loan</masterLabel>
+            <translation><!-- Unsecured loan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Forgiveable --></label>
+        <name>Forgiveable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funding Source --></label>
+        <name>FundingSource__c</name>
+        <picklistValues>
+            <masterLabel>Bank of America</masterLabel>
+            <translation><!-- Bank of America --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDBG</masterLabel>
+            <translation><!-- CDBG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chase</masterLabel>
+            <translation><!-- Chase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CitiMortgage Inc</masterLabel>
+            <translation><!-- CitiMortgage Inc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Union</masterLabel>
+            <translation><!-- Credit Union --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOE (WAP) Weatherization Funds</masterLabel>
+            <translation><!-- DOE (WAP) Weatherization Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flagstar Bancorp</masterLabel>
+            <translation><!-- Flagstar Bancorp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flagstar Bank FSB</masterLabel>
+            <translation><!-- Flagstar Bank FSB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funded with a lender participation pool that NWO administers</masterLabel>
+            <translation><!-- Funded with a lender participation pool that NWO administers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOME Funds</masterLabel>
+            <translation><!-- HOME Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HUD-Guaranteed Section 184 Native American Mortgage</masterLabel>
+            <translation><!-- HUD-Guaranteed Section 184 Native American Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MetLife Home Loans</masterLabel>
+            <translation><!-- MetLife Home Loans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Government</masterLabel>
+            <translation><!-- Other Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Private Lending Institution</masterLabel>
+            <translation><!-- Other Private Lending Institution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other RLF</masterLabel>
+            <translation><!-- Other RLF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other not listed above</masterLabel>
+            <translation><!-- Other not listed above --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHH Corp</masterLabel>
+            <translation><!-- PHH Corp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PennyMac Mortgage Investment Trust</masterLabel>
+            <translation><!-- PennyMac Mortgage Investment Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Reinvest Homeownership</masterLabel>
+            <translation><!-- Project Reinvest Homeownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provident Funding Associates</masterLabel>
+            <translation><!-- Provident Funding Associates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quicken</masterLabel>
+            <translation><!-- Quicken --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-Loaned Wells LIFT</masterLabel>
+            <translation><!-- Re-Loaned Wells LIFT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ResCap (GMAC)</masterLabel>
+            <translation><!-- ResCap (GMAC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SunTrust Mortgage Inc</masterLabel>
+            <translation><!-- SunTrust Mortgage Inc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>U.S. Bank Home Mortgage</masterLabel>
+            <translation><!-- U.S. Bank Home Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USDA RD 502D</masterLabel>
+            <translation><!-- USDA RD 502D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USDA RD 502G</masterLabel>
+            <translation><!-- USDA RD 502G --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USDA RD Rehab (504 or HPG)</masterLabel>
+            <translation><!-- USDA RD Rehab (504 or HPG) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wells Fargo &amp; Co.</masterLabel>
+            <translation><!-- Wells Fargo &amp; Co. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wells LIFT</masterLabel>
+            <translation><!-- Wells LIFT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wells Rural</masterLabel>
+            <translation><!-- Wells Rural --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>loanDepot</masterLabel>
+            <translation><!-- loanDepot --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Funding Source --></label>
+        <name>FundingSourcetxt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funding Type --></label>
+        <name>FundingType__c</name>
+        <picklistValues>
+            <masterLabel>City Government</masterLabel>
+            <translation><!-- City Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Sweat Equity</masterLabel>
+            <translation><!-- Client Sweat Equity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client portion (out-of-pocket)</masterLabel>
+            <translation><!-- Client portion (out-of-pocket) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporation</masterLabel>
+            <translation><!-- Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Federal Government</masterLabel>
+            <translation><!-- Federal Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foundation</masterLabel>
+            <translation><!-- Foundation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government (Federal/State/Local)</masterLabel>
+            <translation><!-- Government (Federal/State/Local) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HFA</masterLabel>
+            <translation><!-- HFA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NCC</masterLabel>
+            <translation><!-- NCC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NWO Loan Funds</masterLabel>
+            <translation><!-- NWO Loan Funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NWO Other</masterLabel>
+            <translation><!-- NWO Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NWOs Revolving Loan Fund (including CDBG &amp; HOME funded RLF)</masterLabel>
+            <translation><!-- NWOs Revolving Loan Fund (including CDBG &amp; HOME funded RLF) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NWOs other funds</masterLabel>
+            <translation><!-- NWOs other funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks America</masterLabel>
+            <translation><!-- NeighborWorks America --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non NWO CDFI</masterLabel>
+            <translation><!-- Non NWO CDFI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Source</masterLabel>
+            <translation><!-- Other Source --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other sources (e.g. FHLB/AHP/Corporations/Foundations/NWA/NCC)</masterLabel>
+            <translation><!-- Other sources (e.g. FHLB/AHP/Corporations/Foundations/NWA/NCC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Lending Institution</masterLabel>
+            <translation><!-- Private Lending Institution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Lending Institution (bank/thrift/mortgage company/etc.)</masterLabel>
+            <translation><!-- Private Lending Institution (bank/thrift/mortgage company/etc.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State or County Government</masterLabel>
+            <translation><!-- State or County Government --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Homeownership Voucher --></label>
+        <name>HomeownershipVoucher__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income Doc --></label>
+        <name>IncomeDoc__c</name>
+        <picklistValues>
+            <masterLabel>Full Document Provided</masterLabel>
+            <translation><!-- Full Document Provided --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Available</masterLabel>
+            <translation><!-- Not Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reduced Doc</masterLabel>
+            <translation><!-- Reduced Doc --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Intake Loan Has Interest Rate --></label>
+        <name>IntakeLoanHasInterestRate__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Intake Loan Is Interest Only --></label>
+        <name>IntakeLoanIsInterestOnly__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Intake Loan Is a Hybrid ARM Loan --></label>
+        <name>IntakeLoanIsaHybridARMLoan__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Intake Loan Is an Option ARM Loan --></label>
+        <name>IntakeLoanIsanOptionARMLoan__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Intake Loan Type --></label>
+        <name>IntakeLoanType__c</name>
+        <picklistValues>
+            <masterLabel>ARM currently at 8% or greater</masterLabel>
+            <translation><!-- ARM currently at 8% or greater --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARM currently at 8% or greater as a result of loan modification in last six months</masterLabel>
+            <translation><!-- ARM currently at 8% or greater as a result of loan modification in last six months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARM currently under 8%</masterLabel>
+            <translation><!-- ARM currently under 8% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARM currently under 8% as a result of loan modification in last six months</masterLabel>
+            <translation><!-- ARM currently under 8% as a result of loan modification in last six months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client did not disclose</masterLabel>
+            <translation><!-- Client did not disclose --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed rate currently 8% or greater</masterLabel>
+            <translation><!-- Fixed rate currently 8% or greater --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed rate currently 8% or greater as a result of loan modification in last six months</masterLabel>
+            <translation><!-- Fixed rate currently 8% or greater as a result of loan modification in last six months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed rate currently under 8%</masterLabel>
+            <translation><!-- Fixed rate currently under 8% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed rate currently under 8% as a result of loan modification in last six months</masterLabel>
+            <translation><!-- Fixed rate currently under 8% as a result of loan modification in last six months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Intake Loan is FHA Or VA Insured --></label>
+        <name>IntakeLoanisFHAOrVAInsured__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Intake Loan is a Privately Held --></label>
+        <name>IntakeLoanisaPrivatelyHeld__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interest Only --></label>
+        <name>InterestOnly__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Rate --></label>
+        <name>InterestRate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lender Referral Type --></label>
+        <name>LenderReferralType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lender --></label>
+        <name>Lender__c</name>
+        <relationshipLabel><!-- Loan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Less Closing Costs --></label>
+        <name>LessClosingCosts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lien Position --></label>
+        <name>LienPosition__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8+</masterLabel>
+            <translation><!-- 8+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsecured Loan</masterLabel>
+            <translation><!-- Unsecured Loan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Missing Loan Details --></label>
+        <name>MissingLoanDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Mortgage Insurance Amount --></label>
+        <name>MonthlyMortgageInsuranceAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly PI --></label>
+        <name>MonthlyPI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Payment --></label>
+        <name>MonthlyPayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mortgage Grant Type --></label>
+        <name>MortgageGrantType__c</name>
+        <picklistValues>
+            <masterLabel>DPA</masterLabel>
+            <translation><!-- DPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Mortgage</masterLabel>
+            <translation><!-- First Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grant</masterLabel>
+            <translation><!-- Grant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HELOC</masterLabel>
+            <translation><!-- HELOC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reverse Mortgage/HECM</masterLabel>
+            <translation><!-- Reverse Mortgage/HECM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second Mortgage</masterLabel>
+            <translation><!-- Second Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Mortgage</masterLabel>
+            <translation><!-- Third Mortgage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mortgage Insurance Type --></label>
+        <name>MortgageInsuranceType__c</name>
+        <picklistValues>
+            <masterLabel>FHA</masterLabel>
+            <translation><!-- FHA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Mortgage Insurance</masterLabel>
+            <translation><!-- Other Mortgage Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Mortgage Insurance</masterLabel>
+            <translation><!-- Private Mortgage Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RHS</masterLabel>
+            <translation><!-- RHS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mortgage Type After --></label>
+        <name>MortgageTypeAfter__c</name>
+        <picklistValues>
+            <masterLabel>1 - year ARM</masterLabel>
+            <translation><!-- 1 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 - year ARM</masterLabel>
+            <translation><!-- 10 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 - year fixed</masterLabel>
+            <translation><!-- 10 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15 - year fixed</masterLabel>
+            <translation><!-- 15 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - year ARM</masterLabel>
+            <translation><!-- 2 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20 - year fixed</masterLabel>
+            <translation><!-- 20 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - year ARM</masterLabel>
+            <translation><!-- 3 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 - year fixed</masterLabel>
+            <translation><!-- 30 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40 - year fixed</masterLabel>
+            <translation><!-- 40 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 - year ARM</masterLabel>
+            <translation><!-- 5 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 - year ARM</masterLabel>
+            <translation><!-- 7 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interest Only</masterLabel>
+            <translation><!-- Interest Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mortgage Type --></label>
+        <name>MortgageType__c</name>
+        <picklistValues>
+            <masterLabel>1 - year ARM</masterLabel>
+            <translation><!-- 1 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 - year ARM</masterLabel>
+            <translation><!-- 10 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 - year fixed</masterLabel>
+            <translation><!-- 10 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15 - year fixed</masterLabel>
+            <translation><!-- 15 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - year ARM</masterLabel>
+            <translation><!-- 2 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20 - year fixed</masterLabel>
+            <translation><!-- 20 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - year ARM</masterLabel>
+            <translation><!-- 3 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 - year fixed</masterLabel>
+            <translation><!-- 30 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40 - year fixed</masterLabel>
+            <translation><!-- 40 - year fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 - year ARM</masterLabel>
+            <translation><!-- 5 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 - year ARM</masterLabel>
+            <translation><!-- 7 - year ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interest Only</masterLabel>
+            <translation><!-- Interest Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- NWO Services --></label>
+        <name>NWOServices__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Loan Amount --></label>
+        <name>NetLoanAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Type --></label>
+        <name>PaymentType__c</name>
+        <picklistValues>
+            <masterLabel>Assoc. Dues</masterLabel>
+            <translation><!-- Assoc. Dues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract to Deed</masterLabel>
+            <translation><!-- Contract to Deed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hybrid Arm [0/1]</masterLabel>
+            <translation><!-- Hybrid Arm [0/1] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hzrd Insurance</masterLabel>
+            <translation><!-- Hzrd Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mtg - ARM</masterLabel>
+            <translation><!-- Mtg - ARM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mtg - Fixed (Default)</masterLabel>
+            <translation><!-- Mtg - Fixed (Default) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mtg - Hybrid rate not reset</masterLabel>
+            <translation><!-- Mtg - Hybrid rate not reset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mtg - Hybrid rate reset</masterLabel>
+            <translation><!-- Mtg - Hybrid rate reset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mtg - Hybrid reset unknown</masterLabel>
+            <translation><!-- Mtg - Hybrid reset unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mtg Insurance</masterLabel>
+            <translation><!-- Mtg Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Option Arm [0/1]</masterLabel>
+            <translation><!-- Option Arm [0/1] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prop Taxes</masterLabel>
+            <translation><!-- Prop Taxes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program Name --></label>
+        <name>ProgramName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property City --></label>
+        <name>PropertyCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property State --></label>
+        <name>PropertyState__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS</masterLabel>
+            <translation><!-- AS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GU</masterLabel>
+            <translation><!-- GU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VI</masterLabel>
+            <translation><!-- VI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Property Zip --></label>
+        <name>PropertyZip__c</name>
+    </fields>
+    <fields>
+        <label><!-- RLF Info --></label>
+        <name>RLFInfo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for Rejection --></label>
+        <name>ReasonforRejection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verified</masterLabel>
+            <translation><!-- Verified --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Term Type --></label>
+        <name>TermType__c</name>
+        <picklistValues>
+            <masterLabel>10 Yr</masterLabel>
+            <translation><!-- 10 Yr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 Months</masterLabel>
+            <translation><!-- 12 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15 Yr</masterLabel>
+            <translation><!-- 15 Yr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18 Months</masterLabel>
+            <translation><!-- 18 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 Yr</masterLabel>
+            <translation><!-- 2 Yr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2/28</masterLabel>
+            <translation><!-- 2/28 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20 Yr</masterLabel>
+            <translation><!-- 20 Yr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 Yr</masterLabel>
+            <translation><!-- 3 Yr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3/27 Yr</masterLabel>
+            <translation><!-- 3/27 Yr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 Yr</masterLabel>
+            <translation><!-- 30 Yr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>33 Yr</masterLabel>
+            <translation><!-- 33 Yr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>38 Yr</masterLabel>
+            <translation><!-- 38 Yr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 Yr</masterLabel>
+            <translation><!-- 4 Yr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40 Yr</masterLabel>
+            <translation><!-- 40 Yr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 Yr</masterLabel>
+            <translation><!-- 5 Yr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 Months</masterLabel>
+            <translation><!-- 6 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 Yr</masterLabel>
+            <translation><!-- 6 Yr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 Yr</masterLabel>
+            <translation><!-- 7 Yr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 Yr</masterLabel>
+            <translation><!-- 8 Yr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9 Yr</masterLabel>
+            <translation><!-- 9 Yr --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Monthly Payment (Do Not Use) --></label>
+        <name>TotalMonthlyPayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weatherization Funds --></label>
+        <name>WeatherizationFunds__c</name>
+    </fields>
+    <fields>
+        <label><!-- 203K Mortgage --></label>
+        <name>X203KMortgage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Your Role As Mortgage Originator --></label>
+        <name>YourRoleAsMortgageOriginator__c</name>
+        <picklistValues>
+            <masterLabel>NWO brokered to a third party to close loan</masterLabel>
+            <translation><!-- NWO brokered to a third party to close loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NWO funded loan at closing; NWO is mortgage</masterLabel>
+            <translation><!-- NWO funded loan at closing; NWO is mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NWO funded loan at closing; sold loan to third party investor</masterLabel>
+            <translation><!-- NWO funded loan at closing; sold loan to third party investor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not applicable</masterLabel>
+            <translation><!-- Not applicable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Your Role As Mortgage Underwriter --></label>
+        <name>YourRoleAsMortgageUnderwriter__c</name>
+        <picklistValues>
+            <masterLabel>NWO processes loan AND underwrites loan</masterLabel>
+            <translation><!-- NWO processes loan AND underwrites loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NWO processes loan; lender determines underwriting</masterLabel>
+            <translation><!-- NWO processes loan; lender determines underwriting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not applicable</masterLabel>
+            <translation><!-- Not applicable --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- Loan --></label>
+        <name>Loan</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Out of Pocket --></label>
+        <name>OutOfPocket</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Complete this field. --></errorMessage>
+        <name>Funding_Type</name>
+    </validationRules>
+</CustomObjectTranslation>

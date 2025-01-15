@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Assignment Engine --></label>
+        <name>sumoapp__AssignmentEngine__c</name>
+        <picklistValues>
+            <masterLabel>System Auto-Assign</masterLabel>
+            <translation><!-- System Auto-Assign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Filter &amp; Assign Resource</masterLabel>
+            <translation><!-- User Filter &amp; Assign Resource --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Filter &amp; System Auto-Assign</masterLabel>
+            <translation><!-- User Filter &amp; System Auto-Assign --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fields To Display --></label>
+        <name>sumoapp__FieldsToDisplay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filters Label --></label>
+        <name>sumoapp__FiltersLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>sumoapp__Location__c</name>
+        <relationshipLabel><!-- Resource Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SUMO Scheduling Process --></label>
+        <name>sumoapp__Process__c</name>
+        <relationshipLabel><!-- Resource Configurations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Result Label --></label>
+        <name>sumoapp__ResultLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search Criteria --></label>
+        <name>sumoapp__SearchCriteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Header --></label>
+        <name>sumoapp__SubHeader__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Assignment Engine is required --></errorMessage>
+        <name>sumoapp__AssignmentEngineIsRequired</name>
+    </validationRules>
+</CustomObjectTranslation>

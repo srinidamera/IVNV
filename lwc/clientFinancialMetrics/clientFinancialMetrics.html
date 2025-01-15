@@ -1,0 +1,381 @@
+<template>
+    <lightning-card>
+        <lightning-accordion allow-multiple-sections-open active-section-name="A">
+            <lightning-accordion-section name="A" label="Financial Metrics">
+                <div>
+                    <lightning-combobox class="slds-m-bottom_medium" name="financialSnapshots"
+                        label="Select Snapshot History" value={selectedValue} placeholder="Select Snapshot History"
+                        options={SnapshotOptions} onchange={handleSnapshotChange}
+                        style="width: 20%;"></lightning-combobox>
+                </div>
+                <table aria-multiselectable="true"
+                    class="slds-table slds-table_bordered slds-table_fixed-layout slds-table_resizable-cols slds-table_col-bordered"
+                    role="grid">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th scope="col" style="width:3rem">
+                                <p class="slds-m-left_xx-small">
+                                    <template lwc:if={selectedSnapshotRec}>
+                                        Snapshot {selectedSnapshotRec.Name}
+                                    </template>
+                                    <template lwc:else>
+                                        Snapshot
+                                    </template>
+                                </p>
+                            </th>
+                            <th scope="col" style="width:6.00rem">
+                                <p class="slds-m-left_xx-small">Indicator</p>
+                            </th>
+                            <th scope="col" style="width:3.50rem">
+                                <p class="slds-m-left_xx-small">Current Value</p>
+                            </th>
+                            <th scope="col" style="width:3.25rem">
+                                <p class="slds-m-left_xx-small">Change</p>
+                            </th>
+                            <th scope="col" style="width:3.00rem">
+                                <p class="slds-m-left_xx-small">Goal</p>
+                            </th>
+                            <th scope="col" style="width:3.75rem">
+                                <p class="slds-m-left_xx-small">Over / -Under Goal</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="slds-hint-parent">
+                            <th class="">
+                                <template lwc:if={selectedSnapshotRec}>
+                                    <lightning-formatted-number
+                                        value={selectedSnapshotRec.CreditScore__c}></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">Credit Score</th>
+                            <th class="">
+                                <template lwc:if={currentValues}>
+                                    <lightning-formatted-number
+                                        value={currentValues.creditScore}></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={changeValue}>
+                                    <lightning-formatted-number
+                                        value={changeValue.creditScore}></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={goals}>
+                                    <lightning-formatted-number
+                                        value={goals.CreditScoreGoal__c}></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={overUnderGoalValues}>
+                                    <lightning-formatted-number
+                                        value={overUnderGoalValues.creditScore}></lightning-formatted-number>
+                                </template>
+                            </th>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <th class="">
+                                <template lwc:if={selectedSnapshotRec}>
+                                    <lightning-formatted-number
+                                        value={selectedSnapshotRec.CoAppCreditScore__c}></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">Credit Score</th>
+                            <th class="">
+                                <template lwc:if={currentValues}>
+                                    <lightning-formatted-number
+                                        value={currentValues.coAppCreditScore}></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={changeValue}>
+                                    <lightning-formatted-number
+                                        value={changeValue.coAppCreditScore}></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={goals}>
+                                    <lightning-formatted-number
+                                        value={goals.PrimaryCoAppCreditScoreGoal__c}></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={overUnderGoalValues}>
+                                    <lightning-formatted-number
+                                        value={overUnderGoalValues.coAppCreditScore}></lightning-formatted-number>
+                                </template>
+                            </th>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <th class="">
+                                <template lwc:if={selectedSnapshotRec}>
+                                    <lightning-formatted-number value={selectedSnapshotRec.Savings__c}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">Savings</th>
+                            <th class="">
+                                <template lwc:if={currentValues}>
+                                    <lightning-formatted-number value={currentValues.savings} format-style="currency"
+                                        currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={changeValue}>
+                                    <lightning-formatted-number value={changeValue.savings} format-style="currency"
+                                        currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={goals}>
+                                    <lightning-formatted-number value={goals.SavingsGoal__c} format-style="currency"
+                                        currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={overUnderGoalValues}>
+                                    <lightning-formatted-number value={overUnderGoalValues.savings}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <th class="">
+                                <template lwc:if={selectedSnapshotRec}>
+                                    <lightning-formatted-number value={selectedSnapshotRec.GrossMonthlyIncome__c}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">Gross Monthly Income</th>
+                            <th class="">
+                                <template lwc:if={currentValues}>
+                                    <lightning-formatted-number value={currentValues.grossMonthlyIncome}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={changeValue}>
+                                    <lightning-formatted-number value={changeValue.grossMonthlyIncome}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={goals}>
+                                    <lightning-formatted-number value={goals.GrossMonthlyIncomeGoal__c}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={overUnderGoalValues}>
+                                    <lightning-formatted-number value={overUnderGoalValues.grossMonthlyIncome}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <th class="">
+                                <template lwc:if={selectedSnapshotRec}>
+                                    <lightning-formatted-number value={selectedSnapshotRec.NetMonthlyIncome__c}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">Net Monthly Income</th>
+                            <th class="">
+                                <template lwc:if={currentValues}>
+                                    <lightning-formatted-number value={currentValues.netMonthlyIncome}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={changeValue}>
+                                    <lightning-formatted-number value={changeValue.netMonthlyIncome}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={goals}>
+                                    <lightning-formatted-number value={goals.NetMonthlyIncomeGoal__c}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={overUnderGoalValues}>
+                                    <lightning-formatted-number value={overUnderGoalValues.netMonthlyIncome}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <th class="">
+                                <template lwc:if={selectedSnapshotRec}>
+                                    <lightning-formatted-number
+                                        value={selectedSnapshotRec.CurrentMonthlyDebtObligation__c}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">Current Monthly Debt Obligation</th>
+                            <th class="">
+                                <template lwc:if={currentValues}>
+                                    <lightning-formatted-number value={currentValues.currentlyMonthlyDebtObligation}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={changeValue}>
+                                    <lightning-formatted-number value={changeValue.currentlyMonthlyDebtObligation}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={goals}>
+                                    <lightning-formatted-number value={goals.CurrentMonthlyDebtObligationGoal__c}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={overUnderGoalValues}>
+                                    <lightning-formatted-number
+                                        value={overUnderGoalValues.currentlyMonthlyDebtObligation}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <th class="">
+                                <template lwc:if={selectedSnapshotRec}>
+                                    <lightning-formatted-number value={selectedSnapshotRec.HousingExpense__c}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">Housing Expense</th>
+                            <th class="">
+                                <template lwc:if={currentValues}>
+                                    <lightning-formatted-number value={currentValues.housingExpense}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={changeValue}>
+                                    <lightning-formatted-number value={changeValue.housingExpense}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={goals}>
+                                    <lightning-formatted-number value={goals.HousingExpense__c} format-style="currency"
+                                        currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={overUnderGoalValues}>
+                                    <lightning-formatted-number value={overUnderGoalValues.housingExpense}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <th class="">
+                                <template lwc:if={selectedSnapshotRec}>
+                                    <lightning-formatted-number value={selectedSnapshotRec.TotalDebt__c}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">Total Debt</th>
+                            <th class="">
+                                <template lwc:if={currentValues}>
+                                    <lightning-formatted-number value={currentValues.totalDebt} format-style="currency"
+                                        currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={changeValue}>
+                                    <lightning-formatted-number value={changeValue.totalDebt} format-style="currency"
+                                        currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={goals}>
+                                    <lightning-formatted-number value={goals.TotalDebtGoal__c} format-style="currency"
+                                        currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={overUnderGoalValues}>
+                                    <lightning-formatted-number value={overUnderGoalValues.totalDebt}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <th class="">
+                                <template lwc:if={selectedSnapshotRec}>
+                                    <lightning-formatted-number value={selectedSnapshotRec.TotalAssets__c}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">Total Assets</th>
+                            <th class="">
+                                <template lwc:if={currentValues}>
+                                    <lightning-formatted-number value={currentValues.totalAssets}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={changeValue}>
+                                    <lightning-formatted-number value={changeValue.totalAssets} format-style="currency"
+                                        currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={goals}>
+                                    <lightning-formatted-number value={goals.TotalAssetsGoal__c} format-style="currency"
+                                        currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={overUnderGoalValues}>
+                                    <lightning-formatted-number value={overUnderGoalValues.totalAssets}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                        </tr>
+                        <tr class="slds-hint-parent">
+                            <th class="">
+                                <template lwc:if={selectedSnapshotRec}>
+                                    <lightning-formatted-number value={selectedSnapshotRec.NetWorth__c}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">Net Worth</th>
+                            <th class="">
+                                <template lwc:if={currentValues}>
+                                    <lightning-formatted-number value={currentValues.netWorth} format-style="currency"
+                                        currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={changeValue}>
+                                    <lightning-formatted-number value={changeValue.netWorth} format-style="currency"
+                                        currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={goals}>
+                                    <lightning-formatted-number value={goals.NetWorthGoal__c} format-style="currency"
+                                        currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                            <th class="">
+                                <template lwc:if={overUnderGoalValues}>
+                                    <lightning-formatted-number value={overUnderGoalValues.netWorth}
+                                        format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                </template>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </lightning-accordion-section>
+        </lightning-accordion>
+    </lightning-card>
+</template>

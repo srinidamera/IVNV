@@ -1,0 +1,62 @@
+.btn {
+  --sds-c-button-radius-border: var(--dxp-s-button-radius-border) !important;
+  font-size: var(--dxp-s-button-font-size) !important;
+  height: 32px !important;
+}
+
+.font-family{
+	font-family: Segoe UI;
+	font-size: 13px;
+}
+.services{
+	color: var(--dxp-g-brand) !important;
+	cursor:pointer;
+}
+.h-2 {
+  font-size: var(--dxp-s-text-heading-large-font-size) !important;
+  font-weight: var(--dxp-s-text-heading-large-font-weight) !important;
+}
+.content {
+    background: rgba(255, 255, 255, 1);
+}
+.hrTag{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-white {
+  color: #ffffff;
+}
+
+.font-black {
+  color: #000000;
+}
+
+.bg-yellow {
+  background: #FBFF38;
+}
+
+.bg-white {
+  background: #ffffff;
+}
+
+.bg-green {
+  background: #3A9256;
+}
+
+.bg-orange {
+  background: #DD7A01;
+}
+
+.badge-width {
+  width: 84px;
+  justify-content: center;
+}
+
+.manage-document-text-color {
+  --sds-c-button-brand-text-color: white !important;
+}

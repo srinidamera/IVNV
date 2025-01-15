@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Counselor Training</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Counselor Training</value>
+    </caseValues>
+    <fields>
+        <label><!-- Counselor --></label>
+        <name>Counselor__c</name>
+        <relationshipLabel><!-- Counselor Training --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically extracts the first 40 characters from the &quot;Training Organization Other&quot; --></help>
+        <label><!-- HUD Training Organization Other --></label>
+        <name>HUDTrainingOrganizationOther__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically extracts the first 40 characters from the &quot;Training Sponsor Other&quot; --></help>
+        <label><!-- HUD Training Sponsor Other --></label>
+        <name>HUDTrainingSponsorOther__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Yes&quot; if the staff member received a training certificate; otherwise, select &quot;No&quot;. This field serves as a record of certification for completed training programs. --></help>
+        <label><!-- Training Certificate --></label>
+        <name>TrainingCertificate__c</name>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the end date of the training course. This helps in tracking the duration and completion status of the training program. --></help>
+        <label><!-- Training Course End Date --></label>
+        <name>TrainingCourseEndDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the unique identifier assigned to the training course if applicable. This ID helps in linking training records to specific courses or programs. --></help>
+        <label><!-- Training Course ID --></label>
+        <name>TrainingCourseID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the duration of the training session or course, typically specified in minutes. --></help>
+        <label><!-- Training Duration --></label>
+        <name>TrainingDuration__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the organization responsible for training is not listed, enter the name of the organization in this field. This ensures accurate recording of training providers. --></help>
+        <label><!-- Training Organization Other --></label>
+        <name>TrainingOrganizationOther__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the organization responsible for conducting the training from the available options. This field helps in identifying the entity delivering the training program. --></help>
+        <label><!-- Training Organization --></label>
+        <name>TrainingOrganization__c</name>
+        <picklistValues>
+            <masterLabel>La Raza</masterLabel>
+            <translation><!-- La Raza --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NCRC</masterLabel>
+            <translation><!-- NCRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NeighborWorks America</masterLabel>
+            <translation><!-- NeighborWorks America --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If the sponsoring entity is not listed, enter the name of the sponsor in this field. This ensures accurate recording of financial support for the training program. --></help>
+        <label><!-- Training Sponsor Other --></label>
+        <name>TrainingSponsorOther__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the entity sponsoring or funding the training program from the available options. This field provides insights into the financial support for the training initiative. --></help>
+        <label><!-- Training Sponsor --></label>
+        <name>TrainingSponsor__c</name>
+        <picklistValues>
+            <masterLabel>HUD</masterLabel>
+            <translation><!-- HUD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the title or name of the training program. This field provides a clear identifier for the training initiative and helps in organizing and tracking training records. --></help>
+        <label><!-- Training Title --></label>
+        <name>TrainingTitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validation Combined --></label>
+        <name>ValidationCombined__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

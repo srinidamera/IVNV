@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>57.0</apiVersion>
+	<isExposed>true</isExposed>
+	<masterLabel>User Login Form</masterLabel>
+	<targets>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+	 <targetConfig targets="lightningCommunity__Default">
+			 <property
+                type="String"
+                name="loginTitle"
+                label="Login Title"
+                default="Login"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="description"
+                label="Description"
+                default="Please enter your credentials below."
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="emailAddressLabel"
+                label="Email Address Label"
+                default="Email Address"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="passwordLabel"
+                label="password Label"
+                default="Password"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="invalidEmailFormat"
+                label="Invalid Email Format Warning Message"
+                default="You have entered an invalid format."
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="loginButtonTitle"
+                label="Login Button Title"
+                default="Login"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="createNewAccountButtonTitle"
+                label="Create New Account Button Title"
+                default="Create New Account"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="goBackButtonTitle"
+                label="Go Back Button Title"
+                default="Go Back"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="forgotPasswordButtonTitle"
+                label="Forgot Password Button Title"
+                default="Forgot Password"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="builderPasswordErrorMessage"
+                label="Password Error Message Label"
+                default="You have entered incorrect password"
+				translatable="true"
+            />
+        </targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

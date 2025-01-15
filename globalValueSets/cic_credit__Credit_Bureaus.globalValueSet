@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Tri Merge</fullName>
+        <default>true</default>
+        <label>Tri Merge</label>
+    </customValue>
+    <customValue>
+        <fullName>Equifax</fullName>
+        <default>false</default>
+        <label>Equifax</label>
+    </customValue>
+    <customValue>
+        <fullName>Experian</fullName>
+        <default>false</default>
+        <label>Experian</label>
+    </customValue>
+    <customValue>
+        <fullName>Transunion</fullName>
+        <default>false</default>
+        <label>Transunion</label>
+    </customValue>
+    <masterLabel>Credit Bureaus</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,19 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="arial"><span style="font-size: 12pt;">Dear Administrator,</span></font>
+<div style="">
+    <br>
+    <div style="">
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+            <p>Resource Calendar Connector became failed.</p>
+        </div>
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+            <br>
+        </div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><div style="font-size: 12pt; background-color: rgb(255, 255, 255);"><font color="#330033" face="Arial, sans-serif">Connector Issue Details:</font></div><div style="background-color: rgb(255, 255, 255);"><font color="#330033" face="Arial, sans-serif">{!sumoapp__Log__c.sumoapp__Exception__c}</font></div></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div>
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Thank you,</div>
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-size: 12pt;">{!Organization.Name}</span></div>
+    </div>
+</div>]]></td>
+</tr>
+</table>

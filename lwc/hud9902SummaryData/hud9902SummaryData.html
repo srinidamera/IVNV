@@ -1,0 +1,186 @@
+<template>
+    <div if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading" size="medium" variant="brand"></lightning-spinner>
+    </div>
+    <lightning-card>
+        <div class="slds-p-around_x-small">
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered" style="table-layout: fixed;display: block;overflow-x: scroll;white-space: nowrap;width: 100%;">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Question">Question</div>
+                        </th>
+                        <th class="" scope="col" style="text-wrap:wrap">
+                            <div class="slds-truncate" title="Answer">Answer
+                            </div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="All" style="text-align:center">All</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="All Time Spent" style="text-align:center">All Time Spent</div>
+                        </th>
+                        <!--<th class="" scope="col" width="6%">
+                            <div class="slds-truncate" title={lastYear} style="text-align:center">{lastYear}</div>
+                        </th>
+                        <th class="" scope="col" width="10%">
+                            <div class="slds-truncate" title={lastYearTitle} style="text-align:center">{lastYearTitle}</div>
+                        </th>
+                        <th class="" scope="col" width="6%">
+                            <div class="slds-truncate" title={currentYear} style="text-align:center">{currentYear}</div>
+                        </th>
+                        <th class="" scope="col" width="10%">
+                            <div class="slds-truncate" title={currentYearTitle} style="text-align:center">{currentYearTitle}</div>
+                        </th>-->
+                        <template for:each={dynamicColumns} for:item="item">
+                            <th key={item} class="" scope="col">
+                                <div class="slds-truncate" title={item} style="text-align:center">{item}</div>
+                            </th>
+                            <th key={item} class="" scope="col">
+                                <div class="slds-truncate" title={item} style="text-align:center">{item} Time Spent</div>
+                            </th>
+                        </template>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="HUD" style="text-align:center">HUD</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="HUD Time Spent(Hours:Mins)" style="text-align:center">HUD Time Spent</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={summaryRecs} for:item="rec">
+                        <tr key={rec.rowName} style="background-color:#D9EBF1">
+                            <td scope="col">
+                                {rec.rowName}
+                            </td>
+                            <td scope="col" style="text-wrap:wrap">
+                            </td>
+                            <td scope="col">
+                            </td>
+                            <td scope="col">
+                            </td>
+                            <!--<td scope="col">
+                            </td>
+                            <td scope="col">
+                            </td>
+                            <td scope="col">
+                            </td>
+                            <td scope="col">
+                            </td>-->
+                            <template for:each={dynamicColumns} for:item="item">
+                                <td key={item} scope="col">
+                                </td>
+                                <td key={item} scope="col">
+                                </td>
+                            </template>
+                            <td scope="col">
+                            </td>
+                            <td scope="col">
+                            </td>
+                        </tr>
+                        <template for:each={rec.rows} for:item="childRec">
+                            <tr key={childRec.answer}>
+                                <td scope="col">
+                                </td>
+                                <td scope="col" style="text-wrap:wrap">
+                                    {childRec.answer}
+                                </td>
+                                <td scope="col" style="text-align:center">
+                                    {childRec.all}
+                                </td>
+                                <td scope="col" style="text-align:center">
+                                    {childRec.allTimeSpent}
+                                </td>
+                                <!--<td scope="col" style="text-align:center">
+                                    {childRec.lastYearCount}
+                                </td>
+                                <td scope="col" style="text-align:center">
+                                    {childRec.lastYearTimeSpent}
+                                </td>
+                                <td scope="col" style="text-align:center">
+                                    {childRec.currentYearCount}
+                                </td>
+                                <td scope="col" style="text-align:center">
+                                    {childRec.currentYearTimeSpent}
+                                </td>-->
+                                <template for:each={childRec.dynamicColValues} for:item="colItem">
+                                    <td if:true={colItem.recCount} key={colItem} scope="col" style="text-align:center">
+                                        {colItem.recCount}
+                                    </td>
+                                    <td if:false={colItem.recCount} key={colItem} scope="col" style="text-align:center">
+                                        0
+                                    </td>
+                                    <td if:true={colItem.duration} key={colItem} scope="col" style="text-align:center">
+                                        {colItem.duration}:00
+                                    </td>
+                                    <td if:false={colItem.duration} key={colItem} scope="col" style="text-align:center">
+                                        0:00
+                                    </td>
+                                </template>
+                                <td scope="col" style="text-align:center">
+                                    {childRec.hudCount}
+                                </td>
+                                <td if:true={childRec.hudTimeSpent} scope="col" style="text-align:center">
+                                    {childRec.hudTimeSpent}:00
+                                </td>
+                                <td if:false={childRec.hudTimeSpent} scope="col" style="text-align:center">
+                                    0:00
+                                </td>
+                            </tr>
+                        </template>
+                        <tr key={rec.totalRow} style="background-color:#E4E8EB">
+                            <td scope="col">
+                            </td>
+                            <td scope="col" style="text-wrap:wrap">
+                                {rec.totalRow.answer}
+                            </td>
+                            <td scope="col" style="text-align:center">
+                                {rec.totalRow.all}
+                            </td>
+                            <td scope="col" style="text-align:center">
+                                {rec.totalRow.allTimeSpent}
+                            </td>
+                            <template for:each={rec.totalRow.dynamicColValuesTotalObj} for:item="colItem">
+                                <td if:true={colItem.recCount} key={colItem} scope="col" style="text-align:center">
+                                    {colItem.recCount}
+                                </td>
+                                <td if:false={colItem.recCount} key={colItem} scope="col" style="text-align:center">
+                                    0
+                                </td>
+                                <td if:true={colItem.duration} key={colItem} scope="col" style="text-align:center">
+                                    {colItem.duration}:00
+                                </td>
+                                <td if:false={colItem.duration} key={colItem} scope="col" style="text-align:center">
+                                    0:00
+                                </td>
+                            </template>
+                            <!--<td scope="col" style="text-align:center">
+                                {rec.totalRow.lastYearCount}
+                            </td>
+                            <td scope="col" style="text-align:center">
+                                {rec.totalRow.lastYearTimeSpent}
+                            </td>
+                            <td scope="col" style="text-align:center">
+                                {rec.totalRow.currentYearCount}
+                            </td>
+                            <td scope="col" style="text-align:center">
+                                {rec.totalRow.currentYearTimeSpent}
+                            </td>-->
+                            <td scope="col" style="text-align:center">
+                                {rec.totalRow.hudCount}
+                            </td>
+                            <td if:true={rec.totalRow.hudTimeSpent} scope="col" style="text-align:center">
+                                {rec.totalRow.hudTimeSpent}:00
+                            </td>
+                            <td if:false={rec.totalRow.hudTimeSpent} scope="col" style="text-align:center">
+                                0:00
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </lightning-card>
+
+</template>

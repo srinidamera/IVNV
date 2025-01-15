@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Single adult</fullName>
+        <default>false</default>
+        <label>Single adult</label>
+    </customValue>
+    <customValue>
+        <fullName>Female-headed single parent household</fullName>
+        <default>false</default>
+        <label>Female-headed single parent household</label>
+    </customValue>
+    <customValue>
+        <fullName>Male-headed single parent household</fullName>
+        <default>false</default>
+        <label>Male-headed single parent household</label>
+    </customValue>
+    <customValue>
+        <fullName>Married without dependents</fullName>
+        <default>false</default>
+        <label>Married without dependents</label>
+    </customValue>
+    <customValue>
+        <fullName>Married with dependents</fullName>
+        <default>false</default>
+        <label>Married with dependents</label>
+    </customValue>
+    <customValue>
+        <fullName>Two or more unrelated Adults</fullName>
+        <default>false</default>
+        <label>Two or more unrelated Adults</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Married with children</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Married with children</label>
+    </customValue>
+    <customValue>
+        <fullName>Male-headed single parent household/Head of Household</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Male-headed single parent household/Head of Household</label>
+    </customValue>
+    <customValue>
+        <fullName>Female-headed single parent household/Head of Household</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Female-headed single parent household/Head of Household</label>
+    </customValue>
+    <customValue>
+        <fullName>Domestic partnership</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Domestic partnership</label>
+    </customValue>
+    <customValue>
+        <fullName>Married without children</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Married without children</label>
+    </customValue>
+    <masterLabel>Household Type/Head of Household</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

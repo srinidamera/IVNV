@@ -1,0 +1,97 @@
+<apex:page controller="PrintRosterController" readOnly="true" applyHtmlTag="false" showHeader="false" cache="true" applyBodyTag="false" renderAs="PDF">    
+    <head>        
+        <style>
+            @page { 
+            size: letter portrait;
+            margin: 10mm 10mm 20mm 10mm;
+            font-family: sans-serif;
+            
+            @bottom-left {
+            content: "NeighborWorks Compass";
+            padding-bottom:15px;
+            }
+            @bottom-right {
+            content: "Page | " counter(page) ;
+            padding-bottom:15px;
+            }
+            } 
+            #detailTable td, #detailTable th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            }
+            
+            #detailTable{
+            table-layout: fixed;
+            width: 100%;
+            }
+            
+            #details{
+            table-layout: fixed;
+            width: 100%;
+            }
+            
+        </style>
+    </head> 
+    
+    <apex:variable var="cnt" value="{!0}" />  
+    <apex:repeat value="{!courses}" var="attn">
+        
+        <div style="text-align: center;font-size: 22px;">
+            <span><b>{!attn.courseName}</b></span><br/>
+        </div>
+        <div style="text-align: center;padding-bottom:20px;">
+            <span><b>COURSE NUMBER: </b></span>{!attn.courseNumber}
+        </div>
+        
+        <table id="details" style="border-collapse: collapse;">
+            <tr> 
+                <td style="width: 15%;"><apex:outputLabel > <b>DATE/TIME:  </b> </apex:outputLabel></td> 
+                <td style="width: 35%;"><apex:outputText value="{!attn.apptDate}" /></td>
+                <td style="width: 20%;" > <apex:outputLabel ><b>FACILITATOR: </b></apex:outputLabel></td> 
+                <td style="width: 30%;"> <apex:outputText label=" " value="{!attn.counselorFecilator}"/></td> 
+            </tr>
+            <tr>
+                <td style="width: 15%;"> <apex:outputLabel > <b>LOCATION:  </b> </apex:outputLabel> </td> 
+                <td style="width: 35%;"> <apex:outputText label=" " value="{!attn.locationName}"/> </td>
+                <td style="width: 20%;font-family: Arial Unicode MS;" > <apex:outputLabel ><b>PRESENTER: </b></apex:outputLabel> </td> 
+                <td style="width: 30%;"> <apex:outputText label=" " value="{!attn.counselorPresentator}"/> </td>
+            </tr>
+            <tr>
+                <td style="width: 15%;"> <b>CAPACITY:  </b> </td> 
+                <td style="width: 35%;"> <apex:outputText label=" " value="{!attn.capacity}"/> </td>
+                <td style="width: 15%;"> <b>LANGUAGE:  </b> </td> 
+                <td style="width: 35%;"> <apex:outputText label=" " value="{!attn.language}"/> </td>
+            </tr>
+        </table> 
+        
+        <br/>
+        
+        <div style="padding-bottom:15px;">
+            <b>TOTAL ENROLLED: </b>{!attn.totalEnrolled}
+        </div>
+        
+        <table id="detailTable" style="border-collapse: collapse; table-layout: fixed; width: 100%;"> 
+            <thead>
+                <tr style="text-align: center;">
+                    <th style="width: 30%;word-break: break-word;"><b>Name</b></th>
+                    <th style="width: 55%;word-break: break-word;"><b>Notes / Signature</b></th>
+                    <th style="width: 15%;word-break: break-word;"><b>Attendance</b></th>
+                </tr> 
+            </thead>
+            
+            <tbody>
+                <apex:repeat var="row" value="{!attn.students}"> 
+                    <tr >
+                        <td rendered="{!row.isCoApp == false}" style="{!IF(row.isCoApp == false, "width: 30%; border: 1px solid #ddd; padding: 15px;font-family: Arial Unicode MS;", "width: 30%; border: 1px solid #ddd; padding: 15px;font-family: Arial Unicode MS;")}" >{!row.attendeeName}</td>
+                        <td style="width: 55%; border: 1px solid #ddd; padding: 15px;" ></td>
+                        <td style="width: 15%; border: 1px solid #ddd; padding: 15px;" >{!row.attendance}</td>
+                    </tr>
+                </apex:repeat>          
+            </tbody>
+        </table>
+        <div style="{!if(cnt+1 == noOfClasses || noOfClasses == 0, 'page-break-before:avoid;','page-break-after:always;')}">
+            <apex:variable var="cnt" value="{!cnt+1}"/>
+        </div> 
+    </apex:repeat>
+    
+</apex:page>

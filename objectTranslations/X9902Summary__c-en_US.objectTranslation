@@ -1,0 +1,1707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>9902 Summary</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>9902 Summary</value>
+    </caseValues>
+    <fields>
+        <label><!-- Chose Not To Respond --></label>
+        <name>AMIChosenottorespond__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type ID --></label>
+        <name>ActivityTypeID__c</name>
+        <picklistValues>
+            <masterLabel>Activities for All Counseling and Education</masterLabel>
+            <translation><!-- Activities for All Counseling and Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2014-1 COMP</masterLabel>
+            <translation><!-- NOFA 2014-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2014-2 TRNG</masterLabel>
+            <translation><!-- NOFA 2014-2 TRNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2015-1 COMP</masterLabel>
+            <translation><!-- NOFA 2015-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2015-2 COMP</masterLabel>
+            <translation><!-- NOFA 2015-2 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2016-1 COMP</masterLabel>
+            <translation><!-- NOFA 2016-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2017-1 COMP</masterLabel>
+            <translation><!-- NOFA 2017-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2018-1 COMP</masterLabel>
+            <translation><!-- NOFA 2018-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2019-1 COMP</masterLabel>
+            <translation><!-- NOFA 2019-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2020-1 COMP</masterLabel>
+            <translation><!-- NOFA 2020-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2021-1 COMP</masterLabel>
+            <translation><!-- NOFA 2021-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2022-1 COMP</masterLabel>
+            <translation><!-- NOFA 2022-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2023-1 COMP</masterLabel>
+            <translation><!-- NOFA 2023-1 COMP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual identifies as being of American Indian or Alaskan Native descent. --></help>
+        <label><!-- American Indian/Alaskan Native --></label>
+        <name>AmericanIndianAlaskanNative__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual identifies as being of Asian descent. --></help>
+        <label><!-- Asian --></label>
+        <name>Asian__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendee City --></label>
+        <name>AttendeeCity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the appropriate option to indicate the ethnic identity of the attendee from the provided list of ethnicity categories --></help>
+        <label><!-- Attendee Ethnicity ID --></label>
+        <name>AttendeeEthnicityID__c</name>
+        <picklistValues>
+            <masterLabel>Chose not to respond</masterLabel>
+            <translation><!-- Chose not to respond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hispanic</masterLabel>
+            <translation><!-- Hispanic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Hispanic</masterLabel>
+            <translation><!-- Not Hispanic --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the attendee is purchasing a home for the first time. --></help>
+        <label><!-- Attendee First Time Home Buyer --></label>
+        <name>AttendeeFirstTimeHomeBuyer__c</name>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Attendee ID  --></label>
+        <name>AttendeeID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the income level of the attendee participating in the group session. --></help>
+        <label><!-- Attendee Income Level --></label>
+        <name>AttendeeIncomeLevel__c</name>
+        <picklistValues>
+            <masterLabel>30 - 49% of AMI</masterLabel>
+            <translation><!-- 30 - 49% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50 - 79% of AMI</masterLabel>
+            <translation><!-- 50 - 79% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80 - 100% of AMI</masterLabel>
+            <translation><!-- 80 - 100% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Above 100% AMI</masterLabel>
+            <translation><!-- Above 100% AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Below 30% of AMI</masterLabel>
+            <translation><!-- Below 30% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chose not to respond</masterLabel>
+            <translation><!-- Chose not to respond --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the attendee has limited proficiency in the English language. --></help>
+        <label><!-- Attendee Limited English Proficiency --></label>
+        <name>AttendeeLimitedEnglishProficiency__c</name>
+        <picklistValues>
+            <masterLabel>Chose not to respond</masterLabel>
+            <translation><!-- Chose not to respond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited English Proficient</masterLabel>
+            <translation><!-- Limited English Proficient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Limited English Proficient</masterLabel>
+            <translation><!-- Not Limited English Proficient --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the appropriate option to indicate the racial identity of the attendee from the provided list of race categories. --></help>
+        <label><!-- Attendee Race ID --></label>
+        <name>AttendeeRaceID__c</name>
+        <picklistValues>
+            <masterLabel>American Indian/Alaskan Native</masterLabel>
+            <translation><!-- American Indian/Alaskan Native --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asian</masterLabel>
+            <translation><!-- Asian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Black or African American</masterLabel>
+            <translation><!-- Black or African American --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chose not to respond</masterLabel>
+            <translation><!-- Chose not to respond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>More than one race</masterLabel>
+            <translation><!-- More than one race --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Native Hawaiian or Other Pacific Islander</masterLabel>
+            <translation><!-- Native Hawaiian or Other Pacific Islander --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>White</masterLabel>
+            <translation><!-- White --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the appropriate option to indicate whether the attendee resides in a rural area. --></help>
+        <label><!-- Attendee Rural Area Status --></label>
+        <name>AttendeeRuralAreaStatus__c</name>
+        <picklistValues>
+            <masterLabel>Chose not to respond</masterLabel>
+            <translation><!-- Chose not to respond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Does not live in a rural area</masterLabel>
+            <translation><!-- Does not live in a rural area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lives in a rural area</masterLabel>
+            <translation><!-- Lives in a rural area --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Attendee State --></label>
+        <name>AttendeeState__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS</masterLabel>
+            <translation><!-- AS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM</masterLabel>
+            <translation><!-- FM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GU</masterLabel>
+            <translation><!-- GU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MH</masterLabel>
+            <translation><!-- MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MP</masterLabel>
+            <translation><!-- MP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PW</masterLabel>
+            <translation><!-- PW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VI</masterLabel>
+            <translation><!-- VI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Attendee Zip Code --></label>
+        <name>AttendeeZipCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual identifies as being of Black or African American descent. --></help>
+        <label><!-- Black or African American --></label>
+        <name>BlackorAfricanAmerican__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual declined to provide information about their ethnicity or chose not to disclose it. --></help>
+        <label><!-- Chose Not To Respond --></label>
+        <name>ChoseNottoRespond__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual has successfully completed a workshop focused on preparing for and responding to disasters --></help>
+        <label><!-- Completed Disaster Preparedness Workshop --></label>
+        <name>CompletedDisasterPreparednessWorkshop__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed other workshop --></label>
+        <name>CompletedOtherWorkshop__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual has successfully completed a workshop that provides information about fair housing --></help>
+        <label><!-- Completed fair housing workshop --></label>
+        <name>Completedfairhousingworkshop__c</name>
+    </fields>
+    <fields>
+        <help><!-- Completed financial literacy workshop, including home affordability, budgeting and understanding use of credit. --></help>
+        <label><!-- Completed financial literacy workshop --></label>
+        <name>Completedfinancialliteracyworkshop__c</name>
+    </fields>
+    <fields>
+        <help><!-- Completed predatory lending, loan scam or other fraud prevention workshop. --></help>
+        <label><!-- Completed predatory lending  --></label>
+        <name>Completedpredatorylending__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual has successfully completed a workshop covering topics related to renting --></help>
+        <label><!-- Completed rental workshop --></label>
+        <name>Completedrentalworkshop__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to relate 9902 Summary record of Element Type Group Session with associated Course wiz. sumoapp__additionalInfo__c. --></help>
+        <label><!-- Course --></label>
+        <name>Course__c</name>
+        <relationshipLabel><!-- 9902 Summary --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual received education or assistance on topics related to disaster preparedness, such as creating emergency plans, assembling disaster kits, or accessing community resources in the event of a disaster. --></help>
+        <label><!-- Disaster Preparedness Assistance --></label>
+        <name>DisasterPreparednessAssistance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual received assistance for disaster recovery, such as financial aid, temporary housing, or support services, following a natural disaster or other catastrophic event. --></help>
+        <label><!-- Disaster Recovery Assistance --></label>
+        <name>DisasterRecoveryAssistance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if individuals obtained resources such as temporary housing, rental assistance, or housing rehabilitation programs to aid in their recovery from a disaster. --></help>
+        <label><!-- Disaster Recovery Housing Resources --></label>
+        <name>DisasterRecoveryHousingResources__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if individuals obtained resources such as financial assistance, food aid, medical services, or other support to aid in their recovery from a disaster. --></help>
+        <label><!-- Disaster Recovery Non-housing Resources --></label>
+        <name>DisasterRecoveryNonhousingResources__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual has successfully completed a workshop that provides guidance on recovering from the aftermath of a disaster --></help>
+        <label><!-- Disaster Recovery Workshop --></label>
+        <name>DisasterRecoveryWorkshop__c</name>
+    </fields>
+    <fields>
+        <label><!-- Element Type --></label>
+        <name>ElementType__c</name>
+        <picklistValues>
+            <masterLabel>9902</masterLabel>
+            <translation><!-- 9902 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendee</masterLabel>
+            <translation><!-- Attendee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group Session</masterLabel>
+            <translation><!-- Group Session --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group Session Attendee</masterLabel>
+            <translation><!-- Group Session Attendee --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select this option if individuals created a plan outlining steps to take in the event of emergencies, natural disasters, or other crises to ensure safety and minimize risks. --></help>
+        <label><!-- Emergency Preparedness Plan --></label>
+        <name>EmergencyPreparednessPlan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if individuals successfully improved their financial capacity --></help>
+        <label><!-- Forward Mod Improved Financial Capacity --></label>
+        <name>ForwardModImprovedFinancialCapacity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual experienced delinquency or default on a forward mortgage. --></help>
+        <label><!-- Forward Mortgage Delinquency or Default --></label>
+        <name>ForwardMortgageDelinquencyorDefault__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if individuals successfully renegotiated the terms of their mortgage to improve their financial situation. --></help>
+        <label><!-- Forward Mortgage Mod Improved Financials --></label>
+        <name>ForwardMortgageModImprovedFinancials__c</name>
+    </fields>
+    <fields>
+        <help><!-- &quot;Households that gained access to non-housing resources (e.g. social service programs, legal services, public benefits
+such as Social Security or Medicaid, etc) after receiving Housing Counseling Services.&quot; --></help>
+        <label><!-- Gained Access to Non-Housing Resources --></label>
+        <name>GainedAccesstoNonHousingResources__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendee Limited English Proficiency --></label>
+        <name>GroupAttendeeLimitedEnglishProficiency__c</name>
+        <picklistValues>
+            <masterLabel>Chose not to respond</masterLabel>
+            <translation><!-- Chose not to respond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited English Proficient</masterLabel>
+            <translation><!-- Limited English Proficient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Limited English Proficient</masterLabel>
+            <translation><!-- Not Limited English Proficient --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the appropriate activity type from the picklist that corresponds to the group session activity. --></help>
+        <label><!-- Group Session Activity Type --></label>
+        <name>GroupSessionActivityType__c</name>
+        <picklistValues>
+            <masterLabel>Activities for All Counseling and Education</masterLabel>
+            <translation><!-- Activities for All Counseling and Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2014-1 COMP</masterLabel>
+            <translation><!-- NOFA 2014-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2014-2 TRNG</masterLabel>
+            <translation><!-- NOFA 2014-2 TRNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2015-1 COMP</masterLabel>
+            <translation><!-- NOFA 2015-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2015-2 COMP</masterLabel>
+            <translation><!-- NOFA 2015-2 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2016-1 COMP</masterLabel>
+            <translation><!-- NOFA 2016-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2017-1 COMP</masterLabel>
+            <translation><!-- NOFA 2017-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2018-1 COMP</masterLabel>
+            <translation><!-- NOFA 2018-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2019-1 COMP</masterLabel>
+            <translation><!-- NOFA 2019-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2020-1 COMP</masterLabel>
+            <translation><!-- NOFA 2020-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2021-1 COMP</masterLabel>
+            <translation><!-- NOFA 2021-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2022-1 COMP</masterLabel>
+            <translation><!-- NOFA 2022-1 COMP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOFA 2023-1 COMP</masterLabel>
+            <translation><!-- NOFA 2023-1 COMP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Group Session Attendee City --></label>
+        <name>GroupSessionAttendeeCity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the fee amount charged for each attendee to participate in the group session. --></help>
+        <label><!-- Group Session Attendee Fee Amount --></label>
+        <name>GroupSessionAttendeeFeeAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Session Attendee ID --></label>
+        <name>GroupSessionAttendeeID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the income level of the attendee participating in the group session. --></help>
+        <label><!-- Group Session Attendee Income Level --></label>
+        <name>GroupSessionAttendeeIncomeLevel__c</name>
+        <picklistValues>
+            <masterLabel>30 - 49% of AMI</masterLabel>
+            <translation><!-- 30 - 49% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50 - 79% of AMI</masterLabel>
+            <translation><!-- 50 - 79% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80 - 100% of AMI</masterLabel>
+            <translation><!-- 80 - 100% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Above 100% AMI</masterLabel>
+            <translation><!-- Above 100% AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Below 30% of AMI</masterLabel>
+            <translation><!-- Below 30% of AMI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chose not to respond</masterLabel>
+            <translation><!-- Chose not to respond --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the appropriate option to indicate who referred the attendee to the group session. --></help>
+        <label><!-- Group Session Attendee Referred By --></label>
+        <name>GroupSessionAttendeeReferredBy__c</name>
+        <picklistValues>
+            <masterLabel>Agency Outreach</masterLabel>
+            <translation><!-- Agency Outreach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Another Agency</masterLabel>
+            <translation><!-- Another Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Another Person</masterLabel>
+            <translation><!-- Another Person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HUD Outreach</masterLabel>
+            <translation><!-- HUD Outreach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lender</masterLabel>
+            <translation><!-- Lender --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate Agent</masterLabel>
+            <translation><!-- Real Estate Agent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the appropriate option to indicate whether the attendee resides in a rural area. --></help>
+        <label><!-- Group Session Attendee Rural Area Status --></label>
+        <name>GroupSessionAttendeeRuralAreaStatus__c</name>
+        <picklistValues>
+            <masterLabel>Chose not to respond</masterLabel>
+            <translation><!-- Chose not to respond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Does not live in a rural area</masterLabel>
+            <translation><!-- Does not live in a rural area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lives in a rural area</masterLabel>
+            <translation><!-- Lives in a rural area --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Group Session Attendee State --></label>
+        <name>GroupSessionAttendeeState__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS</masterLabel>
+            <translation><!-- AS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM</masterLabel>
+            <translation><!-- FM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GU</masterLabel>
+            <translation><!-- GU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MH</masterLabel>
+            <translation><!-- MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MP</masterLabel>
+            <translation><!-- MP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PW</masterLabel>
+            <translation><!-- PW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VI</masterLabel>
+            <translation><!-- VI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Group Session Attendee Zip Code --></label>
+        <name>GroupSessionAttendeeZipCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the appropriate HUD grant from the picklist that corresponds to the group session attribute. --></help>
+        <label><!-- Group Session Attribute HUD Grant --></label>
+        <name>GroupSessionAttributeHUD_Grant__c</name>
+        <picklistValues>
+            <masterLabel>Colonias</masterLabel>
+            <translation><!-- Colonias --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comprehensive</masterLabel>
+            <translation><!-- Comprehensive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HECM</masterLabel>
+            <translation><!-- HECM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MMMSA</masterLabel>
+            <translation><!-- MMMSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Predatory Lending</masterLabel>
+            <translation><!-- Predatory Lending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S8</masterLabel>
+            <translation><!-- S8 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Group Session Counselor HUD ID --></label>
+        <name>GroupSessionCounselorHUDId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Session Counselor ID --></label>
+        <name>GroupSessionCounselorID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Session Date --></label>
+        <name>GroupSessionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Session Duration --></label>
+        <name>GroupSessionDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Session ID  --></label>
+        <name>GroupSessionID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Session Title --></label>
+        <name>GroupSessionTitle__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the appropriate option from the picklist to categorize the type of group session conducted. --></help>
+        <label><!-- Group Session Type --></label>
+        <name>GroupSessionType__c</name>
+        <picklistValues>
+            <masterLabel>Disaster Preparedness</masterLabel>
+            <translation><!-- Disaster Preparedness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disaster recovery</masterLabel>
+            <translation><!-- Disaster recovery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fair Housing</masterLabel>
+            <translation><!-- Fair Housing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Literacy (Including Home Affordability, Budgeting, and Understanding Use of Credit)</masterLabel>
+            <translation><!-- Financial Literacy (Including Home Affordability, Budgeting, and Understanding Use of Credit) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homelessness Prevention</masterLabel>
+            <translation><!-- Homelessness Prevention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Delinquency post-purchase (Including Home Maintenance and/or Financial Management for Homeowners)</masterLabel>
+            <translation><!-- Non-Delinquency post-purchase (Including Home Maintenance and/or Financial Management for Homeowners) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-purchase Homebuyer Education</masterLabel>
+            <translation><!-- Pre-purchase Homebuyer Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Predatory Lending Loan Scam or Other Fraud Prevention</masterLabel>
+            <translation><!-- Predatory Lending Loan Scam or Other Fraud Prevention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental</masterLabel>
+            <translation><!-- Rental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolving or Preventing Mortgage Delinquency</masterLabel>
+            <translation><!-- Resolving or Preventing Mortgage Delinquency --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HUD Chose Not To Respond --></label>
+        <name>HUDAMIChosenottorespond__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual identifies as being of American Indian or Alaskan Native descent. --></help>
+        <label><!-- HUD American Indian/Alaskan Native --></label>
+        <name>HUDAmericanIndianAlaskanNative__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual identifies as being of Asian descent. --></help>
+        <label><!-- HUD Asian --></label>
+        <name>HUDAsian__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual identifies as being of Black or African American descent. --></help>
+        <label><!-- HUD Black or African American --></label>
+        <name>HUDBlackorAfricanAmerican__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual declined to provide information about their ethnicity or chose not to disclose it. --></help>
+        <label><!-- HUD Chose Not To Respond --></label>
+        <name>HUDChoseNottoRespond__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual has successfully completed a workshop focused on preparing for and responding to disasters --></help>
+        <label><!-- HUD Completed Disaster Preparedness Wor --></label>
+        <name>HUDCompletedDisasterPreparedness__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual has successfully completed a workshop that provides information about fair housing --></help>
+        <label><!-- HUD Completed fair housing workshop --></label>
+        <name>HUDCompletedfairhousingworkshop__c</name>
+    </fields>
+    <fields>
+        <help><!-- Completed financial literacy workshop, including home affordability, budgeting and understanding use of credit. --></help>
+        <label><!-- HUD Completed financial literacy work --></label>
+        <name>HUDCompletedfinancialliteracy__c</name>
+    </fields>
+    <fields>
+        <help><!-- Completed predatory lending, loan scam or other fraud prevention workshop. --></help>
+        <label><!-- HUD Completed predatory lending  --></label>
+        <name>HUDCompletedpredatorylending__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual has successfully completed a workshop covering topics related to renting --></help>
+        <label><!-- HUD Completed rental workshop --></label>
+        <name>HUDCompletedrentalworkshop__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual received education or assistance on topics related to disaster preparedness, such as creating emergency plans, assembling disaster kits, or accessing community resources in the event of a disaster. --></help>
+        <label><!-- HUD Disaster Preparedness Assistance --></label>
+        <name>HUDDisasterPreparednessAssistance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual received assistance for disaster recovery, such as financial aid, temporary housing, or support services, following a natural disaster or other catastrophic event. --></help>
+        <label><!-- HUD Disaster Recovery Assistance --></label>
+        <name>HUDDisasterRecoveryAssistance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if individuals obtained resources such as temporary housing, rental assistance, or housing rehabilitation programs to aid in their recovery from a disaster. --></help>
+        <label><!-- HUD Disaster Recovery Housing Resources --></label>
+        <name>HUDDisasterRecoveryHousingResources__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if individuals obtained resources such as financial assistance, food aid, medical services, or other support to aid in their recovery from a disaster. --></help>
+        <label><!-- HUD Disaster Recovery Non-housing Reso --></label>
+        <name>HUDDisasterRecoveryNonhousing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual has successfully completed a workshop that provides guidance on recovering from the aftermath of a disaster --></help>
+        <label><!-- HUD Disaster Recovery Workshop --></label>
+        <name>HUDDisasterRecoveryWorkshop__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if individuals created a plan outlining steps to take in the event of emergencies, natural disasters, or other crises to ensure safety and minimize risks. --></help>
+        <label><!-- HUD Emergency Preparedness Plan --></label>
+        <name>HUDEmergencyPreparednessPlan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if individuals successfully improved their financial capacity --></help>
+        <label><!-- HUD Forward Mod Improved Financial Cap --></label>
+        <name>HUDForwardModImprovedFinancial__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual experienced delinquency or default on a forward mortgage. --></help>
+        <label><!-- HUD Forward Mortgage Delinquency or Def --></label>
+        <name>HUDForwardMortgageDelinquencyor__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if individuals successfully renegotiated the terms of their mortgage to improve their financial situation. --></help>
+        <label><!-- HUD Forward Mortgage Mod Improved Finan --></label>
+        <name>HUDForwardMortgageModImproved__c</name>
+    </fields>
+    <fields>
+        <help><!-- &quot;Households that gained access to non-housing resources (e.g. social service programs, legal services, public benefits
+such as Social Security or Medicaid, etc) after receiving Housing Counseling Services.&quot; --></help>
+        <label><!-- HUD Gained Access to Non-Housing Resour --></label>
+        <name>HUDGainedAccesstoNonHousing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual identifies as being of Hispanic or Latino origin. --></help>
+        <label><!-- HUD Hispanic --></label>
+        <name>HUDHispanic__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual received education or assistance on topics related to home maintenance, such as repairs, renovations, or energy efficiency upgrades. (Non-Delinquency Post-Purchase) --></help>
+        <label><!-- Home Maintenance --></label>
+        <name>HUDHomeMaintenance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual received assistance for homelessness, such as emergency shelter, housing vouchers, or support services. --></help>
+        <label><!-- HUD Homeless Assistance --></label>
+        <name>HUDHomelessAssistance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Completed homelessness prevention workshop. --></help>
+        <label><!-- HUD Homelessness Prevention Workshop  --></label>
+        <name>HUDHomelessnessPreventionWorkshop__c</name>
+    </fields>
+    <fields>
+        <help><!-- Homeless or potentially homeless households that obtained temporary or permanent housing after receiving Housing Counseling Services. --></help>
+        <label><!-- HUD Homeless obtained Housing --></label>
+        <name>HUDHomelessobtainedHousing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the household does not reside in a rural area --></help>
+        <label><!-- HUD Household does not live in a rural --></label>
+        <name>HUDHouseholddoesnotliveinarural__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the household has limited proficiency in the English language --></help>
+        <label><!-- HUD Household is Limited English Profic --></label>
+        <name>HUDHouseholdisLimitedEnglish__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the household resides in a rural area --></help>
+        <label><!-- HUD Household lives in a rural area --></label>
+        <name>HUDHouseholdlivesinaruralarea__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households that gained access to resources to help them improve their housing situation (e.g. down payment assistance, rental assistance, utility assistance, etc.) after receiving Housing Counseling Services. --></help>
+        <label><!-- HUD Households Gained Access to Resourc --></label>
+        <name>HUDHouseholdsGainedAccessto__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households that improved their financial capacity (e.g.increased discretionary income, decreased debt load,increased savings, increased credit score) after receiving Housing Counseling Services. --></help>
+        <label><!-- HUD Households Improved Financial Capa --></label>
+        <name>HUDHouseholdsImprovedFinancial__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households that received rental counseling and improved living conditions after receiving Housing Counseling Services. --></help>
+        <label><!-- HUD Households Improved Living Conditio --></label>
+        <name>HUDHouseholdsImprovedLiving__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households that received rental counseling and avoided eviction after receiving Housing Counseling Services. --></help>
+        <label><!-- HUD Households Received Rental Counse --></label>
+        <name>HUDHouseholdsReceivedRental__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households that received reverse mortgage counseling and obtained a Home Equity Conversion Mortgage (HECM after receiving Housing Counseling Services. --></help>
+        <label><!-- HUD Households Received Reverse Mortgage --></label>
+        <name>HUDHouseholdsReceivedReverseMortgage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the household chose not to disclose information --></help>
+        <label><!-- HUD Chose Not To Respond --></label>
+        <name>HUDLimitedEnglishProficienChoseNotTo__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD More Than one Race --></label>
+        <name>HUDMoreThanoneRace__c</name>
+    </fields>
+    <fields>
+        <help><!-- Completed resolving or preventing mortgage delinquency workshop. --></help>
+        <label><!-- HUD Mortgage Delinquency Workshop --></label>
+        <name>HUDMortgageDelinquencyWorkshop__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual chose not to disclose their race or ethnicity. --></help>
+        <label><!-- HUD Chose Not To Respond  --></label>
+        <name>HUDMultiRaceChosenottorespond__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual identifies as being of Native Hawaiian descent. --></help>
+        <label><!-- HUD Native Hawaiian --></label>
+        <name>HUDNativeHawaiian__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households that received non-delinquency post-purchase counseling that were able to improve home conditions or home affordability after receiving Housing CounselingServices. --></help>
+        <label><!-- HUD Non-Delinquency Post-Purchase Coun --></label>
+        <name>HUDNonDelinquencyPostPurchaseCoun__c</name>
+    </fields>
+    <fields>
+        <help><!-- Completed non-delinquency post-purchase workshop,including home maintenance and/or financial management for homeowners. --></help>
+        <label><!-- HUD Non-Delinquency Post-Purchase Work --></label>
+        <name>HUDNonDelinquencyPostPurchaseWork__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual does not identify as being of Hispanic or Latino origin. --></help>
+        <label><!-- HUD Not Hispanic --></label>
+        <name>HUDNotHispanic__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the household does not have limited proficiency in the English language --></help>
+        <label><!-- HUD Not Limited English Proficient  --></label>
+        <name>HUDNotLimitedEnglishProficient__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households that received one-on-one counseling that also received group education services. --></help>
+        <label><!-- HUD One-on-one Counseling --></label>
+        <name>HUDOneononeCounseling__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households that received prepurchase/homebuying counseling and purchased housing after receiving Housing Counseling Services. --></help>
+        <label><!-- HUD Prepurchase/Homebuying Counseling --></label>
+        <name>HUDPrepurchaseHomebuyingCounseling__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual received education or assistance on topics related to purchasing a home, such as mortgage options, homebuyer education, or down payment assistance programs. --></help>
+        <label><!-- HUD Prepurchase/Homebuying --></label>
+        <name>HUDPrepurchaseHomebuying__c</name>
+    </fields>
+    <fields>
+        <help><!-- Completed pre-purchase homebuyer education workshop. --></help>
+        <label><!-- HUD Prepurchase homebuyer education work --></label>
+        <name>HUDPrepurchasehomebuyereducation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if individuals successfully avoided defaulting on a forward mortgage by taking appropriate actions. --></help>
+        <label><!-- HUD Prevented Forward Mortgage Default --></label>
+        <name>HUDPreventedForwardMortgageDefault__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if individuals successfully avoided defaulting on a reverse mortgage by taking appropriate actions. --></help>
+        <label><!-- HUD Prevented Reverse Mortgage Default  --></label>
+        <name>HUDPreventedReverseMortgageDefault__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households that received information on fair housing, fair lending and/or accessibility rights. --></help>
+        <label><!-- HUD Received Information on Fair Hous --></label>
+        <name>HUDReceivedInformationonFair__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual received education or assistance on topics related to renting a home, such as tenant rights, lease agreements, or rental assistance programs. --></help>
+        <label><!-- HUD Rental Topics --></label>
+        <name>HUDRentalTopics__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual experienced delinquency or default on a reverse mortgage. --></help>
+        <label><!-- HUD Reverse Mortgage Delinquency or Def --></label>
+        <name>HUDReverseMortgageDelinquencyor__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual received information or assistance related to reverse mortgages. --></help>
+        <label><!-- HUD Reverse Mortgage --></label>
+        <name>HUDReverseMortgage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the household chose not to disclose information --></help>
+        <label><!-- HUD Chose Not To Respond --></label>
+        <name>HUDRuralChosenottorespond__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically calculates the total by summing the counts of individuals or households benefiting from different assistance programs and counseling services --></help>
+        <label><!-- HUD Section 10 TOTAL --></label>
+        <name>HUDSection10TOTAL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically calculates the total number of respondents for Section 3 by summing the counts of respondents --></help>
+        <label><!-- HUD Section 3 TOTAL --></label>
+        <name>HUDSection3TOTAL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically calculates the total number of respondents for Section 4 by summing the counts of respondents belonging to different racial categories. --></help>
+        <label><!-- HUD Section 4 TOTAL --></label>
+        <name>HUDSection4TOTAL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically calculates the total number of respondents for Section 5 by summing the counts of respondents belonging to different income categories --></help>
+        <label><!-- HUD Section 5 TOTAL --></label>
+        <name>HUDSection5TOTAL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically calculates the total number of respondents for Section 6 by summing the counts of Rural area status. --></help>
+        <label><!-- HUD Section 6 TOTAL --></label>
+        <name>HUDSection6TOTAL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically calculates the total number of respondents for Section 7 by summing the counts of households with limited English proficiency --></help>
+        <label><!-- HUD Section 7 TOTAL --></label>
+        <name>HUDSection7TOTAL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically calculates the total number of respondents for Section 8 by summing the counts of individuals who have completed workshops --></help>
+        <label><!-- HUD Section 8 TOTAL --></label>
+        <name>HUDSection8TOTAL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically calculates the total by summing the counts of households receiving counseling or assistance related to Households Receiving One-on-One Counseling, by Purpose. --></help>
+        <label><!-- HUD Section 9 TOTAL --></label>
+        <name>HUDSection9TOTAL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households for whom counselor developed a sustainable household budget through the provision of financial management and/or budget services. --></help>
+        <label><!-- HUD Sustainable Household Budget  --></label>
+        <name>HUDSustainableHouseholdBudget__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual identifies as being of White descent. --></help>
+        <label><!-- HUD White --></label>
+        <name>HUDWhite__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual or household&apos;s income exceeds 100% of the Area Median Income. --></help>
+        <label><!-- HUD &gt; 100% AMI --></label>
+        <name>HUDX100AMI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual or household&apos;s income is between 30% and 49% of the Area Median Income. --></help>
+        <label><!-- HUD 30 - 49% of AMI --></label>
+        <name>HUDX3049ofAMI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual or household&apos;s income is less than 30% of the Area Median Income. --></help>
+        <label><!-- HUD &lt; 30% of Area Median Income (AMI)  --></label>
+        <name>HUDX30ofAreaMedianIncomeAMI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual or household&apos;s income is between 50% and 79% of the Area Median Income. --></help>
+        <label><!-- HUD 50 - 79% of AMI --></label>
+        <name>HUDX5079ofAMI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual or household&apos;s income is between 80% and 100% of the Area Median Income. --></help>
+        <label><!-- HUD 80 - 100% of AMI --></label>
+        <name>HUDX80100ofAMI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual identifies as being of Hispanic or Latino origin. --></help>
+        <label><!-- Hispanic --></label>
+        <name>Hispanic__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual received education or assistance on topics related to home maintenance, such as repairs, renovations, or energy efficiency upgrades. (Non-Delinquency Post-Purchase) --></help>
+        <label><!-- Home Maintenance --></label>
+        <name>HomeMaintenance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual received assistance for homelessness, such as emergency shelter, housing vouchers, or support services. --></help>
+        <label><!-- Homeless Assistance --></label>
+        <name>HomelessAssistance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Completed homelessness prevention workshop. --></help>
+        <label><!-- Homelessness Prevention Workshop  --></label>
+        <name>HomelessnessPreventionWorkshop__c</name>
+    </fields>
+    <fields>
+        <help><!-- Homeless or potentially homeless households that obtained temporary or permanent housing after receiving Housing Counseling Services. --></help>
+        <label><!-- Homeless obtained Housing --></label>
+        <name>HomelessobtainedHousing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the household does not reside in a rural area --></help>
+        <label><!-- Household does not live in a rural area --></label>
+        <name>Householddoesnotliveinaruralarea__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the household has limited proficiency in the English language --></help>
+        <label><!-- Household is Limited English Proficient --></label>
+        <name>HouseholdisLimitedEnglishProficient__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the household resides in a rural area --></help>
+        <label><!-- Household lives in a rural area --></label>
+        <name>Householdlivesinaruralarea__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households that gained access to resources to help them improve their housing situation (e.g. down payment assistance, rental assistance, utility assistance, etc.) after receiving Housing Counseling Services. --></help>
+        <label><!-- Households Gained Access to Resources  --></label>
+        <name>HouseholdsGainedAccesstoResources__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households that improved their financial capacity (e.g.increased discretionary income, decreased debt load,increased savings, increased credit score) after receiving Housing Counseling Services. --></help>
+        <label><!-- Households Improved Financial Capacity  --></label>
+        <name>HouseholdsImprovedFinancialCapacity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households that received rental counseling and improved living conditions after receiving Housing Counseling Services. --></help>
+        <label><!-- Households Improved Living Conditions --></label>
+        <name>HouseholdsImprovedLivingConditions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households that received rental counseling and avoided eviction after receiving Housing Counseling Services. --></help>
+        <label><!-- Households Received Rental Counselling --></label>
+        <name>HouseholdsReceivedRentalCounselling__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households that received reverse mortgage counseling and obtained a Home Equity Conversion Mortgage (HECM after receiving Housing Counseling Services. --></help>
+        <label><!-- Households Received Reverse Mortgage --></label>
+        <name>HouseholdsReceivedReverseMortgage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the household chose not to disclose information --></help>
+        <label><!-- Chose Not To Respond  --></label>
+        <name>LimitedEnglishProficienChoseNotToRespond__c</name>
+    </fields>
+    <fields>
+        <label><!-- More Than one Race --></label>
+        <name>MoreThanoneRace__c</name>
+    </fields>
+    <fields>
+        <help><!-- Completed resolving or preventing mortgage delinquency workshop. --></help>
+        <label><!-- Mortgage Delinquency Workshop --></label>
+        <name>MortgageDelinquencyWorkshop__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual chose not to disclose their race or ethnicity. --></help>
+        <label><!-- Chose Not To Respond  --></label>
+        <name>MultiRaceChosenottorespond__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual identifies as being of Native Hawaiian descent. --></help>
+        <label><!-- Native Hawaiian --></label>
+        <name>NativeHawaiian__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households that received non-delinquency post-purchase counseling that were able to improve home conditions or home affordability after receiving Housing CounselingServices. --></help>
+        <label><!-- Non-Delinquency Post-Purchase Counseling --></label>
+        <name>NonDelinquencyPostPurchaseCounseling__c</name>
+    </fields>
+    <fields>
+        <help><!-- Completed non-delinquency post-purchase workshop,including home maintenance and/or financial management for homeowners. --></help>
+        <label><!-- Non-Delinquency Post-Purchase Workshop --></label>
+        <name>NonDelinquencyPostPurchaseWorkshop__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual does not identify as being of Hispanic or Latino origin. --></help>
+        <label><!-- Not Hispanic --></label>
+        <name>NotHispanic__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the household does not have limited proficiency in the English language --></help>
+        <label><!-- Not Limited English Proficient  --></label>
+        <name>NotLimitedEnglishProficient__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households that received one-on-one counseling that also received group education services. --></help>
+        <label><!-- One-on-one Counseling --></label>
+        <name>OneononeCounseling__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households that received prepurchase/homebuying counseling and purchased housing after receiving Housing Counseling Services. --></help>
+        <label><!-- Prepurchase/Homebuying Counseling --></label>
+        <name>PrepurchaseHomebuyingCounseling__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual received education or assistance on topics related to purchasing a home, such as mortgage options, homebuyer education, or down payment assistance programs. --></help>
+        <label><!-- Prepurchase/Homebuying --></label>
+        <name>PrepurchaseHomebuying__c</name>
+    </fields>
+    <fields>
+        <help><!-- Completed pre-purchase homebuyer education workshop. --></help>
+        <label><!-- Prepurchase homebuyer education workshop --></label>
+        <name>Prepurchasehomebuyereducationworkshop__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if individuals successfully avoided defaulting on a forward mortgage by taking appropriate actions. --></help>
+        <label><!-- Prevented Forward Mortgage Default --></label>
+        <name>PreventedForwardMortgageDefault__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if individuals successfully avoided defaulting on a reverse mortgage by taking appropriate actions. --></help>
+        <label><!-- Prevented Reverse Mortgage Default  --></label>
+        <name>PreventedReverseMortgageDefault__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households that received information on fair housing, fair lending and/or accessibility rights. --></help>
+        <label><!-- Received Information on Fair Housing  --></label>
+        <name>ReceivedInformationonFairHousing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual received education or assistance on topics related to renting a home, such as tenant rights, lease agreements, or rental assistance programs. --></help>
+        <label><!-- Rental Topics --></label>
+        <name>RentalTopics__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the appropriate option from the picklist to specify the reporting period corresponding to the record. --></help>
+        <label><!-- Report Period Id --></label>
+        <name>ReportPeriodId__c</name>
+        <picklistValues>
+            <masterLabel>Quarter 1</masterLabel>
+            <translation><!-- Quarter 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter 2</masterLabel>
+            <translation><!-- Quarter 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter 3</masterLabel>
+            <translation><!-- Quarter 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter 4</masterLabel>
+            <translation><!-- Quarter 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual experienced delinquency or default on a reverse mortgage. --></help>
+        <label><!-- Reverse Mortgage Delinquency or Default  --></label>
+        <name>ReverseMortgageDelinquencyorDefault__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual received information or assistance related to reverse mortgages. --></help>
+        <label><!-- Reverse Mortgage --></label>
+        <name>ReverseMortgage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the household chose not to disclose information --></help>
+        <label><!-- Chose Not To Respond --></label>
+        <name>RuralChosenottorespond__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically calculates the total by summing the counts of individuals or households benefiting from different assistance programs and counseling services --></help>
+        <label><!-- Section 10 TOTAL --></label>
+        <name>Section10TOTAL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically calculates the total number of respondents for Section 3 by summing the counts of respondents --></help>
+        <label><!-- Section 3 TOTAL --></label>
+        <name>Section3TOTAL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically calculates the total number of respondents for Section 4 by summing the counts of respondents belonging to different racial categories. --></help>
+        <label><!-- Section 4 TOTAL --></label>
+        <name>Section4TOTAL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically calculates the total number of respondents for Section 5 by summing the counts of respondents belonging to different income categories --></help>
+        <label><!-- Section 5 TOTAL --></label>
+        <name>Section5TOTAL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically calculates the total number of respondents for Section 6 by summing the counts of Rural area status. --></help>
+        <label><!-- Section 6 TOTAL --></label>
+        <name>Section6TOTAL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically calculates the total number of respondents for Section 7 by summing the counts of households with limited English proficiency --></help>
+        <label><!-- Section 7 TOTAL --></label>
+        <name>Section7TOTAL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically calculates the total by summing the counts of households receiving counseling or assistance related to Households Receiving One-on-One Counseling, by Purpose. --></help>
+        <label><!-- Section 9 TOTAL --></label>
+        <name>Section9TOTAL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically calculates the total number of respondents for Section 8 by summing the counts of individuals who have completed workshops --></help>
+        <label><!-- Section 8 TOTAL --></label>
+        <name>Section_8_TOTAL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Households for whom counselor developed a sustainable household budget through the provision of financial management and/or budget services. --></help>
+        <label><!-- Sustainable Household Budget  --></label>
+        <name>SustainableHouseholdBudget__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual identifies as being of White descent. --></help>
+        <label><!-- White --></label>
+        <name>White__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual or household&apos;s income exceeds 100% of the Area Median Income. --></help>
+        <label><!-- &gt; 100% AMI --></label>
+        <name>X100AMI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual or household&apos;s income is between 30% and 49% of the Area Median Income. --></help>
+        <label><!-- 30 - 49% of AMI --></label>
+        <name>X3049ofAMI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual or household&apos;s income is less than 30% of the Area Median Income. --></help>
+        <label><!-- &lt; 30% of Area Median Income (AMI)  --></label>
+        <name>X30ofAreaMedianIncomeAMI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual or household&apos;s income is between 50% and 79% of the Area Median Income. --></help>
+        <label><!-- 50 - 79% of AMI --></label>
+        <name>X5079ofAMI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option if the individual or household&apos;s income is between 80% and 100% of the Area Median Income. --></help>
+        <label><!-- 80 - 100% of AMI --></label>
+        <name>X80100ofAMI__c</name>
+    </fields>
+    <fields>
+        <label><!-- 9902 --></label>
+        <name>X9902__c</name>
+        <relationshipLabel><!-- 9902 Summary --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

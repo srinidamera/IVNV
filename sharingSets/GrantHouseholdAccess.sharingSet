@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>Account</object>
+        <objectField>Id</objectField>
+        <userField>Contact.Account</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>ClientCase__c</object>
+        <objectField>PrimaryClient__c</objectField>
+        <userField>Contact</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>CloudDocument__c</object>
+        <objectField>Contact__c</objectField>
+        <userField>Contact</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>Intake__c</object>
+        <objectField>PrimaryClient__c</objectField>
+        <userField>Contact</userField>
+    </accessMappings>
+    <name>Grant Household Access</name>
+    <profiles>nwcompass portal</profiles>
+</SharingSet>

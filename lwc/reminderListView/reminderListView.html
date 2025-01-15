@@ -1,0 +1,118 @@
+<template>
+	<lightning-card>
+		<template if:true={showSpinner}>
+			<lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+		</template>
+		<div class="header-component">
+			<div if:false={isReminder} class="rem-dropdown">
+				<span></span>
+				<lightning-button-menu alternative-text="Date" label={dateRange} variant="border"
+					onselect={handleOnselect}>
+					<lightning-menu-item value="Today" label="Today"></lightning-menu-item>
+					<lightning-menu-item value="This week" label="This week"></lightning-menu-item>
+					<lightning-menu-item value="This month" label="This month"></lightning-menu-item>
+					<lightning-menu-item value="Last Month" label="Last Month"></lightning-menu-item>
+				</lightning-button-menu>
+			</div>
+			<div>
+				<lightning-button if:false={isReminder} class="slds-button slds-m-left_x-small" onclick={addNewReminder}
+					label="New Reminder">
+				</lightning-button>
+				<lightning-icon style="cursor: pointer;" slot="actions"
+					class="slds-box slds-box_x-small slds-m-left_xx-small" icon-name="utility:refresh" size="xx-small"
+					onclick={handleRefresh}></lightning-icon>
+			</div>
+		</div>
+		<template if:false={totalCount}>
+			<div class="slds-text-color_weak slds-m-horizontal_small slds-m-bottom_small">
+				<b>No Reminders exist</b>
+			</div>
+		</template>
+
+		<div if:true={totalCount} class="slds-p-around_small lgc-bg scrollable" onscroll={handleScroll}>
+			<template for:each={data} for:item="rec">
+				<div key={rec.Id} class="slds-box slds-box_x-small">
+					<div class="rem-details">
+						<lightning-icon icon-name={rec.iconName} size="xx-small" onclick={handleClick}
+							aria-hidden="true" data-id={rec.Id}></lightning-icon>
+						<span class="sub-div"> {rec.Subject} </span>
+						<div class="sub-div">
+							<template if:false={showButton}>
+							<lightning-button-menu class="slds-float_right" alternative-text="Show menu" variant="bare"
+								menu-alignment="auto-right" data-id={rec.Id} data-des={rec.Description}
+								data-sub={rec.Subject} data-reminder={rec.IsReminderSet}
+								data-time={rec.ReminderDateTime} onclick={handleRow}>
+								<lightning-menu-item value="Snooze" label="Snooze" data-id={rec.Id}
+									onclick={handleSnooze}>
+								</lightning-menu-item>
+								<lightning-menu-item value="Edit" label="Edit" data-id={rec.Id} onclick={handleEdit}>
+								</lightning-menu-item>
+								<lightning-menu-item value="Dismiss" label="Dismiss" data-id={rec.Id}
+									onclick={handleDismissClick}></lightning-menu-item>
+							</lightning-button-menu>
+						</template>
+
+							<lightning-formatted-date-time  style="padding-right:1rem" class="slds-float_right"
+								value={rec.ReminderDateTime} year="numeric" month="numeric" day="numeric" hour="2-digit"
+								minute="2-digit" time-zone={timezone}>
+							</lightning-formatted-date-time>
+						</div>
+					</div>
+					<div class={rec.divCss}>
+						<span style="display:inline-block; margin-left:30px; margin-top:10px ; margin-bottom:5px;"
+							class="slds-icon-text-default">
+							<b>Assigned To: </b>{rec.Owner.Name}
+						</span>
+						<br />
+						<span style=" display:inline-block; margin-left:30px;" class="slds-icon-text-default"
+							if:true={rec.Description}><b>Description: </b>{rec.Description}</span>
+					</div>
+				</div>
+			</template>
+		</div>
+	</lightning-card>
+	<template if:true={showDataModal}>
+		<section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-03"
+			class="slds-modal slds-fade-in-open slds-modal_small">
+			<div class="slds-modal__container">
+				<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+					onclick={handleCancel}>
+					<lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+						size="small"></lightning-icon>
+				</button>
+				<div class="slds-modal__header">
+					<h1 id="modal-heading-03" class="slds-modal__title slds-hyphenate" tabindex="-1">{modalTitle}</h1>
+				</div>
+				<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-3">
+
+					<lightning-input if:false={isSnooze} type="text" variant="standard" name="Select Subject"
+						label="Subject" placeholder="" value={currentTask.Subject} onchange={handleFieldChange}>
+					</lightning-input>
+					<lightning-textarea if:false={isSnooze} name="Description" label="Description"
+						value={currentTask.Description} onchange={handleFieldChange} class="slds-m-top--small">
+					</lightning-textarea>
+					<div class="slds-m-top--small"></div>
+					<label>Reminder Set</label>
+					<lightning-input type="checkbox" name="IsReminderSet" checked={currentTask.IsReminderSet}
+						onchange={handleFieldChange}></lightning-input>
+
+					<div class="slds-grid slds-m-top--small">
+
+						<lightning-input  onchange={handleFieldChange} type="datetime" name="date" label="Reminder Date"
+							value={currentTask.ReminderDateTime}></lightning-input>
+					</div>
+
+				</div>
+				<div class="slds-modal__footer">
+					<div>
+						<lightning-button class="slds-m-right_x-small" variant="neutral" label="Cancel"
+							onclick={handleCancel}></lightning-button>
+						<lightning-button variant="brand" label="Save" onclick={handleSave}></lightning-button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+	</template>
+
+</template>

@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>57.0</apiVersion>
+	<isExposed>true</isExposed>
+	<targets>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightningCommunity__Default">
+			<property
+                type="String"
+                name="servicesLabel"
+                label="Services bread crumb Label"
+                default="Services"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="contactUsBtnLabel"
+                label="Contact Us button Label"
+                default="Contact Us"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="goBackLabel"
+                label="Go Back Label"
+                default="Go Back"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="saveBtnLabel"
+                label="Save button Label"
+                default="Save"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="cancelBtnLabel"
+                label="Cancel Label"
+                default="Cancel"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="downloadBtnLabel"
+                label="Download button Label"
+                default="Download"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="removeFileBtnLabel"
+                label="Remove File Button Label"
+                default="Remove File"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="manageDocumentsHeaderLabel"
+                label="Manage Documents Header"
+                default="Manage Documents"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="documentsBreadCrumbLabel"
+                label="Documents Bread Crumb Label"
+                default="Documents"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="fileTypeLabel"
+                label="File Type Label"
+                default="File Type"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="fileNameLabel"
+                label="File Name Label"
+                default="File Name"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="dateUploadedLabel"
+                label="Date Uploaded Field Label"
+                default="Date Uploaded"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="uploadFileInfoMsgLabel"
+                label="Upload file info message"
+                default="The upload size should be less than or equal to 3.5mb."
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="editFileHeaderLabel"
+                label="Edit File Header"
+                default="Edit File"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="removeFileHeaderLabel"
+                label="Remove File Header"
+                default="Remove File"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="newFileUploadDescription"
+                label="New File Upload Description"
+                default="Please upload your document below. Maximum files size is 3.5mb. We accept PDF, DOC, DOCX, PNG, PPT, PPTX, XLS and XLSX file formats."
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="editFileUploadDescription"
+                label="Edit File Upload Description"
+                default="Please select the file type. You may also download or remove the file."
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="removeFileModalDescription"
+                label="Remove File Modal Description"
+                default="Are you sure you want to remove the following file?"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="toastMessageOnRemoveFile"
+                label="Toast message on remove file(Service name will be appended at end)"
+                default="Removed file from"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="toastMessageOnUploadFile"
+                label="Toast message on file Upload"
+                default="Document saved to"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="completeThisFieldErrorMsg"
+                label="Required field error message for file type"
+                default="Complete this field."
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="placeholderTextForFileTypeField"
+                label="Placeholder text for file type"
+                default="Select Type"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="errorMsgForInvalidFileType"
+                label="Error message for invalid file extension"
+                default="The specified file [File Name] could not be uploaded. Only files with the following extensions are allowed: PDF, DOC, DOCX, PNG, PPT, PPTX, XLS and XLSX."
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="errorMsgForFileSize"
+                label="Error message for file size"
+                default="The specified file [File Name] could not be uplodaded. Size should be less than or equal to 3.6MB."
+				translatable="true"
+            />
+		</targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

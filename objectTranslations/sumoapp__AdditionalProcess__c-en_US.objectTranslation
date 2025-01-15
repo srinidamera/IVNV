@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Attendee Form Fields --></label>
+        <name>sumoapp__AttendeeFormFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendee Listview Columns --></label>
+        <name>sumoapp__AttendeeListviewColumns__c</name>
+    </fields>
+    <fields>
+        <label><!-- Course Tooltip Settings --></label>
+        <name>sumoapp__CourseTooltipSettings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single Page Online Scheduler Form Fields --></label>
+        <name>sumoapp__SinglePageOnlineSchedulerFormFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Settings --></label>
+        <name>sumoapp__TooltipSettings__c</name>
+    </fields>
+    <fields>
+        <label><!-- View Popup Settings --></label>
+        <name>sumoapp__ViewPopupSettings__c</name>
+    </fields>
+</CustomObjectTranslation>

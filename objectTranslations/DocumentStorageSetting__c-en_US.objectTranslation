@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>DocumentStorageSetting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>DocumentStorageSetting</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Shared Key --></label>
+        <name>AccountSharedKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Container Name --></label>
+        <name>ContainerName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage Instance URL --></label>
+        <name>StorageInstanceURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage Name --></label>
+        <name>StorageName__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

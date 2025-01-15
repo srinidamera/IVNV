@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AgencyAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AgencyAddress</shortDescription>
+        <value>1999 North Capitol Street NW &lt;br/&gt;
+Washington, District of Columbia 36608 &lt;br/&gt;
+United States</value>
+    </labels>
+    <labels>
+        <fullName>AgencyProfileEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AgencyProfileEmail</shortDescription>
+        <value>test@gmail.com</value>
+    </labels>
+    <labels>
+        <fullName>AgencyProfileName</fullName>
+        <categories>AgencyProfileDetails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AgencyProfileName</shortDescription>
+        <value>NW Compass</value>
+    </labels>
+    <labels>
+        <fullName>AgencyProfilePhone</fullName>
+        <categories>AgencyProfileDetails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AgencyProfilePhone</shortDescription>
+        <value>9999577777</value>
+    </labels>
+    <labels>
+        <fullName>CompassSuffix</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CompassSuffix</shortDescription>
+        <value>Jr.,Sr.,III,IV</value>
+    </labels>
+    <labels>
+        <fullName>Compass_Community_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Compass_Community_URL</shortDescription>
+        <value>agility-enterprise-2561--uat.sandbox.my.site.com</value>
+    </labels>
+    <labels>
+        <fullName>CoursesSelectMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Courses Select Message</shortDescription>
+        <value>Please select a contact to show their enrolled Courses.</value>
+    </labels>
+    <labels>
+        <fullName>Dear</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dear</shortDescription>
+        <value>Dear</value>
+    </labels>
+    <labels>
+        <fullName>Default_Household_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This will be a default Household owner of all the household created by portal</shortDescription>
+        <value>005Ov000007F6CLIA0</value>
+    </labels>
+    <labels>
+        <fullName>DemoTest</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DemoTest</shortDescription>
+        <value>DemoTest</value>
+    </labels>
+    <labels>
+        <fullName>FacilitatorCancelCourse_Body1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FacilitatorCancelCourse_Body1</shortDescription>
+        <value>We are writing to inform you that the CourseName program has been canceled.</value>
+    </labels>
+    <labels>
+        <fullName>FacilitatorCancelCourse_Body2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FacilitatorCancelCourse_Body2</shortDescription>
+        <value>An email has been sent to all participants. Please reach out to them if new opportunities arise.</value>
+    </labels>
+    <labels>
+        <fullName>FacilitatorCancelCourse_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FacilitatorCancelCourse_Subject</shortDescription>
+        <value>Important Update: CourseName Cancellation</value>
+    </labels>
+    <labels>
+        <fullName>FacilitatorNewCourse_Body1</fullName>
+        <categories>Body1</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FacilitatorNewCourse_Body1</shortDescription>
+        <value>You are scheduled to facilitate the following Course:</value>
+    </labels>
+    <labels>
+        <fullName>FacilitatorNewCourse_Body2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FacilitatorNewCourse_Body2</shortDescription>
+        <value>Thank you for your time and talent. We appreciate you.</value>
+    </labels>
+    <labels>
+        <fullName>FacilitatorNewCourse_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FacilitatorNewCourse_Subject</shortDescription>
+        <value>Scheduled Course: CourseName Starting on StartDateTime</value>
+    </labels>
+    <labels>
+        <fullName>FacilitatorReminderCourse_Body1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FacilitatorReminderCourse_Body1</shortDescription>
+        <value>As part of our commitment to providing exceptional service to our clients, we would like to remind you about your upcoming CourseName. Please find below your class information for your convenience: </value>
+    </labels>
+    <labels>
+        <fullName>FacilitatorReminderCourse_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FacilitatorReminderCourse_Subject</shortDescription>
+        <value>Upcoming Class</value>
+    </labels>
+    <labels>
+        <fullName>FacilitatorUpdateCourse_Body1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FacilitatorUpdateCourse_Body1</shortDescription>
+        <value>We&apos;re writing to update you on the CourseName program. 
+
+Here&apos;s a quick overview of the updated schedule:</value>
+    </labels>
+    <labels>
+        <fullName>FacilitatorUpdateCourse_Body2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FacilitatorUpdateCourse_Body2</shortDescription>
+        <value>An email has been sent to all participants regarding the change, please follow up with them to confirm their attendance, or help them with options if they cannot make the new dates/time.</value>
+    </labels>
+    <labels>
+        <fullName>FacilitatorUpdateCourse_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FacilitatorUpdateCourse_Subject</shortDescription>
+        <value>Schedule Update: CourseName</value>
+    </labels>
+    <labels>
+        <fullName>Forgot_Password_Email_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Forgot Password Email - 1</shortDescription>
+        <value>We have received a request to reset your password for your NW Compass Portal account. To proceed with resetting your password, please click on the link below:</value>
+    </labels>
+    <labels>
+        <fullName>Forgot_Password_Email_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Forgot Password Email - 2</shortDescription>
+        <value>Reset Password Link</value>
+    </labels>
+    <labels>
+        <fullName>Forgot_Password_Email_3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Forgot Password Email - 3</shortDescription>
+        <value>This link will expire in 30mins, so please reset your password promptly. If you did not request this password reset or believe this to be an error, please disregard this email.</value>
+    </labels>
+    <labels>
+        <fullName>Forgot_Password_Email_4</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Forgot Password Email - 4</shortDescription>
+        <value>If you have any questions or need further assistance, please contact the Counselling Agency at test@gmail.com or (999) 957-7777.</value>
+    </labels>
+    <labels>
+        <fullName>Forgot_Password_Email_5</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Forgot Password Email - 5</shortDescription>
+        <value>Best regards,</value>
+    </labels>
+    <labels>
+        <fullName>Forgot_Password_Email_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Forgot Password Email - Subject</shortDescription>
+        <value>Reset Your Password for NW Compass Portal</value>
+    </labels>
+    <labels>
+        <fullName>IntakeClientCaseSelectMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IntakeClientCaseSelectMsg</shortDescription>
+        <value>Please select a contact to show their relevant Client Cases.</value>
+    </labels>
+    <labels>
+        <fullName>IntakeRequstSelectMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Intake Requst Select Msg</shortDescription>
+        <value>Please select a contact to show their relevant Intakes.</value>
+    </labels>
+    <labels>
+        <fullName>IntakeReverseMortgageValidation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Intake Reverse Mortgage Validation</shortDescription>
+        <value>The client must be at least 62 years old to qualify for a reverse mortgage.</value>
+    </labels>
+    <labels>
+        <fullName>Intake_InfoMessageForContactSearch</fullName>
+        <categories>Intake</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Intake_InfoMessageForContactSearch</shortDescription>
+        <value>Please search using the fields below and review the suggested matches below.</value>
+    </labels>
+    <labels>
+        <fullName>Intake_InfoMessageForContactSearchSecond</fullName>
+        <categories>Intake</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Intake_InfoMessageForContactSearchSecond</shortDescription>
+        <value>Use the asterisk symbol (*) for uncertain spellings. Example: if unsure whether the name is spelled Tracy or Tracey, type Trac*. The system will display all names starting with Trac, allowing you to select the correct contact&apos;s name. &lt;br/&gt;
+If you cannot find the client in the system, use the New Intake button to create new intake record.</value>
+    </labels>
+    <labels>
+        <fullName>Intake_NoContactFound</fullName>
+        <categories>Intake</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Intake_NoContactFound</shortDescription>
+        <value>No Contact Found!</value>
+    </labels>
+    <labels>
+        <fullName>Intake_RelevanClientCaseSelectionInfo</fullName>
+        <categories>Intake</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Intake_RelevanClientCaseSelectionInfo</shortDescription>
+        <value>Please click Show History button next to Client Name to show client history.</value>
+    </labels>
+    <labels>
+        <fullName>MailContentBodyFinalMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MailContentBodyFinalMsg</shortDescription>
+        <value>You must click on the following link to activate your account and setup your password.</value>
+    </labels>
+    <labels>
+        <fullName>MailContentBodyFirst</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MailContentBodyFirst</shortDescription>
+        <value>Thank you for your interest in</value>
+    </labels>
+    <labels>
+        <fullName>Months</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Months</shortDescription>
+        <value>January, February, March, April, May, June, July, August, September, October, November, December</value>
+    </labels>
+    <labels>
+        <fullName>NWBestregards</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NW - Bestregards</shortDescription>
+        <value>Best regards,</value>
+    </labels>
+    <labels>
+        <fullName>NWC2NameSpace</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NWC2NameSpace</shortDescription>
+        <value>unmanaged</value>
+    </labels>
+    <labels>
+        <fullName>NWCompassPortal_Suffix</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NWCompassPortal_Suffix</shortDescription>
+        <value>Sr., Jr., III, IV</value>
+    </labels>
+    <labels>
+        <fullName>NWServiceSignUp1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NW - Service Sign Up 1</shortDescription>
+        <value>Thank you for signing up for our service. We&apos;re pleased to confirm that you have successfully enrolled in the following service:</value>
+    </labels>
+    <labels>
+        <fullName>NWServiceSignUp2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NW - Service Sign Up 2</shortDescription>
+        <value>Service:</value>
+    </labels>
+    <labels>
+        <fullName>NWServiceSignUp3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NW - Service Sign Up 3</shortDescription>
+        <value>We&apos;re excited to have you on board and are here to assist you every step of the way. If you have any questions or need further assistance, please don&apos;t hesitate to call us or send an email.</value>
+    </labels>
+    <labels>
+        <fullName>NWServiceSignUp4</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NW - Service Sign Up 4</shortDescription>
+        <value>While we process your appointment confirmation, you can get started by uploading any required documents related to your service in our customer portal.</value>
+    </labels>
+    <labels>
+        <fullName>NWServiceSignUp5</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NW - Service Sign Up 5</shortDescription>
+        <value>Remember to regularly check your portal account and email for the latest updates and any actions that may be required.</value>
+    </labels>
+    <labels>
+        <fullName>NWServiceSignUp6</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NW - Service Sign Up 6</shortDescription>
+        <value>Thank you for choosing us to guide you through this important journey!</value>
+    </labels>
+    <labels>
+        <fullName>NWServiceSignUpSubjectLine</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NW - Service Sign Up Subject Line</shortDescription>
+        <value>Service Sign-Up Confirmation for</value>
+    </labels>
+    <labels>
+        <fullName>NewMemberWelcomeEmailSubject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NewMemberWelcomeEmailSubject</shortDescription>
+        <value>User Account Setup for</value>
+    </labels>
+    <labels>
+        <fullName>New_Member_Welcome_Email_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New Member Welcome Email - 1</shortDescription>
+        <value>Thank you for signing up for an account with NW Action Agency. To complete your registration and gain access to your account, please click on the link below to set your password:</value>
+    </labels>
+    <labels>
+        <fullName>New_Member_Welcome_Email_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New Member Welcome Email - 2</shortDescription>
+        <value>Create Password Link</value>
+    </labels>
+    <labels>
+        <fullName>New_Member_Welcome_Email_3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New Member Welcome Email - 3</shortDescription>
+        <value>Please note that the link is valid for 30mins from the time of this email. If you encounter any issues or have questions, feel free to reach out to us at testnwcompass@gmail.com or (995) 643-2346.</value>
+    </labels>
+    <labels>
+        <fullName>New_Member_Welcome_Email_4</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New Member Welcome Email - 4</shortDescription>
+        <value>We look forward to serving you on NW Action Agency Portal!</value>
+    </labels>
+    <labels>
+        <fullName>New_Member_Welcome_Email_5</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New Member Welcome Email - 5</shortDescription>
+        <value>Please contact us at  testnwcompass@gmail.com or (995) 643-2346.</value>
+    </labels>
+    <labels>
+        <fullName>New_Member_Welcome_Email_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New Member Welcome Email - Subject</shortDescription>
+        <value>Create Your Password for NW Action Agency Portal</value>
+    </labels>
+    <labels>
+        <fullName>NoOfRecordPerSectionInHud9902DetailReport</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoOfRecordPerSectionInHud9902DetailReport</shortDescription>
+        <value>10</value>
+    </labels>
+    <labels>
+        <fullName>PresenterCancelCourse_Body1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PresenterCancelCourse_Body1</shortDescription>
+        <value>We are writing to inform you that the CourseName program has been canceled.</value>
+    </labels>
+    <labels>
+        <fullName>PresenterCancelCourse_Body2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PresenterCancelCourse_Body2</shortDescription>
+        <value>We appreciate your willingness to present and will definitely reach out when other opportunities arise.</value>
+    </labels>
+    <labels>
+        <fullName>PresenterCancelCourse_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PresenterCancelCourse_Subject</shortDescription>
+        <value>Important Update: CourseName Cancellation</value>
+    </labels>
+    <labels>
+        <fullName>PresenterNewCourse_Body1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PresenterNewCourse_Body1</shortDescription>
+        <value>This is to remind you that you are scheduled to present for CourseName program, which is set to begin on StartDateTime.</value>
+    </labels>
+    <labels>
+        <fullName>PresenterNewCourse_Body2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PresenterNewCourse_Body2</shortDescription>
+        <value>Please confirm your ability to present by replying to this email. Thank you for your time and talent. We appreciate you.</value>
+    </labels>
+    <labels>
+        <fullName>PresenterNewCourse_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PresenterNewCourse_Subject</shortDescription>
+        <value>Scheduled Course: CourseName Starting on StartDateTime</value>
+    </labels>
+    <labels>
+        <fullName>PresenterReminderCourse_Body1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PresenterReminderCourse_Body1</shortDescription>
+        <value>I hope this email finds you well. As part of our commitment to providing exceptional service to our clients, we would like to remind you that you are scheduled to present  CourseName. If for some reason, you are no longer able to present, please call us at AgencyPhone.</value>
+    </labels>
+    <labels>
+        <fullName>PresenterReminderCourse_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PresenterReminderCourse_Subject</shortDescription>
+        <value>Upcoming Class </value>
+    </labels>
+    <labels>
+        <fullName>PresenterUpdateCourse_Body1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PresenterUpdateCourse_Body1</shortDescription>
+        <value>We&apos;re writing to update you on the CourseName program. 
+
+Here&apos;s a quick overview of the updated schedule:</value>
+    </labels>
+    <labels>
+        <fullName>PresenterUpdateCourse_Body2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PresenterUpdateCourse_Body2</shortDescription>
+        <value>We have rescheduled your presentation for the same spot in the new schedule. If this does not work for you, please let us know as soon as possible by reaching out directly to AgencyName at AgencyEmailAddress.</value>
+    </labels>
+    <labels>
+        <fullName>PresenterUpdateCourse_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PresenterUpdateCourse_Subject</shortDescription>
+        <value>Schedule Course: CourseName</value>
+    </labels>
+    <labels>
+        <fullName>Team</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Team</shortDescription>
+        <value>Team</value>
+    </labels>
+    <labels>
+        <fullName>ThankYou</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ThankYou</shortDescription>
+        <value>Thank you</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>57.0</apiVersion>
+	<isExposed>true</isExposed>
+	<targets>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightningCommunity__Default">
+			 <property
+                type="String"
+                name="signUpLabel"
+                label="Sign Up Label"
+                default="Sign Up"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="goBackLabel"
+                label="Go Back Label"
+                default="Go Back"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="servicesLabel"
+                label="Services bread crumb Label"
+                default="Services"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="learnMorebreadCrumbLabel"
+                label="View Details About bread crumb Label"
+                default="View Details About"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="uploadDocumentsLabel"
+                label="Upload Documents Label"
+                default="Upload Documents"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="manageDocumentsLabel"
+                label="Manage Documents Label"
+                default="Manage Documents"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="contactUsBtnLabel"
+                label="Contact Us button Label"
+                default="Contact Us"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="builderSubmissionReviewLabel"
+                label="Submission Review Label"
+                default="Submission Review"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="builderContactLabel"
+                label="Contact Label"
+                default="Contact"
+                translatable="true"
+            />
+            <property
+                type="String"
+                name="builderNameLabel"
+                label="Name Label"
+                default="Name"
+                translatable="true"
+            />
+            <property
+					type="String"
+					name="builderEmailAddressLabel"
+					label="Email Address Label"
+					default="Email Address"
+					translatable="true"
+				/>
+            <property
+					type="String"
+					name="builderPhoneNumberLabel"
+					label="Phone Number Label"
+					default="Phone Number"
+					translatable="true"
+				/>
+            <property
+					type="String"
+					name="builderBestimeToCallLabel"
+					label="Best Time to Call Label"
+					default="Best Time to Call"
+					translatable="true"
+				/>
+            <property
+					type="String"
+					name="builderAddressLabel"
+					label="Address Label"
+					default="Address"
+					translatable="true"
+				/>
+            <property
+					type="String"
+					name="builderBirthdateLabel"
+					label="Birthdate Label"
+					default="Birthdate"
+					translatable="true"
+				/>
+            <property
+					type="String"
+					name="builderGenderLabel"
+					label="Gender Label"
+					default="Gender"
+					translatable="true"
+				/>
+            <property
+					type="String"
+					name="builderRaceLabel"
+					label="Race Label"
+					default="Race"
+					translatable="true"
+				/>
+            <property
+					type="String"
+					name="builderEthnicityLabel"
+					label="Ethnicity Label"
+					default="Ethnicity"
+					translatable="true"
+				/>
+            <property
+					type="String"
+					name="builderCommunityLabel"
+					label="Community Label"
+					default="Community"
+					translatable="true"
+				/>
+            <property
+					type="String"
+					name="builderFluencyInEnglishLabel"
+					label="Fluency in English Label"
+					default="Fluency in English"
+					translatable="true"
+				/>
+             <property
+					type="String"
+					name="builderMaritalStatusLabel"
+					label="Marital Status Label"
+					default="Marital Status"
+					translatable="true"
+				/>
+            <property
+					type="String"
+					name="builderEducationLabel"
+					label="Education Label"
+					default="Education"
+					translatable="true"
+				/>
+            <property
+					type="String"
+					name="builder1stTimeHomebuyerLabel"
+					label="1st Time Homebuyer Label"
+					default="1st Time Home Buyer"
+					translatable="true"
+				/>
+            <property
+					type="String"
+					name="builderLegallyDisabledLabel"
+					label="Legally Disabled Label"
+					default="Legally Disabled"
+					translatable="true"
+				/>
+            <property
+					type="String"
+					name="builderHouseholdSizeLabel"
+					label="Household Size Label"
+					default="Household Size"
+					translatable="true"
+				/>
+            <property
+					type="String"
+					name="builderHouseholdTypeLabel"
+					label="Household Type Label"
+					default="Household Type/Head of Household"
+					translatable="true"
+				/>
+			 <property
+					type="String"
+					name="builderHouseholdTypeOnlyLabel"
+					label="Household Type Only Label"
+					default="Household Type"
+					translatable="true"
+				/>
+            <property
+					type="String"
+					name="builderActiveMilitaryLabel"
+					label="Active Military Label"
+					default="Active Military"
+					translatable="true"
+				/>
+			<property
+					type="String"
+					name="builderVeteranStatusLabel"
+					label="Veteran Label"
+					default="Veteran"
+					translatable="true"
+				/>
+            <property
+					type="String"
+					name="builderTotalMonthlyIncomeLabel"
+					label="Total Monthly Income Label"
+					default="Total Monthly Income"
+					translatable="true"
+				/>
+            <property
+					type="String"
+					name="builderNumberOfDependentsLabel"
+					label="Number of Dependents Label"
+					default="Number of Dependents"
+					translatable="true"
+				/>
+            <property
+					type="String"
+					name="builderEmploymentStatusLabel"
+					label="Employment Status Label"
+					default="Employment Status"
+					translatable="true"
+				/>
+            <property
+					type="String"
+					name="builderCreditScoreLabel"
+					label="Credit Score Label"
+					default="Credit Score"
+					translatable="true"
+				/>
+           	 <property
+					type="String"
+					name="builderCoApplicantLabel"
+					label="Co-Applicant Label"
+					default="Co-Applicant"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderPreferredCommunicationLanguageLabel"
+					label="Preferred Communication Language Label"
+					default="Preferred Communication Language"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="builderRelationshipToClientLabel"
+					label="Relationship to Client Label"
+					default="Relationship to Client"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="submittedDateLabel"
+					label="Submitted Date label"
+					default="Date Submitted"
+					translatable="true"
+				/>
+				<property
+					type="String"
+					name="viewMyServicesLabel"
+					label="View My Submission label"
+					default="View My Submission"
+					translatable="true"
+				/>
+				 <property
+					type="String"
+					name="labelOpen"
+					label="Label for Open"
+					default="Open"
+					translatable="true"
+			/>
+            <property
+					type="String"
+					name="labelCompleted"
+					label="Label for Completed"
+					default="Completed"
+					translatable="true"
+			/>
+            <property
+					type="String"
+					name="labelIncomplete"
+					label="Label for Incomplete"
+					default="Incomplete"
+					translatable="true"
+			/>
+            <property
+					type="String"
+					name="labelOnHold"
+					label="Label for On Hold"
+					default="On Hold"
+					translatable="true"
+			/>
+        </targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

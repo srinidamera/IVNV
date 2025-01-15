@@ -1,0 +1,521 @@
+<apex:page controller="PrintActionPlanVfController" readOnly="true" applyHtmlTag="false" showHeader="false" cache="true"
+           applyBodyTag="false" renderAs="PDF">
+    
+    <head>
+        <style>
+            @page {
+            size: letter portrait;
+            margin: 10mm 10mm 20mm 10mm;
+            font-family: sans-serif;
+            
+            @bottom-center {
+            content:element(footer);
+            }
+            
+            }
+            div.footer {
+            position: running(footer);
+            font-size: 12px;
+            text-align: center;
+            } 
+        </style>
+    </head>
+    
+    
+    
+    
+    <apex:variable var="cnt" value="{!0}" />
+    
+    <div style="text-align: center;font-size: 22px;padding-bottom:15px;">
+        <span><b>CLIENT ACTION PLAN</b></span><br />
+    </div>
+    
+    <div style="text-align: center;font-size: 18px;padding-bottom:30px;">
+        <span><b>{!currentDate} </b></span><br />
+    </div>
+    
+    <div style="width: 100%;">
+        <div style="width: 36%; float: left;background-color:#e8e8e8">
+            <b>Client Infomation</b>
+        </div>
+        <div style="width: 64%; float: left;background-color:#e8e8e8; ">
+            <b>Case Information</b>
+        </div>
+    </div>
+    <br />
+    
+    <div style="width: 100%; padding-top:5px; padding-bottom: 20px">
+        <div style="width: 100%; float: left;">
+            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; font-size:14px;">
+                <tr>
+                    <td width="15%">
+                        <apex:outputLabel > <b>Client Name </b> </apex:outputLabel>
+                    </td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse; font-family: Arial Unicode MS;">
+                        <apex:outputText value="{!clientName}" />
+                    </td>
+                    <td width="15%" style="padding-left:6px">
+                        <apex:outputLabel > <b>Case Name </b> </apex:outputLabel>
+                    </td>
+                    <td width="50%" style="border: 0.8px solid black;border-collapse: collapse; font-size:12px;">
+                        <apex:outputText value="{!clientCaseName}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <apex:outputLabel > <b>Co-applicant(s) </b> </apex:outputLabel>
+                    </td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!coAppNames}" />
+                    </td>
+                    <td width="15%" style="padding-left:6px">
+                        <apex:outputLabel > <b>Case Number </b> </apex:outputLabel>
+                    </td>
+                    <td width="50%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!clientCaseNumber}" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <br /><br />
+    
+    <div style="width: 100%; padding-bottom: 10px">
+        <div style="width: 100%;float: left;background-color:#e8e8e8; ">
+            <b>Counselor Information</b><br />
+        </div>
+    </div>
+    <br />
+    <div style="width: 100%; ">
+        <div style="width: 100%; float: left; padding-bottom:15px">
+            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse;">
+                <tr>
+                    <td width="50%">
+                        <apex:outputLabel > <b>Reason (purpose) for Counseling </b> </apex:outputLabel>
+                    </td>
+                    <td width="50%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!reasonForCounseling}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <apex:outputLabel > <b>Counselor Name </b> </apex:outputLabel>
+                    </td>
+                    <td width="50%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!counselorName}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <apex:outputLabel > <b>Counselor Phone </b> </apex:outputLabel>
+                    </td>
+                    <td width="50%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!counselorPhone}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <apex:outputLabel > <b>Counselor Email </b> </apex:outputLabel>
+                    </td>
+                    <td width="50%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!counselorEmail}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <apex:outputLabel > <b>Counselor Preferred Contact Method </b> </apex:outputLabel>
+                    </td>
+                    <td width="50%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!counselorPreferredContactMethod}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <apex:outputLabel > <b>Notes on Client Housing Goal or Issue </b> </apex:outputLabel>
+                    </td>
+                    <td width="50%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!notesOnClientHousingGoalOrIssue}" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <br /><br /><br /><br />
+    
+    <div style="width: 100%; padding-bottom: 10px">
+        <div style="width: 50%; float: left;background-color:#e8e8e8">
+            <b>Financial Assessment</b>
+        </div>
+        <div style="width: 25%; float: left;background-color:#e8e8e8">
+            <b>Initial Assessment</b>
+        </div>
+        <div style="width: 25%; float: left;background-color:#e8e8e8">
+            <b>Post Assessment</b>
+        </div>
+    </div>
+    <br />
+    
+    <div style="width: 100%; padding-bottom:60px">
+        <div style="width: 100%; float: left;">
+            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse;">
+                <tr>
+                    <td width="50%">
+                        <apex:outputLabel ><b>Gross Household Monthly Income</b></apex:outputLabel>
+                    </td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!InitialfinancialSnapshotWrapper.grossMonthlyIncome}"/>
+                    </td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!PostfinancialSnapshotWrapper.grossMonthlyIncome}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <apex:outputLabel ><b>Current Household Monthly Creditor Debt</b></apex:outputLabel>
+                    </td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!InitialfinancialSnapshotWrapper.coAppCreditScore}"/>
+                    </td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!PostfinancialSnapshotWrapper.coAppCreditScore}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <apex:outputLabel ><b>Current Savings</b></apex:outputLabel>
+                    </td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!InitialfinancialSnapshotWrapper.savings}"/>
+                    </td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!PostfinancialSnapshotWrapper.savings}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <apex:outputLabel ><b>Total Household Debt</b></apex:outputLabel>
+                    </td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!InitialfinancialSnapshotWrapper.totalDebt}"/>
+                    </td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!PostfinancialSnapshotWrapper.totalDebt}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <apex:outputLabel ><b>Median Credit Score</b></apex:outputLabel>
+                    </td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!InitialfinancialSnapshotWrapper.creditScore}"/>
+                    </td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!PostfinancialSnapshotWrapper.creditScore}"/>
+                    </td>
+                </tr>
+              <!--  <tr>
+                    <td width="50%">
+                        <apex:outputLabel ><b>Current Amount of Judgment/Collections</b></apex:outputLabel>
+                    </td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!InitialfinancialSnapshotWrapper.CurrentAmountofJudgment}"/>
+                    </td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!PostfinancialSnapshotWrapper.CurrentAmountofJudgment}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <apex:outputLabel ><b>Condition of Property</b></apex:outputLabel>
+                    </td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!InitialfinancialSnapshotWrapper.conditionOfProperty}"/>
+                    </td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;">
+                        <apex:outputText value="{!PostfinancialSnapshotWrapper.conditionOfProperty}"/>
+                    </td>
+                </tr>  -->
+            </table>
+            
+        </div>
+    </div>
+    
+    <!--<hr/>-->
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    
+    
+    <div style="width: 100%;">
+        
+        <apex:repeat value="{!wrapList}" var="wrap">
+            <apex:repeat value="{!wrap.actionPlans}" var="goal">
+                <div style="padding-bottom:2px">
+                    <div style="width: 30%; float: left;background-color:#e8e8e8">
+                        <b>Goal</b>
+                    </div>
+                    <div style="width: 20%; float: left;background-color:#e8e8e8">
+                        <b>Type</b>
+                    </div>
+                    <div style="width: 20%; float: left;background-color:#e8e8e8">
+                        <b>Due Date</b>
+                    </div>
+                    <div style="width: 30%; float: left;background-color:#e8e8e8">
+                        <b>Completion Date</b>
+                    </div>
+                </div>
+                <br />
+                <table style="border-collapse: collapse;width: 100%;border: 0.8px solid black;">
+                    <tbody>
+                        <tr style="padding-bottom:6px">
+                            <td width="30%" style="border: 0.8px solid black;border-collapse: collapse;">
+                                <apex:outputText value="{!goal.goalOtherName}" />
+                            </td>
+                            <td width="20%" style="border:0.8px solid black;border-collapse: collapse;">
+                                <apex:outputText value="{!goal.goalType}" />
+                            </td>
+                            <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;">
+                                <apex:outputText value="{!goal.goalDueDateStr}" />
+                            </td>
+                            <td width="30%" style="border: 0.8px solid black;border-collapse: collapse;">
+                                <apex:outputText value="{!goal.goalCompletionDateStr}" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br />
+                
+                
+                <!--obstacle table -->
+                <table style="border-collapse: collapse; width: 100%; border: 0.8px solid black;">
+                    <tbody style="width:100%">
+                        <apex:repeat value="{!goal.obstacleList}" var="obstacle">
+                            <tr style="width:100%">
+                                <td width="40%" style="background-color:#e8e8e8">
+                                    <apex:outputLabel > <b>Obstacle </b> </apex:outputLabel>
+                                </td>
+                                <td width="60%" style="background-color:#e8e8e8">
+                                    <apex:outputLabel > <b>Additional Notes</b> </apex:outputLabel>
+                                </td>
+                            </tr>
+                            <tr style="width:100%">
+                                <td width="40%" style="border: 0.8px solid black;border-collapse: collapse;">
+                                    <apex:outputText value="{!obstacle.obstacleName}" />
+                                </td>
+                                <td width="60%" style="border: 0.8px solid black;border-collapse: collapse;">
+                                    <apex:outputText value="{!obstacle.obstacleDetail}" />
+                                </td>
+                            </tr>
+                            
+                            <br />
+                            <apex:repeat value="{!obstacle.solutionList}" var="solution">
+                                <table style="border-collapse: collapse; width: 100%; border: 0.8px solid black;">
+                                    
+                                    <tr>
+                                        <td width="40%" style="background-color:#e8e8e8">
+                                            <apex:outputLabel > <b>Solution </b> </apex:outputLabel>
+                                        </td>
+                                        <td width="60%" style="background-color:#e8e8e8">
+                                            <apex:outputLabel > <b>Additional Notes</b> </apex:outputLabel>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="40%" style="border: 0.8px solid black;border-collapse: collapse;">
+                                            <apex:outputText value="{!solution.solutionName}" />
+                                        </td>
+                                        <td width="60%" style="border: 0.8px solid black;border-collapse: collapse;">
+                                            <apex:outputText value="{!solution.solutionDetail}" />
+                                        </td>
+                                    </tr>
+                                    
+                                </table>
+                                
+                                <br />
+                                
+                                <div style="padding-bottom:2px">
+                                    <div style="width: 30%; float: left;background-color:#e8e8e8">
+                                        <b>Client Action</b>
+                                    </div>
+                                    <div style="width: 20%; float: left;background-color:#e8e8e8">
+                                        <b>Additional Notes</b>
+                                    </div>
+                                    <div style="width: 20%; float: left;background-color:#e8e8e8">
+                                        <b>Due Date</b>
+                                    </div>
+                                    <div style="width: 30%; float: left;background-color:#e8e8e8">
+                                        <b>Completion Date</b>
+                                    </div>
+                                </div>
+                                <br />
+                                <table style="border-collapse: collapse;width: 100%;border: 0.8px solid black;">
+                                    <tbody>
+                                        <tr style="padding-bottom:6px">
+                                            <td width="30%"
+                                                style="border: 0.8px solid black;border-collapse: collapse;">
+                                                <apex:outputText value="{!solution.clientAction}" />
+                                            </td>
+                                            <td width="20%" style="border:0.8px solid black;border-collapse: collapse;">
+                                                <apex:outputText value="{!solution.clientActionDetail}" />
+                                            </td>
+                                            <td width="20%"
+                                                style="border: 0.8px solid black;border-collapse: collapse;">
+                                                <apex:outputText value="{!solution.clientActionDueDateStr}" />
+                                            </td>
+                                            <td width="30%"
+                                                style="border: 0.8px solid black;border-collapse: collapse;">
+                                                <apex:outputText value="{!solution.clientActionCompletionDateStr}" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <br />
+                                
+                                <div style="padding-bottom:2px">
+                                    <div style="width: 30%; float: left;background-color:#e8e8e8">
+                                        <b>Counselor Action</b>
+                                    </div>
+                                    <div style="width: 20%; float: left;background-color:#e8e8e8">
+                                        <b>Additional Notes</b>
+                                    </div>
+                                    <div style="width: 20%; float: left;background-color:#e8e8e8">
+                                        <b>Due Date</b>
+                                    </div>
+                                    <div style="width: 30%; float: left;background-color:#e8e8e8">
+                                        <b>Completion Date</b>
+                                    </div>
+                                </div>
+                                <br />
+                                <table style="border-collapse: collapse;width: 100%;border: 0.8px solid black;">
+                                    <tbody>
+                                        <tr style="padding-bottom:6px">
+                                            <td width="30%"
+                                                style="border: 0.8px solid black;border-collapse: collapse;">
+                                                <apex:outputText value="{!solution.counselorAction}" />
+                                            </td>
+                                            <td width="20%" style="border:0.8px solid black;border-collapse: collapse;">
+                                                <apex:outputText value="{!solution.counselorActionDetail}" />
+                                            </td>
+                                            <td width="20%"
+                                                style="border: 0.8px solid black;border-collapse: collapse;">
+                                                <apex:outputText value="{!solution.counselorActionDueDateStr}" />
+                                            </td>
+                                            <td width="30%"
+                                                style="border: 0.8px solid black;border-collapse: collapse;">
+                                                <apex:outputText value="{!solution.counselorActionCompletionDateStr}" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </apex:repeat>
+                        </apex:repeat>
+                    </tbody>
+                </table>
+                <!--<hr/>-->
+                <br />
+            </apex:repeat>
+            
+            <div
+                 style="{!if(cnt+1 == noOfClasses || noOfClasses == 0, 'page-break-before:avoid;','page-break-after:always;')}">
+                <apex:variable var="cnt" value="{!cnt+1}" />
+            </div>
+        </apex:repeat>
+    </div>
+    
+    <br />
+    <div style="width: 100%; padding-bottom: 10px">
+        <div style="width: 100%;float: left;background-color:#e8e8e8">
+            <b>Referrals</b>
+        </div>
+    </div>
+    <br />
+    <div style="width: 100%;">
+        <div style="width: 100%; float: left;">
+            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse;">
+                <apex:repeat value="{!referrals}" var="ref">
+                    <tr>
+                        <td width="20%">
+                            <apex:outputLabel > <b>Referral Name </b> </apex:outputLabel>
+                        </td>
+                        <td width="20%" style="border: 0.8px solid black;border-collapse: collapse; padding-left:8px;">
+                            <apex:outputText value="{!ref.Name}" />
+                        </td>
+                        <td width="20%">
+                            <apex:outputLabel > <b>Referral Outcome </b> </apex:outputLabel>
+                        </td>
+                        <td width="40%" style="border: 0.8px solid black;border-collapse: collapse; padding-left:8px;">
+                            <apex:outputText value="{!refOutcome}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20%">
+                            <apex:outputLabel > <b>Agency Name </b> </apex:outputLabel>
+                        </td>
+                        <td width="20%" style="border: 0.8px solid black;border-collapse: collapse; padding-left:8px;">
+                            <apex:outputText value="{!ref.ReferredtoAgency__r.Name}" />
+                        </td>
+                        <td width="20%">
+                            <apex:outputLabel > <b>Referral Notes </b> </apex:outputLabel>
+                        </td>
+                        <td width="40%" style="border: 0.8px solid black;border-collapse: collapse;padding-left:8px;">
+                            <apex:outputText value="{!refNotes}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20%">
+                            <apex:outputLabel > <b>Agency Contact </b> </apex:outputLabel>
+                        </td>
+                        <td width="40%" style="border: 0.8px solid black;border-collapse: collapse; padding-left:8px;">
+                            <apex:outputText value="{!ref.ClientName__r.Name}" />
+                        </td>
+                    </tr>
+                </apex:repeat>
+            </table>
+            <br/><br/>
+        </div>
+        
+    </div>
+    
+    
+    
+    
+    
+    <div style="width: 100%; padding-bottom: 10px">
+        <div style="width: 80%; float: left;background-color:#e8e8e8">
+            <b>Signatures</b>
+        </div>
+        <div style="width: 20%; float: left;background-color:#e8e8e8">
+            <b>Signature Date</b>
+        </div>
+    </div>
+    
+    <div style="width: 100%;">
+        <div style="width: 100%; float: left; padding-top:10px ">
+            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse;">
+                <tr>
+                    <td width="30%">
+                        <apex:outputLabel > <b>Counselor </b> </apex:outputLabel>
+                    </td>
+                    <td width="50%" style="border: 0.8px solid black;border-collapse: collapse;"></td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;"></td>
+                </tr>
+                <tr>
+                    <td width="30%">
+                        <apex:outputLabel > <b>Client </b> </apex:outputLabel>
+                    </td>
+                    <td width="50%" style="border: 0.8px solid black;border-collapse: collapse;"></td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    
+    <div class="footer">
+        Agency Name - 123 Main Street Suite 205 - City, TN 00000 - <br/>
+        <apex:outputLink value="mailto:agencyemail@agencydomain.com">agencyemail@agencydomain.com</apex:outputLink> - 
+        (123) 456-7890
+    </div>
+    
+    
+</apex:page>

@@ -1,0 +1,59 @@
+<template>
+    <div class="slds-box slds-box_x-small slds-theme_default">
+            <div class="slds-path  ">
+                <div class="slds-grid slds-path__track">
+                    <div class="slds-grid slds-path__scroller-container">
+                        <div class="slds-path__scroller">
+                            <div class="slds-path__scroller_inner">
+                                <ul class="slds-path__nav" role="listbox" aria-orientation="horizontal"
+                                    aria-labelledby="slds-path__stage-name">
+                                    <template if:true={isActive}>
+                                    <li class="slds-path__item slds-is-current slds-is-active" role="presentation">
+                                        <div aria-selected="true" class="slds-path__link" onclick={handleCourseButtonClick} id="path-1"
+                                            role="option" tabindex="0">
+                                            <template if:true={isSession}>
+                                                <span class="slds-path__title">Course Session</span>
+                                            </template>
+                                            <template if:false={isSession}>
+                                                <span class="slds-path__title">Entire Course</span>
+                                            </template>
+                                        </div>
+                                    </li>
+                            </template>
+                            <template if:false={isActive}>
+                                <li class="slds-path__item slds-is-incomplete" role="presentation">
+                                    <div aria-selected="false" class="slds-path__link" onclick={handleCourseButtonClick} id="path-2"
+                                        role="option" tabindex="-1">
+                                        <span class="slds-path__title">Entire Course</span>
+                                    </div>
+                                </li>
+                            </template>
+                                    <template for:each={items} for:item="stage">
+                                        <template if:true={stage.isActive}>
+                                            <li class="slds-path__item slds-is-current slds-is-active" role="presentation"
+                                                key={stage.aInfo.Name}>
+                                                <div aria-selected="true" class="slds-path__link" data-id={stage.aInfo.Id} onclick={navigateToRecordPage} id="path-9"
+                                                    role="option" tabindex="0">
+                                                    <span class="slds-path__title" data-id={stage.aInfo.Id}>{stage.sessionName}</span>
+                                                </div>
+                                            </li>
+                                        </template>
+                                        <template if:false={stage.isActive}>
+                                            <li class="slds-path__item slds-is-incomplete" role="presentation" key={stage.aInfo.Name}>
+                                                <div aria-selected="false" class="slds-path__link" data-id={stage.aInfo.Id}  onclick={navigateToRecordPage} id="path-10"
+                                                    role="option" tabindex="-1">
+                                                    <span class="slds-path__title" data-id={stage.aInfo.Id}>
+                                                        {stage.sessionName}
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        </template>
+                                    </template>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+</template>

@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Privacy Terms and Conditions",
+  "contentBody" : {
+    "activeViewId" : "Privacy_Terms_and_Conditions",
+    "configurationTags" : [ ],
+    "pageAccess" : "Public",
+    "routeType" : "custom-privacy-terms-and-conditions",
+    "urlPrefix" : "privacyTermsAndConditions"
+  },
+  "urlName" : "privacy-terms-and-conditions"
+}

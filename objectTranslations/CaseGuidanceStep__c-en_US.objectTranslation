@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Guidance Step</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Guidance Step</value>
+    </caseValues>
+    <fields>
+        <label><!-- Case Guidance Template --></label>
+        <name>CaseGuidanceTemplate__c</name>
+        <relationshipLabel><!-- Case Guidance Step --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Number --></label>
+        <name>OrderNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Step Details --></label>
+        <name>StepDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Step Name --></label>
+        <name>StepName__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Household</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Households</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Process Matching Fields --></label>
+        <name>sumoapp__ProcessMatchingFields</name>
+    </fieldSets>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Household Name</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Households</value>
+        </caseValues>
+        <name>account_name</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Address</value>
+        </caseValues>
+        <name>billing_address_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>City</value>
+        </caseValues>
+        <name>billing_city_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Country</value>
+        </caseValues>
+        <name>billing_country_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Country Code</value>
+        </caseValues>
+        <name>billing_country_code_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>State</value>
+        </caseValues>
+        <name>billing_state_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>State Code</value>
+        </caseValues>
+        <name>billing_state_code_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Street Address</value>
+        </caseValues>
+        <name>billing_street_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Zip</value>
+        </caseValues>
+        <name>billing_zip_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Address Line 2 --></label>
+        <name>AddressLine2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Address --></label>
+        <name>BillingAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client # --></label>
+        <name>ClientNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contacts Specialty --></label>
+        <name>ContactsSpecialty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>EmailAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization Type --></label>
+        <name>OrganizationType__c</name>
+        <picklistValues>
+            <masterLabel>203K Consultants</masterLabel>
+            <translation><!-- 203K Consultants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banks &amp; Financial Institutions</masterLabel>
+            <translation><!-- Banks &amp; Financial Institutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Board Members</masterLabel>
+            <translation><!-- Board Members --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Partner</masterLabel>
+            <translation><!-- Business Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closing Companies</masterLabel>
+            <translation><!-- Closing Companies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Donor</masterLabel>
+            <translation><!-- Donor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government Agencies</masterLabel>
+            <translation><!-- Government Agencies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property legal service firms</masterLabel>
+            <translation><!-- Property legal service firms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property service related organizations</masterLabel>
+            <translation><!-- Property service related organizations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate Companies</masterLabel>
+            <translation><!-- Real Estate Companies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volunteer Organizations</masterLabel>
+            <translation><!-- Volunteer Organizations --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Referral Organization/Agency --></label>
+        <name>Type_of_Referral_Organization_Agency__c</name>
+        <picklistValues>
+            <masterLabel>Attorney/Closing Agent</masterLabel>
+            <translation><!-- Attorney/Closing Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Behavioral Counseling</masterLabel>
+            <translation><!-- Behavioral Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Counseling</masterLabel>
+            <translation><!-- Credit Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debt Management Program</masterLabel>
+            <translation><!-- Debt Management Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Shelter</masterLabel>
+            <translation><!-- Emergency Shelter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Institute Representative</masterLabel>
+            <translation><!-- Financial Institute Representative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government Affiliate</masterLabel>
+            <translation><!-- Government Affiliate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Inspector</masterLabel>
+            <translation><!-- Home Inspector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homeowner’s Insurance Agent</masterLabel>
+            <translation><!-- Homeowner’s Insurance Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mortgage Originator</masterLabel>
+            <translation><!-- Mortgage Originator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate Agent</masterLabel>
+            <translation><!-- Real Estate Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Service Agency</masterLabel>
+            <translation><!-- Social Service Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Consultant</masterLabel>
+            <translation><!-- Tax Consultant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>cic_credit__Active__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Priority --></label>
+        <name>cic_credit__CustomerPriority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Locations --></label>
+        <name>cic_credit__NumberofLocations__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Expiration Date --></label>
+        <name>cic_credit__SLAExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Serial Number --></label>
+        <name>cic_credit__SLASerialNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA --></label>
+        <name>cic_credit__SLA__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Upsell Opportunity --></label>
+        <name>cic_credit__UpsellOpportunity__c</name>
+        <picklistValues>
+            <masterLabel>Maybe</masterLabel>
+            <translation><!-- Maybe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Created By SUMO --></label>
+        <name>sumoapp__CreatedBySumo__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Household --></label>
+        <name>Household</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Organization --></label>
+        <name>Organization</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- EmailAnInvite --></label>
+        <name>sumoapp__EmailAnInvite</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ScheduleNow --></label>
+        <name>sumoapp__ScheduleNow</name>
+    </webLinks>
+</CustomObjectTranslation>

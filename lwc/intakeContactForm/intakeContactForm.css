@@ -1,0 +1,28 @@
+.custom-grid {
+    display: grid;
+    grid-template-columns: 220px 220px 220px 105px 105px;
+    column-gap: 10px;
+}
+
+.custom-grid-address {
+    display: grid;
+    grid-template-columns: 220px 220px 105px 105px 220px;
+    column-gap: 10px;
+}
+
+.slds-form-element__label {
+    font-size: 11px !important;
+}
+
+.warning-color {
+    color: #fe9339 !important;
+    --sds-c-icon-color-foreground-default: #fe9339;
+}
+
+.left-spacing {
+    padding-left: 2px;
+}
+
+.top-spacing {
+    padding-top: 10px;
+}

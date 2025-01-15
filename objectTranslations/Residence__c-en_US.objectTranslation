@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Residence</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Residences</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Case --></label>
+        <name>ClientCase__c</name>
+        <relationshipLabel><!-- Residences --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Colonias --></label>
+        <name>Colonias__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Residences --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current Residence --></label>
+        <name>CurrentResidence__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Hazard Insurance --></label>
+        <name>MonthlyHazardInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Home Association --></label>
+        <name>MonthlyHomeAssociation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Mortgage Insurance --></label>
+        <name>MonthlyMortgageInsurance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Other --></label>
+        <name>MonthlyOther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly RE Taxes --></label>
+        <name>MonthlyRETaxes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Rent --></label>
+        <name>MonthlyRent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Months --></label>
+        <name>Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Price --></label>
+        <name>PurchasePrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Residence Type --></label>
+        <name>ResidenceType__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Own</masterLabel>
+            <translation><!-- Own --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Own - Empowerment Zone</masterLabel>
+            <translation><!-- Own - Empowerment Zone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Own - Enterprise &amp; Empowerment Zone</masterLabel>
+            <translation><!-- Own - Enterprise &amp; Empowerment Zone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Own - Enterprise Zone</masterLabel>
+            <translation><!-- Own - Enterprise Zone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent</masterLabel>
+            <translation><!-- Rent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent - Empowerment Zone</masterLabel>
+            <translation><!-- Rent - Empowerment Zone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent - Enterprise &amp; Empowerment Zone</masterLabel>
+            <translation><!-- Rent - Enterprise &amp; Empowerment Zone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent - Enterprise Zone</masterLabel>
+            <translation><!-- Rent - Enterprise Zone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent property not owned/managed by your org</masterLabel>
+            <translation><!-- Rent property not owned/managed by your org --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rent property owned/managed buy your org</masterLabel>
+            <translation><!-- Rent property owned/managed buy your org --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staying with family/friends</masterLabel>
+            <translation><!-- Staying with family/friends --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time at Residence (Months) --></label>
+        <name>TimeatResidenceMonths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time at Residence (Years) --></label>
+        <name>TimeatResidenceYears__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Mortgage --></label>
+        <name>firstMortgage__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd Mortgage --></label>
+        <name>secondMortgage__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

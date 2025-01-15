@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Compass_Portal_Welcome_Letterhead</letterhead>
+    <name>Case Reassignment</name>
+    <style>freeForm</style>
+    <subject>Case Reassignment: {!ClientCase__c.ClientCaseName__c}</subject>
+    <textOnly>Dear [Counselor Name],
+
+This email is to inform you that the case &quot;[Case Name]&quot; has been assigned to you, effective [Date].
+
+This is a reassignment.
+
+Case Details:
+
+Client Name: [Client Name]
+
+Reason for Seeking Assistance: [Brief description of client needs]
+
+Briefly explain the reason for the reassignment.
+
+Action Required:
+
+Please review the case status, pending steps and contact the client to schedule follow-up meeting at your earliest convenience.
+
+Sincerely,
+
+The [Housing Agency Name] Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

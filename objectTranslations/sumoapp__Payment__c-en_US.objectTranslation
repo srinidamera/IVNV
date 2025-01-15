@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Attendee Id --></label>
+        <name>sumoapp__AttendeeId__c</name>
+        <relationshipLabel><!-- Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Availble For Refund Amount --></label>
+        <name>sumoapp__AvailbleForRefundAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compd Seats --></label>
+        <name>sumoapp__CompdSeats__c</name>
+    </fields>
+    <fields>
+        <label><!-- Connector Type --></label>
+        <name>sumoapp__ConnectorType__c</name>
+        <picklistValues>
+            <masterLabel>Sumo Stripe Connector</masterLabel>
+            <translation><!-- Sumo Stripe Connector --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Error Details --></label>
+        <name>sumoapp__ErrorDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>sumoapp__ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Payment --></label>
+        <name>sumoapp__InitialPayment__c</name>
+        <relationshipLabel><!-- Refunds --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Items Count --></label>
+        <name>sumoapp__ItemsCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Amount --></label>
+        <name>sumoapp__PaymentAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Connector Id --></label>
+        <name>sumoapp__PaymentConnectorId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Info Url --></label>
+        <name>sumoapp__PaymentInfoUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Result --></label>
+        <name>sumoapp__PaymentResult__c</name>
+        <picklistValues>
+            <masterLabel>CANCELED</masterLabel>
+            <translation><!-- CANCELED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRAFT</masterLabel>
+            <translation><!-- DRAFT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAILED</masterLabel>
+            <translation><!-- FAILED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FULLY PAID</masterLabel>
+            <translation><!-- FULLY PAID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FULLY REFUNDED</masterLabel>
+            <translation><!-- FULLY REFUNDED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN PROCESS</masterLabel>
+            <translation><!-- IN PROCESS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PARTIALLY PAID</masterLabel>
+            <translation><!-- PARTIALLY PAID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PARTIALLY REFUNDED</masterLabel>
+            <translation><!-- PARTIALLY REFUNDED --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Promo Code --></label>
+        <name>sumoapp__PromoCode__c</name>
+        <relationshipLabel><!-- Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Refund Note --></label>
+        <name>sumoapp__RefundNote__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refund Reason --></label>
+        <name>sumoapp__RefundReason__c</name>
+        <picklistValues>
+            <masterLabel>Changed Mind</masterLabel>
+            <translation><!-- Changed Mind --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Conflict</masterLabel>
+            <translation><!-- Personal Conflict --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Credit Card</masterLabel>
+            <translation><!-- Wrong Credit Card --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ticket Price --></label>
+        <name>sumoapp__TicketPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>sumoapp__Type__c</name>
+        <picklistValues>
+            <masterLabel>Payment</masterLabel>
+            <translation><!-- Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refund</masterLabel>
+            <translation><!-- Refund --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Additional Participants --></label>
+        <name>sumoapp__AdditionalParticipants__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow Any Availability --></label>
+        <name>sumoapp__AllowAnyAvailability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Type --></label>
+        <name>sumoapp__AppointmentType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Option --></label>
+        <name>sumoapp__AvailabilityOption__c</name>
+    </fields>
+    <fields>
+        <help><!-- If set, SUMO will create a Post-Buffer appointment after the scheduled appointment, to give the Host a buffer. --></help>
+        <label><!-- Post-Buffer Time (Minutes) --></label>
+        <name>sumoapp__BufferTimePost__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120</masterLabel>
+            <translation><!-- 120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45</masterLabel>
+            <translation><!-- 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90</masterLabel>
+            <translation><!-- 90 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If set, SUMO will create a Pre-Buffer appointment before the scheduled appointment, to give the Host a buffer. --></help>
+        <label><!-- Pre-Buffer Time (Minutes) --></label>
+        <name>sumoapp__BufferTimePre__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120</masterLabel>
+            <translation><!-- 120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45</masterLabel>
+            <translation><!-- 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90</masterLabel>
+            <translation><!-- 90 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Capacity --></label>
+        <name>sumoapp__Capacity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color --></label>
+        <name>sumoapp__Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration Options --></label>
+        <name>sumoapp__DurationOptions__c</name>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>105</masterLabel>
+            <translation><!-- 105 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120</masterLabel>
+            <translation><!-- 120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45</masterLabel>
+            <translation><!-- 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75</masterLabel>
+            <translation><!-- 75 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90</masterLabel>
+            <translation><!-- 90 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dynamic Travel Time Strategy --></label>
+        <name>sumoapp__DynamicTravelTimeStrategy__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date/Time --></label>
+        <name>sumoapp__EndDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>sumoapp__ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Include Video Conference Details --></help>
+        <label><!-- Include Video Conf Details? --></label>
+        <name>sumoapp__IncludeWebConfDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invite Link --></label>
+        <name>sumoapp__InviteLink__c</name>
+    </fields>
+    <fields>
+        <help><!-- Recurring --></help>
+        <label><!-- Is Recurring? --></label>
+        <name>sumoapp__IsRecurring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Room Auto Assign? --></label>
+        <name>sumoapp__IsRoomAutoAssign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Limit of Appointments --></label>
+        <name>sumoapp__LimitOfAppointments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Details --></label>
+        <name>sumoapp__LocationDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Geometry --></label>
+        <name>sumoapp__LocationGeometry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Type --></label>
+        <name>sumoapp__LocationType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>sumoapp__Location__c</name>
+        <relationshipLabel><!-- Location Invites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Create/Match On --></label>
+        <name>sumoapp__MatchOnObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note --></label>
+        <name>sumoapp__Note__c</name>
+        <relationshipLabel><!-- Invites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Organizer Name --></label>
+        <name>sumoapp__OrganizerName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organizer Title --></label>
+        <name>sumoapp__OrganizerTitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Host ID --></label>
+        <name>sumoapp__Organizer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Place Id --></label>
+        <name>sumoapp__PlaceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Participant --></label>
+        <name>sumoapp__PrimaryClient__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process # --></label>
+        <name>sumoapp__Process__c</name>
+        <relationshipLabel><!-- Invites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related To --></label>
+        <name>sumoapp__RelatedTo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Pool Priority Level --></label>
+        <name>sumoapp__ResourcePoolPriorityLevel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rolling Window --></label>
+        <name>sumoapp__RollingWindow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service --></label>
+        <name>sumoapp__Service__c</name>
+        <relationshipLabel><!-- Service Invites --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Show Email Address of Internal Attendees --></help>
+        <label><!-- Show Internal Emails --></label>
+        <name>sumoapp__ShowInternalEmails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date/Time --></label>
+        <name>sumoapp__StartDatetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- TimeZoneSidKey --></label>
+        <name>sumoapp__TimeZoneSidKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type Limit of Appointments --></label>
+        <name>sumoapp__TypeLimitOfAppointments__c</name>
+        <picklistValues>
+            <masterLabel>Link</masterLabel>
+            <translation><!-- Link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Participant</masterLabel>
+            <translation><!-- Participant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Video Conference Details Type --></label>
+        <name>sumoapp__VideoConferenceDetailsType__c</name>
+        <picklistValues>
+            <masterLabel>Host</masterLabel>
+            <translation><!-- Host --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Participant</masterLabel>
+            <translation><!-- Primary Participant --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- Appt Link --></label>
+        <name>sumoapp__EmailInvite</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Invite Link --></label>
+        <name>sumoapp__InviteLink</name>
+    </recordTypes>
+</CustomObjectTranslation>

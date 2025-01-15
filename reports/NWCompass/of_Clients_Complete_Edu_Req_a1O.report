@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>sumoapp__AdditionalInfo__c$sumoapp__EventName__c</field>
+    </columns>
+    <columns>
+        <field>sumoapp__AdditionalInfo__c$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>sumoapp__AdditionalInfo__c$HUD_Purpose__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Completed disaster preparedness assistance workshop,Completed disaster recovery assistance workshop,Completed fair housing workshop,&quot;Completed financial literacy workshop, including home affordability, budgeting and understanding use of credit&quot;,Completed homelessness prevention workshop,&quot;Completed non-delinquency post-purchase workshop, including home maintenance and/or financial management for homeowners&quot;,Completed pre-purchase homebuyer education workshop,&quot;Completed predatory lending, loan scam or other fraud prevention workshop&quot;,Completed rental workshop,Completed resolving or preventing mortgage delinquency workshop</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>sumoapp__AdditionalInfo__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>sumoapp__AdditionalInfo__c.sumoapp__Course,sumoapp__AdditionalInfo__c.sumoapp__Event,sumoapp__AdditionalInfo__c.sumoapp__EventClass</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>sumoapp__AdditionalInfo__c$RecordType</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name># of Clients Complete Edu Req.</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Courses__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>sumoapp__AdditionalInfo__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,8 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#F0F0F0; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="arial" style="font-size: 12pt;">Hello &lt;%attendeeName%&gt;,</font><font face="arial"><span style="background-color: rgb(240, 240, 240); font-size: 12pt;"></span></font><div><div style="font-size: 12pt;"><br>I hope this message finds you well.<br><br>This email is to confirm your appointment with {!$Label.AgencyProfileName}</div><div style="font-size: 12pt;"><br><b>Appointment Details:</b></div><div style="font-size: 12pt;"><br></div><div style="font-size: 12pt;"><b>Date/Time:</b>&lt;%datetime%&gt;</div><div style="font-size: 12pt;">&lt;%locationFields%&gt;</div><div><font face="arial"><b>Duration:&nbsp;</b>{!Event.DurationInMinutes} min</font></div><div style="font-size: 12pt;"><br></div><div style="font-size: 12pt;"><div style="font-size: 12pt;"><p data-pm-slice="1 1 []">Your appointment has been successfully scheduled and confirmed. If you need to reschedule or have any questions regarding your appointment, please contact us as soon as possible.&nbsp;</p><p data-pm-slice="1 1 []"><br></p><p>We look forward to meeting with you.&nbsp;</p></div></div><div style="font-size: 12pt;"><br></div><div style="font-size: 12pt;">Thank you,</div></div><div style="font-size: 12pt;"><div style="font-size: 12pt;">{!User.Name}&nbsp;</div><div style="font-size: 12pt;">{!User.Title}&nbsp;</div><div style="font-size: 12pt;">{!User.Email}&nbsp;</div><div style="font-size: 12pt;">{!User.Phone}</div></div><div style=""><div style="">
+    </div>
+</div>]]></td>
+</tr>
+</table>

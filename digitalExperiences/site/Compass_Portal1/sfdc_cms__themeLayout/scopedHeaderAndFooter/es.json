@@ -1,0 +1,15 @@
+{
+  "type" : "sfdc_cms__themeLayout",
+  "title" : "Scoped Header and Footer",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "welcomeMsg" : "Bienvenido {Client_Name}!"
+        },
+        "id" : "d5e4f1d0-7752-4a81-9d55-b532893f255e"
+      } ]
+    }
+  },
+  "urlName" : "scoped-header-and-footer"
+}

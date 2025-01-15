@@ -1,0 +1,69 @@
+<template>
+    <!--Intake Modal -->
+    <template if:true={ismodalopen}>
+        <!-- Modal/Popup Box LWC starts here -->
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- Modal/Popup Box LWC header here -->
+                <header class="slds-modal__header"> 
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={closeModal}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                            size="small"></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">
+                        New Education Only
+                    </h2>
+                </header>
+                <!-- Modal/Popup Box LWC body starts here -->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <!-- spinner -->
+                    <template if:true={showSpinner}>
+                        <div class="spinnerHolder">
+                            <lightning-spinner alternative-text="Loading" variant="inverse"></lightning-spinner>
+                        </div>
+                    </template>
+
+                    <template if:false={showSpinner}>
+                        <!-- Show Bar -->
+                        <c-custom-intake-progress-bar stages={stages}></c-custom-intake-progress-bar>
+                        <template if:true={showContactPage}>
+                            <c-educational-contact-form contact={formData.contact} onmoveforward={proceedToNextStage} edit-mode={editMode}
+                            zipcode-data={zipCodeData}  
+                            dependency-matrix={dependencyMatrix}
+                            ></c-educational-contact-form>
+                        </template>
+
+                        <template if:true={showCoApplicantsPage}>
+                            <c-educational-co-applicant contacts={formData.contacts} primary-applicant={formData.contact}></c-educational-co-applicant>
+                        </template>
+
+                        <template if:true={showReviewPage}>
+                            <c-educational-review-form contact={formData.contact} coapplicantlist={formData.contacts}></c-educational-review-form>
+                        </template>
+                    </template>
+                </div>
+                <!-- Modal/Popup Box LWC footer starts here -->
+                <footer class="slds-modal__footer">
+                    <template if:true={showCancelButton}>
+                        <button class="slds-button slds-button_neutral" onclick={closeModal}
+                            title="Cancel">Cancel</button>
+                    </template>
+                    <template if:true={showPreviousButton}>
+                        <button class="slds-button slds-button_neutral" onclick={handlePrevious}
+                            title="Previous" disabled={showSpinner}>Previous</button>
+                    </template>
+                    <template if:true={showNextButton}>
+                        <button class="slds-button slds-button_brand" onclick={handleNext} title="Next" disabled={showSpinner}>Next</button>
+                    </template>
+                    <template if:true={showSubmitButton}>
+                        <button class="slds-button slds-button_brand" onclick={handleSubmit} title="Submit" disabled={showSpinner}>Submit</button>
+                    </template>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

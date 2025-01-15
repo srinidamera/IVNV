@@ -1,0 +1,77 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Profile",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "title" : "Mi perfil",
+          "description" : "Actualice su perfil de datos, preferencias de contacto y documentos aquí"
+        },
+        "id" : "39a0fe31-f119-4948-8b59-65e9bafcc55e"
+      }, {
+        "id" : "ac748f0f-91a6-4644-b6e9-4358c785fe3b",
+        "attributes" : {
+          "nameFieldLabel" : "Nombre",
+          "contactHeadingLabel" : "Contacto",
+          "emailAddressLabel" : "Correo electrónico",
+          "suffixLabel" : "Sufijo",
+          "phoneNumberLabel" : "Número de teléfono",
+          "bestTimeToCallLabel" : "Mejor momento para llamar",
+          "preferredLanguageLabel" : "Idioma de comunicación preferido",
+          "contactAddresssLabel" : "Dirección",
+          "streetFieldLabel" : "Calle",
+          "addressLine2FieldLabel" : "Línea de dirección 2",
+          "cityFieldLabel" : "Ciudad",
+          "stateFieldLabel" : "Estado/Provincia",
+          "zipCodeFieldLabel" : "Código postal",
+          "contactDemographicsLabel" : "Demográfica",
+          "birthdateFieldLabel" : "Nacimiento",
+          "genderFieldLabel" : "Género",
+          "firstTimeHomeBuyerFieldLabel" : "Comprador de vivienda por primera vez",
+          "raceFieldLabel" : "Raza",
+          "ethnicityFieldLabel" : "Origen étnico",
+          "communityFieldLabel" : "Comunidad",
+          "fluencyInEnglishFieldLabel" : "Dominio del inglés",
+          "householdSizeFieldLabel" : "Tamaño del hogar",
+          "householdTypeFieldLabel" : "Tipo de hogar/Jefe de familia",
+          "maritalStatusFieldLabel" : "Estado civil",
+          "educationFieldLabel" : "Educación",
+          "activeMilitaryFieldLabel" : "Militares Activos",
+          "legallyDisabledFieldLabel" : "Legalmente discapacitado",
+          "contactFinancesLabel" : "Finanzas",
+          "totalMonthlyIncomeFieldLabel" : "Ingreso mensual total",
+          "householdIncomeFieldLabel" : "Ingresos del hogar",
+          "noOfDependentsFieldLabel" : "Número de dependientes",
+          "employmentStatusFieldLabel" : "Estado de Empleo",
+          "creditScoreFieldLabel" : "Puntaje de crédito",
+          "coApplicantLabel" : "Co-solicitante",
+          "relationshipToClientFieldLabel" : "Relación con el cliente",
+          "goBackLabel" : "Regresar",
+          "requestSupportBtnLabel" : "Contacta con nosotros",
+          "primaryContactLabel" : "Contacto Primario"
+        }
+      }, {
+        "id" : "982be784-6985-40bd-abef-4c469df98eed",
+        "attributes" : {
+          "tabLabel1" : "Perfil",
+          "tabLabel2" : "Tareas"
+        }
+      }, {
+        "id" : "4472a9b1-5f76-47c8-a13b-427b9ce35f41",
+        "attributes" : {
+          "labelNotStarted" : "No iniciado",
+          "labelInProgress" : "En progreso",
+          "labelCompleted" : "Completado",
+          "labelDueDate" : "Fecha de vencimiento",
+          "labelTaskDescription" : "Descripción de la tarea",
+          "labelViewDetails" : "Ver detalles",
+          "backBtnLabel" : "Regresar",
+          "labelMyTasks" : "Mis tareas",
+          "noTasksMsg" : "No tienes ninguna tarea por ahora."
+        }
+      } ]
+    }
+  },
+  "urlName" : "profile"
+}

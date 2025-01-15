@@ -1,0 +1,68 @@
+<template>
+	<div class="slds-grid slds-p-top_x-small header-backgroud-color">
+		<div class="slds-col"><!--
+			<lightning-icon icon-name="utility:rows" size="x-small"
+				class="slds-m-right_xx-small slds-m-left_x-small icon-css">
+			</lightning-icon>-->
+			<lightning-icon icon-name="standard:home" alternative-text="home" title="home"
+				class="slds-m-right_xx-small home-icon-css slds-m-left_x-small" size="x-small"></lightning-icon>
+			<img class="slds-m-right_xx-small" style={nwLogoStyle} src={logoImageUrl} />
+		</div>
+		<div class="slds-col slds-col_bump-right">
+			<div class="slds-clearfix">
+				<div class="slds-float_right">
+					<!-- <lightning-icon style={isUserLogin} icon-name="utility:notification" alternative-text="Notification" title="Notification"
+						size="x-small" class="slds-m-right_x-small icon-css">
+					</lightning-icon> -->
+					<lightning-icon style={isUserLogin} icon-name="utility:user" onclick={navigateToProfile} alternative-text="My Profile" title="My Profile" size="x-small"
+						class="slds-m-right_small icon-css">
+					</lightning-icon>
+					<!--<lightning-button-icon icon-name="utility:user"  style={isUserLogin} onclick={navigateToProfile}   alternative-text="user" class="slds-p-right_small icon-css" title="user" size="x-small">
+					</lightning-button-icon>-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="slds-context-bar bottom-border">
+		<nav class="slds-context-bar__secondary" role="navigation">
+			<ul class="slds-grid">
+				<template if:true={leftMenuItems} for:each={leftMenuItems} for:item="item" for:index="index">
+					<li key={item.id} onclick={handleMenuChange} data-menuside="left" data-index={index} class={item.activeClass}>
+						<c-header-navigation-item menu-item={item} onnavigation={handleNavigation} is-desktop=true>
+						</c-header-navigation-item>
+					</li>
+				</template>
+			</ul>
+		</nav>
+		<nav class="slds-context-bar__secondary slds-grid_align-end" role="navigation">
+			<ul class="slds-grid">
+				<template if:true={rightMenuItems} for:each={rightMenuItems} for:item="item" for:index="index">
+					<template if:false={item.isLanguage}>
+						<li key={item.id} class={item.activeClass} onclick={handleMenuChange} data-menuside="right"
+							data-index={index}>
+							<c-header-navigation-item is-desktop=true menu-item={item} onnavigation={handleNavigation}>
+							</c-header-navigation-item>
+						</li>
+					</template>
+					<template if:true={item.isLanguage}>
+						<li key={item.id} class="slds-context-bar__item slds-context-bar__item_divider slds-m-top_xx-small"
+							onclick={handleLanguageChangeOnDesktop}>
+							<span class="slds-context-bar__label-action color-font-family">
+								<span class="slds-truncate slds-m-right_x-small" title={item.label}>{item.label}</span>
+								<lightning-button-menu alternative-text="Show menu" variant="bare" menu-alignment="auto"
+									onselect={handleLanguageMenuSelect} onclick={handleLanguageChangeOnDesktop}>
+									<template if:true={languages} for:each={languages} for:item="lang" for:index="index">
+										<lightning-menu-item class="color-font-family" value={lang.code} label={lang.label}
+											key={lang.code}></lightning-menu-item>
+									</template>
+								</lightning-button-menu>
+							</span>
+						</li>
+					</template>
+				</template>
+				<li class="slds-context-bar__item slds-context-bar__item_divider"></li>
+			</ul>
+		</nav>
+	</div>
+	<c-toast-notification lwc:ref="toast"></c-toast-notification>
+</template>

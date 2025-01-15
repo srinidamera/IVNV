@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Group --></label>
+        <name>sumoapp__Group__c</name>
+    </fields>
+    <fields>
+        <help><!-- Activation indicator. If true then will be included to WHEN page algorithm, if flase then not --></help>
+        <label><!-- Is Active? --></label>
+        <name>sumoapp__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>sumoapp__Location__c</name>
+        <relationshipLabel><!-- Location Availabilities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>sumoapp__User__c</name>
+        <relationshipLabel><!-- User Availabilities --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <description><!-- Date specific availability --></description>
+        <label><!-- Date Specific --></label>
+        <name>sumoapp__DateSpecific</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Recurring availability --></description>
+        <label><!-- Recurring --></label>
+        <name>sumoapp__Recurring</name>
+    </recordTypes>
+</CustomObjectTranslation>

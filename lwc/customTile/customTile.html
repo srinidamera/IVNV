@@ -1,0 +1,35 @@
+<template>
+  <div lwc:if={props} class="tile slds-p-around_x-small slds-card slds-grid_vertical" style={props.tileStyle}>
+    <!-- Title -->
+    <div class="h-2 slds-col slds-grid slds-grid_vertical-align-start slds-m-bottom_xx-small">
+      <div class="slds-col font-segoe-ui ellipses" title={props.title}>{props.title}</div>
+      <div lwc:if={props.showBadge} class="slds-col_bump-right font-segoe-ui"><lightning-badge label={props.badgeLabel}
+          class={props.badgeStyle}></lightning-badge></div>
+    </div>
+
+    <!-- Text Content-->
+    <div lwc:if={props.description} class="slds-m-bottom_xx-small">
+      <div class="font-segoe-ui">
+        <lightning-formatted-rich-text value={props.description}>
+        </lightning-formatted-rich-text>
+      </div>
+    </div>
+
+    <!-- Key Value -->
+    <div lwc:if={props.keyValPairs} class="slds-m-vertical_x-small slds-m-bottom_xx-small">
+      <div class="">
+        <template for:each={props.keyValPairs} for:item="keyVal">
+          <div class="font-segoe-ui ellipses" key={keyVal.key} title={keyVal.value}>{keyVal.key}: {keyVal.value}</div>
+        </template>
+      </div>
+    </div>
+
+    <!-- Hyperlink -->
+    <div lwc:if={props.showHyperlink} class="slds-m-bottom_xx-small">
+      <div class="">
+        <a onclick={hyperlinkClickHandler} data-id={props.id}
+          class="hyperlink-style font-segoe-ui">{props.hyperlinkTitle}</a>
+      </div>
+    </div>
+  </div>
+</template>

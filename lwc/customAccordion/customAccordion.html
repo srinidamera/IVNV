@@ -1,0 +1,15 @@
+<template>
+  <div class="slds-card">
+    <ul class="slds-accordion slds-m-bottom_x-small">
+      <slot>
+        <!-- <c-custom-accordion-section></c-custom-accordion-section> -->
+      </slot>
+    </ul>
+    <div
+      lwc:if={showNoRecMsg}
+      class="slds-text-color_weak slds-m-horizontal_small slds-m-bottom_small"
+    >
+      {noRecordsMsg}
+    </div>
+  </div>
+</template>

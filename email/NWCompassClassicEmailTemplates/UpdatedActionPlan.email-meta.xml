@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Office_Of_Housing_Counselling</letterhead>
+    <name>Updated Action Plan Agreement</name>
+    <style>freeForm</style>
+    <subject>Action Plan Agreement Ready for Your Review and Signature</subject>
+    <textOnly>Hello {!ClientCase__c.PrimaryClient__c},
+
+I hope this message finds you well.
+
+We are pleased to inform you that the updated Action Plan agreement from your recent counseling session is now available for your review and signature.
+
+Action Plan Details:
+
+Purpose: [Brief description of the purpose or objectives of the Action Plan]
+
+Key Objectives: [List key objectives or actions planned]
+
+Next Steps: [Any additional information about what to do next]
+
+Please log in to your portal account to review the document and electronically sign it at your earliest convenience.
+
+If you have any questions or need further clarification regarding the Action Plan, please feel free to reach out to us.
+
+
+Thank you,
+
+{!User.Name}
+
+{!User.Title}
+
+{!User.Email}
+
+{!$Label.AgencyProfilePhone}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

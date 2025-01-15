@@ -1,0 +1,71 @@
+<template>
+    <div class="slds-path">
+        <div class="slds-grid slds-path__track">
+            <div class="slds-grid slds-path__scroller-container">
+                <div class="slds-path__scroller">
+                    <div class="slds-path__scroller_inner">
+                        <ul class="slds-path__nav" role="listbox" aria-orientation="horizontal"
+                            aria-labelledby="slds-path__stage-name">
+                            <template for:each={stages} for:item="stage">
+                                <template if:true={stage.isCompleted}>
+                                    <!--Rendering Completed Stage-->
+                                    <!--Completed Step : Start-->
+                                    <li class="slds-path__item slds-is-complete" role="presentation"
+                                        key={stage.currentStepName}>
+                                        <a aria-selected="false" class="slds-path__link" href="#" id="path-6"
+                                            role="option" tabindex="-1">
+                                            <span class="title-path slds-path__title">{stage.currentStepName}</span> <!--slds-path__title -->
+                                            <div class="slds-float_right custom-is_complete__span">
+                                                <svg class="slds-icon slds-icon-text-default slds-icon_x-small"
+                                                    focusable="false" data-key="check" aria-hidden="true"
+                                                    viewBox="0 0 52 52" part="icon">
+                                                    <g>
+                                                        <path
+                                                            d="M19.1 42.5L2.6 25.9c-.6-.6-.6-1.6 0-2.2l2.2-2.2c.6-.6 1.6-.6 2.2 0L19.4 34c.4.4 1.1.4 1.5 0L45.2 9.5c.6-.6 1.6-.6 2.2 0l2.2 2.2c.6.6.6 1.6 0 2.2L21.3 42.5c-.6.7-1.6.7-2.2 0z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!--Completed Step : End-->
+                                </template>
+
+                                <template if:true={stage.isCurrent}>
+                                    <!--Rendering Completed Stage-->
+                                    <!--Current Step : Start-->
+                                    <li class="slds-path__item slds-is-current slds-is-active" role="presentation"
+                                        key={stage.currentStepName}>
+                                        <a aria-selected="true" class="slds-path__link" href="#" id="path-9"
+                                            role="option" tabindex="0">
+                                            <span class="slds-path__title title-path">{stage.currentStepName}</span>
+                                        </a>
+                                    </li>
+                                    <!--Current Step : End-->
+                                </template>
+
+                                <template if:true={stage.isDue}>
+                                    <!--Rendering Completed Stage-->
+                                    <!--InComplete Step : Start-->
+                                    <li class="slds-path__item slds-is-incomplete" role="presentation" key={stage.currentStepName}>
+                                        <a aria-selected="false" class="slds-path__link" href="#" id="path-10"
+                                            role="option" tabindex="-1">
+                                            <span class="slds-path__title title-path">
+                                                {stage.currentStepName}
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <!--InComplete Step : End-->
+                                </template>
+
+                            </template>
+
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

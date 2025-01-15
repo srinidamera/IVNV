@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network xmlns="http://soap.sforce.com/2006/04/metadata">
+    <allowInternalUserLogin>false</allowInternalUserLogin>
+    <allowMembersToFlag>false</allowMembersToFlag>
+    <changePasswordTemplate>NWCompassClassicEmailTemplates/CompassPortalForgotPasswordEmail</changePasswordTemplate>
+    <communityRoles/>
+    <disableReputationRecordConversations>false</disableReputationRecordConversations>
+    <emailSenderAddress>nithinkumar.s@pcnstrategies.com</emailSenderAddress>
+    <emailSenderName>Compass Portal</emailSenderName>
+    <embeddedLoginEnabled>true</embeddedLoginEnabled>
+    <enableApexCDNCaching>true</enableApexCDNCaching>
+    <enableCustomVFErrorPageOverrides>false</enableCustomVFErrorPageOverrides>
+    <enableDirectMessages>false</enableDirectMessages>
+    <enableExpFriendlyUrlsAsDefault>false</enableExpFriendlyUrlsAsDefault>
+    <enableExperienceBundleBasedSnaOverrideEnabled>true</enableExperienceBundleBasedSnaOverrideEnabled>
+    <enableGuestChatter>true</enableGuestChatter>
+    <enableGuestFileAccess>true</enableGuestFileAccess>
+    <enableGuestMemberVisibility>false</enableGuestMemberVisibility>
+    <enableImageOptimizationCDN>true</enableImageOptimizationCDN>
+    <enableInvitation>false</enableInvitation>
+    <enableKnowledgeable>false</enableKnowledgeable>
+    <enableLWRExperienceConnectedApp>false</enableLWRExperienceConnectedApp>
+    <enableMemberVisibility>false</enableMemberVisibility>
+    <enableNicknameDisplay>true</enableNicknameDisplay>
+    <enablePrivateMessages>false</enablePrivateMessages>
+    <enableReputation>false</enableReputation>
+    <enableShowAllNetworkSettings>false</enableShowAllNetworkSettings>
+    <enableSiteAsContainer>true</enableSiteAsContainer>
+    <enableTalkingAboutStats>false</enableTalkingAboutStats>
+    <enableTopicAssignmentRules>true</enableTopicAssignmentRules>
+    <enableTopicSuggestions>false</enableTopicSuggestions>
+    <enableUpDownVote>false</enableUpDownVote>
+    <forgotPasswordTemplate>unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
+    <gatherCustomerSentimentData>false</gatherCustomerSentimentData>
+    <headlessForgotPasswordTemplate>unfiled$public/CommunityHeadlessForgotPasswordTemplate</headlessForgotPasswordTemplate>
+    <headlessRegistrationTemplate>unfiled$public/CommunityHeadlessRegistrationTemplate</headlessRegistrationTemplate>
+    <networkAuthApiSettings>
+        <doesForgotPasswordRequireAuth>false</doesForgotPasswordRequireAuth>
+        <doesPasswordLoginRequireAuth>false</doesPasswordLoginRequireAuth>
+        <doesPwdlessLoginRequireAuth>false</doesPwdlessLoginRequireAuth>
+        <doesRegistrationRequireAuth>false</doesRegistrationRequireAuth>
+        <isFirstPartyAppsAllowed>false</isFirstPartyAppsAllowed>
+        <isForgotPwdAllowed>false</isForgotPwdAllowed>
+        <isForgotPwdEmailTemplateAllowlistingEnabled>false</isForgotPwdEmailTemplateAllowlistingEnabled>
+        <isHeadlessUserRegistrationAllowed>false</isHeadlessUserRegistrationAllowed>
+        <isPwdlessLoginAllowed>false</isPwdlessLoginAllowed>
+        <isRecaptchaRequiredForgotPwd>false</isRecaptchaRequiredForgotPwd>
+        <isRecaptchaRequiredPwdlessLogin>false</isRecaptchaRequiredPwdlessLogin>
+        <isRecaptchaRequiredRgstr>false</isRecaptchaRequiredRgstr>
+        <isUniversalClientRgstrAllowed>false</isUniversalClientRgstrAllowed>
+        <maxPasswordResetAttempts>5</maxPasswordResetAttempts>
+        <recaptchaScoreThreshold>0.0</recaptchaScoreThreshold>
+    </networkAuthApiSettings>
+    <networkMemberGroups>
+        <permissionSet>NWCompassPortalPermissions</permissionSet>
+        <profile>admin</profile>
+        <profile>customer community login user</profile>
+        <profile>nwcompass portal</profile>
+        <profile>nwcompass standard</profile>
+    </networkMemberGroups>
+    <networkPageOverrides>
+        <changePasswordPageOverrideSetting>Standard</changePasswordPageOverrideSetting>
+        <forgotPasswordPageOverrideSetting>Designer</forgotPasswordPageOverrideSetting>
+        <homePageOverrideSetting>Designer</homePageOverrideSetting>
+        <loginPageOverrideSetting>Designer</loginPageOverrideSetting>
+        <selfRegProfilePageOverrideSetting>Standard</selfRegProfilePageOverrideSetting>
+    </networkPageOverrides>
+    <picassoSite>Compass_Portal1</picassoSite>
+    <selfRegProfile>nwcompass portal</selfRegProfile>
+    <selfRegistration>true</selfRegistration>
+    <sendWelcomeEmail>true</sendWelcomeEmail>
+    <site>Compass_Portal</site>
+    <siteArchiveStatus>NotArchived</siteArchiveStatus>
+    <status>Live</status>
+    <tabs>
+        <defaultTab>home</defaultTab>
+        <standardTab>Chatter</standardTab>
+    </tabs>
+    <urlPathPrefix>compassportalvforcesite</urlPathPrefix>
+    <welcomeTemplate>NWCompassClassicEmailTemplates/Compass_Portal_New_Member_Welcome_Email</welcomeTemplate>
+</Network>

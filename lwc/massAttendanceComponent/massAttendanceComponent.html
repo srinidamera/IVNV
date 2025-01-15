@@ -1,0 +1,428 @@
+<template>
+    <lightning-card>
+        <div class="slds-grid slds-wrap slds-m-bottom_small slds-m-right_small slds-grid_align-end">
+        
+        <lightning-button label="Manage Attendance" slot="actions" disabled={disableSaveAtteendance} onclick={handleAttendanceSave} class="slds-m-right_small" variant="brand"></lightning-button>
+        <lightning-button label="New Enrollment" onclick={openEnrollmentModal} class="slds-m-right_small"></lightning-button>
+        <!--lightning-button label="Save Attendance" slot="actions" disabled={enableSaveAtteendance} onclick={handleSave} class="slds-m-right_small" variant="brand"></lightning-button-->
+        <lightning-button if:false={isParent} label="Print Roster" slot="actions" class="slds-m-right_small" onclick={handleRoster}></lightning-button>
+        <lightning-button if:true={showPrintCertificate} label="Print Certificate" onclick={handlePrintCertificate} disabled={disablePrintCertificate} class="slds-m-right_small"></lightning-button>
+    </div>
+        <div class="slds-grid slds-wrap slds-m-around_small">
+            <div class="slds-col slds-size_12-of-12 slds-text-align_right">
+                <template if:true={shouldShowSearch}>
+                    <lightning-input type="search" label="Search" onchange={handleSearchChange}></lightning-input>
+                </template>
+            </div>
+            <template if:true={attendees}>
+                <div class="slds-col slds-size_6-of-12 slds-p-bottom_x-small">
+                    <div class="slds-text-align_left">
+                        <template lwc:if={isParent}>
+                            <span class="slds-badge slds-theme_success ">Total Course Complete: {courseComplete}</span>
+                            <span class="slds-badge slds-badge_inverse slds-m-left_small">Total Course Incomplete: {courseIncomplete}</span>
+                        </template>                                  
+                        <template lwc:else>
+                            <span class="slds-badge">Total Seats: {totalSeats}</span>
+                            <span class="slds-badge slds-badge_inverse">Total Enrolled: {totalEnrolled}</span>
+                            <span class="slds-badge slds-theme_success slds-m-left_small">Open Seats: {openSeats}</span>
+                            <span ></span>
+                        </template>
+                    </div>
+                </div>
+                <div class="hideFirstColTable" style="width:100% !important;">
+                        <c-custom-data-table 
+                            key-field="Id" 
+                            data={attendees} 
+                            columns={columns} 
+                            onpicklistchanged={picklistChanged} 
+                            onvalueselect={handleSelection}
+                            oninputchanged={inputChanged} 
+                            draft-values={saveDraftValues} 
+                            oncellchange={handleCellChange}
+                            onrowselection={getSelectedRows} selected-rows={selectedRowIds}
+                            onrowaction={handleRowLevelAct} 
+                            hide-row-number-column 
+                            suppress-bottom-bar	>
+                        </c-custom-data-table>
+                </div>
+                <template if:true={shouldShowSearch}>
+                    <div class="slds-col slds-size_12-of-12 slds-text-align_left slds-m-top_medium">
+                        <span>{numOfFilteredAttendees} out of {attendees.length} records match the search criteria.</span>
+                    </div>
+                </template>
+            </template>
+            <template if:true={error}>
+                <div class="slds-text-color_error">{error}</div>
+            </template>
+        </div>
+<template if:true={isModalOpen}>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeModal}>
+                        <lightning-icon icon-name="utility:close" alternative-text="Close"></lightning-icon>
+                    </button>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{modalHeader}</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">    
+                    <template lwc:if={isAttendanceStatus}>            
+                        <lightning-combobox
+                            label="Select Attendance Status"
+                            name="Attendance status"
+                            options={attendanceStatusOptions}
+                            onchange={handleAttendanceStatusChange}
+                        ></lightning-combobox> 
+                            <br/>
+                        <lightning-input class="slds-p-bottom_medium" type="checkbox" disabled={isCheckDisabled} label="Convert below Prospect to Primary Client" name="input1" checked={checkBoxValue} onchange={handleCheckboxValue}></lightning-input>
+                            <lightning-datatable key-field="Id" columns={prospectColumns} data={prospectData} hide-checkbox-column >
+                            </lightning-datatable>
+                    </template>                        
+                    <template lwc:elseif={isEdit}>
+                    <lightning-record-edit-form object-api-name={objectApiName} record-id={currentRowId} onsuccess={handleSuccess} onsubmit={handleFormSubmitted} onerror={handleError}>
+                        <lightning-layout multiple-rows>
+                            
+                            
+                             <!-- Attendance Section -->
+                             <lightning-layout-item size="12" >
+                                    <div class="slds-section slds-is-open">
+                                        <h3 class="slds-section__title slds-theme_shade">
+                                        <span class="slds-truncate slds-p-horizontal_small" title="Attendance">Attendance</span>
+                                        </h3>
+                                        <div class="slds-section__content">
+                                            <lightning-layout multiple-rows>
+                                                <lightning-layout-item size="6" padding="around-small">
+                                                    <lightning-input-field field-name={attendStatusField}></lightning-input-field>
+                                                </lightning-layout-item>
+                                                <lightning-layout-item size="6" padding="around-small">
+                                                    <lightning-input-field field-name={notesField}></lightning-input-field>
+                                                </lightning-layout-item>
+                                            </lightning-layout>
+                                        </div>
+                                        </div> 
+                            </lightning-layout-item>
+                    
+                            <!-- Decline Section -->
+                            <lightning-layout-item size="12"  >
+                                <div class="slds-section slds-is-open">
+                                    <h3 class="slds-section__title slds-theme_shade">
+                                    <span class="slds-truncate slds-p-horizontal_small" title="Decline">Decline</span>
+                                    </h3>
+                                    <div class="slds-section__content">
+                                        <lightning-layout multiple-rows>
+                                            <lightning-layout-item size="6" padding="around-small">
+                                                <lightning-input-field field-name={declineOptionField}></lightning-input-field>
+                                            </lightning-layout-item>
+                                            <lightning-layout-item size="6" padding="around-small">
+                                                <lightning-input-field field-name={declineReasonField}></lightning-input-field>
+                                            </lightning-layout-item>
+                                        </lightning-layout>
+                                    </div>
+                                    </div> 
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <div class="slds-modal__footer" if:true={isEdit}>
+                            <lightning-button variant="brand-outline" label="Close" onclick={closeModal}></lightning-button>
+                            <lightning-button variant="brand" type="submit" label="Save" class="slds-m-left_x-small"></lightning-button>
+                        </div>
+                    </lightning-record-edit-form>
+                    
+                </template>
+
+                </div>
+                <div class="slds-modal__footer" if:false={isEdit}>
+                    <lightning-button variant="brand-outline" label="Close" onclick={closeModal}></lightning-button>
+                    <lightning-button variant="brand" label="Save" onclick={saveRow} class="slds-m-left_x-small"></lightning-button>
+                  </div>
+            </div>
+            
+        </section>
+    </template>
+
+    <template if:true={isEnrollmentModalOpen}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+            <!-- Modal/Popup Header -->
+            <header class="slds-modal__header">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeEnrollmentModal}>
+                    <lightning-icon icon-name="utility:close" alternative-text="close" size="small"></lightning-icon>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 class="slds-text-heading_medium">New Enrollment</h2>
+            </header>
+
+                <!-- Modal/Popup Body -->
+                <div class="slds-modal__content slds-p-around_medium">
+                    <c-course-enrolment attendee-ids={attendeeId} cousename={session} course-complete={courseComplete} course-incomplete={courseIncomplete} total-seats={totalSeats} total-enrolled={totalEnrolled} open-seats={openSeats} recordid={recordId} is-parent={isParent} onclose={closeEnrollmentModal}></c-course-enrolment>
+                </div>
+ 
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    </lightning-card>
+
+    <template if:true={showRosterPdf}>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+        <div role="dialog" tabindex="-1" aria-modal="true" aria-describedby="modal-content-id-5"
+            class="slds-modal slds-fade-in-open slds-modal_medium">
+            <div class="slds-modal__container">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                    onclick={closePrintRosterModal}>
+                    <lightning-icon icon-name="utility:close" size="small"></lightning-icon>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <div class="slds-modal__header">
+                    <div class="slds-media">
+                        <lightning-icon icon-name="standard:service_appointment" size="small"
+                            class="slds-media__figure"></lightning-icon>
+                        <div class="slds-media__body">
+                            <h2 id="modal-heading-05" class="slds-text-heading_medium slds-hyphenate">Print Roster</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-5">
+                    <iframe
+                        src={rosterUrl}
+                        height={height}
+                        width={width}
+                        referrerpolicy={referrerPolicy}
+                        title=""
+                        allow="geolocation"
+                    ></iframe>
+
+                </div>
+                <div class="slds-modal__footer">
+                    <div class="slds-m-top_medium">
+                        <lightning-button label="Cancel" onclick={closePrintRosterModal}
+                            class="slds-m-left_x-small"></lightning-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template if:true={showPrintCertificateModal}>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+        <div role="dialog" tabindex="-1" aria-modal="true" aria-describedby="modal-content-id-6"
+            class="slds-modal slds-fade-in-open slds-modal_medium">
+            <div class="slds-modal__container">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                    onclick={closePrintCertificateModal}>
+                    <lightning-icon icon-name="utility:close" size="small"></lightning-icon>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <div if:true={showRosterSpinner}>
+                    <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+                </div>
+                <div class="slds-modal__header">
+                    <div class="slds-media">
+                        <lightning-icon icon-name="standard:service_appointment" size="small"
+                            class="slds-media__figure"></lightning-icon>
+                        <div class="slds-media__body">
+                            <h2 id="modal-heading-06" class="slds-text-heading_medium slds-hyphenate">Print Certificate</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-6">
+                    <template for:each={certificateUrls} for:item="certificate" for:index="index">
+                        <iframe key={certificate}
+                            src={certificate}
+                            height={height}
+                            width={width}
+                            referrerpolicy={referrerPolicy}
+                            title=""
+                            allow="geolocation"
+                        ></iframe>
+                    </template>
+
+                </div>
+                <div class="slds-modal__footer">
+                    <div class="slds-m-top_medium">
+                        <lightning-button label="Cancel" onclick={closePrintCertificateModal}
+                            class="slds-m-left_x-small"></lightning-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+
+
+    <!-- Modal section -->
+    <div if:true={isAttendeeModalOpen} class="slds-backdrop slds-backdrop_open"></div>
+    <section if:true={isAttendeeModalOpen} role="dialog" tabindex="-1" aria-labelledby="modal-heading-02" aria-modal="true" aria-describedby="modal-content-id-1" class={modalClass}>
+        <div class="slds-modal__container">
+            <div if:true={showSpinner}>
+                <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+            </div>
+            <header class="slds-modal__header">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeModal}>
+                    <lightning-icon icon-name="utility:close" alternative-text="Close"></lightning-icon>
+                </button>
+                <h2 id="modal-heading-02" class="slds-text-heading_medium slds-hyphenate">{modalHeader}</h2>
+            </header>
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+                
+            <template lwc:if={isNotes}>
+             <lightning-textarea value={notes}
+                                    type="text"
+                                    label="Notes"
+                                    onchange={handleNotesChange}
+                                ></lightning-textarea>
+            </template>
+            <template lwc:elseif={isEdit}>
+                <lightning-record-edit-form object-api-name={objectApiName} record-id={currentRowId} onsuccess={handleSuccess} onsubmit={handleFormSubmitted}>
+                    <lightning-layout multiple-rows>
+                        <!-- Contact Name Section -->
+                        <lightning-layout-item size="12"  >
+
+                            <div class="slds-section slds-is-open">
+                                <h3 class="slds-section__title slds-theme_shade">
+                                <span class="slds-truncate slds-p-horizontal_small" title="Contact Information">Contact Information</span>
+                                </h3>
+                                <div class="slds-section__content">
+                                    <lightning-layout multiple-rows>
+                                        <lightning-layout-item size="6" padding="around-small">
+                                            <lightning-output-field field-name={conRelaField} variant="label-hidden"></lightning-output-field>
+                                        </lightning-layout-item>
+                                    </lightning-layout>
+                                </div>
+                                </div> 
+                        </lightning-layout-item>
+
+                        <lightning-layout-item size="12"  >
+                            <div class="slds-section slds-is-open">
+                                <h3 class="slds-section__title slds-theme_shade">
+                                <span class="slds-truncate slds-p-horizontal_small" title="HUD AMI">HUD AMI</span>
+                                </h3>
+                                <div class="slds-section__content">
+                                    <lightning-layout multiple-rows>
+                                        <lightning-layout-item size="4" padding="around-small">
+                                            <lightning-output-field field-name={householdField}></lightning-output-field>
+                                        </lightning-layout-item>
+                                        <lightning-layout-item size="4" padding="around-small">
+                                            <lightning-output-field field-name={amiField}></lightning-output-field>
+                                        </lightning-layout-item>
+                                        <lightning-layout-item size="4" padding="around-small">
+                                            <lightning-output-field field-name={ruralStatusField}></lightning-output-field>
+                                        </lightning-layout-item>
+                                    </lightning-layout>
+                                </div>
+                                </div> 
+                        </lightning-layout-item>
+                        
+                         <!-- Attendance Section -->
+                         <lightning-layout-item size="12" >
+                                <div class="slds-section slds-is-open">
+                                    <h3 class="slds-section__title slds-theme_shade">
+                                    <span class="slds-truncate slds-p-horizontal_small" title="Attendance">Attendance</span>
+                                    </h3>
+                                    <div class="slds-section__content">
+                                        <lightning-layout multiple-rows>
+                                            <lightning-layout-item size="6" padding="around-small">
+                                                <lightning-input-field field-name={attendStatusField}></lightning-input-field>
+                                            </lightning-layout-item>
+                                            <lightning-layout-item size="6" padding="around-small">
+                                                <lightning-input-field field-name={notesField}></lightning-input-field>
+                                            </lightning-layout-item>
+                                        </lightning-layout>
+                                    </div>
+                                    </div> 
+                        </lightning-layout-item>
+                
+                        <!-- Decline Section -->
+                        <lightning-layout-item size="12"  >
+                            <div class="slds-section slds-is-open">
+                                <h3 class="slds-section__title slds-theme_shade">
+                                <span class="slds-truncate slds-p-horizontal_small" title="Decline">Decline</span>
+                                </h3>
+                                <div class="slds-section__content">
+                                    <lightning-layout multiple-rows>
+                                        <lightning-layout-item size="6" padding="around-small">
+                                            <lightning-input-field field-name={declineOptionField}></lightning-input-field>
+                                        </lightning-layout-item>
+                                        <lightning-layout-item size="6" padding="around-small">
+                                            <lightning-input-field field-name={declineReasonField}></lightning-input-field>
+                                        </lightning-layout-item>
+                                    </lightning-layout>
+                                </div>
+                                </div> 
+                        </lightning-layout-item>
+                    </lightning-layout>
+                    <div class="slds-modal__footer" if:true={isEdit}>
+                        <lightning-button variant="brand-outline" label="Close" onclick={closeModal}></lightning-button>
+                        <lightning-button variant="brand" type="submit" label="Save" class="slds-m-left_x-small"></lightning-button>
+                    </div>
+                </lightning-record-edit-form>
+                
+            </template>
+            <template lwc:elseif={isDecline}>
+                <lightning-combobox
+                        name="Decline status"
+                        options={declineStatusOptions}
+                        onchange={handledeclineStatusChange}
+                    ></lightning-combobox>
+            </template>
+            <template lwc:elseif={isAttendanceStatus}>
+                    <lightning-combobox
+                        label="Select Attendance Status"
+                        name="Attendance status"
+                        options={attendanceStatusOptions}
+                        onchange={handleAttendanceStatusChange}
+                    ></lightning-combobox>
+                    <template lwc:if={isParent}>
+                        <br/>
+                    <lightning-input class="slds-p-bottom_medium" type="checkbox" label="Convert below Prospect to Primary Client" name="input1" checked={checkBoxValue} onchange={handleCheckboxValue}></lightning-input>
+                <!--    <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-m-top_medium">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bao Nguyen</td>
+                        <td>Prospect</td>
+                    </tr>
+                    <tr>
+                        <td>Adrian Pimento</td>
+                        <td>Prospect</td>
+                    </tr>
+                    <tr>
+                        <td>Abhishek Jethi</td>
+                        <td>Prospect</td>
+                    </tr>
+                    <tr>
+                        <td>Abhishek Jethi</td>
+                        <td>Prospect</td>
+                    </tr>
+                    <tr>
+                        <td>Abhishek Jethi</td>
+                        <td>Prospect</td>
+                    </tr>
+                </tbody>
+                </table>!-->        
+                        <lightning-datatable key-field="Id" columns={prospectColumns} data={prospectData} hide-checkbox-column >
+                        </lightning-datatable>
+                    </template>   
+            </template>
+            <template lwc:else> 
+                <!-- Display contact details here -->
+                <p>{contactName}</p>
+                <p>{contactHouseHold}</p>
+            <lightning-tree-grid columns={gridColumns} data={gridData} expanded-rows={expandedRows} hide-checkbox-column key-field="recordId"></lightning-tree-grid>
+            </template>
+            </div>
+            <div class="slds-modal__footer" if:false={isEdit}>
+                <lightning-button variant="brand-outline" label="Close" onclick={closeModal}></lightning-button>
+                <!--<lightning-button variant="brand" label="Save" onclick={saveRow} class="slds-m-left_x-small"></lightning-button>-->
+              </div>
+        </div>
+    </section>
+
+
+
+
+</template>

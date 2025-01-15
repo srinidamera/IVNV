@@ -1,0 +1,55 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Classes",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "title" : "Clases",
+          "description" : "Varias sesiones de asesoramiento en persona o virtual para ayudarle a alcanzar su objetivo como propietario de vivienda."
+        },
+        "id" : "4783c468-4ad2-4ba0-a4ff-89459f8230f6"
+      }, {
+        "attributes" : {
+          "title" : "Acerca de las clases"
+        },
+        "id" : "c705385c-ebc1-4e16-8969-35d0b6c37a46"
+      }, {
+        "attributes" : {
+          "allClassesLabel" : "Todas las clases",
+          "availableSeatsText" : "Cupos disponibles",
+          "backBtnLabel" : "Regresa",
+          "cardBtnLabel" : "Inscribirse",
+          "cardSecondaryBtnLabel" : "Contacta con nosotros",
+          "costText" : "Costo",
+          "deliveryMethodText" : "Método de entrega",
+          "endDateText" : "Fecha/Hora de finalización",
+          "freeSponsoredText" : "Gratis / Patrocinado",
+          "hyperlinkTitle" : "Más información",
+          "inPersonText" : "En persona",
+          "locationText" : "Lugar",
+          "myClassesLabel" : "Mi clases",
+          "startDateText" : "Fecha/Hora de inicio",
+          "textOnline" : "En línea",
+          "virtualText" : "Virtual",
+          "statusNoShow" : "No se presentó",
+          "noClassesEnrolledMsg" : "No se ha inscrito en ninguna clase",
+          "statusCourseInComplete" : "Incompleto",
+          "statusCourseComplete" : "Terminado",
+          "statusAttendedInComplete" : "Incompleto",
+          "statusAttendedComplete" : "Terminado",
+          "statusEnrolled" : "Inscrito",
+          "statusCanceled" : "Cancelado",
+          "unlimitedText" : "ilimitado"
+        },
+        "id" : "7b33b07a-08f8-4800-bd2a-d940c8e2e85b"
+      }, {
+        "attributes" : {
+          "pageTitle" : "Clases"
+        },
+        "id" : "3a17fadd-15df-4381-bdee-5336d99838e2"
+      } ]
+    }
+  },
+  "urlName" : "classes"
+}

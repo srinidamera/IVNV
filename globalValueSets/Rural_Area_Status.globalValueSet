@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Lives in a rural area</fullName>
+        <default>false</default>
+        <label>Lives in a rural area</label>
+    </customValue>
+    <customValue>
+        <fullName>Does not live in a rural area</fullName>
+        <default>false</default>
+        <label>Does not live in a rural area</label>
+    </customValue>
+    <customValue>
+        <fullName>Chose not to respond</fullName>
+        <default>false</default>
+        <label>Chose not to respond</label>
+    </customValue>
+    <description>Rural Area Status</description>
+    <masterLabel>Rural Area Status</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

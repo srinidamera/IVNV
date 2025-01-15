@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Office_Of_Housing_Counselling</letterhead>
+    <name>Additional Document Required (Portal)</name>
+    <style>freeForm</style>
+    <subject>Request for Additional Documents</subject>
+    <textOnly>Hello {!ClientCase__c.PrimaryClient__c} {!Contact.Name} (portal user),
+
+We hope this message finds you well.
+
+This email is to inform you that your counselor has requested additional documents for your application/process.
+
+Requested Documents:
+
+[List of documents]
+
+Please upload the requested documents to the customer portal under the [My Services details page “View my submission”] at your earliest convenience. If you have any questions or need further clarification, please do not hesitate to contact us.
+
+Best regards,
+
+{!User.Name}
+{!User.Title}
+{!User.Email} {!User.Phone}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

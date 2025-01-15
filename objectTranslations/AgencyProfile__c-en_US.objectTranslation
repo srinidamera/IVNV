@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Agency Profile</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Agency Profile</value>
+    </caseValues>
+    <fields>
+        <label><!-- Agency Address --></label>
+        <name>AgencyAddress__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicator of services provided to the Colonias population --></help>
+        <label><!-- Agency Colonias --></label>
+        <name>AgencyColonias__c</name>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Identifies Agency’s total Housing Counseling
+Budget for the support and operations of the
+agency. The data shall contain a numeric value
+only. --></help>
+        <label><!-- Agency Counseling Budget --></label>
+        <name>AgencyCounselingBudget__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose one or more counseling methods that the Agency offers. --></help>
+        <label><!-- Agency Counseling Methods --></label>
+        <name>AgencyCounselingMethods__c</name>
+        <picklistValues>
+            <masterLabel>Face to Face Counseling</masterLabel>
+            <translation><!-- Face to Face Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group Counseling</masterLabel>
+            <translation><!-- Group Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internet Counseling</masterLabel>
+            <translation><!-- Internet Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Counseling</masterLabel>
+            <translation><!-- Other Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Counseling</masterLabel>
+            <translation><!-- Phone Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Counseling Only</masterLabel>
+            <translation><!-- Phone Counseling Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Conference</masterLabel>
+            <translation><!-- Video Conference --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Agency Dunn &amp; Bradstreet identification number. If provided, it must be 9 digits in length.
+If not provided the system defaults it to ‘000000000’. --></help>
+        <label><!-- Agency Dunn&apos;s Number --></label>
+        <name>AgencyDunnsNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Agency federal employee identification number or TIN (Tax Identification Number) used by IRS. Data must be presented in following format: ‘00-0000000’. --></help>
+        <label><!-- Agency EIN --></label>
+        <name>AgencyEIN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency Email Address --></label>
+        <name>AgencyEmailAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency FAX Number --></label>
+        <name>AgencyFAXNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the Agency as a faith based Agency. --></help>
+        <label><!-- Agency Faith Base --></label>
+        <name>AgencyFaithBase__c</name>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Agency Languages --></label>
+        <name>AgencyLanguages__c</name>
+        <picklistValues>
+            <masterLabel>ASL</masterLabel>
+            <translation><!-- ASL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arabic</masterLabel>
+            <translation><!-- Arabic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cambodian</masterLabel>
+            <translation><!-- Cambodian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cantonese</masterLabel>
+            <translation><!-- Cantonese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese Mandarin</masterLabel>
+            <translation><!-- Chinese Mandarin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Creole</masterLabel>
+            <translation><!-- Creole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech</masterLabel>
+            <translation><!-- Czech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farsi</masterLabel>
+            <translation><!-- Farsi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation><!-- French --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation><!-- German --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hindi</masterLabel>
+            <translation><!-- Hindi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hmong</masterLabel>
+            <translation><!-- Hmong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indonesian</masterLabel>
+            <translation><!-- Indonesian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian</masterLabel>
+            <translation><!-- Italian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation><!-- Korean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polish</masterLabel>
+            <translation><!-- Polish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese</masterLabel>
+            <translation><!-- Portuguese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian</masterLabel>
+            <translation><!-- Russian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swahili</masterLabel>
+            <translation><!-- Swahili --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkish</masterLabel>
+            <translation><!-- Turkish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ukrainian</masterLabel>
+            <translation><!-- Ukrainian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese</masterLabel>
+            <translation><!-- Vietnamese --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Agency Mailing Address --></label>
+        <name>AgencyMailingAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency Mailing City --></label>
+        <name>AgencyMailingCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency Mailing Postal Code --></label>
+        <name>AgencyMailingPostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency Mailing State --></label>
+        <name>AgencyMailingState__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates that the Agency serves migrant farm workers. --></help>
+        <label><!-- Agency Migrant Farm Workers --></label>
+        <name>AgencyMigrantFarmWorkers__c</name>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Agency Phone Number --></label>
+        <name>AgencyPhoneNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicate if the Agency provides counseling in Rural Areas --></help>
+        <label><!-- Agency Rural Area --></label>
+        <name>AgencyRuralArea__c</name>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Agency Toll Free Phone --></label>
+        <name>AgencyTollFreePhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency UEI --></label>
+        <name>AgencyUEI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicate if the Agency provides counseling in Urban Areas. --></help>
+        <label><!-- Agency Urban Area --></label>
+        <name>AgencyUrbanArea__c</name>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Web address of the NWO --></help>
+        <label><!-- Agency Website --></label>
+        <name>AgencyWebsite__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency Mailing City --></label>
+        <name>Agency_Mailing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Contact Address Line 2 --></label>
+        <name>HUDContactAddressLine2__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Contact Address --></label>
+        <name>HUDContactAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Contact Email --></label>
+        <name>HUDContactEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Contact Fax Number --></label>
+        <name>HUDContactFaxNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Contact First Name --></label>
+        <name>HUDContactFirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Contact Last Name --></label>
+        <name>HUDContactLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Contact Middle Name --></label>
+        <name>HUDContactMiddleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Contact Mobile Number --></label>
+        <name>HUDContactMobileNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Contact Phone Number Ext. --></label>
+        <name>HUDContactPhoneExtension__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Contact Phone Number --></label>
+        <name>HUDContactPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Executive Address Line 2 --></label>
+        <name>HUDOfficeExecutiveAddressLine2__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Executive Address --></label>
+        <name>HUDOfficeExecutiveAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Executive Email --></label>
+        <name>HUDOfficeExecutiveEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Executive Fax Number --></label>
+        <name>HUDOfficeExecutiveFaxNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Executive First Name --></label>
+        <name>HUDOfficeExecutiveFirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Executive Last Name --></label>
+        <name>HUDOfficeExecutiveLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Executive Middle Name --></label>
+        <name>HUDOfficeExecutiveMiddleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Executive Mobile Number --></label>
+        <name>HUDOfficeExecutiveMobileNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Executive Phone Number Ext. --></label>
+        <name>HUDOfficeExecutivePhoneExtension__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Executive Phone Number --></label>
+        <name>HUDOfficeExecutivePhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Manager Address Line 2 --></label>
+        <name>HUDOfficeManagerAddressLine2__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Manager Address --></label>
+        <name>HUDOfficeManagerAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Manager Email --></label>
+        <name>HUDOfficeManagerEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Manager Fax Number --></label>
+        <name>HUDOfficeManagerFaxNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Manager First Name --></label>
+        <name>HUDOfficeManagerFirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Manager Last Name --></label>
+        <name>HUDOfficeManagerLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Manager Middle Name --></label>
+        <name>HUDOfficeManagerMiddleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Manager Mobile Number --></label>
+        <name>HUDOfficeManagerMobileNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Manager Phone Number Ext. --></label>
+        <name>HUDOfficeManagerPhoneExtension__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Office Manager Phone Number --></label>
+        <name>HUDOfficeManagerPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>PostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Street Address --></label>
+        <name>StreetAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validation Combined1 --></label>
+        <name>ValidationCombined1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validation Combined --></label>
+        <name>ValidationCombined__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid phone number --></errorMessage>
+        <name>Phone_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

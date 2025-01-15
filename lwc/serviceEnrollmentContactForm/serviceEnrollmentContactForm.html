@@ -1,0 +1,363 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 08-05-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+	<div
+		class="slds-p-top_x-small slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+		<b>{labels.builderContactInformationLabel}</b> <!-- Contact Information  -->
+	</div>
+	<div
+		class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+		<div>
+			<label class="slds-form-element__label theme-label slds-text-body_small" >{labels.builderNameLabel}</label>
+			<div> <span class="slds-p-left_medium read-only-fields" >{userName}</span> </div>
+		</div>
+	</div>
+	<div
+		class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+		<div>
+			<label class="slds-form-element__label theme-label slds-text-body_small" >{labels.builderEmailAddressLabel}</label>
+			<div> <span class="slds-p-left_medium read-only-fields" >{userEmail}</span> </div>
+		</div>
+	</div>
+	<div
+		class="slds-col slds-grid slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-right_x-small">
+		<div
+			class="slds-col slds-max-small-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+			<input type="hidden" name="Id" class=" contactField" value={contact.Id} />
+			<label for="phonenumber" class="slds-form-element__label slds-text-body_small theme-label">
+                                {labels.builderPhoneNumberLabel}
+                            </label>
+			<lightning-input name="Phone" class="input phone-field contactField" type="text" variant="label-hidden"
+				lwc:ref="phonefield" maxlength="15" placeholder="(000) 000-0000" value={contact.Phone}
+				onchange={handlePhoneNumberChange}>
+			</lightning-input>
+			<input type="hidden" name="Email" class="slds-hidden contactField" value={contact.Email} />
+			<input type="hidden" name="Name" class="slds-hidden contactField" value={contact.Name} />
+				</div>
+			<div
+				class="slds-col slds-max-small-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12 slds-p-left_x-small">
+				<label for="BestTime" class="slds-form-element__label theme-label slds-text-body_small">
+						{labels.builderBestimeToCallLabel}
+					</label>
+				<lightning-combobox name="Besttimetocontact__c" class="input contactField" variant="label-hidden"
+					value={contact.Besttimetocontact__c} options={bestTimeToCallValues}>
+				</lightning-combobox>
+			</div>
+		</div>
+
+		<div
+			class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+			<b>{labels.builderAddressLabel}</b>
+		</div>
+		<div
+			class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+			<label for="street" class="slds-form-element__label theme-label slds-text-body_small">
+						{labels.builderStreetLabel}
+						<abbr class="slds-required slds-text-color_destructive"
+							title="required">*</abbr>
+					</label>
+			<lightning-input name="MailingStreet" class="input contactField" type="text" variant="label-hidden"
+				lwc:ref="street" maxlength="255" value={contact.MailingStreet} required>
+			</lightning-input>
+		</div>
+		<div
+			class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+			<label for="addressLine2" class="slds-form-element__label theme-label slds-text-body_small">
+						{labels.builderAddressLine2Label}
+					</label>
+			<lightning-textarea name="MailingAddressLine2__c" variant="label-hidden"
+				value={contact.MailingAddressLine2__c} class="input contactField" lwc:ref="addressline" maxlength="255">
+			</lightning-textarea>
+		</div>
+		<div
+			class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+			<label for="City" class="slds-form-element__label theme-label slds-text-body_small">
+						{labels.builderCityLabel}<abbr class="slds-required slds-text-color_destructive"
+							title="required">*</abbr>
+					</label>
+			<lightning-input name="MailingCity" class="input contactField" type="text" variant="label-hidden"
+				lwc:ref="city" maxlength="40" value={contact.MailingCity} required>
+			</lightning-input>
+		</div>
+		<div
+			class="slds-col slds-grid slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-right_x-small">
+			<div
+				class="slds-col slds-max-small-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+				<label for="State" class="slds-form-element__label theme-label slds-text-body_small">
+						{labels.builderStateProvinceLabel}<abbr class="slds-required slds-text-color_destructive"
+							title="required">*</abbr>
+					</label>
+				<lightning-combobox name="MailingStateCode" class="input contactField" variant="label-hidden"
+					value={contact.MailingStateCode} options={mailingStateValues} required>
+				</lightning-combobox>
+			</div>
+			<div
+				class="slds-col slds-max-small-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12 slds-p-left_x-small">
+				<label for="City" class="slds-form-element__label theme-label slds-text-body_small">
+						{labels.builderZipPostalCodeLabel}<abbr class="slds-required slds-text-color_destructive"
+							title="required">*</abbr>
+					</label>
+				<lightning-input name="MailingPostalCode" class="input contactField" type="text" variant="label-hidden"
+					lwc:ref="postal" value={contact.MailingPostalCode} maxlength="5" onchange={validateZIPOnChange}
+					required>
+				</lightning-input>
+				<input type="hidden" name="MailingCountryCode" class=" contactField" value={contact.MailingCountryCode} />
+			</div>
+			</div>
+
+			<div
+				class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+				<b>{labels.builderDemographicsLabel}</b>
+			</div>
+			<div
+				class="slds-col slds-grid slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-right_x-small">
+				<div
+					class="slds-col slds-max-small-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+					<label for="Birthday" class="slds-form-element__label theme-label slds-text-body_small">
+						{labels.builderBirthdateLabel}<abbr class="slds-required slds-text-color_destructive"
+							title="required">*</abbr>
+					</label>
+					<lightning-input name="Birthdate" class="input contactField birthdate-field" type="date" variant="label-hidden"
+						 value={contact.Birthdate} required>
+					</lightning-input>
+				</div>
+				<div
+					class="slds-col slds-max-small-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12 slds-p-left_x-small">
+					<label for="Ethnicity" class="slds-form-element__label theme-label slds-text-body_small">
+						{labels.builderGenderLabel}<abbr class="slds-required slds-text-color_destructive"
+							title="required">*</abbr>
+					</label>
+					<lightning-combobox name="Gender__c" class="input contactField" variant="label-hidden"
+						value={contact.Gender__c} options={genderValues} required>
+					</lightning-combobox>
+				</div>
+			</div>
+
+			<div
+				class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+				<label for="Race" class="slds-form-element__label theme-label slds-text-body_small">
+                    {labels.builderRaceLabel}<abbr class="slds-required slds-text-color_destructive"
+                        title="required">*</abbr>
+                </label>
+				<lightning-combobox name="Race__c" class="input contactField" variant="label-hidden"
+					value={contact.Race__c} options={raceValues} required>
+				</lightning-combobox>
+			</div>
+
+			<div
+				class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+				<label for="Ethnicity" class="slds-form-element__label theme-label slds-text-body_small">
+                    {labels.builderEthnicityLabel}<abbr class="slds-required slds-text-color_destructive"
+                        title="required">*</abbr>
+                </label>
+				<lightning-combobox name="Ethnicity__c" class="input contactField" variant="label-hidden"
+					value={contact.Ethnicity__c} options={ethnicityValues} required>
+				</lightning-combobox>
+			</div>
+
+			<div
+				class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+				<label for="community" class="slds-form-element__label theme-label slds-text-body_small">
+                    {labels.builderCommunityLabel}<abbr class="slds-required slds-text-color_destructive"
+                        title="required">*</abbr>
+                </label>
+				<lightning-combobox class="input contactField" variant="label-hidden" name="RuralAreaStatus__c"
+					value={contact.RuralAreaStatus__c} options={communityValues} required>
+				</lightning-combobox>
+			</div>
+
+			<div
+				class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+				<label for="FluencyinEnglish" class="slds-form-element__label theme-label slds-text-body_small">
+                    {labels.builderFluencyInEnglishLabel}<abbr class="slds-required slds-text-color_destructive"
+                        title="required">*</abbr>
+                </label>
+				<lightning-combobox name="EnglishProficiency__c" class="input contactField" variant="label-hidden"
+					value={contact.EnglishProficiency__c} options={englishProficiencyValues} required>
+				</lightning-combobox>
+			</div>
+
+			<div
+				class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+				<label for="MaritalStatus" class="slds-form-element__label theme-label slds-text-body_small">
+                    {labels.builderMaritalStatusLabel} <abbr class="slds-required slds-text-color_destructive"
+					title="required">*</abbr>
+                </label>
+				<lightning-combobox name="MaritalStatus__c" class="input contactField" variant="label-hidden"
+					value={contact.MaritalStatus__c} options={maritalStatusValues} onchange={handleChange} required>
+				</lightning-combobox>
+			</div>
+
+			<div
+				class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+				<label for="houseHoldType" class="slds-form-element__label theme-label slds-text-body_small">
+                        {labels.builderHouseholdTypeLabel}<abbr class="slds-required slds-text-color_destructive"
+                            title="required">*</abbr>
+                    </label>
+				<lightning-combobox name="HouseholdType__c" class="input contactField" variant="label-hidden"
+					value={contact.HouseholdType__c} options={houseHoldTypeOptions} disabled={isMaritalStatusBlank} required>
+				</lightning-combobox>
+			</div>
+
+			<div
+				class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+				<label for="Education" class="slds-form-element__label theme-label slds-text-body_small">
+                    {labels.builderEducationLabel} <abbr class="slds-required slds-text-color_destructive"
+					title="required">*</abbr>
+                </label>
+				<lightning-combobox name="Education__c" class="input contactField" variant="label-hidden"
+					value={contact.Education__c} options={educationValues} required>
+				</lightning-combobox>
+			</div>
+
+			<div
+				class="slds-col slds-grid slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-right_x-small">
+				<div
+					class="slds-col slds-max-small-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+					<label for="community" class="slds-form-element__label theme-label slds-text-body_small">
+						{labels.builder1stTimeHomebuyerLabel} <abbr class="slds-required slds-text-color_destructive"
+						title="required">*</abbr>
+					</label>
+					<lightning-combobox class="input contactField" variant="label-hidden" name="X1stTimeHomeBuyer__c"
+						value={contact.X1stTimeHomeBuyer__c} options={firstTimeHomeBuyerValues} required>
+					</lightning-combobox>
+				</div>
+
+				<div
+					class="slds-col slds-max-small-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12 slds-p-left_x-small">
+					<label for="Ethnicity" class="slds-form-element__label theme-label slds-text-body_small">
+                        {labels.builderLegallyDisabledLabel} <abbr class="slds-required slds-text-color_destructive"
+						title="required">*</abbr>
+                    </label>
+					<lightning-combobox name="DisabledStatus__c" class="input contactField" variant="label-hidden"
+						value={contact.DisabledStatus__c} options={disabledStatusValues} required>
+					</lightning-combobox>
+				</div>
+			</div>
+<!--
+			<div
+				class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+				<label for="houseHoldType" class="slds-form-element__label theme-label slds-text-body_small">
+                        {labels.builderHouseholdTypeLabel}<abbr class="slds-required slds-text-color_destructive"
+                            title="required">*</abbr>
+                    </label>
+				<lightning-combobox name="HouseholdType__c" class="input contactField" variant="label-hidden"
+					value={contact.HouseholdType__c} options={houseHoldTypeOptions} disabled={isMaritalStatusBlank}>
+				</lightning-combobox>
+			</div>
+-->
+			<div
+				class="slds-col slds-grid slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-right_x-small">
+				<div
+					class="slds-col slds-max-small-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+					<label for="ActiveMilitary" class="slds-form-element__label theme-label slds-text-body_small">
+                            {labels.builderActiveMilitaryLabel}<abbr class="slds-required slds-text-color_destructive"
+                                title="required">*</abbr>
+                        </label>
+					<lightning-combobox name="ActiveMilitary__c" class="input contactField" variant="label-hidden"
+						value={contact.ActiveMilitary__c} options={activeMilitaryValues} required>
+					</lightning-combobox>
+				</div>
+				<div
+					class="slds-col slds-max-small-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12 slds-p-left_x-small">
+					<label for="HouseholdSize" class="slds-form-element__label theme-label slds-text-body_small">
+                            {labels.builderHouseholdSizeLabel}<abbr class="slds-required slds-text-color_destructive"
+                                title="required">*</abbr>
+                        </label>
+					<lightning-input name="HouseholdSize__c" class="input contactField" type="number"
+						variant="label-hidden" min="1" maxlength="2" lwc:ref="totalMonthlyIncome"
+						value={contact.HouseholdSize__c} required>
+					</lightning-input>
+				</div>
+			</div>
+
+			<div
+				class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+				<label for="VeteranStatus" class="slds-form-element__label theme-label slds-text-body_small">
+					{labels.builderVeteranLabel}<abbr class="slds-required slds-text-color_destructive"
+						title="required">*</abbr>
+				</label>
+				<lightning-combobox class="input contactField" variant="label-hidden" name="Veteran__c"
+					value={contact.Veteran__c} options={veteranValues} required>
+				</lightning-combobox>
+			</div>
+
+			<div
+				class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+				<b>{labels.builderFinancesLabel}</b>
+			</div>
+
+			<div
+				class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+				<label for="ChoseNottoProvideIncome" class="slds-form-element__label theme-label slds-text-body_small">
+					{labels.buildChoseNottoProvideIncomeLabel}
+				</label>
+				<lightning-input name="ChoseNottoProvideIncome__c" class="input contactField" type="checkbox" 
+					variant="label-hidden"  lwc:ref="ChoseNottoProvideIncome" checked={contact.ChoseNottoProvideIncome__c} 
+					onchange={handleChange}>
+				</lightning-input>
+			</div>
+			
+			<div
+				class="slds-col slds-grid slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-right_x-small">
+				<div
+					class="slds-col slds-max-small-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+					<label for="TotalMonthlyIncome" class="slds-form-element__label theme-label slds-text-body_small">
+                            {labels.builderTotalMonthlyIncomeLabel} <abbr class="slds-required slds-text-color_destructive"
+							title="required">*</abbr>
+                        </label>
+					<lightning-input name="TotalMonthlyIncome__c" class="input contactField" type="number"
+						formatter="currency" step="0.01" variant="label-hidden" maxlength="6"
+						lwc:ref="totalMonthlyIncome" value={contact.TotalMonthlyIncome__c} required disabled={isChoseNottoProvideIncomeChecked} onchange={handleChange}>
+					</lightning-input>
+				</div>
+				<div
+					class="slds-col slds-max-small-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12 slds-p-left_x-small">
+					<label for="NumberOfDependents" class="slds-form-element__label theme-label slds-text-body_small">
+                    {labels.builderNumberOfDependentsLabel} <abbr class="slds-required slds-text-color_destructive"
+					title="required">*</abbr>
+                </label>
+				<lightning-input name="NumberOfDependents__c" class="input contactField" type="number"
+					variant="label-hidden" lwc:ref="numberOfDependents" max-length="2" value={contact.NumberOfDependents__c} required>
+				</lightning-input>
+				</div>
+			</div>
+
+			<div
+				class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+				<label for="EmploymentStatus" class="slds-form-element__label theme-label slds-text-body_small">
+                    {labels.builderEmploymentStatusLabel}
+                </label>
+				<lightning-combobox name="EmploymentStatus__c" class="input contactField" variant="label-hidden"
+					value={contact.EmploymentStatus__c} options={employmentStatusValues}>
+				</lightning-combobox>
+			</div>
+<!--
+			<div
+				class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+				<label for="NumberOfDependents" class="slds-form-element__label theme-label slds-text-body_small">
+                    {labels.builderNumberOfDependentsLabel}
+                </label>
+				<lightning-input name="NumberOfDependents__c" class="input contactField" type="number"
+					variant="label-hidden" lwc:ref="numberOfDependents" value={contact.NumberOfDependents__c}>
+				</lightning-input>
+			</div>
+-->
+			<div
+				class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+				<label for="CreditScore" class="slds-form-element__label theme-label slds-text-body_small">
+                {labels.builderCreditScoreLabel}
+            </label>
+				<lightning-input name="CreditScore__c" class="input contactField" type="number" variant="label-hidden"
+					lwc:ref="creditScore" min="100" max="999" value={contact.CreditScore__c}>
+				</lightning-input>
+			</div>
+
+			<!-- Empty Div -->
+			<div class="slds-small-size_12-of-12 slds-medium-size_3-of-12 slds-large-size_3-of-8"></div>
+</template>

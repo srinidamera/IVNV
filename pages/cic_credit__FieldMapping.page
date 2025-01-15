@@ -1,0 +1,49 @@
+<apex:page controller="cic_credit.Ctl_FieldMapping">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection title="Custom Setting" columns="1">
+                <!--allow to selcet from the settings list variable-->
+                <!--rerender the below input fields based on selection-->
+                <apex:selectList required="true" multiselect="false" size="1" label="Mapping Type"  value="{!mappingType}">
+                    <apex:selectOptions value="{!MTItems}"/>
+                </apex:selectList>
+                <br/>
+                <br/>
+                <br/>
+                <apex:selectList required="true" multiselect="false" size="1" label="FirstName"  value="{!selectedValue}">
+                    <apex:selectOptions value="{!Items}"/>
+                </apex:selectList>
+                <apex:selectList required="true" multiselect="false" size="1" label="LastName"  value="{!selectedValue1}">
+                    <apex:selectOptions value="{!Items1}"/>
+                </apex:selectList>
+                <apex:selectList required="true" multiselect="false" size="1" label="Birthdate"  value="{!selectedValue2}">
+                    <apex:selectOptions value="{!Items2}"/>
+                </apex:selectList>
+                <apex:selectList required="true" multiselect="false" size="1" label="City"  value="{!selectedValue3}">
+                    <apex:selectOptions value="{!Items3}"/>
+                </apex:selectList>
+                <apex:selectList required="true" multiselect="false" size="1" label="PostalCode"  value="{!selectedValue4}">
+                    <apex:selectOptions value="{!Items4}"/>
+                </apex:selectList>
+                <apex:selectList required="true" multiselect="false" size="1" label="SSN"  value="{!selectedValue5}">
+                    <apex:selectOptions value="{!Items5}"/>
+                </apex:selectList>
+                <apex:selectList required="true" multiselect="false" size="1" label="State"  value="{!selectedValue6}">
+                    <apex:selectOptions value="{!Items6}"/>
+                </apex:selectList>
+                <apex:selectList required="true" multiselect="false" size="1" label="Street"  value="{!selectedValue7}">
+                    <apex:selectOptions value="{!Items7}"/>
+                </apex:selectList> 
+                <apex:selectList required="true" multiselect="false" size="1" label="Email"  value="{!selectedValue8}">
+                    <apex:selectOptions value="{!Items8}"/>
+                </apex:selectList>
+                <apex:selectList required="true" multiselect="false" size="1" label="Phone"  value="{!selectedValue9}">
+                    <apex:selectOptions value="{!Items9}"/>
+                </apex:selectList>         
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <div align="center" draggable="false" >
+            <apex:commandButton value="Submit" action="{!saveSettings}"/>
+        </div>
+    </apex:form>
+</apex:page>

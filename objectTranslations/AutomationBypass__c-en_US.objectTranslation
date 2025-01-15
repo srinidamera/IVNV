@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Automation Bypass</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Automation Bypass</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Automation Bypass --></label>
+        <name>AccountAutomationBypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Case Automation Bypass --></label>
+        <name>ClientCaseAutomationBypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Co-Applicant Automation Bypass --></label>
+        <name>CoApplicantAutomationBypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Automation ByPass --></label>
+        <name>ContactAutomationByPass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Course Automation Bypass --></label>
+        <name>CourseAutomationBypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Report Automation Bypass --></label>
+        <name>CreditReportAutomationBypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Score Automation Bypass --></label>
+        <name>CreditScoreAutomationBypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Automation Bypass --></label>
+        <name>EventAutomationBypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Goal Automation Bypass --></label>
+        <name>GoalAutomationBypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intake Automation Bypass --></label>
+        <name>IntakeAutomationBypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Automation Bypass --></label>
+        <name>ReferralAutomationBypass_c__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sumo Email Automation Bypass --></label>
+        <name>SumoEmailAutomationBypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- UserAutomationBypass --></label>
+        <name>UserAutomationBypass__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

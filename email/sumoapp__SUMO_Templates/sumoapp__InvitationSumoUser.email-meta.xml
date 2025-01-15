@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent to Sumo user when he is invited to start using Sumo</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>sumoapp__IvitationToUseSumo</letterhead>
+    <name>Invitation (SUMO User)</name>
+    <style>freeForm</style>
+    <subject>ACTION REQUIRED: Start using SUMO!</subject>
+    <textOnly>SUMO scheduler has been configured and is ready from you to start using.
+
+ACTION REQUIRED
+
+New SUMO users must take 2 mins to connect their calendar, confirm their availability, and add their video conf and/or phone number.
+
+
+Login to Salesforce
+Search for SUMO User Settings
+Complete the steps outlined in the article below.
+
+
+Getting Started
+
+LEARN HOW TO USE SUMO
+
+Watch tutorials and ready articles on how to use SUMO here:
+
+https://cep.sumoscheduler.com/user-training/</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

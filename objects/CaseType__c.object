@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>To organize the various services provided by the Agency for their clients.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>CaseGuidanceTemplate__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Case Guidance Template</description>
+        <label>Case Guidance Template</label>
+        <referenceTo>CaseGuidanceTemplate__c</referenceTo>
+        <relationshipLabel>Case Types</relationshipLabel>
+        <relationshipName>Case_Types</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ClientCaseRecordType__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Case Record Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DescriptionEnglish__c</fullName>
+        <label>Description (English)</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DescriptionSpanish__c</fullName>
+        <label>Description (Spanish)</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <description>Brief qualitative overview of the Case Type being provided to the client.</description>
+        <inlineHelpText>Brief qualitative overview of the service being provided to the client.</inlineHelpText>
+        <label>Description</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>FrequentlyAskedQuestionsEnglish__c</fullName>
+        <inlineHelpText>Recommend limit to a maximum of 3 questions and this will be displayed on the Service Details page over the portal.</inlineHelpText>
+        <label>Frequently Asked Questions (English)</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>FrequentlyAskedQuestionsSpanish__c</fullName>
+        <inlineHelpText>Recommend limit to a maximum of 3 questions and this will be displayed on the Service Details page over the portal.</inlineHelpText>
+        <label>Frequently Asked Questions (Spanish)</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>HUDPurpose__c</fullName>
+        <label>Purpose</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Homeless Assistance</fullName>
+                    <default>false</default>
+                    <label>Homeless Assistance</label>
+                </value>
+                <value>
+                    <fullName>Pre-purchase/Homebuying</fullName>
+                    <default>false</default>
+                    <label>Pre-purchase/Homebuying</label>
+                </value>
+                <value>
+                    <fullName>Rental Topics</fullName>
+                    <default>false</default>
+                    <label>Rental Topics</label>
+                </value>
+                <value>
+                    <fullName>Non-Delinquency Post-Purchase</fullName>
+                    <default>false</default>
+                    <label>Non-Delinquency Post-Purchase</label>
+                </value>
+                <value>
+                    <fullName>Reverse Mortgage</fullName>
+                    <default>false</default>
+                    <label>Reverse Mortgage</label>
+                </value>
+                <value>
+                    <fullName>Resolving or Preventing Forward Mortgage Delinquency or Default</fullName>
+                    <default>false</default>
+                    <label>Resolving or Preventing Forward Mortgage Delinquency or Default</label>
+                </value>
+                <value>
+                    <fullName>Resolving or Preventing Reverse Mortgage Delinquency or Default</fullName>
+                    <default>false</default>
+                    <label>Resolving or Preventing Reverse Mortgage Delinquency or Default</label>
+                </value>
+                <value>
+                    <fullName>Disaster Preparedness Assistance</fullName>
+                    <default>false</default>
+                    <label>Disaster Preparedness Assistance</label>
+                </value>
+                <value>
+                    <fullName>Disaster Recovery Assistance</fullName>
+                    <default>false</default>
+                    <label>Disaster Recovery Assistance</label>
+                </value>
+                <value>
+                    <fullName>Not HUD-Reportable</fullName>
+                    <default>false</default>
+                    <label>Not HUD-Reportable</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HighlightsSpanish__c</fullName>
+        <label>Highlights (Spanish)</label>
+        <length>800</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Highlights__c</fullName>
+        <inlineHelpText>Recommend limit to a maximum of 3 bullet points, with each bullet point containing no more than 40 characters, or 130 characters total. This will be displayed on the Service summary card on the portal.</inlineHelpText>
+        <label>Highlights (English)</label>
+        <length>800</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>11</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IsClientLookup__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Is Client Lookup</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsEmergencyTriage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Is Emergency Triage</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsPortal__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Is Portal</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NameSpanish__c</fullName>
+        <label>Case Type Name (Spanish)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>RequiredDocumentsSpanish__c</fullName>
+        <label>Required Documents (Spanish)</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>RequiredDocuments__c</fullName>
+        <label>Required Documents</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ShortDescriptionSpanish__c</fullName>
+        <label>Short Description (Spanish)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ShortDescription__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a brief (up to 120 characters) summary for the service. This will appear on the portal service page&apos;s summary card.</inlineHelpText>
+        <label>Short Description (English)</label>
+        <length>130</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>is_Reverse_Mortage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>is Reverse Mortage</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Case Type</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>DescriptionEnglish__c</columns>
+        <columns>Highlights__c</columns>
+        <columns>ShortDescription__c</columns>
+        <columns>ClientCaseRecordType__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Case Type Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Case Types</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

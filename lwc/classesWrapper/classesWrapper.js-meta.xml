@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>57.0</apiVersion>
+	<isExposed>true</isExposed>
+	<masterLabel>Portal Classes</masterLabel>
+	<targets>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightningCommunity__Default">
+			<property
+					type="String"
+					name="allClassesLabel"
+					label="All Classes filter label"
+					default="All Classes"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="myClassesLabel"
+					label="My Classes filter label"
+					default="My Classes"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="hyperlinkTitle"
+					label="Cards Hyperlink label"
+					default="Learn More"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="cardBtnLabel"
+					label="Cards Primary button label"
+					default="Enroll"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="cardSecondaryBtnLabel"
+					label="Cards Secondary button label"
+					default="Contact Us"
+					translatable="true"
+			/>
+			<property
+					type="Integer"
+					name="cardHeight"
+					label="Height for cards in pixels"
+					default="360"
+			/>
+			<property
+					type="String"
+					name="backBtnLabel"
+					label="Label for Back Button"
+					default="Go Back"
+					translatable="true"
+			/>
+
+			<property
+					type="String"
+					name="deliveryMethodText"
+					label="Label for keyword 'Type'"
+					default="Delivery method"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="startDateText"
+					label="Label for 'Start Date'"
+					default="Start Date/Time"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="endDateText"
+					label="Label for 'End Date'"
+					default="End Date/Time"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="availableSeatsText"
+					label="Label for 'Available Seats'"
+					default="Available Seats"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="costText"
+					label="Label for keyword 'Cost'"
+					default="Cost"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="locationText"
+					label="Label for keyword 'Location'"
+					default="Location"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="virtualText"
+					label="Label for keyword 'Virtual'"
+					default="Virtual"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="inPersonText"
+					label="Label for keyword 'In-Person'"
+					default="In-Person"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="textOnline"
+					label="Label for keyword 'Online'"
+					default="Online"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="freeSponsoredText"
+					label="Label for keyword 'Free / Sponsored'"
+					default="Free / Sponsored"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="unlimitedText"
+					label="Label for 'Unlimited'"
+					default="Unlimited"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="noClassesEnrolledMsg"
+					label="Message to display when no enrolled classes exist."
+					default="You have not enrolled in any class."
+					translatable="true"
+			/>
+
+			<property
+					type="String"
+					name="statusEnrolled"
+					label="Label for status Enrolled."
+					default="Enrolled"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="statusCanceled"
+					label="Label for status Canceled."
+					default="Canceled"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="statusNoShow"
+					label="Label for status No Show."
+					default="No Show"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="statusAttendedComplete"
+					label="Label for status Attended - Complete."
+					default="Completed"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="statusAttendedInComplete"
+					label="Label for status Attended - Incomplete."
+					default="Incomplete"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="statusCourseComplete"
+					label="Label for status Course Complete."
+					default="Completed"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="statusCourseInComplete"
+					label="Label for status Course Incomplete."
+					default="Incomplete"
+					translatable="true"
+			/>
+		</targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

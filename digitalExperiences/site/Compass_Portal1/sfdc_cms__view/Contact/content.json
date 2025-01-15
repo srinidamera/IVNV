@@ -1,0 +1,96 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Contact",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"4c167555-51e0-4e22-80f0-25aab9c5d07e\",\"columns\":[{\"UUID\":\"c5c15111-838d-4255-bdd8-a3be6b9a80bb\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "bannerImgSrcKey" : "MCOBGAE7VBYRC7DL6VUZMUYJ6Y5M",
+                "description" : "Find answers to common support questions below",
+                "redirectToPage" : "Home",
+                "title" : "Contact Us",
+                "useHyperlinkTitle" : "No"
+              },
+              "definition" : "c:bannerSection",
+              "id" : "6df8d77a-9a1a-41e4-aed1-8eb4ba6125a6",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "backgroundColor" : "",
+                "isLinkable" : false,
+                "linkAssistiveText" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "none",
+                "text" : "Your text",
+                "textAlign" : "left",
+                "textDecoration" : "{}",
+                "textDisplayInfo" : "{}"
+              },
+              "definition" : "dxp_base:textBlock",
+              "id" : "e4baf806-2c18-4225-b3b9-23f317b7aac7",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "contentKey" : "MCSQXW7JIT6FDPFMUBCTTJANJPWE",
+                "goBackLabel" : "Go Back"
+              },
+              "definition" : "c:contactUsComponent",
+              "id" : "b22448ad-c6e2-466f-a503-a5cc27831de5",
+              "type" : "component"
+            } ],
+            "id" : "c5c15111-838d-4255-bdd8-a3be6b9a80bb",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "4c167555-51e0-4e22-80f0-25aab9c5d07e",
+          "type" : "component"
+        } ],
+        "id" : "2a019394-37e8-471e-996f-ac23fd78b5f1",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Contact",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "3adcee78-6c51-44b8-8155-e4930575b1a4",
+          "type" : "component"
+        } ],
+        "id" : "aa9aa16f-3bbf-4e82-b646-eb30aa87740c",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "e367ee3b-090f-47e8-a0a5-207cfca87a46",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-contact"
+  },
+  "urlName" : "contact"
+}

@@ -1,0 +1,79 @@
+<template>
+	<div class="slds-grid slds-p-top_x-small header-backgroud-color slds-p-bottom_small">
+		<div class="slds-col">
+			<lightning-icon icon-name="utility:rows" size="small" onclick={handleOnClick}
+				class="slds-m-right_xx-small slds-m-left_x-small icon-css">
+			</lightning-icon>
+			<lightning-icon icon-name="standard:home" alternative-text="home" title="home"
+				class="slds-m-right_xx-small home-icon-css" size="small"></lightning-icon>
+			<img class="slds-m-right_xx-small" style={nwLogoStyle} src={logoImageUrl} />
+		</div>
+		<div class="slds-col slds-col_bump-right">
+			<div class="slds-clearfix">
+				<div class="slds-float_right">
+					<!-- <lightning-icon icon-name="utility:notification" alternative-text="notification" title="notification"
+						size="small" class="slds-p-right_x-small icon-css">
+					</lightning-icon> -->
+					<lightning-icon style={isUserLogin} icon-name="utility:user" onclick={navigateToProfile} alternative-text="user" title="user" size="small"
+						class="slds-p-right_small icon-css"> 
+					</lightning-icon>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="slds-dropdown-trigger_click mobile-menu" data-id="combobox-drop-down-id-137-custom">
+		<div class="slds-dropdown slds-dropdown_left mobile-menu-width">
+			<ul class="slds-dropdown__list dropdown" role="menu" aria-label="Show More">
+				<template if:true={leftMenuItems} for:each={leftMenuItems} for:item="item" for:index="index">
+					<c-header-navigation-item key={item.id} is-mobile=true menu-item={item} onnavigation={handleCloseMobileMenu}>
+					</c-header-navigation-item>
+				</template>
+				<template if:true={rightMenuItems} for:each={rightMenuItems} for:item="item" for:index="index">
+					<template if:false={item.isLanguage}>
+						<c-header-navigation-item key={item.id} is-mobile=true menu-item={item}
+							onnavigation={handleCloseMobileMenu}>
+						</c-header-navigation-item>
+					</template>
+				</template>
+				<li class="slds-has-divider_top-space" role="separator"></li>
+				<li class="slds-dropdown__item slds-has-submenu mobile-menu-width" role="presentation"
+					onclick={openLanguagesSection}>
+					<a role="menuitem" href="#" aria-haspopup="true" aria-expanded="true" tabindex="-1">
+						<span class="slds-truncate" title="Menu Item Three">{selectedLanguage.label}</span>
+						<lightning-icon size="xx-small" icon-name="utility:right" alternative-text="right" title="right"
+							class="check-icon">
+						</lightning-icon>
+					</a>
+					<template if:true={isLanguageSectionOpen}>
+						<div class="slds-dropdown slds-dropdown_submenu slds-dropdown_submenu-right">
+							<ul class="slds-dropdown__list" role="menu" aria-label="Languages">
+								<template if:true={languages} for:each={languages} for:item="lang" for:index="index">
+									<li class="slds-dropdown__item" role="presentation" key={lang.code} data-langcode={lang.code}
+										onclick={handleLanguageSelection}>
+										<a href="#" role="menuitem" tabindex="0" style="text-align: left;display: inline-block;">
+											<template lwc:if={lang.isActive}>
+												<lightning-icon icon-name="utility:check" class="check-icon" alternative-text="check"
+													title="check" size="xx-small"> <!-- style="padding-right: 10px;" -->
+												</lightning-icon>
+											</template>
+											<template lwc:else>
+												<lightning-icon icon-name="utility" class="check-icon" alternative-text="check" title="check"
+													size="xx-small">
+												</lightning-icon>
+											</template>
+											<span class="slds-truncate" title={lang.label} data-langcode={lang.code}> &nbsp;&nbsp;
+												{lang.label}</span>
+										</a>
+									</li>
+								</template>
+							</ul>
+						</div>
+					</template>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<c-toast-notification lwc:ref="toast"></c-toast-notification>
+</template>

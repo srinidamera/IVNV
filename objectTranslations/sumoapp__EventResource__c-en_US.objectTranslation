@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Invite --></label>
+        <name>sumoapp__Invite__c</name>
+        <relationshipLabel><!-- Invite Resources --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource --></label>
+        <name>sumoapp__Resource__c</name>
+        <relationshipLabel><!-- Resources --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SUMO Event --></label>
+        <name>sumoapp__SumoEvent__c</name>
+        <relationshipLabel><!-- Event Resources --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

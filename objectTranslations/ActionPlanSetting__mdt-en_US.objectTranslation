@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Action Plan Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Action Plan Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- Please enter Options/Values by semi collon(;) seperated --></help>
+        <label><!-- Field Options/Values --></label>
+        <name>FieldOptionsValues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Name --></label>
+        <name>Field_Name__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

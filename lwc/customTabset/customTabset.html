@@ -1,0 +1,19 @@
+<template>
+  <lightning-tabset active-tab-value={activeTab}>
+    <lightning-tab lwc:if={tabLabel1} label={tabLabel1} value="T1">
+      <div data-f6-region class="">
+        <slot name="Tab-1"></slot>
+      </div>
+    </lightning-tab>
+    <lightning-tab lwc:if={tabLabel2} label={tabLabel2} value="T2">
+      <div data-f6-region class="">
+        <slot name="Tab-2"></slot>
+      </div>
+    </lightning-tab>
+    <lightning-tab lwc:if={tabLabel3} label={tabLabel3} value="T3">
+      <div data-f6-region class="">
+        <slot name="Tab-3"></slot>
+      </div>
+    </lightning-tab>
+  </lightning-tabset>
+</template>

@@ -1,0 +1,53 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="300" >
+<tr valign="top" height="300" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-size: 12pt;">Dear &lt;%attendeeName%&gt;,&nbsp;</span></font><div style="">
+    <br>
+    <div style="">
+        <div style=""><div style=""><font face="arial" style=""><span style="font-size: 12pt;">This is to confirm that the </span>{!Event.Subject}<span style="font-size: 12pt;">&nbsp;you are signed up for is scheduled to begin on&nbsp;</span></font><span style="font-family: arial; font-size: 16px;">&lt;%datetime%&gt;</span><font face="arial" style=""><span style="font-size: 12pt;">.&nbsp;</span></font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial"><br></font></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial">Here are the key details:&nbsp;</font></div></div>
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+            <br>
+        </div>
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+            <b>Confirmation #:</b>&nbsp;<span>&lt;%confirmationNumber%&gt;</span>
+        </div>
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+            <b>Event Name:</b>&nbsp;<span>{!Event.Subject}</span>
+        </div>
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+            <b>Date/Time:</b>&nbsp;<span>&lt;%datetime%&gt;</span>
+        </div>
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+            <b>Duration:</b>&nbsp;<span>{!Event.DurationInMinutes} min</span>
+        </div>
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+            &lt;%locationFields%&gt;
+        </div>
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+            <b># of Seats Registered:</b>&nbsp;<span>&lt;%numberOfSeats%&gt;</span>
+        </div>
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+            <b>Price per Seat:</b>&nbsp;<span>&lt;%price%&gt;</span>
+        </div>
+
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+            <br>
+            <div style="font-size: 12pt;">&lt;%qrCode%&gt;</div>
+        </div>
+
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div>
+
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+            <div style="font-size: 12pt;">&lt;%description%&gt;</div>
+            <div style="font-size: 12pt;">&lt;%serviceDetails%&gt;</div>
+            <div style="font-size: 12pt;">&lt;%locationDetails%&gt;</div>
+            <div style="font-size: 12pt;">&lt;%declineLink%&gt;</div>
+            <div style="font-size: 12pt;">&lt;%addToCalendarLinks%&gt;</div>
+        </div>
+
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div>
+        <div style=""><div style=""><font face="arial">Important Action Items:&nbsp;&nbsp;</font></div><div style=""><font face="arial"><br></font></div><div style=""><font face="arial">Mark your calendar: Make sure you have all the dates and times blocked out in your schedule.&nbsp;&nbsp;</font></div><div style=""><font face="arial"><br></font></div><div style=""><font face="arial">Sign all required Disclosures&nbsp;&nbsp;</font></div><div style=""><font face="arial"><br></font></div><div style=""><font face="arial">We're confident that this course&nbsp; will be an invaluable experience for you. We're here to support you every step of the way, so feel free to reach out if you have any questions or need assistance.&nbsp;&nbsp;</font></div><div style=""><font face="arial"><br></font></div><div style=""><font face="arial">See you soon!&nbsp;&nbsp;</font></div><div style=""><font face="arial"><br></font></div><div style=""><font face="arial">Best regards,&nbsp;&nbsp;</font></div><div style=""><font face="arial">{!sumoapp__AdditionalInfo__c.FacilitatorInformation__c}</font></div><div style=""><br></div></div>
+    </div>
+</div>]]></td>
+</tr>
+</table>

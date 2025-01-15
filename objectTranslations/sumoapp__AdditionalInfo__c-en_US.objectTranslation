@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Course</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Courses</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- SUMO Event Details Calendar Fields --></label>
+        <name>sumoapp__SUMO_EVENT_DETAILS_CALENDAR_FIELDS</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SUMO Event Details Custom Fields --></label>
+        <name>sumoapp__SUMO_EVENT_DETAILS_CUSTOM_FIELDS</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Text Reminder Merge Fields --></label>
+        <name>sumoapp__TextReminderMergeFields</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Attendance Rate --></label>
+        <name>Attendance_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendee Status --></label>
+        <name>Attendee_Status__c</name>
+        <picklistValues>
+            <masterLabel>Attended</masterLabel>
+            <translation><!-- Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Show</masterLabel>
+            <translation><!-- No Show --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client Case --></label>
+        <name>ClientCase__c</name>
+        <relationshipLabel><!-- Calendar Event Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Course Language --></label>
+        <name>CourseLanguage__c</name>
+        <picklistValues>
+            <masterLabel>ASL</masterLabel>
+            <translation><!-- ASL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arabic</masterLabel>
+            <translation><!-- Arabic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cambodian</masterLabel>
+            <translation><!-- Cambodian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cantonese</masterLabel>
+            <translation><!-- Cantonese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese Mandarin</masterLabel>
+            <translation><!-- Chinese Mandarin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Creole</masterLabel>
+            <translation><!-- Creole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech</masterLabel>
+            <translation><!-- Czech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English (US)</masterLabel>
+            <translation><!-- English (US) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farsi</masterLabel>
+            <translation><!-- Farsi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation><!-- French --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation><!-- German --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goboligok</masterLabel>
+            <translation><!-- Goboligok --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hebrew</masterLabel>
+            <translation><!-- Hebrew --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hindi</masterLabel>
+            <translation><!-- Hindi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hmong</masterLabel>
+            <translation><!-- Hmong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indonesian</masterLabel>
+            <translation><!-- Indonesian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian</masterLabel>
+            <translation><!-- Italian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation><!-- Korean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latin</masterLabel>
+            <translation><!-- Latin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polish</masterLabel>
+            <translation><!-- Polish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuuguese</masterLabel>
+            <translation><!-- Portuuguese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian</masterLabel>
+            <translation><!-- Russian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swahili</masterLabel>
+            <translation><!-- Swahili --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkish</masterLabel>
+            <translation><!-- Turkish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ukrainian</masterLabel>
+            <translation><!-- Ukrainian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urdu</masterLabel>
+            <translation><!-- Urdu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese</masterLabel>
+            <translation><!-- Vietnamese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yiddish</masterLabel>
+            <translation><!-- Yiddish --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Course Number --></label>
+        <name>CourseNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exclude Course From HUD 9902 --></label>
+        <name>ExcludeCourseFromHUD9902__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facilitator Information --></label>
+        <name>FacilitatorInformation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facilitator --></label>
+        <name>Facilitator__c</name>
+        <relationshipLabel><!-- Courses (Facilitator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Financial Capability Course --></label>
+        <name>FinancialCapabilityCourse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frequently Asked Questions Spanish --></label>
+        <name>FrequentlyAskedQuestionsSpanish__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frequently Asked Questions --></label>
+        <name>FrequentlyAskedQuestions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Description Spanish --></label>
+        <name>FullDescriptionSpanish__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Description --></label>
+        <name>FullDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funder --></label>
+        <name>Funder__c</name>
+        <relationshipLabel><!-- Courses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HUD Activity Type --></label>
+        <name>HUDActivityType__c</name>
+    </fields>
+    <fields>
+        <label><!-- HUD Purpose --></label>
+        <name>HUD_Purpose__c</name>
+        <picklistValues>
+            <masterLabel>Completed disaster preparedness assistance workshop</masterLabel>
+            <translation><!-- Completed disaster preparedness assistance workshop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed disaster recovery assistance workshop</masterLabel>
+            <translation><!-- Completed disaster recovery assistance workshop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed fair housing workshop</masterLabel>
+            <translation><!-- Completed fair housing workshop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed financial literacy workshop, including home affordability, budgeting and understanding use of credit</masterLabel>
+            <translation><!-- Completed financial literacy workshop, including home affordability, budgeting and understanding use of credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed homelessness prevention workshop</masterLabel>
+            <translation><!-- Completed homelessness prevention workshop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed non-delinquency post-purchase workshop, including home maintenance and/or financial management for homeowners</masterLabel>
+            <translation><!-- Completed non-delinquency post-purchase workshop, including home maintenance and/or financial management for homeowners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed pre-purchase homebuyer education workshop</masterLabel>
+            <translation><!-- Completed pre-purchase homebuyer education workshop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed predatory lending, loan scam or other fraud prevention workshop</masterLabel>
+            <translation><!-- Completed predatory lending, loan scam or other fraud prevention workshop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed rental workshop</masterLabel>
+            <translation><!-- Completed rental workshop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed resolving or preventing mortgage delinquency workshop</masterLabel>
+            <translation><!-- Completed resolving or preventing mortgage delinquency workshop --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Highlights Spanish --></label>
+        <name>HighlightsSpanish__c</name>
+    </fields>
+    <fields>
+        <label><!-- Highlights --></label>
+        <name>Highlights__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Parent --></label>
+        <name>IsParent__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Show Rate --></label>
+        <name>NoShowRate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Seats --></label>
+        <name>Open_Seats__c</name>
+    </fields>
+    <fields>
+        <label><!-- Presenter --></label>
+        <lookupFilter>
+            <errorMessage><!-- Please select Presenter of type Affiliate ! --></errorMessage>
+        </lookupFilter>
+        <name>Presenter__c</name>
+        <relationshipLabel><!-- Courses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Public --></label>
+        <name>Public__c</name>
+    </fields>
+    <fields>
+        <label><!-- Course Type --></label>
+        <name>Session_Type__c</name>
+        <picklistValues>
+            <masterLabel>Disaster Preparedness Assistance</masterLabel>
+            <translation><!-- Disaster Preparedness Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disaster Recovery Assistance</masterLabel>
+            <translation><!-- Disaster Recovery Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fair Housing</masterLabel>
+            <translation><!-- Fair Housing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Literacy (Including Home Affordability, Budgeting, and Understanding Use of Credit)</masterLabel>
+            <translation><!-- Financial Literacy (Including Home Affordability, Budgeting, and Understanding Use of Credit) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homelessness Prevention</masterLabel>
+            <translation><!-- Homelessness Prevention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Delinquency post-purchase (Including Home Maintenance and/or Financial Management for Homeowners)</masterLabel>
+            <translation><!-- Non-Delinquency post-purchase (Including Home Maintenance and/or Financial Management for Homeowners) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Purchase Homebuyer Education</masterLabel>
+            <translation><!-- Pre-Purchase Homebuyer Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Predatory Lending Loan Scam or Other Fraud Prevention</masterLabel>
+            <translation><!-- Predatory Lending Loan Scam or Other Fraud Prevention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental</masterLabel>
+            <translation><!-- Rental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolving or Preventing Mortgage Delinquency</masterLabel>
+            <translation><!-- Resolving or Preventing Mortgage Delinquency --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Short Description Spanish --></label>
+        <name>ShortDescriptionSpanish__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Description --></label>
+        <name>ShortDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Staff --></label>
+        <name>Staff__c</name>
+        <relationshipLabel><!-- Courses (Staff) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Attended --></label>
+        <name>TotalAttendedChild__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Attended --></label>
+        <name>TotalAttendedFormula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Enrolled --></label>
+        <name>TotalEnrolled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total No Show --></label>
+        <name>TotalNoShow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Attended --></label>
+        <name>Total_Attended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Duration In Minutes --></label>
+        <name>Total_Duration_In_Minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Counseling</masterLabel>
+            <translation><!-- Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Counseling</masterLabel>
+            <translation><!-- Non-Counseling --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Validation Combined --></label>
+        <name>ValidationCombined__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Attendees --></label>
+        <name>sumoapp__AdditionalAttendees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Participants --></label>
+        <name>sumoapp__AdditionalParticipants__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alternate Host Name --></label>
+        <name>sumoapp__AlternateHostName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booked Confirmation Number --></label>
+        <name>sumoapp__BookedConfirmationNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow Registration During the Course? --></label>
+        <name>sumoapp__BookingDuringTheCourseAllowed__c</name>
+        <picklistValues>
+            <masterLabel>Can Book After Course Has Started</masterLabel>
+            <translation><!-- Can Book After Course Has Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Can Book Before Course Has Started</masterLabel>
+            <translation><!-- Can Book Before Course Has Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If set, SUMO will create a Post-Buffer appointment after the scheduled appointment, to give the Host a buffer. --></help>
+        <label><!-- Post-Buffer Time (Minutes) --></label>
+        <name>sumoapp__BufferTimePost__c</name>
+    </fields>
+    <fields>
+        <help><!-- If set, SUMO will create a Pre-Buffer appointment before the scheduled appointment, to give the Host a buffer. --></help>
+        <label><!-- Pre-Buffer Time (Minutes) --></label>
+        <name>sumoapp__BufferTimePre__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancellation Reason Option --></label>
+        <name>sumoapp__CancellationReasonOption__c</name>
+        <picklistValues>
+            <masterLabel>Need to Reschedule</masterLabel>
+            <translation><!-- Need to Reschedule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No show of the participant</masterLabel>
+            <translation><!-- No show of the participant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Interested Anymore</masterLabel>
+            <translation><!-- Not Interested Anymore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cancellation Reason --></label>
+        <name>sumoapp__CancellationReason__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total # of seats or people allowed to register for this event, once met, the event is considered SOLD OUT.  If blank, then capacity is unlimited. --></help>
+        <label><!-- Capacity --></label>
+        <name>sumoapp__Capacity__c</name>
+    </fields>
+    <fields>
+        <help><!-- If you would like people to self-register for this Event, you must choose a category to effectively tie this Event to the Online Scheduler. --></help>
+        <label><!-- Category --></label>
+        <name>sumoapp__Category__c</name>
+        <relationshipLabel><!-- Category Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client Link --></label>
+        <name>sumoapp__ClientLinkTextArea__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Link --></label>
+        <name>sumoapp__ClientLink__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color --></label>
+        <name>sumoapp__Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Datetime Section Description --></label>
+        <name>sumoapp__DatetimeSectionDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Duration Options --></label>
+        <name>sumoapp__DefaultDurationOptions__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation><!-- Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week/s</masterLabel>
+            <translation><!-- Week/s --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Default Reccuring Series --></label>
+        <name>sumoapp__DefaultReccuringSeries__c</name>
+        <picklistValues>
+            <masterLabel>All Events in Series</masterLabel>
+            <translation><!-- All Events in Series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Future Events in Series</masterLabel>
+            <translation><!-- Future Events in Series --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>sumoapp__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration In Minutes --></label>
+        <name>sumoapp__DurationInMinutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>sumoapp__Duration__c</name>
+        <picklistValues>
+            <masterLabel>1 hour</masterLabel>
+            <translation><!-- 1 hour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.5 hour</masterLabel>
+            <translation><!-- 1.5 hour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15 Minutes</masterLabel>
+            <translation><!-- 15 Minutes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 hours</masterLabel>
+            <translation><!-- 2 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.5 hours</masterLabel>
+            <translation><!-- 2.5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 hours</masterLabel>
+            <translation><!-- 3 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.5 hours</masterLabel>
+            <translation><!-- 3.5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 Minutes</masterLabel>
+            <translation><!-- 30 Minutes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 hours</masterLabel>
+            <translation><!-- 4 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4.5 hours</masterLabel>
+            <translation><!-- 4.5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45 Minutes</masterLabel>
+            <translation><!-- 45 Minutes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 hours</masterLabel>
+            <translation><!-- 5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5.5 hours</masterLabel>
+            <translation><!-- 5.5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 hours</masterLabel>
+            <translation><!-- 6 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6.5 hours</masterLabel>
+            <translation><!-- 6.5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 hours</masterLabel>
+            <translation><!-- 7 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7.5 hours</masterLabel>
+            <translation><!-- 7.5 hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 hours</masterLabel>
+            <translation><!-- 8 hours --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dynamic Travel Time Strategy --></label>
+        <name>sumoapp__DynamicTravelTimeStrategy__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Datetime --></label>
+        <name>sumoapp__EndDatetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Color --></label>
+        <name>sumoapp__EventColor__c</name>
+    </fields>
+    <fields>
+        <label>Course Name</label>
+        <name>sumoapp__EventName__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Notes --></label>
+        <name>sumoapp__ExternalNotes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frequency Number --></label>
+        <name>sumoapp__FrequencyNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frequency Type --></label>
+        <name>sumoapp__FrequencyType__c</name>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specific Dates</masterLabel>
+            <translation><!-- Specific Dates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Generate Virtual Details --></label>
+        <name>sumoapp__GenerateVirtualDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Processing --></label>
+        <name>sumoapp__InProcessing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Video Conference Details --></label>
+        <name>sumoapp__IncludeVideoConferenceDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invite --></label>
+        <name>sumoapp__Invite__c</name>
+        <relationshipLabel><!-- Invite Infos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Anytime Availability --></label>
+        <name>sumoapp__IsAnytimeAvailability__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsDraft --></label>
+        <name>sumoapp__IsDraft__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Overlap Appointments --></label>
+        <name>sumoapp__IsOverlapAppointments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Overlap Events --></label>
+        <name>sumoapp__IsOverlapEvents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Private Event --></label>
+        <name>sumoapp__IsPrivateEvent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Ready --></label>
+        <name>sumoapp__IsReady__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Recurring --></label>
+        <name>sumoapp__IsRecurring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Register Checked --></label>
+        <name>sumoapp__IsRegisterChecked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Reminder Sent --></label>
+        <name>sumoapp__IsReminderSent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Single Event Change --></label>
+        <name>sumoapp__IsSingleChange__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Waitlist Enabled --></label>
+        <name>sumoapp__IsWaitlistEnabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- If enabled, once an event is at capacity, people can join the Waitlist, which will email everyone once-a-day on the Waitlist announcing X openings (where participants declined), and the first to register get the spots. --></help>
+        <label><!-- Is Waitlist Managment --></label>
+        <name>sumoapp__IsWaitlistManagment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Time Reminder Send --></label>
+        <name>sumoapp__LastTimeReminderSend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Details --></label>
+        <name>sumoapp__LocationDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Geometry --></label>
+        <name>sumoapp__LocationGeometry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Type --></label>
+        <name>sumoapp__LocationType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>sumoapp__Location__c</name>
+        <relationshipLabel><!-- Location Infos --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This is the total number of spaces a single person can reserve at once.  For example, some events allow one person to book 4 people for a table without requiring each person to register. --></help>
+        <label><!-- Max Bookings --></label>
+        <name>sumoapp__MaxBookings__c</name>
+    </fields>
+    <fields>
+        <help><!-- If you limit the number of times an attendee can register for this event, make sure you update your policy message to reflect the message you want them to see when they are registering for the event. --></help>
+        <label><!-- Max Registration Policy Message --></label>
+        <name>sumoapp__MaxRegistrationErrorMessage__c</name>
+    </fields>
+    <fields>
+        <help><!-- If you wish to limit the # of times a person can register for this event, you may configure this setting here. You must then enter in the text below to explain to the registrants what the limit is. --></help>
+        <label><!-- Max Registration Per Attendee --></label>
+        <name>sumoapp__MaxRegistrationPerAttendee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Advance Time To Register Interval --></label>
+        <name>sumoapp__MaximumAdvanceTimeToRegisterInterval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maximum Advance Time To Register --></label>
+        <name>sumoapp__MaximumAdvanceTimeToRegister__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Advance Time To Cancel Interval --></label>
+        <name>sumoapp__MinimumAdvanceTimeToCancelInterval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Advance Time To Cancel --></label>
+        <name>sumoapp__MinimumAdvanceTimeToCancel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Advance Time To Register Interval --></label>
+        <name>sumoapp__MinimumAdvanceTimeToRegisterInterval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Advance Time To Register --></label>
+        <name>sumoapp__MinimumAdvanceTimeToRegister__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Time Reminder Send --></label>
+        <name>sumoapp__NextTimeReminderSend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note For Additional Attendees --></label>
+        <name>sumoapp__NoteForAdditionalAttendees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note --></label>
+        <name>sumoapp__Note__c</name>
+        <relationshipLabel><!-- Note Infos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Number of Reschedule --></label>
+        <name>sumoapp__NumberOfReschedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organizer --></label>
+        <name>sumoapp__Organizer__c</name>
+        <relationshipLabel><!-- Courses (Organizer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent --></label>
+        <name>sumoapp__Parent__c</name>
+        <relationshipLabel><!-- Child Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Past Action --></label>
+        <name>sumoapp__PastAction__c</name>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation><!-- Cancel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Create</masterLabel>
+            <translation><!-- Create --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit</masterLabel>
+            <translation><!-- Edit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reschedule</masterLabel>
+            <translation><!-- Reschedule --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Type --></label>
+        <name>sumoapp__PaymentType__c</name>
+        <picklistValues>
+            <masterLabel>Free Event</masterLabel>
+            <translation><!-- Free Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pay at Event Entry</masterLabel>
+            <translation><!-- Pay at Event Entry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pay at Online Registration</masterLabel>
+            <translation><!-- Pay at Online Registration --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Place Id --></label>
+        <name>sumoapp__PlaceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price per Seat --></label>
+        <name>sumoapp__PricePerSeat__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price --></label>
+        <name>sumoapp__Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Client Id --></label>
+        <name>sumoapp__PrimaryClientId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduling Process --></label>
+        <name>sumoapp__Process__c</name>
+        <relationshipLabel><!-- Process Infos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recurring Count --></label>
+        <name>sumoapp__RecurringCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recurring End Date --></label>
+        <name>sumoapp__RecurringEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recurring Month Day --></label>
+        <name>sumoapp__RecurringMonthDay__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13</masterLabel>
+            <translation><!-- 13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14</masterLabel>
+            <translation><!-- 14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16</masterLabel>
+            <translation><!-- 16 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17</masterLabel>
+            <translation><!-- 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18</masterLabel>
+            <translation><!-- 18 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19</masterLabel>
+            <translation><!-- 19 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21</masterLabel>
+            <translation><!-- 21 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22</masterLabel>
+            <translation><!-- 22 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23</masterLabel>
+            <translation><!-- 23 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24</masterLabel>
+            <translation><!-- 24 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25</masterLabel>
+            <translation><!-- 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>26</masterLabel>
+            <translation><!-- 26 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>27</masterLabel>
+            <translation><!-- 27 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>28</masterLabel>
+            <translation><!-- 28 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>29</masterLabel>
+            <translation><!-- 29 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>31</masterLabel>
+            <translation><!-- 31 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recurring Pattern Description --></label>
+        <name>sumoapp__RecurringPatternDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recurring Start DateTime --></label>
+        <name>sumoapp__RecurringStartDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recurring Start Date --></label>
+        <name>sumoapp__RecurringStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recurring Start Time --></label>
+        <name>sumoapp__RecurringStartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recurring Week Day --></label>
+        <name>sumoapp__RecurringWeekDay__c</name>
+        <picklistValues>
+            <masterLabel>Fr</masterLabel>
+            <translation><!-- Fr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M</masterLabel>
+            <translation><!-- M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sa</masterLabel>
+            <translation><!-- Sa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Su</masterLabel>
+            <translation><!-- Su --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Th</masterLabel>
+            <translation><!-- Th --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tu</masterLabel>
+            <translation><!-- Tu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>W</masterLabel>
+            <translation><!-- W --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Registered Attendee Count --></label>
+        <name>sumoapp__RegisteredAttendeeCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Email Reminder --></label>
+        <name>sumoapp__ReminderEmailOptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Cancel/Reschedule Link --></label>
+        <name>sumoapp__RescheduleLinkShort__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancel/Reschedule Link --></label>
+        <name>sumoapp__RescheduleLink__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service --></label>
+        <name>sumoapp__Service__c</name>
+        <relationshipLabel><!-- Service Infos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Show Internal Emails --></label>
+        <name>sumoapp__ShowInternalEmails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>sumoapp__Source__c</name>
+        <picklistValues>
+            <masterLabel>Appt Link</masterLabel>
+            <translation><!-- Appt Link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Invite</masterLabel>
+            <translation><!-- Email Invite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instant Booker</masterLabel>
+            <translation><!-- Instant Booker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi-Calendar Appt</masterLabel>
+            <translation><!-- Multi-Calendar Appt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi-Calendar Event</masterLabel>
+            <translation><!-- Multi-Calendar Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Scheduler</masterLabel>
+            <translation><!-- Online Scheduler --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start Datetime --></label>
+        <name>sumoapp__StartDatetime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Start Time Interval (GMT) --></label>
+        <name>sumoapp__StartInterval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Time --></label>
+        <name>sumoapp__StartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>sumoapp__Status__c</name>
+        <picklistValues>
+            <masterLabel>Booked</masterLabel>
+            <translation><!-- Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rescheduled</masterLabel>
+            <translation><!-- Rescheduled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sumo Id --></label>
+        <name>sumoapp__SumoId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text Opt In --></label>
+        <name>sumoapp__TextOptIn__c</name>
+    </fields>
+    <fields>
+        <label><!-- TimeZoneSidKey --></label>
+        <name>sumoapp__TimeZoneSidKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Registered Attendee --></label>
+        <name>sumoapp__TotalCheckedInAttendee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Registered Attendee --></label>
+        <name>sumoapp__TotalRegisteredAttendee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Waitlisted Attendee --></label>
+        <name>sumoapp__TotalWaitlistedAttendee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Summary --></label>
+        <name>sumoapp__UpdateSummary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Virtual Event Details --></label>
+        <name>sumoapp__VirtualEventDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Virtual Event Id --></label>
+        <name>sumoapp__VirtualEventId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Virtual Event Type --></label>
+        <name>sumoapp__VirtualEventType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Virutal Event URL --></label>
+        <name>sumoapp__VirtualEventUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waitlist Notification Type --></label>
+        <name>sumoapp__WaitlistNotificationType__c</name>
+        <picklistValues>
+            <masterLabel>Email &amp; Text Message</masterLabel>
+            <translation><!-- Email &amp; Text Message --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Only</masterLabel>
+            <translation><!-- Email Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text Message Only</masterLabel>
+            <translation><!-- Text Message Only --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Waitlisted Attendee Count --></label>
+        <name>sumoapp__WaitlistedAttendeeCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who Name --></label>
+        <name>sumoapp__WhoName__c</name>
+    </fields>
+    <nameFieldLabel>Course</nameFieldLabel>
+    <recordTypes>
+        <label><!-- Appointment --></label>
+        <name>sumoapp__Appointment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Course --></label>
+        <name>sumoapp__Course</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Event --></label>
+        <name>sumoapp__Event</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Event Class --></label>
+        <name>sumoapp__EventClass</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Recurring Event must be disabled to create a course session. --></errorMessage>
+        <name>course_session_Recurring_Validation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Appointment --></label>
+        <name>New_Appointment</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Note --></label>
+        <name>New_Note</name>
+    </webLinks>
+</CustomObjectTranslation>

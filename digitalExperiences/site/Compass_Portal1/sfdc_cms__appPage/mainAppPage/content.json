@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__appPage",
+  "title" : "main",
+  "contentBody" : {
+    "currentThemeId" : "Build_Your_Own_LWR",
+    "headMarkup" : "<meta charset=\"UTF-8\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n<title>Welcome to LWC Communities!</title>\n\n<!-- branding stylesheets -->\n\n<link rel=\"stylesheet\" href=\"{ basePath }/assets/styles/salesforce-lightning-design-system.min.css?{ versionKey }\" />\n\n<link rel=\"stylesheet\" href=\"{ basePath }/assets/styles/dxp-site-spacing-styling-hooks.min.css?{ versionKey }\" />\n<link rel=\"stylesheet\" href=\"{ basePath }/assets/styles/dxp-styling-hooks.min.css?{ versionKey }\" />\n<link rel=\"stylesheet\" href=\"{ basePath }/assets/styles/dxp-slds-extensions.min.css?{ versionKey }\" />\n\n\n\n<!-- branding stylesheets-->\n\n<link rel=\"stylesheet\" href=\"{ styles/styles.css }\" />\n<link rel=\"stylesheet\" href=\"{ styles/print.css }\" media=\"print\"/>\n<style>\n    .full-size-header{\n        display: inline !important;\n    }\n    \n    @media (max-width: 480px) {\n      .tabset-style {\n        margin: 0px 0px 0px 0px;\n      }\n    }\n    @media (min-width: 481px) and (max-width: 1280px){\n        .tabset-style {\n            margin: 0px 17vw 0px 17vw;\n        }\n    }\n    \n    @media (min-width: 1281px){\n        .tabset-style {\n            margin: 0px 32vw 0px 32vw;\n        }\n    }\n    \n    .reduced-margin {\t\t/* Used for homepage Welcome message*/\n    \tmargin-top: -16px;\n    }\n</style>",
+    "isLockerServiceEnabled" : true,
+    "isRelaxedCSPLevel" : false,
+    "templateName" : "talon-template-byo"
+  },
+  "urlName" : "main"
+}

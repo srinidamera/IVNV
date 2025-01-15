@@ -1,0 +1,61 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Intake",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "description" : "Asesoramiento de Vivienda: Financiero, Propiedad de Vivienda, Alquiler, Prevención de Ejecuciones Hipotecarias/Desamparo, Vivienda Justa",
+          "title" : "Servicios"
+        },
+        "id" : "6db145c0-70be-449a-95cd-2c05724e701c"
+      }, {
+        "id" : "897a571e-137c-4eea-b8b8-f5660a0930a1",
+        "attributes" : {
+          "builderVeteranStatusLabel" : "Veterano",
+          "manageDocumentsLabel" : "Administrar documentos",
+          "servicesLabel" : "Servicios",
+          "learnMorebreadCrumbLabel" : "Ver detalles sobre",
+          "viewMyServicesLabel" : "Ver mi envío",
+          "uploadDocumentsLabel" : "Subir Documentos",
+          "contactUsBtnLabel" : "Contacta con nosotros ",
+          "goBackLabel" : "Regresa",
+          "builderSubmissionReviewLabel" : "Revisión de envío",
+          "builderContactLabel" : "Contacto",
+          "builderNameLabel" : "Nombre",
+          "builderEmailAddressLabel" : "Correo electrónico",
+          "builderPhoneNumberLabel" : "Número de teléfono",
+          "builderBestimeToCallLabel" : "Mejor Momento para Llamar",
+          "builderAddressLabel" : "Dirección",
+          "builderBirthdateLabel" : "Fecha de Nacimiento",
+          "builderGenderLabel" : "Género",
+          "builderRaceLabel" : "Raza",
+          "builderEthnicityLabel" : "Origen étnico",
+          "builderCommunityLabel" : "Comunidad",
+          "builderFluencyInEnglishLabel" : "Dominio del inglés",
+          "builderMaritalStatusLabel" : "Estado civil",
+          "builderEducationLabel" : "Educación",
+          "builder1stTimeHomebuyerLabel" : "Comprador de Vivienda por Primera Vez",
+          "builderLegallyDisabledLabel" : "Legalmente Discapacitado",
+          "builderHouseholdSizeLabel" : "Tamaño del Hogar",
+          "builderHouseholdTypeLabel" : "Tipo de Hogar/Jefe de Hogar",
+          "builderHouseholdTypeOnlyLabel" : "Tipo de hogar",
+          "builderActiveMilitaryLabel" : "Servicio Militar Activo",
+          "builderTotalMonthlyIncomeLabel" : "Ingreso mensual total",
+          "builderNumberOfDependentsLabel" : "Número de dependientes",
+          "builderEmploymentStatusLabel" : "Estado de Empleo",
+          "builderCreditScoreLabel" : "Puntaje de crédito",
+          "builderCoApplicantLabel" : "Co-solicitante",
+          "builderPreferredCommunicationLanguageLabel" : "Idioma de comunicación preferido",
+          "builderRelationshipToClientLabel" : "Relación con el cliente",
+          "submittedDateLabel" : "Fecha Enviado",
+          "labelOpen" : "Abierta",
+          "labelCompleted" : "Completado",
+          "labelIncomplete" : "Incompleto",
+          "labelOnHold" : "En espera"
+        }
+      } ]
+    }
+  },
+  "urlName" : "intake"
+}

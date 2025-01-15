@@ -1,0 +1,113 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 11-20-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+	<div class="slds-grid">
+		<!-- Spinner -->
+		<template if:true={showSpinner}>
+			<lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+		</template>
+		<!-- Empty Div -->
+		<div class="slds-small-size_12-of-12 slds-medium-size_3-of-12 slds-large-size_3-of-8"></div>
+
+		<div class="slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_2-of-8">
+			<div
+				class="border slds-theme_default slds-m-vertical_small slds-p-left_small slds-p-top_small slds-p-right_small">
+				<template if:false={isFinalPage}>
+					<div
+						class="font-family  slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+						<span class="services">
+						<a>{builderServicesLabel}</a> 
+					</span> &nbsp; > &nbsp;
+						<span class="services">
+						<a if:true={serviceRecord}>{serviceRecord.Name}</a> 
+					</span> &nbsp; > &nbsp;
+						{builderSignUpLabel}
+					</div>
+					<br/>
+					<div
+						class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+						<div class="h-2"> {builderServiceSignUpLabel} </div>
+					</div>
+					<template if:true={showReuiredFieldDes}>
+						<div
+							class="slds-p-bottom_x-small slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+							<div class=""> {builderEnterYourInformationLabel} <abbr class="slds-required slds-text-color_destructive"
+								title="required">*</abbr> {builderIndicatesRequiredFieldLabel} </div>
+						</div>
+					</template>
+					<div
+						class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+						<c-progress-bar stages={stages}></c-progress-bar>
+					</div>
+				</template>
+
+
+				<template if:true={showProfilePage}>
+					<c-service-enrollment-contact-form contact={formData.contact} labels={labels} is-reverse-mortage={isReverseMortage}> </c-service-enrollment-contact-form>
+				</template>
+				<template if:true={showCoApplicantsPage}>
+					<c-service-enrollment-co-applicant-form labels={labels} ontriggertoast={showToast} applicants={formData.applicants} contact={formData.contact}>
+					</c-service-enrollment-co-applicant-form>
+				</template>
+				<template if:true={showReviewPage}>
+					<c-service-enrollment-review-page labels={labels} applicants={formData.applicants} contact={formData.contact}
+					service={serviceRecord}> </c-service-enrollment-review-page>
+				</template>
+				<template if:true={isFinalPage}>
+					<c-service-enrollment-succesfull-page labels={labels} contact={formData.contact} intake-id={intakeId} service={serviceRecord} final-page-content-id={finalPageContent}>
+					</c-service-enrollment-succesfull-page>
+				</template>
+
+			</div>
+			<div
+				class="slds-col slds-grid slds-wrap slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+				<template if:true={showCoApplicantsPage}>
+					<div
+						class="slds-col slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-m-bottom_small">
+						<lightning-button variant="brand-outline" label={builderCreateNewCoApplicantLabel} title="Approve" stretch
+							icon-name="utility:add" class="btn btn-secondary" onclick={openNewApplicantModal}>
+						</lightning-button>
+					</div>
+				</template>
+				<div
+					class="slds-col slds-p-right_xx-small slds-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+					<template if:false={isFinalPage}>
+						<template if:true={showCancelButton}>
+							<lightning-button class="btn btn-secondary" variant="brand-outline" label={builderGoBackLabel} stretch
+								onclick={handleGoBack}>
+							</lightning-button>
+						</template>
+						<template if:false={showCancelButton}>
+							<lightning-button class="btn btn-secondary" variant="brand-outline" label={builderGoBackLabel} stretch
+								onclick={handlePrevious}>
+							</lightning-button>
+						</template>
+					</template>
+
+				</div>
+				<div if:false={showReviewPage}
+					class="slds-col slds-p-left_xx-small slds-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+					<lightning-button class="btn btn-primary" if:false={isFinalPage} variant="brand" label={builderNextLabel}
+						disabled={disableReSendBtn} stretch onclick={handleNext}></lightning-button>
+				</div>
+				<div
+					class="slds-col slds-p-left_xx-small slds-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+					<lightning-button if:true={showReviewPage} class="btn btn-primary" variant="brand" label={builderSubmitLabel}
+						disabled={disableReSendBtn} stretch onclick={handleSave}></lightning-button>
+				</div>
+				<div
+					class="slds-col slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-m-bottom_small">
+					<lightning-button if:true={isFinalPage} variant="brand" label={builderDoneLabel} onclick={handleDone} title="Done" stretch
+						class="btn btn-primary" >
+					</lightning-button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<c-toast-notification lwc:ref="toast"></c-toast-notification>
+</template>

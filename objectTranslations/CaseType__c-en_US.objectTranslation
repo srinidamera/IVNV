@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Type</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Types</value>
+    </caseValues>
+    <fields>
+        <label><!-- Case Guidance Template --></label>
+        <name>CaseGuidanceTemplate__c</name>
+        <relationshipLabel><!-- Case Types --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client Case Record Type --></label>
+        <name>ClientCaseRecordType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description (English) --></label>
+        <name>DescriptionEnglish__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description (Spanish) --></label>
+        <name>DescriptionSpanish__c</name>
+    </fields>
+    <fields>
+        <help><!-- Brief qualitative overview of the service being provided to the client. --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Recommend limit to a maximum of 3 questions and this will be displayed on the Service Details page over the portal. --></help>
+        <label><!-- Frequently Asked Questions (English) --></label>
+        <name>FrequentlyAskedQuestionsEnglish__c</name>
+    </fields>
+    <fields>
+        <help><!-- Recommend limit to a maximum of 3 questions and this will be displayed on the Service Details page over the portal. --></help>
+        <label><!-- Frequently Asked Questions (Spanish) --></label>
+        <name>FrequentlyAskedQuestionsSpanish__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purpose --></label>
+        <name>HUDPurpose__c</name>
+        <picklistValues>
+            <masterLabel>Disaster Preparedness Assistance</masterLabel>
+            <translation><!-- Disaster Preparedness Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disaster Recovery Assistance</masterLabel>
+            <translation><!-- Disaster Recovery Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homeless Assistance</masterLabel>
+            <translation><!-- Homeless Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Delinquency Post-Purchase</masterLabel>
+            <translation><!-- Non-Delinquency Post-Purchase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not HUD-Reportable</masterLabel>
+            <translation><!-- Not HUD-Reportable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-purchase/Homebuying</masterLabel>
+            <translation><!-- Pre-purchase/Homebuying --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Topics</masterLabel>
+            <translation><!-- Rental Topics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolving or Preventing Forward Mortgage Delinquency or Default</masterLabel>
+            <translation><!-- Resolving or Preventing Forward Mortgage Delinquency or Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolving or Preventing Reverse Mortgage Delinquency or Default</masterLabel>
+            <translation><!-- Resolving or Preventing Reverse Mortgage Delinquency or Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reverse Mortgage</masterLabel>
+            <translation><!-- Reverse Mortgage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Highlights (Spanish) --></label>
+        <name>HighlightsSpanish__c</name>
+    </fields>
+    <fields>
+        <help><!-- Recommend limit to a maximum of 3 bullet points, with each bullet point containing no more than 40 characters, or 130 characters total. This will be displayed on the Service summary card on the portal. --></help>
+        <label><!-- Highlights (English) --></label>
+        <name>Highlights__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Client Lookup --></label>
+        <name>IsClientLookup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Emergency Triage --></label>
+        <name>IsEmergencyTriage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Portal --></label>
+        <name>IsPortal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Type Name (Spanish) --></label>
+        <name>NameSpanish__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required Documents (Spanish) --></label>
+        <name>RequiredDocumentsSpanish__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required Documents --></label>
+        <name>RequiredDocuments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Description (Spanish) --></label>
+        <name>ShortDescriptionSpanish__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a brief (up to 120 characters) summary for the service. This will appear on the portal service page&apos;s summary card. --></help>
+        <label><!-- Short Description (English) --></label>
+        <name>ShortDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- is Reverse Mortage --></label>
+        <name>is_Reverse_Mortage__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

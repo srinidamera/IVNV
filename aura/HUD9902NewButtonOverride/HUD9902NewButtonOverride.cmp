@@ -1,0 +1,72 @@
+<aura:component implements="lightning:actionOverride" access="global">
+    <aura:attribute name="showNewModal" type="Boolean" default="true"/>
+    <aura:attribute name="startDate" type="Date"/>
+    <aura:attribute name="endDate" type="Date"/>
+    <aura:attribute name="selectedQuarter" type="String"/>
+    <aura:attribute name="optionsQuarter" type="List" default="[
+        { id: '', label: '--None--'},
+        { id: 'Quarter 1', label: 'Q1 (10/1 - 12/31)'},
+        { id: 'Quarter 2', label: 'Q2 (10/1 - 3/31)' },
+        { id: 'Quarter 3', label: 'Q3 (10/1 - 6/30)' },
+        { id: 'Quarter 4', label: 'Q4 (10/1 - 9/30)' }
+    ]"/>
+    <aura:attribute name="optionsFY" type="List"/>
+    <aura:attribute name="selectedFY" type="String"/>
+    <aura:attribute name="fields" type="String[]" 
+        default="['Quarter__c', 'PeriodStartDate__c', 'PeriodEndDate__c', 'Version__c', 'FiscalYear__c']"/>
+    <aura:handler  name="init" value="{!this}" action="{!c.doinit}"/>
+
+    <aura:if isTrue="{!v.showNewModal}">
+
+<section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
+    <div class="slds-modal__container">
+        <lightning:recordEditForm  aura:id="x9902Form" objectApiName="X9902__c" 
+            onsubmit="{!c.handleSubmit}" onsuccess="{!c.handleSuccess}">
+        <lightning:buttonIcon class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+            iconName="utility:close" variant="bare" onclick="{! c.handleClose }" 
+            alternativeText="Cancel and close" 
+            title="Cancel and close" 
+            />
+        <div class="slds-modal__header">
+            <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">New HUD 9902</h1>
+        </div>
+    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+        <lightning:messages />
+        <lightning:inputField fieldName="Quarter__c" class="slds-hide" style="display:none"/>
+        <lightning:inputField fieldName="FiscalYear__c" class="slds-hide" style="display:none"/>
+        <lightning:inputField fieldName="PeriodStartDate__c" class="slds-hide" style="display:none"/>
+        <lightning:inputField fieldName="PeriodEndDate__c" class="slds-hide" style="display:none"/>
+        <div class="slds-grid slds-grid_vertical">
+            <div class="slds-col">
+                <lightning:select aura:id="quarterPicklist" name="quarter" label="Quarter" onchange="{!c.handleQuarterChange}" value="{!v.selectedQuarter}">
+                    <aura:iteration items="{!v.optionsQuarter}" var="option">
+                        <option text="{!option.label}" value="{!option.id}" selected="{!option.selected}"/>
+                    </aura:iteration>
+                </lightning:select>
+            </div>
+            <div class="slds-col">
+                <lightning:select aura:id="fiscalYearPicklist" name="fiscalYear" label="Fiscal Year" onchange="{!c.handleYearChange}" value="{!v.selectedFY}">
+                    <aura:iteration items="{!v.optionsFY}" var="option">
+                        <option text="{!option.label}" value="{!option.id}" selected="{!option.selected}"/>
+                    </aura:iteration>
+                </lightning:select>
+            </div>
+            <div class="slds-col">
+                <lightning:input aura:id="startDate"  type="date" name="startDate" value="{!v.startDate}" label="Period Start Date" disabled="true"/>
+            </div>
+            <div class="slds-col">
+                <lightning:input aura:id="endDate" type="date" name="endDate" value="{!v.endDate}" label="Period End Date" disabled="true"/>
+            </div>
+        </div>
+    </div>
+    <div class="slds-modal__footer">
+        <button class="slds-button slds-button_neutral" aria-label="Cancel and close"  onclick="{! c.handleClose }" >Cancel</button>
+        <lightning:button class="slds-button slds-button_brand" type="submit" label="Save" />
+        
+    </div>
+    </lightning:recordEditForm>
+    </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </aura:if>
+</aura:component>

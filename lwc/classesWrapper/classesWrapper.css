@@ -1,0 +1,24 @@
+.service-tile {
+  border-radius: 10px;
+  position: relative;
+  overflow: auto;
+  background: rgba(255, 255, 255, 1);
+}
+
+.h-2 {
+  font-size: var(--dxp-s-text-heading-large-font-size) !important;
+  font-weight: var(--dxp-s-text-heading-large-font-weight) !important;
+}
+
+.h-3 {
+  font-size: var(--dxp-s-text-heading-medium-font-size) !important;
+  font-weight: var(--dxp-s-text-heading-medium-font-weight) !important;
+}
+
+.border-left {
+  --sds-c-button-radius-border: 4px 0px 0px 4px !important;
+}
+
+.border-right {
+  --sds-c-button-radius-border: 0px 4px 4px 0px !important;
+}

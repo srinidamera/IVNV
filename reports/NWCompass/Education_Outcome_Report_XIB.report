@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>sumoapp__Attendee__c$sumoapp__EventName__c</field>
+    </columns>
+    <columns>
+        <field>sumoapp__Attendee__c$Name</field>
+    </columns>
+    <columns>
+        <field>sumoapp__Attendee__c$sumoapp__ContactRelation__c</field>
+    </columns>
+    <columns>
+        <field>sumoapp__Attendee__c$ClientNumber__c</field>
+    </columns>
+    <columns>
+        <field>sumoapp__Attendee__c$Outcome__c</field>
+    </columns>
+    <columns>
+        <field>sumoapp__Attendee__c$DurationinMinutes__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Education Outcome Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SUMO_Attendee__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>sumoapp__Attendee__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

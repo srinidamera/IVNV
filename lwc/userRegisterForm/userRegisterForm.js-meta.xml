@@ -1,0 +1,250 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>57.0</apiVersion>
+	<isExposed>true</isExposed>
+	<masterLabel>Registration Form</masterLabel>
+	<targets>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+	 <targetConfig targets="lightningCommunity__Default">
+			 <property
+                type="String"
+                name="signUpTitle"
+                label="Sign Up Title"
+                default="Sign Up"
+				translatable="true"
+                
+            />
+			<property
+                type="String"
+                name="learnMoreLinkTitle"
+                label="Delete"
+                default="Sign Up"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="description"
+                label="Description"
+                default="Please enter your information below."
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="preferredLanguage"
+                label="Preferred Language Label"
+                default="Preferred Language"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="firstNameLabel"
+                label="First Name Label"
+                default="First Name"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="middleNameLabel"
+                label="Middle Name Label"
+                default="Middle Name"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="lastNameLabel"
+                label="Last Name Label"
+                default="Last Name"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="suffixLabel"
+                label="Suffix Label"
+                default="Suffix"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="bestTimeToCallLabel"
+                label="Best Time To Call Label"
+                default="Best Time To Call"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="emailAddressLabel"
+                label="Email Address Label"
+                default="Email Address"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="confirmEmailAddressLabel"
+                label="Confirm Email Address Label"
+                default="Confirm Email Address"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="phoneNumberLabel"
+                label="Phone Number Label"
+                default="Phone Number"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="desiredServiceLabel"
+                label="Desired Service Label"
+                default="Desired Service"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="howDidYouHearLabel"
+                label="How did you hear about us Label"
+                default="How did you hear about us"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="pleaseSpecifylabel"
+                label="Please specify how you heard about us Label"
+                default="Please specify how you heard about us"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="reviewElectronicLabel"
+                label="Review Electronic Consent Disclosures Label"
+                default="Review Electronic Consent Disclosures"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="createNewAccountLabel"
+                label="Create New Account Label"
+                default="Create New Account"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="goBackLabel"
+                label="Go Back Label"
+                default="Go Back"
+				translatable="true"
+            />
+			<property
+                type="String"
+                name="loginwithExistingAccountLabel"
+                label="Login with Existing Account Label"
+                default="Login with Existing Account"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="invalidEmailFormat"
+                label="Invalid Email Format Warning Message"
+                default="You have entered an invalid format"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="emailAddressNotMatchWarning"
+                label="Email Address not match Warning Message"
+                default="Email addresses do not match"
+				translatable="true"
+            /> 
+			<property
+                type="String"
+                name="phoneNumberDigitWarning"
+                label="Phone Number Digit Warning"
+                default="The phone number must be 10 digits"
+				translatable="true"
+            /> 
+            <property
+                type="String"
+                name="userExistErrorMessage"
+                label="User Already Exist Error Message"
+                default="This email address already has an account associated to it, please enter another email address to create a new account."
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="electronicConsentDeclineButtonTitle"
+                label="Electronic Consent Decline Button Title"
+                default="Decline" 
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="electronicConsentAcceptButtonTitle"
+                label="Electronic Consent Accept Button Title"
+                default="Accept"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="reviewElectronicConsentText"
+                label="Review Electronic Consent Text"
+                default="Review Electronic Consent Disclosures"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="disclousureConsentError"
+                label="Disclousure Consent Decline Error Message"
+                default="Need to accept and click the disclosure checkbox in order to create an account."
+				translatable="true"
+            />
+
+            <property
+                type="String"
+                name="confirmationTitle"
+                label="Title for post Sign up Confirmation Screen"
+                default="New Account Successfully Created"
+				translatable="true"
+            />
+            <property
+                type="ContentReference"
+                name="confirmationDescriptionKey"
+                label="Content Key For Confirmation Screen Description"
+            />
+            <property
+                type="String"
+                name="confirmationScrBtnLabel"
+                label="Label for post Sign up Confirmation Screen button"
+                default="Done"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="initialToastPopupLabel"
+                label="Intial Toast Pop-Up Label"
+                default="Sign-Up for an account to Enroll"
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="initialToastPopupDescription"
+                label="Intial Toast Pop-Up Description"
+                default="To begin, enter your information below."
+				translatable="true"
+            />
+            <property
+                type="String"
+                name="electronicContentDisclosureHeader"
+                label="Electronic Content Disclosure Header"
+                default="Electronic Disclosures Consent"
+				translatable="true"
+            />
+            <property
+                type="ContentReference"
+                name="electronicContentDisclosure"
+                label="Electronic Content Disclosure"
+            />
+        </targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

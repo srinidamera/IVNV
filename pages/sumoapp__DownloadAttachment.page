@@ -1,0 +1,69 @@
+<apex:page controller="sumoapp.DownloadAttachmentController"
+           showHeader="false"
+           standardStylesheets="false"
+           sidebar="false"
+           applyHtmlTag="false"
+           applyBodyTag="false"
+           docType="html-5.0">
+    <html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible"
+              content="ie=edge" />
+        <title>{!$Label.DOWNLOAD}</title>
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1" />
+        <apex:slds />
+    </head>
+
+    <body>
+        <div class="slds-scope">
+            <div class="slds-text-align_center slds-p-around_small">
+                <apex:outputPanel rendered="{!NOT(isImageType)}"
+                                  layout="block">
+                    <p class="slds-text-heading_small slds-m-bottom_medium">{!name}</p>
+                    <!-- iframe - workaround for safari -->
+                    <iframe style="border: none;"
+                            srcdoc='
+                        <style type="text/css">
+                            * {
+                                margin: 0;
+                                padding: 0
+                            }
+                            .button-wrapper {
+                                display: flex;
+                                justify-content: center;
+                            }
+                            .download-button {
+                                padding: 0 1rem;
+                                display: inline-flex;
+                                background-color: rgb(1, 118, 211);
+                                color: rgb(255, 255, 255);
+                                border: 1px solid rgb(1, 118, 211);
+                                border-radius: 0.25rem;
+                                line-height: 1.875rem;
+                                text-decoration: none;
+                                font-size: 13px;
+                                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                            }
+                            .download-button:hover {
+                                background-color: rgb(1, 68, 134);
+                                border-color: rgb(1, 68, 134);
+                            }
+                        </style>
+                        <div class="button-wrapper">
+                            <a href="data:{!contentType};base64,{!bodyEncoded}" download="{!name}" class="download-button">{!$Label.DOWNLOAD}</a>
+                        </div>'></iframe>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!isImageType}"
+                                  layout="block">
+                    <img src="data:{!contentType};base64,{!bodyEncoded}"
+                         alt="{!name}" />
+                </apex:outputPanel>
+            </div>
+        </div>
+    </body>
+
+    </html>
+</apex:page>

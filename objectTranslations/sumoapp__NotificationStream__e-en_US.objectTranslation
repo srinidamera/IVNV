@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Body --></label>
+        <name>sumoapp__Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Relation --></label>
+        <name>sumoapp__ContactRelation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Id --></label>
+        <name>sumoapp__EventId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Relation --></label>
+        <name>sumoapp__LeadRelation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recipient --></label>
+        <name>sumoapp__Recipient__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Time --></label>
+        <name>sumoapp__SendTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sender --></label>
+        <name>sumoapp__Sender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>sumoapp__Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- SUMO Event Id --></label>
+        <name>sumoapp__SumoEventId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>sumoapp__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>sumoapp__Version__c</name>
+    </fields>
+</CustomObjectTranslation>

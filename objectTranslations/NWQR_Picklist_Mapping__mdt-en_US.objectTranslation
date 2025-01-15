@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>NWQR Picklist Mapping</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>NWQR Picklists Mapping</value>
+    </caseValues>
+    <fields>
+        <label><!-- Field APIName --></label>
+        <name>FieldApiName__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will be used in NWQR report --></help>
+        <label><!-- Label --></label>
+        <name>Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object API Name --></label>
+        <name>ObjectApiName__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the picklist value from original field --></help>
+        <label><!-- Value --></label>
+        <name>Value__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

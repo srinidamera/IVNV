@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Service Page",
+  "contentBody" : {
+    "activeViewId" : "Service_Page",
+    "configurationTags" : [ ],
+    "pageAccess" : "Public",
+    "routeType" : "custom-service",
+    "urlPrefix" : "service"
+  },
+  "urlName" : "service-page"
+}

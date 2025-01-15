@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>USERS_LINK</fullName>
+        <default>false</default>
+        <label>User&apos;s Link</label>
+    </customValue>
+    <customValue>
+        <fullName>ZOOM</fullName>
+        <default>false</default>
+        <label>Zoom</label>
+    </customValue>
+    <customValue>
+        <fullName>MICROSOFT_TEAMS</fullName>
+        <default>false</default>
+        <label>Microsoft Teams</label>
+    </customValue>
+    <masterLabel>Web Conference Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

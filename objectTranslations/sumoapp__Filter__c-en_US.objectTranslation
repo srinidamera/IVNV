@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Global --></label>
+        <name>sumoapp__Global__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>sumoapp__Value__c</name>
+    </fields>
+</CustomObjectTranslation>

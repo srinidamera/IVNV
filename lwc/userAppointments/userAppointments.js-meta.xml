@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+	<isExposed>true</isExposed>
+	<masterLabel>User Appointments</masterLabel>
+	<targets>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightningCommunity__Default">
+			<property
+					type="Integer"
+					name="tileHeight"
+					label="Height for cards in pixels"
+					default="104"
+			/>
+			<property
+					type="String"
+					name="labelViewDetails"
+					label="Label for 'View Details'"
+					default="View Details"
+					translatable="true"
+			/>
+
+            <!-- Appointments -->
+			<property
+					type="String"
+					name="labelBooked"
+					label="Label for 'Booked'"
+					default="Booked"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelCanceled"
+					label="Label for 'Canceled'"
+					default="Canceled"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelRescheduled"
+					label="Label for 'Rescheduled'"
+					default="Rescheduled"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelPurpose"
+					label="Label for 'Purpose'"
+					default="Purpose"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelAppointmentDateTime"
+					label="Label for 'Appointment Date and Time'"
+					default="Appointment Date and Time"
+					translatable="true"
+			/>
+		</targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

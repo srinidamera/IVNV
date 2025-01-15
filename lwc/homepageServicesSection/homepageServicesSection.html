@@ -1,0 +1,24 @@
+<template>
+  <div class="slds-m-bottom_large">
+    <c-user-services
+      tile-height={tileHeight}
+      label-hyperlink={labelHyperlink}
+      label-last-updated={labelLastUpdated}
+      label-status-new={labelStatusNew}
+      label-status-on-hold={labelStatusOnHold}
+      label-status-converted={labelStatusConverted}
+      label-status-closed-incomplete={labelStatusClosedIncomplete}
+    ></c-user-services>
+  </div>
+
+  <!-- Buttons -->
+  <div>
+    <c-multi-buttons
+      btn-labels={btnLabels}
+      btn-types={btnTypes}
+      redirect-to-page={redirectToPage}
+      query-params={queryParams}
+      horizontal-align={horizontalAlign}
+    ></c-multi-buttons>
+  </div>
+</template>

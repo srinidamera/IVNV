@@ -1,0 +1,462 @@
+<template>
+   <template if:true={showSpinner}>
+      <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+      </lightning-spinner>
+   </template>
+
+   <template if:true={showPrintActionModal}>
+      <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+         class="slds-modal slds-fade-in-open" height="500px">
+         <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+            class="slds-modal slds-fade-in-open slds-modal_large">
+            <div class="slds-modal__container">
+               <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                  onclick={closePrintActionPlanModal}>
+                  <lightning-icon icon-name="utility:close" size="small"></lightning-icon>
+                  <span class="slds-assistive-text">Close</span>
+               </button>
+               <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                  <iframe src={actionPlanPrintUrl} height={height} width={width} referrerpolicy={referrerPolicy}
+                     title="" allow="geolocation" scrolling="no"></iframe>
+               </div>
+               <div class="slds-modal__footer">
+                  <button class="slds-button slds-button_neutral" aria-label="Cancel and close"
+                     onclick={closePrintActionPlanModal}>Cancel</button>
+               </div>
+            </div>
+         </section>
+      </section>
+      <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+   </template>
+   <!-- modal end -->
+   <lightning-card>
+      
+      <div class="slds-text-align_left" if:true={clientCase.Action_Plan_Created_Date__c}>
+         Action Plan Created Date : {clientCase.Action_Plan_Created_Date__c}
+      </div>
+      <div class="slds-text-align_right" if:false={isIntakeUser}>
+         <lightning-button-group>
+            <lightning-button onclick={addNewGoal} label="New Goal"></lightning-button>
+            <lightning-button onclick={showPrintActionPlanModal} label="Print Action Plan" icon-name="utility:print">
+            </lightning-button>
+         </lightning-button-group>
+      </div>
+      <br />
+      <template for:each={actionPlans} for:item="actionPlan" for:index="index">
+         <!--<lightning-card key={actionPlan.goalId} class="slds-p-around_large">-->
+         <div key={actionPlan.goalId} class="slds-p-around_x-small">
+            <!--<div  class="slds-box">-->
+            <div style="border: solid;border-radius: 0.25rem;border-color: #c9c9c9;">
+               <div class="slds-grid slds-wrap slds-p-around_medium">
+                  <div class="slds-col slds-size_5-of-12">
+                     <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-6">
+                           <div class="slds-grid slds-float_left">
+                              <div class="slds-col">
+                                 <lightning-button-icon  disabled={isIntakeUser} data-index={index} if:true={actionPlan.viewModeCollapsed}
+                                    icon-name="utility:expand_all" size="x-small" class="slds-m-right_x-small"
+                                    variant="container" onclick={handleViewMode}>
+                                 </lightning-button-icon>
+                                 <lightning-button-icon data-index={index} if:false={actionPlan.viewModeCollapsed}
+                                    icon-name="utility:collapse_all" size="x-small" class="slds-m-right_x-small"
+                                    variant="container" onclick={handleViewMode}>
+                                 </lightning-button-icon>
+                              </div>
+                              <div class="slds-col">
+                                 <b>Goal</b>:
+                              </div>
+                           </div>
+                        </div>
+                        <div if:false={actionPlan.showGoalOtherName} class="slds-col slds-size_5-of-6">
+                           {actionPlan.goalName}
+                        </div>
+                        <div if:true={actionPlan.showGoalOtherName} class="slds-col slds-size_5-of-6">
+                           {actionPlan.goalOtherName}
+                        </div>
+                        <!--&nbsp; <b>Goal</b>: {actionPlan.goalName}-->
+                     </div>
+                  </div>
+                  <div class="slds-col slds-size_7-of-12">
+                     <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_3-of-12">
+                           <span><b>Type</b>: {actionPlan.goalType}</span>
+                        </div>
+                        <div if:false={actionPlan.isGoalCompleted} class="slds-col slds-size_5-of-12 slds-p-left_small">
+                           <span><b>Due Date</b>: {actionPlan.goalDueDate}</span>
+                        </div>
+                        <div if:true={actionPlan.isGoalCompleted} class="slds-col slds-size_5-of-12 slds-p-left_small">
+                           <span><b>Completion Date</b>: {actionPlan.goalCompletionDate}</span>
+                        </div>
+                        <div class="slds-col slds-size_3-of-12" style="text-align: center;">
+                           <p class={actionPlan.statusClass}>{actionPlan.goalStatus}</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-12 slds-text-align_right slds-p-right_small">
+                           <lightning-button-icon disabled={isIntakeUser} icon-name="utility:edit" alternative-text="Edit" title="Edit"
+                              size='x-small' variant="container" onclick={handleGoalEdit} data-index={index}>
+                           </lightning-button-icon>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <template if:false={actionPlan.viewModeCollapsed}>
+                  <div class="slds-grid slds-wrap slds-p-around_x-small">
+                     <div class="slds-col">
+                        <template for:each={actionPlan.obstacleList} for:item="obstacle" for:index="obstacleIndex">
+                           <lightning-card key={obstacle.obstacleId}>
+                              <div class=" slds-theme_shade slds-box slds-p-around_medium">
+                                 <div class="slds-grid slds-wrap ">
+                                    <div if:false={obstacle.showObstacleOtherName} class="slds-col">
+                                       <b>Obstacle</b>: {obstacle.obstacleName}
+                                    </div>
+                                    <div if:true={obstacle.showObstacleOtherName} class="slds-col">
+                                       <b>Obstacle</b>: {obstacle.obstacleOtherName}
+                                    </div>
+                                 </div>
+                                 <br />
+                                 <template for:each={obstacle.solutionList} for:item="sol" for:index="solIndex">
+                                    <!--<lightning-card key={sol.solutionId}>-->
+                                    <div key={sol.solutionId} class="slds-theme_shade slds-box slds-p-around_medium"
+                                       style="background-color: white;">
+                                       <div class="slds-grid slds-wrap ">
+                                          <div if:false={sol.showSolutionOtherName} class="slds-col">
+                                             <b>Solution</b>: {sol.solutionName}
+                                          </div>
+                                          <div if:true={sol.showSolutionOtherName} class="slds-col">
+                                             <b>Solution</b>: {sol.solutionOtherName}
+                                          </div>
+                                       </div>
+                                       <br />
+                                       <lightning-card>
+                                          <div class="slds-box slds-p-around_medium">
+                                             <div class="slds-grid slds-wrap ">
+                                                <div class="slds-col slds-size_6-of-12">
+                                                   <b>Client Action</b>: {sol.clientAction}
+                                                </div>
+                                                <div class="slds-col slds-size_6-of-12">
+                                                   <div class="slds-grid slds-wrap ">
+                                                      <div class="slds-col slds-size_1-of-6">
+                                                      </div>
+                                                      <div if:false={sol.isClientActionCompleted}
+                                                         class="slds-col slds-size_3-of-6">
+                                                         <b>Due Date</b>: {sol.clientActionDueDate}
+                                                      </div>
+                                                      <div if:true={sol.isClientActionCompleted}
+                                                         class="slds-col slds-size_3-of-6">
+                                                         <b>Completion Date</b>: {sol.clientActionCompletionDate}
+                                                      </div>
+                                                      <div class="slds-col slds-size_2-of-6">
+                                                         <b>Status</b>: {sol.clientActionStatus}
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </lightning-card>
+                                       <lightning-card>
+                                          <div class="slds-box slds-p-around_medium">
+                                             <div class="slds-grid slds-wrap">
+                                                <div class="slds-col slds-size_6-of-12">
+                                                   <b>Counselor Action</b>: {sol.counselorAction}
+                                                </div>
+                                                <div class="slds-col slds-size_6-of-12">
+                                                   <div class="slds-grid slds-wrap ">
+                                                      <div class="slds-col slds-size_1-of-6">
+                                                      </div>
+                                                      <div if:false={sol.isCounselorActionCompleted}
+                                                         class="slds-col slds-size_3-of-6">
+                                                         <b>Due Date</b>: {sol.counselorActionDueDate}
+                                                      </div>
+                                                      <div if:true={sol.isCounselorActionCompleted}
+                                                         class="slds-col slds-size_3-of-6">
+                                                         <b>Completion Date</b>: {sol.counselorActionCompletionDate}
+                                                      </div>
+                                                      <div class="slds-col slds-size_2-of-6">
+                                                         <b>Status</b>: {sol.counselorActionStatus}
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </lightning-card>
+                                    </div>
+                                    <br key={sol.solutionId}>
+                                    <!--</lightning-card>-->
+                                 </template>
+                              </div>
+                           </lightning-card>
+                        </template>
+                     </div>
+                  </div>
+               </template>
+            </div>
+         </div>
+         <!--</lightning-card>-->
+      </template>
+   </lightning-card>
+
+   <template if:true={showNewOrEditModal}>
+      <div class="slds-backdrop slds-backdrop_open"></div>
+      <div role="dialog" tabindex="-1" aria-modal="true" class="slds-modal slds-fade-in-open slds-modal_medium">
+         <div class="slds-modal__container">
+            <template if:true={showSpinnerPopup}>
+               <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+               </lightning-spinner>
+            </template>
+            <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+               onclick={handleCancel}>
+               <lightning-icon icon-name="utility:close" size="small"></lightning-icon>
+               <span class="slds-assistive-text">Close</span>
+            </button>
+            <div class="slds-modal__header">
+               <div class="slds-media">
+                  <lightning-icon icon-name="standard:goals" size="small" class="slds-media__figure">
+                  </lightning-icon>
+                  <div class="slds-media__body">
+                     <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">
+                        {clientName}'s Goals
+                     </h2>
+                  </div>
+               </div>
+            </div>
+            <div class="slds-modal__content slds-p-around_medium">
+               <div class="slds-grid slds-wrap">
+                  <div class="slds-col slds-size_1-of-3 slds-p-right_small slds-p-bottom_medium">
+                     <lightning-combobox placeholder="Please select a Goal" value={selectedRecord.goalName} label="Goal"
+                        name="goalName" required class="requiredValidation" options={goalDefaultValuesPicklistOptions}
+                        onchange={handleGoalChange}></lightning-combobox>
+                  </div>
+                  <div class="slds-col slds-size_1-of-3 slds-p-right_small slds-p-bottom_medium">
+                     <lightning-input placeholder="Please enter Details" type="text" label="Details" name="goalDetail"
+                        onchange={handleGoalChange} value={selectedRecord.goalDetail}></lightning-input>
+                  </div>
+                  <div class="slds-col slds-size_1-of-3 slds-p-right_small slds-p-bottom_medium">
+                     <lightning-combobox placeholder="Please select a Goal Type" name="goalType"
+                        value={selectedRecord.goalType} label="Type" required class="requiredValidation"
+                        options={goalTypePicklistOptions} onchange={handleGoalChange}></lightning-combobox>
+                  </div>
+                  <div if:true={selectedRecord.showGoalOtherName}
+                     class="slds-col slds-size_1-of-3 slds-p-right_small slds-p-bottom_medium">
+                     <lightning-input placeholder="Please enter Goal" type="text" label="Custom Goal Name"
+                        name="goalOtherName" required class="requiredValidation" onchange={handleGoalChange}
+                        value={selectedRecord.goalOtherName} maxlength="255"></lightning-input>
+                  </div>
+                  <div class="slds-col slds-size_1-of-3 slds-p-right_small slds-p-bottom_medium">
+                     <lightning-input type="date" placeholder="Please select Due Date" label="Due Date"
+                        name="goalDueDate" value={selectedRecord.goalDueDate} onchange={handleGoalChange}>
+                     </lightning-input>
+                  </div>
+                  <div class="slds-col slds-size_1-of-3 slds-p-right_small slds-p-bottom_medium">
+                     <lightning-combobox placeholder="Please select Status" name="goalStatus"
+                        value={selectedRecord.goalStatus} label="Status" options={goalStatusPicklistOptions}
+                        onchange={handleGoalChange}></lightning-combobox>
+                  </div>
+               </div>
+               <template for:each={selectedRecord.obstacleList} for:item="obs" for:index="obsindex">
+                  <div key={obs.obstacleId} class="slds-box slds-theme_shade">
+                     <div class="slds-grid slds-gutters ">
+                        <div class="slds-col slds-size_9-of-12 slds-grid">
+                           <div class="slds-grid ">
+                              <lightning-icon onclick={handleObstacleHideShow} data-obsindex={obsindex}
+                                 data-index={index} if:false={obs.viewModeCollapsed} icon-name="utility:switch"
+                                 size="small">
+                              </lightning-icon>
+                              &nbsp;&nbsp;
+                              <lightning-icon onclick={handleObstacleHideShow} data-obsindex={obsindex}
+                                 data-index={index} if:true={obs.viewModeCollapsed} icon-name="utility:chevronright"
+                                 size="small">
+                              </lightning-icon>
+                              <b>Obstacle:  </b> &nbsp; {obs.obstacleName}
+                           </div>
+                        </div>
+                        <!-- Remove Obstacle Button -->
+                        <template if:true={showButton}>
+                           <div class="slds-col slds-size_3-of-12 slds-text-align_right">
+                              <lightning-button style="padding-left:8px" variant="destructive"
+                                 icon-name="utility:delete" label="Remove Obstacle" data-obsindex={obsindex}
+                                 onclick={removeObstacle}>
+                              </lightning-button>
+                           </div>
+                        </template>
+                     </div>
+                     <br />
+                     <div if:false={obs.viewModeCollapsed}>
+                        <div class="slds-grid slds-wrap">
+                           <div class="slds-col slds-size_1-of-3 slds-p-right_small slds-p-bottom_medium">
+                              <lightning-combobox label="Obstacle" value={obs.obstacleName} name="obstacleName"
+                                 data-obsindex={obsindex} required class="requiredValidation"
+                                 options={obstacleDefaultValuesPicklistOptions} onchange={handleObstacleChange}>
+                              </lightning-combobox>
+                           </div>
+                           <div class="slds-col slds-size_2-of-3 slds-p-right_small slds-p-bottom_medium">
+                              <lightning-input type="text" label="Details" name="obstacleDetail"
+                                 data-obsindex={obsindex} onchange={handleObstacleChange} value={obs.obstacleDetail}>
+                              </lightning-input>
+                           </div>
+                        </div>
+                        <div class="slds-grid slds-wrap">
+                           <div if:true={obs.showObstacleOtherName}
+                              class="slds-col slds-size_1-of-3 slds-p-right_small slds-p-bottom_medium">
+                              <lightning-input placeholder="Please enter obstacle" type="text"
+                                 label="Custom Obstacle Name" name="obstacleOtherName" data-obsindex={obsindex} required
+                                 class="requiredValidation" onchange={handleObstacleChange}
+                                 value={obs.obstacleOtherName} maxlength="255"></lightning-input>
+                           </div>
+                        </div>
+                        <template for:each={obs.solutionList} for:item="sol" for:index="solindex">
+                           <div key={sol.solutionId} class="slds-theme_default slds-box">
+                              <div class="slds-grid slds-gutters ">
+                                 <div class="slds-col slds-size_9-of-12 slds-grid ">
+                                    <div class="slds-grid ">
+                                       <lightning-icon onclick={handlerSolutionHideShow} data-obsindex={obsindex}
+                                    data-solindex={solindex} if:false={sol.viewModeCollapsed} icon-name="utility:switch"
+                                    size="small">
+                                 </lightning-icon>
+                                 &nbsp; &nbsp;
+                                       <lightning-icon onclick={handlerSolutionHideShow} data-obsindex={obsindex}
+                                    data-solindex={solindex} if:true={sol.viewModeCollapsed}
+                                    icon-name="utility:chevronright" size="small">
+                                 </lightning-icon>
+                                 <b>Solution: </b> &nbsp; {sol.solutionName}
+                                    </div>
+                                 </div>
+                                 <!-- Remove Solution Button -->
+                                 <template if:true={showButton}>
+                                    <div class="slds-col slds-size_3-of-12 slds-text-align_right">
+                                       <lightning-button style="padding-left:8px" variant="destructive"
+                                          icon-name="utility:delete" label="Remove Solution"  data-solution-id={sol.solutionId} 
+                                           data-solindex={solindex} data-obsindex={obsindex}
+                                          onclick={removeSolution}>
+                                       </lightning-button>
+                                    </div>
+                                 </template>
+                              </div>
+                              <!-- <div class="slds-col">
+                                 <lightning-icon onclick={handlerSolutionHideShow} data-obsindex={obsindex}
+                                    data-solindex={solindex} if:false={sol.viewModeCollapsed} icon-name="utility:switch"
+                                    size="small">
+                                 </lightning-icon>
+                                 &nbsp;
+                                 <lightning-icon onclick={handlerSolutionHideShow} data-obsindex={obsindex}
+                                    data-solindex={solindex} if:true={sol.viewModeCollapsed}
+                                    icon-name="utility:chevronright" size="small">
+                                 </lightning-icon>
+                                 <b>Solution: </b> {sol.solutionName}
+                              </div> -->
+                              <div if:false={sol.viewModeCollapsed}>
+                                 <div class=" slds-grid slds-wrap">
+                                    <div class="slds-col slds-size_1-of-3 slds-p-right_small slds-p-bottom_medium">
+                                       <lightning-combobox label="Solution" value={sol.solutionName} name="solutionName"
+                                          data-solindex={solindex} data-obsindex={obsindex} required
+                                          class="requiredValidation" options={solutionDefaultValuesPicklistOptions}
+                                          onchange={handleSolutionChange}></lightning-combobox>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-3 slds-p-right_small slds-p-bottom_medium">
+                                       <lightning-input label="Details" type="text" data-solindex={solindex}
+                                          data-obsindex={obsindex} name="solutionDetail" value={sol.solutionDetail}
+                                          onchange={handleSolutionChange}>
+                                       </lightning-input>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-3 slds-p-right_small slds-p-bottom_medium">
+                                       <lightning-combobox label="Status" value={sol.solutionStatus}
+                                          name="solutionStatus" data-solindex={solindex} data-obsindex={obsindex}
+                                          options={solutionStatusPicklistOptions}
+                                          onchange={handleSolutionChange}></lightning-combobox>
+                                    </div>
+                                    <div if:true={sol.showSolutionOtherName}
+                                       class="slds-col slds-size_1-of-3 slds-p-right_small slds-p-bottom_medium">
+                                       <lightning-input placeholder="Please enter solution" type="text"
+                                          label="Custom Solution Name" name="solutionOtherName" data-obsindex={obsindex}
+                                          data-solindex={solindex} required class="requiredValidation"
+                                          onchange={handleSolutionChange} value={sol.solutionOtherName}
+                                          maxlength="255"></lightning-input>
+                                    </div>
+                                 </div>
+                                 <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-size_2-of-6 slds-p-right_small slds-p-bottom_medium">
+                                       <lightning-input type="text" label="Client Action" data-solindex={solindex}
+                                          data-obsindex={obsindex} name="clientAction" required
+                                          class="requiredValidation" value={sol.clientAction}
+                                          onchange={handleSolutionChange}>
+                                       </lightning-input>
+                                    </div>
+                                    <div class="slds-col slds-size_2-of-6 slds-p-right_small slds-p-bottom_medium">
+                                       <lightning-input type="text" label="Details" data-solindex={solindex}
+                                          data-obsindex={obsindex} name="clientActionDetail"
+                                          value={sol.clientActionDetail} onchange={handleSolutionChange}>
+                                       </lightning-input>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-6 slds-p-right_small slds-p-bottom_medium">
+                                       <lightning-input type="date" label="Due Date" data-solindex={solindex}
+                                          data-obsindex={obsindex} name="clientActionDueDate" required
+                                          class="requiredValidation" value={sol.clientActionDueDate}
+                                          onchange={handleSolutionChange}>
+                                       </lightning-input>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-6 slds-p-right_small slds-p-bottom_medium">
+                                       <lightning-combobox label="Status" value={sol.clientActionStatus}
+                                          name="clientActionStatus" data-solindex={solindex} data-obsindex={obsindex}
+                                          options={taskStatusPicklistOptions}
+                                          onchange={handleSolutionChange}></lightning-combobox>
+                                    </div>
+                                 </div>
+                                 <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-size_2-of-6 slds-p-right_small slds-p-bottom_medium">
+                                       <lightning-input type="text" label="Counselor Action" data-solindex={solindex}
+                                          data-obsindex={obsindex} name="counselorAction" required
+                                          class="requiredValidation" value={sol.counselorAction}
+                                          onchange={handleSolutionChange}>
+                                       </lightning-input>
+                                    </div>
+                                    <div class="slds-col slds-size_2-of-6 slds-p-right_small slds-p-bottom_medium">
+                                       <lightning-input type="text" label="Details" data-solindex={solindex}
+                                          data-obsindex={obsindex} name="counselorActionDetail"
+                                          value={sol.counselorActionDetail} onchange={handleSolutionChange}>
+                                       </lightning-input>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-6 slds-p-right_small slds-p-bottom_medium">
+                                       <lightning-input type="date" label="Due Date" data-solindex={solindex}
+                                          data-obsindex={obsindex} name="counselorActionDueDate" required
+                                          class="requiredValidation" value={sol.counselorActionDueDate}
+                                          onchange={handleSolutionChange}>
+                                       </lightning-input>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-6 slds-p-right_small slds-p-bottom_medium">
+                                       <lightning-combobox label="Status" value={sol.counselorActionStatus}
+                                          name="counselorActionStatus" data-solindex={solindex} data-obsindex={obsindex}
+                                          options={taskStatusPicklistOptions}
+                                          onchange={handleSolutionChange}></lightning-combobox>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <br key={sol.solutionId}>
+                        </template>
+                        <template if:true={obs.showAddSolutionAction}>
+                           <br />
+                           <lightning-button-group>
+                              <lightning-button variant="neutral" icon-name="utility:add" label="New Solution/Action"
+                                 data-obsindex={obsindex} onclick={addNewSolution}>
+                              </lightning-button>
+                           </lightning-button-group>
+                        </template>
+                     </div>
+                  </div>
+                  <br key={obs.Id} />
+               </template>
+               <lightning-button-group>
+                  <lightning-button if:true={selectedRecord.goalName} variant="brand" icon-name="utility:add"
+                     onclick={addNewObstacle} label="New Obstacle">
+                  </lightning-button>
+               </lightning-button-group>
+            </div>
+            <div class="slds-modal__footer">
+               <div class="slds-m-top_medium">
+                  <lightning-button label="Save" variant="brand" onclick={handleSave}></lightning-button>
+                  <lightning-button label="Cancel" onclick={handleCancel} class="slds-m-left_x-small">
+                  </lightning-button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </template>
+</template>

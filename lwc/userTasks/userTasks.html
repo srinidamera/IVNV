@@ -1,0 +1,66 @@
+<template>
+  <!-- Task Header -->
+   <!-- style={tileStyle} -->
+    <template if:true={isProgressBarVsible}>
+  <div lwc:if={headerProps} class={headerStyles}>
+    <div class="slds-col slds-grid_vertical">
+      <div class="slds-col slds-grid">
+        <div
+          class="slds-grid_vertical slds-size_2-of-5 slds-small-size_2-of-5 slds-medium-size_2-of-5 slds-large-size_1-of-4">
+          <div class="slds-col h-2 font-segoe-ui">{headerProps.title}</div>
+          <!-- <div lwc:if={headerProps.keyVal} class="slds-col font-segoe-ui">{headerProps.keyVal.key}:
+            {headerProps.keyVal.value}</div> -->
+        </div>
+        <!-- Not Started -->
+        <div
+          class="slds-col slds-grid_vertical slds-size_1-of-5 slds-small-size_1-of-5 slds-medium-size_1-of-5 slds-large-size_1-of-4">
+          <div class="slds-col slds-align_absolute-center font-segoe-ui font-weight-700 h-2">
+            {headerProps.metric1}</div>
+          <div class="slds-col slds-align_absolute-center font-segoe-ui">{headerProps.metricTitle1}</div>
+        </div>
+        <!-- In Progress -->
+        <div
+          class="slds-col slds-grid_vertical slds-size_1-of-5 slds-small-size_1-of-5 slds-medium-size_1-of-5 slds-large-size_1-of-4">
+          <div class="slds-col slds-align_absolute-center font-segoe-ui font-weight-700 h-2">
+            {headerProps.metric2}</div>
+          <div class="slds-col slds-align_absolute-center font-segoe-ui">{headerProps.metricTitle2}</div>
+        </div>
+        <div
+          class="slds-col slds-grid_vertical slds-size_1-of-5 slds-small-size_1-of-5 slds-medium-size_1-of-5 slds-large-size_1-of-4">
+          <div class="slds-col slds-align_absolute-center font-segoe-ui font-weight-700 h-2">
+            {headerProps.metric3}</div>
+          <div class="slds-col slds-align_absolute-center font-segoe-ui">{headerProps.metricTitle3}</div>
+        </div>
+      </div>
+      <div class="slds-col slds-size_3-of-5 slds-grid slds-m-bottom_xx-small">
+        <!-- Hyperlink -->
+        <div lwc:if={headerProps.showHyperlink} class="">
+          <a onclick={redirectToTasks} data-id={headerProps.title}
+            class="hyperlink-style font-segoe-ui">{headerProps.hyperlinkTitle}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+  <!-- Task Tiles -->
+  <div lwc:if={taskProps} class="slds-grid slds-wrap">
+    <template for:each={taskProps} for:item="prop">
+      <c-custom-tile
+        key={prop.id}
+        class={tileClasses}
+        props={prop}
+        onanchorclick={goToTaskDetails}
+      ></c-custom-tile>
+    </template>
+  </div>
+  <div lwc:if={noTasksExist} class="slds-text-heading_medium h-2 slds-m-vertical_small">
+    {noTasksMsg}
+  </div>
+
+  <!-- Back button -->
+  <div lwc:if={showBackBtn} class="slds-m-top_small">
+    <div class="slds-col slds-size_12-of-12">
+        <lightning-button label={backBtnLabel} onclick={handleGoBack} variant="brand-outline" stretch></lightning-button>
+    </div>
+</div>
+</template>

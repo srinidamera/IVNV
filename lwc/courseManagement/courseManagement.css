@@ -1,0 +1,10 @@
+.custom-tree-grid .slds-tree_grid {
+    --lwc-bgColorShade: #f2f2f2; /* Use the desired gray color */
+}
+
+.custom-tree-grid .slds-tree_grid .slds-tree-item {
+    background-color: var(--lwc-bgColorShade);
+}
+.buttonMargin {
+    padding-top: 34px;
+}

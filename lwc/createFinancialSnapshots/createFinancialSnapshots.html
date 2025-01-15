@@ -1,0 +1,169 @@
+<template>
+    <div class="slds-text-align_right">
+        <lightning-button label="View/Save Snapshot of Current Value" onclick={openModal}></lightning-button>
+    </div>
+
+    <template lwc:if={showModal}>
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+            class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={hideModalBox}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse"
+                            size="small" onclick={handleCancelClick}></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Financial Snapshot</h2>
+                </header>
+
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Indicator</th>
+                                <th>Current Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p class="slds-m-top_small">Credit Score</p>
+                                </td>
+                                <td>
+                                    <p class="slds-m-top_small">
+                                        <lightning-formatted-number
+                                            value={currentValuesWrapper.creditScore}></lightning-formatted-number>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="slds-m-top_small">Co-App Credit Score</p>
+                                </td>
+                                <td>
+                                    <p class="slds-m-top_small">
+                                        <lightning-formatted-number
+                                            value={currentValuesWrapper.coAppCreditScore}></lightning-formatted-number>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="slds-m-top_small">Savings</p>
+                                </td>
+                                <td>
+                                    <p class="slds-m-top_small">
+                                        <lightning-formatted-number value={currentValuesWrapper.savings}
+                                            format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="slds-m-top_small">Gross Monthly Income</p>
+                                </td>
+                                <td>
+                                    <p class="slds-m-top_small">
+                                        <lightning-formatted-number value={currentValuesWrapper.grossMonthlyIncome}
+                                            format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="slds-m-top_small">Net Monthly Income</p>
+                                </td>
+                                <td>
+                                    <p class="slds-m-top_small">
+                                        <lightning-formatted-number value={currentValuesWrapper.netMonthlyIncome}
+                                            format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="slds-m-top_small">Current Monthly Debt Obligation</p>
+                                </td>
+                                <td>
+                                    <p class="slds-m-top_small">
+                                        <lightning-formatted-number
+                                            value={currentValuesWrapper.currentlyMonthlyDebtObligation}
+                                            format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="slds-m-top_small">Housing Expense</p>
+                                </td>
+                                <td>
+                                    <p class="slds-m-top_small">
+                                        <lightning-formatted-number value={currentValuesWrapper.housingExpense}
+                                            format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="slds-m-top_small">Total Debt</p>
+                                </td>
+                                <td>
+                                    <p class="slds-m-top_small">
+                                        <lightning-formatted-number value={currentValuesWrapper.totalDebt}
+                                            format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="slds-m-top_small">Total Assets</p>
+                                </td>
+                                <td>
+                                    <p class="slds-m-top_small">
+                                        <lightning-formatted-number value={currentValuesWrapper.totalAssets}
+                                            format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="slds-m-top_small">Net Worth</p>
+                                </td>
+                                <td>
+                                    <p class="slds-m-top_small">
+                                        <lightning-formatted-number value={currentValuesWrapper.netWorth}
+                                            format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="slds-m-top_small">Primary Client</p>
+                                </td>
+                                <td>
+                                    <p class="slds-m-top_small">{primaryContactName}</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="slds-m-top_small">Client Case</p>
+                                </td>
+                                <td>
+                                    <p class="slds-m-top_small">{clientCaseName}</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" aria-label="Cancel and close"
+                        onclick={handleCancelClick}>Cancel</button>
+                    <button class="slds-button slds-button_brand" onclick={handleSaveClick}>Save</button>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+
+</template>

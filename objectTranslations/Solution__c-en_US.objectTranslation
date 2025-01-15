@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Solution</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Solutions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Client Action Plan --></label>
+        <name>ClientActionPlan__c</name>
+        <relationshipLabel><!-- Solutions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client Case --></label>
+        <name>ClientCase__c</name>
+        <relationshipLabel><!-- Solutions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Goal --></label>
+        <name>Goal__c</name>
+        <relationshipLabel><!-- Solutions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Obstacle --></label>
+        <name>Obstacle__c</name>
+        <relationshipLabel><!-- Solutions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Solution Default Values --></label>
+        <name>SolutionDefaultValues__c</name>
+        <picklistValues>
+            <masterLabel>Improve credit score</masterLabel>
+            <translation><!-- Improve credit score --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase income</masterLabel>
+            <translation><!-- Increase income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase savings</masterLabel>
+            <translation><!-- Increase savings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reduce debt</masterLabel>
+            <translation><!-- Reduce debt --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solution Details --></label>
+        <name>SolutionDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solution Subject --></label>
+        <name>SolutionSubject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

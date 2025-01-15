@@ -1,0 +1,42 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="300" >
+<tr valign="top" height="300" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Dear&nbsp;</font>Username<font face="arial" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-size: 12pt;">,&nbsp;</span></font><div style="">
+    <br>
+    <div style="">
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+            IMPORTANT: The following event has been updated.
+        </div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div>
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">body1</div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div>
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+            &lt;%updateSummary%&gt;
+        </div>
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+            <b>Event Name:</b>&nbsp;<span>{!Event.Subject}</span>
+        </div>
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+            <b>Date/Time:</b>&nbsp;<span>&lt;%datetime%&gt;</span>
+        </div>
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+            <b>Duration:</b>&nbsp;<span>{!Event.DurationInMinutes} min</span>
+        </div>
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">&lt;%locationFields%&gt;
+        </div>
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+            <b>Event Capacity:</b>&nbsp;<span>&lt;%capacity%&gt;</span>
+        </div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><div class="OutlineElement Ltr SCXW42817291 BCX0" style="-webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; clear: both; cursor: text; overflow: visible; position: relative; direction: ltr; background-color: rgb(255, 255, 255);"><p class="Paragraph SCXW42817291 BCX0" xml:lang="EN-US" lang="EN-US" paraid="48533652" paraeid="{3b824d7b-bf50-4116-bb5b-7f7a4fc28639}{233}" style="-webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin-right: 0px; margin-left: 0px; padding: 0px; user-select: text; overflow-wrap: break-word; vertical-align: baseline; font-kerning: none; background-color: transparent;"><span data-contrast="none" xml:lang="EN-US" lang="EN-US" class="TextRun SCXW42817291 BCX0" style="color: windowtext; font-family: Arial, Arial_EmbeddedFont, Arial_MSFontService, sans-serif; font-size: 12pt; white-space-collapse: preserve; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; line-height: 20.925px; font-weight: bold; font-variant-ligatures: none !important;"><span class="NormalTextRun SCXW42817291 BCX0" style="-webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text;">Faci</span><span class="NormalTextRun SCXW42817291 BCX0" style="-webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text;">lit</span><span class="NormalTextRun SCXW42817291 BCX0" style="-webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text;">ator </span></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US" class="TextRun SCXW42817291 BCX0" style="color: windowtext; font-family: Arial, Arial_EmbeddedFont, Arial_MSFontService, sans-serif; font-size: 12pt; white-space-collapse: preserve; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; line-height: 20.925px; font-variant-ligatures: none !important;"><span class="NormalTextRun SCXW42817291 BCX0" style="-webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text;">:</span><span class="NormalTextRun SCXW42817291 BCX0" style="-webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text;"> </span></span><font face="Arial, Arial_EmbeddedFont, Arial_MSFontService, sans-serif"><span style="font-variant-ligatures: none; white-space-collapse: preserve;">{!sumoapp__AdditionalInfo__c.Facilitator__c}</span></font></p></div><div class="OutlineElement Ltr SCXW42817291 BCX0" style="-webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; clear: both; cursor: text; overflow: visible; position: relative; direction: ltr; background-color: rgb(255, 255, 255);"><p class="Paragraph SCXW42817291 BCX0" xml:lang="EN-US" lang="EN-US" paraid="2056094955" paraeid="{e0edbe58-5f53-4244-8640-f2283666f842}{224}" style="-webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin-right: 0px; margin-left: 0px; padding: 0px; user-select: text; overflow-wrap: break-word; vertical-align: baseline; font-kerning: none; background-color: transparent;"><span data-contrast="none" xml:lang="EN-US" lang="EN-US" class="TextRun SCXW42817291 BCX0" style="color: windowtext; font-family: Arial, Arial_EmbeddedFont, Arial_MSFontService, sans-serif; font-size: 12pt; white-space-collapse: preserve; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; line-height: 20.925px; font-weight: bold; font-variant-ligatures: none !important;">Presenter</span><span data-contrast="none" xml:lang="EN-US" lang="EN-US" class="TextRun SCXW42817291 BCX0" style="color: windowtext; font-family: Arial, Arial_EmbeddedFont, Arial_MSFontService, sans-serif; font-size: 12pt; white-space-collapse: preserve; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text; line-height: 20.925px; font-variant-ligatures: none !important;"><span class="NormalTextRun SCXW42817291 BCX0" style="-webkit-user-drag: none; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px; user-select: text;">: </span></span><font face="Arial, Arial_EmbeddedFont, Arial_MSFontService, sans-serif"><span style="font-variant-ligatures: none; white-space-collapse: preserve;">{!sumoapp__AdditionalInfo__c.Presenter__c}</span></font></p></div></div>
+
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+            <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">&lt;%description%&gt;</div>
+            <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">&lt;%serviceDetails%&gt;</div>
+            <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">&lt;%locationDetails%&gt;</div>
+            <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">&lt;%addToCalendarLinks%&gt;</div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">body2</div>
+        </div>
+
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div>
+        <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Best Regards,</div>
+        <div style=""><div>{!$Label.AgencyProfileName}</div><div>{!$Label.AgencyProfilePhone}</div><div>{!$Label.AgencyProfileEmail}</div></div>
+    </div>
+</div>]]></td>
+</tr>
+</table>

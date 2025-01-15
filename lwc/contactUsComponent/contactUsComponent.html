@@ -1,0 +1,15 @@
+<template> 
+    <div class="content-container">
+        <div class="txt slds-m-around_x-small">
+          <div class="slds-text-color_default slds-m-bottom_xx-small h-3">
+            <lightning-formatted-rich-text value={content}></lightning-formatted-rich-text>
+          </div>
+        </div>
+      </div>
+
+    <div
+      class="slds-col slds-m-top_small slds-p-left_xx-small slds-size_12-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_3-of-12 slds-float_right">
+      <lightning-button class="btn btn-secondary" variant="brand-outline" label={goBackLabel} stretch onclick={handleGoBack}>
+      </lightning-button>
+  </div>
+</template>

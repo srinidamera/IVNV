@@ -1,0 +1,6 @@
+<apex:page showHeader="false"
+           standardStylesheets="false"
+           sidebar="false"
+           controller="sumoapp.SessionIdController">
+    {!sessionIdStartTag}{!$Api.Session_ID}{!sessionIdEndTag}
+</apex:page>

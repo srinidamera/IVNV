@@ -1,0 +1,68 @@
+<template>
+  <div lwc:if={props} class="tile slds-p-around_x-small slds-card slds-grid slds-grid_vertical" style={props.cardStyle}>
+    <!-- Title -->
+    <div class="h-2 slds-col slds-grid slds-grid_vertical-align-start slds-m-bottom_x-small">
+      <div class="slds-col font-segoe-ui">{props.name}</div>
+      <div lwc:if={props.showBadge} class="slds-col_bump-right font-segoe-ui"><lightning-badge label={props.badgeLabel}
+          class={props.badgeStyle}></lightning-badge></div>
+    </div>
+    <!-- Text Content-->
+    <div lwc:if={props.description} class="slds-col slds-grid slds-grid_vertical-align-center slds-m-bottom_x-small">
+      <div class="slds-col font-segoe-ui">
+        <lightning-formatted-rich-text value={props.description}>
+        </lightning-formatted-rich-text>
+      </div>
+    </div>
+    <!-- Rich Text Content -->
+    <div lwc:if={props.richTextContent}
+      class="slds-col slds-grid slds-grid_vertical-align-center slds-m-bottom_x-small">
+      <div class="slds-col font-segoe-ui">
+        <lightning-formatted-rich-text value={props.richTextContent}>
+        </lightning-formatted-rich-text>
+      </div>
+    </div>
+    <!-- Key Value -->
+    <div lwc:if={props.keyValPairs}
+      class="slds-col slds-grid slds-grid_vertical-align-center slds-m-vertical_x-small slds-m-bottom_x-small">
+      <div class="slds-col">
+        <template for:each={props.keyValPairs} for:item="keyVal">
+          <div class="font-segoe-ui" key={keyVal.key}>{keyVal.key}: {keyVal.value}</div>
+        </template>
+      </div>
+    </div>
+    <!-- Hyperlink -->
+    <div lwc:if={props.showHyperlink} class="slds-col slds-grid slds-grid_vertical-align-center slds-m-bottom_x-small">
+      <div class="slds-col">
+        <a onclick={hyperlinkClickHandler} data-id={props.id}
+          class="hyperlink-style font-segoe-ui">{props.hyperlinkTitle}</a>
+      </div>
+    </div>
+    <!-- Child Class Details -->
+    <div lwc:if={props.childClasses} class="slds-col slds-grid slds-grid_vertical slds-m-bottom_x-small">
+      <template for:each={props.childClasses} for:item="child" for:index="index">
+        <div class="slds-col slds-m-bottom_small slds-size_1-of-1" key={child.title}>
+          <div class="font-weight font-segoe-ui">{child.title}</div>
+          <div class="font-weight font-segoe-ui">{child.shortDescription}</div>
+          <div>
+            <c-display-key-vals key-value-pairs={child.keyValPairs}></c-display-key-vals>
+          </div>
+        </div>
+      </template>
+    </div>
+    <!-- Button -->
+    <div lwc:if={props.btnLabel} class="slds-col slds-grid slds-grid_vertical-align-center slds-m-bottom_x-small">
+      <!-- Primary -->
+      <div class="slds-col" lwc:if={props.isPrimary}>
+        <lightning-button class="btn btn-primary font-segoe-ui" data-id={props.id} data-btn-type="primary"
+          variant="brand" label={props.btnLabel} stretch onclick={btnClickHandler}>
+        </lightning-button>
+      </div>
+      <!-- Secondary -->
+      <div class="slds-col" lwc:else>
+        <lightning-button class="btn btn-secondary font-segoe-ui" data-id={props.id} data-btn-type="secondary"
+          variant="brand" label={props.btnLabel} stretch onclick={btnClickHandler}>
+        </lightning-button>
+      </div>
+    </div>
+  </div>
+</template>

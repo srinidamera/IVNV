@@ -1,0 +1,453 @@
+<apex:page controller="IntakePDFController" readOnly="true" showHeader="false" cache="true" applyBodyTag="false" renderAs="PDF">
+    <head>
+        <style>
+            @page {
+            size: letter portrait;
+            margin: 10mm 10mm 20mm 10mm;
+            font-family: sans-serif;
+            
+            @bottom-center {
+            content:element(footer);
+            }
+            }
+            div.footer {
+            position: running(footer);
+            font-size: 12px;
+            text-align: center;
+            } 
+        </style>
+    </head>
+    
+    <apex:variable var="cnt" value="{!0}" />
+    
+    <div style="text-align: center;font-size: 22px;padding-bottom:15px;">
+        <span><b>INTAKE</b></span><br/>
+    </div>
+    
+    <div style="text-align: center;font-size: 18px;padding-bottom:20px;">
+        <span><b>{!currentDate} </b></span><br/>
+    </div>
+    
+    <div style="width: 100%; ">
+        <div style="font-size: 22px;padding-bottom:4px;">
+            <span><b>Case</b></span><br/>
+        </div>
+        <div style="width: 100%; float: left;background-color:#e8e8e8; ">
+            <b>Service</b>
+        </div>
+    </div>
+    <br/>
+    
+    
+    <div style="width: 100%;padding-top:6px; padding-bottom:16px;">
+        <div style="width: 100%; float: left;">
+            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse;">
+                <tr>
+                    <td width="50%" ><apex:outputLabel > <b>Case type</b> </apex:outputLabel></td>
+                    <td width="20%" ><apex:outputLabel > <b>Referral Source </b> </apex:outputLabel></td>
+                    <td width="30%" ><apex:outputLabel > <b>Annual Household Income </b> </apex:outputLabel></td>  
+                </tr>
+                <tr>
+                    <td width="50%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!CaseType}" /></td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.ReferralSource__c}" /></td>
+                    <td width="30%" style="border: 0.8px solid black;border-collapse: collapse;">$<apex:outputText value="{!AnnualHouseholdIncome}" /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <br/><br/>
+    
+    <div style="width: 100%;">
+        <div style="float: left;font-size: 22px;padding-bottom:8px;">
+            <span><b>Primary Contact</b></span><br/>
+        </div>
+    </div>
+    
+    <br/>
+    
+    <div style="width: 100%; padding-bottom:8px;">
+        <div style="width: 100%;float: left;background-color:#e8e8e8">
+            <b>Profile</b>
+        </div>
+    </div>
+    <br/><br/>
+    
+    <div style="width: 100%; padding-bottom:8px;">
+        <div style="width: 100%; float: left;  padding-bottom:8px;">
+            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse;">
+                <tr>
+                    <td width="20%" ><apex:outputLabel > <b>First Name </b> </apex:outputLabel></td>
+                    <td width="20%" ><apex:outputLabel > <b>Middle Name </b> </apex:outputLabel></td>
+                    <td width="20%" ><apex:outputLabel > <b>Last Name</b> </apex:outputLabel></td>
+                    <td width="20%" ><apex:outputLabel > <b>Suffix</b> </apex:outputLabel></td>
+                    <td width="20%" ><apex:outputLabel > <b>SSN</b> </apex:outputLabel></td>
+                </tr>
+                <tr>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;font-family: Arial Unicode MS;"><apex:outputText value="{!intake.PrimaryClient__r.FirstName}" /></td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;font-family: Arial Unicode MS;"><apex:outputText value="{!intake.PrimaryClient__r.MiddleName}" /></td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;font-family: Arial Unicode MS;"><apex:outputText value="{!intake.PrimaryClient__r.LastName}" /></td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.PrimaryClient__r.Suffix}" /></td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.PrimaryClient__r.SSN__c}" /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <br/><br/>
+    
+    <div style="width: 100%; padding-bottom:8px;">
+        <div style="width: 100%; float: left;">
+            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse;">
+                <tr>
+                    <td width="25%" ><apex:outputLabel > <b>Email Address </b> </apex:outputLabel></td>
+                    <td width="25%" ><apex:outputLabel > <b>Phone Number </b> </apex:outputLabel></td>
+                    <td width="25%" ><apex:outputLabel > <b>Best Contact Time</b> </apex:outputLabel></td>
+                    <td width="25%" ><apex:outputLabel > <b>Preferred Language</b> </apex:outputLabel></td>
+                </tr>
+                <tr>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.PrimaryClient__r.Email}" /></td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.PrimaryClient__r.Phone}" /></td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.PrimaryClient__r.Besttimetocontact__c}" /></td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.PrimaryClient__r.PreferredLanguage__c}" /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <br/><br/><br/>
+    
+    <div style="width: 100%; padding-bottom:8px;">
+        <div style="width: 100%; float: left;">
+            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse;">
+                <tr>
+                    <td width="20%" ><apex:outputLabel > <b>Birthdate </b> </apex:outputLabel></td>
+                    <td width="20%" ><apex:outputLabel > <b>Age </b> </apex:outputLabel></td>
+                    <td width="40%" ><apex:outputLabel > <b>Marketing Communication Opt Out</b> </apex:outputLabel></td>
+                    
+                </tr>
+                <tr>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!Birthdate}" /></td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!ageAsString}" /></td>
+                    <td width="40%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!MarketingCommunicationsOptOut}" /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <br/><br/>
+    
+    
+    <div style="width: 100%; padding-bottom:8px; padding-top:8px">
+        <div style="width: 100%;float: left;background-color:#e8e8e8">
+            <b>Address</b>
+        </div>
+    </div>
+    
+    
+    <div style="width: 100%; padding-bottom:8px;">
+        <div style="width: 100%; float: left; ">
+            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse; ">
+                <tr>
+                    <td width="30%" ><apex:outputLabel > <b>Street </b> </apex:outputLabel></td>
+                    <td width="20%" ><apex:outputLabel > <b>Address Line 2</b> </apex:outputLabel></td>
+                    <td width="20%" ><apex:outputLabel > <b>City</b> </apex:outputLabel></td>  
+                    <td width="20%" ><apex:outputLabel > <b>State</b> </apex:outputLabel></td>  
+                    <td width="10%" ><apex:outputLabel > <b>Zip</b> </apex:outputLabel></td>  
+                </tr>
+                <tr>
+                    <td width="30%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.PrimaryClient__r.MailingStreet}" /></td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.PrimaryClient__r.MailingAddressLine2__c}" /></td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.PrimaryClient__r.MailingCity}" /></td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.PrimaryClient__r.MailingState}" /></td>
+                    <td width="10%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.PrimaryClient__r.MailingPostalCode}" /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <br/><br/><br/>
+    
+    <div style="width: 100%; padding-bottom:8px;">
+        <div style="width: 100%;float: left;background-color:#e8e8e8">
+            <b>Demographics</b>
+        </div>
+    </div>
+    
+    <br/>
+    
+    <div style="width: 100%; padding-bottom:8px;">
+        <div style="width: 100%; float: left; ">
+            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse;">
+                <tr>
+                    <td width="30%" ><apex:outputLabel > <b>Race </b> </apex:outputLabel></td>
+                    <td width="10%" ><apex:outputLabel > <b>Ethnicity</b> </apex:outputLabel></td>
+                    <td width="15%" ><apex:outputLabel > <b>Gender</b> </apex:outputLabel></td>  
+                    <td width="20%" ><apex:outputLabel > <b>Farm Worker</b> </apex:outputLabel></td>  
+                    <td width="20%" ><apex:outputLabel > <b>Education</b> </apex:outputLabel></td>  
+                </tr>
+                <tr>
+                    <td width="30%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.Race__c}" /></td>
+                    <td width="15%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.Ethnicity__c}" /></td>
+                    <td width="15%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.Gender__c}" /></td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.FarmWorker__c}" /></td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.Education__c}" /></td>
+                </tr>               
+            </table>
+        </div>
+    </div>
+    
+    <br/><br/><br/>
+    
+    <div style="width: 100%;padding-bottom:8px; ">
+        <div style="width: 100%; float: left;">
+            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse;">
+                <tr>
+                    <td width="15%" ><apex:outputLabel > <b>Marital Status </b> </apex:outputLabel></td>
+                    <td width="30%" ><apex:outputLabel > <b>English Proficiency</b> </apex:outputLabel></td>
+                    <td width="20%" ><apex:outputLabel > <b>Colonias Resident</b> </apex:outputLabel></td>  
+                    <td width="20%" ><apex:outputLabel > <b>Active Military</b> </apex:outputLabel></td>  
+                    <td width="15%" ><apex:outputLabel > <b>Veteran</b> </apex:outputLabel></td>  
+                </tr>
+                <tr>
+                    <td width="15%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.MaritalStatus__c}" /></td>
+                    <td width="30%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.EnglishProficiency__c}" /></td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.ColoniasResidence__c}" /></td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.PrimaryClient__r.ActiveMilitary__c}" /></td>
+                    <td width="15%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.PrimaryClient__r.Veteran__c}" /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <br/><br/><br/>
+    
+    <div style="width: 100%; padding-bottom:8px;">
+        <div style="width: 100%; float: left;">
+            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse;">
+                <tr>
+                    <td width="20%" ><apex:outputLabel > <b>Disabled Status </b> </apex:outputLabel></td>
+                    <td width="20%" ><apex:outputLabel > <b>1st Time Home Buyer</b> </apex:outputLabel></td>
+                    <td width="20%" ><apex:outputLabel > <b>Rural Area Status</b> </apex:outputLabel></td>  
+                    <td width="20%" ><apex:outputLabel > <b>Household Type</b> </apex:outputLabel></td>  
+                </tr>
+                <tr>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.DisabledStatus__c}" /></td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.PrimaryClient__r.X1stTimeHomeBuyer__c}" /></td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="N/A" /></td>
+                    <td width="20%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.PrimaryClient__r.HouseholdType__c}" /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    
+    
+    <br/><br/><br/>
+    
+    <div style="width: 100%; padding-bottom:8px;">
+        <div style="width: 100%;float: left;background-color:#e8e8e8">
+            <b>Financial</b>
+        </div>
+    </div>
+    
+    <br/>
+    
+    <div style="width: 100%;">
+        <div style="width: 100%; float: left;">
+            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse;">
+                <tr style="font-size:15px">
+                    <td width="23%" ><apex:outputLabel > <b>Total Monthly Income </b> </apex:outputLabel></td>
+                    <td width="17%" ><apex:outputLabel > <b>No. of Dependents</b> </apex:outputLabel></td>
+                    <td width="23%" ><apex:outputLabel > <b>Client HUD Assistance</b> </apex:outputLabel></td>  
+                    <td width="15%" ><apex:outputLabel > <b>Occupation</b> </apex:outputLabel></td>  
+                    <td width="22%" ><apex:outputLabel > <b>Occupation Start Date</b> </apex:outputLabel></td>  
+                </tr>
+                <tr>
+                    <td width="23%" style="border: 0.8px solid black;border-collapse: collapse;">$<apex:outputText value="{!TotalMonthlyIncome}" /></td>
+                    <td width="17%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!FLOOR(NumberOfDependents)}" /></td>
+                    <td width="23%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.ClientHUDAssistance__c}" /></td>
+                    <td width="15%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.PrimaryClient__r.Occupation__c}" /></td>
+                    <td width="22%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!OccupationStartDate}" /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <br/><br/><br/>
+    
+    <div style="width: 100%;">
+        <div style="width: 100%; float: left;">
+            <table style="width:100%;border: 0.8px solid black;border-collapse: collapse;">
+                <tr>
+                    <td width="25%" ><apex:outputLabel > <b>Monthly Creditor's Debt </b> </apex:outputLabel></td>
+                    <td width="25%" ><apex:outputLabel > <b>Credit Score</b> </apex:outputLabel></td>
+                    <td width="25%" ><apex:outputLabel > <b>Employment Status</b> </apex:outputLabel></td>  
+                    <td width="25%" ><apex:outputLabel > <b>Current Resident</b> </apex:outputLabel></td> 
+                </tr>
+                <tr>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;">$<apex:outputText value="{!MonthlyCreditorsDebt}" /></td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!FLOOR(CreditScore)}" /></td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.Employment_Status__c}" /></td>
+                    <td width="25%" style="border: 0.8px solid black;border-collapse: collapse;"><apex:outputText value="{!intake.CurrentResidence__c}" /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    
+    
+    <br/><br/><br/>
+    
+    
+    <apex:outputPanel rendered="{!NOT(ISNULL(coApplicants))}">
+        <apex:outputPanel rendered="{!coApplicants.size > 0}">
+            <div style="width: 100%;">
+                <div style="float: left; font-size: 22px; padding-bottom: 8px;">
+                    <b>Co-Applicant</b><br/>
+                </div>
+            </div>
+        </apex:outputPanel>
+        
+        <apex:repeat value="{!coApplicants}" var="coApplicant">
+            <div style="width: 100%; padding-bottom: 8px;">
+                <div style="width: 100%; float: left; background-color: #e8e8e8;">
+                    <b>Profile</b><br/>
+                </div>
+            </div>
+            
+            <br/><br/><br/>
+            
+            <div style="width: 100%;">
+                <div style="width: 100%; float: left;">
+                    <table style="width: 100%; border: 0.8px solid black; border-collapse: collapse;">
+                        <tr>
+                            <td width="25%"><apex:outputLabel ><b>First Name</b></apex:outputLabel></td>
+                            <td width="25%"><apex:outputLabel ><b>Middle Name</b></apex:outputLabel></td>
+                            <td width="25%"><apex:outputLabel ><b>Last Name</b></apex:outputLabel></td>
+                            <td width="25%"><apex:outputLabel ><b>Suffix</b></apex:outputLabel></td>
+                        </tr>
+                        <tr>
+                            <td width="25%" style="border: 0.8px solid black; border-collapse: collapse;font-family: Arial Unicode MS;"><apex:outputText value="{!coApplicant.FirstName}" /></td>
+                            <td width="25%" style="border: 0.8px solid black; border-collapse: collapse;font-family: Arial Unicode MS;"><apex:outputText value="{!coApplicant.MiddleName}" /></td>
+                            <td width="25%" style="border: 0.8px solid black; border-collapse: collapse;font-family: Arial Unicode MS;"><apex:outputText value="{!coApplicant.LastName}" /></td>
+                            <td width="25%" style="border: 0.8px solid black; border-collapse: collapse;"><apex:outputText value="{!coApplicant.Suffix}" /></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <br/><br/><br/>
+            
+            <div style="width: 100%;">
+                <div style="width: 100%; float: left;">
+                    <table style="width: 100%; border: 0.8px solid black; border-collapse: collapse;">
+                        <tr>
+                            <td width="25%"><apex:outputLabel ><b>Email Address</b></apex:outputLabel></td>
+                            <td width="25%"><apex:outputLabel ><b>Phone Number</b></apex:outputLabel></td>
+                            <td width="25%"><apex:outputLabel ><b>Best Contact Time</b></apex:outputLabel></td>
+                            <td width="25%"><apex:outputLabel ><b>Preferred Language</b></apex:outputLabel></td>
+                        </tr>
+                        <tr>
+                            <td width="25%" style="border: 0.8px solid black; border-collapse: collapse;"><apex:outputText value="{!coApplicant.Email}" /></td>
+                            <td width="25%" style="border: 0.8px solid black; border-collapse: collapse;"><apex:outputText value="{!coApplicant.Phone}" /></td>
+                            <td width="25%" style="border: 0.8px solid black; border-collapse: collapse;"><apex:outputText value="{!coApplicant.Besttimetocontact__c}" /></td>
+                            <td width="25%" style="border: 0.8px solid black; border-collapse: collapse;"><apex:outputText value="{!coApplicant.PreferredLanguage__c}" /></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <br/><br/><br/>
+            
+            <div style="width: 100%; padding-bottom: 8px;">
+                <div style="width: 100%; float: left; background-color: #e8e8e8;">
+                    <b>Demographics</b>
+                </div>
+            </div>
+            
+            <br/>
+            
+            <div style="width: 100%;">
+                <div style="width: 100%; float: left;">
+                    <table style="width: 100%; border: 0.8px solid black; border-collapse: collapse;">
+                        <tr>
+                            <td width="30%"><apex:outputLabel ><b>Race</b></apex:outputLabel></td>
+                            <td width="20%"><apex:outputLabel ><b>Ethnicity</b></apex:outputLabel></td>
+                            <td width="20%"><apex:outputLabel ><b>Gender</b></apex:outputLabel></td>
+                        </tr>
+                        <tr>
+                            <td width="30%" style="border: 0.8px solid black; border-collapse: collapse;"><apex:outputText value="{!coApplicant.Race__c}" /></td>
+                            <td width="20%" style="border: 0.8px solid black; border-collapse: collapse;"><apex:outputText value="{!coApplicant.Ethnicity__c}" /></td>
+                            <td width="20%" style="border: 0.8px solid black; border-collapse: collapse;"><apex:outputText value="{!coApplicant.Gender__c}" /></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <br/><br/><br/>
+            
+            <div style="width: 100%; padding-bottom: 8px;">
+                <div style="width: 100%; float: left; background-color: #e8e8e8;">
+                    <b>Financials</b>
+                </div>
+            </div>
+            
+            <br/>
+            
+            <div style="width: 100%;">
+                <div style="width: 100%; float: left;">
+                    <table style="width: 100%; border: 0.8px solid black; border-collapse: collapse;">
+                        <tr>
+                            <td width="25%"><apex:outputLabel ><b>Total Monthly Income</b></apex:outputLabel></td>
+                            <td width="50%"></td>
+                        </tr>
+                        <tr>
+                            <td width="20%" style="border: 0.8px solid black; border-collapse: collapse;">$<apex:outputText value="{!coApplicant.TotalMonthlyIncome__c}" /></td>
+                            <td width="50%"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <br/><br/><br/>
+            
+            <div style="width: 100%; padding-bottom: 8px;">
+                <div style="width: 100%; float: left; background-color: #e8e8e8;">
+                    <b>Address</b>
+                </div>
+            </div>
+            
+            <br/>
+            
+            <div style="width: 100%;">
+                <div style="width: 100%; float: left;">
+                    <table style="width: 100%; border: 0.8px solid black; border-collapse: collapse;">
+                        <tr>
+                            <td width="20%"><apex:outputLabel ><b>Street</b></apex:outputLabel></td>
+                            <td width="20%"><apex:outputLabel ><b>City</b></apex:outputLabel></td>
+                            <td width="20%"><apex:outputLabel ><b>State</b></apex:outputLabel></td>
+                            <td width="20%"><apex:outputLabel ><b>Zip</b></apex:outputLabel></td>
+                        </tr>
+                        <tr>
+                            <td width="20%" style="border: 0.8px solid black; border-collapse: collapse;"><apex:outputText value="{!coApplicant.MailingStreet}" /></td>
+                            <td width="20%" style="border: 0.8px solid black; border-collapse: collapse;"><apex:outputText value="{!coApplicant.MailingCity}" /></td>
+                            <td width="20%" style="border: 0.8px solid black; border-collapse: collapse;"><apex:outputText value="{!coApplicant.MailingState}" /></td>
+                            <td width="20%" style="border: 0.8px solid black; border-collapse: collapse;"><apex:outputText value="{!coApplicant.MailingPostalCode}" /></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </apex:repeat>
+    </apex:outputPanel>
+    
+    
+    
+    <div class="footer">
+        <div style="text-align: center; font-size: 10px;">
+            {!footer.Name} - {!footer.AgencyAddress__Street__s} -{!footer.AgencyAddress__City__s} , {!footer.AgencyAddress__StateCode__s}  - {!footer.AgencyAddress__PostalCode__s}<br/>
+            <span style="text-decoration: underline; color: blue;">{!footer.AgencyEmailAddress__c}</span> | {!footer.AgencyPhoneNumber__c}
+        </div>
+    </div>
+    
+</apex:page>

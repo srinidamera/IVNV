@@ -1,0 +1,32 @@
+<template>
+  <div class="slds-card">
+    <c-custom-accordion show-no-rec-msg={noRecords}>
+      <template for:each={clientCaseTasks} for:item="task">
+        <!-- Sections -->
+        <c-custom-accordion-section
+          key={task.Id}
+          unique-id={task.Id}
+          label={task.label}
+          show-menu="true"
+          disable-menu = {checkDisableMenu}
+          menu-items={statusPicklistLabelVal}
+          selected-menu-item={task.status}
+          onmenuselect={handleOnSelect}
+        >
+          <div slot="header">
+            <lightning-badge
+              label={task.status}
+              class={task.badgeStyle}
+            ></lightning-badge>
+          </div>
+          <div class="slds-m-left_medium" slot="expandedContent">
+            <c-client-case-guidance-step
+              comment={task.comment}
+              desciption={task.description}
+            ></c-client-case-guidance-step>
+          </div>
+        </c-custom-accordion-section>
+      </template>
+    </c-custom-accordion>
+  </div>
+</template>

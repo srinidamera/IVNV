@@ -1,0 +1,23 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Service Detail Page",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "title" : "Servicios",
+          "description" : "Elija el servicio a continuación que más le interese."
+        },
+        "id" : "db33e737-69d9-412b-ba16-b4eb49d046aa"
+      }, {
+        "id" : "9bd56e43-455f-4752-8de1-6019f5a7b2b3",
+        "attributes" : {
+          "signUpLabel" : "Regístrate",
+          "goBackLabel" : "Regresa",
+          "servicesLabel" : "Servicios"
+        }
+      } ]
+    }
+  },
+  "urlName" : "service-detail-page"
+}

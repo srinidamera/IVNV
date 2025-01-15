@@ -1,0 +1,2257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Matching Field --></label>
+        <name>sumoapp__AccountMatchingField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Type Options --></label>
+        <name>sumoapp__AccountTypeOptions__c</name>
+        <picklistValues>
+            <masterLabel>Match Person Account by Advanced Match</masterLabel>
+            <translation><!-- Match Person Account by Advanced Match --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Match Person Account by Salesforce Duplicate Rules</masterLabel>
+            <translation><!-- Match Person Account by Salesforce Duplicate Rules --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Match Person Account on the following field</masterLabel>
+            <translation><!-- Match Person Account on the following field --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Accounts Match Only SUMO Records --></label>
+        <name>sumoapp__AccountsMatchOnlySumoRecords__c</name>
+    </fields>
+    <fields>
+        <label><!-- Co Host --></label>
+        <name>sumoapp__ActivateCoHost__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Host --></label>
+        <name>sumoapp__ActivateNoHost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encrypt URLs --></label>
+        <name>sumoapp__ActivateUrlEncryption__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Process --></label>
+        <name>sumoapp__AdditionalProcess__c</name>
+        <relationshipLabel><!-- SUMO Scheduling Processes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Settings --></label>
+        <name>sumoapp__AdditionalSettings__c</name>
+        <picklistValues>
+            <masterLabel>Display Error</masterLabel>
+            <translation><!-- Display Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Let User Choose</masterLabel>
+            <translation><!-- Let User Choose --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource Pool</masterLabel>
+            <translation><!-- Resource Pool --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Advance Booking Period (hours) --></label>
+        <name>sumoapp__AdvanceBookingPeriod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advance Cancel Message --></label>
+        <name>sumoapp__AdvanceCancelMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advance Cancel Period (hours) --></label>
+        <name>sumoapp__AdvanceCancelPeriod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advance Reschedule Message --></label>
+        <name>sumoapp__AdvanceRescheduleMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advance Reschedule Period (hours) --></label>
+        <name>sumoapp__AdvanceReschedulePeriod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advanced Match Type --></label>
+        <name>sumoapp__AdvancedMatchType__c</name>
+        <picklistValues>
+            <masterLabel>Apex Class</masterLabel>
+            <translation><!-- Apex Class --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autolaunched Flow</masterLabel>
+            <translation><!-- Autolaunched Flow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Allow Client Provide His Details --></label>
+        <name>sumoapp__AllowClientProvideHisDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow Promocodes --></label>
+        <name>sumoapp__AllowPromocodes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Booked Email (Customer) --></label>
+        <name>sumoapp__AppointmentBookedCustomerEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Booked Email (Customer) --></label>
+        <name>sumoapp__AppointmentBookedCustomerSFEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Booked Email (SUMO User) --></label>
+        <name>sumoapp__AppointmentBookedSumoUserEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Canceled Email Template --></label>
+        <name>sumoapp__AppointmentCanceledEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Reminder Template (Customer) --></label>
+        <name>sumoapp__AppointmentReminderCustomerEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Reminder Template (Host) --></label>
+        <name>sumoapp__AppointmentReminderEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Updated Email (Customer) --></label>
+        <name>sumoapp__AppointmentUpdateCustomerSFEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Canceled Email (Customer) --></label>
+        <name>sumoapp__ApptCanceledCustomerSFEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Booked Email (SUMO User) --></label>
+        <name>sumoapp__ApptEventBookedSumoUserSFEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Canceled Email(SUMO User) --></label>
+        <name>sumoapp__ApptEventCanceledSumoUserSFEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Reminder Email (Customer) --></label>
+        <name>sumoapp__ApptEventReminderCustomerSFEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Reminder Email (SUMO User) --></label>
+        <name>sumoapp__ApptEventReminderSumoUserSFEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Updated Email (SUMO User) --></label>
+        <name>sumoapp__ApptEventUpdateSumoUserSFEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment Engine Mode --></label>
+        <name>sumoapp__AssignmentEngineMode__c</name>
+        <picklistValues>
+            <masterLabel>Load-Balance</masterLabel>
+            <translation><!-- Load-Balance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Priority Based</masterLabel>
+            <translation><!-- Priority Based --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Random</masterLabel>
+            <translation><!-- Random --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Round-Robin</masterLabel>
+            <translation><!-- Round-Robin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Choose</masterLabel>
+            <translation><!-- User Choose --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Assignment Rule Scope --></label>
+        <name>sumoapp__AssignmentRuleScope__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto-Change Case Owner --></label>
+        <name>sumoapp__AutoChangeCaseOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability Options --></label>
+        <name>sumoapp__AvailabilityOptions__c</name>
+        <picklistValues>
+            <masterLabel>Buffer Time</masterLabel>
+            <translation><!-- Buffer Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Date Range</masterLabel>
+            <translation><!-- Date Range --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rolling Window</masterLabel>
+            <translation><!-- Rolling Window --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Available Timezones --></label>
+        <name>sumoapp__AvailableTimezones__c</name>
+    </fields>
+    <fields>
+        <label><!-- Background Image --></label>
+        <name>sumoapp__BackgroundImage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Basic CSS --></label>
+        <name>sumoapp__BasicCss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blacklist Message --></label>
+        <name>sumoapp__BlacklistMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blacklist --></label>
+        <name>sumoapp__Blacklist__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booked Confirmation # --></label>
+        <name>sumoapp__BookedConfirmationNum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booked Date/Time Label --></label>
+        <name>sumoapp__BookedDateTimeLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booked Location Details Label --></label>
+        <name>sumoapp__BookedLocationDetailsLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booked Location Label --></label>
+        <name>sumoapp__BookedLocationLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booked Name Label --></label>
+        <name>sumoapp__BookedNameLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booked Payment Received --></label>
+        <name>sumoapp__BookedPaymentReceived__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booked Registration Complited --></label>
+        <name>sumoapp__BookedRegistrationComplited__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booked Rich Text --></label>
+        <name>sumoapp__BookedRichText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booked Sub-Header --></label>
+        <name>sumoapp__BookedSubHeader__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booked When --></label>
+        <name>sumoapp__BookedWhenLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calendar Type --></label>
+        <name>sumoapp__CalendarType__c</name>
+        <picklistValues>
+            <masterLabel>Day View</masterLabel>
+            <translation><!-- Day View --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week View</masterLabel>
+            <translation><!-- Week View --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cancel From Email Reminder --></label>
+        <name>sumoapp__CancelFromReminder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Captcha --></label>
+        <name>sumoapp__Captcha__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Sub-Header --></label>
+        <name>sumoapp__CategorySubHeader__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compound Event Form Fields --></label>
+        <name>sumoapp__CompoundEventFormFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Form Fields --></label>
+        <name>sumoapp__ContactFormFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Matching Field --></label>
+        <name>sumoapp__ContactMatchingField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Sub-Header --></label>
+        <name>sumoapp__ContactSubHeader__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Type Options --></label>
+        <name>sumoapp__ContactTypeOptions__c</name>
+        <picklistValues>
+            <masterLabel>Match Contact by Advanced Match</masterLabel>
+            <translation><!-- Match Contact by Advanced Match --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Match Contact by Salesforce Duplicate Rules</masterLabel>
+            <translation><!-- Match Contact by Salesforce Duplicate Rules --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Match Contact on the following field</masterLabel>
+            <translation><!-- Match Contact on the following field --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contacts Match Only on SUMO Records --></label>
+        <name>sumoapp__ContactsMatchOnlySumoRecords__c</name>
+    </fields>
+    <fields>
+        <label><!-- Context User --></label>
+        <name>sumoapp__ContextUser__c</name>
+        <relationshipLabel><!-- Context Users --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Context Username --></label>
+        <name>sumoapp__ContextUsername__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country Code --></label>
+        <name>sumoapp__CountryCode__c</name>
+        <picklistValues>
+            <masterLabel>Afghanistan</masterLabel>
+            <translation><!-- Afghanistan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aland Islands</masterLabel>
+            <translation><!-- Aland Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Albania</masterLabel>
+            <translation><!-- Albania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Algeria</masterLabel>
+            <translation><!-- Algeria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Andorra</masterLabel>
+            <translation><!-- Andorra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Angola</masterLabel>
+            <translation><!-- Angola --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anguilla</masterLabel>
+            <translation><!-- Anguilla --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Antarctica</masterLabel>
+            <translation><!-- Antarctica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Antigua and Barbuda</masterLabel>
+            <translation><!-- Antigua and Barbuda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Argentina</masterLabel>
+            <translation><!-- Argentina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armenia</masterLabel>
+            <translation><!-- Armenia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aruba</masterLabel>
+            <translation><!-- Aruba --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Australia</masterLabel>
+            <translation><!-- Australia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Austria</masterLabel>
+            <translation><!-- Austria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Azerbaijan</masterLabel>
+            <translation><!-- Azerbaijan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bahamas</masterLabel>
+            <translation><!-- Bahamas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bahrain</masterLabel>
+            <translation><!-- Bahrain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bangladesh</masterLabel>
+            <translation><!-- Bangladesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barbados</masterLabel>
+            <translation><!-- Barbados --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Belarus</masterLabel>
+            <translation><!-- Belarus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Belgium</masterLabel>
+            <translation><!-- Belgium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Belize</masterLabel>
+            <translation><!-- Belize --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Benin</masterLabel>
+            <translation><!-- Benin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bermuda</masterLabel>
+            <translation><!-- Bermuda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bhutan</masterLabel>
+            <translation><!-- Bhutan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bolivia, Plurinational State of</masterLabel>
+            <translation><!-- Bolivia, Plurinational State of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bonaire, Sint Eustatius and Saba</masterLabel>
+            <translation><!-- Bonaire, Sint Eustatius and Saba --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bosnia and Herzegovina</masterLabel>
+            <translation><!-- Bosnia and Herzegovina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Botswana</masterLabel>
+            <translation><!-- Botswana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bouvet Island</masterLabel>
+            <translation><!-- Bouvet Island --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brazil</masterLabel>
+            <translation><!-- Brazil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>British Indian Ocean Territory</masterLabel>
+            <translation><!-- British Indian Ocean Territory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brunei Darussalam</masterLabel>
+            <translation><!-- Brunei Darussalam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulgaria</masterLabel>
+            <translation><!-- Bulgaria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burkina Faso</masterLabel>
+            <translation><!-- Burkina Faso --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burundi</masterLabel>
+            <translation><!-- Burundi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cambodia</masterLabel>
+            <translation><!-- Cambodia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cameroon</masterLabel>
+            <translation><!-- Cameroon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cape Verde</masterLabel>
+            <translation><!-- Cape Verde --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cayman Islands</masterLabel>
+            <translation><!-- Cayman Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central African Republic</masterLabel>
+            <translation><!-- Central African Republic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chad</masterLabel>
+            <translation><!-- Chad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chile</masterLabel>
+            <translation><!-- Chile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>China</masterLabel>
+            <translation><!-- China --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Christmas Island</masterLabel>
+            <translation><!-- Christmas Island --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cocos (Keeling) Islands</masterLabel>
+            <translation><!-- Cocos (Keeling) Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colombia</masterLabel>
+            <translation><!-- Colombia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comoros</masterLabel>
+            <translation><!-- Comoros --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congo</masterLabel>
+            <translation><!-- Congo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congo, the Democratic Republic of the</masterLabel>
+            <translation><!-- Congo, the Democratic Republic of the --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cook Islands</masterLabel>
+            <translation><!-- Cook Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Costa Rica</masterLabel>
+            <translation><!-- Costa Rica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cote d&apos;Ivoire</masterLabel>
+            <translation><!-- Cote d&apos;Ivoire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Croatia</masterLabel>
+            <translation><!-- Croatia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cuba</masterLabel>
+            <translation><!-- Cuba --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Curaçao</masterLabel>
+            <translation><!-- Curaçao --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cyprus</masterLabel>
+            <translation><!-- Cyprus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech Republic</masterLabel>
+            <translation><!-- Czech Republic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denmark</masterLabel>
+            <translation><!-- Denmark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Djibouti</masterLabel>
+            <translation><!-- Djibouti --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dominica</masterLabel>
+            <translation><!-- Dominica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dominican Republic</masterLabel>
+            <translation><!-- Dominican Republic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ecuador</masterLabel>
+            <translation><!-- Ecuador --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Egypt</masterLabel>
+            <translation><!-- Egypt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>El Salvador</masterLabel>
+            <translation><!-- El Salvador --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equatorial Guinea</masterLabel>
+            <translation><!-- Equatorial Guinea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eritrea</masterLabel>
+            <translation><!-- Eritrea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Estonia</masterLabel>
+            <translation><!-- Estonia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ethiopia</masterLabel>
+            <translation><!-- Ethiopia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Falkland Islands (Malvinas)</masterLabel>
+            <translation><!-- Falkland Islands (Malvinas) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faroe Islands</masterLabel>
+            <translation><!-- Faroe Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fiji</masterLabel>
+            <translation><!-- Fiji --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finland</masterLabel>
+            <translation><!-- Finland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>France</masterLabel>
+            <translation><!-- France --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French Guiana</masterLabel>
+            <translation><!-- French Guiana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French Polynesia</masterLabel>
+            <translation><!-- French Polynesia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French Southern Territories</masterLabel>
+            <translation><!-- French Southern Territories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gabon</masterLabel>
+            <translation><!-- Gabon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gambia</masterLabel>
+            <translation><!-- Gambia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Georgia</masterLabel>
+            <translation><!-- Georgia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Germany</masterLabel>
+            <translation><!-- Germany --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ghana</masterLabel>
+            <translation><!-- Ghana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gibraltar</masterLabel>
+            <translation><!-- Gibraltar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greece</masterLabel>
+            <translation><!-- Greece --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greenland</masterLabel>
+            <translation><!-- Greenland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grenada</masterLabel>
+            <translation><!-- Grenada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guadeloupe</masterLabel>
+            <translation><!-- Guadeloupe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guatemala</masterLabel>
+            <translation><!-- Guatemala --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guernsey</masterLabel>
+            <translation><!-- Guernsey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guinea</masterLabel>
+            <translation><!-- Guinea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guinea-Bissau</masterLabel>
+            <translation><!-- Guinea-Bissau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guyana</masterLabel>
+            <translation><!-- Guyana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haiti</masterLabel>
+            <translation><!-- Haiti --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heard Island and McDonald Islands</masterLabel>
+            <translation><!-- Heard Island and McDonald Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Holy See (Vatican City State)</masterLabel>
+            <translation><!-- Holy See (Vatican City State) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Honduras</masterLabel>
+            <translation><!-- Honduras --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hungary</masterLabel>
+            <translation><!-- Hungary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iceland</masterLabel>
+            <translation><!-- Iceland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>India</masterLabel>
+            <translation><!-- India --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indonesia</masterLabel>
+            <translation><!-- Indonesia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iran, Islamic Republic of</masterLabel>
+            <translation><!-- Iran, Islamic Republic of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iraq</masterLabel>
+            <translation><!-- Iraq --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ireland</masterLabel>
+            <translation><!-- Ireland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Isle of Man</masterLabel>
+            <translation><!-- Isle of Man --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Israel</masterLabel>
+            <translation><!-- Israel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italy</masterLabel>
+            <translation><!-- Italy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jamaica</masterLabel>
+            <translation><!-- Jamaica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japan</masterLabel>
+            <translation><!-- Japan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jersey</masterLabel>
+            <translation><!-- Jersey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jordan</masterLabel>
+            <translation><!-- Jordan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kazakhstan</masterLabel>
+            <translation><!-- Kazakhstan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kenya</masterLabel>
+            <translation><!-- Kenya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kiribati</masterLabel>
+            <translation><!-- Kiribati --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korea, Democratic People&apos;s Republic of</masterLabel>
+            <translation><!-- Korea, Democratic People&apos;s Republic of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korea, Republic of</masterLabel>
+            <translation><!-- Korea, Republic of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kuwait</masterLabel>
+            <translation><!-- Kuwait --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kyrgyzstan</masterLabel>
+            <translation><!-- Kyrgyzstan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lao People&apos;s Democratic Republic</masterLabel>
+            <translation><!-- Lao People&apos;s Democratic Republic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latvia</masterLabel>
+            <translation><!-- Latvia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lebanon</masterLabel>
+            <translation><!-- Lebanon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lesotho</masterLabel>
+            <translation><!-- Lesotho --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liberia</masterLabel>
+            <translation><!-- Liberia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Libya</masterLabel>
+            <translation><!-- Libya --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liechtenstein</masterLabel>
+            <translation><!-- Liechtenstein --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lithuania</masterLabel>
+            <translation><!-- Lithuania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luxembourg</masterLabel>
+            <translation><!-- Luxembourg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Macao</masterLabel>
+            <translation><!-- Macao --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Macedonia, the former Yugoslav Republic of</masterLabel>
+            <translation><!-- Macedonia, the former Yugoslav Republic of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Madagascar</masterLabel>
+            <translation><!-- Madagascar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malawi</masterLabel>
+            <translation><!-- Malawi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malaysia</masterLabel>
+            <translation><!-- Malaysia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maldives</masterLabel>
+            <translation><!-- Maldives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mali</masterLabel>
+            <translation><!-- Mali --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malta</masterLabel>
+            <translation><!-- Malta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Martinique</masterLabel>
+            <translation><!-- Martinique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauritania</masterLabel>
+            <translation><!-- Mauritania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mauritius</masterLabel>
+            <translation><!-- Mauritius --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mayotte</masterLabel>
+            <translation><!-- Mayotte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mexico</masterLabel>
+            <translation><!-- Mexico --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moldova, Republic of</masterLabel>
+            <translation><!-- Moldova, Republic of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monaco</masterLabel>
+            <translation><!-- Monaco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mongolia</masterLabel>
+            <translation><!-- Mongolia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montenegro</masterLabel>
+            <translation><!-- Montenegro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montserrat</masterLabel>
+            <translation><!-- Montserrat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Morocco</masterLabel>
+            <translation><!-- Morocco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mozambique</masterLabel>
+            <translation><!-- Mozambique --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Myanmar</masterLabel>
+            <translation><!-- Myanmar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Namibia</masterLabel>
+            <translation><!-- Namibia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nauru</masterLabel>
+            <translation><!-- Nauru --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nepal</masterLabel>
+            <translation><!-- Nepal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Netherlands</masterLabel>
+            <translation><!-- Netherlands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Caledonia</masterLabel>
+            <translation><!-- New Caledonia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Zealand</masterLabel>
+            <translation><!-- New Zealand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nicaragua</masterLabel>
+            <translation><!-- Nicaragua --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Niger</masterLabel>
+            <translation><!-- Niger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nigeria</masterLabel>
+            <translation><!-- Nigeria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Niue</masterLabel>
+            <translation><!-- Niue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norfolk Island</masterLabel>
+            <translation><!-- Norfolk Island --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norway</masterLabel>
+            <translation><!-- Norway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oman</masterLabel>
+            <translation><!-- Oman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pakistan</masterLabel>
+            <translation><!-- Pakistan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Palestine</masterLabel>
+            <translation><!-- Palestine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panama</masterLabel>
+            <translation><!-- Panama --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Papua New Guinea</masterLabel>
+            <translation><!-- Papua New Guinea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paraguay</masterLabel>
+            <translation><!-- Paraguay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peru</masterLabel>
+            <translation><!-- Peru --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Philippines</masterLabel>
+            <translation><!-- Philippines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pitcairn</masterLabel>
+            <translation><!-- Pitcairn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poland</masterLabel>
+            <translation><!-- Poland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portugal</masterLabel>
+            <translation><!-- Portugal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qatar</masterLabel>
+            <translation><!-- Qatar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reunion</masterLabel>
+            <translation><!-- Reunion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Romania</masterLabel>
+            <translation><!-- Romania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian Federation</masterLabel>
+            <translation><!-- Russian Federation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rwanda</masterLabel>
+            <translation><!-- Rwanda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saint Barthélemy</masterLabel>
+            <translation><!-- Saint Barthélemy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saint Helena, Ascension and Tristan da Cunha</masterLabel>
+            <translation><!-- Saint Helena, Ascension and Tristan da Cunha --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saint Kitts and Nevis</masterLabel>
+            <translation><!-- Saint Kitts and Nevis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saint Lucia</masterLabel>
+            <translation><!-- Saint Lucia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saint Martin (French part)</masterLabel>
+            <translation><!-- Saint Martin (French part) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saint Pierre and Miquelon</masterLabel>
+            <translation><!-- Saint Pierre and Miquelon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saint Vincent and the Grenadines</masterLabel>
+            <translation><!-- Saint Vincent and the Grenadines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samoa</masterLabel>
+            <translation><!-- Samoa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Marino</masterLabel>
+            <translation><!-- San Marino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sao Tome and Principe</masterLabel>
+            <translation><!-- Sao Tome and Principe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saudi Arabia</masterLabel>
+            <translation><!-- Saudi Arabia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senegal</masterLabel>
+            <translation><!-- Senegal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Serbia</masterLabel>
+            <translation><!-- Serbia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seychelles</masterLabel>
+            <translation><!-- Seychelles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sierra Leone</masterLabel>
+            <translation><!-- Sierra Leone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Singapore</masterLabel>
+            <translation><!-- Singapore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sint Maarten (Dutch part)</masterLabel>
+            <translation><!-- Sint Maarten (Dutch part) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slovakia</masterLabel>
+            <translation><!-- Slovakia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slovenia</masterLabel>
+            <translation><!-- Slovenia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solomon Islands</masterLabel>
+            <translation><!-- Solomon Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somalia</masterLabel>
+            <translation><!-- Somalia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Africa</masterLabel>
+            <translation><!-- South Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Georgia and the South Sandwich Islands</masterLabel>
+            <translation><!-- South Georgia and the South Sandwich Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Sudan</masterLabel>
+            <translation><!-- South Sudan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spain</masterLabel>
+            <translation><!-- Spain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sri Lanka</masterLabel>
+            <translation><!-- Sri Lanka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sudan</masterLabel>
+            <translation><!-- Sudan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suriname</masterLabel>
+            <translation><!-- Suriname --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Svalbard and Jan Mayen</masterLabel>
+            <translation><!-- Svalbard and Jan Mayen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swaziland</masterLabel>
+            <translation><!-- Swaziland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sweden</masterLabel>
+            <translation><!-- Sweden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Switzerland</masterLabel>
+            <translation><!-- Switzerland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syrian Arab Republic</masterLabel>
+            <translation><!-- Syrian Arab Republic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taiwan</masterLabel>
+            <translation><!-- Taiwan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tajikistan</masterLabel>
+            <translation><!-- Tajikistan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tanzania, United Republic of</masterLabel>
+            <translation><!-- Tanzania, United Republic of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thailand</masterLabel>
+            <translation><!-- Thailand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timor-Leste</masterLabel>
+            <translation><!-- Timor-Leste --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Togo</masterLabel>
+            <translation><!-- Togo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tokelau</masterLabel>
+            <translation><!-- Tokelau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tonga</masterLabel>
+            <translation><!-- Tonga --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trinidad and Tobago</masterLabel>
+            <translation><!-- Trinidad and Tobago --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tunisia</masterLabel>
+            <translation><!-- Tunisia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkey</masterLabel>
+            <translation><!-- Turkey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkmenistan</masterLabel>
+            <translation><!-- Turkmenistan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turks and Caicos Islands</masterLabel>
+            <translation><!-- Turks and Caicos Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuvalu</masterLabel>
+            <translation><!-- Tuvalu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uganda</masterLabel>
+            <translation><!-- Uganda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ukraine</masterLabel>
+            <translation><!-- Ukraine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United Arab Emirates</masterLabel>
+            <translation><!-- United Arab Emirates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United Kingdom</masterLabel>
+            <translation><!-- United Kingdom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United States</masterLabel>
+            <translation><!-- United States --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uruguay</masterLabel>
+            <translation><!-- Uruguay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uzbekistan</masterLabel>
+            <translation><!-- Uzbekistan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vanuatu</masterLabel>
+            <translation><!-- Vanuatu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venezuela, Bolivarian Republic of</masterLabel>
+            <translation><!-- Venezuela, Bolivarian Republic of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnam</masterLabel>
+            <translation><!-- Vietnam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virgin Islands, British</masterLabel>
+            <translation><!-- Virgin Islands, British --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wallis and Futuna</masterLabel>
+            <translation><!-- Wallis and Futuna --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Western Sahara</masterLabel>
+            <translation><!-- Western Sahara --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yemen</masterLabel>
+            <translation><!-- Yemen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zambia</masterLabel>
+            <translation><!-- Zambia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zimbabwe</masterLabel>
+            <translation><!-- Zimbabwe --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Days Before Default Expiration Date --></label>
+        <name>sumoapp__DaysBeforeDefaultExpirationDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Decline Message for Paid Events --></help>
+        <label><!-- Decline Message for Paid Event --></label>
+        <name>sumoapp__DeclineMessageForPaidEvent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Declined Confirmation # --></label>
+        <name>sumoapp__DeclinedConfirmationNumberLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Declined Location Details Label --></label>
+        <name>sumoapp__DeclinedLocationDetailsLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Declined Location Label --></label>
+        <name>sumoapp__DeclinedLocationLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Declined Name Label --></label>
+        <name>sumoapp__DeclinedNameLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Declined Sub-Header --></label>
+        <name>sumoapp__DeclinedSubHeaderLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Declined When --></label>
+        <name>sumoapp__DeclinedWhenLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Category --></label>
+        <name>sumoapp__DefaultCategory__c</name>
+        <relationshipLabel><!-- Default Categories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Default Create/Match --></label>
+        <name>sumoapp__DefaultCreateMatch__c</name>
+        <picklistValues>
+            <masterLabel>Accounts</masterLabel>
+            <translation><!-- Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacts</masterLabel>
+            <translation><!-- Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leads</masterLabel>
+            <translation><!-- Leads --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Default Location Option --></label>
+        <name>sumoapp__DefaultLocationOption__c</name>
+        <picklistValues>
+            <masterLabel>In Person</masterLabel>
+            <translation><!-- In Person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Conference</masterLabel>
+            <translation><!-- Video Conference --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Default Service --></label>
+        <name>sumoapp__DefaultService__c</name>
+        <relationshipLabel><!-- Default Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Default SUMO User --></label>
+        <name>sumoapp__DefaultSumoUser__c</name>
+        <relationshipLabel><!-- Default Sumo Users --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Default Timezone --></label>
+        <name>sumoapp__DefaultTimezone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Directions Label --></label>
+        <name>sumoapp__DirectionsLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disclaimer Text Area --></label>
+        <name>sumoapp__DisclaimerTextArea__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disclaimer Text --></label>
+        <name>sumoapp__DisclaimerText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Error Custom Message --></label>
+        <name>sumoapp__DisplayErrorCustomMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Dynamic Travel Time Calc Activated? --></label>
+        <name>sumoapp__DynamicTravelTimeStrategy__c</name>
+        <picklistValues>
+            <masterLabel>Calc Travel Time for any users who have Field Sales License (and exclude non field-sales users)</masterLabel>
+            <translation><!-- Calc Travel Time for any users who have Field Sales License (and exclude non field-sales users) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calc Travel Time for any users who have Field Sales License (and include non field-sales users)</masterLabel>
+            <translation><!-- Calc Travel Time for any users who have Field Sales License (and include non field-sales users) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do not calculate Travel Time (Optional: You may use Buffer Time if configured)</masterLabel>
+            <translation><!-- Do not calculate Travel Time (Optional: You may use Buffer Time if configured) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Detail Date/Time Label --></label>
+        <name>sumoapp__EDDateTimeLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Detail Description Label --></label>
+        <name>sumoapp__EDDescriptionLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Detail Location Details Label --></label>
+        <name>sumoapp__EDLocationDetailsLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Detail Locations Label --></label>
+        <name>sumoapp__EDLocationsLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Detail # of seats Label --></label>
+        <name>sumoapp__EDNumOfSeatsLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Detail Price Label --></label>
+        <name>sumoapp__EDPriceLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Detail Spaces Label --></label>
+        <name>sumoapp__EDSpacesLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Detail Sub Header --></label>
+        <name>sumoapp__EDSubHeader__c</name>
+    </fields>
+    <fields>
+        <label><!-- Embed Code in Body --></label>
+        <name>sumoapp__EmbedCodeInBody__c</name>
+    </fields>
+    <fields>
+        <label><!-- Embed Code in Header --></label>
+        <name>sumoapp__EmbedCodeInHeader__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Personal Account --></label>
+        <name>sumoapp__EnablePersonalAccount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Canceled Template (Customer) --></label>
+        <name>sumoapp__EventCanceledCustomerEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Declined Template (Customer) --></label>
+        <name>sumoapp__EventDeclinedCustomerEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Edit Page Custom Fields --></label>
+        <name>sumoapp__EventEditPageCustomFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Types --></label>
+        <name>sumoapp__EventTypes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Updated Template (Customer) --></label>
+        <name>sumoapp__EventUpdatedCustomerEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Updated Template (Host) --></label>
+        <name>sumoapp__EventUpdatedSumoUserEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event View Page Custom Fields --></label>
+        <name>sumoapp__EventViewPageCustomFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name Of Flow Screen --></label>
+        <name>sumoapp__FlowLastScreenName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name Of Flow --></label>
+        <name>sumoapp__FlowName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Footer Text --></label>
+        <name>sumoapp__FooterTextArea__c</name>
+    </fields>
+    <fields>
+        <label><!-- Furthest Booking Period (hours) --></label>
+        <name>sumoapp__FurthestBookingPeriod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Header Label --></label>
+        <name>sumoapp__GlobalHeaderLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Show Internal Emails By Default --></label>
+        <name>sumoapp__HideInternalEmailsByDefault__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Resources --></label>
+        <name>sumoapp__HideResources__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Rooms --></label>
+        <name>sumoapp__HideRooms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Appointment Slot --></label>
+        <name>sumoapp__HideSlotWhenContactBooked__c</name>
+    </fields>
+    <fields>
+        <label><!-- If CONTACT ID is passed --></label>
+        <name>sumoapp__IfContactIdIsPassed__c</name>
+        <picklistValues>
+            <masterLabel>Pre-Populate the Page</masterLabel>
+            <translation><!-- Pre-Populate the Page --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skip the Contact Page</masterLabel>
+            <translation><!-- Skip the Contact Page --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- If LEAD ID is passed --></label>
+        <name>sumoapp__IfLeadIdIsPassed__c</name>
+        <picklistValues>
+            <masterLabel>Prepopulate Read-Only - Pre-Populate the Lead Form when a Lead ID is passed in the URL, but make it read-only, so the user can not make any changes.</masterLabel>
+            <translation><!-- Prepopulate Read-Only - Pre-Populate the Lead Form when a Lead ID is passed in the URL, but make it read-only, so the user can not make any changes. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prepopulate the Lead Form - Pre-Populate the Lead Form when a Lead ID is passed in the URL and update the lead with any changes made in the lead form data. This does not include hidden fields.</masterLabel>
+            <translation><!-- Prepopulate the Lead Form - Pre-Populate the Lead Form when a Lead ID is passed in the URL and update the lead with any changes made in the lead form data. This does not include hidden fields. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skip the Lead Form - Skip the Lead Form when a Lead ID is passed in the URL.</masterLabel>
+            <translation><!-- Skip the Lead Form - Skip the Lead Form when a Lead ID is passed in the URL. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- If LEAD is converted --></label>
+        <name>sumoapp__IfLeadIsConverted__c</name>
+        <picklistValues>
+            <masterLabel>Create New Lead - Display the Lead Form, create a New Lead, and Self-Schedule Against the New Lead.</masterLabel>
+            <translation><!-- Create New Lead - Display the Lead Form, create a New Lead, and Self-Schedule Against the New Lead. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Schedule Contact - Self-Schedule Against the Contact that Resulted from the Converted Lead.</masterLabel>
+            <translation><!-- Schedule Contact - Self-Schedule Against the Contact that Resulted from the Converted Lead. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- If Lead Owner can&apos;t be host --></label>
+        <name>sumoapp__IfLeadOwnerCanNotBeHost__c</name>
+        <picklistValues>
+            <masterLabel>Assignment Logic</masterLabel>
+            <translation><!-- Assignment Logic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Default SUMO User</masterLabel>
+            <translation><!-- Default SUMO User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reschedule from Appointment Description --></label>
+        <name>sumoapp__IncludeLinkInAppointmentDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reschedule from Email Reminder --></label>
+        <name>sumoapp__IncludeLinkInEmailReminders__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invite Template Sub Type --></label>
+        <name>sumoapp__InviteTemplateSubType__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case</masterLabel>
+            <translation><!-- Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Case</masterLabel>
+            <translation><!-- Client Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact</masterLabel>
+            <translation><!-- Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groups</masterLabel>
+            <translation><!-- Groups --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intake</masterLabel>
+            <translation><!-- Intake --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead</masterLabel>
+            <translation><!-- Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation><!-- Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profiles</masterLabel>
+            <translation><!-- Profiles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Users</masterLabel>
+            <translation><!-- Users --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Invite Template Type --></label>
+        <name>sumoapp__InviteTemplateType__c</name>
+        <picklistValues>
+            <masterLabel>Invite Links Tab</masterLabel>
+            <translation><!-- Invite Links Tab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Objects</masterLabel>
+            <translation><!-- Salesforce Objects --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Time Format --></label>
+        <name>sumoapp__Is12HourTimeFormat__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active? --></label>
+        <name>sumoapp__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Allow Attachments Active? --></label>
+        <name>sumoapp__IsAllowAttachmentsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Booked Add  To Google Button Active --></label>
+        <name>sumoapp__IsBookedAddToGoogleButtonActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Booked Add To Outlook Button Active --></label>
+        <name>sumoapp__IsBookedAddToOutlookButtonActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Booked Print Button Active? --></label>
+        <name>sumoapp__IsBookedPrintButtonActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Cancel Button Active? --></label>
+        <name>sumoapp__IsCancelButtonActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Captcha Active? --></label>
+        <name>sumoapp__IsCaptchaActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activate Category --></label>
+        <name>sumoapp__IsCategoryActivated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Last Step Active? --></label>
+        <name>sumoapp__IsCompoundEventFormActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Display Resource Pools First Active? --></label>
+        <name>sumoapp__IsDisplayResourcePoolsFirstActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Internal Scheduting? --></label>
+        <name>sumoapp__IsInternalSchedulingActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Invite other Participants Active? --></label>
+        <name>sumoapp__IsInviteOtherParticipantsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Note for the participants Active? --></label>
+        <name>sumoapp__IsNoteForTheParticipantsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online Registration Section Visibility --></label>
+        <name>sumoapp__IsRegistrationSectionVisible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Reminder Notification OPT-IN Active? --></label>
+        <name>sumoapp__IsReminderOptInTextActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reschedule Against Resource Pool --></label>
+        <name>sumoapp__IsRescheduleAgainstPool__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Reschdule Button Active? --></label>
+        <name>sumoapp__IsRescheduleButtonActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Resource Configuration Active? --></label>
+        <name>sumoapp__IsResourceConfigurationEnabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Short Link Enabled --></label>
+        <name>sumoapp__IsShortLinkEnabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Stripe Receipt Active? --></label>
+        <name>sumoapp__IsStripeReceiptActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Step Sub-Header --></label>
+        <name>sumoapp__LastStepSubHeader__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Button Label --></label>
+        <name>sumoapp__LeadButtonLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Form Fields --></label>
+        <name>sumoapp__LeadFormFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Matching Field --></label>
+        <name>sumoapp__LeadMatchingField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Sub-Header --></label>
+        <name>sumoapp__LeadSubHeader__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Type Options --></label>
+        <name>sumoapp__LeadTypeOptions__c</name>
+        <picklistValues>
+            <masterLabel>Create a New Lead Everytime</masterLabel>
+            <translation><!-- Create a New Lead Everytime --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Match Lead by Advanced Match</masterLabel>
+            <translation><!-- Match Lead by Advanced Match --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Match Lead by Salesforce Duplicate Rules</masterLabel>
+            <translation><!-- Match Lead by Salesforce Duplicate Rules --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Match Lead on the following field</masterLabel>
+            <translation><!-- Match Lead on the following field --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Leads Match Only SUMO Records --></label>
+        <name>sumoapp__LeadsMatchOnlySumoRecords__c</name>
+    </fields>
+    <fields>
+        <label><!-- Limit of Attendees --></label>
+        <name>sumoapp__LimitOfAttendees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Limit of Open Appts Error Message --></label>
+        <name>sumoapp__LimitOfOpenApptsErrorMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Limit of Open Appts Interval --></label>
+        <name>sumoapp__LimitOfOpenApptsInterval__c</name>
+        <picklistValues>
+            <masterLabel>Day/s</masterLabel>
+            <translation><!-- Day/s --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month/s</masterLabel>
+            <translation><!-- Month/s --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week/s</masterLabel>
+            <translation><!-- Week/s --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Limit of Open Appts Number Per Attendee --></label>
+        <name>sumoapp__LimitOfOpenApptsNumberPerAttendee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Limit of Open Appts Pattern --></label>
+        <name>sumoapp__LimitOfOpenApptsPattern__c</name>
+        <picklistValues>
+            <masterLabel>All Invite Links</masterLabel>
+            <translation><!-- All Invite Links --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All Manually Scheduled</masterLabel>
+            <translation><!-- All Manually Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All Online Schedulers</masterLabel>
+            <translation><!-- All Online Schedulers --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Load Balance Next [X] days --></label>
+        <name>sumoapp__LoadBalanceNextXDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Assignment Mode --></label>
+        <name>sumoapp__LocationAssignmentMode__c</name>
+        <picklistValues>
+            <masterLabel>Area Based</masterLabel>
+            <translation><!-- Area Based --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zone Based</masterLabel>
+            <translation><!-- Zone Based --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location Notes --></label>
+        <name>sumoapp__LocationNotes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Options --></label>
+        <name>sumoapp__LocationOptions__c</name>
+        <picklistValues>
+            <masterLabel>In Person</masterLabel>
+            <translation><!-- In Person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Our Location</masterLabel>
+            <translation><!-- Our Location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone - You will call us</masterLabel>
+            <translation><!-- Phone - You will call us --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Conference</masterLabel>
+            <translation><!-- Video Conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual Event</masterLabel>
+            <translation><!-- Virtual Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Your Location</masterLabel>
+            <translation><!-- Your Location --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location Type Sub-Header --></label>
+        <name>sumoapp__LocationTypeSubHeader__c</name>
+    </fields>
+    <fields>
+        <label><!-- Locations --></label>
+        <name>sumoapp__Locations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logo --></label>
+        <name>sumoapp__Logo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Match on Email --></label>
+        <name>sumoapp__MatchOnEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Type --></label>
+        <name>sumoapp__MemberType__c</name>
+        <picklistValues>
+            <masterLabel>Groups</masterLabel>
+            <translation><!-- Groups --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profiles</masterLabel>
+            <translation><!-- Profiles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Users</masterLabel>
+            <translation><!-- Users --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Multi-Calendar Settings --></label>
+        <name>sumoapp__MultiCalendarSettings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>sumoapp__Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opacity --></label>
+        <name>sumoapp__Opacity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Events Limit --></label>
+        <name>sumoapp__OpenEventsLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organizer Options --></label>
+        <name>sumoapp__OrganizerOptions__c</name>
+        <picklistValues>
+            <masterLabel>Do not change Lead Owner</masterLabel>
+            <translation><!-- Do not change Lead Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Make Lead Owner the person who Appointment was Scheduled with</masterLabel>
+            <translation><!-- Make Lead Owner the person who Appointment was Scheduled with --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Schedule Appointment with Lead Owner</masterLabel>
+            <translation><!-- Schedule Appointment with Lead Owner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Our Location - Details --></label>
+        <name>sumoapp__OurLocationDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override CSS --></label>
+        <name>sumoapp__OverrideCss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Existing Data Accounts --></label>
+        <name>sumoapp__OverrideExistingDataAccounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Existing Data Contacts --></label>
+        <name>sumoapp__OverrideExistingDataContacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Existing Data Leads --></label>
+        <name>sumoapp__OverrideExistingDataLeads__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Existing Data --></label>
+        <name>sumoapp__OverrideExistingData__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Connector ID --></label>
+        <name>sumoapp__PaymentConnectorId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Sub Header --></label>
+        <name>sumoapp__PaymentSubHeader__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Type --></label>
+        <name>sumoapp__PaymentType__c</name>
+        <picklistValues>
+            <masterLabel>Collect payments using my own payment connector</masterLabel>
+            <translation><!-- Collect payments using my own payment connector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collect payments with Stripe</masterLabel>
+            <translation><!-- Collect payments with Stripe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do not collect payments</masterLabel>
+            <translation><!-- Do not collect payments --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phone - You Will Call Us - Details --></label>
+        <name>sumoapp__PhoneInboundDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Form Action --></label>
+        <name>sumoapp__PortalFormAction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority Based Assignment Mode --></label>
+        <name>sumoapp__PriorityAssignmentMode__c</name>
+        <picklistValues>
+            <masterLabel>Load-Balance</masterLabel>
+            <translation><!-- Load-Balance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Random</masterLabel>
+            <translation><!-- Random --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Round-Robin</masterLabel>
+            <translation><!-- Round-Robin --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Priority Based Next [X] days --></label>
+        <name>sumoapp__PriorityBasedNextXDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process Type --></label>
+        <name>sumoapp__ProcessType__c</name>
+        <picklistValues>
+            <masterLabel>Customer Scheduling (Business Contacts)</masterLabel>
+            <translation><!-- Customer Scheduling (Business Contacts) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Scheduling (Person Accounts)</masterLabel>
+            <translation><!-- Customer Scheduling (Person Accounts) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect Scheduling with Leads</masterLabel>
+            <translation><!-- Prospect Scheduling with Leads --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Push Email Reply to Case Comment --></label>
+        <name>sumoapp__PushEmailReplyToCaseComment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mile Radius to Load --></label>
+        <name>sumoapp__RadiusToLoad__c</name>
+    </fields>
+    <fields>
+        <label><!-- Register Promo Code Label --></label>
+        <name>sumoapp__RegisterPromoCodeLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Register Sub-Header --></label>
+        <name>sumoapp__RegisterSubHeader__c</name>
+    </fields>
+    <fields>
+        <label><!-- Register Subscribe Label --></label>
+        <name>sumoapp__RegisterSubscribeLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reminder Email Options --></label>
+        <name>sumoapp__ReminderEmailOptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reminder 1st Text Message Options --></label>
+        <name>sumoapp__ReminderFirstTextMessageOptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reminder Notification OPT-IN --></label>
+        <name>sumoapp__ReminderOptInText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reminder 2nd Text Message Options --></label>
+        <name>sumoapp__ReminderSecondTextMessageOptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reminder Text Template --></label>
+        <name>sumoapp__ReminderTextTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Search Criteria --></label>
+        <name>sumoapp__ResourceSearchCriteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Search Fields To Display --></label>
+        <name>sumoapp__ResourceSearchFieldsToDisplay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Room Search Criteria --></label>
+        <name>sumoapp__RoomSearchCriteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Room Search Fields To Display --></label>
+        <name>sumoapp__RoomSearchFieldsToDisplay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Email To Admin --></label>
+        <name>sumoapp__SendEmailToAdmin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Invite Email Template --></label>
+        <name>sumoapp__SendInviteEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Payment Link Email Template --></label>
+        <name>sumoapp__SendPaymentLinkEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Registration Link Template --></label>
+        <name>sumoapp__SendRegistrationLinkTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send To Admin Email Template --></label>
+        <name>sumoapp__SendToAdminEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Services --></label>
+        <name>sumoapp__Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site URL --></label>
+        <name>sumoapp__SiteUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skip the Where Step for Virtual Meetings --></label>
+        <name>sumoapp__SkipWhereStep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time-Slot intervals --></label>
+        <name>sumoapp__SlotIntervalGranularity__c</name>
+        <picklistValues>
+            <masterLabel>15 minutes</masterLabel>
+            <translation><!-- 15 minutes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20 minutes</masterLabel>
+            <translation><!-- 20 minutes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 minutes</masterLabel>
+            <translation><!-- 30 minutes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 minutes</masterLabel>
+            <translation><!-- 60 minutes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appointment Duration</masterLabel>
+            <translation><!-- Appointment Duration --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Top Of The Interval? --></label>
+        <name>sumoapp__StartSlotOnIntervalStart__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Origins Whitelist --></label>
+        <name>sumoapp__TargetOriginsWhitelist__c</name>
+    </fields>
+    <fields>
+        <label><!-- Always use Context User? --></label>
+        <name>sumoapp__UseContextUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Distance Rule before Priority --></label>
+        <name>sumoapp__UseDistanceRuleBeforePriority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Resource Pool Error Message --></label>
+        <name>sumoapp__UseResourcePoolErrorMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Choose Custom Error --></label>
+        <name>sumoapp__UserChooseCustomError__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Search Criteria --></label>
+        <name>sumoapp__UserSearchCriteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Search Fields To Display --></label>
+        <name>sumoapp__UserSearchFieldsToDisplay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Video Conference - Details --></label>
+        <name>sumoapp__VideoConferenceDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waitlist Email Options --></label>
+        <name>sumoapp__WaitlistEmailOptions__c</name>
+        <picklistValues>
+            <masterLabel>Do not Send</masterLabel>
+            <translation><!-- Do not Send --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Once per Day at:</masterLabel>
+            <translation><!-- Once per Day at: --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Waitlist Email Start Time --></label>
+        <name>sumoapp__WaitlistEmailStartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waitlist Email Time Zone --></label>
+        <name>sumoapp__WaitlistEmailTimeZone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waitlist Reminder Email Template --></label>
+        <name>sumoapp__WaitlistReminderEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waitlist Reminder SF Email Template --></label>
+        <name>sumoapp__WaitlistReminderSFEmailTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- What Sub-Header --></label>
+        <name>sumoapp__WhatSubHeader__c</name>
+    </fields>
+    <fields>
+        <label><!-- When Date/Time Label --></label>
+        <name>sumoapp__WhenDateTimeLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- When Description Label --></label>
+        <name>sumoapp__WhenDescriptionLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- When Price Label --></label>
+        <name>sumoapp__WhenPriceLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- When Spaces Label --></label>
+        <name>sumoapp__WhenSpacesLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- When Sub-Header --></label>
+        <name>sumoapp__WhenSubHeader__c</name>
+    </fields>
+    <fields>
+        <label><!-- Where Notes --></label>
+        <name>sumoapp__WhereNotes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Where Sub-Header --></label>
+        <name>sumoapp__WhereSubHeader__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who Employees --></label>
+        <name>sumoapp__WhoEmployees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who Filter --></label>
+        <name>sumoapp__WhoFilter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who Sub-Header --></label>
+        <name>sumoapp__WhoSubHeader__c</name>
+    </fields>
+    <fields>
+        <label><!-- Your Location - Details --></label>
+        <name>sumoapp__YourLocationDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Your Location Sub-Header Text --></label>
+        <name>sumoapp__YourLocationSubHeader__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Event Scheduler --></label>
+        <name>sumoapp__EventScheduler</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Invite Manager --></label>
+        <name>sumoapp__InviteManager</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Online Scheduler --></label>
+        <name>sumoapp__OnlineScheduler</name>
+    </recordTypes>
+</CustomObjectTranslation>

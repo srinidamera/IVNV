@@ -1,0 +1,311 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 08-26-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <div if:true={service}>
+        <div class="font-family slds-p-left_small">
+            <span class="services">
+            <a onclick={handleGoBack}>{servicesLabel}</a> </span> > {serviceNameLabelBreadCrumb}
+        </div>
+        <br/>
+
+        <div class="slds-grid slds-wrap">
+            <div class={serviceDetailSectionStyle}>
+                <article class="slds-card box-border-radius content">
+                    <div class="slds-card__header h-2">
+                        <!-- slds-grid -->
+                        {service.Name}
+                    </div>
+                    <div class="slds-card__body slds-card__body_inner">
+                        <div class="slds-p-top_medium" if:true={service.Description}>
+                            <lightning-formatted-rich-text value={service.Description}>
+                            </lightning-formatted-rich-text>
+                        </div>
+                        <!--<div class="slds-p-top_medium" if:true={service.FAQ}>
+                            <lightning-formatted-rich-text value={service.FAQ}>
+                            </lightning-formatted-rich-text>
+                            <br/>
+                        </div>-->
+                    </div>
+                </article>
+            </div>
+            <div if:true={isEnrolledService} class={uploadDocSectionStyle}>
+                <article class="slds-card box-border-radius content">
+                    <!--<div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-card__header h-2">
+                            
+                            {service.Name}
+                           
+                        </div>
+                        <div if:true={badgeLabel} class="slds-card__header slds-col slds-size_3-of-12 slds-m-right--small" >
+                            <lightning-badge label={badgeLabel}
+                                            class={badgeStyle}></lightning-badge>
+                        </div>
+                    </div>-->
+                    <div class="h-2 slds-col slds-grid slds-grid_vertical-align-start slds-m-bottom_x-small slds-card__header">
+                        <div class="slds-col font-segoe-ui">{service.Name}</div>
+                        <div if:true={badgeLabel} class="slds-col_bump-right font-segoe-ui"> <lightning-badge label={badgeLabel}
+                            class={badgeStyle}></lightning-badge>
+                        </div>
+                    </div>
+                    <div class="slds-card__body slds-card__body_inner">
+                        <div class="short-description">
+                            {service.ShortDescription}
+                        </div>
+                        <template if:true={service.Highlights}>
+                            <div class="slds-p-top_medium">
+                                <lightning-formatted-rich-text value={service.Highlights}>
+                                </lightning-formatted-rich-text>
+                            </div>
+                        </template>
+                        <span>
+                            <a class="services" onclick={toggleModal}> {viewMyServicesLabel} </a>
+                            &nbsp;&nbsp;
+                            {submittedDateLabel}: {enrolledServiceData.submittedDate}
+                         </span>
+                        <hr class="hrTag">
+                        <div class="slds-grid slds-wrap slds-p-top_medium">
+                            <div class="slds-col">
+                                <lightning-button-icon if:true={viewModeCollapsed} icon-name="utility:expand_all" size="x-small" class="slds-m-right_x-small"
+                                    variant="container" onclick={handleViewMode}>
+                                </lightning-button-icon>
+                                <lightning-button-icon if:false={viewModeCollapsed} icon-name="utility:collapse_all" size="x-small" class="slds-m-right_x-small"
+                                    variant="container" onclick={handleViewMode}>
+                                </lightning-button-icon>
+                                <span><b>{uploadDocumentsLabel}</b></span>
+                            </div>
+                        </div>
+                        <div if:false={viewModeCollapsed}>
+                            <div class="slds-p-top_medium slds-p-left_medium">
+                                <lightning-formatted-rich-text value={service.RequiredDocuments}>
+                                </lightning-formatted-rich-text>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-p-top_medium">
+                                <div class="slds-col slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                                    <lightning-button class="manage-document-text-color" label={manageDocumentsLabel} variant="brand" onclick={goToUploadDocument} stretch></lightning-button>
+                                </div>
+                                <div class="slds-col slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-top_x-small">
+                                    <lightning-button label={contactUsBtnLabel} variant="brand-outline" onclick={handleRequestSupport} stretch></lightning-button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        
+        <div
+            class="slds-col slds-grid slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_4-of-12 slds-float_right">
+            <div
+                class={goBackBtnStyle}>
+                <lightning-button class="btn btn-secondary" variant="brand-outline" label={goBackLabel} stretch onclick={handleGoBack}>
+                </lightning-button>
+            </div>
+            <div if:false={isEnrolledService}
+                class="slds-col slds-m-top_small slds-p-left_xx-small slds-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                <lightning-button class="btn btn-primary" variant="brand" label={signUpLabel} stretch onclick={redirectToRegister}></lightning-button>
+            </div>
+        </div>
+
+
+
+
+       <!-- <lightning-button class="btn btn-primary" variant="brand" label='click' stretch ></lightning-button>-->
+        
+       <template if:true={isShowModal}>
+		<section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class={getModalSize}>
+			<div class="slds-modal__container">
+				<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={toggleModal}>
+                        <lightning-icon icon-name="utility:close"
+                            alternative-text="close"
+                            variant="inverse"
+                            size="small" ></lightning-icon>
+			</button>
+				<div class="slds-modal__header">
+					<h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate" tabindex="-1">{serviceName}</h1>
+				</div>
+				<div class="slds-modal__content slds-grid slds-wrap slds-p-left_small slds-p-right_small"
+					id="modal-content-id-1">
+						
+						<div
+                            class="slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                           <!-- <div
+                                class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-top_x-small">
+                                <div class="h-2"> {builderReviewDetailsLabel} </div>
+                            </div>-->
+                            <div
+                                class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-top_small">
+                                <b>{builderContactLabel}</b>
+                                <div>
+                                    {builderNameLabel}: {enrolledServiceData.contact.Name}
+                                </div>
+                                <div>
+                                    {builderEmailAddressLabel}: {enrolledServiceData.contact.Email}
+                                </div>
+                                <div>
+                                    {builderPhoneNumberLabel}: {enrolledServiceData.contact.phone}
+                                </div>
+                                <div>
+                                    {builderBestimeToCallLabel}: {enrolledServiceData.contact.Besttimetocontact__c}
+                                </div>
+                                <div>
+                                    {builderAddressLabel}: {enrolledServiceData.contact.MailingStreet} {enrolledServiceData.contact.MailingAddressLine2__c}
+                                    {enrolledServiceData.contact.MailingCity}, {enrolledServiceData.contact.MailingStateCode} {enrolledServiceData.contact.MailingPostalCode}
+                                </div>
+                                <div>
+                                    {builderBirthdateLabel}: {enrolledServiceData.contact.Birthdate}
+                                </div>
+                                <div>
+                                    {builderGenderLabel}: {enrolledServiceData.contact.Gender__c}
+                                </div>
+                                <div>
+                                    {builderRaceLabel}: {enrolledServiceData.contact.Race__c}
+                                </div>
+                                <div>
+                                    {builderEthnicityLabel}: {enrolledServiceData.contact.Ethnicity__c}
+                                </div>
+                                <div>
+                                    {builderCommunityLabel}: {enrolledServiceData.contact.RuralAreaStatus__c}
+                                </div>
+                                <div>
+                                    {builderFluencyInEnglishLabel}: {enrolledServiceData.contact.EnglishProficiency__c}
+                                </div>
+                                <div>
+                                    {builderMaritalStatusLabel}: {enrolledServiceData.contact.MaritalStatus__c}
+                                </div>
+                                <div>
+                                    {builderEducationLabel}: {enrolledServiceData.contact.Education__c}
+                                </div>
+                                <div>
+                                    {builder1stTimeHomebuyerLabel}: {enrolledServiceData.contact.X1stTimeHomeBuyer__c}
+                                </div>
+                                <div>
+                                    {builderLegallyDisabledLabel}: {enrolledServiceData.contact.DisabledStatus__c}
+                                </div>
+                                <div>
+                                    {builderHouseholdSizeLabel}: {enrolledServiceData.contact.HouseholdSize__c}
+                                </div>
+                                <div>
+                                    {builderHouseholdTypeOnlyLabel}: {enrolledServiceData.contact.HouseholdType__c}
+                                </div>
+                                <div>
+                                    {builderActiveMilitaryLabel}: {enrolledServiceData.contact.ActiveMilitary__c}
+                                </div>
+                                <div>
+                                    {builderVeteranStatusLabel}: {enrolledServiceData.contact.Veteran__c}
+                                </div>
+                                <div>
+                                    {builderTotalMonthlyIncomeLabel} : {enrolledServiceData.contact.TotalMonthlyIncome__c}
+                                </div>
+                                <div>
+                                    {builderNumberOfDependentsLabel}: {enrolledServiceData.contact.NumberOfDependents__c}
+                                </div>
+                                <div>
+                                    {builderEmploymentStatusLabel}: {enrolledServiceData.contact.EmploymentStatus__c}
+                                </div>
+                                <div>
+                                    {builderCreditScoreLabel}: {enrolledServiceData.contact.CreditScore__c}
+                                </div>
+                            </div>
+                
+                            <div
+                                class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-top_small">
+                                    <template for:each={enrolledServiceData.applicants} for:item="applicant" for:index="index">
+                                        <div key={applicant.Id} class="slds-p-bottom_small">
+                                            <b class="slds-p-top_x-small" >{builderCoApplicantLabel} {applicant.number}</b>
+                                            <div>
+                                                {builderNameLabel}: {applicant.Name}
+                                            </div>
+                                            <div>
+                                                {builderEmailAddressLabel}: {applicant.Email}
+                                            </div>
+                                            <div>
+                                                {builderPhoneNumberLabel}: {applicant.Phone}
+                                            </div>
+                                            <div>
+                                                {builderBestimeToCallLabel}: {applicant.Besttimetocontact__c}
+                                            </div>
+                                            <div>
+                                                {builderAddressLabel}: {applicant.MailingStreet} {applicant.MailingAddressLine2__c}
+                                                {applicant.MailingCity}, {applicant.MailingStateCode} {applicant.MailingPostalCode}
+                                            </div>
+                                            <div>
+                                                {builderPreferredCommunicationLanguageLabel}: {applicant.PreferredLanguage__c}
+                                            </div>
+                                            <div>
+                                                {builderRelationshipToClientLabel}: {applicant.RelationshipToPrimaryApplicant__c}
+                                            </div>
+                                            <div>
+                                                {builderBirthdateLabel}: {applicant.Birthdate}
+                                            </div>
+                                            <div>
+                                                {builderGenderLabel}: {applicant.Gender__c}
+                                            </div>
+                                            <div>
+                                                {builderRaceLabel}: {applicant.Race__c}
+                                            </div>
+                                            <div>
+                                                {builderEthnicityLabel}: {applicant.Ethnicity__c}
+                                            </div>
+                                            <div>
+                                                {builderCommunityLabel}: {applicant.RuralAreaStatus__c}
+                                            </div>
+                                            <div>
+                                                {builderFluencyInEnglishLabel}: {applicant.EnglishProficiency__c}
+                                            </div>
+                                            <div>
+                                                {builderEducationLabel}: {applicant.Education__c}
+                                            </div>
+                                            <div>
+                                                {builder1stTimeHomebuyerLabel}: {applicant.X1stTimeHomeBuyer__c}
+                                            </div>
+                                            <div>
+                                                {builderActiveMilitaryLabel}: {applicant.ActiveMilitary__c}
+                                            </div>
+                                            <div>
+                                                {builderVeteranStatusLabel}: {applicant.Veteran__c}
+                                            </div>
+                                            <div>
+                                                {builderLegallyDisabledLabel}: {applicant.DisabledStatus__c}
+                                            </div>
+                                            <div>
+                                                {builderTotalMonthlyIncomeLabel} : {applicant.TotalMonthlyIncome__c}
+                                            </div>
+                                            <div>
+                                                {builderNumberOfDependentsLabel}: {applicant.NumberOfDependents__c}
+                                            </div>
+                                            <div>
+                                                {builderEmploymentStatusLabel}: {applicant.EmploymentStatus__c}
+                                            </div>
+                                            <div>
+                                                {builderCreditScoreLabel}: {applicant.CreditScore__c}
+                                            </div>
+                                        </div>
+                                </template>
+                            </div>
+                        </div>
+					</div>
+					<div class="slds-modal__footer" > <!--  slds-grid slds-grid_align-center -->
+						<div
+                            class="slds-col slds-grid slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_4-of-12 slds-float_right">
+                            <div
+                                class="slds-col slds-m-top_small slds-p-right_xx-small slds-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                                <lightning-button class="btn btn-secondary" variant="brand" label={goBackLabel} stretch onclick={toggleModal}>
+                                </lightning-button>
+                            </div>
+                            <div
+                                class="slds-col slds-m-top_small slds-p-left_xx-small slds-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                                <lightning-button class="btn btn-primary" variant="brand" label={contactUsBtnLabel} stretch onclick={navigateToContact}></lightning-button>
+                            </div>
+                        </div>
+					</div>
+				</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+	</template>
+    </div>
+</template>

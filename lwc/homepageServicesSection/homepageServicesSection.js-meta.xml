@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+	<isExposed>true</isExposed>
+	<masterLabel>Homepage Services Post Login</masterLabel>
+	<targets>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightningCommunity__Default">
+			<property
+					type="Integer"
+					name="tileHeight"
+					label="Height for cards in pixels"
+					default="122"
+			/>
+			<property
+					type="String"
+					name="labelHyperlink"
+					label="Label for details hyperlink"
+					default="View Details"
+					translatable="true"
+			/>
+
+			<property
+					type="String"
+					name="labelLastUpdated"
+					label="Label for 'Last Updated'"
+					default="Last Updated"
+					translatable="true"
+			/>
+
+			<property
+					type="String"
+					name="labelStatusNew"
+					label="Label for status 'New'."
+					default="New"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelStatusOnHold"
+					label="Label for status 'On Hold'."
+					default="On Hold"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelStatusConverted"
+					label="Label for status 'Converted'."
+					default="Completed"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="labelStatusClosedIncomplete"
+					label="Label for status 'Closed - Incomplete'."
+					default="Incomplete"
+					translatable="true"
+			/>
+
+			<!-- Buttons -->
+			<property
+					type="String"
+					name="btnLabels"
+					label="Button Labels comma separated"
+					default="Request a Service, View My Services"
+					translatable="true"
+			/>
+			<property
+					type="String"
+					name="btnTypes"
+					label="Button Types comma separated 'Primary' or 'Secondary'."
+					default="Secondary, Primary"
+			/>
+			<property
+					type="String"
+					name="redirectToPage"
+					label="Redirect to Page API names comma separated, on click."
+					default="Service__c, Service__c"
+			/>
+			<property
+					type="String"
+					name="queryParams"
+					label="Query params to pass while redirecting to Page, comma separated, on click."
+					default=" , defTab=2"
+			/>
+			<property
+					type="String"
+					name="horizontalAlign"
+					label="Horizontal Alignment"
+					default="Right"
+					datasource="Left,Right,Center"
+			/>
+		</targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

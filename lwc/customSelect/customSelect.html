@@ -1,0 +1,106 @@
+<template>
+	<template if:true={pickListObj}>
+		<div class="slds-form-element" data-id="combobox-main-div">
+			<template if:true={label}>
+				<label class="slds-form-element__label" for="combobox-id-2" id="combobox-label-id-136">
+					<abbr class="slds-required" title="required">
+						<template if:true={required}>
+							*
+						</template>
+						</abbr>{label}
+			</label>
+			</template>
+
+			<div class="slds-form-element__control">
+				<div class="slds-combobox_container">
+					<div data-id="combobox-drop-down-id-137-custom"
+						class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+						<div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+							role="none" onclick={handleOnClick}>
+							<div role="combobox" tabindex="0"
+								class="slds-input_faux slds-combobox__input slds-has-focus"
+								aria-labelledby="combobox-label-id-136 combobox-id-2-selected-value"
+								id="combobox-id-2-selected-value" aria-controls="listbox-id-4" aria-expanded="false"
+								aria-haspopup="listbox">
+								<span class="slds-truncate" id="combobox-value-id-99">
+									<template if:true={showSelectedCount}>
+										{showSelectedCount}
+									</template>
+									<template if:false={showSelectedCount}>
+										{placeholder}
+									</template>
+									
+								</span>
+							</div>
+							<lightning-icon icon-name="utility:down"
+								class="slds-icon-utility-down slds-input__icon slds-input__icon_right"
+								alternative-text="Connected" size="x-small" title="x-small size"></lightning-icon>
+						</div>
+						<div id="listbox-id-4" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid"
+							role="listbox" aria-label="Placeholder for Dropdown Items" tabindex="0" aria-busy="false">
+							<ul class="slds-listbox slds-listbox_vertical" role="presentation">
+								<template for:each={recordTypeOptions} for:item="pickObj" for:index="index">
+									<template if:true={pickObj.isSelected}>
+										<li role="presentation" class="slds-listbox__item" key={pickObj.value}
+											data-id={pickObj.value} onclick={toggleSelect}>
+											<div aria-selected="true" aria-checked="true" id="option724"
+												class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small slds-is-selected slds-has-focus"
+												role="option">
+												<span class="slds-media__figure slds-listbox__option-icon">
+													<lightning-icon icon-name="utility:check"
+														class="slds-icon-utility-check slds-input__icon slds-input__icon_right slds-current-color"
+														alternative-text="Connected" size="x-small"
+														title="x-small size"></lightning-icon>
+												</span>
+												<span class="slds-media__body">
+													<span class="slds-truncate"
+														title={pickObj.value}>{pickObj.value}</span>
+												</span>
+											</div>
+										</li>
+									</template>
+									<template if:false={pickObj.isSelected}>
+										<li role="presentation" class="slds-listbox__item" key={pickObj.value}
+											data-id={pickObj.value} onclick={toggleSelect}>
+											<div id="option765"
+												class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small"
+												role="option">
+												<span class="slds-media__figure slds-listbox__option-icon"></span>
+												<span class="slds-media__body">
+													<span class="slds-truncate"
+														title={pickObj.value}>{pickObj.value}</span>
+												</span>
+											</div>
+										</li>
+									</template>
+
+								</template>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--Selected Option List-->
+				<!-- <div class="slds-listbox_selection-group">
+					<ul class="slds-listbox slds-listbox_horizontal" aria-label="Selected Options:">
+						<template for:each={selectedValues} for:item="selectedVal">
+							<li class="slds-listbox-item" role="presentation" key={selectedVal}
+								data-id={selectedVal} onclick={handleRemove}>
+								<span class="slds-pill" tabindex="0" aria-selected="true">
+									<span class="slds-pill__label" title={selectedVal}>{selectedVal}</span>
+									<span class="slds-icon_container slds-pill__remove" title="Remove">
+										<lightning-button-icon icon-name="utility:close" variant="bare"
+											alternative-text="Remove" title="Remove"></lightning-button-icon>
+									</span>
+								</span>
+							</li>
+						</template>
+					</ul>
+				</div> -->
+			</div>
+			<template if:true={errorMessage}>
+				<div class="slds-form-element__help" id="error-message-id-49">{errorMessage}</div>
+			</template>
+
+		</div>
+	</template>
+</template>

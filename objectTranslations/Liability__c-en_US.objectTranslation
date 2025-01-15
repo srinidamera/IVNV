@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Liability</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Liabilities</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Balance --></label>
+        <name>AccountBalance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>AccountName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>AccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Case --></label>
+        <name>ClientCase__c</name>
+        <relationshipLabel><!-- Liabilities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Liabilities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Don&apos;t Use in Computations --></label>
+        <name>DontUseinComputations__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liabilities Type --></label>
+        <name>LiabilitiesType__c</name>
+        <picklistValues>
+            <masterLabel>Automobile Loan</masterLabel>
+            <translation><!-- Automobile Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card</masterLabel>
+            <translation><!-- Credit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Judgement</masterLabel>
+            <translation><!-- Judgement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lease</masterLabel>
+            <translation><!-- Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lien</masterLabel>
+            <translation><!-- Lien --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan</masterLabel>
+            <translation><!-- Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mortgage</masterLabel>
+            <translation><!-- Mortgage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student Loan</masterLabel>
+            <translation><!-- Student Loan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Minimum Monthly Payment --></label>
+        <name>MinimumMonthlyPayment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Victim of Predatory Lending --></label>
+        <name>VictimofPredatoryLending__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

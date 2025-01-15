@@ -1,0 +1,13 @@
+.btn {
+  --sds-c-button-radius-border: var(--dxp-s-button-radius-border) !important;
+  font-size: var(--dxp-s-button-font-size) !important;
+  height: 32px !important;
+}
+
+.min-width {
+  min-width: 167px;
+}
+
+.bord {
+  border: solid 1px red;
+}

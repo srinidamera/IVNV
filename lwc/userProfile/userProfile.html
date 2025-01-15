@@ -1,0 +1,21 @@
+<template>
+    <div class="slds-box slds-box_small bg-color">
+        <lightning-tabset active-tab-value={currentTab}>
+            <lightning-tab label="Profile" value="Profile" onactive={handleActive}>
+                <c-profile-details></c-profile-details>
+            </lightning-tab>
+            <lightning-tab label="Access" value="Access" onactive={handleActive}>
+                Access
+            </lightning-tab>
+            <lightning-tab label="Payment" value="Payment" onactive={handleActive}>
+                Payment
+            </lightning-tab>
+            <lightning-tab label="Notifications" value="Notifications" onactive={handleActive}>
+                Notifications
+            </lightning-tab>
+            <lightning-tab label="Docs" value="Docs" onactive={handleActive}>
+                Docs
+            </lightning-tab>
+        </lightning-tabset>
+    </div>
+</template>

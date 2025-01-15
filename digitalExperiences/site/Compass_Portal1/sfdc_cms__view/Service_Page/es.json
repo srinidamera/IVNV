@@ -1,0 +1,31 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Service Page",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "description" : "Elija el servicio a continuación que más le interese.",
+          "title" : "Servicios"
+        },
+        "id" : "be9ed93b-bf91-4f1e-a3e2-39f67d0ce1eb"
+      }, {
+        "id" : "3675bd9a-7928-4468-ac7e-75751bee8b19",
+        "attributes" : {
+          "viewDetailsLinkTitle" : "Ver detalles",
+          "signUpLabel" : "Inscribirse",
+          "contactUsLabel" : "Contacta con nosotros",
+          "allServicesLabel" : "Todos los servicios",
+          "myServicesLabel" : "Mis servicios",
+          "learnMoreLinkTitle" : "Más información",
+          "labelOpen" : "Abierta",
+          "labelOnHold" : "En espera",
+          "labelCompleted" : "Completado",
+          "labelIncomplete" : "Incompleto",
+          "noServicesSignedUpdMsg" : "No te has registrado en ningún servicio."
+        }
+      } ]
+    }
+  },
+  "urlName" : "service-page"
+}

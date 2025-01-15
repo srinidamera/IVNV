@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Financial Snapshot</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Financial Snapshots</value>
+    </caseValues>
+    <fields>
+        <label><!-- Client Case --></label>
+        <name>ClientCase__c</name>
+        <relationshipLabel><!-- Financial Snapshots --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Co-App Credit Score --></label>
+        <name>CoAppCreditScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Median Credit Score --></label>
+        <name>CreditScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Household Monthly Creditor Debt --></label>
+        <name>CurrentMonthlyDebtObligation__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Household Monthly Income --></label>
+        <name>GrossMonthlyIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Housing Expense --></label>
+        <name>HousingExpense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Monthly Income --></label>
+        <name>NetMonthlyIncome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Worth --></label>
+        <name>NetWorth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>PrimaryContact__c</name>
+        <relationshipLabel><!-- Financial Snapshots --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current Savings --></label>
+        <name>Savings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Assets --></label>
+        <name>TotalAssets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Household Debt --></label>
+        <name>TotalDebt__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

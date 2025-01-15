@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Referral</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Referrals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Client Case --></label>
+        <name>ClientCase__c</name>
+        <relationshipLabel><!-- Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client Name --></label>
+        <name>ClientName__c</name>
+        <relationshipLabel><!-- Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intake Request --></label>
+        <name>IntakeRequest__c</name>
+        <relationshipLabel><!-- Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Referral Notes --></label>
+        <name>ReferralNotes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Outcome --></label>
+        <name>ReferralOutcome__c</name>
+        <picklistValues>
+            <masterLabel>Client received assistance</masterLabel>
+            <translation><!-- Client received assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred agency unable to provide services</masterLabel>
+            <translation><!-- Referred agency unable to provide services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Referral Type --></label>
+        <name>ReferralType__c</name>
+        <picklistValues>
+            <masterLabel>Attorney/Closing Agent</masterLabel>
+            <translation><!-- Attorney/Closing Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Behavioral Counseling</masterLabel>
+            <translation><!-- Behavioral Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Counseling</masterLabel>
+            <translation><!-- Credit Counseling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Debt Management Program</masterLabel>
+            <translation><!-- Debt Management Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Shelter</masterLabel>
+            <translation><!-- Emergency Shelter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Institute Representative</masterLabel>
+            <translation><!-- Financial Institute Representative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government Affiliate</masterLabel>
+            <translation><!-- Government Affiliate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Inspector</masterLabel>
+            <translation><!-- Home Inspector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homeowner’s Insurance Agent</masterLabel>
+            <translation><!-- Homeowner’s Insurance Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mortgage Originator</masterLabel>
+            <translation><!-- Mortgage Originator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate Agent</masterLabel>
+            <translation><!-- Real Estate Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Service Agency</masterLabel>
+            <translation><!-- Social Service Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Consultant</masterLabel>
+            <translation><!-- Tax Consultant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Referred to Agency --></label>
+        <name>ReferredtoAgency__c</name>
+        <relationshipLabel><!-- Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Referred to Contact --></label>
+        <name>ReferredtoContact__c</name>
+        <relationshipLabel><!-- Referrals (Referred to Contact) --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>X9902_Counselor_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>X9902_Counselor_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>To store detailed information about counselors who work with clients within the Agency.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>CMSCounselorID__c</fullName>
+        <externalId>false</externalId>
+        <label>CMS Counselor ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CounselorBillingMethod__c</fullName>
+        <label>Counselor Billing Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Hourly</fullName>
+                    <default>false</default>
+                    <label>Hourly</label>
+                </value>
+                <value>
+                    <fullName>Fixed</fullName>
+                    <default>false</default>
+                    <label>Fixed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CounselorEmailAddress__c</fullName>
+        <externalId>false</externalId>
+        <label>Counselor Email Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CounselorEmpEndDate__c</fullName>
+        <description>Indicates the date when the counselor&apos;s employment or contract ends.</description>
+        <inlineHelpText>Enter the date when the counselor&apos;s employment or contract officially ends.</inlineHelpText>
+        <label>Counselor Employment End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CounselorEmpStartDate__c</fullName>
+        <description>Indicates the date when the counselor&apos;s employment or contract begins.</description>
+        <inlineHelpText>Enter the date when the counselor&apos;s employment or contract officially starts.</inlineHelpText>
+        <label>Counselor Employment Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CounselorFirstName__c</fullName>
+        <externalId>false</externalId>
+        <label>Counselor First Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CounselorHUDID__c</fullName>
+        <description>Unique identifier assigned to the counselor by the Department of Housing and Urban Development (HUD).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the HUD ID assigned to the counselor by the Department of Housing and Urban Development.</inlineHelpText>
+        <label>Counselor HUD ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CounselorLanguages__c</fullName>
+        <label>Counselor Languages</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Arabic</fullName>
+                    <default>false</default>
+                    <label>Arabic</label>
+                </value>
+                <value>
+                    <fullName>Cambodian</fullName>
+                    <default>false</default>
+                    <label>Cambodian</label>
+                </value>
+                <value>
+                    <fullName>Cantonese</fullName>
+                    <default>false</default>
+                    <label>Cantonese</label>
+                </value>
+                <value>
+                    <fullName>Chinese Mandarin</fullName>
+                    <default>false</default>
+                    <label>Chinese Mandarin</label>
+                </value>
+                <value>
+                    <fullName>Czech</fullName>
+                    <default>false</default>
+                    <label>Czech</label>
+                </value>
+                <value>
+                    <fullName>French</fullName>
+                    <default>false</default>
+                    <label>French</label>
+                </value>
+                <value>
+                    <fullName>Hindi</fullName>
+                    <default>false</default>
+                    <label>Hindi</label>
+                </value>
+                <value>
+                    <fullName>Indonesian</fullName>
+                    <default>false</default>
+                    <label>Indonesian</label>
+                </value>
+                <value>
+                    <fullName>Korean</fullName>
+                    <default>false</default>
+                    <label>Korean</label>
+                </value>
+                <value>
+                    <fullName>Polish</fullName>
+                    <default>false</default>
+                    <label>Polish</label>
+                </value>
+                <value>
+                    <fullName>Portuguese</fullName>
+                    <default>false</default>
+                    <label>Portuguese</label>
+                </value>
+                <value>
+                    <fullName>Russian</fullName>
+                    <default>false</default>
+                    <label>Russian</label>
+                </value>
+                <value>
+                    <fullName>Swahili</fullName>
+                    <default>false</default>
+                    <label>Swahili</label>
+                </value>
+                <value>
+                    <fullName>Turkish</fullName>
+                    <default>false</default>
+                    <label>Turkish</label>
+                </value>
+                <value>
+                    <fullName>Vietnamese</fullName>
+                    <default>false</default>
+                    <label>Vietnamese</label>
+                </value>
+                <value>
+                    <fullName>English</fullName>
+                    <default>false</default>
+                    <label>English</label>
+                </value>
+                <value>
+                    <fullName>Spanish</fullName>
+                    <default>false</default>
+                    <label>Spanish</label>
+                </value>
+                <value>
+                    <fullName>Farsi</fullName>
+                    <default>false</default>
+                    <label>Farsi</label>
+                </value>
+                <value>
+                    <fullName>Ukrainian</fullName>
+                    <default>false</default>
+                    <label>Ukrainian</label>
+                </value>
+                <value>
+                    <fullName>ASL</fullName>
+                    <default>false</default>
+                    <label>ASL</label>
+                </value>
+                <value>
+                    <fullName>Hmong</fullName>
+                    <default>false</default>
+                    <label>Hmong</label>
+                </value>
+                <value>
+                    <fullName>Creole</fullName>
+                    <default>false</default>
+                    <label>Creole</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>German</fullName>
+                    <default>false</default>
+                    <label>German</label>
+                </value>
+                <value>
+                    <fullName>Italian</fullName>
+                    <default>false</default>
+                    <label>Italian</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CounselorLastName__c</fullName>
+        <externalId>false</externalId>
+        <label>Counselor Last Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CounselorMiddleName__c</fullName>
+        <externalId>false</externalId>
+        <label>Counselor Middle Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CounselorPhone__c</fullName>
+        <label>Counselor Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>CounselorRate__c</fullName>
+        <description>The rate at which the counselor&apos;s services are billed or charged, typically per hour or per session.</description>
+        <inlineHelpText>Enter the billing rate at which the counselor&apos;s services are charged.</inlineHelpText>
+        <label>Counselor Billing Rate</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CounselorServiceTypes__c</fullName>
+        <description>Indicates the types of counseling services provided by the counselor.</description>
+        <inlineHelpText>Select one or more options from the picklist to specify the types of counseling services offered by the counselor.</inlineHelpText>
+        <label>Counselor Service Types</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Mortgage Delinquency and Default Resolution Counseling</fullName>
+                    <default>false</default>
+                    <label>Mortgage Delinquency and Default Resolution Counseling</label>
+                </value>
+                <value>
+                    <fullName>Reverse Mortgage Counseling</fullName>
+                    <default>false</default>
+                    <label>Reverse Mortgage Counseling</label>
+                </value>
+                <value>
+                    <fullName>Home Improvement and Rehabilitation Counseling</fullName>
+                    <default>false</default>
+                    <label>Home Improvement and Rehabilitation Counseling</label>
+                </value>
+                <value>
+                    <fullName>Services for Homeless Counseling</fullName>
+                    <default>false</default>
+                    <label>Services for Homeless Counseling</label>
+                </value>
+                <value>
+                    <fullName>Financial Management/Budget Counseling</fullName>
+                    <default>false</default>
+                    <label>Financial Management/Budget Counseling</label>
+                </value>
+                <value>
+                    <fullName>Pre-purchase Counseling</fullName>
+                    <default>false</default>
+                    <label>Pre-purchase Counseling</label>
+                </value>
+                <value>
+                    <fullName>Rental Housing Counseling</fullName>
+                    <default>false</default>
+                    <label>Rental Housing Counseling</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CounselorTrainingCertificate__c</fullName>
+        <description>Indicates whether the counselor has completed training and holds a certificate in counseling or related field.</description>
+        <inlineHelpText>Check this box if the counselor has completed formal training and holds a certificate in counseling or a related field</inlineHelpText>
+        <label>Counselor Training Certificate</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Y</fullName>
+                    <default>false</default>
+                    <label>Y</label>
+                </value>
+                <value>
+                    <fullName>N</fullName>
+                    <default>false</default>
+                    <label>N</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CounselorTrainingCourseID__c</fullName>
+        <externalId>false</externalId>
+        <label>Counselor Training Course ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CounselorTrainingDate__c</fullName>
+        <label>Counselor Training Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CounselorTrainingDuration__c</fullName>
+        <description>Indicates the duration or length of the counselor&apos;s training program.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the duration or length of the counselor&apos;s training program.</inlineHelpText>
+        <label>Counselor Training Duration</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CounselorTrainingOrganizationOther__c</fullName>
+        <description>Indicates the name of the training organization if &quot;Other&quot; is selected in the &quot;Counselor Training Organization&quot; field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If &quot;Other&quot; is selected in the &quot;Counselor Training Organization&quot; field, specify the name of the training organization in this field.</inlineHelpText>
+        <label>Counselor Training Organization Other</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CounselorTrainingOrganization__c</fullName>
+        <description>Indicates the organization or entity from which the counselor received training.</description>
+        <inlineHelpText>Select the organization from which the counselor received training.</inlineHelpText>
+        <label>Counselor Training Organization</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName>NeighborWorks America</fullName>
+                    <default>false</default>
+                    <label>NeighborWorks America</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+                <value>
+                    <fullName>La Raza</fullName>
+                    <default>false</default>
+                    <label>La Raza</label>
+                </value>
+                <value>
+                    <fullName>NCRC</fullName>
+                    <default>false</default>
+                    <label>NCRC</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CounselorTrainingSponsorOther__c</fullName>
+        <description>Indicates the name of the training sponsor if &quot;Other&quot; is selected in the &quot;Counselor Training Sponsor&quot; field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If &quot;Other&quot; is selected in the &quot;Counselor Training Sponsor&quot; field, specify the name of the training sponsor in this field.</inlineHelpText>
+        <label>Counselor Training Sponsor Other</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CounselorTrainingSponsor__c</fullName>
+        <description>Indicates the entity sponsoring the counselor&apos;s training program.</description>
+        <inlineHelpText>Enter the name of the entity sponsoring the counselor&apos;s training program.</inlineHelpText>
+        <label>Counselor Training Sponsor</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName>HUD</fullName>
+                    <default>false</default>
+                    <label>HUD</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CounselorTrainingTitle__c</fullName>
+        <externalId>false</externalId>
+        <label>Counselor Training Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ElementType__c</fullName>
+        <label>Element Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Profile</fullName>
+                    <default>false</default>
+                    <label>Profile</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+                <value>
+                    <fullName>Training Course</fullName>
+                    <default>false</default>
+                    <label>Training Course</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>StaffTrainingAttendance__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Staff Training Attendance</label>
+        <referenceTo>CounselorTraining__c</referenceTo>
+        <relationshipLabel>9902 Counselor</relationshipLabel>
+        <relationshipName>X9902_Counselor</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>X9902_Counselor</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>X9902__c</fullName>
+        <label>9902</label>
+        <referenceTo>X9902__c</referenceTo>
+        <relationshipLabel>9902 Counselor</relationshipLabel>
+        <relationshipName>X9902_Counselor</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>9902 Counselor</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>99-{00000}</displayFormat>
+        <label>9902 Counselor ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>9902 Counselor</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>MassAssignRecordLabel</excludedStandardButtons>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

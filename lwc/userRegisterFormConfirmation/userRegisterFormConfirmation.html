@@ -1,0 +1,27 @@
+<template>
+  <div class="container slds-grid slds-grid_vertical-align-center slds-grid_align-center">
+    <!-- Forgot password -->
+    <div
+      class="slds-col slds-grid_align-center fix-width slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_2-of-8">
+      <div class="border slds-theme_default slds-m-vertical_medium slds-p-around_small">
+        <div class="slds-text-heading_medium h-2">{title}</div>
+        <!-- Icons -->
+        <div class="slds-align_absolute-center slds-m-vertical_medium">
+          <lightning-icon class="icon-style" size="medium" icon-name="standard:task2" alternative-text="Approved"
+            title="Approved"></lightning-icon>
+        </div>
+        <div class="slds-text-color_default slds-m-top_small slds-m-bottom_xx-small h-3">
+          <lightning-formatted-rich-text value={formattedDesc}></lightning-formatted-rich-text>
+        </div>
+      </div>
+      <!-- buttons -->
+      <div class="slds-grid slds-wrap">
+        <div
+          class="slds-col slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+          <lightning-button class="btn btn-primary" variant="brand" label={btnLabel} onclick={handleDone}
+            stretch></lightning-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

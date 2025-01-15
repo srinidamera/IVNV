@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Hispanic</fullName>
+        <default>false</default>
+        <label>Hispanic</label>
+    </customValue>
+    <customValue>
+        <fullName>Not Hispanic</fullName>
+        <default>false</default>
+        <label>Not Hispanic</label>
+    </customValue>
+    <customValue>
+        <fullName>Chose not to respond</fullName>
+        <default>false</default>
+        <label>Chose not to respond</label>
+    </customValue>
+    <description>Ethnicity</description>
+    <masterLabel>Ethnicity</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

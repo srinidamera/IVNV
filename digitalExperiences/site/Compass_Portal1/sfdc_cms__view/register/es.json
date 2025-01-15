@@ -1,0 +1,46 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Register",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "id" : "9cf7178d-7a64-48bb-8433-22847b29d028",
+        "attributes" : {
+          "initialToastPopupDescription" : "Para comenzar, ingrese su información a continuación.",
+          "electronicConsentDeclineButtonTitle" : "Rechazar",
+          "electronicConsentAcceptButtonTitle" : "Aceptar",
+          "userExistErrorMessage" : "Esta dirección de correo electrónico ya tiene una cuenta asociada. Utilice otra dirección de correo electrónico o inicie sesión con una cuenta existente.",
+          "createNewAccountLabel" : "Crear Nueva Cuenta",
+          "initialToastPopupLabel" : "Regístrese para obtener una cuenta para inscribirse",
+          "confirmationScrBtnLabel" : "Hecho",
+          "confirmationTitle" : "Nueva cuenta creada exitosamente",
+          "emailAddressLabel" : "Correo electrónico",
+          "signUpTitle" : "Registrarse",
+          "goBackLabel" : "Regresar",
+          "learnMoreLinkTitle" : "Sign Up",
+          "confirmEmailAddressLabel" : "Confirmar dirección de correo electrónico ",
+          "phoneNumberLabel" : "Número de teléfono",
+          "invalidEmailFormat" : "Has ingresado un formato inválido",
+          "emailAddressNotMatchWarning" : "Las direcciones de correo electrónico no coinciden",
+          "phoneNumberDigitWarning" : "El número de teléfono debe tener 10 dígitos",
+          "electronicContentDisclosureHeader" : "Consentimiento para Divulgaciones Electrónicas",
+          "reviewElectronicConsentText" : "Revisar Consentimiento para divulgación electrónica",
+          "preferredLanguage" : "Idioma preferido",
+          "firstNameLabel" : "Nombre",
+          "middleNameLabel" : "Segundo nombre",
+          "lastNameLabel" : "Apellido",
+          "suffixLabel" : "Sufijo",
+          "bestTimeToCallLabel" : "Mejor momento para llamar",
+          "desiredServiceLabel" : "Servicio deseado",
+          "howDidYouHearLabel" : "Cómo se enteró de nosotros",
+          "pleaseSpecifylabel" : "Por favor, especifique cómo se enteró de nosotros ",
+          "reviewElectronicLabel" : "Revisar las divulgaciones de consentimiento electrónico",
+          "loginwithExistingAccountLabel" : "Iniciar sesión con una cuenta existente",
+          "description" : "Por favor, ingrese su información a continuación.",
+          "disclousureConsentError" : "Debe aceptar y hacer clic en la casilla de verificación de divulgación para crear una cuenta."
+        }
+      } ]
+    }
+  },
+  "urlName" : "register"
+}

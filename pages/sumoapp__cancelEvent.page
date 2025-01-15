@@ -1,0 +1,76 @@
+<apex:page sidebar="false" standardController="Event" extensions="sumoapp.LightningOutController" >
+    <apex:includeLightning />
+    <apex:slds ></apex:slds>
+
+    <html xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          lang="en"
+          style="background: rgba(176, 196, 223, 1);">
+
+    <head>
+        <style type="text/css">
+            #auraErrorMessage {
+                display: none;
+            }
+
+            #contentWrapper {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
+
+            #contentWrapper .bodyDiv {
+                flex: 1;
+                overflow: auto;
+            }
+
+            #contentWrapper .bodyDiv #bodyTable {
+                height: 100%;
+                padding-bottom: 0;
+            }
+
+            #cancelEventApp {
+                position: relative;
+                height: 100%;
+                margin-left: 15%;
+                margin-right: 15%;
+                overflow-y: auto;
+            }
+            .body-container .slds-spinner_container {
+                /* z-index: 98; */
+            }
+        </style>
+    </head>
+
+    <body class="slds-scope">
+        <div id="cancelEventApp" />
+        <div id="toastContainer"></div>
+
+        <script>
+            var recordId = "{!$CurrentPage.parameters.id}" || null;
+            var isClassicTheme = {!JSENCODE($User.UIThemeDisplayed) == "Theme3"};
+            var toastContainer;
+
+            $Lightning.use("{!JSENCODE(componentPrefix)}:lightningOutInternalApp", function() {
+                $Lightning.createComponent("{!JSENCODE(componentPrefix)}:cancelEventAction", {
+                    recordId: recordId,
+                    isClassicTheme: isClassicTheme
+                }, "cancelEventApp");
+
+                $Lightning.createComponent("{!JSENCODE(componentPrefix)}:classicToast", {}, "toastContainer", function(component) {
+                    toastContainer = component;
+                });
+            });
+
+            document.getElementById("cancelEventApp").addEventListener("lightning__showtoast", function(e) {
+                if (isClassicTheme) {
+                    toastContainer.showToast(e.toastAttributes);
+                } else {
+                    sforce.one.showToast(e.toastAttributes);
+                }
+            });
+        </script>
+    </body>
+
+    </html>
+</apex:page>

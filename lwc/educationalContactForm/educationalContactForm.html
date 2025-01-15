@@ -1,0 +1,335 @@
+<template>
+    <template lwc:if={showSpinner}>
+        <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+    </template>
+    <template if:true={contact}>
+        <br>
+        <b>
+            Profile
+        </b>
+
+
+        <div class="slds-grid slds-wrap top-spacing">
+            <div class="slds-col slds-size_12-of-12">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                        <lightning-input name="FirstName" class="contactField firstNameField" type="text"
+                            label="First Name" onchange={handleInputChange} value={contact.FirstName} required
+                            maxlength="255"></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small left-spacing">
+                        <lightning-input name="MiddleName" class="contactField middleNameField" type="text"
+                            label="Middle Name" onchange={handleInputChange} value={contact.MiddleName}
+                            maxlength="255"></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small left-spacing">
+                        <lightning-input name="LastName" class="contactField lastNameField" type="text"
+                            label="Last Name" onchange={handleInputChange} value={contact.LastName} maxlength="255"
+                            required></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small left-spacing">
+
+                        <lightning-combobox name="Suffix" class="contactField Suffix" label="Suffix"
+                            placeholder="Select" onchange={handleInputChange} options={suffixValues}
+                            value={contact.Suffix} message-when-value-missing="Selection required"></lightning-combobox>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slds-grid slds-wrap top-spacing">
+            <div class="slds-col slds-size_12-of-12">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                        <lightning-input name="Email" class="contactField emailField" type="text" label="Email Address"
+                            onchange={handleInputChange} required value={contact.Email}></lightning-input>
+                    </div>
+                    <div class="slds-grid slds-wrap slds-col slds-size_3-of-12">
+                        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_x-small left-spacing">
+                            <lightning-input name="Phone" class="contactField phoneField" type="text"
+                                label="Phone Number" onchange={handleInputChange}
+                                value={contact.Phone}></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_6-of-12 slds-p-horizontal_x-small left-spacing">
+                            <lightning-combobox name="Besttimetocontact__c" class="contactField Besttimetocontact__c"
+                                label="Best Contact Time" placeholder="Select" onchange={handleInputChange}
+                                options={bestTimeToContactValues} value={contact.Besttimetocontact__c}
+                                message-when-value-missing="Selection required"></lightning-combobox>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small left-spacing">
+                        <lightning-combobox name="PreferredLanguage__c" class="contactField PreferredLanguage__c"
+                            label="Preferred Language" placeholder="Select" onchange={handleInputChange}
+                            options={preferredLanguageValues} value={contact.PreferredLanguage__c}
+                            ></lightning-combobox>
+                    </div>
+                    <div class="slds-grid slds-wrap slds-col slds-size_3-of-12">
+                        <div class="slds-col slds-size_9-of-12 slds-p-horizontal_x-small left-spacing">
+                            <lightning-input name="Birthdate" class="contactField Birthdate" type="Date"
+                                label="Birthdate" onchange={handleInputChange} value={contact.Birthdate}
+                                date-style="short" 
+                                required></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small left-spacing">
+                            <lightning-input name="Age" class="contactField Age slds-text-color_weak" type="text"
+                                label="Age" value={age} readonly></lightning-input>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_3-of-12 slds-p-vertical_x-small">
+                        <lightning-input type="checkbox" class="contactField" label="Marketing Communication Opt-Out"
+                            name="MarketingCommunicationsOptOut__c"
+                            checked={contact.MarketingCommunicationsOptOut__c}></lightning-input>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <template if:true={showWarning}>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_12-of-12">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_9-of-12 slds-p-right_x-small"></div>
+                        <div class="slds-grid slds-wrap slds-col slds-size_3-of-12 slds-p-left_small">
+                            <div class="slds-grid slds-grid_vertical-align-center">
+                                <lightning-icon class="warning-color" icon-name="utility:warning" size="x-small"
+                                    alternative-text="Warning!" title="Warning"></lightning-icon>
+                                <b><lightning-formatted-text
+                                        class="slds-p-left_xx-small slds-form-element__label slds-col warning-color"
+                                        value="Under 18"></lightning-formatted-text></b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <br />
+        <b>
+            Address
+        </b>
+        <div class="slds-grid slds-wrap top-spacing">
+            <div class="slds-col slds-size_12-of-12">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                        <lightning-input name="MailingStreet" class="contactField streetField" type="text"
+                            label="Street" onchange={handleInputChange} required value={contact.MailingStreet}
+                            maxlength="255"></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small left-spacing">
+                        <lightning-input name="MailingAddressLine2__c" class="contactField AddressLine2" type="text"
+                            label="Address Line 2" onchange={handleInputChange} value={contact.MailingAddressLine2__c}
+                            maxlength="255"></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small left-spacing">
+                        <lightning-input name="MailingCity" class="contactField cityField" type="text" label="City"
+                            onchange={handleInputChange} required value={contact.MailingCity}
+                            maxlength="255"></lightning-input>
+                    </div>
+                    <div class="slds-grid slds-wrap slds-col slds-size_3-of-12">
+                        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_x-small left-spacing">
+                            <lightning-combobox name="MailingStateCode" class="contactField MailingStateCode"
+                                label="State / Province" placeholder="Select" onchange={handleInputChange}
+                                options={mailingStateValues} value={contact.MailingStateCode}
+                                message-when-value-missing="Selection required" required></lightning-combobox>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_x-small left-spacing">
+                            <lightning-input name="MailingPostalCode" label="Zip / Postal Code"
+                                class="contactField postalCodeField" type="text" onchange={handleInputChange} required
+                                value={contact.MailingPostalCode} max-length="5"></lightning-input>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+
+        <template if:true={showCountyFields}>
+            <b>
+                HUD AMI
+            </b>
+            <div class="slds-grid slds-wrap top-spacing">
+                <div class="slds-col slds-size_12-of-12">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                            <lightning-combobox name="County__c" label="County" placeholder="Select"
+                                onchange={handleInputChange} value={contact.County__c} options={countyNames}
+                                class="contactField County__c" message-when-value-missing="Selection required"
+                                required></lightning-combobox>
+                        </div>
+                        <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small left-spacing">
+                            <template if:true={showTownNames}>
+                                <lightning-combobox name="Town__c" class="contactField Town__c" label="Town"
+                                placeholder="Select" onchange={handleInputChange} value={contact.Town__c}
+                                options={townNames} message-when-value-missing="Selection required"
+                                required></lightning-combobox>
+                            </template>
+                            <template if:false={showTownNames}>
+                                <lightning-combobox name="Town__c" label="Town"
+                                placeholder="Select" onchange={handleInputChange} value={contact.Town__c}
+                                read-only></lightning-combobox>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <br>
+
+        <b>
+            Demographics
+        </b>
+        <!-- Demographics -->
+        <div class="slds-grid slds-wrap top-spacing">
+            <div class="slds-col slds-size_12-of-12">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                        <lightning-combobox name="Race__c" class="contactField race" label="Race" placeholder="Select"
+                            onchange={handleInputChange} options={raceValues} value={contact.Race__c}
+                            message-when-value-missing="Selection required" required></lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small left-spacing">
+                        <lightning-combobox name="Ethnicity__c" class="contactField Ethnicity__c" label="Ethnicity"
+                            placeholder="Select" onchange={handleInputChange} options={ethnicityValues}
+                            value={contact.Ethnicity__c} message-when-value-missing="Selection required"
+                            required></lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small left-spacing">
+                        <lightning-combobox name="Gender__c" class="contactField Gender__c" label="Gender"
+                            placeholder="Select" onchange={handleInputChange} options={genderValues}
+                            value={contact.Gender__c} message-when-value-missing="Selection required"
+                            required></lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                        <lightning-combobox name="MaritalStatus__c" class="contactField MaritalStatus__c"
+                            label="Marital Status" placeholder="Select" onchange={handleInputChange}
+                            options={maritalStatusValues} value={contact.MaritalStatus__c}
+                            required></lightning-combobox>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="slds-grid slds-wrap top-spacing">
+            <div class="slds-col slds-size_12-of-12">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small left-spacing">
+                        <lightning-combobox name="EnglishProficiency__c" class="contactField EnglishProficiency__c"
+                            label="English Proficiency" placeholder="Select" onchange={handleInputChange}
+                            options={englishProficiencyValues} value={contact.EnglishProficiency__c}
+                            message-when-value-missing="Selection required" required></lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                        <lightning-combobox name="ActiveMilitary__c" class="contactField race" label="Active Military"
+                            placeholder="Select" onchange={handleInputChange} options={activeMilitaryValues}
+                            value={contact.ActiveMilitary__c}></lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small left-spacing">
+                        <lightning-combobox name="Veteran__c" class="contactField Veteran__c" label="Veteran"
+                            placeholder="Select" onchange={handleInputChange} options={veteranValues}
+                            value={contact.Veteran__c}></lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small left-spacing">
+                        <lightning-combobox name="DisabledStatus__c" class="contactField DisabledStatus__c"
+                            label="Disabled Status" placeholder="Select" onchange={handleInputChange}
+                            options={disabledStatusValues} value={contact.DisabledStatus__c}></lightning-combobox>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="slds-grid slds-wrap top-spacing">
+            <div class="slds-col slds-size_12-of-12">
+                <div class="slds-grid slds-wrap">
+
+
+                    <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small left-spacing">
+                        <lightning-combobox name="X1stTimeHomeBuyer__c" class="contactField X1stTimeHomeBuyer__c"
+                            label="1st Time Home Buyer" placeholder="Select" onchange={handleInputChange}
+                            options={firstTimeHomebuyerValues} value={contact.X1stTimeHomeBuyer__c}
+                            message-when-value-missing="Selection required" required></lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small left-spacing">
+                        <lightning-combobox name="RuralAreaStatus__c" class="contactField RuralAreaStatus__c"
+                            label="Rural Area Status" placeholder="Select" onchange={handleInputChange}
+                            options={ruralStatusHouseholdValues} value={contact.RuralAreaStatus__c}
+                            message-when-value-missing="Selection required" required></lightning-combobox>
+                    </div>
+                    <template if:true={householdTypeValues}>
+                        <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                            <lightning-combobox name="HouseholdType__c" class="contactField HouseholdType__c"
+                                label="Household Type" placeholder="Select" onchange={handleInputChange} required
+                                options={householdTypeValues} value={contact.HouseholdType__c}></lightning-combobox>
+                        </div>
+                    </template>
+                    <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                        <lightning-input type="number" name="HouseholdSize__c" label="Household Size" min="1" max="99"
+                            max-length="2" class="contactField HouseholdSize__c" value={contact.HouseholdSize__c}
+                            required onchange={handleInputChange}></lightning-input>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slds-grid slds-wrap top-spacing">
+            <div class="slds-col slds-size_12-of-12">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                        <lightning-combobox name="Education__c" class="contactField Education__c" label="Education"
+                            placeholder="Select" onchange={handleInputChange} options={educationValues}
+                            value={contact.Education__c} required></lightning-combobox>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <b>
+            Financial
+        </b>
+        <!-- Financial -->
+        <div class="slds-grid slds-wrap top-spacing">
+            <div class="slds-col slds-size_12-of-12">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                        <lightning-input name="ChoseNottoProvideIncome__c" class="contactField ChoseNottoProvideIncome__c" type="checkbox"
+                            label="Chose Not to Provide Income" data-name="some" onchange={handleInputChange} checked={contact.ChoseNottoProvideIncome__c}></lightning-input>
+                    </div>
+                </div>
+                <br/>
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                        <lightning-input name="TotalMonthlyIncome__c" class="contactField TotalMonthlyIncome__c" type="number"
+                            label="Total Monthly Income" onchange={handleInputChange} value={totalMonthlyIncomeVal}
+                            formatter="currency" step="0.01" readonly={choseNottoProvideIncomeVal}></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                        <lightning-input name="NumberOfDependents__c" class="contactField NumberOfDependents__c"
+                            type="number" label="Number of Dependents" onchange={handleInputChange} min="0"
+                            max="99" value={contact.NumberOfDependents__c}></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12 slds-p-right_x-small">
+                        <lightning-input type="number" name="CreditScore__c" label="Credit Score" max-length="3" min-length="3"
+                            class="contactField CreditScore__c" value={contact.CreditScore__c}
+                            onchange={handleInputChange}></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_3-of-12 slds-p-horizontal_x-small left-spacing">
+                        <lightning-combobox name="EmploymentStatus__c" class="contactField EmploymentStatus__c"
+                            label="Employment Status" placeholder="Select" onchange={handleInputChange}
+                            options={employmentStatusValues} value={contact.EmploymentStatus__c}></lightning-combobox>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <template if:true={duplicateDetected}>
+            <c-intake-contact-prevent-duplicate tabledata={duplicateTableData} duplicate-detected={duplicateDetected}
+                onsetduplicatedetected={setDuplicateDetected} onproceed={proceed}></c-intake-contact-prevent-duplicate>
+        </template>
+
+    </template>
+
+</template>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>57.0</apiVersion>
+	<isExposed>true</isExposed>
+	<description>Privacy Terms and Conditions</description>
+	<targets>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property
+                type="ContentReference"
+                name="privacyTermsImageKey"
+                label="Select image for Privay Terms and Conditions Page"
+                filter="sfdc_cms__image"
+            />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

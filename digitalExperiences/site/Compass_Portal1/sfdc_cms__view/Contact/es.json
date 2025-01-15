@@ -1,0 +1,21 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Contact",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "title" : "Contacta con nosotros",
+          "description" : "Encuentre respuestas a preguntas comunes de soporte a continuación"
+        },
+        "id" : "6df8d77a-9a1a-41e4-aed1-8eb4ba6125a6"
+      }, {
+        "id" : "b22448ad-c6e2-466f-a503-a5cc27831de5",
+        "attributes" : {
+          "goBackLabel" : "Regresar"
+        }
+      } ]
+    }
+  },
+  "urlName" : "contact"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Custom Hook Exception --></label>
+        <name>sumoapp__CustomHookException__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception --></label>
+        <name>sumoapp__Exception__c</name>
+    </fields>
+</CustomObjectTranslation>

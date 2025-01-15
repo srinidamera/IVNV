@@ -1,0 +1,53 @@
+<template>
+    <div class="footer">
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_10-of-12">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_1-of-12 slds-align_absolute-center" if:true={NW_LOGO}>
+                        <a href={hrefNW}><img class="logo" style={nwLogoStyle} src={NW_LOGO} /></a>
+                    </div>
+                   <!-- <div class="slds-col slds-size_1-of-12 slds-align_absolute-center" if:true={AGENCY_LOGO}>
+                        <a href={href}><img class="logo" style={agencyLogoStyle} src={AGENCY_LOGO} /></a>
+                    </div>-->
+                    <div class="slds-col slds-size_2-of-12">
+                        <p if:true={street} class="textWrap">{street}</p>
+                        <p if:true={addressLine2} class="textWrap">{addressLine2}</p>
+                        <p if:true={email} class="textWrap">{email}</p>
+                        <p if:true={phone} class="textWrap">{phone}</p>
+                    </div>
+                    <div class="slds-col slds-size_8-of-12">
+                        <div class="slds-grid slds-wrap navigationLinks">
+                            <template for:each={menuItems} for:item="item">
+                                <div key={item.id} class="navbar-items navigationLinks">
+                                    <c-footer-menu-item item={item}></c-footer-menu-item>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size_2-of-12">
+                <!-- messaging user icon -->
+            </div>
+        </div>
+        <div>
+            <div class="slds-align_absolute-center">
+                <div class="social-media-icon" if:true={FACEBOOK_LOGO}>
+                    <a><img class="" style="height: 30px;width: 30px;" src={FACEBOOK_LOGO} /></a>
+                </div>
+                <div class="social-media-icon" if:true={INSTAGRAM_LOGO}>
+                    <a><img class="" style="height: 30px;width: 30px;" src={INSTAGRAM_LOGO} /></a>
+                </div>
+                <div class="social-media-icon" if:true={TWITTER_LOGO}>
+                    <a><img class="" style="height: 30px;width: 30px;" src={TWITTER_LOGO} /></a>
+                </div>
+                <div class="social-media-icon" if:true={LINKEDIN_LOGO}>
+                    <a><img class="" style="height: 30px;width: 30px;" src={LINKEDIN_LOGO} /></a>
+                </div>
+                <div class="social-media-icon" if:true={YOUTUBE_LOGO}>
+                    <a><img class="" style="height: 30px;width: 30px;" src={YOUTUBE_LOGO} /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

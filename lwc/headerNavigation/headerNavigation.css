@@ -1,0 +1,39 @@
+.bottom-border {
+	border-bottom: 0px solid rgba(217, 217, 217, 0.8) !important;
+	padding: 0 0 0 0;
+}
+
+.header-backgroud-color {
+	background-color: var(--slds-g-color-neutral-base-100, #fff);
+}
+
+.slds-context-bar__secondary ul li {
+	border-bottom: 2px solid rgba(201, 201, 201, 1);
+}
+
+.color-font-family {
+	color: rgba(85, 85, 85, 1) !important;
+	/* font-family: Segoe UI !important; */
+
+
+}
+
+.active-tab {
+	border-bottom: solid var(--dxp-g-brand) !important;
+	font-weight: 700;
+}
+
+/*
+.logo-size{
+	width:41px; 
+	height:20px;  
+}
+*/
+.icon-css {
+	--slds-c-icon-color-foreground-default: rgba(208, 208, 208, 1);
+	cursor: pointer;
+}
+
+.home-icon-css {
+	--slds-c-icon-color-background: var(--dxp-g-brand) !important;
+}

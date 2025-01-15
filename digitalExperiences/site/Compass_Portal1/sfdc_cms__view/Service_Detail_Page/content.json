@@ -1,0 +1,80 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Service Detail Page",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"016780dc-3466-4459-afeb-262dfa942b09\",\"columns\":[{\"UUID\":\"2b017da5-d17c-4af8-9670-72595e3d3423\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "bannerImgSrcKey" : "MCGJNT5A4FR5HLFJIYRG7PO7PH4Y",
+                "description" : "Housing Counselling: Financial, Homeownership, Rental, Foreclosure/Homelessness Prevention, Fair Housing.",
+                "dxpStyle" : { },
+                "title" : "Services"
+              },
+              "definition" : "c:bannerSection",
+              "id" : "db33e737-69d9-412b-ba16-b4eb49d046aa",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : { },
+                "goBackLabel" : "Go Back",
+                "servicesLabel" : "Services",
+                "signUpLabel" : "Sign Up"
+              },
+              "definition" : "c:userServiceDetailPage",
+              "id" : "9bd56e43-455f-4752-8de1-6019f5a7b2b3",
+              "type" : "component"
+            } ],
+            "id" : "2b017da5-d17c-4af8-9670-72595e3d3423",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "016780dc-3466-4459-afeb-262dfa942b09",
+          "scopedBrandingSetId" : "Compass_Portal",
+          "type" : "component"
+        } ],
+        "id" : "f828c355-bcb8-45c3-b76d-c368ce5d7d32",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "dxpStyle" : { },
+            "pageTitle" : "Service Detail Page",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "4b73537a-77c8-4b74-9866-80be81905a4c",
+          "type" : "component"
+        } ],
+        "id" : "ae01b2f6-1be7-4e6c-aa5e-074edd5afd10",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "3daf525d-db7b-4f06-967d-d4945ab7b809",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-service-detail"
+  },
+  "urlName" : "service-detail-page"
+}

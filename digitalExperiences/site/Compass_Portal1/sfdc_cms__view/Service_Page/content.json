@@ -1,0 +1,87 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Service Page",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"b3e29cad-8b0f-4e44-93e2-951db8163f6b\",\"columns\":[{\"UUID\":\"275152a0-c503-486d-a5c8-3135fb933768\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "bannerImgSrcKey" : "MCGJNT5A4FR5HLFJIYRG7PO7PH4Y",
+                "description" : "Choose the service below that you are most interested in.",
+                "dxpStyle" : { },
+                "title" : "Services"
+              },
+              "definition" : "c:bannerSection",
+              "id" : "be9ed93b-bf91-4f1e-a3e2-39f67d0ce1eb",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "allServicesLabel" : "All Services",
+                "contactUsLabel" : "Contact Us",
+                "labelCompleted" : "Completed",
+                "labelIncomplete" : "Incomplete",
+                "labelOnHold" : "On Hold",
+                "labelOpen" : "Open",
+                "learnMoreLinkTitle" : "Learn More",
+                "myServicesLabel" : "My Services",
+                "noServicesSignedUpdMsg" : "You have not signed up for any service.",
+                "nwServiceColumnHeight" : 400,
+                "signUpLabel" : "Sign Up",
+                "viewDetailsLinkTitle" : "View Details"
+              },
+              "definition" : "c:userServicesTab",
+              "id" : "3675bd9a-7928-4468-ac7e-75751bee8b19",
+              "type" : "component"
+            } ],
+            "id" : "275152a0-c503-486d-a5c8-3135fb933768",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "b3e29cad-8b0f-4e44-93e2-951db8163f6b",
+          "type" : "component"
+        } ],
+        "id" : "3c66166e-c79c-4158-8a07-1a1b78d13ed0",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "dxpStyle" : { },
+            "pageTitle" : "Service Page",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "4d08a431-22e8-4946-81de-1f1529c8ab1a",
+          "type" : "component"
+        } ],
+        "id" : "aadbff7c-b1e1-41cf-a1fc-aa1e3430cb7c",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "253eb501-dd95-44d6-aae6-f66ad84f4a92",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-service"
+  },
+  "urlName" : "service-page"
+}

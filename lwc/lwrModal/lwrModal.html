@@ -1,0 +1,29 @@
+<template>
+	<lightning-modal-header class="modal-header-style" label={headerText}></lightning-modal-header>
+	<lightning-modal-body  class="modal-body-style" >
+		
+        <template if:true={content} >
+            {content}    
+            <br/>
+        </template>
+        <template if:true={richContent} >
+            <lightning-formatted-rich-text
+                value={richContent}
+            ></lightning-formatted-rich-text>
+        </template>
+	</lightning-modal-body>
+	<lightning-modal-footer class="modal-footer-style" >
+		<div
+            class="slds-col slds-grid slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_4-of-12 slds-float_right">
+            <div
+                class="slds-col slds-m-top_small slds-p-right_xx-small slds-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                <lightning-button class="btn btn-secondary" variant="brand-outline" label={cancelButtonTitle} stretch onclick={handleCancel}>
+                </lightning-button>
+            </div>
+            <div
+                class="slds-col slds-m-top_small slds-p-left_xx-small slds-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                <lightning-button class="btn btn-primary" variant="brand" label={saveButtonTitle} stretch onclick={handleSave}></lightning-button>
+            </div>
+        </div>
+	</lightning-modal-footer>
+</template>

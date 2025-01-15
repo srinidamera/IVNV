@@ -1,0 +1,25 @@
+.removeHelp {
+
+    display:none;
+}
+
+.btn-bg-red {
+    --sds-c-button-brand-color-background: #c40e0e;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.warning-color {
+    color: #fe9339 !important;
+    --sds-c-icon-color-foreground-default: #fe9339;
+}
+
+.left-spacing {
+    padding-left: 2px;
+}
+
+.top-spacing {
+    padding-top: 10px;
+}

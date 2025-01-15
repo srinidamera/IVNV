@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>57.0</apiVersion>
+	<isExposed>true</isExposed>
+	<masterLabel>Enhanced Footer</masterLabel>
+    <description>Custom Footer</description>
+	<targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+	<targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property
+                name="footerMenuName"
+                type="String"
+                datasource="apex://NavigationLinkSetPickList"
+                label="Navigation Menu Name"
+            />
+            <property
+                type="ContentReference"
+                name="contentKeyNW"
+                label="Content Key For NW"
+                filter="sfdc_cms__image"
+            />
+            <property
+                type="ContentReference"
+                name="contentKeyAgency"
+                label="Content Key for Agency"
+                filter="sfdc_cms__image"
+            />
+            <property
+                type="ContentReference"
+                name="contentKeyMessagingUser"
+                label="Content Key for User Icon"
+                filter="sfdc_cms__image"
+            />
+
+            <property
+                type="Integer"
+                name="nwLogoWidth"
+                label="Width for NW Logo(px)"
+            />
+            <property
+                type="Integer"
+                name="nwLogoHeight"
+                label="Height for NW Logo(px)"
+            />
+            <property
+                type="Integer"
+                name="agencyLogoWidth"
+                label="Width for Agency Logo(px)"
+            />
+            <property
+                type="Integer"
+                name="agencyLogoHeight"
+                label="Height for Agency Logo(px)"
+            />
+
+            <property
+                type="ContentReference"
+                name="contentKeyFacebook"
+                label="Facebook Icon"
+                filter="sfdc_cms__image"
+            />
+            <property
+                type="ContentReference"
+                name="contentKeyInstagram"
+                label="Instagram Icon"
+                filter="sfdc_cms__image"
+            />
+            <property
+                type="ContentReference"
+                name="contentKeyTwitter"
+                label="Twitter Icon"
+                filter="sfdc_cms__image"
+            />
+            <property
+                type="ContentReference"
+                name="contentKeyLinkedin"
+                label="Linkedin Icon"
+                filter="sfdc_cms__image"
+            />
+            <property
+                type="ContentReference"
+                name="contentKeyYoutube"
+                label="Youtube Icon"
+                filter="sfdc_cms__image"
+            />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

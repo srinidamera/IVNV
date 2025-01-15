@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Face-to-face</fullName>
+        <default>false</default>
+        <label>Face-to-face</label>
+    </customValue>
+    <customValue>
+        <fullName>Phone</fullName>
+        <default>false</default>
+        <label>Phone</label>
+    </customValue>
+    <customValue>
+        <fullName>Video Conference</fullName>
+        <default>false</default>
+        <label>Video Conference</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Counseling Session Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

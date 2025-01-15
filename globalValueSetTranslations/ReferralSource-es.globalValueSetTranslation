@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Advertisement</masterLabel>
+        <translation>Anuncio</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Employer</masterLabel>
+        <translation>Empleador</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Event</masterLabel>
+        <translation>Evento</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Lender</masterLabel>
+        <translation>Prestamista</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mailer</masterLabel>
+        <translation>Correo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Other</masterLabel>
+        <translation>Otro</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Partner Referral</masterLabel>
+        <translation>Referencia de socios</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Project Own App</masterLabel>
+        <translation>Aplicación propia del proyecto</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Realtor</masterLabel>
+        <translation>Agente inmobiliario</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Walk-in</masterLabel>
+        <translation>Sin cita previa</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Web</masterLabel>
+        <translation>Web</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Word of Mouth</masterLabel>
+        <translation>De boca en boca</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

@@ -1,0 +1,12 @@
+.bold {
+  font-weight: bold;
+}
+
+.badge-width {
+  width: 84px;
+  justify-content: center;
+}
+
+.font-white {
+  color: #ffffff;
+}

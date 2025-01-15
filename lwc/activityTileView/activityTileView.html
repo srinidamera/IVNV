@@ -1,0 +1,146 @@
+<template>
+    <article
+        class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small slds-p-around_medium">
+        <template if:true={isNote}>
+            <div>
+                <lightning-record-view-form record-id={objectId} object-api-name='CounselorNote__c'>
+                    <ul class="slds-list_horizontal slds-wrap">
+                        <li class="slds-grid slds-grid_vertical slds-size_1-of-2 slds-p-bottom_small">
+                            <lightning-output-field field-name="Duration__c"
+                                variant="label-stacked"></lightning-output-field>
+                        </li>
+                        
+                        <li class="slds-grid slds-grid_vertical slds-size_1-of-2 slds-p-bottom_small">
+                            <template if:true={clientCase}>
+                                <label class="slds-form-element__label">Linked Client Case</label>
+                                <div class="slds-form-element__control">
+                                    <div class="slds-form-element__static">
+                                        <a onclick={navigateToClientCase}>{clientCaseName}</a>
+                                    </div>
+                                </div>
+                            </template>
+                        </li>    
+                        
+                        <li class="slds-grid slds-grid_vertical slds-size_1-of-1 slds-p-bottom_small">
+                            <lightning-output-field field-name="Notes__c" variant="label-stacked">
+                            </lightning-output-field>
+                        </li>
+                    </ul>
+
+                </lightning-record-view-form>
+            </div>
+        </template>
+
+        <template if:true={isEvent}>
+            <div>
+                <ul class="slds-list_horizontal slds-wrap">
+                    <li class="slds-grid slds-grid_vertical slds-size_1-of-2 slds-p-bottom_small">
+                        <label class="slds-form-element__label">Participant (Co-app)</label>
+                        <div class="slds-form-element__control">
+                            <div class="slds-form-element__static">
+                                <ul>
+                                    <template for:each={participants} for:item="participant">
+                                        <li key={participant}>{participant}</li>
+                                    </template>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <template if:false={clientCase}>
+                        <template if:true={appointmentStatus}>
+                            <li class="slds-grid slds-grid_vertical slds-size_1-of-2 slds-p-bottom_small">
+                                <label class="slds-form-element__label">Appointment Status</label>
+                                <lightning-formatted-rich-text value={appointmentStatus}></lightning-formatted-rich-text>
+                            </li>
+                        </template>
+                    </template>
+                    <template if:true={clientCase}>
+                        <li class="slds-grid slds-grid_vertical slds-size_1-of-2 slds-p-bottom_small">
+                            <label class="slds-form-element__label">Linked Client Case</label>
+                            <div class="slds-form-element__control">
+                                <div class="slds-form-element__static">
+                                    <a onclick={navigateToClientCase}>{clientCaseName}</a>
+                                </div>
+                            </div>
+                        </li>
+                    </template>
+                    
+                    <template if:true={durationInMin}>
+                        <li class="slds-grid slds-grid_vertical slds-size_1-of-2 slds-p-bottom_small">
+                            <label class="slds-form-element__label">Duration in Minutes</label>
+                            <lightning-formatted-number value={durationInMin}></lightning-formatted-number>                        
+                        </li>
+                    </template>
+
+                    <template if:true={clientCase}>
+                        <template if:true={appointmentStatus}>
+                            <li class="slds-grid slds-grid_vertical slds-size_1-of-2 slds-p-bottom_small">
+                                <label class="slds-form-element__label">Appointment Status</label>
+                                <lightning-formatted-rich-text value={appointmentStatus}></lightning-formatted-rich-text>
+                            </li>
+                        </template>
+                    </template>
+                    
+                    <template if:true={notes}>
+                        <li class="slds-grid slds-grid_vertical slds-size_1-of-1 slds-p-bottom_small">
+                            <label class="slds-form-element__label">Notes</label>
+                            <lightning-formatted-rich-text value={notes}></lightning-formatted-rich-text>
+                        </li>
+                    </template>
+                    <template if:true={purpose}>
+                        <li class="slds-grid slds-grid_vertical slds-size_1-of-1 slds-p-bottom_small">
+                            <label class="slds-form-element__label">Purpose</label>
+                            <lightning-formatted-rich-text value={purpose}></lightning-formatted-rich-text>
+                        </li>
+                    </template>
+                    <template if:true={outcomes}>
+                        <li class="slds-grid slds-grid_vertical slds-size_1-of-1 slds-p-bottom_small">
+                            <label class="slds-form-element__label">Outcomes</label>
+                            <lightning-formatted-rich-text value={outcomes}></lightning-formatted-rich-text>
+                        </li>
+                    </template>
+                </ul>
+            </div>
+        </template>
+
+        <template if:true={isCourse}>
+            <div>
+                <lightning-record-view-form record-id={objectId} object-api-name='sumoapp__Attendee__c'>
+                    <ul class="slds-list_horizontal slds-wrap">
+                        <li class="slds-grid slds-grid_vertical slds-size_1-of-2 slds-p-bottom_small">
+                            <label class="slds-form-element__label" for="sumoapp__StartDatetime__c">Start
+                                Date/Time</label>
+                            <lightning-output-field field-name="sumoapp__StartDatetime__c"
+                                variant="label-hidden"></lightning-output-field>
+                        </li>
+                        <li class="slds-grid slds-grid_vertical slds-size_1-of-2 slds-p-bottom_small">
+                            <label class="slds-form-element__label" for="sumoapp__EndDatetime__c">End Date/Time</label>
+                            <lightning-output-field field-name="sumoapp__EndDatetime__c" variant="label-hidden">
+                            </lightning-output-field>
+                        </li>
+                        <li class="slds-grid slds-grid_vertical slds-size_1-of-2 slds-p-bottom_small">
+                            <lightning-record-view-form record-id={relatedId}
+                                object-api-name='sumoapp__AdditionalInfo__c'>
+                                <label class="slds-form-element__label" for="sumoapp__LocationType__c">Delivery
+                                    Type</label>
+                                <lightning-output-field field-name="sumoapp__LocationType__c" variant="label-hidden">
+                                </lightning-output-field>
+                            </lightning-record-view-form>
+                        </li>
+                        <li class="slds-grid slds-grid_vertical slds-size_1-of-2 slds-p-bottom_small">
+                            <label class="slds-form-element__label" for="sumoapp__Location__c">Location Details</label>
+                            <lightning-output-field field-name="sumoapp__Location__c" variant="label-hidden">
+                            </lightning-output-field>
+                        </li>
+                        <li class="slds-grid slds-grid_vertical slds-size_1-of-2 slds-p-bottom_small">
+                            <lightning-output-field field-name="Notes__c" variant="label-stacked">
+                            </lightning-output-field>
+                        </li>
+                    </ul>
+
+                </lightning-record-view-form>
+            </div>
+        </template>
+
+    </article>
+</template>

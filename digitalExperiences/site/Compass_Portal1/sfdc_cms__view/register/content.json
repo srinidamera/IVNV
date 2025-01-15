@@ -1,0 +1,101 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Register",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"e5b0f999-927e-4f9b-8a5b-79094ae8e590\",\"columns\":[{\"UUID\":\"4848aa6a-ae64-4b40-8cc8-1db48691fd61\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "bestTimeToCallLabel" : "Best Time To Call",
+                "confirmEmailAddressLabel" : "Confirm Email Address",
+                "confirmationDescriptionKey" : "MCVGC3SEJRDVAPXL4WDG4M36O3TE",
+                "confirmationScrBtnLabel" : "Done",
+                "confirmationTitle" : "New Account Successfully Created",
+                "createNewAccountLabel" : "Create New Account",
+                "description" : "Please enter your information below.",
+                "desiredServiceLabel" : "Desired Service",
+                "disclousureConsentError" : "Need to accept and click the disclosure checkbox in order to create an account.",
+                "dxpStyle" : { },
+                "electronicConsentAcceptButtonTitle" : "Accept",
+                "electronicConsentDeclineButtonTitle" : "Decline",
+                "electronicContentDisclosure" : "MCCJXUIBOJUFE3POLX4YQNHBH65U",
+                "electronicContentDisclosureHeader" : "Electronic Disclosures Consent",
+                "emailAddressLabel" : "Email Address",
+                "emailAddressNotMatchWarning" : "Email addresses do not match",
+                "firstNameLabel" : "First Name",
+                "goBackLabel" : "Go Back",
+                "howDidYouHearLabel" : "How did you hear about us",
+                "initialToastPopupDescription" : "To begin, enter your information below.",
+                "initialToastPopupLabel" : "Sign-Up for an account to Enroll",
+                "invalidEmailFormat" : "You have entered an invalid format",
+                "lastNameLabel" : "Last Name",
+                "learnMoreLinkTitle" : "Sign Up",
+                "loginwithExistingAccountLabel" : "Login with Existing Account",
+                "middleNameLabel" : "Middle Name",
+                "phoneNumberDigitWarning" : "The phone number must be 10 digits",
+                "phoneNumberLabel" : "Phone Number",
+                "pleaseSpecifylabel" : "Please specify how you heard about us",
+                "preferredLanguage" : "Preferred Language",
+                "reviewElectronicConsentText" : "Review Electronic Consent Disclosures",
+                "reviewElectronicLabel" : "Review Electronic Consent Disclosures",
+                "signUpTitle" : "Sign Up",
+                "suffixLabel" : "Suffix",
+                "userExistErrorMessage" : "This email address already has an account associated to it, please enter another email address to create a new account."
+              },
+              "definition" : "c:userRegisterForm",
+              "id" : "9cf7178d-7a64-48bb-8433-22847b29d028",
+              "type" : "component"
+            } ],
+            "id" : "4848aa6a-ae64-4b40-8cc8-1db48691fd61",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "e5b0f999-927e-4f9b-8a5b-79094ae8e590",
+          "scopedBrandingSetId" : "Compass_Portal",
+          "type" : "component"
+        } ],
+        "id" : "da780594-c8b8-41bd-9ea7-e8a970208f2a",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "dxpStyle" : { },
+            "pageTitle" : "Register",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "bf9aabc1-def9-4bc3-9a93-6ebc08e0b1c2",
+          "type" : "component"
+        } ],
+        "id" : "934d55bd-4836-4738-a8e0-de5474c34cfb",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "1cea9337-ba1f-4153-99d5-e15392e15b16",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "self-register"
+  },
+  "urlName" : "register"
+}

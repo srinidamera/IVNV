@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Event Ids --></label>
+        <name>sumoapp__EventIds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process --></label>
+        <name>sumoapp__Process__c</name>
+        <relationshipLabel><!-- Process Registration Links --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SUMO Event Iframe Link --></label>
+        <name>sumoapp__RegistrationLinkForIframe__c</name>
+    </fields>
+    <fields>
+        <label><!-- SUMO Event Link --></label>
+        <name>sumoapp__RegistrationLink__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>sumoapp__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Where Condition --></label>
+        <name>sumoapp__WhereCondition__c</name>
+    </fields>
+</CustomObjectTranslation>

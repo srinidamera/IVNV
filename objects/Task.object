@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LaunchFlowForManualTask</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LaunchFlowForManualTask</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LaunchFlowForManualTask</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LaunchOmniForManualTask</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LaunchOmniForManualTask</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LaunchOmniForManualTask</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Task_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Task_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ActivityDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CallDisposition</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CallDurationInSeconds</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CallObject</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CallType</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CompletedDateTime</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+    </fields>
+    <fields>
+        <fullName>IsRecurrence</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsReminderSet</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsVisibleInSelfService</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RecurrenceInterval</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>RecurrenceRegeneratedType</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TaskSubtype</fullName>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>WhatId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WhoId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <listViews>
+        <fullName>AllTasks</fullName>
+        <columns>DUE_DATE</columns>
+        <columns>SUBJECT</columns>
+        <columns>PRIORITY</columns>
+        <columns>STATUS</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>DelegatedTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Delegated</filterScope>
+        <label>ENCODED:{!FilterNames.Task_DelegatedTasks}</label>
+    </listViews>
+    <listViews>
+        <fullName>OverdueTasks</fullName>
+        <columns>DUE_DATE</columns>
+        <columns>SUBJECT</columns>
+        <columns>PRIORITY</columns>
+        <columns>STATUS</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>My Overdue Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>TasksDueThisWeek</fullName>
+        <columns>DUE_DATE</columns>
+        <columns>SUBJECT</columns>
+        <columns>PRIORITY</columns>
+        <columns>STATUS</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <filterScope>Mine</filterScope>
+        <label>Tasks Due This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>TodaysTasks</fullName>
+        <columns>SUBJECT</columns>
+        <columns>WHO_NAME</columns>
+        <columns>WHAT_NAME</columns>
+        <columns>DUE_DATE</columns>
+        <columns>STATUS</columns>
+        <columns>PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>IS_CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>IS_RECURRENCE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>DUE_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY,LAST_N_DAYS:30</value>
+        </filters>
+        <label>ENCODED:{!FilterNames.z_TodaysTasks}</label>
+    </listViews>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Reminder</fullName>
+        <active>true</active>
+        <label>Reminder</label>
+        <picklistValues>
+            <picklist>ActionType__c</picklist>
+            <values>
+                <fullName>Client Action</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Counselor Action</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>AppointmentStatus__c</picklist>
+            <values>
+                <fullName>Attended</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Show</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HUDActivityType__c</picklist>
+            <values>
+                <fullName>NOFA 2014-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2014-2 TRNG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2015-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2015-2 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2016-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2017-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2018-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2019-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2020-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2021-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2022-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2023-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Billed to HUD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Outcome__c</picklist>
+            <values>
+                <fullName>Homeless or potentially homeless households that obtained temporary or permanent housing after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Household that received rental counseling and avoided eviction after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households for whom counselor developed a budget customized to a client%E2%80%99s current situation%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households for whom counselor developed or updated an emergency preparedness plan%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households gained access to disaster recovery non-housing resources after receiving Housing Counseling Services %28e%2Eg%2E Red Cross%2FFEMA relief items%2C legal services%2C assistance%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households obtained disaster recovery housing resources after receiving Housing Counseling Services %28e%2Eg%2E temporary shelter%2C homeowner rehab%2C relocation%2C etc%2E%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that gained access to non-housing resources %28e%2Eg%2E social service programs%2C legal services%2C public benefits such as Social Security or Medicaid%2C etc%2E%29 after receiving Housing Counseling Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that gained access to resources to help improve their housing situation %28e%2Eg%2E down payment assistance%2C rental assistance%2C utility assistance%2C etc%2E%29 after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that improved their financial capacity %28e%2Eg%2E increased discretionary income%2C decreased debt load%2C increased savings%2C increased credit score%2C etc%2E%29 after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that prevented or resolved a forward mortgage default after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that prevented or resolved a reverse mortgage default after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that received a forward mortgage modification and remained current in their modified mortgage after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that received information on fair housing%2C fair lending and%2For accessibility rights%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that received non-delinquency post-purchase counseling that were able to improve home conditions or home affordability after receiving Housing Counseling Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that received one-on-one counseling that also received education services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that received pre-purchase%2Fhomebuying counseling and purchased housing after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that received rental counseling and improved living conditions after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that received reverse mortgage counseling and obtained a Home Equity Conversion Mortgage %28HECM%29 after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose__c</picklist>
+            <values>
+                <fullName>Disaster Preparedness Assistance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disaster Recovery Assistance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homeless Assistance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Delinquency Post-Purchase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not HUD-Reportable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-purchase%2FHomebuying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rental Topics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resolving or Preventing Forward Mortgage Delinquency or Default</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resolving or Preventing Reverse Mortgage Delinquency or Default</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reverse Mortgage</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>30 Day Follow up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 Day Follow up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>90 Day Follow up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Task</fullName>
+        <active>true</active>
+        <label>Task</label>
+        <picklistValues>
+            <picklist>ActionType__c</picklist>
+            <values>
+                <fullName>Client Action</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Counselor Action</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>AppointmentStatus__c</picklist>
+            <values>
+                <fullName>Attended</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Show</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HUDActivityType__c</picklist>
+            <values>
+                <fullName>NOFA 2014-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2014-2 TRNG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2015-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2015-2 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2016-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2017-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2018-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2019-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2020-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2021-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2022-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOFA 2023-1 COMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Billed to HUD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Outcome__c</picklist>
+            <values>
+                <fullName>Homeless or potentially homeless households that obtained temporary or permanent housing after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Household that received rental counseling and avoided eviction after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households for whom counselor developed a budget customized to a client%E2%80%99s current situation%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households for whom counselor developed or updated an emergency preparedness plan%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households gained access to disaster recovery non-housing resources after receiving Housing Counseling Services %28e%2Eg%2E Red Cross%2FFEMA relief items%2C legal services%2C assistance%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households obtained disaster recovery housing resources after receiving Housing Counseling Services %28e%2Eg%2E temporary shelter%2C homeowner rehab%2C relocation%2C etc%2E%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that gained access to non-housing resources %28e%2Eg%2E social service programs%2C legal services%2C public benefits such as Social Security or Medicaid%2C etc%2E%29 after receiving Housing Counseling Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that gained access to resources to help improve their housing situation %28e%2Eg%2E down payment assistance%2C rental assistance%2C utility assistance%2C etc%2E%29 after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that improved their financial capacity %28e%2Eg%2E increased discretionary income%2C decreased debt load%2C increased savings%2C increased credit score%2C etc%2E%29 after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that prevented or resolved a forward mortgage default after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that prevented or resolved a reverse mortgage default after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that received a forward mortgage modification and remained current in their modified mortgage after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that received information on fair housing%2C fair lending and%2For accessibility rights%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that received non-delinquency post-purchase counseling that were able to improve home conditions or home affordability after receiving Housing Counseling Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that received one-on-one counseling that also received education services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that received pre-purchase%2Fhomebuying counseling and purchased housing after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that received rental counseling and improved living conditions after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Households that received reverse mortgage counseling and obtained a Home Equity Conversion Mortgage %28HECM%29 after receiving Housing Counseling Services%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose__c</picklist>
+            <values>
+                <fullName>Disaster Preparedness Assistance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disaster Recovery Assistance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homeless Assistance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Delinquency Post-Purchase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not HUD-Reportable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-purchase%2FHomebuying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rental Topics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resolving or Preventing Forward Mortgage Delinquency or Default</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resolving or Preventing Reverse Mortgage Delinquency or Default</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reverse Mortgage</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>30 Day Follow up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 Day Follow up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>90 Day Follow up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

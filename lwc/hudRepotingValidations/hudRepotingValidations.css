@@ -1,0 +1,9 @@
+.tableHeight{
+    height: 250px;
+    overflow-y: scroll;
+}
+.validationBackground{
+    /*background: #dd7a01;*/
+    --slds-c-alert-color-background: #f7b64b;
+    opacity: 0.9;
+}

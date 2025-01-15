@@ -1,0 +1,90 @@
+<apex:page showHeader="false"
+           standardStylesheets="false"
+           sidebar="false"
+           applyHtmlTag="false"
+           applyBodyTag="false"
+           docType="html-5.0">
+    <html>
+
+    <head>
+        <style>
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+            }
+
+            #crisp-chatbox>div>a {
+                display: none!important
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            window.$crisp = [];
+            window.CRISP_WEBSITE_ID = "{!JSENCODE($CurrentPage.parameters.crispid)}";
+            (function() {
+                d = document;
+                s = d.createElement("script");
+                s.src = "https://client.crisp.chat/l.js";
+                s.async = 1;
+                d.getElementsByTagName("head")[0].appendChild(s);
+            })();
+            let domain;
+            const postToParent = function(message) {
+                window.parent.postMessage(message, domain)
+            };
+
+            const handleChatToggle = function(mutationsList) {
+                const targetChatBox = document.querySelector('#crisp-chatbox > div > div');
+                for (let mutation of mutationsList) {
+                    if (
+                        mutation.target.className === targetChatBox.className &&
+                        mutation.type === 'attributes' &&
+                        mutation.attributeName === 'data-visible'
+                    ) {
+                        const isVisible = mutation.target?.dataset?.visible == 'true';
+                        postToParent({ event: 'setvisible', detail: { isVisible } });
+                        break;
+                    }
+                }
+            };
+
+            let timerId = setTimeout(function setMutationObserver() {
+                const chatBox = document.querySelector('#crisp-chatbox');
+                if (chatBox) {
+                    const config = { subtree: true, attributes: true };
+                    const observer = new MutationObserver(handleChatToggle);
+                    observer.observe(chatBox, config);
+                    postToParent({ event: 'chatloaded', detail: { isChatLoaded: true } });
+                    clearTimeout(timerId);
+                }
+                else {
+                    timerId = setTimeout(setMutationObserver, 500);
+                }
+            }, 500);
+
+            window.addEventListener('message', (e) => {
+                const eventData = parseEventData(e.data)
+
+                if (validateOrigin(e.origin)) {
+                    const defaultButton = document.querySelector('#crisp-chatbox > div > a')
+                    switch (eventData.event) {
+                        case 'setdomain':
+                            domain = eventData.detail;
+                            break;
+                        case 'openchat':
+                            defaultButton.click();
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            });
+        </script>
+        <script src="{!URLFOR($Resource.libs, 'iframes/iframeOriginValidation.js')}"></script>
+    </body>
+
+    </html>
+</apex:page>

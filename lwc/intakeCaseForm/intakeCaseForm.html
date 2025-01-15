@@ -1,0 +1,73 @@
+<template>
+
+
+    <div class="slds-p-top_x-small">
+        <b>
+            Service
+        </b>
+    </div>
+
+    <div class="slds-grid slds-wrap">
+        <!-- <div class="slds-col slds-size_2-of-4 slds-p-right_x-small top-spacing">
+            <c-custom-select picklistvalues={recordTypes} label="Case Type" placeholder="Select Case Type(s)"
+                selected-values={caseRecord.caseType} required></c-custom-select>
+            
+        </div> -->
+        <div class="slds-col slds-size_2-of-4 slds-p-right_x-small top-spacing">
+            <lightning-combobox name="recordType" label="Case Type" value={caseRecord.recordType} placeholder="Select Case Type(s)"
+                options={recordTypes} class="caseFields" required ></lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_1-of-4 slds-p-horizontal_x-small top-spacing left-spacing">
+            <lightning-combobox name="ReferralSource__c" label="Referral Source" placeholder="Select Referral Source"
+                options={referralSourceValues} class="caseFields" value={caseRecord.ReferralSource__c} required
+                message-when-value-missing="Please select one from the dropdown list."></lightning-combobox>
+        </div>
+        <!-- Demographic Details  -->
+
+        <div class="slds-col slds-size_1-of-1 slds-p-right_x-small slds-p-top_x-small top-spacing">
+            <b>
+                Demographics
+            </b>
+        </div>
+
+
+        <div class="slds-col slds-size_1-of-4 slds-p-right_x-small top-spacing">
+            <lightning-combobox name="HouseholdType__c" label="Household Type" placeholder="Select Household Type"
+                required options={householdTypeValues} class="caseFields"
+                value={caseRecord.HouseholdType__c}></lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_1-of-4 slds-p-horizontal_x-small top-spacing left-spacing">
+            <lightning-input type="number" name="HouseholdSize__c" label="Household Size" min="1" max="99"
+                max-length="2" class="caseFields" value={caseRecord.HouseholdSize__c} required></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-4 slds-p-horizontal_x-small top-spacing left-spacing">
+            <lightning-combobox name="RuralAreaStatus__c" label="Rural Area Status" placeholder="Select Rural Status"
+                options={ruralStatusHouseholdValues} class="caseFields" required
+                value={caseRecord.RuralAreaStatus__c}></lightning-combobox>
+        </div>
+        <div class="slds-col slds-size_1-of-4 slds-p-horizontal_x-small top-spacing">
+
+        </div>
+        <!-- FInancial Details -->
+        <div class="slds-col slds-size_1-of-1 slds-p-right_x-small slds-p-top_x-small">
+            <b>
+                Financial
+            </b>
+        </div>
+        <!-- <div class="slds-col slds-size_1-of-4 slds-p-right_x-small top-spacing">
+                <lightning-input name="HouseholdMonthlyIncome__c" type="number" formatter="currency" step="0.01" label="Household Income Monthly" class="caseFields" value={caseRecord.HouseholdMonthlyIncome__c} required></lightning-input>
+            </div> -->
+        <div class="slds-col slds-size_1-of-4 slds-p-horizontal_x-small top-spacing left-spacing">
+            <lightning-input type="text" name="CountyMSA__c" maxlength="255" label="County/MSA" class="caseFields"
+                value={caseRecord.CountyMSA__c} required></lightning-input>
+        </div>
+        <div class="slds-col slds-size_1-of-4 slds-p-horizontal_x-small top-spacing left-spacing">
+            <lightning-combobox name="CurrentResidence__c" label="Current Residence" placeholder="Select Residence Type"
+                options={currentResidenceValues} class="caseFields" value={caseRecord.CurrentResidence__c}
+                required></lightning-combobox>
+        </div>
+
+
+    </div>
+
+</template>

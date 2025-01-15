@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Credit Business Type Details --></label>
+        <name>cic_credit__Credit_Business_Type_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Business Type --></label>
+        <name>cic_credit__Credit_Business_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Inquiry Date --></label>
+        <name>cic_credit__Credit_Inquiry_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Report --></label>
+        <name>cic_credit__Credit_Report__c</name>
+        <relationshipLabel><!-- Inquiries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Inquiry Name (Report) --></label>
+        <name>cic_credit__Inquiry_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>cic_credit__Relationship__c</name>
+        <picklistValues>
+            <masterLabel>Borrower</masterLabel>
+            <translation><!-- Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co Borrower</masterLabel>
+            <translation><!-- Co Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint</masterLabel>
+            <translation><!-- Joint --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source Type --></label>
+        <name>cic_credit__Source_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>cic_credit__Source__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,5 @@
+{
+  "apiName" : "Upload_Documents",
+  "type" : "sfdc_cms__view",
+  "path" : "views"
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sumo Event Updated</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>sumoapp__EventUpdated</letterhead>
+    <name>Event Updated (Host/Co-host) - PCN</name>
+    <style>freeForm</style>
+    <subject>Schedule Update: {!Event.Subject} Start Date Changed -  {!Event.ActivityDate}</subject>
+    <textOnly>Hi &lt;%attendeeName%&gt;,
+
+IMPORTANT: The following event has been updated.
+
+&lt;%updateSummary%&gt;
+Event Name: {!Event.Subject}
+Date/Time: &lt;%datetime%&gt;
+Duration: {!Event.DurationInMinutes} min
+&lt;%locationFields%&gt;
+Event Capacity: &lt;%capacity%&gt;
+&lt;%description%&gt;
+&lt;%serviceDetails%&gt;
+&lt;%locationDetails%&gt;
+
+Thank you,
+{!Organization.Name}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

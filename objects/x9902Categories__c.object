@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>GroupID__c</fullName>
+        <externalId>false</externalId>
+        <label>Group ID</label>
+        <length>5</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GroupItemID__c</fullName>
+        <externalId>false</externalId>
+        <label>Group Item ID</label>
+        <length>5</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GroupName__c</fullName>
+        <externalId>false</externalId>
+        <label>Group Name</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ItemDescription__c</fullName>
+        <externalId>false</externalId>
+        <label>Item Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBIItemDescription__c</fullName>
+        <label>SBI Item Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <label>9902 Categories</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>GroupName__c</columns>
+        <columns>ItemDescription__c</columns>
+        <columns>SBIItemDescription__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Counseling_Purposes</fullName>
+        <columns>NAME</columns>
+        <columns>GroupName__c</columns>
+        <columns>ItemDescription__c</columns>
+        <columns>SBIItemDescription__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>GroupName__c</field>
+            <operation>contains</operation>
+            <value>Counseling Purposes</value>
+        </filters>
+        <label>Counseling Purposes</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Counselor_Service_Types</fullName>
+        <columns>NAME</columns>
+        <columns>GroupName__c</columns>
+        <columns>ItemDescription__c</columns>
+        <columns>SBIItemDescription__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>GroupName__c</field>
+            <operation>contains</operation>
+            <value>Counselor Service Type</value>
+        </filters>
+        <label>Counselor Service Types</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Filter</fullName>
+        <columns>NAME</columns>
+        <columns>GroupName__c</columns>
+        <columns>ItemDescription__c</columns>
+        <columns>SBIItemDescription__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>GroupName__c</field>
+            <operation>contains</operation>
+            <value>Counselor Service Type</value>
+        </filters>
+        <label>Filter</label>
+        <language>en_US</language>
+    </listViews>
+    <visibility>Public</visibility>
+</CustomObject>

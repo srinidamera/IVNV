@@ -1,0 +1,100 @@
+<apex:page sidebar="false"
+           standardController="sumoapp__Invite__c"
+           extensions="sumoapp.LightningOutController"
+           title="{!$Label.sumoapp__ADMIN_QUICK_SETUP_FLOW_3_NAME}">
+    <apex:includeLightning />
+    <apex:slds ></apex:slds>
+    <apex:includeScript value="/support/console/60.0/integration.js"/>
+
+    <html xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          lang="en"
+          style="background: rgba(176, 196, 223, 1);">
+
+    <head>
+        <title>{!$Label.sumoapp__ADMIN_QUICK_SETUP_FLOW_3_NAME}</title>
+        <style type="text/css">
+            #auraErrorMessage {
+                display: none;
+            }
+
+            #contentWrapper {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
+
+            #contentWrapper .bodyDiv {
+                flex: 1;
+                overflow: auto;
+            }
+
+            #contentWrapper .bodyDiv #bodyTable {
+                height: 100%;
+                padding-bottom: 0;
+            }
+
+            #userSettingsApp {
+                position: relative;
+                height: 100%;
+            }
+            .body-container .slds-spinner_container {
+                z-index: 98;
+            }
+        </style>
+    </head>
+
+    <body class="slds-scope">
+        <div id="inviteDetailApp" />
+        <div id="toastContainer"></div>
+
+        <script>
+            var type = "{!JSENCODE($CurrentPage.parameters.type)}" || "InviteLink";
+            var relatedId = "{!JSENCODE($CurrentPage.parameters.relatedId)}" || null;
+            var recordId = "{!$CurrentPage.parameters.id}" || null;
+            var clientId = "{!JSENCODE($CurrentPage.parameters.clientId)}" || "{!JSENCODE($CurrentPage.parameters.primaryParticipantId)}" || null;
+            var whatId = "{!JSENCODE($CurrentPage.parameters.whatId)}" || null;
+            var locationType = "{!JSENCODE($CurrentPage.parameters.locationType)}" || "{!JSENCODE($CurrentPage.parameters.whereType)}" || null;
+            var whereId = "{!JSENCODE($CurrentPage.parameters.whereId)}" || null;
+            var locationDetails = "{!JSENCODE($CurrentPage.parameters.whereDetails)}" || null;
+            var address = "{!JSENCODE($CurrentPage.parameters.address)}" || null;
+            var whoId = "{!JSENCODE($CurrentPage.parameters.whoId)}" || null;
+            var isOpenedAsNewTab = "{!JSENCODE($CurrentPage.parameters.isOpenedAsNewTab)}" || false;
+            var disableRedirection = "{!JSENCODE($CurrentPage.parameters.disableRedirection)}" || false;
+            var isClassicTheme = {!JSENCODE($User.UIThemeDisplayed) == "Theme3"};
+            var toastContainer;
+
+            $Lightning.use("{!JSENCODE(componentPrefix)}:lightningOutInternalApp", function() {
+                $Lightning.createComponent("{!JSENCODE(componentPrefix)}:inviteManagerCmp", {
+                    type: type,
+                    relatedId: relatedId,
+                    recordId: recordId,
+                    clientId: clientId,
+                    whatId: whatId,
+                    locationType: locationType,
+                    whereId: whereId,
+                    locationDetails: locationDetails,
+                    address: address,
+                    whoId: whoId,
+                    isOpenedAsNewTab: isOpenedAsNewTab,
+                    disableRedirection: disableRedirection,
+                    isClassicTheme: isClassicTheme
+                }, "inviteDetailApp");
+
+                $Lightning.createComponent("{!JSENCODE(componentPrefix)}:classicToast", {}, "toastContainer", function(component) {
+                    toastContainer = component;
+                });
+            });
+
+            document.getElementById("inviteDetailApp").addEventListener("lightning__showtoast", function(e) {
+                if (isClassicTheme) {
+                    toastContainer.showToast(e.toastAttributes);
+                } else {
+                    sforce.one.showToast(e.toastAttributes);
+                }
+            });
+        </script>
+    </body>
+
+    </html>
+</apex:page>

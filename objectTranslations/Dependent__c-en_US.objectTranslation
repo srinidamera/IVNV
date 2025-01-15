@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Dependent</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Dependents</value>
+    </caseValues>
+    <fields>
+        <label><!-- Client Case --></label>
+        <name>ClientCase__c</name>
+        <relationshipLabel><!-- Dependents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Dependents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dependent Age --></label>
+        <name>DependentAge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent Relationship --></label>
+        <name>DependentRelationship__c</name>
+        <picklistValues>
+            <masterLabel>Child</masterLabel>
+            <translation><!-- Child --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daughter</masterLabel>
+            <translation><!-- Daughter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Father</masterLabel>
+            <translation><!-- Father --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foster</masterLabel>
+            <translation><!-- Foster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grandparent</masterLabel>
+            <translation><!-- Grandparent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mother</masterLabel>
+            <translation><!-- Mother --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relative</masterLabel>
+            <translation><!-- Relative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sibling</masterLabel>
+            <translation><!-- Sibling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Son</masterLabel>
+            <translation><!-- Son --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soon to be Son</masterLabel>
+            <translation><!-- Soon to be Son --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spouse</masterLabel>
+            <translation><!-- Spouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step Daughter</masterLabel>
+            <translation><!-- Step Daughter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Step Son</masterLabel>
+            <translation><!-- Step Son --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wife</masterLabel>
+            <translation><!-- Wife --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

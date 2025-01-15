@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>DO_NOT_SEND</fullName>
+        <default>false</default>
+        <label>Do Not Send</label>
+    </customValue>
+    <customValue>
+        <fullName>15_MINUTES_PRIOR</fullName>
+        <default>false</default>
+        <label>15 Minutes Prior</label>
+    </customValue>
+    <customValue>
+        <fullName>30_MINUTES_PRIOR</fullName>
+        <default>false</default>
+        <label>30 Minutes Prior</label>
+    </customValue>
+    <customValue>
+        <fullName>1_HOUR_PRIOR</fullName>
+        <default>false</default>
+        <label>1 Hour Prior</label>
+    </customValue>
+    <customValue>
+        <fullName>2_HOURS_PRIOR</fullName>
+        <default>false</default>
+        <label>2 Hours Prior</label>
+    </customValue>
+    <customValue>
+        <fullName>1_DAY_PRIOR</fullName>
+        <default>false</default>
+        <label>1 Day Prior</label>
+    </customValue>
+    <customValue>
+        <fullName>2_DAYS_PRIOR</fullName>
+        <default>false</default>
+        <label>2 Days Prior</label>
+    </customValue>
+    <masterLabel>Reminder Options</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

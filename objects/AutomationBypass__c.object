@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Switch Automations on or off.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AccountAutomationBypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Bypass Automation on Account object</description>
+        <label>Account Automation Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ClientCaseAutomationBypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Bypass Automation on Client Case object</description>
+        <label>Client Case Automation Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CoApplicantAutomationBypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Co-Applicant Automation Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ContactAutomationByPass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Bypass Automation on Contact object</description>
+        <label>Contact Automation ByPass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CourseAutomationBypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Course Automation Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CreditReportAutomationBypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Credit Report Automation Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CreditScoreAutomationBypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Credit Score Automation Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EventAutomationBypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Bypass Automation on Event object</description>
+        <label>Event Automation Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>GoalAutomationBypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Goal Automation Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IntakeAutomationBypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Intake Automation Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ReferralAutomationBypass_c__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Referral Automation Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SumoEmailAutomationBypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Sumo Email Automation Bypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UserAutomationBypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>UserAutomationBypass</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Automation Bypass</label>
+    <visibility>Public</visibility>
+</CustomObject>

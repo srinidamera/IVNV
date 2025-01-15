@@ -1,0 +1,302 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Home",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "maxContentWidth" : "none",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"fb4d62ec-3230-4fc6-a265-69684eccccff\",\"columns\":[{\"UUID\":\"472e8c5c-608c-42d6-b4a3-47745c91fe99\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "bannerImgSrcKey" : "MCB5HESOSXUJAX3CAJFN2OPNYZSQ",
+                "description" : "",
+                "dxpStyle" : { },
+                "redirectToPage" : "AboutUs__c",
+                "showWelcomeMsg" : true,
+                "title" : "About Us",
+                "useHyperlinkTitle" : "Yes",
+                "welcomeMsg" : "Welcome, {client_full_name}"
+              },
+              "definition" : "c:bannerSection",
+              "id" : "cb12b9b0-c523-40e5-b4fe-bce62d426af2",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "btnLabels" : "Sign Up, Login",
+                "btnTypes" : "Secondary, Primary",
+                "dxpStyle" : { },
+                "horizontalAlign" : "Right",
+                "redirectToPage" : "Register, Login"
+              },
+              "definition" : "c:multiButtons",
+              "id" : "a29e8726-7ceb-451f-9dae-d713a82c2581",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "appointmentsTitleMain" : "Appointments",
+                "bookedDesc" : "Your appointment has been confirmed with {counsellor_name} on {Date_and_Time}, be prepared with the required documents",
+                "btnContactUs" : "Contact Us",
+                "btnGoBack" : "Go Back",
+                "btnLabels" : "Log Out, View My Profile",
+                "btnTypes" : "Secondary, Primary",
+                "canceledDesc" : "Your appointment has been Canceled with {counsellor_name} on {Date_and_Time}.",
+                "horizontalAlign" : "Right",
+                "keyDateTime" : "Date/Time",
+                "keyDuration" : "Duration",
+                "keyHost" : "Host",
+                "keyLocation" : "Location",
+                "keyParticipants" : "Participants",
+                "labelAppointmentDateTime" : "Appointment Date and Time",
+                "labelBooked" : "Booked",
+                "labelCanceled" : "Canceled",
+                "labelCompleted" : "Completed",
+                "labelDueDate" : "",
+                "labelInProgress" : "In Progress",
+                "labelLastUpdated" : "Last Updated",
+                "labelMyTasks" : "My Tasks",
+                "labelNotStarted" : "Not Started",
+                "labelPurpose" : "Purpose",
+                "labelRescheduled" : "Rescheduled",
+                "labelTaskDescription" : "",
+                "labelViewDetails" : "View Details",
+                "noTasksMsg" : "You don't have any tasks as of now.",
+                "redirectToPage" : "LOG_OUT, Profile__c",
+                "rescheduledDesc" : "Your appointment has been Rescheduled with {counsellor_name} on {Date_and_Time} be prepared with the required documents",
+                "showAppointments" : true,
+                "showButtons" : false,
+                "showTasks" : true,
+                "tasksTitleMain" : "Tasks",
+                "tileHeight" : 122
+              },
+              "definition" : "c:homepageAboutUsSection",
+              "id" : "6c63054d-1a63-4e80-a8e4-f29c9133f037",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "bannerImgSrcKey" : "MCGJNT5A4FR5HLFJIYRG7PO7PH4Y",
+                "description" : "Housing Counselling: Financial, Homeownership, Rental, Foreclosure/Homelessness Prevention, Fair Housing.",
+                "dxpStyle" : { },
+                "redirectToPage" : "Service__c",
+                "title" : "Services",
+                "useHyperlinkTitle" : "Yes"
+              },
+              "definition" : "c:bannerSection",
+              "id" : "f8899e9f-4a4e-430f-98d8-c339bb892361",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "btnLabels" : "Explore Services",
+                "btnTypes" : "Primary",
+                "dxpStyle" : { },
+                "horizontalAlign" : "Right",
+                "redirectToPage" : "Service__c"
+              },
+              "definition" : "c:multiButtons",
+              "id" : "cfc49e0f-e859-43dc-bdb2-ccb0e40c70c1",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "btnLabels" : "Request a Service, View My Services",
+                "btnTypes" : "Secondary, Primary",
+                "horizontalAlign" : "Right",
+                "labelHyperlink" : "View Details",
+                "labelLastUpdated" : "Last Updated",
+                "labelStatusClosedIncomplete" : "Incomplete",
+                "labelStatusConverted" : "Completed",
+                "labelStatusNew" : "Open",
+                "labelStatusOnHold" : "On Hold",
+                "queryParams" : ", defTab=2",
+                "redirectToPage" : "Service__c, Service__c",
+                "tileHeight" : 122
+              },
+              "definition" : "c:homepageServicesSection",
+              "id" : "440a0fb1-c8c4-485f-b3fe-4e8bd852b826",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "bannerImgSrcKey" : "MCOBGAE7VBYRC7DL6VUZMUYJ6Y5M",
+                "description" : "Multiple In-Person or Virtual Counselling sessions to help you achieve your homeowner goal.",
+                "dxpStyle" : { },
+                "redirectToPage" : "Classes__c",
+                "title" : "Classes",
+                "useHyperlinkTitle" : "Yes"
+              },
+              "definition" : "c:bannerSection",
+              "id" : "cf394a13-fc3b-45d2-9a43-375133d63078",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "btnLabels" : "Explore Classes",
+                "btnTypes" : "Primary",
+                "dxpStyle" : { },
+                "horizontalAlign" : "Right",
+                "redirectToPage" : "Classes__c"
+              },
+              "definition" : "c:multiButtons",
+              "id" : "86b9f696-28ba-4177-8472-2ec8a87625c4",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "btnLabels" : "Enroll in a Class, View My Classes",
+                "btnTypes" : "Secondary, Primary",
+                "horizontalAlign" : "Right",
+                "labelClassStarts" : "Class Starts",
+                "labelHyperlink" : "View Details",
+                "queryParams" : ", defTab=2",
+                "redirectToPage" : "Classes__c, Classes__c",
+                "statusAttendedComplete" : "Completed",
+                "statusAttendedInComplete" : "Incomplete",
+                "statusCourseComplete" : "Completed",
+                "statusCourseInComplete" : "Course Incomplete",
+                "statusEnrolled" : "Enrolled",
+                "statusNoShow" : "No Show",
+                "tileHeight" : 122
+              },
+              "definition" : "c:homepageClassesSection",
+              "id" : "5ffeee77-e473-4707-bb35-fed2d3ddf282",
+              "type" : "component"
+            } ],
+            "id" : "472e8c5c-608c-42d6-b4a3-47745c91fe99",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "customCssClasses" : "reduced-margin",
+          "definition" : "community_layout:section",
+          "id" : "fb4d62ec-3230-4fc6-a265-69684eccccff",
+          "type" : "component"
+        } ],
+        "id" : "7b429f79-5fbf-4470-9191-85ea3b5faa0d",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "dxpStyle" : { },
+            "pageTitle" : "Home",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "a447de4c-ec6c-43f5-9ef3-1255e02758ec",
+          "type" : "component"
+        } ],
+        "id" : "6376c5e1-3469-4e9b-986f-a5b94020dbce",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "3957dc49-3a20-43d2-a37c-5fc2245fe666",
+      "type" : "component"
+    },
+    "contentOperations" : {
+      "operations" : [ {
+        "targetId" : "a29e8726-7ceb-451f-9dae-d713a82c2581",
+        "isHiddenOnOperationSuccess" : false,
+        "isActive" : true,
+        "rule" : {
+          "name" : "1d1d574f-01dc-4c98-92e7-f8b78dd7f3f2",
+          "description" : "",
+          "criteriaType" : "AllCriteriaMatch",
+          "expressionCriteria" : [ {
+            "resource" : "User.isGuest",
+            "operator" : "Equal",
+            "value" : true,
+            "criterionNumber" : 1
+          } ]
+        }
+      }, {
+        "targetId" : "6c63054d-1a63-4e80-a8e4-f29c9133f037",
+        "isHiddenOnOperationSuccess" : false,
+        "isActive" : true,
+        "rule" : {
+          "name" : "fd05243e-4806-450d-a555-dd3bf0246232",
+          "description" : "",
+          "criteriaType" : "AllCriteriaMatch",
+          "expressionCriteria" : [ {
+            "resource" : "User.isGuest",
+            "operator" : "Equal",
+            "value" : false,
+            "criterionNumber" : 1
+          } ]
+        }
+      }, {
+        "targetId" : "cfc49e0f-e859-43dc-bdb2-ccb0e40c70c1",
+        "isHiddenOnOperationSuccess" : false,
+        "isActive" : true,
+        "rule" : {
+          "name" : "2efa16e3-7c97-4e95-9359-062e495c224f",
+          "description" : "",
+          "criteriaType" : "AllCriteriaMatch",
+          "expressionCriteria" : [ {
+            "resource" : "User.isGuest",
+            "operator" : "Equal",
+            "value" : true,
+            "criterionNumber" : 1
+          } ]
+        }
+      }, {
+        "targetId" : "440a0fb1-c8c4-485f-b3fe-4e8bd852b826",
+        "isHiddenOnOperationSuccess" : false,
+        "isActive" : true,
+        "rule" : {
+          "name" : "12b8c0d2-8338-4040-8ff6-3007b49e2ef6",
+          "description" : "",
+          "criteriaType" : "AllCriteriaMatch",
+          "expressionCriteria" : [ {
+            "resource" : "User.isGuest",
+            "operator" : "Equal",
+            "value" : false,
+            "criterionNumber" : 1
+          } ]
+        }
+      }, {
+        "targetId" : "86b9f696-28ba-4177-8472-2ec8a87625c4",
+        "isHiddenOnOperationSuccess" : false,
+        "isActive" : true,
+        "rule" : {
+          "name" : "73a9a83b-817e-4fb0-8f38-f637360a91f2",
+          "description" : "",
+          "criteriaType" : "AllCriteriaMatch",
+          "expressionCriteria" : [ {
+            "resource" : "User.isGuest",
+            "operator" : "Equal",
+            "value" : true,
+            "criterionNumber" : 1
+          } ]
+        }
+      }, {
+        "targetId" : "5ffeee77-e473-4707-bb35-fed2d3ddf282",
+        "isHiddenOnOperationSuccess" : false,
+        "isActive" : true,
+        "rule" : {
+          "name" : "eb33da78-350a-4dbc-ba60-81481ed9a763",
+          "description" : "",
+          "criteriaType" : "AllCriteriaMatch",
+          "expressionCriteria" : [ {
+            "resource" : "User.isGuest",
+            "operator" : "Equal",
+            "value" : false,
+            "criterionNumber" : 1
+          } ]
+        }
+      } ]
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "home"
+  },
+  "urlName" : "home"
+}

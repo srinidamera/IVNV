@@ -1,0 +1,90 @@
+<template>
+    <div class="spinner">
+        <template if:true={isLoading}>
+             <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+             </lightning-spinner>
+        </template>
+    </div>
+
+    <lightning-card >
+        <div class="modal-header slds-modal__header" >
+            <h2 class="title slds-text-heading--medium slds-hyphenate">NWQR Summary</h2>
+        </div>
+
+        <br/>
+
+        <div class="slds-grid slds-gutters" style="margin-left:1% ; margin-right:1%">                           
+            <div class="slds-col slds-size_1-of-2">                        
+                <lightning-input type="Date" name="Start Date" label="Start Date" value={qtrStartdate} onchange={handledqtrStartDate}></lightning-input>
+            </div>
+
+            <div class="slds-col slds-size_1-of-2">                       
+                <lightning-input type="Date" name="End Date" label="End Date" value={qtrEnddate} onchange={handledqtrEndDate} ></lightning-input>
+            </div>           
+        </div>
+
+        <br/>
+
+        <div style="text-align: right;margin-right:2%">
+            <lightning-button label="Run Report" variant="brand" onclick={fetchAllTableData} disabled={btndisable}></lightning-button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <lightning-button label="Export" variant="brand" onclick={exporttoExcel} disabled={btndisable}></lightning-button>
+        </div>
+
+        <br/><br/>
+
+        <template if:true={table1Data}>
+            <div class="slds-col">
+                <br><br><b>Total Owner-Occupied Units Repaired</b><br/>
+                <lightning-datatable data={table1Data} columns={columnsDetailReportWithCost} key-field="Id" column-widths-mode="auto" hide-checkbox-column = "true" wrap-text-max-lines= "2">
+                </lightning-datatable>
+                <template if:true={showTable1Pagination}>
+                    <c-custom-pagination onpagination={fetchTable1Data} total-records={totalTable1Records}></c-custom-pagination>
+                </template>
+            </div>
+        </template>
+
+        <template if:true={table2Data}>
+            <div class="slds-col">
+                <br><br><b>Out of your total Owner-Occupied Units Repaired, how many have seniors as the head of household</b><br/>
+                <lightning-datatable data={table2Data} columns={columnsDetailReport} key-field="Id" column-widths-mode="auto" hide-checkbox-column = "true" wrap-text-max-lines= "2">
+                </lightning-datatable>
+                <template if:true={showTable2Pagination}>
+                    <c-custom-pagination onpagination={fetchTable2Data} total-records={totalTable2Records}></c-custom-pagination>
+                </template>
+            </div>
+        </template>
+
+        <template if:true={table3Data}>
+            <div class="slds-col">
+                <br><br><b>Out of your total Owner-Occupied Units Repaired, how many were repaired in direct response to a public health crisis or a natural disaster, or to increase or improve climate resilience?</b><br/>
+                <lightning-datatable data={table3Data} columns={columnsDetailReport} key-field="Id" column-widths-mode="auto" hide-checkbox-column = "true" wrap-text-max-lines= "2">
+                </lightning-datatable>
+                <template if:true={showTable3Pagination}>
+                    <c-custom-pagination onpagination={fetchTable3Data} total-records={totalTable3Records}></c-custom-pagination>
+                </template>
+            </div>
+        </template>
+        
+        <template if:true={table4Data}>
+            <div class="slds-col">
+                <br><br><b>Out of your total Owner-Occupied Units Repaired, how many were repaired to increase or improve climate resilience?</b><br/>
+                <lightning-datatable data={table4Data} columns={columnsDetailReport} key-field="Id" column-widths-mode="auto" hide-checkbox-column = "true" wrap-text-max-lines= "2">
+                </lightning-datatable>
+                <template if:true={showTable4Pagination}>
+                    <c-custom-pagination onpagination={fetchTable4Data} total-records={totalTable4Records}></c-custom-pagination>
+                </template>
+            </div>
+        </template>
+
+        <template if:true={table5Data}>
+            <div class="slds-col">
+                <br><br><b>Foreclosure Intake (Households)</b><br/>
+                <lightning-datatable data={table5Data} columns={columnsDetailReport} key-field="Id" column-widths-mode="auto" hide-checkbox-column = "true" wrap-text-max-lines= "2">
+                </lightning-datatable>
+                <template if:true={showTable5Pagination}>
+                    <c-custom-pagination onpagination={fetchTable5Data} total-records={totalTable5Records}></c-custom-pagination>
+                </template>
+            </div>
+        </template>
+    </lightning-card>
+</template>

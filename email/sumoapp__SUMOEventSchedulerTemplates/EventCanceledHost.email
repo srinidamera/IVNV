@@ -1,0 +1,21 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="300" >
+<tr valign="top" height="300" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p class="MsoNormal">Dear &lt;%sumoapp__AdditionalInfo__c.Facilitator__c%&gt;,&nbsp;<o:p></o:p></p>
+
+<p class="MsoNormal" data-pm-slice="1 1 []">We're writing to inform you that the&nbsp;{!Event.Subject}&nbsp;program, originally scheduled to begin on&nbsp;&lt;%sumoapp__AdditionalInfo__c.sumoapp__StartDatetime__c%&gt;
+has been cancelled.&nbsp;&nbsp;<o:p></o:p></p>
+
+<p class="MsoNormal" data-pm-slice="1 1 []">An email has been sent to &lt;%attendeeName%&gt;.&nbsp;<o:p></o:p></p>
+
+<p class="MsoNormal">Please reach out to them if new opportunities arise.&nbsp;&nbsp;<o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" data-pm-slice="1 1 []">Best regards,&nbsp;<o:p></o:p></p>
+
+<p class="MsoNormal" data-pm-slice="1 1 []"><span style="background: white;">{!Organization.Name}</span>&nbsp;Management Team<o:p></o:p></p><div style=""><div style="">
+    </div>
+</div>]]></td>
+</tr>
+</table>

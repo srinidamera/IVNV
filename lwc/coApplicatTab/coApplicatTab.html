@@ -1,0 +1,664 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 07-16-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+	<template if:true={showSpinner} >
+		<lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+	</template>
+	<lightning-card>
+		<div class="slds-box slds-box_small slds-theme_shade slds-m-bottom_small slds-grid">
+			<div class="slds-col slds-text-align_left">
+			  <div class="slds-media">
+				<div class="slds-media__figure">
+				  <lightning-icon icon-name="standard:contact" alternative-text="Contact" title="Contact"></lightning-icon>
+				</div>
+				<div class="slds-media__body slds-m-top--x-small">
+				  <h2><b>{coApplicantHeaderLabel}</b></h2>
+				</div>
+			  </div>
+			</div>
+			<div class="slds-col slds-text-align_right" >
+			  <!-- <lightning-button variant="Neutral" label="New Co-Applicant" title="New Co-Applicant" onclick={handleNewCoApplicant} slot="actions"></lightning-button> -->
+			  <lightning-button variant="Neutral" disabled = {showAddCoApplicantBtn} class="slds-m-left_small" label="Add Co-Applicant" title="Add Co-Applicant" onclick={handleAddCoApplicant} slot="actions"></lightning-button>
+			</div>
+		  </div>
+
+		  <table aria-multiselectable="true" class="slds-table slds-table_bordered slds-table_fixed-layout slds-table_resizable-cols" role="grid">
+			<thead>
+			  <tr class="slds-line-height_reset">
+				<th class="" scope="col" style="width:3.75rem">
+				  <div class="slds-truncate slds-assistive-text" title="Errors">Errors</div>
+				</th>
+				<th class="" scope="col" style="width:2rem">
+				  <span id="column-group-header" class="slds-assistive-text">Choose a row</span>
+				 <!-- <div class="slds-th__action slds-th__action_form">
+					<div class="slds-checkbox">
+					  <input type="checkbox" name="options" id="checkbox-unique-id-297" value="checkbox-unique-id-297" tabindex="-1" aria-labelledby="check-select-all-label column-group-header" />
+					  <label class="slds-checkbox__label" for="checkbox-unique-id-297" id="check-select-all-label">
+						<span class="slds-checkbox_faux"></span>
+						<span class="slds-form-element__label slds-assistive-text">Select All</span>
+					  </label>
+					</div>
+				  </div>-->
+				</th>
+				<th aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col" style="width:8.75rem">
+				  <a class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="-1">
+					<span class="slds-assistive-text">Sort by: </span>
+					<div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+					  <span class="slds-truncate" title="Name">Name</span>
+					  <span class="slds-icon_container slds-icon-utility-arrowdown">
+						<svg class="slds-icon slds-icon-text-default slds-is-sortable__icon " aria-hidden="true">
+						  <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+						</svg>
+					  </span>
+					</div>
+				  </a>
+				  <div class="slds-resizable">
+					<input type="range" aria-label="Name column width" class="slds-resizable__input slds-assistive-text" id="cell-resize-handle-540" max="1000" min="20" tabindex="-1" />
+					<span class="slds-resizable__handle">
+					  <span class="slds-resizable__divider"></span>
+					</span>
+				  </div>
+				</th>
+				<th aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col" style="width:8.75rem">
+				  <a class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="-1">
+					<span class="slds-assistive-text">Sort by: </span>
+					<div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+					  <span class="slds-truncate" title="Account Name">Email</span>
+					  <span class="slds-icon_container slds-icon-utility-arrowdown">
+						<svg class="slds-icon slds-icon-text-default slds-is-sortable__icon " aria-hidden="true">
+						  <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+						</svg>
+					  </span>
+					</div>
+				  </a>
+				  <div class="slds-resizable">
+					<input type="range" aria-label="Account Name column width" class="slds-resizable__input slds-assistive-text" id="cell-resize-handle-541" max="1000" min="20" tabindex="-1" />
+					<span class="slds-resizable__handle">
+					  <span class="slds-resizable__divider"></span>
+					</span>
+				  </div>
+				</th>
+				<!--
+				<th aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col" style="width:8.75rem">
+				  <a class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="-1">
+					<span class="slds-assistive-text">Sort by: </span>
+					<div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+					  <span class="slds-truncate" title="Close Date">Phone</span>
+					  <span class="slds-icon_container slds-icon-utility-arrowdown">
+						<svg class="slds-icon slds-icon-text-default slds-is-sortable__icon " aria-hidden="true">
+						  <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+						</svg>
+					  </span>
+					</div>
+				  </a>
+				  <div class="slds-resizable">
+					<input type="range" aria-label="Close Date column width" class="slds-resizable__input slds-assistive-text" id="cell-resize-handle-542" max="1000" min="20" tabindex="-1" />
+					<span class="slds-resizable__handle">
+					  <span class="slds-resizable__divider"></span>
+					</span>
+				  </div>
+				</th>-->
+				<th aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col" style="width:8.75rem">
+					<a class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="-1">
+					  <span class="slds-assistive-text">Sort by: </span>
+					  <div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+						<span class="slds-truncate" title="Close Date">Income</span>
+						<span class="slds-icon_container slds-icon-utility-arrowdown">
+						  <svg class="slds-icon slds-icon-text-default slds-is-sortable__icon " aria-hidden="true">
+							<use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+						  </svg>
+						</span>
+					  </div>
+					</a>
+					<div class="slds-resizable">
+					  <input type="range" aria-label="Close Date column width" class="slds-resizable__input slds-assistive-text" id="cell-resize-handle-543" max="1000" min="20" tabindex="-1" />
+					  <span class="slds-resizable__handle">
+						<span class="slds-resizable__divider"></span>
+					  </span>
+					</div>
+				</th>
+				<th aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col" style="width:8.75rem">
+				  <a class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="-1">
+					<span class="slds-assistive-text">Sort by: </span>
+					<div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+					  <span class="slds-truncate" title="Stage">Record Type</span>
+					  <span class="slds-icon_container slds-icon-utility-arrowdown">
+						<svg class="slds-icon slds-icon-text-default slds-is-sortable__icon " aria-hidden="true">
+						  <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+						</svg>
+					  </span>
+					</div>
+				  </a>
+				  <div class="slds-resizable">
+					<input type="range" aria-label="Stage column width" class="slds-resizable__input slds-assistive-text" id="cell-resize-handle-544" max="1000" min="20" tabindex="-1" />
+					<span class="slds-resizable__handle">
+					  <span class="slds-resizable__divider"></span>
+					</span>
+				  </div>
+				</th>
+				
+				<th class="" scope="col" style="width:3.25rem">
+				  <div class="slds-truncate slds-assistive-text" title="Actions">Actions</div>
+				</th>
+			  </tr>
+			</thead>
+			<tbody>
+				<template if:true={selectedCoApplicants} for:each={selectedCoApplicants} for:item="applicant"
+					for:index="index">
+					<tr key={applicant.Id} aria-selected="false" class="slds-hint-parent">
+
+						<td class="slds-cell_action-mode" role="gridcell">
+							<div class="slds-truncate" title="Acme">{applicant.index}</div>
+						</td>
+
+						<td class="slds-text-align_right slds-cell_action-mode" role="gridcell">
+							<div class="slds-checkbox">
+								<input type="checkbox" name="options" id="checkbox-01" value="checkbox-01" tabindex="0" aria-labelledby="check-button-label-01 column-group-header" />
+								<label class="slds-checkbox__label" for="checkbox-01" id="check-button-label-01">
+<span class="slds-checkbox_faux"></span>
+<span class="slds-form-element__label slds-assistive-text">Select item 1</span>
+</label>
+							</div>
+						</td>
+						<th class="slds-cell_action-mode" scope="row">
+							<div class="slds-truncate" title={applicant.Name}>
+								<a onclick={navigateToRecord} tabindex="0" data-id={applicant.Contact__c} > {applicant.Contact__r.Name} </a>
+							</div>
+						</th>
+						<td class="slds-cell_action-mode" role="gridcell">
+							<div class="slds-truncate" title="Acme">{applicant.Contact__r.Email}</div>
+						</td>
+						<!--
+						<td class="slds-cell_action-mode" role="gridcell">
+							<div class="slds-truncate" title="4/10/15">{applicant.Contact__r.Phone}</div>
+						</td>
+						-->
+						<td class="slds-cell_action-mode" role="gridcell">
+							<div class="slds-truncate" title="income">{applicant.Contact__r.TotalMonthlyIncome__c}  </div>
+						</td>
+						<td class="slds-cell_action-mode" role="gridcell">
+							<div class="slds-truncate" title="Value Proposition">{applicant.Contact__r.RecordType.Name}</div>
+						</td>
+						<td class="slds-cell_action-mode" role="gridcell" >
+							<lightning-button-menu alternative-text="Show menu" size="small" disabled = {disableMenu}>
+								<lightning-menu-item data-coappid={applicant.Id} data-id={applicant.Contact__c} value="Edit" label="Edit" onclick={handleViewEditApplicant} ></lightning-menu-item>
+								<lightning-menu-item data-coappid={applicant.Id} value="Delete" label="Remove" onclick={removeApplicant} ></lightning-menu-item>
+							</lightning-button-menu>
+						</td>
+					</tr>
+				</template>
+			</tbody>
+		  </table>
+
+
+		<!--<table aria-multiselectable="true"
+			class="slds-table slds-table_bordered slds-table_fixed-layout slds-table_resizable-cols" role="grid"
+			aria-label="Example advanced table of Opportunities in actionable mode">
+			<thead>
+				<tr class="slds-line-height_reset">
+
+					 <th aria-sort="none" class="slds-is-resizable slds-is-sortable slds-cell_action-mode" scope="col">
+						<div> </div>
+					</th>
+
+					<th class="slds-text-align_right slds-cell_action-mode" scope="col" style="width:3.25rem">
+						<span id="column-group-header" class="slds-assistive-text">Choose a row</span>
+						<div class="slds-th__action slds-th__action_form">
+							<div class="slds-checkbox">
+								<input type="checkbox" name="options" id="checkbox-unique-id-293" value="checkbox-unique-id-293" tabindex="0" aria-labelledby="check-select-all-label column-group-header" />
+								<label class="slds-checkbox__label" for="checkbox-unique-id-293" id="check-select-all-label">
+									<span class="slds-checkbox_faux"></span>
+									<span class="slds-form-element__label slds-assistive-text">Select All</span>
+								</label>
+							</div>
+						</div>
+					</th>
+					<th aria-sort="none" class="slds-is-resizable slds-is-sortable slds-cell_action-mode" scope="col">
+						<a class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="0">
+							<span class="slds-assistive-text">Sort by: </span>
+							<div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+								<span class="slds-truncate" title="Name">Name</span>
+								<span class="slds-icon_container slds-icon-utility-arrowdown">
+									<svg class="slds-icon slds-icon-text-default slds-is-sortable__icon " aria-hidden="true">
+									<use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+									</svg>
+								</span>
+							</div>
+						</a>
+						<div class="slds-resizable">
+							<input type="range" aria-label="Name column width" class="slds-resizable__input slds-assistive-text" id="cell-resize-handle-533" max="1000" min="20" tabindex="0" />
+							<span class="slds-resizable__handle">
+<span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-sort="none" class="slds-is-resizable slds-is-sortable slds-cell_action-mode" scope="col">
+						<a class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="0">
+							<span class="slds-assistive-text">Sort by: </span>
+							<div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+								<span class="slds-truncate" title="Account Name">Email</span>
+								<span class="slds-icon_container slds-icon-utility-arrowdown">
+<svg class="slds-icon slds-icon-text-default slds-is-sortable__icon " aria-hidden="true">
+<use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+</svg>
+</span>
+							</div>
+						</a>
+						<div class="slds-resizable">
+							<input type="range" aria-label="Account Name column width" class="slds-resizable__input slds-assistive-text" id="cell-resize-handle-534" max="1000" min="20" tabindex="0" />
+							<span class="slds-resizable__handle">
+<span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-sort="none" class="slds-is-resizable slds-is-sortable slds-cell_action-mode" scope="col">
+						<a class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="0">
+							<span class="slds-assistive-text">Sort by: </span>
+							<div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+								<span class="slds-truncate" title="Close Date">Phone</span>
+								<span class="slds-icon_container slds-icon-utility-arrowdown">
+<svg class="slds-icon slds-icon-text-default slds-is-sortable__icon " aria-hidden="true">
+<use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+</svg>
+</span>
+							</div>
+						</a>
+						<div class="slds-resizable">
+							<input type="range" aria-label="Close Date column width" class="slds-resizable__input slds-assistive-text" id="cell-resize-handle-535" max="1000" min="20" tabindex="0" />
+							<span class="slds-resizable__handle">
+<span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-sort="none" class="slds-is-resizable slds-is-sortable slds-cell_action-mode" scope="col">
+						<a class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="0">
+							<span class="slds-assistive-text">Sort by: </span>
+							<div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+								<span class="slds-truncate" title="Stage">Record Type</span>
+								<span class="slds-icon_container slds-icon-utility-arrowdown">
+<svg class="slds-icon slds-icon-text-default slds-is-sortable__icon " aria-hidden="true">
+<use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+</svg>
+</span>
+							</div>
+						</a>
+						<div class="slds-resizable">
+							<input type="range" aria-label="Stage column width" class="slds-resizable__input slds-assistive-text" id="cell-resize-handle-536" max="1000" min="20" tabindex="0" />
+							<span class="slds-resizable__handle">
+<span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th class="slds-cell_action-mode" scope="col" style="width:3.25rem">
+						<div class="slds-truncate slds-assistive-text" title="Actions">Actions</div>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<template if:true={selectedCoApplicants} for:each={selectedCoApplicants} for:item="applicant"
+					for:index="index">
+					<tr key={applicant.Id} aria-selected="false" class="slds-hint-parent">
+
+						<td class="slds-cell_action-mode" role="gridcell">
+							<div class="slds-truncate" title="Acme">{indexNumber}</div>
+						</td>
+
+						<td class="slds-text-align_right slds-cell_action-mode" role="gridcell">
+							<div class="slds-checkbox">
+								<input type="checkbox" name="options" id="checkbox-01" value="checkbox-01" tabindex="0" aria-labelledby="check-button-label-01 column-group-header" />
+								<label class="slds-checkbox__label" for="checkbox-01" id="check-button-label-01">
+<span class="slds-checkbox_faux"></span>
+<span class="slds-form-element__label slds-assistive-text">Select item 1</span>
+</label>
+							</div>
+						</td>
+						<th class="slds-cell_action-mode" scope="row">
+							<div class="slds-truncate" title={applicant.Name}>
+								<a href="#" tabindex="0"> {applicant.Contact__r.Name} </a>
+							</div>
+						</th>
+						<td class="slds-cell_action-mode" role="gridcell">
+							<div class="slds-truncate" title="Acme">{applicant.Contact__r.Email}</div>
+						</td>
+						<td class="slds-cell_action-mode" role="gridcell">
+							<div class="slds-truncate" title="4/10/15">{applicant.Contact__r.Phone}</div>
+						</td>
+						<td class="slds-cell_action-mode" role="gridcell">
+							<div class="slds-truncate" title="Value Proposition">{applicant.Contact__r.RecordType.Name}</div>
+						</td>
+						<td class="slds-cell_action-mode" role="gridcell">
+							<lightning-button-menu alternative-text="Show menu" size="small">
+								<lightning-menu-item data-coappid={applicant.Id} data-id={applicant.Contact__c} value="Edit" label="Edit" onclick={handleViewEditApplicant} ></lightning-menu-item>
+								<lightning-menu-item data-coappid={applicant.Id} value="Delete" label="Delete" onclick={removeApplicant} ></lightning-menu-item>
+							</lightning-button-menu>
+						</td>
+					</tr>
+				</template>
+			</tbody>
+		</table> -->
+
+	</lightning-card>
+
+
+	<template if:true={showDataModal}>
+		<section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-03"
+			class="slds-modal slds-fade-in-open slds-modal_small">
+			<div class="slds-modal__container modal_container" >
+				<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={handleConfirmationModal}>
+					<lightning-icon icon-name="utility:close"
+						alternative-text="close"
+						variant="inverse"
+						size="small" ></lightning-icon>
+				</button>
+				<div class="slds-modal__header">
+					<h1 id="modal-heading-03" class="slds-modal__title slds-hyphenate" tabindex="-1">Co-Applicants</h1>
+				</div>
+				<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-3">
+					<div
+						class="slds-col slds-max-small-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+						<div> 
+							<lightning-combobox name="Select Applicants"
+								label="Select Existing Co-Applicants (Optional)" value={value}
+								 options={applicantOptions}
+								onchange={handleApplicantChange}></lightning-combobox>
+						</div>
+					</div>
+					
+
+					<center>
+						<br/><br/>
+						<lightning-button variant="brand" label="Save" title="Save"
+		onclick={insertCoApplicantJS}></lightning-button>
+		<br/>
+					</center>
+					
+				</div>
+				<div class="slds-modal__footer slds-modal__footer_directional">
+					
+				</div>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+	</template>
+
+
+	<template if:true={isShowModal}>
+		<section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open slds-modal_small">
+			<div class="slds-modal__container">
+				<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={handleCancel}>
+                        <lightning-icon icon-name="utility:close"
+                            alternative-text="close"
+                            variant="inverse"
+                            size="small" ></lightning-icon>
+			</button>
+				<div class="slds-modal__header">
+					<h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate" tabindex="-1">{coApplicantName}
+					</h1>
+				</div>
+
+				<div class="slds-modal__content slds-p-around_medium">
+					<template if:false={isEditMode}>
+                    <lightning-record-edit-form object-api-name="Contact" class="createForm" record-type-id={recordTypeId} onsubmit={handleSubmit} onsuccess={handleSuccess} >
+                        <lightning-messages></lightning-messages>
+
+                        <div class="slds-box_x-small slds-theme_shade slds-m-top_medium slds-m-bottom_small">
+                            <h2 class="slds-text-heading_small slds-p-left_medium">Co-Applicant Information</h2>
+                        </div>
+                        <div class="slds-grid ">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="FirstName" required></lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="MiddleName"></lightning-input-field>
+                            </div>
+                        </div>
+
+                        <div class="slds-grid">
+							<div class="slds-col slds-size_1-of-2">
+								<lightning-input-field field-name="LastName" required> </lightning-input-field>
+							</div>
+							<div class="slds-col slds-size_1-of-2">
+								<lightning-input-field field-name="Suffix"> </lightning-input-field>
+							</div>
+						</div>
+						<div class="slds-grid">
+							<div class="slds-col slds-size_1-of-2">
+								<lightning-input-field field-name="Email" required> </lightning-input-field>
+							</div>
+							<div class="slds-col slds-size_1-of-2">
+								<lightning-input-field field-name="Phone"> </lightning-input-field>
+							</div>
+						</div>
+				
+
+                        <div class="slds-box_x-small slds-theme_shade slds-m-top_medium slds-m-bottom_small">
+                            <h2 class="slds-text-heading_small slds-p-left_medium">Demographics</h2>
+                        </div>
+						<div class="slds-grid">
+							<div class="slds-col slds-size_1-of-2">
+								<lightning-input-field field-name="Gender__c" > </lightning-input-field>
+							</div>
+							<div class="slds-col slds-size_1-of-2">
+								<lightning-input-field field-name="Race__c"> </lightning-input-field>
+							</div>
+						</div>
+				
+						<div class="slds-grid">
+							<div class="slds-col slds-size_1-of-2">
+								<lightning-input-field field-name="Ethnicity__c"> </lightning-input-field>
+							</div>
+							<div class="slds-col slds-size_1-of-2">
+								<lightning-input-field field-name="EnglishProficiency__c"> </lightning-input-field>
+							</div>
+						</div>
+				
+						<div class="slds-grid">
+							<div class="slds-col slds-size_1-of-2">
+								<lightning-input-field field-name="RuralAreaStatus__c"  > </lightning-input-field>
+							</div>
+							<div class="slds-col slds-size_1-of-2">
+								<lightning-input-field field-name="X1stTimeHomeBuyer__c"> </lightning-input-field>
+							</div>
+						</div>
+
+
+                        <div class="slds-box_x-small slds-theme_shade slds-m-top_medium slds-m-bottom_small">
+                            <h2 class="slds-text-heading_small slds-p-left_medium">Finances</h2>
+                        </div>
+                        <div class="slds-grid">
+							<div class="slds-col slds-size_1-of-2">
+								<lightning-input-field field-name="HouseholdSize__c"> </lightning-input-field>
+							</div>
+							<div class="slds-col slds-size_1-of-2">
+								<lightning-input-field field-name="TotalMonthlyIncome__c" required> </lightning-input-field>
+							</div>
+						</div>
+
+                        <div class="slds-box_x-small slds-theme_shade slds-m-top_medium slds-m-bottom_small">
+                            <h2 class="slds-text-heading_small slds-p-left_medium ">Address</h2>
+                        </div>
+                        <div class="slds-grid">
+							<div class="slds-col slds-size_1-of-2">
+								<lightning-input-field field-name="MailingAddress"> </lightning-input-field>
+							</div>
+							<div class="slds-col slds-size_1-of-2">
+								<lightning-input-field readonly field-name={accountIdval} value={accountId} class="slds-hidden"> </lightning-input-field>
+							</div>
+						</div>
+						        <lightning-button class="slds-hidden type-submit"  variant="brand" type="submit" name="save" label="Save"></lightning-button>
+
+                    </lightning-record-edit-form>
+				</template>
+
+
+					<!-- update record-->
+					<template if:true={isEditMode}>
+						<lightning-record-edit-form onsubmit={handleSubmit} object-api-name="Contact" class="createForm" record-type-id={recordTypeId} record-id={contactId} onsuccess={handleSuccess}>
+							<lightning-messages></lightning-messages>
+
+							<div class="slds-box_x-small slds-theme_shade slds-m-top_medium slds-m-bottom_small">
+								<h2 class="slds-text-heading_small slds-p-left_medium">Co-Applicant Information</h2>
+							</div>
+							<div class="slds-grid ">
+								<div class="slds-col slds-size_1-of-2">
+									<lightning-input-field field-name="FirstName"  required></lightning-input-field>
+								</div>
+								<div class="slds-col slds-size_1-of-2">
+									<lightning-input-field field-name="MiddleName"></lightning-input-field>
+								</div>
+							</div>
+
+							<div class="slds-grid">
+								<div class="slds-col slds-size_1-of-2">
+									<lightning-input-field field-name="LastName" required> </lightning-input-field>
+								</div>
+								<div class="slds-col slds-size_1-of-2">
+									<lightning-input-field field-name="Suffix"> </lightning-input-field>
+								</div>
+							</div>
+							<div class="slds-grid">
+								<div class="slds-col slds-size_1-of-2">
+									<lightning-input-field field-name="Email" required> </lightning-input-field>
+								</div>
+								<div class="slds-col slds-size_1-of-2">
+									<lightning-input-field field-name="Phone"> </lightning-input-field>
+								</div>
+							</div>
+					
+
+							<div class="slds-box_x-small slds-theme_shade slds-m-top_medium slds-m-bottom_small">
+								<h2 class="slds-text-heading_small slds-p-left_medium">Demographics</h2>
+							</div>
+							<div class="slds-grid">
+								<div class="slds-col slds-size_1-of-2">
+									<lightning-input-field field-name="Gender__c" required> </lightning-input-field>
+								</div>
+								<div class="slds-col slds-size_1-of-2">
+									<lightning-input-field field-name="Race__c"> </lightning-input-field>
+								</div>
+							</div>
+					
+							<div class="slds-grid">
+								<div class="slds-col slds-size_1-of-2">
+									<lightning-input-field field-name="Ethnicity__c"> </lightning-input-field>
+								</div>
+								<div class="slds-col slds-size_1-of-2">
+									<lightning-input-field field-name="EnglishProficiency__c"> </lightning-input-field>
+								</div>
+							</div>
+					
+							<div class="slds-grid">
+								<div class="slds-col slds-size_1-of-2">
+									<lightning-input-field field-name="RuralAreaStatus__c" required > </lightning-input-field>
+								</div>
+								<div class="slds-col slds-size_1-of-2">
+									<lightning-input-field field-name="X1stTimeHomeBuyer__c"> </lightning-input-field>
+								</div>
+							</div>
+
+
+							<div class="slds-box_x-small slds-theme_shade slds-m-top_medium slds-m-bottom_small">
+								<h2 class="slds-text-heading_small slds-p-left_medium">Finances</h2>
+							</div>
+							<div class="slds-grid">
+								<div class="slds-col slds-size_1-of-2">
+									<lightning-input-field field-name="HouseholdSize__c"> </lightning-input-field>
+								</div>
+								<div class="slds-col slds-size_1-of-2">
+									<lightning-input-field field-name="TotalMonthlyIncome__c" required> </lightning-input-field>
+								</div>
+							</div>
+
+							<div class="slds-box_x-small slds-theme_shade slds-m-top_medium slds-m-bottom_small">
+								<h2 class="slds-text-heading_small slds-p-left_medium ">Address</h2>
+							</div>
+							<div class="slds-grid">
+								<div class="slds-col slds-size_1-of-2">
+									<lightning-input-field field-name="MailingAddress"> </lightning-input-field>
+								</div>
+								<div class="slds-col slds-size_1-of-2">
+								<lightning-input-field readonly field-name={accountIdval}
+								 value={accountId} class="slds-hidden"> </lightning-input-field>
+							</div>
+							</div>
+							<lightning-button class="slds-hidden type-submit"  variant="brand" type="submit" name="save" label="Save"></lightning-button>
+						</lightning-record-edit-form>
+					</template>
+                </div>
+
+				<div class="slds-modal__footer slds-grid slds-grid_align-center">
+					<!-- <div
+						class="slds-col slds-grid slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-left_small slds-p-right_small">
+						<div class="slds-col slds-large-size_3-of-12"> </div>
+						<div
+							class="slds-col slds-m-top_small slds-p-right_xx-small slds-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_3-of-12">
+							<lightning-button class="btn btn-secondary" label="Cancel"
+								onclick={handleCancel} ></lightning-button>
+						</div>
+						<div
+							class="slds-col slds-m-top_small slds-p-left_xx-small slds-size_6-of-12 slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_3-of-12">
+							<lightning-button class="btn btn-primary" variant="brand" label="Save"
+								onclick={handleCreateNewApplicant} ></lightning-button>
+						</div>
+					</div>-->
+
+					<div>
+                        <lightning-button class="slds-m-right_x-small" variant="neutral" label="Cancel" onclick={handleCancel}></lightning-button>
+                        <lightning-button variant="brand" label="Save" onclick={handleCreateNewApplicant}></lightning-button>
+                    </div>
+				</div> 
+					
+				</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open" role="presentation"></div>-
+	</template> 
+
+<!--
+	<template if:true={showConfirmationModal}>
+		<section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-02"
+			class="slds-modal slds-fade-in-open">
+			<div class="slds-modal__container">
+				<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={handleConfirmationModal}>
+					<lightning-icon icon-name="utility:close"
+						alternative-text="close"
+						variant="inverse"
+						size="small" ></lightning-icon>
+				</button>
+				<div class="slds-modal__header">
+					<h1 id="modal-heading-02" class="slds-modal__title slds-hyphenate" tabindex="-1">Delete Unsaved
+						Changes</h1>
+				</div>
+				<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+					<p>Are you sure you want to continue, all unsaved changes will be deleted?</p>
+				</div>
+				<div class="slds-modal__footer slds-modal__footer_directional">
+					<div
+						class="slds-col slds-grid slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_8-of-12 slds-float_right">
+						<div
+							class="slds-col slds-m-top_small slds-p-right_xx-small slds-size_6-of-12 slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+							<lightning-button class="btn btn-secondary" label="Go Back"
+								onclick={handleConfirmationModal} stretch>
+							</lightning-button>
+						</div>
+						<div
+							class="slds-col slds-m-top_small slds-p-left_xx-small slds-size_6-of-12 slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+							<lightning-button class="btn btn-primary" icon-name="utility:delete" variant="destructive"
+								label="Delete Updates" data-record-name={modalContact.Name} stretch
+								onclick={removeApplicant}>
+							</lightning-button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+	</template>
+-->
+
+ 
+</template>

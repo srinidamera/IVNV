@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Office_Of_Housing_Counselling</letterhead>
+    <name>Compass Portal: New Member Welcome Email</name>
+    <style>freeForm</style>
+    <subject>{!$Label.New_Member_Welcome_Email_Subject}</subject>
+    <textOnly>Dear {!Receiving_User.FirstName},
+
+Thank you for signing up for an account with NW Action Agency. To complete your registration and gain access to your account, please click on the link below to set your password:
+
+
+Create Password Link
+
+
+Please note that the link is valid for 30mins from the time of this email. If you encounter any issues or have questions, feel free to reach out to us at testnwcompass@gmail.com or (995) 643-2346.
+
+We look forward to serving you on NW Action Agency Portal!
+
+Please contact us at  testnwcompass@gmail.com or (995) 643-2346.
+
+
+
+Best regards,
+
+{!$Label.AgencyProfileName}
+
+(995) 643-2346</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

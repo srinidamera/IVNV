@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent to SUMO Admin if Resource Calendar connector becomes to failed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>sumoapp__ActionRequired</letterhead>
+    <name>Resource Calendar Connector Failed</name>
+    <style>freeForm</style>
+    <subject>Action Required!</subject>
+    <textOnly>Dear Administrator,
+
+Resource Calendar Connector became failed.
+
+
+Connector Issue Details:
+{!sumoapp__Log__c.sumoapp__Exception__c}
+
+Thank you,
+{!Organization.Name}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

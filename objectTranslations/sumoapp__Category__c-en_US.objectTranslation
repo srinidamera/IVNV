@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Api Name --></label>
+        <name>sumoapp__ApiName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color --></label>
+        <name>sumoapp__Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>sumoapp__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label --></label>
+        <name>sumoapp__Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Type --></label>
+        <name>sumoapp__MemberType__c</name>
+        <picklistValues>
+            <masterLabel>Groups</masterLabel>
+            <translation><!-- Groups --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profiles</masterLabel>
+            <translation><!-- Profiles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Users</masterLabel>
+            <translation><!-- Users --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Users --></label>
+        <name>sumoapp__NumOfUsers__c</name>
+    </fields>
+</CustomObjectTranslation>

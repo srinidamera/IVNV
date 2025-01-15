@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "ce6ebb6f-f299-4dc7-81e4-4339a6a3ff4c",
+  "appPageId" : "f39236a9-486d-41f9-a073-676f892292c6",
+  "configurationTags" : [ ],
+  "devName" : "eventregister__c",
+  "id" : "d13f4a50-e850-4f78-8d4e-7c483b2b51e7",
+  "label" : "eventregister",
+  "pageAccess" : "Public",
+  "routeType" : "custom-eventregister",
+  "type" : "route",
+  "urlPrefix" : "eventregister"
+}

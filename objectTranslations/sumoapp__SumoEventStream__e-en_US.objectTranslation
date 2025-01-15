@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Attendees --></label>
+        <name>sumoapp__Attendees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color --></label>
+        <name>sumoapp__Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deleted --></label>
+        <name>sumoapp__Deleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>sumoapp__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details --></label>
+        <name>sumoapp__Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Time --></label>
+        <name>sumoapp__EndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Id --></label>
+        <name>sumoapp__EventId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception --></label>
+        <name>sumoapp__Exception__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generate Virtual Details --></label>
+        <name>sumoapp__GenerateVirtualDetails__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsUncommited --></label>
+        <name>sumoapp__IsUncommited__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Id --></label>
+        <name>sumoapp__LocationId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>sumoapp__Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting URL --></label>
+        <name>sumoapp__MeetingUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>sumoapp__Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organizer --></label>
+        <name>sumoapp__Organizer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process Id --></label>
+        <name>sumoapp__ProcessId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Propagated To External Calendar --></label>
+        <name>sumoapp__PropagatedToExternalCalendar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resources --></label>
+        <name>sumoapp__Resources__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Time --></label>
+        <name>sumoapp__StartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sumo Event Id --></label>
+        <name>sumoapp__SumoEventId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel Time After --></label>
+        <name>sumoapp__TravelTimeAfter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel Time Before --></label>
+        <name>sumoapp__TravelTimeBefore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>sumoapp__Type__c</name>
+    </fields>
+</CustomObjectTranslation>

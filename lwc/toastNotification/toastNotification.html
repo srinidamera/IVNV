@@ -1,0 +1,26 @@
+<template>
+	<div if:true={showToast}>
+		<div class="toast-container slds-grid slds-grid_align-center slds-notify_container slds-is-absolute">
+			<div class={toastStyle} role="status">
+				<span class="slds-col_bump-right slds-m-right_small slds-align-top">
+					<lightning-icon icon-name={iconName} alternative-text="icon" class="icon-style"
+						size="small"></lightning-icon>
+				</span>
+				<div class="slds-col">
+					<div class="title-style">{fromattedTitle}</div>
+					<p class="msg-content">
+						<lightning-formatted-rich-text value={formattedToastMsg}></lightning-formatted-rich-text>
+					</p>
+					<slot name="heading"></slot>
+				</div>
+				<div class="slds-col_bump-left slds-align-top">
+					<button class="slds-button slds-button_icon slds-button_icon-inverse" title="Close" onclick={closeToast}>
+						<lightning-icon class="icon-close" icon-name="standard:first_non_empty" alternative-text="close"
+							size="small"></lightning-icon>
+						<span class="slds-assistive-text">Close</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

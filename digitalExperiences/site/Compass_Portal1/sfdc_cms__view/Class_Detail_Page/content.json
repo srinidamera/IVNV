@@ -1,0 +1,103 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Class Detail Page",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"2130b054-cf73-4767-bb7a-19c087a1760c\",\"columns\":[{\"UUID\":\"87b432b4-b960-4d71-9eec-74c8f608442e\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "bannerImgSrcKey" : "MCOBGAE7VBYRC7DL6VUZMUYJ6Y5M",
+                "description" : "",
+                "dxpStyle" : { },
+                "redirectToPage" : "Home",
+                "title" : "Classes",
+                "useHyperlinkTitle" : "No"
+              },
+              "definition" : "c:bannerSection",
+              "id" : "3b290805-3401-40ed-a058-d0913272c50e",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "aboutText" : "About",
+                "availableSeatsText" : "Available Seats",
+                "backBtnLabel" : "Go Back",
+                "cardHeight" : 360,
+                "cardPrimaryBtnLabel" : "Enroll",
+                "cardSecondaryBtnLabel" : "Contact Us",
+                "classText" : "Class",
+                "classesText" : "Classes",
+                "costText" : "Cost",
+                "deliveryMethodText" : "Delivery method",
+                "endDateText" : "End Date/Time",
+                "freeSponsoredText" : "Free / Sponsored",
+                "inPersonText" : "In-Person",
+                "learnMoreText" : "Learn More",
+                "locationText" : "Location",
+                "startDateText" : "Start Date/Time",
+                "statusAttendedComplete" : "Completed",
+                "statusAttendedInComplete" : "Attended - Incomplete",
+                "statusCourseComplete" : "Completed",
+                "statusCourseInComplete" : "Incomplete",
+                "statusEnrolled" : "Enrolled",
+                "statusNoShow" : "No Show",
+                "textOnline" : "Online",
+                "title2" : "Frequently Asked Questionnaire",
+                "virtualText" : "Virtual"
+              },
+              "definition" : "c:classDetails",
+              "id" : "398ca536-2512-4336-97d5-c9b2fc50dd6c",
+              "type" : "component"
+            } ],
+            "id" : "87b432b4-b960-4d71-9eec-74c8f608442e",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "2130b054-cf73-4767-bb7a-19c087a1760c",
+          "scopedBrandingSetId" : "Compass_Portal",
+          "type" : "component"
+        } ],
+        "id" : "91cd476f-f731-4542-b663-db873e2949b6",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "dxpStyle" : { },
+            "pageTitle" : "Class Detail Page",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "1f6cb420-d79c-4fa8-b228-e2da04990849",
+          "type" : "component"
+        } ],
+        "id" : "fe455809-3981-4589-8619-2bb29ed130b2",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "00a59b1a-f643-4ec9-9d7a-5c8fb5baf130",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-class-detail"
+  },
+  "urlName" : "class-detail-page"
+}

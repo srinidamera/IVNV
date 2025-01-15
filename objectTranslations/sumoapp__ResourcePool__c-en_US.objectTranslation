@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Assignment Mode --></label>
+        <name>sumoapp__AssignmentMode__c</name>
+        <picklistValues>
+            <masterLabel>Closest Distance</masterLabel>
+            <translation><!-- Closest Distance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Load-Balance</masterLabel>
+            <translation><!-- Load-Balance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Priority Based</masterLabel>
+            <translation><!-- Priority Based --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Random</masterLabel>
+            <translation><!-- Random --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Round-Robin</masterLabel>
+            <translation><!-- Round-Robin --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Assignment Rule Scope --></label>
+        <name>sumoapp__AssignmentRuleScope__c</name>
+    </fields>
+    <fields>
+        <label><!-- Load Balance Next [X] days --></label>
+        <name>sumoapp__LoadBalanceNextXDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Type --></label>
+        <name>sumoapp__MemberType__c</name>
+        <picklistValues>
+            <masterLabel>Groups</masterLabel>
+            <translation><!-- Groups --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profiles</masterLabel>
+            <translation><!-- Profiles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Users</masterLabel>
+            <translation><!-- Users --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Users --></label>
+        <name>sumoapp__NumOfUsers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority Based Assignment Mode --></label>
+        <name>sumoapp__PriorityAssignmentMode__c</name>
+        <picklistValues>
+            <masterLabel>Load-Balance</masterLabel>
+            <translation><!-- Load-Balance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Random</masterLabel>
+            <translation><!-- Random --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Round-Robin</masterLabel>
+            <translation><!-- Round-Robin --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Priority Based Next [X] days --></label>
+        <name>sumoapp__PriorityBasedNextXDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Priority Level --></label>
+        <name>sumoapp__ShowPriorityLevel__c</name>
+    </fields>
+</CustomObjectTranslation>

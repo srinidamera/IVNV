@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Credit Report --></label>
+        <name>cic_credit__Credit_Report__c</name>
+        <relationshipLabel><!-- Credit Score Factors --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Score --></label>
+        <name>cic_credit__Credit_Score__c</name>
+        <relationshipLabel><!-- Credit Score Factors --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Factor Code --></label>
+        <name>cic_credit__Factor_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Factor Text --></label>
+        <name>cic_credit__Factor_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship --></label>
+        <name>cic_credit__Relationship__c</name>
+        <picklistValues>
+            <masterLabel>Borrower</masterLabel>
+            <translation><!-- Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co Borrower</masterLabel>
+            <translation><!-- Co Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint</masterLabel>
+            <translation><!-- Joint --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sequence Number --></label>
+        <name>cic_credit__Sequence_Number__c</name>
+    </fields>
+</CustomObjectTranslation>
